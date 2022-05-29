@@ -129,31 +129,31 @@
          <lg type="sonnet" xml:id="s186g_0403_05">
             <head>- V -</head>
             <lg n="1" type="cuarteto">
-               <l met="---++--+-+-">Valladolid, tan peligrosa y <w type="rhyme">fiera</w>
+               <l met="---++--+-+-" rhyme="A">Valladolid, tan peligrosa y <w type="rhyme">fiera</w>
                </l>
-               <l met="----+--+-+-">como la que en mi alma estáis <w type="rhyme">haciendo</w>,</l>
-               <l met="-+---+---+-" enjamb="pb_verb_chain">amores y temores, <w type="rhyme">pretendiendo</w>
+               <l met="----+--+-+-" rhyme="B">como la que en mi alma estáis <w type="rhyme">haciendo</w>,</l>
+               <l met="-+---+---+-" enjamb="pb_verb_chain" rhyme="B">amores y temores, <w type="rhyme">pretendiendo</w>
                </l>
-               <l met="-+-+----++-">vivir entrambos para que yo muera </l>
+               <l met="-+-+----++-" rhyme="A">vivir entrambos para que yo <w type="rhyme">muera</w> </l>
             </lg>
             <lg n="2" type="cuarteto">
-               <l met="+--+-+-+-+-">Si he de acabar, procúrame <w type="rhyme">siquiera</w>,</l>
-               <l met="--++++---+-">ya que al fin yo no alcance que <w type="rhyme">pretendo</w>,</l>
-               <l met="---+-+-+-+-">que la que nunca me miró <w type="rhyme">viviendo</w>,</l>
-               <l met="-+++---+-+-">mirarme en brazos de la muerte quiera </l>
+               <l met="+--+-+-+-+-" rhyme="A">Si he de acabar, procúrame <w type="rhyme">siquiera</w>,</l>
+               <l met="--++++---+-" rhyme="B">ya que al fin yo no alcance que <w type="rhyme">pretendo</w>,</l>
+               <l met="---+-+-+-+-" rhyme="B">que la que nunca me miró <w type="rhyme">viviendo</w>,</l>
+               <l met="-+++---+-+-" rhyme="A">mirarme en brazos de la muerte <w type="rhyme">quiera</w> </l>
             </lg>
             <lg n="3" type="terceto">
-               <l met="+--+---+-+-">Yo con aquesto viviré <w type="rhyme">contento</w>,</l>
-               <l met="-+-+-+--++-" enjamb="ex_subj_verb">y tú, dichoso valle, que habrás <w type="rhyme">dado</w>
+               <l met="+--+---+-+-" rhyme="C">Yo con aquesto viviré <w type="rhyme">contento</w>,</l>
+               <l met="-+-+-+--++-" enjamb="ex_subj_verb" rhyme="D">y tú, dichoso valle, que habrás <w type="rhyme">dado</w>
                </l>
-               <l met="-+-+-++--+-">a tantos vida, dame sepultura </l>
+               <l met="-+-+-++--+-" rhyme="E">a tantos vida, dame <w type="rhyme">sepultura</w> </l>
             </lg>
             <lg n="4" type="terceto">
-               <l met="--+--+---+-" enjamb="cc_crossclause">Y verá cuanto cubre el <w type="rhyme">firmamento</w>
+               <l met="--+--+---+-" enjamb="cc_crossclause" rhyme="C">Y verá cuanto cubre el <w type="rhyme">firmamento</w>
                </l>
-               <l met="-+---+-+++-">que sólo en el lugar piedad ha <w type="rhyme">hallado</w>
+               <l met="-+---+-+++-" rhyme="D">que sólo en el lugar piedad ha <w type="rhyme">hallado</w>
                </l>
-               <l met="-+++-+---+-">quien no lo halló en el tiempo ni en ventura </l>
+               <l met="-+++-+---+-" rhyme="E">quien no lo halló en el tiempo ni en <w type="rhyme">ventura</w> </l>
             </lg>
          </lg>
       </body>

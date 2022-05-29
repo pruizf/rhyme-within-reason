@@ -129,31 +129,31 @@
          <lg type="sonnet" xml:id="s186g_0403_01">
             <head>- I -</head>
             <lg n="1" type="cuarteto">
-               <l met="-+-+---+-+-">Alegre, rico, venturoso <w type="rhyme">lecho</w>,</l>
-               <l met="+--+-+---+-">cuán desigual que va vuestro <w type="rhyme">partido</w>,</l>
-               <l met="-+-+-+---+-">habiendo yo tu gloria <w type="rhyme">merecido</w>
+               <l met="-+-+---+-+-" rhyme="A">Alegre, rico, venturoso <w type="rhyme">lecho</w>,</l>
+               <l met="+--+-+---+-" rhyme="B">cuán desigual que va vuestro <w type="rhyme">partido</w>,</l>
+               <l met="-+-+-+---+-" rhyme="B">habiendo yo tu gloria <w type="rhyme">merecido</w>
                </l>
-               <l met="--+--+---+-">por amor, por razón y por <w type="rhyme">derecho</w>;</l>
+               <l met="--+--+---+-" rhyme="A">por amor, por razón y por <w type="rhyme">derecho</w>;</l>
             </lg>
             <lg n="2" type="cuarteto">
-               <l met="-++--+-+-+-">que yo traigo continuo dentro el <w type="rhyme">pecho</w>
+               <l met="-++--+-+-+-" rhyme="A">que yo traigo continuo dentro el <w type="rhyme">pecho</w>
                </l>
-               <l met="-+-+---+-+-">la que esta noche sobre ti a <w type="rhyme">dormido</w>;</l>
-               <l met="++-+---+-+-">tú estás desecho porque la has <w type="rhyme">tenido</w>,</l>
-               <l met="+--+++-+-+-">yo porque no la tengo estoy desecho </l>
+               <l met="-+-+---+-+-" rhyme="B">la que esta noche sobre ti a <w type="rhyme">dormido</w>;</l>
+               <l met="++-+---+-+-" rhyme="B">tú estás desecho porque la has <w type="rhyme">tenido</w>,</l>
+               <l met="+--+++-+-+-"  rhyme="A">yo porque no la tengo estoy <w type="rhyme">desecho</w>.</l>
             </lg>
             <lg n="3" type="terceto">
-               <l met="--+-+-++-+-">Concertémonos pues, dame tu <w type="rhyme">gloria</w>,</l>
-               <l met="-++--+---+-">o yo te prestaré mi <w type="rhyme">sentimiento</w>
+               <l met="--+-+-++-+-" rhyme="C">Concertémonos pues, dame tu <w type="rhyme">gloria</w>,</l>
+               <l met="-++--+---+-"  rhyme="D">o yo te prestaré mi <w type="rhyme">sentimiento</w>
                </l>
-               <l met="---+++--++-">para que el bien te goce, como es <w type="rhyme">justo</w>;</l>
+               <l met="---+++--++-"  rhyme="E">para que el bien te goce, como es <w type="rhyme">justo</w>;</l>
             </lg>
             <lg n="4" type="terceto">
-               <l met="-++--+---+-" enjamb="pb_noun_prep">mas no quieras, que sólo la <w type="rhyme">memoria</w>
+               <l met="-++--+---+-"  rhyme="C" enjamb="pb_noun_prep">mas no quieras, que sólo la <w type="rhyme">memoria</w>
                </l>
-               <l met="-++--+-+-+-">de no haber conocido tal <w type="rhyme">contento</w>
+               <l met="-++--+-+-+-" rhyme="D">de no haber conocido tal <w type="rhyme">contento</w>
                </l>
-               <l met="+--+++-+-+-">te bastará a dar muerte a tanto gusto </l>
+               <l met="+--+++-+-+-" rhyme="E">te bastará a dar muerte a tanto <w type="rhyme">gusto</w>.</l>
             </lg>
          </lg>
       </body>

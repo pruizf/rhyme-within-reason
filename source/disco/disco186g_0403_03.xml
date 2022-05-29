@@ -129,29 +129,29 @@
          <lg type="sonnet" xml:id="s186g_0403_03">
             <head>- III -</head>
             <lg n="1" type="cuarteto">
-               <l met="-+-+-+++-+-">En fin, el fin del fin es ya <w type="rhyme">llegado</w>
+               <l met="-+-+-+++-+-" rhyme="A">En fin, el fin del fin es ya <w type="rhyme">llegado</w>
                </l>
-               <l met="--++-+-+-+-">en donde he visto el fin que amor <w type="rhyme">ordena</w>,</l>
-               <l met="-+++-+---+-">y a todo han dado el fin sino a mi <w type="rhyme">pena</w>,</l>
-               <l met="-+-+++---+-">que a fin sin fin me tiene <w type="rhyme">condenado</w>;</l>
+               <l met="--++-+-+-+-" rhyme="B">en donde he visto el fin que amor <w type="rhyme">ordena</w>,</l>
+               <l met="-+++-+---+-" rhyme="B">y a todo han dado el fin sino a mi <w type="rhyme">pena</w>,</l>
+               <l met="-+-+++---+-" rhyme="A">que a fin sin fin me tiene <w type="rhyme">condenado</w>;</l>
             </lg>
             <lg n="2" type="cuarteto">
-               <l met="-+-+-++--+-">principio tuvo el fin no <w type="rhyme">comenzado</w>,</l>
-               <l met="--+--++--+-">que de fin que poseo me <w type="rhyme">enajena</w>;</l>
-               <l met="-+-+-+-+-+-">buscando voy el fin que me <w type="rhyme">condena</w>
+               <l met="-+-+-++--+-" rhyme="A">principio tuvo el fin no <w type="rhyme">comenzado</w>,</l>
+               <l met="--+--++--+-" rhyme="B">que de fin que poseo me <w type="rhyme">enajena</w>;</l>
+               <l met="-+-+-+-+-+-" rhyme="B">buscando voy el fin que me <w type="rhyme">condena</w>
                </l>
-               <l met="-+-+-+---+-">a fin dudoso y lleno de cuidado </l>
+               <l met="-+-+-+---+-" rhyme="A">a fin dudoso y lleno de <w type="rhyme">cuidado</w> </l>
             </lg>
             <lg n="3" type="terceto">
-               <l met="---+-+-+-+-">Sin comenzar el triste fin <w type="rhyme">poseo</w>,</l>
-               <l met="-+--+--+-+-">y no hallo remedio al fin <w type="rhyme">precito</w>;</l>
-               <l met="++-+-++--+-">tal es el fin que amor me significa </l>
+               <l met="---+-+-+-+-" rhyme="C">Sin comenzar el triste fin <w type="rhyme">poseo</w>,</l>
+               <l met="-+--+--+-+-"  rhyme="D">y no hallo remedio al fin <w type="rhyme">precito</w>;</l>
+               <l met="++-+-++--+-" rhyme="E">tal es el fin que amor me <w type="rhyme">significa</w> </l>
             </lg>
             <lg n="4" type="terceto">
-               <l met="---+-+---+-" enjamb="ex_dobj_verb">mas como no preceda a lo <w type="rhyme">infinito</w>
+               <l met="---+-+---+-" enjamb="ex_dobj_verb" rhyme="D">mas como no preceda a lo <w type="rhyme">infinito</w>
                </l>
-               <l met="-+-+-++--+-">el fin que tal dolor me <w type="rhyme">multiplica</w>,</l>
-               <l met="-+--++---+-">espero de dar fin a mis deseos </l>
+               <l met="-+-+-++--+-" rhyme="E">el fin que tal dolor me <w type="rhyme">multiplica</w>,</l>
+               <l met="-+--++---+-" rhyme="C">espero de dar fin a mis <w type="rhyme">deseos</w> </l>
             </lg>
          </lg>
       </body>
