@@ -34,9 +34,9 @@
             as="xs:string"/>
         <xsl:variable name="stanzaN" select="parent::l/parent::lg/@n" as="xs:string"/>        
         <xsl:variable name="values"
-            select="$id, $sonnetId, $incipit, $authorId, $authorName, $authorGender, $date, $lineN, $stanzaN, normalize-space($text), current(), $echo, $rhymeSet"
+            select="$id, $sonnetId, $incipit, $authorId, $authorName, $authorGender, $date, $lineN, $stanzaN, normalize-space($text), current(), if(exists($echo)) then $echo else ' ', $rhymeSet"
             as="xs:string+"/>
-        <xsl:value-of select="string-join($values, $del) || '&#10;'"/>
+        <xsl:value-of select="string-join($values, $del) || '&#9;disco&#10;'"/>
     </xsl:template>
     <xsl:template match="lg" mode="text">
         <xsl:apply-templates select="l" mode="text"/>
