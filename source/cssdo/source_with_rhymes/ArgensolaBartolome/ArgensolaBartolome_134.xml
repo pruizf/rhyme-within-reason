@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>-- LXXVII - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="--++-++--+-" rhyme="A">De los dos sabios son estos retratos,</l>
+				<l n="2" met="+----+---+-" rhyme="B">Nuño, que con igual filosofía</l>
+				<l n="3" met="-+-+-+---+-" rhyme="B">lloraba el uno, el otro se reía</l>
+				<l n="4" met="-+-+-+---+-" rhyme="A">del vano error del mundo y de sus tratos.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+-+-+-" rhyme="A"> Mirando el cuadro, pienso algunos ratos,</l>
+				<l n="6" met="-+---+---+-" rhyme="B">si hubiese de dejar mi medianía,</l>
+				<l n="7" met="-+---+---+-" rhyme="B">a cuál de los extremos seguiría</l>
+				<l n="8" met="+-+--+---+-" rhyme="A">de estos dos celebrados mentecatos.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+----++--+-" rhyme="C"> Tú, que de gravedad eres amigo,</l>
+				<l n="10" met="--++-+-+-+-" rhyme="D">juzgarás que es mejor juntarse al coro,</l>
+				<l n="11" met="-+---+---+-" rhyme="E">que a lágrimas provoca, en la tragedia;</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="--+--+-+-+-" rhyme="D">pero yo, como sé que nunca el lloro</l>
+				<l n="13" met="---+-+-+-+-" rhyme="E">nos restituye el bien ni el bien remedia,</l>
+				<l n="14" met="---+---+-+-" rhyme="C">con tu licencia el de la risa sigo.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

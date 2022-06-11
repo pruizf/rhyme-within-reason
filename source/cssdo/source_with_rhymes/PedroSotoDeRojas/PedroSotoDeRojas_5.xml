@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- CII - Fénix perjura </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-+-+-+-" rhyme="A">¡Ay cómo pasa el tiempo! bien se mira</l>
+				<l n="2" met="-+-+---+-+-" rhyme="B">en ti, oh tirana, tu mudanza loca;</l>
+				<l n="3" met="+--+-+-+-+-" rhyme="B">antes dijiste aquella firme roca</l>
+				<l n="4" met="-+-+-+-+-+-" rhyme="A">oirás, que el móvil viento en torno gira.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+--+---+-+-" rhyme="A">Antes al mar (cuando Aquilón le tira)</l>
+				<l n="6" met="-+-+-++--+-" rhyme="B">podrás inmóvil ver rota tu boca,</l>
+				<l n="7" met="---+---+-+-" rhyme="B">que en el amor que en mis entrañas roca,</l>
+				<l n="8" met="-+-+---+-+-" rhyme="A">mirar mudanza, ni escuchar mentira.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+-+--+---+-" rhyme="C">Tuve, que era legítima en tu pecho</l>
+				<l n="10" met="+--+-+-+-+-" rhyme="D">esta bastarda voz, y fue engendrada</l>
+				<l n="11" met="-+---+---+-" rhyme="E">en labios de mujer, y en mis orejas,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+---+-+-" rhyme="C">y así mudole en la palabra el hecho,</l>
+				<l n="13" met="--+--+-+-+-" rhyme="D">la palabra en el viento, el viento en nada,</l>
+				<l n="14" met="-+-+---+-+-" rhyme="E">y en nada yo, pues que sin ser me dejas.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

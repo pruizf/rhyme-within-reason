@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Luis Carrilloy Sotomayor</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- VIII - A las penas del amor inmortales </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---++--+-" rhyme="A">Hambriento desear, dulce apetito,</l>
+				<l n="2" met="-+---++--+-" rhyme="B">hambriento apetecer, dulce deseo,</l>
+				<l n="3" met="--+--+-+-+-" rhyme="B">detened el rigor, ¡ay!, ya, pues veo</l>
+				<l n="4" met="-+-+---+-+-" rhyme="A">mi negro día en vuestro enojo escrito.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="---+-+---+-" rhyme="A">Mientras con más calor os solicito</l>
+				<l n="6" met="--+--+-+-+-" rhyme="B">vuestro ardiente querer, mi dulce empleo,</l>
+				<l n="7" met="-+-+---+-+-" rhyme="B">por más que el bien a vuestro bien rodeo,</l>
+				<l n="8" met="+--+-+---+-" rhyme="A">huye el remedio término infinito.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+---+-" rhyme="C">Sin duda moriré, pues que mis bienes</l>
+				<l n="10" met="--+--+---+-" rhyme="D">alimentan hambrientos a mis males:</l>
+				<l n="11" met="++---+-+-+-" rhyme="C">tú, dulce apetecer, la culpa tienes.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+---+---+-" rhyme="D">Muriendo, de sus penas desiguales,</l>
+				<l n="13" met="+--+-+---+-" rhyme="C">pecho, será imposible te enajenes:</l>
+				<l n="14" met="+--+-++--+-" rhyme="D">hijos del alma son, son inmortales.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

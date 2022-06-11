@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XLVIII - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+++-+-+-+-" rhyme="A">Aquí yo vi el luciente y puro velo</l>
+				<l n="2" met="---+-+---+-" rhyme="B">por los hermosos hombros esparcido,</l>
+				<l n="3" met="--+--+---+-" rhyme="B">que se puso en mi cuello, y sacudido</l>
+				<l n="4" met="-+-+---+-+-" rhyme="A">a la aura, el oro retocó en su vuelo.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="++-+-+-+-+-" rhyme="A">Cual baja el bello Amor del alto cielo</l>
+				<l n="6" met="--+--+---+-" rhyme="B">con crispante esplendor esclarecido,</l>
+				<l n="7" met="+-+--+---+-" rhyme="B">tal mi Luz pareció con encendido</l>
+				<l n="8" met="-+-+-+-+-+-" rhyme="A">vigor, que hace ilustre y rico el suelo.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+-+-+-" rhyme="C">Mis ojos, que gozaron esta gloria,</l>
+				<l n="10" met="+-+--+---+-" rhyme="D">son dichosos, y guardan la alegría</l>
+				<l n="11" met="---+-+-+-+-" rhyme="E">para el dolor que el alma presa siente.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-++--+---+-" rhyme="C">¡Oh qué dulce holganza a la memoria,</l>
+				<l n="13" met="+-+--+--++-" rhyme="D">dulce bien y regalo de aquel día,</l>
+				<l n="14" met="-+-+---+-+-" rhyme="E">que siempre alabo en soledad ausente!</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

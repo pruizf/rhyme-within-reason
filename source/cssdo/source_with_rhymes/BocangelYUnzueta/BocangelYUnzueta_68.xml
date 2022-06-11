@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- LXX - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+-+---+-" rhyme="A">Esta partida imagen de la vida,</l>
+				<l n="2" met="-+-+-+---+-" rhyme="B">reloj luciente o lumbre numerosa,</l>
+				<l n="3" met="---+-+---+-" rhyme="B">que la describe fácil como rosa</l>
+				<l n="4" met="++-+-+---+-" rhyme="A">de un soplo, de un sosiego interrumpida;</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+-+--+---+-" rhyme="A">esta llama que. al sol desvanecida,</l>
+				<l n="6" met="+-+--+---+-" rhyme="B">más que llama parece mariposa;</l>
+				<l n="7" met="+-+--+---+-" rhyme="B">esta esfera fatal que, rigurosa,</l>
+				<l n="8" met="+--+-++--+-" rhyme="A">cada momento suyo es homicida:</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="++++-+-+-+-" rhyme="C">es, Fabio, un doble ejemplo. No te estorbes</l>
+				<l n="10" met="---+---+-+-" rhyme="D">al desengaño de tu frágil suerte:</l>
+				<l n="11" met="+--+-+---+-" rhyme="E">términos tiene el tiempo y la hermosura.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+---+-" rhyme="C">El concertado impulso de los orbes</l>
+				<l n="13" met="++-+-+-+-+-" rhyme="D">es un reloj de sol, y al sol advierte</l>
+				<l n="14" met="--++-+--++-" rhyme="E">que también es mortal lo que más dura.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

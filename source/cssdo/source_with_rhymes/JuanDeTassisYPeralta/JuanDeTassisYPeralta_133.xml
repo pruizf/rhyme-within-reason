@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXXV - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-++--+-" rhyme="A">Después que puse al pie dura cadena,</l>
+				<l n="2" met="-+-+-+-+-+-" rhyme="B">después que puse al cuello indigno yugo,</l>
+				<l n="3" met="-+-+---+-+-" rhyme="B">besé el cuchillo y adoré el verdugo</l>
+				<l n="4" met="-+---+---+-" rhyme="A">que a muerte y a paciencia me condena,</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+---+-+-+-" rhyme="A">en esta oscuridad, en esta pena,</l>
+				<l n="6" met="+-+--+--++-" rhyme="B">ciego así porque a ciegas deidad plugo,</l>
+				<l n="7" met="--+-++-+-+-" rhyme="B">ni descanso yo más, ni el llanto enjugo,</l>
+				<l n="8" met="-+---++--+-" rhyme="A">ni llego a percibir aura serena.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+---+-+-" rhyme="C">Antes parece que el rigor violento</l>
+				<l n="10" met="+----+---+-" rhyme="D">de astros se declaró, sino ofendidos,</l>
+				<l n="11" met="---+-+---+-" rhyme="E">de sus efectos mismos indignados.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+---+-+-" rhyme="C">Que les parezca venenoso aliento</l>
+				<l n="13" met="-----+---+-" rhyme="D">para martirizar a mis sentidos</l>
+				<l n="14" met="---+-+---+-" rhyme="E">el disponer precioso de los hados.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

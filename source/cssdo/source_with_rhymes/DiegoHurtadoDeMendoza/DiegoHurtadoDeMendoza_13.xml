@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XX - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+---+-+-" rhyme="A">Amor me dijo en mi primera edad:</l>
+				<l n="2" met="-+-+-+---+-" rhyme="B">«Si amares no te cures de razón»</l>
+				<l n="3" met="-+---+---+-" rhyme="B">Siguió su voluntad mi corazón;</l>
+				<l n="4" met="-++--+---+-" rhyme="A">mas él nunca siguió mi voluntad.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+-+---+--+-" rhyme="A">tráeme ciego de verdad en verdad;</l>
+				<l n="6" met="++-+-+---+-" rhyme="B">ya yo sería contento en mi pasión,</l>
+				<l n="7" met="--+--+---+-" rhyme="B">que con falsa esperanza de ocasión</l>
+				<l n="8" met="--+--+---+-" rhyme="A">me sostenga siquiera en vanidad.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+-++--+-" rhyme="C">Tanto sería de vana esta esperanza,</l>
+				<l n="10" met="-+-+-+---+-" rhyme="D">que no podría caber en mi sentido</l>
+				<l n="11" met="--+--+---+-" rhyme="E">ni en consejo de amor ni en vanagloria,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+---+-" rhyme="E">que finja yo que estoy en tu memoria,</l>
+				<l n="13" met="-+---+---+-" rhyme="D">señora, ni lo espero ni lo pido;</l>
+				<l n="14" met="-++--+---+-" rhyme="C">que no es bien de afligidos confianza.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

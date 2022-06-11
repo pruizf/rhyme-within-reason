@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XVI - Fénix, Santelmo en el mar de amor </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---+-+-+-" rhyme="A">Si lucha con el casco el Euro fuerte,</l>
+				<l n="2" met="---+-+---+-" rhyme="B">los deshojados árboles desgaja,</l>
+				<l n="3" met="--+--+-+-+-" rhyme="B">arrebata el timón, las tablas raja,</l>
+				<l n="4" met="+--+---+-+-" rhyme="A">nada perdona a que su furia acierte.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+--+---+-+-" rhyme="A">Teme el piloto la contraria suerte</l>
+				<l n="6" met="---+-+-+-+-" rhyme="B">y el marinero en partes mil trabaja,</l>
+				<l n="7" met="--++-+---+-" rhyme="B">porque en mil partes mira la mortaja</l>
+				<l n="8" met="-+-+---+-+-" rhyme="A">que el mar previene a su vecina muerte.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="---+---+-+-" rhyme="C">Pero si el Euro de los Celos llega</l>
+				<l n="10" met="--+--+---+-" rhyme="D">al instable bajel, mi pensamiento</l>
+				<l n="11" met="++---++--+-" rhyme="E">no sólo en embestir no se acobarda,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+--++-" rhyme="C">mas el piloto Vista el temor niega,</l>
+				<l n="13" met="-+---+---+-" rhyme="D">descansa el marinero Entendimiento,</l>
+				<l n="14" met="---+-+-+-+-" rhyme="E">porque el Santelmo Fénix va en su guarda.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

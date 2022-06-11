@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Juan de Timoneda</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XX - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---+---+-" rhyme="A">Ingrata, desleal, desnamorada,</l>
+				<l n="2" met="+--+---+-+-" rhyme="B">tibia, cruel, accidental, celosa,</l>
+				<l n="3" met="-+---+-+-+-" rhyme="B">osada en desamar, y muy medrosa,</l>
+				<l n="4" met="-++--++--+-" rhyme="A">querer bien a quien no sois obligada.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-++-+-++-+-" rhyme="A">Mirad no estéis de vos tan confiada</l>
+				<l n="6" met="-+-+-+-+-+-" rhyme="B">que en ver que en tanto extremo sois hermosa,</l>
+				<l n="7" met="-+-+-+---+-" rhyme="B">guardad que es confianza peligrosa,</l>
+				<l n="8" met="-+-+-+-+-+-" rhyme="A">que habéis de amar queriendo ser amada.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="--++-+++-+-" rhyme="-">Me diréis vos que no estáis puesta en eso</l>
+				<l n="10" met="-+---+---+-" rhyme="C">mas antes deseáis que os aborrezca,</l>
+				<l n="11" met="-+--++-+-+-" rhyme="D">que en esto tenéis vos por buena vida.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+--++-" rhyme="-">Guardad que suele amor castigar eso</l>
+				<l n="13" met="---+-+---+-" rhyme="C">porque la gente no se ensoberbezca</l>
+				<l n="14" met="----++-+-+-" rhyme="D">para que queráis bien sin ser querida.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

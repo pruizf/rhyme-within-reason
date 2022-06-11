@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>Soneto amoroso </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---+-+-+-" rhyme="A">Petrarca celebró su Laura bella</l>
+				<l n="2" met="--+--+---+-" rhyme="B">con ingenio, y estilo levantado,</l>
+				<l n="3" met="-+-+-+---+-" rhyme="B">y hizo al mundo eterno su cuidado,</l>
+				<l n="4" met="--+--+--++-" rhyme="A">y la rara belleza, que vio en ella.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+----+-+-+-" rhyme="A">Viven y envidiosas muchas de ella,</l>
+				<l n="6" met="-++--++--+-" rhyme="B">porque es digno de ser muy envidiado</l>
+				<l n="7" met="++++-+-+-+-" rhyme="B">un bien tan alto, y tan dichoso estado.,</l>
+				<l n="8" met="-+-+-+---+-" rhyme="-">que nunca pueda el tiempo contra ella.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="++-+-+-+-+-" rhyme="C">Yo solo a ti gallarda Silvia hermosa,</l>
+				<l n="10" met="--+--+---+-" rhyme="D">a quien di el corazón en sacrificio,</l>
+				<l n="11" met="-+-+---+-+-" rhyme="E">querría dejarte de la misma suerte.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="++---+---+-" rhyme="C">Que esta alma en adorarte venturosa</l>
+				<l n="13" met="+--+-++--+-" rhyme="D">sólo te puede hacer este servicio,</l>
+				<l n="14" met="-+-+-+---+-" rhyme="E">que no te ofenda el tiempo, ni la muerte.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

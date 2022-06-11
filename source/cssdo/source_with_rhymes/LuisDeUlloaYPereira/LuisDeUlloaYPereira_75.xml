@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- LXX - A un jazmín asido a una estatua de Diana </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+---+-+-" rhyme="A">De aquel jazmín, que su verdor se atreve</l>
+				<l n="2" met="--++--+--+-" rhyme="B">a escalar esta imagen de Diana,</l>
+				<l n="3" met="+--+---+-+-" rhyme="B">nieva centellas la experiencia cana,</l>
+				<l n="4" met="---+---+-+-" rhyme="A">precipitadas de su peso leve.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+---+-+-" rhyme="A">El Austro tarde, que a usurpar se atreve</l>
+				<l n="6" met="---+---+-+-" rhyme="B">el desaliño de la flor lozana,</l>
+				<l n="7" met="-+-+---+-+-" rhyme="B">pretende triunfo con violencia vana</l>
+				<l n="8" met="--+--+---+-" rhyme="A">del estrago que al tiempo se le debe.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+-+---+-" rhyme="C">Cándido así de frágil esperanza,</l>
+				<l n="10" met="---+---+-+-" rhyme="D">mi pensamiento despeñado miro,</l>
+				<l n="11" met="---+---+-+-" rhyme="E">por el poder de natural efecto.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+---+-" rhyme="C">Cuando le oprime, Celia, tu mudanza,</l>
+				<l n="13" met="-+---+---+-" rhyme="D">que llega sin obrar en mi retiro,</l>
+				<l n="14" met="--+--+---+-" rhyme="E">a dejar deslucido mi respeto.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

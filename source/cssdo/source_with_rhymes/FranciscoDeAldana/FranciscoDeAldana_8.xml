@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XVI - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+--++-+-" rhyme="A">Juro, Escobar, por aquel lazo eterno,</l>
+				<l n="2" met="+--+---+++-" rhyme="B">nudo de amor, que entre los dos ha dado</l>
+				<l n="3" met="--+--++--+-" rhyme="B">tras discreta elección fuerza de hado,</l>
+				<l n="4" met="---+--+--+-" rhyme="A">en cuya luz la vuestra amo y discierno,</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="---+---+-+-" rhyme="A">que ya que -ya del amoroso infierno</l>
+				<l n="6" met="---+-+++-+-" rhyme="B">el fugitivo pie libre he sacado</l>
+				<l n="7" met="-+---+-+-+-" rhyme="B">y en puerto de salud llevó el cuidado</l>
+				<l n="8" met="+----+-+-+-" rhyme="A">áspero temporal de helado invierno-,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+----++--+-" rhyme="C">hecha su redención, vuelve a su gloria</l>
+				<l n="10" met="-+-----+-+-" rhyme="D">el alma, adonde por oficio tiene</l>
+				<l n="11" met="---+-+---+-" rhyme="E">perpetuar la risa de su llanto,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+-+--+---+-" rhyme="C">muera Filis, malvada en mi memoria.</l>
+				<l n="13" met="-++--+-+-+-" rhyme="D">Mas, ay, triste de mí, ¿de dónde viene</l>
+				<l n="14" met="+--+---+-+-" rhyme="E">nombre tan duro enternecerme tanto?</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

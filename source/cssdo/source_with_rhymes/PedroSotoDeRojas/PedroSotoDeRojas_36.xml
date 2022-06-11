@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XVII - Persuasión </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+---+-+-" rhyme="A">Traslada el curso de las rejas duro</l>
+				<l n="2" met="-+-+---+-+-" rhyme="B">con sordos pasos a las blandas puertas,</l>
+				<l n="3" met="---+---+-+-" rhyme="B">que, si pretendes las del alma abiertas,</l>
+				<l n="4" met="+--+-+-+-+-" rhyme="A">rotas las tiene ya mi llanto puro.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+-+--+---+-" rhyme="A">Ya es pretérito el tiempo que, futuro,</l>
+				<l n="6" met="-+-+---+-+-" rhyme="B">pudiera hacer mis esperanzas ciertas;</l>
+				<l n="7" met="-+-+---+-+-" rhyme="B">las horas miro a mis espaldas muertas,</l>
+				<l n="8" met="---+---+-+-" rhyme="A">que pretendí para vivir seguro.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+-+---+-" rhyme="C">Abre las puertas, ángel riguroso,</l>
+				<l n="10" met="---+---+-+-" rhyme="D">para que goce con descanso amigo,</l>
+				<l n="11" met="--+--+-+-+-" rhyme="C">tras tormento de amor, de amor reposo;</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--+-+-+-+-" rhyme="D">abre, si no las puertas, un postigo;</l>
+				<l n="13" met="+--++++--+-" rhyme="C">abre, que amor no es mal contagioso</l>
+				<l n="14" met="+--+-+---+-" rhyme="D">ni es, aunque tira flechas, enemigo.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

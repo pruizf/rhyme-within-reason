@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Hurtado de  Mendoza,  Antonio</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>De El trato muda costumbre Jornada tercera - Juana </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="--+--+-+-+-" rhyme="A">Soberana virtud, sencilla, y pura</l>
+				<l n="2" met="---+---+-+-" rhyme="B">de nuestra vida estimación primera,</l>
+				<l n="3" met="-+---+-+-+-" rhyme="B">mi alma con rendido amor venera</l>
+				<l n="4" met="--+--+---+-" rhyme="A">la gloriosa verdad de su hermosura.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--+-+-+-" rhyme="A">Mas de ti, o venganza, o mal segura</l>
+				<l n="6" met="-+-+---+-+-" rhyme="B">virtud bastarda fementida, y fiera,</l>
+				<l n="7" met="--+--+-+-+-" rhyme="B">con destrozo fatal hallar quisiera</l>
+				<l n="8" met="--+--+---+-" rhyme="A">la preciada traición de tu locura.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+-+-+-+-" rhyme="C">Con ira noble yo miré un tirano,</l>
+				<l n="10" met="-+-+-+---+-" rhyme="D">esposo vil, que en ciego barbarismo,</l>
+				<l n="11" met="--+--+-+-+-" rhyme="C">mi quietud alteró turbada en vano.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+-+-+-" rhyme="D">Cielos, de mí que fuera en tanto abismo,</l>
+				<l n="13" met="-----+-+-+-" rhyme="C">si como mi desdicha está en su mano,</l>
+				<l n="14" met="+-++-+--++-" rhyme="D">no estuviera hoy en mí mi valor mismo!</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

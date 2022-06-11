@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- VII - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+-+--+-+-+-" rhyme="A">Vuela y cerca la lumbre y no reposa,</l>
+				<l n="2" met="-+-+---+-+-" rhyme="B">y huye y vuelve, a su beldad rendida,</l>
+				<l n="3" met="-+-+-+---+-" rhyme="B">figura simple suya, y encendida</l>
+				<l n="4" met="+--+-+---+-" rhyme="A">siente que fue a su muerte presurosa;</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-++--+---+-" rhyme="A">mas yo, alegre en mi luz maravillosa,</l>
+				<l n="6" met="---+-+-+-+-" rhyme="B">a consagrar osando voy mi vida,</l>
+				<l n="7" met="-+---+-+-+-" rhyme="B">que espera, de su bello ardor vencida,</l>
+				<l n="8" met="--+--+---+-" rhyme="A">o perderse o cobrarse venturosa.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+-+---+-" rhyme="C">Amor, que en mí engrandece su memoria,</l>
+				<l n="10" met="-+---+-+-+-" rhyme="D">entibia mi esperanza en lento engaño</l>
+				<l n="11" met="-+-+-+---+-" rhyme="E">y en llama ingrata ufano me consumo.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+++-+-+-+-" rhyme="C">Cuidé (¡tal fue mi mal!) ganar la gloria</l>
+				<l n="13" met="-+-+-++--+-" rhyme="D">del bien que vi, y al fin hallo en mi daño</l>
+				<l n="14" met="-+---+-+-+-" rhyme="E">que sólo de mi incendio resta el humo.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

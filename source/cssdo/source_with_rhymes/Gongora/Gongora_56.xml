@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XLV - A un ruiseñor </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="---+-+-+-+-" rhyme="A">Con diferencia tal, con gracia tanta</l>
+				<l n="2" met="-+--++---+-" rhyme="B">aquel ruiseñor llora, que sospecho</l>
+				<l n="3" met="-++-+++--+-" rhyme="B">que tiene otros cien mil dentro del pecho</l>
+				<l n="4" met="-+---+---+-" rhyme="A">que alternan su dolor por su garganta.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-++--+---+-" rhyme="A">Y aun creo que el espíritu levanta,</l>
+				<l n="6" met="-----+---+-" rhyme="B">como en información de su derecho,</l>
+				<l n="7" met="--+--+--++-" rhyme="B">a escribir del cuñado el atroz hecho</l>
+				<l n="8" met="-+---+-+-+-" rhyme="A">en la hoja de aquella verde planta.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+---+-+-" rhyme="C">Ponga, pues, fin a la querella que usa,</l>
+				<l n="10" met="---+---+-+-" rhyme="D">pues ni quejarse ni mudar estanza</l>
+				<l n="11" met="-+---+---+-" rhyme="E">por pico ni por pluma se le veda.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+---+-" rhyme="C">Y llore sólo aquel que su Medusa</l>
+				<l n="13" met="-+---+--++-" rhyme="E">en piedra convirtió, porque no pueda</l>
+				<l n="14" met="---+-+-+-+-" rhyme="D">ni publicar su mal ni hacer mudanza.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

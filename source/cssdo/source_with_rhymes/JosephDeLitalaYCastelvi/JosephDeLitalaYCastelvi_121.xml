@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- LXX - Al rigor de una hermosura </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+---+-+-" rhyme="A">Dulce pasión, que en holocausto ofrece,</l>
+				<l n="2" met="-+-+-+-+-+-" rhyme="B">rendir la vida en manos de un tirano,</l>
+				<l n="3" met="-+---+---+-" rhyme="B">que mata con imperio soberano,</l>
+				<l n="4" met="-+-+-+---+-" rhyme="A">y vence aquello mismo que apetece.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--++-++-++-" rhyme="A">Cuanto más es mi Amor, tanto más crece,</l>
+				<l n="6" met="-+---+---+-" rhyme="B">su ceño, su rigor en lo inhumano,</l>
+				<l n="7" met="-+-+---+-+-" rhyme="B">fatal destino, pensamiento vano,</l>
+				<l n="8" met="-+---+-+-+-" rhyme="A">que espera la razón, pues no enloquece.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+---+-+-" rhyme="C">Sentir la pena, padecer el daño</l>
+				<l n="10" met="-+-+---+-+-" rhyme="D">sentir el golpe, conseguir el yerro,</l>
+				<l n="11" met="-+-+---+-+-" rhyme="E">llorar el mal, embarazar la dicha,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-----+-" rhyme="C">perder el bien, y para desengaño</l>
+				<l n="13" met="+--+-+-+-+-" rhyme="D">habla el dolor en un cruel destierro,</l>
+				<l n="14" met="-+---+---+-" rhyme="E">las ansias que me ofrece la desdicha.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

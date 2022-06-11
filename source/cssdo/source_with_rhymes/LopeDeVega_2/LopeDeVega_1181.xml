@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 1380 - Acto II, CARLOS De Si no vieran las mujeres </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---++--+-" rhyme="A">¡Oh lágrimas de amor, dulce violencia!</l>
+				<l n="2" met="---+-+-+-+-" rhyme="B">¡Oh poderoso llanto ¡Oh fuerte encanto!</l>
+				<l n="3" met="--+--+---+-" rhyme="B">¡Oh sirena fingida, a cuyo manto</l>
+				<l n="4" met="+--+-+---+-" rhyme="A">calla el rigor y duerme la prudencia!</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+-+-+-" rhyme="A">Contigo no hay valor, poder ni ciencia,</l>
+				<l n="6" met="-+-++--+-+-" rhyme="B">que puede tanto un amoroso llanto,</l>
+				<l n="7" met="-+---+--++-" rhyme="B">que el cielo, con poder y saber tanto,</l>
+				<l n="8" met="++---+---+-" rhyme="A">no tiene para el llanto resistencia.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---++--+-" rhyme="C">Pues siendo de mujer, celos y enojos</l>
+				<l n="10" met="+-+--+-+-+-" rhyme="D">ni aun agravios sabrán mover el labio,</l>
+				<l n="11" met="--+-++---+-" rhyme="C">sino darle mil almas por despojos.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+-+-++-+-+-" rhyme="D">No se fíe el más cuerdo, honrado y sabio,</l>
+				<l n="13" met="---+-+-+-+-" rhyme="C">porque si espera ver llorar sus ojos</l>
+				<l n="14" met="---+-+-+-+-" rhyme="D">perdonará después cualquier agravio.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

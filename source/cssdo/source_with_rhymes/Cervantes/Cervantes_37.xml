@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>En el prólogo de Viaje al Parnaso </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+++-+-+-" rhyme="A">Pues veis que no me han dado algún soneto</l>
+				<l n="2" met="-+-+-+---+-" rhyme="B">que ilustre de este libro la portada</l>
+				<l n="3" met="-+++-+-+-+-" rhyme="B">venid vos, pluma mía mal cortada,</l>
+				<l n="4" met="-+---+---+-" rhyme="A">y hacedle, aunque carezca de discreto.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+---+-+-" rhyme="A">Haréis que excuse el temerario aprieto</l>
+				<l n="6" met="-+-+-+---+-" rhyme="B">de andar de una en otra encrucijada,</l>
+				<l n="7" met="--+--+---+-" rhyme="B">mendigando alabanzas, excusada</l>
+				<l n="8" met="-+---+-+-+-" rhyme="A">fatiga e impertinente, yo os prometo.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+-+-+-+-" rhyme="C">Todo soneto y rima allá se avenga,</l>
+				<l n="10" met="-+---+---+-" rhyme="D">y adorne los umbrales de los buenos,</l>
+				<l n="11" met="-----++-++-" rhyme="E">aunque la adulación es de ruin casta.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+-+-+-" rhyme="C">Y dadme vos que este viaje tenga</l>
+				<l n="13" met="-++--+---+-" rhyme="D">de sal un panecillo por lo menos,</l>
+				<l n="14" met="-+-+---+-+-" rhyme="E">que yo os lo marco por vendible, y basta.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

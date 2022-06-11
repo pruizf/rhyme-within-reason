@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- LXXVIII - Al Monte Santo de Granada </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+-+--+---+-" rhyme="A">Este monte, de cruces coronado,</l>
+				<l n="2" met="--+--+-+-+-" rhyme="B">cuya siempre dichosa excelsa cumbre,</l>
+				<l n="3" met="-+-+-+-+-+-" rhyme="B">espina, luz, y no vomita lumbre,</l>
+				<l n="4" met="+--+---+-+-" rhyme="A">Etna glorioso, Mongibel sagrado.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+++-+---+-" rhyme="A">Trofeo es, dulcemente levantado,</l>
+				<l n="6" met="+--+-+---+-" rhyme="B">no ponderosa grave pesadumbre,</l>
+				<l n="7" met="---+-+---+-" rhyme="B">para oprimir sacrílega costumbre,</l>
+				<l n="8" met="-+---+---+-" rhyme="A">de bando contra el Cielo conjurado.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+---+-+-" rhyme="-">Gigantes miden sus ocultas faldas,</l>
+				<l n="10" met="--+--+-+-+-" rhyme="C">que a los Cielos hicieron fuerza, aquella,</l>
+				<l n="11" met="--+--+-+-+-" rhyme="D">que los cielos padecen fuerza santa.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+---+-+-" rhyme="C">Sus miembros cubre, y sus reliquias sella</l>
+				<l n="13" met="-+-+-+---+-" rhyme="-">la bien pisada tierra, veneradlas</l>
+				<l n="14" met="-+-+---+-+-" rhyme="D">con tiernos ojos, con devota planta.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

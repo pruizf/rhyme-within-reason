@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- CXIX - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+---+-+-" rhyme="A">¡Ay dulce puerta en cuyo mármol cargas,</l>
+				<l n="2" met="-+-+-+---+-" rhyme="B">dueño cruel, las armas homicidas,</l>
+				<l n="3" met="-+---+---+-" rhyme="B">empresa y sepultura de las vidas,</l>
+				<l n="4" met="---++--+-+-" rhyme="A">que para fin tan miserable alargas!</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+---+---+-" rhyme="A">¡Ay piedras que a mis lágrimas amargas,</l>
+				<l n="6" met="-++--+---+-" rhyme="B">con ser piedras, estáis enternecidas,</l>
+				<l n="7" met="--+--+---+-" rhyme="B">en quien son y serán entretenidas</l>
+				<l n="8" met="--+--+-+-+-" rhyme="A">de mi corto vivir las horas largas!</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+-+--+---+-" rhyme="C">Yo os adoro y respeto por aquélla,</l>
+				<l n="10" met="+-+--+---+-" rhyme="D">cuy retrato sois, porque sin duda</l>
+				<l n="11" met="-++--+-+-+-" rhyme="C">alguna alma de piedra vive en ella,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="++-+---+-+-" rhyme="D">tan dura, helada y de calor desnuda,</l>
+				<l n="13" met="--+--++--+-" rhyme="C">para dar a mi llanto una centella</l>
+				<l n="14" met="-+---+---+-" rhyme="D">que sólo os diferencia en que se muda.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

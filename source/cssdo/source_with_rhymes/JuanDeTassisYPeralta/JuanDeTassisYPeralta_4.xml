@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- CI - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="++---+---+-" rhyme="A">Mal haya el temerario, el ambicioso,</l>
+				<l n="2" met="--++---+-+-" rhyme="B">en el mar monstruo cuando no marino,</l>
+				<l n="3" met="-+-+-+-+-+-" rhyme="B">que hurtó al bosque el mal nacido pino,</l>
+				<l n="4" met="--+--+---+-" rhyme="A">para darle a Neptuno proceloso;</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+---+-+-+-" rhyme="A">y fiero labrador de campo algoso</l>
+				<l n="6" met="-+-+---+-+-" rhyme="B">sembró en el viento el porfiado lino,</l>
+				<l n="7" met="---+-+-+-+-" rhyme="B">que entre aquilón y cierzo dio camino</l>
+				<l n="8" met="-+---++--+-" rhyme="A">a náutico inculcar piélago undoso.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="--+--+---+-" rhyme="C">Porque a insultos piráticos el puro</l>
+				<l n="10" met="+-+--+---+-" rhyme="D">rubio expuso, metal solicitado</l>
+				<l n="11" met="-+-+-+---+-" rhyme="E">de tantas hoy fatigas perennales.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+-+-+-" rhyme="C">Por cuya ya venganza el frigio muro</l>
+				<l n="13" met="-+---+-+-+-" rhyme="D">de lágrimas sangrientas vio bañado</l>
+				<l n="14" met="---+-++--+-" rhyme="E">cuando entre ciego honor, llamas fatales.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

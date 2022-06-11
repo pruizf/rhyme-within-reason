@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXXVII - Al Licenciado Pedro Díaz de Ribas en la defensa que hizo de la Soledades y Polifomo del famoso don Luis de Góngora </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="--+--+---+-" rhyme="A">Si la envidia, sabrosa en su malicia,</l>
+				<l n="2" met="--++---+-+-" rhyme="B">igualar pudo con Apolo a Homero,</l>
+				<l n="3" met="---+-+---+-" rhyme="B">manifestando más lo verdadero</l>
+				<l n="4" met="--+--+---+-" rhyme="A">del profundo caudal con su avaricia.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="---+-+-+-+-" rhyme="A">El que de nuevo Homero da noticia,</l>
+				<l n="6" met="-+-+++---+-" rhyme="B">mostrando no ser tanto, aunque primero,</l>
+				<l n="7" met="--++-+-+-+-" rhyme="B">quien cantó a Ulises sabio, a Achiles fiero,</l>
+				<l n="8" met="-++--+---+-" rhyme="A">mayor bronce o título codicia.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+-+--+--++-" rhyme="C">Ribas de altos oráculos voz cierta,</l>
+				<l n="10" met="-+-+-+---+-" rhyme="D">se aplica a sí, y reparte calidades</l>
+				<l n="11" met="--++-+--++-" rhyme="E">de inmortal, tanto el cielo el saber ama.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+---+-+-" rhyme="C">Con gloria cierta de opinión incierta</l>
+				<l n="13" met="-+---+---+-" rhyme="D">pirámides levanta en soledades,</l>
+				<l n="14" met="-+---+---+-" rhyme="E">en cíclopes colosos a su fama.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

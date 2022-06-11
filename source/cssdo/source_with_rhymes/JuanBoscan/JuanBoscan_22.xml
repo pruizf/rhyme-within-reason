@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Juan Boscan</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXVIII - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+---+-+-" rhyme="A">Vuelve el deseo a levantar su rueda;</l>
+				<l n="2" met="--+--+-+-+-" rhyme="C">reverdece y barrunta ya el verano;</l>
+				<l n="3" met="-+-+---+-+-" rhyme="C">la tierra viste su color temprano;</l>
+				<l n="4" met="+-++-+-+-+-" rhyme="A">mozo está el año, al buen estado rueda.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+---+--++-" rhyme="A">El alma en su esperanza se está queda,</l>
+				<l n="6" met="--+--+-+-+-" rhyme="C">aunque avisos le dan de mano en mano;</l>
+				<l n="7" met="+--+-+--++-" rhyme="C">flores vendrán, mas nunca vendrá el grano;</l>
+				<l n="8" met="-+---+-+-+-" rhyme="A">con hambre quedará si en esto queda.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+--+--+-" rhyme="E">No quedaré sino muy mantenido,</l>
+				<l n="10" met="---+-+---+-" rhyme="F">que al desear, mantiénele el deseo;</l>
+				<l n="11" met="++-+----++-" rhyme="E">yo traigo en mí lo que para mí pido.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--++--+-+-" rhyme="E">Quiero querer y es mi querer cumplido;</l>
+				<l n="13" met="--++-+---+-" rhyme="F">mas en tal tiempo a veces me proveo,</l>
+				<l n="14" met="+-++-++--+-" rhyme="E">que es mayor hambre estar más proveído.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

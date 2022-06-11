@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XVII - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-+-+-+-" rhyme="A">De bosque en bosque, de uno en otro llano,</l>
+				<l n="2" met="+--+-+-+-+-" rhyme="B">solo, en medroso horror y sombra oscura,</l>
+				<l n="3" met="+--+-+--++-" rhyme="B">voy suspirando ausente, y la luz pura</l>
+				<l n="4" met="+----+-+-+-" rhyme="A">busco, que me encubrió el amor tirano.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+--+-+-+-+-" rhyme="A">Corto el río y traspaso el monte en vano;</l>
+				<l n="6" met="-+-+-+---+-" rhyme="B">que no se debe más a mi ventura;</l>
+				<l n="7" met="-+---+---+-" rhyme="B">el bien que la esperanza me procura</l>
+				<l n="8" met="+----+---+-" rhyme="A">huye y se me desliza de la mano.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+-+---+-" rhyme="C">En este duro estrecho me lamento,</l>
+				<l n="10" met="--+--+---+-" rhyme="D">porque sea mi daño manifiesto</l>
+				<l n="11" met="-+---+---+-" rhyme="E">y alguno se conduela en mi cuidado.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+-+-++---+-" rhyme="C">No cohorta al fin esto mi tormento;</l>
+				<l n="13" met="-+---+++-+-" rhyme="D">que tanto mi dolor es más molesto</l>
+				<l n="14" met="+--+-+-+-+-" rhyme="E">cuanto de ajeno pecho más llorado.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

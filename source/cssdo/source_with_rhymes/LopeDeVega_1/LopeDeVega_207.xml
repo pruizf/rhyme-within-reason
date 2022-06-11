@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 4 - A los Raguallos de Bocalini, escriba de sátiras </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---+-+-+-" rhyme="A">¿Señores Españoles, qué le hiciste</l>
+				<l n="2" met="---+-+---+-" rhyme="B">al Bocalino, o boca del infierno,</l>
+				<l n="3" met="---+---+-+-" rhyme="B">que con la espada y militar gobierno,</l>
+				<l n="4" met="+--+---+-+-" rhyme="A">tanta ocasión de murmurar le diste?</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+---+---+-" rhyme="A">El Alba, con que siempre amaneciste,</l>
+				<l n="6" met="+-+--+-+-+-" rhyme="B">noche quiere volver de oscuro invierno,</l>
+				<l n="7" met="-+-+---+-+-" rhyme="B">y aquel Gonzalo y su laurel eterno,</l>
+				<l n="8" met="---+-+---+-" rhyme="A">con quien a Italia y Grecia oscureciste.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+-+---+-" rhyme="C">Esta frialdad de Apolo y la Estafeta</l>
+				<l n="10" met="++-+-+---+-" rhyme="D">no sé que tenga tanta valentía,</l>
+				<l n="11" met="----++---+-" rhyme="C">por mas que el decir mal se la prometa.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="--++-+---+-" rhyme="D">Pero sé que un vecino que tenía,</l>
+				<l n="13" met="-+---+-+-+-" rhyme="C">de cierta enfermedad sanó secreta,</l>
+				<l n="14" met="-+-+-+---+-" rhyme="D">poniéndose un Raguallo daca día.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

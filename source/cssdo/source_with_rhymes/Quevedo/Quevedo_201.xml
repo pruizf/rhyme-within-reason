@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>Insinúa con donaire que las miserias de esta vida dignamente pueden ser motivo de llanto y de risa también  </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+-+--+---+-" rhyme="A">¿Qué te ríes, filósofo cornudo?</l>
+				<l n="2" met="+-+--+---+-" rhyme="B">¿Qué sollozas, filósofo anegado?</l>
+				<l n="3" met="+-+--+-+-+-" rhyme="B">Sólo cumples, con ser recién casado</l>
+				<l n="4" met="---+--+-++-" rhyme="A">como el otro cabrón, recién viudo.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+-+--+-+-+-" rhyme="A">¿Una propia miseria haceros pudo</l>
+				<l n="6" met="-+---+-+-+-" rhyme="B">cosquillas y pucheros? ¿Un pecado</l>
+				<l n="7" met="++---++--+-" rhyme="B">es llanto y carcajada? He sospechado</l>
+				<l n="8" met="+--+-+---+-" rhyme="A">que es la taberna más que los sesudo.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="++-+-+++-+-" rhyme="C">¿Qué no te ahogues tú, qué no te corras,</l>
+				<l n="10" met="--+--+---+-" rhyme="D">bufonazo de fábulas y chistes,</l>
+				<l n="11" met="+----+---+-" rhyme="C">tal, que ni con los pésames te ahorras?</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+---+---+-" rhyme="D">Diréis, por disculpar lo que bebistes,</l>
+				<l n="13" met="-+---+---+-" rhyme="C">que son las opiniones como zorras,</l>
+				<l n="14" met="+--+-+-+-+-" rhyme="-">que uno las toma alegres y otro triste.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

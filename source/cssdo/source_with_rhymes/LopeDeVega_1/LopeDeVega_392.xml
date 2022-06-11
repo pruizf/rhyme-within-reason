@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 13 - La rosa </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+-+---+-" rhyme="A">Viendo la hermosa y cándida Azucena,</l>
+				<l n="2" met="-+-+---+-+-" rhyme="B">que al verde margen la corona inclina,</l>
+				<l n="3" met="-+-+-+---+-" rhyme="B">marchita ya la rosa Alejandrina,</l>
+				<l n="4" met="-+-+---+-+-" rhyme="A">así le dijo de arrogancia llena:</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--+---+-" rhyme="A">Engañada en la voz de Filomena</l>
+				<l n="6" met="---+++---+-" rhyme="B">te anticipaste, o Rosa peregrina,</l>
+				<l n="7" met="---+---+-+-" rhyme="B">pues presumiendo de deidad divina,</l>
+				<l n="8" met="-+-+---+-+-" rhyme="A">ahora envidias la hermosura ajena.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+-+-+-" rhyme="C">La Rosa respondió: ¿De mí te ríes,</l>
+				<l n="10" met="--+--+---+-" rhyme="D">Azucena, en tus hojas arrogantes?</l>
+				<l n="11" met="++---+-+-+-" rhyme="C">¡o loca presunción! pues no te fíes.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-++--+-+-+-" rhyme="D">Que no importa salir después ni antes,</l>
+				<l n="13" met="---+-+---+-" rhyme="C">si lo que miras hoy en mis rubíes,</l>
+				<l n="14" met="--+--+---+-" rhyme="D">amenaza mañana tus diamantes.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

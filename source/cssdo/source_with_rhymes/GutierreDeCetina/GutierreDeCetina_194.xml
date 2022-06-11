@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- L - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+---+-+-" rhyme="A">Pincel divino, venturosa mano,</l>
+				<l n="2" met="-+---++--+-" rhyme="B">perfecta habilidad única y rara;</l>
+				<l n="3" met="-+-+-+-+-+-" rhyme="B">concepto altivo do la envidia avara</l>
+				<l n="4" met="--+--+-+-+-" rhyme="A">si te piensa enmendar, presume en vano.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--+-+-+-" rhyme="A">Delicado matiz que el ser humano</l>
+				<l n="6" met="-+---+---+-" rhyme="B">nos muestra cual el cielo lo mostrara;</l>
+				<l n="7" met="-+---+-+++-" rhyme="B">beldad cuya beldad se ve tan clara</l>
+				<l n="8" met="-+-+-+---+-" rhyme="A">que al ojo engaña el arte soberano.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+-+-+-" rhyme="C">Artífice ingenioso, ¿qué sentiste</l>
+				<l n="10" met="--++-+---+-" rhyme="D">cuando tan cuerdamente contemplabas</l>
+				<l n="11" met="--+--+---+-" rhyme="E">el sujeto que muestran tus colores?</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+----+-+-+-" rhyme="C">Dime, si como yo la vi, la viste,</l>
+				<l n="13" met="--+--+---+-" rhyme="D">el pincel y la tabla en que pintabas,</l>
+				<l n="14" met="-++-++-+-+-" rhyme="E">y tú, ¿cómo no ardéis, cual yo, de amores?</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

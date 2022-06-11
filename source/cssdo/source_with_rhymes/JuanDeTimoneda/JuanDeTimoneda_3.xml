@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Juan de Timoneda</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XI - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+-+-++---+-" rhyme="A">A una ninfa yo vi que se peinaba</l>
+				<l n="2" met="-++--+-+-+-" rhyme="B">con un peine de plata de oro fino,</l>
+				<l n="3" met="--+--+---+-" rhyme="B">sobre el pecho y el cuello cristalino</l>
+				<l n="4" met="-+---+---+-" rhyme="A">se esparce y su blancura matizaba.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-----+---+-" rhyme="A">Y cuando con el peine lo apartaba,</l>
+				<l n="6" met="-+-+-+-+++-" rhyme="B">se veía el cuello y pecho que es tan digno,</l>
+				<l n="7" met="++---++--+-" rhyme="B">y un rostro que mirarle es desatino</l>
+				<l n="8" met="---+-+-+-+-" rhyme="A">pues como ciega el sol así cegaba.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+-+++-" rhyme="C">Volviendo sobre mí, que no fue poco,</l>
+				<l n="10" met="-+-+-++--+-" rhyme="D">le dije: «Gracia es esta y hermosura</l>
+				<l n="11" met="---+++---+-" rhyme="E">para causar cien mil competidores.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+-+++-" rhyme="C">Quien cuerdo fuere, aquí será más loco,</l>
+				<l n="13" met="-++--+-+-+-" rhyme="D">que no puede, señora, haber cordura</l>
+				<l n="14" met="-+---+---+-" rhyme="E">mayor que enloquecer por tus amores.»</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

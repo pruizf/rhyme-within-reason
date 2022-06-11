@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 67 - Quejósele una dama de un bofetón que le había dado su galán </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="---+-+---+-" rhyme="A">Para que no compréis artificiales</l>
+				<l n="2" met="+--+-+-+-+-" rhyme="B">rosas, señora Filis, Fabio os puso</l>
+				<l n="3" met="---+---+-+-" rhyme="B">las naturales, si el calor infuso</l>
+				<l n="4" met="-+---+---+-" rhyme="A">las puede conservar por naturales.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+-++-+-+-+-" rhyme="A">Ya que no os da regalos, da señales</l>
+				<l n="6" met="---+-+-+-+-" rhyme="B">de que os los ha de dar, galán al uso,</l>
+				<l n="7" met="+----+-+-+-" rhyme="B">puesto que en la venganza estoy confuso,</l>
+				<l n="8" met="+-+--+---+-" rhyme="A">viendo perlas en vos sobre corales.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+-+---+-" rhyme="C">Herir al sol en medio de su esfera,</l>
+				<l n="10" met="-+---+-+-+-" rhyme="D">cruel temeridad; matad a Fabio,</l>
+				<l n="11" met="-----+-+-+-" rhyme="C">¡mas ay que vuestros brazos Fabio espera!</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+---+-" rhyme="D">Y si amistades son el desagravio,</l>
+				<l n="13" met="+-+--+-+-+-" rhyme="C">tantos celos me dais, que más quisiera</l>
+				<l n="14" met="-+---+---+-" rhyme="D">vengar las amistades que el agravio.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XVII - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-+-+-+-" rhyme="A">Venganza fue de amor, flechada en vano,</l>
+				<l n="2" met="+--+---+-+-" rhyme="B">ese atrevido y castigado fuego</l>
+				<l n="3" met="--+--+-+++-" rhyme="B">donde, más que deidad, mostró ser ciego,</l>
+				<l n="4" met="---+--+--+-" rhyme="A">cuando tu agravio le fió a tu mano.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+--++--+-+-" rhyme="A">Un elemento es enemigo humano</l>
+				<l n="6" met="---+++---+-" rhyme="B">para mover a un sol desasosiego.</l>
+				<l n="7" met="+-++-+-+-+-" rhyme="B">Ruegue, no abrase, amor, que sólo el ruego</l>
+				<l n="8" met="-+---+---+-" rhyme="A">nació para vencer lo soberano.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="++-+-+---+-" rhyme="C">Ya no peligras, Celia, en la violencia</l>
+				<l n="10" met="-+---++--+-" rhyme="D">del fuego, ni de amor temes venganza,</l>
+				<l n="11" met="---+---+-+-" rhyme="E">porque tu nieve o tu rigor le excede.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="++-+-+---+-" rhyme="C">Siempre es edad del flaco la experiencia;</l>
+				<l n="13" met="+--+-+---+-" rhyme="D">ya que poder se deja a la esperanza,</l>
+				<l n="14" met="-+-+---+++-" rhyme="E">¿si sabe Celia lo que amor no puede?</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

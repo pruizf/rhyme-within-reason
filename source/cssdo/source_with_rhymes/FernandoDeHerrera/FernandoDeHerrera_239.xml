@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXV - A Cristóbal Mosquera de Figueroa </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="---+-+-+-+-" rhyme="A">Cuando mi pecho ardió en su dulce fuego,</l>
+				<l n="2" met="-+-+-+-+-+-" rhyme="B">osé cantar, Mosquera, el mal que siento,</l>
+				<l n="3" met="-+-+-+-+-+-" rhyme="B">y diome al tierno canto ufano aliento</l>
+				<l n="4" met="-+---+-+-+-" rhyme="A">el sol en cuyo ardor estuve ciego.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+-+-+-" rhyme="A">Osé mostrar mi llanto en blando ruego</l>
+				<l n="6" met="---+-+---+-" rhyme="B">a quien amor desprecia y su tormento,</l>
+				<l n="7" met="--+--+---+-" rhyme="B">y el humilde quejar de mi lamento</l>
+				<l n="8" met="-+-+-+-+-+-" rhyme="A">me dio osadía y dio esperanza luego.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+++-+-" rhyme="C">Ahora, que la luz yo pierdo ausente,</l>
+				<l n="10" met="-+---+---+-" rhyme="D">y crece mi dolor con su belleza,</l>
+				<l n="11" met="-+-+-+---+-" rhyme="E">notad el grande error de mi porfía.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--+-+-+-+-" rhyme="C">Lloro el pasado bien y el mal presente,</l>
+				<l n="13" met="-+---+---+-" rhyme="D">y puesto en soledad de mi tristeza,</l>
+				<l n="14" met="--+--+---+-" rhyme="E">la esperanza me falta y la osadía.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

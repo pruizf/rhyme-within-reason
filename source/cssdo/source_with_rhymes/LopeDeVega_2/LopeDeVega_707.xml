@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 877 - Jornada II, LEONIDA De El laberinto de Creta </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-+-+-+-" rhyme="A">Huyendo voy de todo el bien que tengo,</l>
+				<l n="2" met="++-+++---+-" rhyme="B">no tengo ya más bien que el de que huyo;</l>
+				<l n="3" met="+----+--++-" rhyme="B">huyo porque me tiene por mal suyo,</l>
+				<l n="4" met="---+-+-+-+-" rhyme="A">y como mal del bien huyendo vengo.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="++---+---+-" rhyme="A">No es gusto de la vida que entretengo</l>
+				<l n="6" met="---+-+++-+-" rhyme="B">sino saber, mi bien, que es gusto tuyo,</l>
+				<l n="7" met="-+---+---+-" rhyme="B">pues viendo que el honor te restituyo</l>
+				<l n="8" met="-+---+---+-" rhyme="A">en medio del camino me detengo.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+---+-+-" rhyme="C">Ven a matarme si a tu honor provoca</l>
+				<l n="10" met="-+-+-+---+-" rhyme="D">de algún traidor el loco desvarío,</l>
+				<l n="11" met="+--+-+--++-" rhyme="C">celos o amor de alguna mujer loca.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="++---+---+-" rhyme="D">No huyo por vivir, pues desconfío</l>
+				<l n="13" met="--+--+---+-" rhyme="C">de la vida sin ti, mas porque toca</l>
+				<l n="14" met="---+-+-+-+-" rhyme="D">a tu precioso honor guardar el mío.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

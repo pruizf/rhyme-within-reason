@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 8 - Acto III, GASPAR De El hidalgo Bencerraje </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+---+-+-" rhyme="A">Si fuera yo la juventud florida,</l>
+				<l n="2" met="---+-+---+-" rhyme="B">en vuestra verde edad me aposentara,</l>
+				<l n="3" met="--+-++---+-" rhyme="B">y si fuera yo el tiempo, me parara</l>
+				<l n="4" met="---+-+---+-" rhyme="A">para que fuera eterna vuestra vida.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+---+-" rhyme="A">Si fuera el sol, la luz esclarecida</l>
+				<l n="6" met="---+---+-+-" rhyme="B">de vuestros ojos por mi luz tomara,</l>
+				<l n="7" met="---+-+---+-" rhyme="B">para que el mundo, en viéndola, os llamara</l>
+				<l n="8" met="+--+-+-+-+-" rhyme="A">sola del sol de tanta luz vestida.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-++--+---+-" rhyme="C">Si no hubiérades ido para hacerme</l>
+				<l n="10" met="++---+--++-" rhyme="D">un ser de vuestro ser, a pensar vengo,</l>
+				<l n="11" met="--++---+-+-" rhyme="E">que a poder ser, que lo que no es se vea,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+-+-++--++-" rhyme="C">no quisiera haber sido, por no verme</l>
+				<l n="13" met="-+-+-+-+-+-" rhyme="D">con ser sin vos, porque este ser que tengo</l>
+				<l n="14" met="++-+---+++-" rhyme="E">es ser por vos hasta que ser no sea.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

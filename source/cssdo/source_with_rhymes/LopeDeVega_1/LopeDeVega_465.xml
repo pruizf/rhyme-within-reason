@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 80 - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="--+--+---+-" rhyme="A">Si de piel asperísima vestido,</l>
+				<l n="2" met="--+--+---+-" rhyme="B">el cabello revuelto y erizado,</l>
+				<l n="3" met="-+-+---+-+-" rhyme="B">al gran Bautista en el Jordán sagrado,</l>
+				<l n="4" met="++---+---+-" rhyme="A">si es Cristo, le preguntan, prometido.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+---+-+-+-" rhyme="A">A vos, aunque también con piel ceñido,</l>
+				<l n="6" met="--+--+-+-+-" rhyme="B">pero en manos, costado y pies llagado,</l>
+				<l n="7" met="-+---+---+-" rhyme="B">en Cristo por amores transformado,</l>
+				<l n="8" met="-+-+-+---+-" rhyme="A">y a Cristo en cuerpo sangre y parecido.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+---+-+-" rhyme="C">¿Cómo os llamara, si Israel os viera?</l>
+				<l n="10" met="-----+---+-" rhyme="D">y porque la humildad vuestra se arguya,</l>
+				<l n="11" met="+-+--+-+-+-" rhyme="E">¿qué dijérades vos después de visto?</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="++---+---+-" rhyme="C">¿Quién duda que Francisco respondiera,</l>
+				<l n="13" met="++++-+-+-+-" rhyme="D">no soy yo Cristo, soy estampa suya,</l>
+				<l n="14" met="-+---++-++-" rhyme="E">ni vivo como yo, vive en mí Cristo?</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

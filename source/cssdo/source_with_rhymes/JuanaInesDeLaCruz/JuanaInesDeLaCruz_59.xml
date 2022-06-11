@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- LXII - A Señor San José, escrito según el asunto de un certamen que pedía las metáforas que contiene </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+----+-+-+-" rhyme="A">Nace de la escarcha fresca rosa</l>
+				<l n="2" met="+--+-+---+-" rhyme="B">dulce abeja, y apenas aparece,</l>
+				<l n="3" met="---+---+-+-" rhyme="B">cuando a su regio natalicio ofrece</l>
+				<l n="4" met="-+-+-+---+-" rhyme="A">tutela verde, palma victoriosa.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-++--+-+-+-" rhyme="A">Así Rosa, María, más hermosa,</l>
+				<l n="6" met="-+-+-+-+-+-" rhyme="B">concibe a Dios, y el vientre apenas crece,</l>
+				<l n="7" met="-+---+---+-" rhyme="B">cuando es, de la sospecha que padece,</l>
+				<l n="8" met="--+--+-+-+-" rhyme="A">el Espíritu Santo Palma umbrosa.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-----+---+-" rhyme="C">Pero cuando el tirano, por prenderlo,</l>
+				<l n="10" met="+--+-+-+-+-" rhyme="D">tanta inocente turba herir pretende,</l>
+				<l n="11" met="+-+--++--+-" rhyme="C">sólo Vos, ¡oh José!, vais a esconderlo:</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+---+-" rhyme="D">para que en Vos admire, quien lo entiende,</l>
+				<l n="13" met="-+-+-+---+-" rhyme="C">que Vos bastáis del mundo a defenderlo,</l>
+				<l n="14" met="---+-+---+-" rhyme="D">y que de Vos, Dios sólo le defiende.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

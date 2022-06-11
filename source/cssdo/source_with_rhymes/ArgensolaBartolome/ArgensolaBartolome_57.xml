@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XV - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="--++---+-+-" rhyme="A">De la unión, Silvio, con que amor prospera</l>
+				<l n="2" met="-+---+---+-" rhyme="B">o endiosa nuestras almas, el conceto</l>
+				<l n="3" met="---+-+++-+-" rhyme="B">que la esperanza forma es tan perfeto,</l>
+				<l n="4" met="---+-+---+-" rhyme="A">que la opresión del yugo le aligera.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+--++-" rhyme="A">Y así, quien ama y dice que no espera,</l>
+				<l n="6" met="--+-++-+-+-" rhyme="B">por ostentan más fe al amado objeto,</l>
+				<l n="7" met="---+-++--+-" rhyme="B">a su interior verdad pierde el respeto,</l>
+				<l n="8" met="---+---+-+-" rhyme="A">sin cuyo alivio ni alentar pudiera.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+-+--+---+-" rhyme="C">Bien que sí, generosa en la tardanza</l>
+				<l n="10" met="---+-+---+-" rhyme="D">(mientras que en gloria no se le convierte),</l>
+				<l n="11" met="--+-++---+-" rhyme="E">a finezas más nobles les convida.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--+---+++-" rhyme="D"> Sufra y espere, mas con ley tan fuerte,</l>
+				<l n="13" met="---+-+-+-+-" rhyme="E">que aunque le falte esfuerzo, no le pida</l>
+				<l n="14" met="-+---+---+-" rhyme="C">jamás el sufrimiento a la esperanza.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

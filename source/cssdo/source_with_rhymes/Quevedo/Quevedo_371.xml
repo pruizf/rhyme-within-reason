@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>Soneto amoroso </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+---+-+-" rhyme="A">Solo sin vos, y mi dolor presente</l>
+				<l n="2" met="-+-+---+-+-" rhyme="B">mi pecho rompo con mortal suspiro;</l>
+				<l n="3" met="+-+-++---+-" rhyme="B">sólo vivo aquel tiempo cuando os miro,</l>
+				<l n="4" met="-+---+---+-" rhyme="A">mas poco mi destino lo consiente.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+++-++--+-" rhyme="A">Mi mal es propio, el bien es accidente;</l>
+				<l n="6" met="---+-+-+-+-" rhyme="B">pues, cuando verme en voz presente aspiro,</l>
+				<l n="7" met="++-+-+---+-" rhyme="B">no falta causa al mal porque suspiro,</l>
+				<l n="8" met="---+-+-+-+-" rhyme="A">aunque con vos estoy, estando ausente.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-++-++-+-+-" rhyme="C">Aquí os hablo, aquí os tengo, y aquí os veo,</l>
+				<l n="10" met="-+-+-+---+-" rhyme="D">gozando de este bien en mi memoria,</l>
+				<l n="11" met="---+-+-+-+-" rhyme="E">mientras que el bien que espero, Amor dilata.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-++--+---+-" rhyme="C">¡Mirad cómo me mata mi deseo:</l>
+				<l n="13" met="+-+--++--+-" rhyme="D">que he venido a tener sólo por gloria</l>
+				<l n="14" met="-+-+---+-+-" rhyme="E">vivir contento en lo que más me mata!</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- CXI - A la muerte de un caballero mozo </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="++-+---+-+-" rhyme="A">Mira un ejemplo de la vida humana,</l>
+				<l n="2" met="+-+--+---+-" rhyme="B">y una pena en los ojos oprimida,</l>
+				<l n="3" met="-+---+---+-" rhyme="B">de aquel, que en el orgullo de su vida,</l>
+				<l n="4" met="+--+---+-+-" rhyme="A">hizo a la muerte competencia vana.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="++-+---+-+-" rhyme="A">No hay que fiar en juventud lozana,</l>
+				<l n="6" met="-+-+-+---+-" rhyme="B">pues vemos más segura la caída,</l>
+				<l n="7" met="+-+--+---+-" rhyme="B">y esta flor, que brillaba de lucida,</l>
+				<l n="8" met="++-+-+---+-" rhyme="A">fue Aurora ayer, y Ocaso a la mañana.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+++-+---+-" rhyme="C">Quien no teme a este aviso se asegura,</l>
+				<l n="10" met="+-+--+-+-+-" rhyme="D">ser escollo en el mar de tantas penas,</l>
+				<l n="11" met="+++-++-+-+-" rhyme="C">polvo es hoy el que ha sido peña dura.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--+-+---+-" rhyme="D">Rompe los hierros, rompe las cadenas,</l>
+				<l n="13" met="-+++-+---+-" rhyme="C">que no es muy sabio aquel, que se aventura</l>
+				<l n="14" met="--++-+---+-" rhyme="D">en juzgar estas causas por ajenas.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

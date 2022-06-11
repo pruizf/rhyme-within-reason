@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Juan Boscan</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- II - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="++-+-++--+-" rhyme="A">Un tiempo yo pensé y tuve por cierto</l>
+				<l n="2" met="+--+-++--+-" rhyme="B">que otro dolor hallar no se podría</l>
+				<l n="3" met="--+--+---+-" rhyme="B">que igualase al morir y a su porfía,</l>
+				<l n="4" met="-+-+-+---+-" rhyme="A">y veo que anduve errado y sin concierto.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="---++-++++-" rhyme="A">Por lo que digo, una vez más ser muerto</l>
+				<l n="6" met="-+---++--+-" rhyme="B">estimo que morir tantas al día</l>
+				<l n="7" met="---+-+---+-" rhyme="B">cuantas se ofrece ver sin alegría</l>
+				<l n="8" met="--+--+-+-+-" rhyme="A">vuestro gesto de amor, seguro puerto.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="---+---+-+-" rhyme="C">Si con desdén mi voluntad tan firme</l>
+				<l n="10" met="-+++-+-+-+-" rhyme="D">tratáis, es un dolor tan recio y extraño</l>
+				<l n="11" met="-+---+---+-" rhyme="E">que juzgo por menor el de la muerte;</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+---++--+-" rhyme="E">mirad si, con verdad, caso tan fuerte</l>
+				<l n="13" met="--++--++-+-" rhyme="D">afirmar puedo que no hay mal tamaño</l>
+				<l n="14" met="-+-+-+---+-" rhyme="C">pues tales tragos paso sin morirme.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

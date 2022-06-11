@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXV - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="---+---+-+-" rhyme="A">A la ribera de la mar sentada,</l>
+				<l n="2" met="---+--+--+-" rhyme="B">sobre el sepulcro de Ayax Telamón,</l>
+				<l n="3" met="---+-+---+-" rhyme="A">la Fortaleza estaba despechada,</l>
+				<l n="4" met="-+---+---+-" rhyme="B">moviendo contra Grecia indignación.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--+---+-" rhyme="A">Los cabellos de hierro y la acerada</l>
+				<l n="6" met="+--+-+---+-" rhyme="B">veste rompía al llanto y turbación;</l>
+				<l n="7" met="-+---+---+-" rhyme="A">la gente se alteró, y aunque espantada,</l>
+				<l n="8" met="+-+--+---+-" rhyme="B">quiso de ella entender su alteración.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="--++-+---+-" rhyme="C">Respondió, vuelto el rostro a los troyanos:</l>
+				<l n="10" met="+--+-+--++-" rhyme="D">«Aun por haceros Grecia mayor mengua,</l>
+				<l n="11" met="--+--+---+-" rhyme="E">contra Ayax por Ulises sentenció,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+-+-+-" rhyme="C">desposeyendo aquellas fuertes manos,</l>
+				<l n="13" met="--+--+-+-+-" rhyme="D">y entregando a la vil y flaca lengua</l>
+				<l n="14" met="-+---+---+-" rhyme="E">las armas con que Aquiles os venció».</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

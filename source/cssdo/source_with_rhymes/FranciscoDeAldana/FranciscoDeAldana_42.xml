@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- VIII - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---+-+-+-" rhyme="A">Si nunca, del umbroso y cavo seno</l>
+				<l n="2" met="-+---+-+-+-" rhyme="B">saliendo con tu Flora mano a mano,</l>
+				<l n="3" met="+--+-+-+-+-" rhyme="B">Céfiro, viste en monte, en prado, en llano,</l>
+				<l n="4" met="-+-+---+-+-" rhyme="A">gozar el campo de tu nombre lleno;</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+-+-+-" rhyme="A">desecha ya, por Dios, del mar Tirreno</l>
+				<l n="6" met="---+-+-+-+-" rhyme="B">-si tus orejas hiere el son humano-</l>
+				<l n="7" met="+--+-+-+-+-" rhyme="B">un movimiento crudo y tan insano</l>
+				<l n="8" met="-+---+-+-+-" rhyme="A">que el Noto levantó por caso ajeno;</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+-+---+-" rhyme="C">hincha las blancas velas, con las ondas</l>
+				<l n="10" met="+--+-+---+-" rhyme="D">menos hinchadas ya, del favorable</l>
+				<l n="11" met="-+-+-+-+-+-" rhyme="E">y dulce soplo do mi bien consiste.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+++---+-+-" rhyme="C">Razón es, Santo Dios, que al fin respondas,</l>
+				<l n="13" met="---+-+---+-" rhyme="D">pues mi plegaria, justa y miserable,</l>
+				<l n="14" met="-+---+-+-+-" rhyme="E">contiene la razón que en ella viste.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- III - Clori </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-+---+-" rhyme="A">Al sol peinaba Clori sus cabellos</l>
+				<l n="2" met="-+---+-+-+-" rhyme="B">con peine de marfil, con mano bella;</l>
+				<l n="3" met="-+---+-+-+-" rhyme="B">mas no se parecía el peine en ella</l>
+				<l n="4" met="-----+-+-+-" rhyme="A">como se oscurecía el sol en ellos.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+---+-" rhyme="-">Cogió sus lazos de oro, y al cogerlos,</l>
+				<l n="6" met="-+--++--++-" rhyme="B">segunda mayor luz descubrió aquella</l>
+				<l n="7" met="-+---+++-+-" rhyme="B">delante quien el sol es una estrella</l>
+				<l n="8" met="-+-+---+-+-" rhyme="A">y esfera España de sus rayos bellos.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+---+-+-" rhyme="C">Divinos ojos, que en su dulce oriente</l>
+				<l n="10" met="++-+-+-+-+-" rhyme="D">dan luz al mundo, quitan luz al cielo,</l>
+				<l n="11" met="-+---+---+-" rhyme="C">y espera idolatrarlos occidente.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+-+--+---+-" rhyme="D">Esto amor solicita con su vuelo,</l>
+				<l n="13" met="-+-+-+-+-+-" rhyme="C">que en tanto mar será un arpón luciente,</l>
+				<l n="14" met="--+--+-+-+-" rhyme="D">de la cerda inmortal mortal anzuelo.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

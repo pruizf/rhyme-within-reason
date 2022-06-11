@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- CCIII - Natura paucis contenta Soneto </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="--+--+-+-+-" rhyme="A">Venturoso rincón, amigos mudos,</l>
+				<l n="2" met="+--+-+-+-+-" rhyme="B">libros queridos, pobre y corto lecho,</l>
+				<l n="3" met="+--+---+-+-" rhyme="B">viejas paredes donde el tosco techo</l>
+				<l n="4" met="+-+--+---+-" rhyme="A">muestra apenas sus árboles desnudos.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+---+-+-" rhyme="A">Pintura humilde de pinceles rudos,</l>
+				<l n="6" met="+--+-+-+-+-" rhyme="B">roto escritorio de haya frágil hecho,</l>
+				<l n="7" met="---+---+-+-" rhyme="B">donde, a la traza de mi abierto pecho,</l>
+				<l n="8" met="--+-++-+-+-" rhyme="A">de paciencia no más guardáis escudos.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+---+-+-" rhyme="C">Vidros, ejemplo de ambición subida</l>
+				<l n="10" met="---+-+---+-" rhyme="D">que de los vientos vive con recato;</l>
+				<l n="11" met="-+-+---+-+-" rhyme="C">dichoso yo que sin tener asida</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+---+-+-" rhyme="D">el alma al oro, a la esperanza el plato,</l>
+				<l n="13" met="-+-+---+-+-" rhyme="C">pasó en vosotros descansada vida</l>
+				<l n="14" met="+----+++-+-" rhyme="D">lejos de idolatrar un dueño ingrato.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

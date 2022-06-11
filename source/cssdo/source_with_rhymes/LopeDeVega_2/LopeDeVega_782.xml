@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 724 - Acto I, LEUCIPE De La tragedia del rey don Sebastián y Bautismo del Príncipe de Marruecos </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+-+---+-" rhyme="A">Olas del mar furiosas me parecen</l>
+				<l n="2" met="-+---+---+-" rhyme="B">amor con tu ocasión mis pensamientos,</l>
+				<l n="3" met="---+---+-+-" rhyme="B">que a voluntad de los ligeros vientos</l>
+				<l n="4" met="++-+---+-+-" rhyme="A">a un mismo tiempo como menguan crecen.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="---+-+---+-" rhyme="A">Si las divinas partes me enloquecen</l>
+				<l n="6" met="-+-+-+-+-+-" rhyme="B">de este Real sujeto, y van contentos</l>
+				<l n="7" met="--+--++--+-" rhyme="B">mis vencidos a verle, otros intentos</l>
+				<l n="8" met="-+-+---+-+-" rhyme="A">la casta fama, y la virtud me ofrecen.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+-+---+-" rhyme="C">Quiero, y resisto a brazos mi cuidado,</l>
+				<l n="10" met="+----+-+-+-" rhyme="D">hago que la razón amor enfrene,</l>
+				<l n="11" met="-+-+---+-+-" rhyme="C">y no me aparto del sujeto amado.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+---+-+-" rhyme="D">Dudosa a serme la victoria viene,</l>
+				<l n="13" met="-+---++--+-" rhyme="C">que amar y resistir, es el estado</l>
+				<l n="14" met="+--+---+-+-" rhyme="D">más riguroso que la vida tiene.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

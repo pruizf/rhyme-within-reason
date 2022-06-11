@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Ramírez  Pagan,  Diego</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>Al almirante Aliso </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---+-+-+-" rhyme="A">Aquí donde entre montes raudo mueve</l>
+				<l n="2" met="--+--++--+-" rhyme="B">su corriente caudal tajo dorado;</l>
+				<l n="3" met="-+---+-+-+-" rhyme="B">aquí donde las aguas se han trocado</l>
+				<l n="4" met="-+-+---+-+-" rhyme="A">en blanca espuma, como blanca nieve.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+-+-+-" rhyme="A">Aquí, lugar dichoso, aquí de debe</l>
+				<l n="6" met="+--+-+-+++-" rhyme="B">cuanto de honor y gloria el cielo ha dado</l>
+				<l n="7" met="-+---+---+-" rhyme="B">el número escogido y consagrado</l>
+				<l n="8" met="-+-+---+-+-" rhyme="A">que el sabio humor de la Castalia bebe.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+-+-+-" rhyme="C">Aquí por celebrar la cruda historia</l>
+				<l n="10" met="---+-+-+-+-" rhyme="D">del desamor de Alisa en dulce canto,</l>
+				<l n="11" met="--+--+-+-+-" rhyme="-">describieron tu mal, Aliso mío.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+---+-" rhyme="C">Consagran esta peña en tu memoria,</l>
+				<l n="13" met="-+---+-+-+-" rhyme="D">y al son del amoroso y triste llanto</l>
+				<l n="14" met="-+---+-+-+-" rhyme="-">el suyo acrecentó el soberbio mío.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

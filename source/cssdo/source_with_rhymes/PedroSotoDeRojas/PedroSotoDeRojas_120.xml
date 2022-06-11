@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XCIV - Igualdad de la ausencia con la muerte </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+-+--+-+-+-" rhyme="A">¿Hielo, y fuego de Amor, ceniza, y llama,</l>
+				<l n="2" met="+--+---+-+-" rhyme="B">qué pretendéis en mi cansado pecho?</l>
+				<l n="3" met="++-+-+++-+-" rhyme="B">¿cuál hurto? ¿cuál rigor? ¿cuál daño he hecho</l>
+				<l n="4" met="--+--+-+-+-" rhyme="A">cuyo justo castigo así me infama?</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="++-+---+-+-" rhyme="A">¿Qué voz ministros os incita y llama,</l>
+				<l n="6" met="--+--+---+-" rhyme="B">donde no hay vencimiento de provecho?</l>
+				<l n="7" met="-+---+---+-" rhyme="B">Hareisme que aborrezca a mi despecho,</l>
+				<l n="8" met="-+---+--++-" rhyme="A">si tanto le apretáis a quien bien ama.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-++--+-+-+-" rhyme="C">Templad estos extremos un instante,</l>
+				<l n="10" met="+----+---+-" rhyme="D">si es que mi destemplanza os lo consiente,</l>
+				<l n="11" met="--+--+-+-+-" rhyme="C">diferencia del muerto, al que es amante.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="--+--+-+-+-" rhyme="D">¡Mas ay mísero yo! que estoy ausente,</l>
+				<l n="13" met="-++--++--+-" rhyme="C">sufrid pecho, sufrid, nada os espante,</l>
+				<l n="14" met="-+-+-+---+-" rhyme="D">que no es la muerte, a ausencia diferente.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

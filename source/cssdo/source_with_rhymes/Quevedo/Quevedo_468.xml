@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>Burla de los que con dones quieren granjear del cielo pretensiones injustas  </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="---+-+-+-+-" rhyme="A">Para comprar los hados más propicios,</l>
+				<l n="2" met="-----+-+-+-" rhyme="B">como si la deidad vendible fuera,</l>
+				<l n="3" met="--+--+---+-" rhyme="B">con el toro mejor de la ribera</l>
+				<l n="4" met="-+---+---+-" rhyme="A">ofreces cautelosos sacrificios.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+----+---+-" rhyme="A">Pides felicidades a tus vicios;</l>
+				<l n="6" met="---+-+---+-" rhyme="B">para tu nave rica y usurera,</l>
+				<l n="7" met="+--+-+---+-" rhyme="B">viento tasado y onda lisonjera,</l>
+				<l n="8" met="--+--+---+-" rhyme="A">mereciéndole al golfo precipicios.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="--+--+---+-" rhyme="C">Porque exceda a la cuenta tu tesoro.</l>
+				<l n="10" met="---+++---+-" rhyme="D">a tu ambición, no a Júpiter, engañas;</l>
+				<l n="11" met="+-+--+---+-" rhyme="C">que él cargó las montañas sobre el oro.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+-+-+-" rhyme="D">Y cuando la ara en sangre humosa bañas,</l>
+				<l n="13" met="++---+---+-" rhyme="C">tú miras las entrañas de tu toro,</l>
+				<l n="14" met="-+-+-+---+-" rhyme="D">y Dios está mirando tus entrañas.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

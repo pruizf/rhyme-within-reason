@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Pedro de Padilla</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXV - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-+-+-+-" rhyme="A">Si Celia duerme, amor lo mismo hace,</l>
+				<l n="2" met="---+-+-+-+-" rhyme="B">y si los claros, bellos, dulces ojos,</l>
+				<l n="3" met="+----+++-+-" rhyme="B">abre, para quitar cien mil despojos,</l>
+				<l n="4" met="-++--+---+-" rhyme="A">aquello es lo que a Amor le satisface.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--+---+-" rhyme="A">Para Celia, y amor la contra hace,</l>
+				<l n="6" met="-+---+---+-" rhyme="B">porque es imitador de sus antojos,</l>
+				<l n="7" met="-+---+---+-" rhyme="B">y así de su placer, o sus enojos,</l>
+				<l n="8" met="-+-+-+---+-" rhyme="A">se agrada siempre amor, o se desplace.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="---+-+-+-+-" rhyme="-">Adonde Celia parte, va con ella,</l>
+				<l n="10" met="---+---+-+-" rhyme="C">y adonde Celia para, está parado,</l>
+				<l n="11" met="+-+-++-+-+-" rhyme="-">que un momento no vive amor sin ella.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+---+-" rhyme="C">Y en esto sólo se ha diferenciado,</l>
+				<l n="13" met="-++--+-+-+-" rhyme="-">que es áspera, cruel, ingrata, ella,</l>
+				<l n="14" met="-+-+-+---+-" rhyme="C">y amor, humilde, manso, y regalado.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

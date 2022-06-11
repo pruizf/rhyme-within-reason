@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXI - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+---+-+-" rhyme="A"> Vivir, señora, quien os vio, sin veros,</l>
+				<l n="2" met="+--+-+---+-" rhyme="B">no es por virtud ni fuerza de la vida,</l>
+				<l n="3" met="--+--++--+-" rhyme="B">que, en partiendo de vos, fuera perdida,</l>
+				<l n="4" met="--+--++--+-" rhyme="A">si el dejaros de ver fuese perderos;</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--++--+-" rhyme="A">mas de tantos valor es el quereros,</l>
+				<l n="6" met="--+--+-+-+-" rhyme="B">que, en teniédoos el alma en sí esculpida,</l>
+				<l n="7" met="--+--+--++-" rhyme="B">de su vista y memoria, que no olvida,</l>
+				<l n="8" met="-+---++--+-" rhyme="A">ninguna novedad basta a moveros.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+-----+-" rhyme="C">Así, aunque lejos de vuestra presencia,</l>
+				<l n="10" met="++---++--+-" rhyme="D">vos sola me estaréis siempre presente</l>
+				<l n="11" met="-+---++--+-" rhyme="E">y no me faltaréis hora ninguna,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="--+--+++-+-" rhyme="D">sin que pueda tenerme un punto ausente</l>
+				<l n="13" met="-+---+-+-+-" rhyme="C">el áspero desdén, la cruda ausencia,</l>
+				<l n="14" met="+-+--++--+-" rhyme="E">nueva llaga de amor, tiempo o fortuna.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

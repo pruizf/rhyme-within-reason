@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- CLXVI - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+---+-+-" rhyme="A">Hágame el tiempo cuanto mal quisiere</l>
+				<l n="2" met="-+---+---+-" rhyme="B">y nunca de mis daños se contente,</l>
+				<l n="3" met="-++--+-+-+-" rhyme="B">que no me he de perder inútilmente</l>
+				<l n="4" met="-----+---+-" rhyme="A">por lo que sin propósito dijere.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+---+-" rhyme="A">Gobierne bien o mal el que tuviere</l>
+				<l n="6" met="--+--+---+-" rhyme="B">a su cargo las leyes de la gente,</l>
+				<l n="7" met="-+---+---+-" rhyme="B">que a mí, y a mi censor impretendiente,</l>
+				<l n="8" met="+-+--+---+-" rhyme="A">no hay mudanza de estado que me altere.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+----+---+-" rhyme="C">Lleve mi confianza por el suelo</l>
+				<l n="10" met="-+---+--++-" rhyme="D">sus alas, pues parece que no acierta</l>
+				<l n="11" met="---+---+-+-" rhyme="C">el que se atreve a peligroso vuelo;</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--+---+-+-" rhyme="D">quede mi queja y esperanza muerta,</l>
+				<l n="13" met="-+---+-+-+-" rhyme="C">pues vemos que la envidia más que el celo</l>
+				<l n="14" met="-----+-+-+-" rhyme="D">a la murmuración abrió la puerta.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

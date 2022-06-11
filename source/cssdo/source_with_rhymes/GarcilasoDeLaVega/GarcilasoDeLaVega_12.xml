@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ribes Lafoz</name>
+					<name>Noelia Sánchez López</name>
+					<name>Borja Navarro Colorado</name>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Garcilaso de La Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>-XII-</title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-----++--+-" rhyme="A">Si para refrenar este deseo</l>
+				<l n="2" met="+--+-+---+-" rhyme="B">loco, imposible, vano, temeroso,</l>
+				<l n="3" met="---+++---+-" rhyme="B">y guarecer de un mal tan peligroso,</l>
+				<l n="4" met="++--++--++-" rhyme="A">que es darme a entender yo lo que no creo,</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+--+-+---+-" rhyme="A">no me aprovecha verme cual me veo,</l>
+				<l n="6" met="-+---+-+-+-" rhyme="B">o muy aventurado o muy medroso,</l>
+				<l n="7" met="-+---+-+-+-" rhyme="B">en tanta confusión, que nunca oso</l>
+				<l n="8" met="-+-+-+---+-" rhyme="A">fïar el mal de mí que lo poseo,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="++---++--+-" rhyme="C">¿qué me ha de aprovechar ver la pintura</l>
+				<l n="10" met="-+---+---+-" rhyme="D">de aquel que con las alas derretidas</l>
+				<l n="11" met="-+-+-+-+++-" rhyme="E">cayendo, fama y nombre al mar ha dado,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-----+---+-" rhyme="C">y la del que su fuego y su locura</l>
+				<l n="13" met="+--+-+---+-" rhyme="D">llora entre aquellas plantas conocidas,</l>
+				<l n="14" met="-+---+---+-" rhyme="E">apenas en el agua resfriado?</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

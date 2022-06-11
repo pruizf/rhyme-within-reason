@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXV - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="---+---+-+-" rhyme="A">Sobre el sepulcro del ilustre griego,</l>
+				<l n="2" met="-+---+---+-" rhyme="B">que honró con sus cenizas el Sigeo</l>
+				<l n="3" met="-+-+-+---+-" rhyme="B">mejor que a Caria el rico Mausoleo;</l>
+				<l n="4" met="--+--+--++-" rhyme="A">Alejandro paró, y exclamó luego:</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+---+-+-+-" rhyme="A">«¡Oh gloria de la Grecia!, claro fuego,</l>
+				<l n="6" met="--+--+---+-" rhyme="B">cuya llama las nieblas del Leteo</l>
+				<l n="7" met="++---+---+-" rhyme="B">no bastan a encubrir, ni su trofeo</l>
+				<l n="8" met="-+-+-+-+-+-" rhyme="A">robar podrá jamás olvido ciego.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+-+--++-" rhyme="C">A ti, dichoso joven, guardó el cielo,</l>
+				<l n="10" met="--+--+-+-+-" rhyme="D">porque eterno tu nombre al mundo fuera,</l>
+				<l n="11" met="-+-+---+-+-" rhyme="E">del grande Homero la divina historia.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+-+-+-+-" rhyme="C">Que si de aquella pluma el alto vuelo</l>
+				<l n="13" met="-+++-+---+-" rhyme="D">faltara, un mismo túmulo cubriera</l>
+				<l n="14" met="--++---+-+-" rhyme="E">tu mortal suerte, y tu inmortal memoria.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

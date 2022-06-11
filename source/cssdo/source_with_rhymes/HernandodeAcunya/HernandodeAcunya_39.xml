@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>-XLIV-</title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+--++-+-" rhyme="A">En muy suave aunque en muy gran tormento</l>
+				<l n="2" met="+--+-+-+-+-" rhyme="B">vivo, y arderme siento en dulce fuego,</l>
+				<l n="3" met="-+-+-+++-+-" rhyme="B">do en vivas llamas hallo un gran sosiego</l>
+				<l n="4" met="--+--+---+-" rhyme="A">y en extrema pasión contentamiento.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-----+-" rhyme="A">¿Con qué manera de agradecimiento</l>
+				<l n="6" met="--++-+---+-" rhyme="B">pagaré amor que en tal desasosiego,</l>
+				<l n="7" met="---+---+-+-" rhyme="B">y en el extremo de pasión do llego,</l>
+				<l n="8" met="-+---+---+-" rhyme="A">me tiene con su causa tan contento?</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+--+-+---+-" rhyme="C">Sólo mostrarme puedo agradecido</l>
+				<l n="10" met="---+-+---+-" rhyme="D">en contentarme ahora y en pesarme</l>
+				<l n="11" met="-+-+++---+-" rhyme="E">que me halla Amor tal pena dilatado;</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="--+--+-+-+-" rhyme="D">que pues tal ocasión había de darme,</l>
+				<l n="13" met="--+--++--+-" rhyme="C">con razón llamaré tiempo perdido</l>
+				<l n="14" met="-----+-+-+-" rhyme="E">el que sin padecer se me ha pasado.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

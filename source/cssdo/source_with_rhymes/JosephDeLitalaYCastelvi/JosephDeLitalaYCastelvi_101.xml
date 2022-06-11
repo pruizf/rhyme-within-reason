@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- LII - Canta amorosas influencias de los astros desatadas en nueve armonías y dulces metros </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+-+---+-" rhyme="A">Ah del Amor sagrada Astrología,</l>
+				<l n="2" met="---+-+---+-" rhyme="B">que predomina en cuerpos sublunares,</l>
+				<l n="3" met="---+-+---+-" rhyme="B">sin excepción de tierras, y de mares,</l>
+				<l n="4" met="---+-+---+-" rhyme="A">por dilatados términos del día.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--+---+-" rhyme="A">Que respeto, que imán, que simpatía</l>
+				<l n="6" met="++-+-----+-" rhyme="B">es esta (Cielos) con que en sus altares,</l>
+				<l n="7" met="--+--+---+-" rhyme="B">sacrificios votivos singulares,</l>
+				<l n="8" met="--+--+---+-" rhyme="A">engañada la propia fantasía.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+-+---+-" rhyme="C">Con un impulso arrastra soberano,</l>
+				<l n="10" met="--+-++---+-" rhyme="D">el arbitrio más libre y altanero,</l>
+				<l n="11" met="+----+---+-" rhyme="C">máximas ejerciendo de tirano.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="---+---+-+-" rhyme="D">Porque razón (o Celestial Clavero)</l>
+				<l n="13" met="--+--+---+-" rhyme="C">me sujetas a imperios de tu mano</l>
+				<l n="14" met="-+---+---+-" rhyme="D">haciéndome vivir de lo que muero.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

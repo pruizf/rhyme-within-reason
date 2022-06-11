@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XLV - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-++--+---+-" rhyme="A"> Pues no siempre tus rayos vengativos</l>
+				<l n="2" met="--+--+---+-" rhyme="B">sobre montes y alcázares fulminas,</l>
+				<l n="3" met="-+-+-+---+-" rhyme="B">y alguna vez destroncas las encinas</l>
+				<l n="4" met="-+---+---+-" rhyme="A">y abrasas los pacíficos olivos,</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+-+--+---+-" rhyme="A">un pedante que, a gritos excesivos,</l>
+				<l n="6" met="-+---++--+-" rhyme="B">enseña a variar voces latinas,</l>
+				<l n="7" met="+-----+--+-" rhyme="B">júntalo a los estragos y ruinas</l>
+				<l n="8" met="---+-+---+-" rhyme="A">cuyas memorias guardan tus archivos.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="--+--+-+-+-" rhyme="C"> El de pálido boj, labrado al torno,</l>
+				<l n="10" met="+++-++---+-" rhyme="D">vibra un cetro a mil madres formidable;</l>
+				<l n="11" met="+-+--+---+-" rhyme="E">caiga el brazo inhumano con ejemplo;</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="--+-++---+-" rhyme="D">que en el barrio que él hace inhabitable,</l>
+				<l n="13" met="+--+++--++-" rhyme="E">hoy te dedico, oh Júpiter, un templo,</l>
+				<l n="14" met="---+-+---+-" rhyme="C">y de inscripción piadosa te lo adorno.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

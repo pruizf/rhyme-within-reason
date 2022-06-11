@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XXXIX - Dejándose llevar de su pasión seguro de ella </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+---+---+-" rhyme="A">Pensando que el olvido templaría</l>
+				<l n="2" met="-+---+---+-" rhyme="B">el ansia del hidrópico ardimiento,</l>
+				<l n="3" met="-+-+---+-+-" rhyme="B">curaba yo mi corazón sediento</l>
+				<l n="4" met="---+-----+-" rhyme="A">con estorbarle lo que apetecía.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+---+-+-" rhyme="A">Y viendo el daño, que el remedio hacía,</l>
+				<l n="6" met="-+-+--+--+-" rhyme="B">ningún alivio le aplique violento,</l>
+				<l n="7" met="--+-+----+-" rhyme="B">esperando que obras el escarmiento</l>
+				<l n="8" met="+----+---+-" rhyme="A">todas las experiencias que sabía.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="--+--+---+-" rhyme="C">Y del mal que causaba la belleza,</l>
+				<l n="10" met="--+--+---+-" rhyme="D">sin quitar el veneno de los labios,</l>
+				<l n="11" met="---+---+-+-" rhyme="E">con la frecuencia conseguí el hastío.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+---+-" rhyme="C">O Lesbia, cuánto debo a mi flaqueza!</l>
+				<l n="13" met="+----+---+-" rhyme="D">Fui con facilidad de tus agravios,</l>
+				<l n="14" met="-+---+--++-" rhyme="E">volví con liviandades a ser mío.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

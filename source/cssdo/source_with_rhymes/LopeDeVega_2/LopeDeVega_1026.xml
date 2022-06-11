@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 73 - De La envidia de la nobleza </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+-+-+-+-" rhyme="A">Yace en la parte que es mejor de España</l>
+				<l n="2" met="+--+-+-+-+-" rhyme="B">una apacible y siempre verde Vega,</l>
+				<l n="3" met="---+---+++-" rhyme="B">a quien Apolo su favor no niega,</l>
+				<l n="4" met="---+---+-+-" rhyme="A">pues con las aguas de Helicón la baña.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+----+-+-+-" rhyme="A">Júpiter, labrador por grande hazaña,</l>
+				<l n="6" met="-+-+---+-+-" rhyme="B">su ciencia toda en cultivarla entrega;</l>
+				<l n="7" met="-+-+-+---+-" rhyme="B">Cilenia alegre en ella se sosiega,</l>
+				<l n="8" met="-+-+-+---+-" rhyme="A">Minerva eternamente la acompaña.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+-+++-" rhyme="C">Las musas su parnaso en ella han hecho,</l>
+				<l n="10" met="+--+-+-+-+-" rhyme="D">Venus hermosa en ella aumenta y cría</l>
+				<l n="11" met="-+---+---+-" rhyme="E">la santa multitud de los amores:</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+---+-+-" rhyme="C">Y así con gusto y general provecho,</l>
+				<l n="13" met="+-+--+-+-+-" rhyme="D">nuevos frutos ofrece cada día,</l>
+				<l n="14" met="+--+-+---+-" rhyme="E">de ángeles, de armas, santos y pastores.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

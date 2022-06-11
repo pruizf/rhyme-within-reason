@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- LXIV - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="--++---+-+-" rhyme="A"> Pues nos va bien con adular, Cratilo,</l>
+				<l n="2" met="-+---+---+-" rhyme="B">rindamos la verdad a la cautela;</l>
+				<l n="3" met="---+---+-+-" rhyme="B">que en sus aplausos la virtud se hiela</l>
+				<l n="4" met="--+--+--++-" rhyme="A">sin que nadie la abrigue con un hilo.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+---+---+-" rhyme="A"> Tu príncipe al Salustio y al Tranquilo</l>
+				<l n="6" met="-+-+-+-+-+-" rhyme="B">prefiere el gusto de una nueva tela;</l>
+				<l n="7" met="-+---+---+-" rhyme="B">y suélese reír cuando la escuela</l>
+				<l n="8" met="-+---+---+-" rhyme="A">pondera las grandezas de su estilo.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+---+-" rhyme="C"> Oh, dueño de las cosas, ignorancia,</l>
+				<l n="10" met="-+-+-+---+-" rhyme="D">ampara a dos filósofos ayunos,</l>
+				<l n="11" met="---+-+---+-" rhyme="E">que a la virtud queremos oponernos,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+--+++--+-" rhyme="D"> dispuestos a no ver libros algunos</l>
+				<l n="13" met="-----+-+-+-" rhyme="E">sino de los poetas más modernos:</l>
+				<l n="14" met="+--+-+---+-" rhyme="C">tanto podrá el olor de la ganancia.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

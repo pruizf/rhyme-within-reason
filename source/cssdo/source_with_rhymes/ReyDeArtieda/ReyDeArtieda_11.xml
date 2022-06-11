@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Rey de  Artieda,  Andrés</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>A la vida y costumbre de Nuestra Señora conforme San Epifanio </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-+-+-+-" rhyme="A">Vistió la humilde Virgen lino y lana,</l>
+				<l n="2" met="-+-+-+---+-" rhyme="B">honró en su estado al grande y al pequeño.</l>
+				<l n="3" met="+-+--+---+-" rhyme="B">Ira, cólera o risa, ni por sueño</l>
+				<l n="4" met="-+-+---+-+-" rhyme="A">mostró tener, ni turbación humana.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--+-+-+-" rhyme="A">De estatura de cuerpo fue mediana,</l>
+				<l n="6" met="+--+---+-+-" rhyme="B">rubio el cabello, el color trigueño,</l>
+				<l n="7" met="--+--++--+-" rhyme="B">afilada nariz, rostro aguileño,</l>
+				<l n="8" met="-+-+++-+-+-" rhyme="A">cifrado en él un alma humilde y llana.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+---+-+-" rhyme="C">Los ojos verdes de color de oliva,</l>
+				<l n="10" met="-+-+---+-+-" rhyme="D">la ceja negra, arqueada, hermosa,</l>
+				<l n="11" met="-+-+---+-+-" rhyme="C">la vista santa, penetrante y viva.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--+---+-+-" rhyme="D">Labios y boca de purpúrea rosa,</l>
+				<l n="13" met="-+---+---+-" rhyme="C">con gracia en las palabras excesiva,</l>
+				<l n="14" met="---+-+--++-" rhyme="D">representando a Dios en cualquier cosa.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

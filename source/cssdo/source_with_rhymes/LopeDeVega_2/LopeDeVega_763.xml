@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 930 - Jornada III, LUDOVICO </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+-+---+-" rhyme="A">Es el amor reloj desconcertado,</l>
+				<l n="2" met="+--+-+---+-" rhyme="B">que anda sin cuenta, límite ni asiento;</l>
+				<l n="3" met="+--+-+---+-" rhyme="B">ya le concierta poco movimiento,</l>
+				<l n="4" met="+-+--+---+-" rhyme="A">ya le turba el andar apresurado.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+--+--++-+-" rhyme="A">Rompe las cuerdas del más quieto estado,</l>
+				<l n="6" met="-+-+---+-+-" rhyme="B">y el más inquieto las ajusta atento;</l>
+				<l n="7" met="--+--+-+-+-" rhyme="B">el volante se muda en otro viento,</l>
+				<l n="8" met="-+-+-+-+-+-" rhyme="A">y si éste calma, se haya en más cuidado.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+-++++---+-" rhyme="C">Un papel es un viento de desvelos,</l>
+				<l n="10" met="-+---+---+-" rhyme="D">que lleva las discordias por delante,</l>
+				<l n="11" met="--+--+-+-+-" rhyme="C">y que añade a los celos mil recelos,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+-+-+-+-" rhyme="D">y, en fin, se junta todo, ¡qué inconstante!</l>
+				<l n="13" met="-+---+---+-" rhyme="C">Se rompen los desvelos y los celos,</l>
+				<l n="14" met="--++-+---+-" rhyme="D">sin quedar cuerda, rueda ni volante.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

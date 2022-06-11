@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>-  - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+-+-+-+-" rhyme="A">¿O quién te amara, dulce vida mía,</l>
+				<l n="2" met="---+-+-+-+-" rhyme="B">como mereces tú que yo te amara,</l>
+				<l n="3" met="---+-+---+-" rhyme="B">pero infinito amor, donde se hallara,</l>
+				<l n="4" met="---+-+---+-" rhyme="A">que a tu infinito ser correspondía?</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="-+-+-+---+-" rhyme="A">Amemos, alma, amemos a porfía,</l>
+				<l n="6" met="---+-+-+++-" rhyme="B">con infinito amor, con fe tan rara,</l>
+				<l n="7" met="-+-+-+--++-" rhyme="B">que de él saldrá el amor, pues en él para,</l>
+				<l n="8" met="-+-+---+-+-" rhyme="A">y nunca a dado por Raquel a Lía.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+-+--++-" rhyme="C">¿Por qué te olvido yo, si tu amor muere</l>
+				<l n="10" met="-+-+-+-+-+-" rhyme="D">de amor por mí, si tú me das la vida?</l>
+				<l n="11" met="++++---+-+-" rhyme="C">¿qué tiempo es bien, que para amarse espere?</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+---+-+-" rhyme="D">¿Mas quién habrá que la distancia mida,</l>
+				<l n="13" met="-+---++--+-" rhyme="C">pues nadie como tú tanto me quiere,</l>
+				<l n="14" met="-+---++--+-" rhyme="D">y nadie como yo tanto te olvida?</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

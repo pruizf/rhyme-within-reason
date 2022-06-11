@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Mira de Amescua</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- XVII - Acto segundo, Gonzalo </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="++---+---+-" rhyme="A">¿Qué importa que la bala disparada</l>
+				<l n="2" met="--+--+---+-" rhyme="B">sobrepuje a las nubes con su vuelo</l>
+				<l n="3" met="--+--++--+-" rhyme="B">si, al caerse con más golpe en el suelo,</l>
+				<l n="4" met="+--+---+-+-" rhyme="A">la he de postrar su indignación pesada?</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="++---+-+-+-" rhyme="A">¿Qué importa que la nave ya engolfada</l>
+				<l n="6" met="---+---+-+-" rhyme="B">en la borrasca con mortal recelo</l>
+				<l n="7" met="-+-+-+-+-+-" rhyme="B">amaine, arroje al mar y pida al cielo,</l>
+				<l n="8" met="-+-+-+---+-" rhyme="A">si al fin está a las olas condenada?</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="++---+---+-" rhyme="C">¿Qué importa, pues, que mi ánimo engañado</l>
+				<l n="10" met="--+--+---+-" rhyme="D">me prometa el valor en que me fundo,</l>
+				<l n="11" met="-+++-+-+-+-" rhyme="C">si al fin me ha puesto en este triste estado?</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="++---+-+-+-" rhyme="D">¿Qué importa que por honra salga al mundo</l>
+				<l n="13" met="-+---+---+-" rhyme="C">si todo le persigue al desdichado</l>
+				<l n="14" met="-++--+---+-" rhyme="D">y yo soy en desdichas sin segundo?</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

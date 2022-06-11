@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- 77 - Jornada III, LISARDO </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="--++-+---+-" rhyme="A">Comparaba un discreto el casamiento</l>
+				<l n="2" met="--+-++-+-+-" rhyme="B">a la vida de un hombre mal fundada,</l>
+				<l n="3" met="---+-+---+-" rhyme="B">que en su presente edad y la pasada</l>
+				<l n="4" met="+--+-+---+-" rhyme="A">fue de ofender a Dios su pensamiento.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--++-+---+-" rhyme="A">Y por un breve rato de contento,</l>
+				<l n="6" met="+--+-+---+-" rhyme="B">de una ocasión que tuvo deseada,</l>
+				<l n="7" met="+--+-+---+-" rhyme="B">es al infierno el alma condenada</l>
+				<l n="8" met="+--+-+---+-" rhyme="A">luego que el cuerpo queda sin aliento.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="+-++-----+-" rhyme="C">Cásase un hombre, y en sus alegrías</l>
+				<l n="10" met="-+-+-+-+-+-" rhyme="D">se ven también aquestos mismos daños,</l>
+				<l n="11" met="---+-+---+-" rhyme="C">pues por gozar sus locas fantasías.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+---+-+-" rhyme="D">del cuerdo ejemplos y del necio engaños,</l>
+				<l n="13" met="-+++--++-+-" rhyme="C">escoge un cielo de tan breves días</l>
+				<l n="14" met="---+--++-+-" rhyme="D">por el infierno de tan largos años.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

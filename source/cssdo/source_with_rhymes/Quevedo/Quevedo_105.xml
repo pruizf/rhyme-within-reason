@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>Confusión de peligros contemplando la hermosura de quien los causa, y consuelo en el riesgo mayor  </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+-+-+-+-" rhyme="A">No lo entendéis, mis ojos, que ese cebo</l>
+				<l n="2" met="---+++---+-" rhyme="B">que os alimenta es muerte disfrazada</l>
+				<l n="3" met="---+---+-+-" rhyme="B">que, de la vista de Silena airada,</l>
+				<l n="4" met="-+-+---+-+-" rhyme="A">con sed enferma, porfiado, bebo.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="+--+-+-+-+-" rhyme="A">Sólo de mí os quejad, que sólo os llevo</l>
+				<l n="6" met="--+--+---+-" rhyme="B">donde la alma dejáis aprisionada,</l>
+				<l n="7" met="---+-+---+-" rhyme="B">peregrinando, ciegos, la jornada,</l>
+				<l n="8" met="-+-+-+-+-+-" rhyme="A">con más peligro cada vez que os muevo.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---++--+-" rhyme="C">Si premio pretendéis, sois atrevidos;</l>
+				<l n="10" met="--+--+---+-" rhyme="D">y si no lo esperáis, desesperados;</l>
+				<l n="11" met="-+---+--++-" rhyme="E">cautivos si miráis, si lloráis tristes.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--+-+---+-" rhyme="C">Bien os podéis contar con los perdidos;</l>
+				<l n="13" met="---+-+---+-" rhyme="D">pero podéis perderos consolados,</l>
+				<l n="14" met="--+--+---+-" rhyme="E">si la causa advertís por que os perdistes.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

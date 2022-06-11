@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- VI - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="-+-+---+-+-" rhyme="A">Conoce apenas al amor por fama</l>
+				<l n="2" met="+--+-+---+-" rhyme="B">Cloris, y ya en su pecho le parece</l>
+				<l n="3" met="--+--+---+-" rhyme="B">que se abrasa, que sirve y obedece,</l>
+				<l n="4" met="++---+-+-+-" rhyme="A">no más que porque a Tirsi no difama;</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="++---+-+-+-" rhyme="A"> no sabe que de amor la viva llama</l>
+				<l n="6" met="-+-+-+---+-" rhyme="B">jamás en un estado permanece;</l>
+				<l n="7" met="+-+--+--++-" rhyme="B">que ella misma se apaga, si no crece,</l>
+				<l n="8" met="-+-+---+-+-" rhyme="A">los medios huye, los extremos ama.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+---+--++-" rhyme="C"> Si Cloris sujetarse al amor quiere,</l>
+				<l n="10" met="-+---+---+-" rhyme="D">sujétese al amor sin condiciones,</l>
+				<l n="11" met="+----+---+-" rhyme="E">déjese gobernar a su albedrío,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+---+---+-" rhyme="C">o llámese tirana, y persevere</l>
+				<l n="13" met="--+--+---+-" rhyme="D">en hacer de tormentos invenciones:</l>
+				<l n="14" met="++-+-+-+-+-" rhyme="E">no injustamente usurpe el nombre pío.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

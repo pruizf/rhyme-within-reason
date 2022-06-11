@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>María Ángeles Herrero Herrero</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been manually checked.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- CXLVI - A los dos Escipiones, valerosos capitanes romanos </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="++---+---+-" rhyme="A">No fuisteis de la edad Escipiones,</l>
+				<l n="2" met="-----+---+-" rhyme="B">sino de la República Romana,</l>
+				<l n="3" met="--+--+---+-" rhyme="B">que crecida en grandeza soberana,</l>
+				<l n="4" met="---+-+---+-" rhyme="A">sobre los Astros vio los torreones.</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="--+--+---+-" rhyme="A">Con el Sol compitieron sus blasones,</l>
+				<l n="6" met="-+-+---+-+-" rhyme="B">por tanta gloria, que gozó Africana,</l>
+				<l n="7" met="--+--+---+-" rhyme="B">y hasta el Reino feliz de la mañana,</l>
+				<l n="8" met="--+--+---+-" rhyme="A">arbolasteis sus ínclitos pendones.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="-+-+---+-+-" rhyme="C">Lloró su ruina la imperial Cartago,</l>
+				<l n="10" met="---+---+-+-" rhyme="D">de vuestro brazo, y vuestro ardor ceñida,</l>
+				<l n="11" met="+-+--+-+-+-" rhyme="C">siendo de un Escipión sangriento estrago.</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="+--+---+-+-" rhyme="D">Otro a Numancia la miró rendida,</l>
+				<l n="13" met="-+---+-+-+-" rhyme="C">de cada cual victoria fue el amago,</l>
+				<l n="14" met="---+---+-+-" rhyme="D">pero la muerte les quitó la vida.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>

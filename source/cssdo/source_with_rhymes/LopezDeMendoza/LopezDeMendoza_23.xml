@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+	 	<fileDesc>
+			<titleStmt>
+ 				<title> Spanish Metrical Patterns Bank: Golden Age Sonnets.</title>
+				<principal>Borja Navarro Colorado</principal>
+				<respStmt>
+					<name>Borja Navarro Colorado</name>
+					<resp>Metrical patterns annotation</resp>
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl><title>Sonetos</title> de <author>Lopez de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		<encodingDesc>
+			<metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+				<metSym value="+">stressed syllable</metSym>
+				<metSym value="-">unstressed syllable</metSym>
+			</metDecl>
+			<metDecl>
+				<p>All metrical patterns have been extracted automatically.</p>
+			</metDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>- III - </title>
+			</head>
+			<lg type="cuarteto">
+				<l n="1" met="+--+---+-+-" rhyme="A">Cual se mostraba la gentil Lavina</l>
+				<l n="2" met="---+-+---+-" rhyme="B">en los honrados templos de Laurençia,</l>
+				<l n="3" met="-----+---+-" rhyme="A">cuando solemnizaban a heritina</l>
+				<l n="4" met="-+-+--+--+-" rhyme="B">las gentes de ella con toda femencia;</l>
+			</lg>
+			<lg type="cuarteto">
+				<l n="5" met="---+-+---+-" rhyme="A">y cual parece flor de clavellina</l>
+				<l n="6" met="--+--+---+-" rhyme="B">en los frescos jardines de Florençia,</l>
+				<l n="7" met="+--+--+--+-" rhyme="A">vieron mis ojos en forma divina</l>
+				<l n="8" met="---+--+--+-" rhyme="B">la vuestra imagen e diva presencia,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="9" met="---+---+-+-" rhyme="C">cuando la llaga o mortal herida</l>
+				<l n="10" met="-+-+--+--+-" rhyme="D">llagó mi pecho con dardo amoroso,</l>
+				<l n="11" met="---+-+--++-" rhyme="C">la cual me mata en prompto e da vida,</l>
+			</lg>
+			<lg type="terceto">
+				<l n="12" met="-+-+--+--+-" rhyme="D">me face ledo, contento o quexoso.</l>
+				<l n="13" met="-+-+--+--+-" rhyme="C">Alegre paso la pena indebida,</l>
+				<l n="14" met="-+-+-+---+-" rhyme="D">ardiendo en fuego me hallo en reposo.</l>
+			</lg>
+		</body>
+	</text>
+</TEI>
