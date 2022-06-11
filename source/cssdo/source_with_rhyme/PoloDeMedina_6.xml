@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A una mariposa que se ahogó en un vidrio de agua</title>
+            <author> Polo De Medina</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Polo de  Medina,  Jacinto</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A una mariposa que se ahogó en un vidrio de agua </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Avecilla infeliz que tantas <w type="rhyme">flores</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">en esas breves alas <w type="rhyme">extendiste</w>,</l>
+            <l n="3" met="+----+---+-" rhyme="B">¿cómo si para Fénix <w type="rhyme">floreciste</w>,</l>
+            <l n="4" met="+----+---+-" rhyme="A">Ícaro se apagaron tus <w type="rhyme">colores</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--++--+-" rhyme="A">Es tu achaque la luz, es tus <w type="rhyme">rigores</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">y en llama de cristales <w type="rhyme">falleciste</w>,</l>
+            <l n="7" met="-+-+-+--++-" rhyme="B">que si ha de ser estrago para un <w type="rhyme">triste</w>
+            </l>
+            <l n="8" met="---+---+-+-" rhyme="A">aun el cristal presumirá de <w type="rhyme">ardores</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--++--+-" rhyme="C">Mas, ay necio de mí, <w type="rhyme">bárbaramente</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">avecilla en tu lástima me <w type="rhyme">engaño</w>,</l>
+            <l n="11" met="--++-+---+-" rhyme="E">compasivo a ese vidrio que te <w type="rhyme">infama</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-++-+---+-" rhyme="C">No causó mal mudarte, el <w type="rhyme">accidente</w>,</l>
+            <l n="13" met="-+---+++-+-" rhyme="D">que habiendo de morir no fue en tu <w type="rhyme">daño</w>
+            </l>
+            <l n="14" met="--++-+---+-" rhyme="E">el cristal más peligro que la <w type="rhyme">llama</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vieja que aún no se quería desdecir de moza. Castígala con la similitud del jardín y del monte</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Vieja que aún no se quería desdecir de moza. Castígala con la similitud del jardín y del monte  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++---+-+-" rhyme="A">Ya salió, Lamia, del jardín tu <w type="rhyme">rostro</w>;</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">huyó la rosa que vistió la <w type="rhyme">espina</w>;</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y la azucena huyó y la <w type="rhyme">clavellina</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">y, en el clavel, el múrice y el <w type="rhyme">ostro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Entro en el monte, a profesar el <w type="rhyme">mostro</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">tu cara reducida a <w type="rhyme">salvajina</w>;</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">toda malezas es, donde la <w type="rhyme">encina</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">mancha a la leche el ampo del <w type="rhyme">calostro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Los que fueron jazmines son <w type="rhyme">chaparros</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">y cambroneras son las <w type="rhyme">maravillas</w>,</l>
+            <l n="11" met="+----+---+-" rhyme="C">simas y carcabuezos, los <w type="rhyme">desgarros</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Jarales yertos, manos y <w type="rhyme">mejillas</w>;</l>
+            <l n="13" met="---+-+---+-" rhyme="C">y los marfiles, rígidos <w type="rhyme">guijarros</w>.</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">¿Por qué te afeitas ya, pues te <w type="rhyme">traspillas</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

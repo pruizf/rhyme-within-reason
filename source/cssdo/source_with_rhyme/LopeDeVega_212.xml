@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 9 - A un poeta rico, que parece imposible</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 9 - A un poeta rico, que parece imposible </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">La rueda de los orbes <w type="rhyme">circunstantes</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">pare el veloz primero <w type="rhyme">movimiento</w>,</l>
+            <l n="3" met="+----+---+-" rhyme="B">déjese penetrar el <w type="rhyme">pensamiento</w>;</l>
+            <l n="4" met="-+---+---+-" rhyme="A">iguálese la arena a los <w type="rhyme">diamantes</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Tengan entendimiento los <w type="rhyme">amantes</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">y falte a la pobreza <w type="rhyme">entendimiento</w>;</l>
+            <l n="7" met="++-+-+---+-" rhyme="B">no tenga fuerza el oro, y por el <w type="rhyme">viento</w>
+            </l>
+            <l n="8" met="+----+---+-" rhyme="A">corran los africanos <w type="rhyme">elefantes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++-+---+-" rhyme="C">Blanco sea el cuervo y negros los <w type="rhyme">jazmines</w>,</l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">rompan ciervos del mar los vidrios <w type="rhyme">tersos</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">y naden por la tierra los <w type="rhyme">delfines</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---++--+-" rhyme="D">no sufra la virtud casos <w type="rhyme">adversos</w>,</l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">den los señores, hagan bien los <w type="rhyme">ruines</w>,</l>
+            <l n="14" met="-+++-+-+-+-" rhyme="D">pues hay un hombre rico haciendo <w type="rhyme">versos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

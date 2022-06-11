@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1227 - Acto III, DON ENRIQUE</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1227 - Acto III, DON ENRIQUE </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Si yo las flechas del amor <w type="rhyme">tuviera</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">de vos a todo el mundo <w type="rhyme">enamorara</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y en torres de diamantes os <w type="rhyme">guardara</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">porque después de amaros nadie os <w type="rhyme">viera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Que tanto me quisiérades <w type="rhyme">hiciera</w>,</l>
+            <l n="6" met="-+--++---+-" rhyme="B">que de otro ningún bien se os <w type="rhyme">acordara</w>;</l>
+            <l n="7" met="---++--+-+-" rhyme="B">el pensamiento a una cadena <w type="rhyme">atara</w>,</l>
+            <l n="8" met="-----+---+-" rhyme="A">y la imaginación os <w type="rhyme">suspendiera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Y si pudiera yo, con una <w type="rhyme">llave</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">cerrara al tiempo el curso <w type="rhyme">presuroso</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">en esa dulce juventud <w type="rhyme">suave</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">porque jamás en ese rostro <w type="rhyme">hermoso</w>
+            </l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">la edad pusiera cosa menos <w type="rhyme">grave</w>,</l>
+            <l n="14" met="-+-+-++--+-" rhyme="D">ni yo pudiera ser menos <w type="rhyme">dichoso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto repitiendo el nombre de Bras</title>
+            <author> Juan De Salinas</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Salinas,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto repitiendo el nombre de Bras </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Ciego rapaz de las doradas <w type="rhyme">hebras</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="A">flechero atento que en destreza <w type="rhyme">sobras</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="A">al africano experto, y con tus <w type="rhyme">obras</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">en los fines del orbe te <w type="rhyme">celebras</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+---+-+-" rhyme="A">¡Oh cuántas fes con tu violencia <w type="rhyme">quiebras</w>!</l>
+            <l n="6" met="++-+---+-+-" rhyme="A">¡Oh cuántos pechos indebidos <w type="rhyme">cobras</w>!</l>
+            <l n="7" met="++-+---+-+-" rhyme="A">¡Cuán dulcemente con hechizos <w type="rhyme">obras</w>!</l>
+            <l n="8" met="++-+-+---+-" rhyme="A">¡Oh cómo sabes más que las <w type="rhyme">culebras</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="A">Tus pagas son (por mucho que lo <w type="rhyme">encubras</w>)</l>
+            <l n="10" met="+--+---+-+-" rhyme="A">falsas monedas que en tus cuños <w type="rhyme">labras</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="A">o letras que en fallidos bancos <w type="rhyme">libras</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="A">Ruégote, oh desengaño, que <w type="rhyme">descubras</w>
+            </l>
+            <l n="13" met="+--+---+-+-" rhyme="A">tantos embustes y mis ojos <w type="rhyme">abras</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="A">daré culto a tus aras si me <w type="rhyme">libras</w>.</l>
+         </lg>
+         <lg type="estrambote">
+            <l n="15" met="+++--+-" rhyme="D">¡Oh, tú, flor de las <w type="rhyme">hembras</w>,</l>
+            <l n="16" met="-+-+---+-+-" rhyme="D">que endechas tristes por los aires <w type="rhyme">siembras</w>!</l>
+            <l n="17" met="---+-+-+-+-" rhyme="D">Ya que cantar en estas frescas <w type="rhyme">sombras</w>
+            </l>
+            <l n="18" met="-+---+-" rhyme="D">mi versos <w type="rhyme">acostumbras</w>,</l>
+            <l n="19" met="-++--+-" rhyme="D">si en Bras no te <w type="rhyme">deslumbras</w>,</l>
+            <l n="20" met="-+---+---+-" rhyme="D">advierte, en las cadencias, que le <w type="rhyme">nombras</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

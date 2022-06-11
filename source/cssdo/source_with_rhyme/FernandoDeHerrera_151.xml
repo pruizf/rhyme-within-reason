@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">¿Qué bello nudo y fuerte me <w type="rhyme">encadena</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">con tierno ardor, en quien amor <w type="rhyme">airado</w>
+            </l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">me enciende el corazón, y en un <w type="rhyme">cuidado</w>
+            </l>
+            <l n="4" met="+--+-+---+-" rhyme="A">duro y terrible siempre me <w type="rhyme">enajena</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+--++-+-+-" rhyme="A">El oro que al Gange indo en su ancha <w type="rhyme">vena</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">luciente orna, y en hebras <w type="rhyme">dilatado</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">con luengo cerco y terso <w type="rhyme">ensortijado</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">gentil corona en blanca frente <w type="rhyme">ordena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="C">¡Oh vos, que al sol vencido, prestáis <w type="rhyme">fuego</w>,</l>
+            <l n="10" met="-----+-+-+-" rhyme="D">en quien mi pensamiento no <w type="rhyme">medroso</w>
+            </l>
+            <l n="11" met="-+--++--++-" rhyme="E">las alas metió libre, y perdió el <w type="rhyme">vuelo</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+-+-+-" rhyme="C">Lazos que me estrecháis, mi pecho <w type="rhyme">ciego</w>
+            </l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">abrasad, porque en prez del mal <w type="rhyme">penoso</w>
+            </l>
+            <l n="14" met="-+--++---+-" rhyme="E">segura mi fe rinda su <w type="rhyme">recelo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

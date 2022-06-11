@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 884 - Jornada II, ELVIRA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 884 - Jornada II, ELVIRA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Alfonso y Lauro, si olvidar <w type="rhyme">pudiste</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">con verme a mí, lo que primero <w type="rhyme">amaste</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">de la poca firmeza que <w type="rhyme">mostraste</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="A">firme seguridad me <w type="rhyme">prometiste</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+---+-" rhyme="A">Por donde me obligaste, me <w type="rhyme">perdiste</w>;</l>
+            <l n="6" met="---+---+-+-" rhyme="B">pues como entonces a Leonor <w type="rhyme">dejaste</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">me dejastes también, o cuanto <w type="rhyme">amaste</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">en la inconstancia que en amar <w type="rhyme">tuviste</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+-++-+-+-" rhyme="C">¿Qué mujer, y más yo, por tierra <w type="rhyme">extraña</w>,</l>
+            <l n="10" met="+----++--+-" rhyme="D">puede para querer ser <w type="rhyme">atrevida</w>
+            </l>
+            <l n="11" met="-----+---+-" rhyme="C">a quien de que olvidó la <w type="rhyme">desengaña</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="D">Porque desengañada, aunque <w type="rhyme">querida</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">ni se deja engañar de quien <w type="rhyme">engaña</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">ni se deja querer de quien <w type="rhyme">olvida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Quien la luz de belleza amando <w type="rhyme">adora</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">si quiere ver la vuestra, al sol <w type="rhyme">dorado</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">y al lucero de Venus <w type="rhyme">estimado</w>
+            </l>
+            <l n="4" met="+----+-+-+-" rhyme="A">mire, y la claridad de blanca <w type="rhyme">aurora</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">los rayos que esparciendo nuestra <w type="rhyme">Flora</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">de Diana el semblante <w type="rhyme">venerado</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">el valor, la grandeza, ingenio, <w type="rhyme">estado</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">y cuánto el ser humano en sí <w type="rhyme">atesora</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">que en ellos vuestra alteza y <w type="rhyme">hermosura</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">verá, y la aurora y Flora y sol <w type="rhyme">vencido</w>,</l>
+            <l n="11" met="--+---+--+-" rhyme="E">y rendirse el lucero con <w type="rhyme">Diana</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+--++-" rhyme="C">Mas si hermosa, blanca la luz <w type="rhyme">pura</w>
+            </l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">volvéis, de casto amor dirá <w type="rhyme">encendido</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">que sois toda inmortal y <w type="rhyme">soberana</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

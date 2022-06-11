@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Al Conde de la Puebla, que por omiso en el gobierno de Sevilla el autor le hizo este satírico</title>
+            <author> Juan De Salinas</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Salinas,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Al Conde de la Puebla, que por omiso en el gobierno de Sevilla el autor le hizo este satírico </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+++-" rhyme="A">Contábame mi abuela, buen siglo <w type="rhyme">haya</w>,</l>
+            <l n="2" met="-++--++--+-" rhyme="B">que yendo a una misión un <w type="rhyme">teatino</w>,</l>
+            <l n="3" met="--+-++---+-" rhyme="B">caballero en un prójimo <w type="rhyme">pollino</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">se sentó el animal, como una <w type="rhyme">maya</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="C">y se sentó en medio de un <w type="rhyme">pantano</w>;</l>
+            <l n="6" met="--+--+---+-" rhyme="D">y que el Padre con mucha <w type="rhyme">melodía</w>:</l>
+            <l n="7" met="+-++-+---+-" rhyme="D">Arre, Deo gratias, arre, le <w type="rhyme">decía</w>:</l>
+            <l n="8" met="+-++++-+-+-" rhyme="C">arre, arre, Deo gratias, oye <w type="rhyme">hermano</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="E">y el bellaco del asno, viendo el <w type="rhyme">modo</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="E">se estaba rellenando en medio el <w type="rhyme">lodo</w>.</l>
+            <l n="11" met="-+--++-+-+-" rhyme="F">Pasó por allí acaso un <w type="rhyme">arriero</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="F">vio la flema del Padre <w type="rhyme">misionero</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="G">y llegando al hermano en el <w type="rhyme">cogote</w>
+            </l>
+            <l n="14" met="+-+--+-+-+-" rhyme="G">cuatro muertos le dio con un <w type="rhyme">garrote</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

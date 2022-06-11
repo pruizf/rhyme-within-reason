@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXI -</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+-+-+-" rhyme="A">Yo vivo de un engaño y otro <w type="rhyme">engaño</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">en las horas prolijas de esta <w type="rhyme">ausencia</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y quiere que le deba mi <w type="rhyme">paciencia</w>
+            </l>
+            <l n="4" met="--+--++--+-" rhyme="A">lo que sí resistiera un <w type="rhyme">desengaño</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+-++--++-" rhyme="A"> Ahora, ¿qué haré, triste, que de un <w type="rhyme">daño</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">jamás temido, temo la <w type="rhyme">experiencia</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y no le son engaños <w type="rhyme">resistencia</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">con que yo me defiendo y <w type="rhyme">acompaño</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--++--+-+-" rhyme="C"> Yo moriré, yo moriré sin <w type="rhyme">duda</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">si el mal me acometiere que <w type="rhyme">sospecho</w>;</l>
+            <l n="11" met="+-++-+--++-" rhyme="E">mal que no hay pecho humano que no <w type="rhyme">asombre</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C"> mal que al nombrarlo está mi lengua <w type="rhyme">muda</w>.</l>
+            <l n="13" met="+----+-+-+-" rhyme="D">Ved como sufrirá su esencia el <w type="rhyme">pecho</w>,</l>
+            <l n="14" met="+--+++-+-+-" rhyme="E">si ella sufrir no puede sólo el <w type="rhyme">nombre</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

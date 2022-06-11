@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-XIII- Con la propiedad del Guadiana, de quien dice Plinio, saepius nasci gaudet, compara la disimulación de sus lágrimas</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-XIII- Con la propiedad del Guadiana, de quien dice Plinio, saepius nasci gaudet, compara la disimulación de sus lágrimas </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+--+--+-" rhyme="A">O ya descansas, Guadiana, <w type="rhyme">ociosas</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">tus corrientes en lagos que <w type="rhyme">ennobleces</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">o líquidas dilatas a tus <w type="rhyme">peces</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">campañas en las lluvias <w type="rhyme">procelosas</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">o en las grutas sedientas <w type="rhyme">tenebrosas</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">los raudales undosos <w type="rhyme">despareces</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">y de nacer a España muchas <w type="rhyme">veces</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">te alegras en las tumbas <w type="rhyme">cavernosas</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+---++---+-" rhyme="C">émulos mis dos ojos a tus <w type="rhyme">fuentes</w>
+            </l>
+            <l n="10" met="++-+-+-+-+-" rhyme="D">ya corren, ya se esconden, ya se <w type="rhyme">paran</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">y nacen sin morir al llanto <w type="rhyme">ardientes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Ni mi prisión ni lágrimas se <w type="rhyme">aclaran</w>:</l>
+            <l n="13" met="+-+--+---+-" rhyme="C">todo soy semejante a tus <w type="rhyme">corrientes</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">que de su propio túmulo se <w type="rhyme">amparan</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

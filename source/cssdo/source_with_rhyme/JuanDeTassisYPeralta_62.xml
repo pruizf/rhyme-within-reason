@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLIV - Al aguacil de corte Pedro Vergel Cancionero del desengaño</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLIV - Al aguacil de corte Pedro Vergel Cancionero del desengaño </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+++-" rhyme="A">La llave del toril, por ser más <w type="rhyme">diestro</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">dieron al buen Vergel, y por <w type="rhyme">cercano</w>
+            </l>
+            <l n="3" met="+----+---+-" rhyme="B">deudo de los que tiene so su <w type="rhyme">mano</w>,</l>
+            <l n="4" met="--++-+---+-" rhyme="A">pues le tiene esta villa por <w type="rhyme">cabestro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Aunque en esto de cuernos es <w type="rhyme">maestro</w>
+            </l>
+            <l n="6" met="-----++--+-" rhyme="B">y de la facultad es el <w type="rhyme">decano</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">un torillo, enemigo de su <w type="rhyme">hermano</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">al suelo le arrojó con fin <w type="rhyme">siniestro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----++-++-" rhyme="C">Pero como jamás hombres han <w type="rhyme">visto</w>
+            </l>
+            <l n="10" met="++-+-+---+-" rhyme="D">un cuerno de otro cuerno <w type="rhyme">horadado</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">y Vergel con los toros es <w type="rhyme">bienquisto</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">aunque esta vez le vieron <w type="rhyme">apretado</w>,</l>
+            <l n="13" met="+-+--++--+-" rhyme="C">sano y salvo salió, gracias a <w type="rhyme">Cristo</w>:</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">que Vergel contra cuernos es <w type="rhyme">hadado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

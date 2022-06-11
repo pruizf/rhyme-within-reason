@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVII - Anima la confianza de Celia con el ejemplo de la rosa</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVII - Anima la confianza de Celia con el ejemplo de la rosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">De esta que admiras rica de <w type="rhyme">tributos</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">que varias flores a su aliento <w type="rhyme">ofrecen</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y reina de la selva la <w type="rhyme">establecen</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">jurisdicción de imperios <w type="rhyme">absolutos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">La fragancia, el color, los <w type="rhyme">atributos</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">que en púrpura soberbia <w type="rhyme">resplandecen</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">verás, que fugitivos <w type="rhyme">desvanecen</w>,</l>
+            <l n="8" met="-+---++--+-" rhyme="A">si atiendes a su ser breves <w type="rhyme">minutos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Tanto esplendor la usura <w type="rhyme">codiciosa</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="-">de las horas usurpa a quien tributa,</l>
+            <l n="11" met="--+--+---+-" rhyme="D">por instantes los réditos <w type="rhyme">mortales</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="C">No temas Celia, al tiempo <w type="rhyme">milagrosa</w>
+            </l>
+            <l n="13" met="-+---+-+-+-" rhyme="-">se opone tu belleza, y no es segura</l>
+            <l n="14" met="-+---+---+-" rhyme="D">la edad, sino en efectos <w type="rhyme">naturales</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

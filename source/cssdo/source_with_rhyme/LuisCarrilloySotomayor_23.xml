@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III -</title>
+            <author> Luis Carrilloy Sotomayor</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis Carrilloy Sotomayor</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">¡Con qué ligeros pasos vas <w type="rhyme">corriendo</w>!</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">¡oh cómo te me ausentas, tiempo <w type="rhyme">vano</w>!</l>
+            <l n="3" met="---+---+-+-" rhyme="B">¡ay, de mi bien, y de mi ser <w type="rhyme">tirano</w>!</l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">¿cómo tu altivo brazo voy <w type="rhyme">siguiendo</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Detenerte pensé, pasaste <w type="rhyme">huyendo</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">te seguí, y ausentástete <w type="rhyme">liviano</w>,</l>
+            <l n="7" met="--++-+---+-" rhyme="B">te gasté a ti en buscarte, ¡oh, <w type="rhyme">inhumano</w>!</l>
+            <l n="8" met="--+-+--+-+-" rhyme="A">Mientras más te busque, te fui <w type="rhyme">perdiendo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">Ya conozco tu furia, ya <w type="rhyme">humillado</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">de tu guadaña pueblo los <w type="rhyme">despojos</w>;</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">¡oh, amargo desengaño no <w type="rhyme">admitido</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">Ciego viví, y al fin, <w type="rhyme">desengañado</w>,</l>
+            <l n="13" met="++---+-+-+-" rhyme="D">hecho Argos de mi mal, con tristes <w type="rhyme">ojos</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">huir te veo, y véote <w type="rhyme">perdido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

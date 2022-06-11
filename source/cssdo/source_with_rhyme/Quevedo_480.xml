@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Aconseja a un amigo no pretenda en su vejez</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Aconseja a un amigo no pretenda en su vejez</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Deja la veste blanca <w type="rhyme">desceñida</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">pues la visten los años a tus <w type="rhyme">sienes</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y los sesenta que vividos <w type="rhyme">tienes</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">no los culpes por cuatro seis de <w type="rhyme">vida</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+---+-" rhyme="A">Dejar es prevención de la <w type="rhyme">partida</w>;</l>
+            <l n="6" met="+-+--+--++-" rhyme="B">es locura inmortal el juntar <w type="rhyme">bienes</w>
+            </l>
+            <l n="7" met="---+---+-+-" rhyme="B">y que, caduco, la ambición <w type="rhyme">estrenes</w>;</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">sed que se enciende y crece, <w type="rhyme">socorrida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Doy que alcanzas el puesto que <w type="rhyme">deseas</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">y que, escondido en polvo <w type="rhyme">cortesano</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">las pretendientes sumisiones <w type="rhyme">creas</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+-+-+-" rhyme="D">pues yo sé bien que no será en tu <w type="rhyme">mano</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="C">que ayune, en los aumentos que <w type="rhyme">granjeas</w>,</l>
+            <l n="14" met="---+---+-+-" rhyme="D">de tu conciencia el vengador <w type="rhyme">gusano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

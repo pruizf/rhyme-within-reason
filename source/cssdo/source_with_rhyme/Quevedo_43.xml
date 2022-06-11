@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Otro a la muerte del mismo rey, sobre la causa que le movió al matador</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Otro a la muerte del mismo rey, sobre la causa que le movió al matador  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">No pudo haber estrella que <w type="rhyme">infamase</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">con tal inclinación sus rayos de <w type="rhyme">oro</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">ni a tanta majestad perdió el <w type="rhyme">decoro</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="A">hora, por maliciosa que <w type="rhyme">pasase</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Ni pudo haber deidad que se <w type="rhyme">enojase</w>
+            </l>
+            <l n="6" met="-+-+++-+-+-" rhyme="B">y diese tan vil causa a tanto <w type="rhyme">lloro</w>;</l>
+            <l n="7" met="+-+--+-+-+-" rhyme="B">rayos vengan la ira al alto <w type="rhyme">coro</w>:</l>
+            <l n="8" met="+-++-+---+-" rhyme="A">no era bien que un traidor se la <w type="rhyme">vengase</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++-+-+-+-" rhyme="C">Gusto no pudo ser matar <w type="rhyme">muriendo</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">y menos interés, pues no <w type="rhyme">respeta</w>
+            </l>
+            <l n="11" met="-----++--+-" rhyme="E">la desesperación precio ni <w type="rhyme">gloria</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">Envidia del infierno fue, <w type="rhyme">temiendo</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">que el ruido ronco de la guerra <w type="rhyme">inquieta</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">despertara de España la <w type="rhyme">memoria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

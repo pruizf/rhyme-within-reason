@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 9 - Acto III, ATAÚLFO De El príncipe melancólico</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 9 - Acto III, ATAÚLFO De El príncipe melancólico </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Justa y Rufina, hermanas <w type="rhyme">valerosas</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">que el barro de la tierra <w type="rhyme">despreciasteis</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">y del oro del cielo <w type="rhyme">coronasteis</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">vuestras cabezas, cándidas, <w type="rhyme">hermosas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+---+-" rhyme="A">Pues con vuestras reliquias <w type="rhyme">gloriosas</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">del Betis sacro la ribera <w type="rhyme">honrasteis</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">después de tales penas, y <w type="rhyme">llegasteis</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">a ser de vuestro esposo Cristo <w type="rhyme">esposas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+++-+-" rhyme="C">León os ha labrado un rico <w type="rhyme">templo</w>;</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">venid a honrar el celo de <w type="rhyme">Fernando</w>;</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">salid de Egipto y Faraón <w type="rhyme">injusto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">El Moro no conoce vuestro <w type="rhyme">ejemplo</w>;</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">allá os están las piedras <w type="rhyme">adorando</w>;</l>
+            <l n="14" met="-+-+-++-++-" rhyme="E">decid adónde estáis, Justa, que es <w type="rhyme">justo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

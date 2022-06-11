@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 0 - Prueba que amor quiere que le correspondan con el ejemplo de la misma dama</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 0 - Prueba que amor quiere que le correspondan con el ejemplo de la misma dama </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---++--+-" rhyme="A">A Temis consultó Venus <w type="rhyme">hermosa</w>,</l>
+            <l n="2" met="+--+-++--+-" rhyme="B">viendo que el niño Amor no se <w type="rhyme">aumentaba</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y que con otro, que esperando <w type="rhyme">estaba</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">se aumentaría, respondió la <w type="rhyme">Diosa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+---+-" rhyme="A">Parió Venus a Anteros, y <w type="rhyme">enfadosa</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">también por lo bizarro <w type="rhyme">gregizaba</w>,</l>
+            <l n="7" met="-----+---+-" rhyme="B">pues que correspondencia se <w type="rhyme">llamaba</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">y crecieron los dos edad <w type="rhyme">dichosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-++--+-" rhyme="C">Tus dientes fueron ya perlas de <w type="rhyme">Oriente</w>,</l>
+            <l n="10" met="+----+-+-+-" rhyme="D">Filis, pero la edad, ¡cruel <w type="rhyme">sentencia</w>!</l>
+            <l n="11" met="---+---+-+-" rhyme="C">los de la encía superior <w type="rhyme">desmiente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-++--+-" rhyme="D">No hay verdadero amor, si hay <w type="rhyme">diferencia</w>,</l>
+            <l n="13" met="-----+-+-+-" rhyme="C">porque aun para comer de diente a <w type="rhyme">diente</w>
+            </l>
+            <l n="14" met="++-+-+---+-" rhyme="D">es fuerza que ha de haber <w type="rhyme">correspondencia</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

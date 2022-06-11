@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Si intentas imitar mi luz <w type="rhyme">hermosa</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">templar, oh grande artífice, <w type="rhyme">procura</w>
+            </l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">en el candor de nieve llama <w type="rhyme">pura</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="-">y confundir los lirios con las rosas;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+-++---+-" rhyme="A">y seré el color de ellos la <w type="rhyme">amorosa</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">terneza que florece con <w type="rhyme">dulzura</w>
+            </l>
+            <l n="7" met="+-+----+-+-" rhyme="B">suavemente en su gentil <w type="rhyme">figura</w>,</l>
+            <l n="8" met="-++--+---+-" rhyme="A">si la arte es para tanto <w type="rhyme">poderosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Mezcla cinamo negro y sirio <w type="rhyme">nardo</w>,</l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">casia, incienso, en que cubre el rico <w type="rhyme">nido</w>
+            </l>
+            <l n="11" met="+--+-+---+-" rhyme="E">vivo el arabio fénix en su <w type="rhyme">muerte</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">que si no te atraviesa el duro <w type="rhyme">dardo</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="D">de su vista, dichoso y <w type="rhyme">atrevido</w>,</l>
+            <l n="14" met="+-++-+-+-+-" rhyme="E">dar podrás muestra alguna de esta <w type="rhyme">suerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

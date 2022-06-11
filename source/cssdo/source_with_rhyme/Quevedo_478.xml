@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Reprehende a la adúltera la circunstancia de su pecado</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Reprehende a la adúltera la circunstancia de su pecado  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+-+-+-" rhyme="A">Sola en ti, Lesbia, vemos ha <w type="rhyme">perdido</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">el adulterio la vergüenza al <w type="rhyme">cielo</w>;</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">pues licenciosa, libre, y tan sin <w type="rhyme">velo</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">ofendes la paciencia del <w type="rhyme">sufrido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Por Dios, por ti, por mí, por tu <w type="rhyme">marido</w>,</l>
+            <l n="6" met="++---+---+-" rhyme="B">no sirvas a su ausencia de <w type="rhyme">libelo</w>;</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">cierra la puerta, vive con <w type="rhyme">recelo</w>:</l>
+            <l n="8" met="--+--+---+-" rhyme="A">que el pecado se precia de <w type="rhyme">escondido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">No digo yo que dejes tus <w type="rhyme">amigos</w>;</l>
+            <l n="10" met="-+--++-+-+-" rhyme="D">mas digo que no es bien que estén <w type="rhyme">notados</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">de los pocos que son tus <w type="rhyme">enemigos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+---+-" rhyme="D">Mira que tus vecinos, <w type="rhyme">afrentados</w>,</l>
+            <l n="13" met="+----+---+-" rhyme="C">dicen que te deleitan los <w type="rhyme">testigos</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="D">de tus pecados más que tus <w type="rhyme">pecados</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

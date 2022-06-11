@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Huye la casa del campo (donde está el coloso del Señor Rey Felipe III) la competencia del Retiro</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Huye la casa del campo (donde está el coloso del Señor Rey Felipe III) la competencia del Retiro  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Piedras apaño cuando veis que <w type="rhyme">callo</w>;</l>
+            <l n="2" met="--+--+---+-" rhyme="B">y, pudiendo vendérselas, las <w type="rhyme">tiro</w>
+            </l>
+            <l n="3" met="---+---+-+-" rhyme="B">al edificio que envidiosa <w type="rhyme">miro</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">pues Roma se preciara de <w type="rhyme">envidiallo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---++++--+-" rhyme="A">Si por tener tan sólo este <w type="rhyme">caballo</w>
+            </l>
+            <l n="6" met="+-+--+-+++-" rhyme="B">no he podido jamás juntar un <w type="rhyme">tiro</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">mal podré competir con el <w type="rhyme">Retiro</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">en quien echó la arquitectura el <w type="rhyme">fallo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+-+-+-" rhyme="C">¿Qué puede sucederme en este <w type="rhyme">río</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">que no se harta de agua en el <w type="rhyme">invierno</w>
+            </l>
+            <l n="11" met="+++--+---+-" rhyme="C">y aun no lava sus pies en el <w type="rhyme">estío</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Si va por ermitaño, <w type="rhyme">sempiterno</w>
+            </l>
+            <l n="13" met="---+---+-+-" rhyme="C">el ermitaño que en el Ángel <w type="rhyme">crío</w>,</l>
+            <l n="14" met="+--+++-+-+-" rhyme="D">puede tener un Juan Guarín por <w type="rhyme">yerno</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

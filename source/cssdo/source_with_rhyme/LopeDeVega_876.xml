@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 783 - CONFUSIÓN</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 783 - CONFUSIÓN </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++++-+---+-" rhyme="A">¿Es Sol este hombre? sí, que <w type="rhyme">resplandece</w>;</l>
+            <l n="2" met="++-+-++--+-" rhyme="B">¿es cielo? sí, pues da tales <w type="rhyme">estrellas</w>;</l>
+            <l n="3" met="++-+-+-+-+-" rhyme="B">¿es fuego? sí, también, pues da <w type="rhyme">centellas</w>;</l>
+            <l n="4" met="++-+-+---+-" rhyme="A">¿es luna acaso? sí, pues <w type="rhyme">embebece</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+++--+---+-" rhyme="A">¿Es rey? pienso que sí, pues lo <w type="rhyme">merece</w>;</l>
+            <l n="6" met="++-+-+---+-" rhyme="B">¿es gloria? sí, pues vence mis <w type="rhyme">querellas</w>;</l>
+            <l n="7" met="++-+---+-+-" rhyme="B">¿es ángel? sí, por sus facciones <w type="rhyme">bellas</w>;</l>
+            <l n="8" met="++++-+---+-" rhyme="A">¿es Dios este hombre? mucho lo <w type="rhyme">parece</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+-+-+-" rhyme="C">Sol, cielo, fuego, luna, rey y <w type="rhyme">gloria</w>,</l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">ángel y Dios, de ti me voy <w type="rhyme">huyendo</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">confusa más que nunca mi <w type="rhyme">memoria</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">que aunque tu ser en ti se está <w type="rhyme">leyendo</w>,</l>
+            <l n="13" met="+-++---+-+-" rhyme="C">y eres tú el libro de tu misma <w type="rhyme">gloria</w>,</l>
+            <l n="14" met="-+-+-+--++-" rhyme="D">estás escrito en lengua que no <w type="rhyme">entiendo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

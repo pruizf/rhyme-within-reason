@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- II - A las damas de la corte, pidiéndoles favor para los galanes andaluces</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- II - A las damas de la corte, pidiéndoles favor para los galanes andaluces </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+----++-" rhyme="A">Hermosas damas si la pasión <w type="rhyme">ciega</w>
+            </l>
+            <l n="2" met="-+---+++-+-" rhyme="B">que os arma de desdén, no os arma de <w type="rhyme">ira</w>,</l>
+            <l n="3" met="+--+---+++-" rhyme="B">¿quién con piedad al andaluz no <w type="rhyme">mira</w>
+            </l>
+            <l n="4" met="-+---+--++-" rhyme="A">y quién al andaluz su favor <w type="rhyme">niega</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">¿En el terreno, quién humilde <w type="rhyme">ruega</w>,</l>
+            <l n="6" met="+-+--+---+-" rhyme="B">fiel adora, idólatra <w type="rhyme">suspira</w>?</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">¿Quién en la plaza los bohordos <w type="rhyme">tira</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">mata los toros y las cañas <w type="rhyme">juega</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+++--++-" rhyme="C">¿En los saraos quién lleva las más <w type="rhyme">veces</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">los dulcísimos ojos de la <w type="rhyme">sala</w>,</l>
+            <l n="11" met="---+-----+-" rhyme="E">sino galanes del <w type="rhyme">Andalucía</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">A ellos les dan siempre los <w type="rhyme">jueces</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="D">en la sortija el premio de la <w type="rhyme">gala</w>,</l>
+            <l n="14" met="---+-----+-" rhyme="E">en el torneo, de la <w type="rhyme">valentía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

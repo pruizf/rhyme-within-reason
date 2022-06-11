@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXII - A la soledad y lo seguro que se vive en ella</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXII - A la soledad y lo seguro que se vive en ella </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-++--+-" rhyme="A">A esta Selva, a este Risco, a esta <w type="rhyme">Montaña</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">que de Obeliscos viste su <w type="rhyme">Horizonte</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">el pie la besa el cristalino <w type="rhyme">Oronte</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">y con sus perlas la floresta <w type="rhyme">baña</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Gozando la estación de la <w type="rhyme">campaña</w>,</l>
+            <l n="6" met="++-+-+---+-" rhyme="B">no emprenda nuevos muros <w type="rhyme">Laomedonte</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">pues en la rósea fábrica del <w type="rhyme">Monte</w>
+            </l>
+            <l n="8" met="-+---++--+-" rhyme="A">labró Naturaleza esa <w type="rhyme">Cabaña</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">En ella vive Fabio sin <w type="rhyme">recelo</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">de que le arroje la soberbia <w type="rhyme">altiva</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">que a muchos despeñó en su ardiente <w type="rhyme">vuelo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="D">Y pues su dicha en su quietud <w type="rhyme">estriba</w>,</l>
+            <l n="13" met="+----++--+-" rhyme="C">ame la Soledad, puesto que el <w type="rhyme">Cielo</w>
+            </l>
+            <l n="14" met="---+-+--++-" rhyme="D">con el Amor coronan su fe <w type="rhyme">viva</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

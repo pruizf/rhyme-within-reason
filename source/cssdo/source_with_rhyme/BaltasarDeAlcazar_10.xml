@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- II -</title>
+            <author> Baltasar De Alcazar</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Alcázar,  Baltasar del</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- II - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Si el llanto, Febo, a tu deidad <w type="rhyme">indino</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">que los desiertos tésalos <w type="rhyme">oían</w>:</l>
+            <l n="3" met="--+--+---+-" rhyme="B">si los ojos de amor que te <w type="rhyme">hacían</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">quedar en este mundo por <w type="rhyme">vecino</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">si los rubios cabellos de oro <w type="rhyme">fino</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">que con el fresco viento se <w type="rhyme">esparcían</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">si aquellas blancas manos que <w type="rhyme">tenían</w>
+            </l>
+            <l n="8" met="+----++--+-" rhyme="A">presa tu libertad, siendo <w type="rhyme">divino</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">está ya oscurecido en tu <w type="rhyme">memoria</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">o por el tiempo o grave <w type="rhyme">inconveniente</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="C">vuelve a la vida tu amorosa <w type="rhyme">historia</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+-+-+-" rhyme="D">y honra de hoy mas tu lauro <w type="rhyme">eternamente</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">pues le vemos ceñir con nueva <w type="rhyme">gloria</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">del gran Cetina la ingeniosa <w type="rhyme">frente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

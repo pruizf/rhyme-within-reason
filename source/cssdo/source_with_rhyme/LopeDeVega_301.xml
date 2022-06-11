@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 42 - A un zapato muy grande y desaseado de una dama</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 42 - A un zapato muy grande y desaseado de una dama </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+++-+-" rhyme="A">¿Quién eres, Celemín? ¿quién eres, <w type="rhyme">fiera</w>?</l>
+            <l n="2" met="++---+---+-" rhyme="B">¿qué pino te bastó de <w type="rhyme">Guadarrama</w>?</l>
+            <l n="3" met="++---+-+-+-" rhyme="B">¿qué buey, que a Medellín pació la <w type="rhyme">grama</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">te dio la suela en toda su <w type="rhyme">ribera</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">¿Eres ramplón de Polifemo <w type="rhyme">cuera</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">bolsa de arzón, alcoba, o media <w type="rhyme">cama</w>.</l>
+            <l n="7" met="-+---+---+-" rhyme="B">Aquí de los zapatos de mi <w type="rhyme">dama</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">que me suelen servir de <w type="rhyme">bigotera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+-++-+-+-" rhyme="C">¡O zapato cruel! ¿cuál será el <w type="rhyme">anca</w>
+            </l>
+            <l n="10" met="-+---++--+-" rhyme="D">de mula que tiró tal <w type="rhyme">zapateta</w>?</l>
+            <l n="11" met="+--+---+-+-" rhyme="C">y aun me aseguran que el talón le <w type="rhyme">manca</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Pues no te iguala bota de <w type="rhyme">vaqueta</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">este verano voy a <w type="rhyme">Salamanca</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">y te pienso llevar para <w type="rhyme">maleta</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

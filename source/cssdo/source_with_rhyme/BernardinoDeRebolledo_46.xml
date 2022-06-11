@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- L -</title>
+            <author> Bernardino De Rebolledo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bernardino de Rebolledo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- L - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Lo que con más desvelo <w type="rhyme">solicito</w>
+            </l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">el Hado alguna vez ha <w type="rhyme">permitido</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">mas parece que luego <w type="rhyme">arrepentido</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">el ser piadoso tuvo por <w type="rhyme">delito</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+--++-" rhyme="A">Y borrando el decreto que había <w type="rhyme">escrito</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">en este al hielo siempre <w type="rhyme">endurecido</w>
+            </l>
+            <l n="7" met="+----+-+++-" rhyme="B">suelo que a la salud sepulcro ha <w type="rhyme">sido</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">el término a la vida le ha <w type="rhyme">prescrito</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Para que el polvo que agitó <w type="rhyme">animado</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">sin dejarle gozar descanso <w type="rhyme">cierto</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">de unos en otros Climas <w type="rhyme">arrojado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Si quisiere tomar tranquilo <w type="rhyme">puerto</w>
+            </l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">en la Patria que tanto ha <w type="rhyme">deseado</w>,</l>
+            <l n="14" met="+++--+-+-+-" rhyme="D">aun no tenga quietud después de <w type="rhyme">muerto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

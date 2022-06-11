@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVII -</title>
+            <author> Bocangel Y Unzueta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Venganza fue de amor, flechada en <w type="rhyme">vano</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">ese atrevido y castigado <w type="rhyme">fuego</w>
+            </l>
+            <l n="3" met="--+--+-+++-" rhyme="B">donde, más que deidad, mostró ser <w type="rhyme">ciego</w>,</l>
+            <l n="4" met="---+--+--+-" rhyme="A">cuando tu agravio le fió a tu <w type="rhyme">mano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--++--+-+-" rhyme="A">Un elemento es enemigo <w type="rhyme">humano</w>
+            </l>
+            <l n="6" met="---+++---+-" rhyme="B">para mover a un sol <w type="rhyme">desasosiego</w>.</l>
+            <l n="7" met="+-++-+-+-+-" rhyme="B">Ruegue, no abrase, amor, que sólo el <w type="rhyme">ruego</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">nació para vencer lo <w type="rhyme">soberano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">Ya no peligras, Celia, en la <w type="rhyme">violencia</w>
+            </l>
+            <l n="10" met="-+---++--+-" rhyme="D">del fuego, ni de amor temes <w type="rhyme">venganza</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="E">porque tu nieve o tu rigor le <w type="rhyme">excede</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="C">Siempre es edad del flaco la <w type="rhyme">experiencia</w>;</l>
+            <l n="13" met="+--+-+---+-" rhyme="D">ya que poder se deja a la <w type="rhyme">esperanza</w>,</l>
+            <l n="14" met="-+-+---+++-" rhyme="E">¿si sabe Celia lo que amor no <w type="rhyme">puede</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

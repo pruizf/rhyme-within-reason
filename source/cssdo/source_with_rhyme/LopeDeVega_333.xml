@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 71 - Égloga sin imitación de Teócrito, Pomponio, Nemesiano, Bocacio, ni Calpurnio</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 71 - Égloga sin imitación de Teócrito, Pomponio, Nemesiano, Bocacio, ni Calpurnio </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Al pie del jaspe de un feroz <w type="rhyme">peñasco</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">pelado por la fuerza del <w type="rhyme">estío</w>,</l>
+            <l n="3" met="-+++-+---+-" rhyme="B">dosel de un verde campo, tan <w type="rhyme">sombrío</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">que contra Febo le sirvió de <w type="rhyme">casco</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Damón con su rabel, y al lado el <w type="rhyme">frasco</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">para cantar mejor en <w type="rhyme">desafío</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y Tirsi, claro honor de nuestro <w type="rhyme">río</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">con un violín de cedro de <w type="rhyme">Damasco</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+---++-+-" rhyme="C">Juez Elisio, que de un verde <w type="rhyme">probo</w>
+            </l>
+            <l n="10" met="-+---++--+-" rhyme="D">a falta de laurel premio <w type="rhyme">tejía</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="C">céfiro hizo de los ecos <w type="rhyme">robo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="D">Mas cuando Tirsi comenzar <w type="rhyme">quería</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">ladró Melampo, y dijo Antandro, al <w type="rhyme">lobo</w>:</l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">y el canto se quedó para otro <w type="rhyme">día</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

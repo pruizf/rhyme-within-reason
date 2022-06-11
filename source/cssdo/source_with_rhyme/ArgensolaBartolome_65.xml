@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLVII - A Madrid, cuando se trataba de mudar la Corte a Valladolid</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLVII - A Madrid, cuando se trataba de mudar la Corte a Valladolid </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+++---+-+-" rhyme="A"> Volverse han muchos a labranzas <w type="rhyme">toscas</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">que fueron sus primeros <w type="rhyme">ejercicios</w>;</l>
+            <l n="3" met="--+--+---+-" rhyme="B">tratarán los magnates y <w type="rhyme">patricios</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">en rubias mieses y vacadas <w type="rhyme">hoscas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Dejarán las culebras ya sus <w type="rhyme">roscas</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">en que enlazaban huéspedes <w type="rhyme">novicios</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">andarán los casados en sus <w type="rhyme">quicios</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">pues le dejan en paz su miel las <w type="rhyme">moscas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C"> Viviráse con gusto y más sin <w type="rhyme">arte</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">y cesará el hablar por <w type="rhyme">cartapacio</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">engomar el copete y frente <w type="rhyme">lucia</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C"> y las mohatras en igual <w type="rhyme">descarte</w>.</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">En faltando la Corte, Rey, <w type="rhyme">Palacio</w>,</l>
+            <l n="14" met="--+--+-+++-" rhyme="E">aunque limpia, Madrid será muy <w type="rhyme">sucia</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

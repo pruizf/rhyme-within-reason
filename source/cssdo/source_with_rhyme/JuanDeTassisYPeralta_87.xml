@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXXVII - Definición de la mujer</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXXVII - Definición de la mujer </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--++++--+-" rhyme="A">Es la mujer un mar todo <w type="rhyme">fortuna</w>,</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">una mudable vela a todo <w type="rhyme">viento</w>;</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">es cometa de fácil <w type="rhyme">movimiento</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">sol en el rostro y en el alma <w type="rhyme">luna</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Fe de enemigo sin lealtad <w type="rhyme">ninguna</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">breve descanso e inmortal <w type="rhyme">tormento</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">ligera más que el mismo <w type="rhyme">pensamiento</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">y de sufrir pesada e <w type="rhyme">importuna</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++++---+-+-" rhyme="C">Es más que un áspid arrogante y <w type="rhyme">fiera</w>;</l>
+            <l n="10" met="--+--+---+-" rhyme="D">a su gusto de cera <w type="rhyme">derretida</w>,</l>
+            <l n="11" met="--+-++---+-" rhyme="E">y al ajeno más dura que la <w type="rhyme">palma</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="C">es cobre dentro y oro por de <w type="rhyme">fuera</w>,</l>
+            <l n="13" met="+++--+---+-" rhyme="D">y es un dulce veneno de la <w type="rhyme">vida</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">que nos mata sangrándonos el <w type="rhyme">alma</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

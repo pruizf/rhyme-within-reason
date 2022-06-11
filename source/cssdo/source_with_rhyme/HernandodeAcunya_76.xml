@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXVIII -</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+--+--+-+-" rhyme="A">Amor, pues me guiaste a vela y <w type="rhyme">remo</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">por el dichoso mar de la <w type="rhyme">esperanza</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">¿cómo permites que de tal <w type="rhyme">bonanza</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">se levante fortuna en tal <w type="rhyme">extremo</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">Si el grado en mi esperar fuera <w type="rhyme">supremo</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">pudiérasle bajar con tal <w type="rhyme">mudanza</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">mas dime en qué fundaste tu <w type="rhyme">venganza</w>,</l>
+            <l n="8" met="-+-+-+++-+-" rhyme="A">si tanto no esperé cuanto ahora <w type="rhyme">temo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C"> Responder se me puede de tu <w type="rhyme">parte</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">que todo lo que digo y lo que <w type="rhyme">siento</w>
+            </l>
+            <l n="11" met="+-+--+++-+-" rhyme="E">es tratar de razón do no hay <w type="rhyme">ninguna</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">mas quiero en pago de esto <w type="rhyme">asegurarte</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="D">que nunca mudarán mi <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">tu bonanza jamás, ni tu <w type="rhyme">fortuna</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

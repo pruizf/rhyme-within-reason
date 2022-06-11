@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1 - A la Majestad del Rey Nuestro Señor</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1 - A la Majestad del Rey Nuestro Señor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Rinda a la estampa de tu excelsa <w type="rhyme">planta</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">su yerro cuello Babilonia <w type="rhyme">fiera</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">sacro Felipe que en tu cuarta <w type="rhyme">esfera</w>
+            </l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">desde que nace el sol la noche <w type="rhyme">espanta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">En vano de las aguas se <w type="rhyme">levanta</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">triforme, ardiente, indómita <w type="rhyme">quimera</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">cuando Español Belerophonte <w type="rhyme">espera</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">vibrar en su cerviz la espada <w type="rhyme">santa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Donde llevar el pan David <w type="rhyme">solía</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">llevó la piedra, que del blanco <w type="rhyme">velo</w>
+            </l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">figura fue que piedra y pan <w type="rhyme">vencía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Así en los Triunfos de tu santo <w type="rhyme">celo</w>
+            </l>
+            <l n="13" met="++-+-+-+-+-" rhyme="C">vio España juntos un alegre <w type="rhyme">día</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">David, Gigante, Piedra y Pan del <w type="rhyme">Cielo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXVII - En el túmulo de Su Majestad, de la reina doña Margarita de Austria</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXVII - En el túmulo de Su Majestad, de la reina doña Margarita de Austria </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Recibe Luz en esta tumba <w type="rhyme">oscura</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">o huésped ciego, y recibiendo <w type="rhyme">advierte</w>
+            </l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">que cenizas produce, y llanto <w type="rhyme">vierte</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">la grandeza, la pompa, la <w type="rhyme">hermosura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+--++-" rhyme="A">El claro de Austria sol, cuya luz <w type="rhyme">pura</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">amaneció en España, eclipse <w type="rhyme">fuerte</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">padece (exento de segunda <w type="rhyme">muerte</w>)</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">debajo el cerco de una piedra <w type="rhyme">dura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Su luz volvió a la luz, que luces <w type="rhyme">crece</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">su sombra sigue el natural <w type="rhyme">gobierno</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">y el esplendor de España se <w type="rhyme">oscurece</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="D">Detén (si es que podrás) el llanto <w type="rhyme">tierno</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">y en vez sobre aras de cristal, <w type="rhyme">ofrece</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">durable aroma, y holocausto <w type="rhyme">eterno</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

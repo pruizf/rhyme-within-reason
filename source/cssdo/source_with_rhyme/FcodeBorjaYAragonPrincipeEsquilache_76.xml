@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIX -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+++-" rhyme="A">Rey es aquel, que al Rey jamás ha <w type="rhyme">visto</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">y en breve esfera del humilde <w type="rhyme">techo</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">de su fortuna vive <w type="rhyme">satisfecho</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">ni ofendido, ni amado, ni <w type="rhyme">malquisto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="A">No envidia a quien la última <w type="rhyme">Calisto</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">por mar dudoso, con osado <w type="rhyme">pecho</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">pisó, llamando su ambición <w type="rhyme">provecho</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">vida al peligro sin temor <w type="rhyme">previsto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Lisonja naturales de las <w type="rhyme">aves</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">escucha sólo al despertar el <w type="rhyme">día</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="C">con apacibles voces, y <w type="rhyme">suaves</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="D">No sabe que es engaño, y <w type="rhyme">tiranía</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">ni en la vagante selva de las <w type="rhyme">naves</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">sepulcro busca entre la espuma <w type="rhyme">fría</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

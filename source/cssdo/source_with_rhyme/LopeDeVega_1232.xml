@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1319 - Acto I, OLIVERIO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1319 - Acto I, OLIVERIO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Parece que estos pasos <w type="rhyme">temerosos</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">me llevan siempre a ver mi incierta <w type="rhyme">vida</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">porque en una esperanza tan <w type="rhyme">perdida</w>,</l>
+            <l n="4" met="-+-+-++--+-" rhyme="A">los más seguros son más <w type="rhyme">peligrosos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">¡Ay! ¡Si de ese jardín en los <w type="rhyme">frondosos</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">árboles, que hacen sombra a mi <w type="rhyme">homicida</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">dejase yo, con la esperanza <w type="rhyme">asida</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">la causa de mis males <w type="rhyme">amorosos</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Enmudecieran mis amargas <w type="rhyme">quejas</w>,</l>
+            <l n="10" met="--++-+---+-" rhyme="D">y saliera este amor de lo <w type="rhyme">profundo</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">de mis locas entrañas <w type="rhyme">abrasadas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Y en estos troncos, en lugar de <w type="rhyme">rejas</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">dos Anaxartes contemplara el <w type="rhyme">mundo</w>,</l>
+            <l n="14" met="--+-++---+-" rhyme="E">y el infierno dos piedras <w type="rhyme">castigadas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

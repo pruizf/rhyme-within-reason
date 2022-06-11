@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIV - Salve sagrado…</title>
+            <author> Francisco De La Torre</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de La Torre</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIV - Salve sagrado… </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Salve sagrado y cristalino <w type="rhyme">río</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">de sauces y de cañas <w type="rhyme">coronado</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">de arenas de oro y de cristal <w type="rhyme">ornado</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">y de crecientes con el llanto <w type="rhyme">mío</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Salve, y dilata tu ancho <w type="rhyme">poderío</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">por la orla Sabea, y el <w type="rhyme">dorado</w>
+            </l>
+            <l n="7" met="+--+---+-+-" rhyme="B">cerco de perlas, que el licor <w type="rhyme">sagrado</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">enriquece tu eterno <w type="rhyme">señorío</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Y así tus ninfas te detengan <w type="rhyme">cuando</w>
+            </l>
+            <l n="10" met="+----+---+-" rhyme="D">pases por el estrecho <w type="rhyme">deleitoso</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">de la concha de Venus <w type="rhyme">amorosa</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">que saques la cabeza, <w type="rhyme">serenando</w>
+            </l>
+            <l n="13" met="+-+--+---+-" rhyme="D">este cerco de nubes <w type="rhyme">espantoso</w>
+            </l>
+            <l n="14" met="---+---+-+-" rhyme="E">en compañía de mi ninfa <w type="rhyme">hermosa</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

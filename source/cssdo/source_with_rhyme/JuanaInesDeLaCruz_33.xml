@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIX - En la muerte de la Excelentísima Señora Marquesa de Mancera</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIX - En la muerte de la Excelentísima Señora Marquesa de Mancera </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">De la beldad de Laura <w type="rhyme">enamorados</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">los Cielos, le robaron a su <w type="rhyme">altura</w>,</l>
+            <l n="3" met="--+--+--++-" rhyme="B">porque no era decente a su luz <w type="rhyme">pura</w>,</l>
+            <l n="4" met="--++-+---+-" rhyme="A">ilustrar estos valles <w type="rhyme">desdichados</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+---+-" rhyme="A">O porque los Mortales <w type="rhyme">engañados</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">de su cuerpo en la hermosa <w type="rhyme">arquitectura</w>,</l>
+            <l n="7" met="--+--++--+-" rhyme="B">admirados de ver tanta <w type="rhyme">hermosura</w>,</l>
+            <l n="8" met="+--+-----+-" rhyme="A">no se juzgasen <w type="rhyme">bienaventurados</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Nació donde el Oriente el rojo <w type="rhyme">velo</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="D">corre al nacer el Astro <w type="rhyme">rubicundo</w>,</l>
+            <l n="11" met="--+----+-+-" rhyme="C">y murió, donde con ardiente <w type="rhyme">anhelo</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+-+-+-" rhyme="D">da sepulcro a su luz el mar <w type="rhyme">profundo</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">que fue preciso a su divino <w type="rhyme">vuelo</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">que diese como Sol la vuelta al <w type="rhyme">Mundo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

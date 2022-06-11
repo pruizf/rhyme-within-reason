@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 792 - Acto III, LUZMÁN De El caballero del sacramento</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 792 - Acto III, LUZMÁN De El caballero del sacramento </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Leonardo ilustre, valeroso <w type="rhyme">armífero</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">contra el fiero cismático y <w type="rhyme">herético</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">y contra el falso alárabe <w type="rhyme">profético</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">alférez fuerte, capitán <w type="rhyme">belífero</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Tú que el pendón católico y <w type="rhyme">cristífero</w>
+            </l>
+            <l n="6" met="++---+---+-" rhyme="B">has puesto sobre el muro <w type="rhyme">mahomético</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">honrando al suelo vandalino y <w type="rhyme">bético</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">de ingenios y armas fuerte y <w type="rhyme">salutífero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Si a Carlos Quinto, príncipe <w type="rhyme">invictísimo</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="B">la fama llega de tu esfuerzo <w type="rhyme">bélico</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="D">verás de premios un inmenso <w type="rhyme">cúmulo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Serás en vida espléndido y <w type="rhyme">riquísimo</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="B">y en muerte como a mílite <w type="rhyme">evangélico</w>,</l>
+            <l n="14" met="++-+---+-+-" rhyme="D">dos mil banderas honrarán el <w type="rhyme">túmulo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

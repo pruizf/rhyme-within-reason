@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 743 - Acto II, DON JUAN DE MENDOZA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 743 - Acto II, DON JUAN DE MENDOZA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">A Sumo bien, o gloria <w type="rhyme">inestimable</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">bien empleado y justo <w type="rhyme">atrevimiento</w>;</l>
+            <l n="3" met="-+++-+-+-+-" rhyme="B">amor es Dios, en fin la prueba <w type="rhyme">siento</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">en lo que quiere ser <w type="rhyme">comunicable</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">O fortuna inconstante, ahora <w type="rhyme">estable</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">en la inquietud del mismo <w type="rhyme">pensamiento</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">si fueses en mis bienes <w type="rhyme">firmamento</w>
+            </l>
+            <l n="8" met="+-++-+---+-" rhyme="A">fábula ha sido el nombre de <w type="rhyme">mudable</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">O amor perdone tu real <w type="rhyme">decoro</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">las dulces quejas, las infamias <w type="rhyme">dichas</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="C">a tu grandeza que desde hoy <w type="rhyme">adoro</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="E">Prometa el eco a mis desdichas <w type="rhyme">dichas</w>,</l>
+            <l n="13" met="-----+-+-+-" rhyme="C">que como se quilata en cobre, el <w type="rhyme">oro</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">se conoce el amor en las <w type="rhyme">desdichas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 846 - Acto II, ROBERTO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 846 - Acto II, ROBERTO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">¡Adiós, atolladeros y <w type="rhyme">honduras</w>
+            </l>
+            <l n="2" met="-----+-+-+-" rhyme="B">de la fragilidad del carro <w type="rhyme">humano</w>;</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">fríos de invierno, ardientes de <w type="rhyme">verano</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">mudanzas de alquiler con <w type="rhyme">mataduras</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Las buenas son angélicas <w type="rhyme">criaturas</w>;</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">yo las estimo, y a sus pies me <w type="rhyme">allano</w>;</l>
+            <l n="7" met="+----+-+-+-" rhyme="B">hablo de las que son de mala <w type="rhyme">mano</w>,</l>
+            <l n="8" met="-+-+-+--++-" rhyme="A">que a tantos dan unciones sin ser <w type="rhyme">curas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+-++-+-+-" rhyme="C">Labradora más bella que unas <w type="rhyme">natas</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">sin botana o parchíferos <w type="rhyme">portillos</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">que hueles más que Coca y <w type="rhyme">Alaejos</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">muestra los quince puntos de tus <w type="rhyme">patas</w>;</l>
+            <l n="13" met="-++--+---+-" rhyme="D">que ya voy a cogerte los <w type="rhyme">tomillos</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">y quédense a curar los cueros <w type="rhyme">viejos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

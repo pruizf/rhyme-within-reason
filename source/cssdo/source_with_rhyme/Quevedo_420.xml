@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Salmo XI</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Salmo XI</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">¡Cuán fuera voy, Señor, de tu <w type="rhyme">rebaño</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">llevado del antojo y gusto <w type="rhyme">mío</w>!</l>
+            <l n="3" met="+----+-+-+-" rhyme="B">¡Llévame mi esperanza el tiempo <w type="rhyme">frío</w>,</l>
+            <l n="4" met="-+-++--+-+-" rhyme="A">y a mí con ella un disfrazado <w type="rhyme">engaño</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+-+-+-" rhyme="A">Un año se me va tras otro <w type="rhyme">año</w>,</l>
+            <l n="6" met="-+++---+-+-" rhyme="B">y yo más duro y pertinaz <w type="rhyme">porfío</w>,</l>
+            <l n="7" met="--+-++---+-" rhyme="B">por mostrarme más verde mi <w type="rhyme">albedrío</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">la torcida raíz do está mi <w type="rhyme">daño</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----++--+-" rhyme="C">Llámasme, gran Señor; nunca <w type="rhyme">respondo</w>.</l>
+            <l n="10" met="-+---+-+-+-" rhyme="-">Sin duda mi respuesta sólo aguardas,</l>
+            <l n="11" met="-+---+---+-" rhyme="D">pues tanto mi remedio <w type="rhyme">solicitas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">Mas, ¡ay! que sólo temo en mar tan <w type="rhyme">hondo</w>,</l>
+            <l n="13" met="-----+-+-+-" rhyme="-">que lo que en castigarme ahora aguardas,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">con doblar los castigos lo <w type="rhyme">desquitas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

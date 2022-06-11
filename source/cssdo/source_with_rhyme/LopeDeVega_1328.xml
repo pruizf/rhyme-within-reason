@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1444 - Argumento Libro VI</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1444 - Argumento Libro VI </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Desprecia el Saladino la <w type="rhyme">venida</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">de Alfonso y de Ricardo, y la <w type="rhyme">victoria</w>
+            </l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">celebra altivo de soberbia y <w type="rhyme">gloria</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">de oro y laurel la frente <w type="rhyme">guarnecida</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Cuéntale un Español de la <w type="rhyme">perdida</w>
+            </l>
+            <l n="6" met="-+---++--+-" rhyme="B">España la inmortal lloros a <w type="rhyme">historia</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y oscurecer intenta la <w type="rhyme">memoria</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">a la rueda del sol y al tiempo <w type="rhyme">asida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Junta nueve Españoles en <w type="rhyme">campaña</w>;</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">derriban nueve Persas por el <w type="rhyme">suelo</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">y viendo los Genízaros la <w type="rhyme">hazaña</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">con flechas, aunque plumas de su <w type="rhyme">vuelo</w>,</l>
+            <l n="13" met="++-+---+-+-" rhyme="C">dan otros nueve de la fama a <w type="rhyme">España</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">y suben nueve mártires al <w type="rhyme">cielo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

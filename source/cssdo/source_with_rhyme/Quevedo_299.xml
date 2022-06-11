@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>El mismo</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>El mismo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">Tú, rey de ríos, Tajo <w type="rhyme">generoso</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">que el movimiento y cálida <w type="rhyme">hurtaste</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">al cuerpo de alabastro que <w type="rhyme">bañaste</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">gentil en proporción, gallardo, <w type="rhyme">hermoso</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+---++---+-" rhyme="A">ora natural músico <w type="rhyme">ingenioso</w>
+            </l>
+            <l n="6" met="+----+---+-" rhyme="B">seas entre las conchas que <w type="rhyme">criaste</w>,</l>
+            <l n="7" met="+-+--+-+-+-" rhyme="B">ora el valle le ofrezcas do <w type="rhyme">engendraste</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">para su frente, el ramo <w type="rhyme">victorioso</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">ora, sueltas del hielo tus <w type="rhyme">corrientes</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">le des espejo, sólo te <w type="rhyme">suplico</w>
+            </l>
+            <l n="11" met="---+-++--+-" rhyme="E">que, cuando quiera en ti ver sus <w type="rhyme">despojos</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+---+-" rhyme="C">junto con su hermosura <w type="rhyme">representes</w>
+            </l>
+            <l n="13" met="-+---+--++-" rhyme="D">mi llanto con que creces y estás <w type="rhyme">rico</w>:</l>
+            <l n="14" met="+-+--+---+-" rhyme="E">vean siquiera mis lágrimas sus <w type="rhyme">ojos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

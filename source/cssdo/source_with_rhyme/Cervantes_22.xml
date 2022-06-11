@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>La señora Oriana a Dulcinea del Toboso</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>La señora Oriana a Dulcinea del Toboso </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">¡Oh quién tuviera, hermosa <w type="rhyme">Dulcinea</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">por más comodidad y más <w type="rhyme">reposo</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">a Miraflores puesto en el <w type="rhyme">Toboso</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">y trocara su Londres con tu <w type="rhyme">aldea</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">¡Oh quién de tus deseos y <w type="rhyme">librea</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">alma y cuerpo adornara, y del <w type="rhyme">famoso</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">caballero, que hiciste <w type="rhyme">venturoso</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">mirara alguna desigual <w type="rhyme">pelea</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">¡Oh quién tan castamente se <w type="rhyme">escapara</w>
+            </l>
+            <l n="10" met="--+--+--++-" rhyme="D">del señor Amadís, como tú <w type="rhyme">hiciste</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="E">del comedido hidalgo Don <w type="rhyme">Quijote</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">Que así envidiada fuera, y no <w type="rhyme">envidiara</w>,</l>
+            <l n="13" met="-+-+-+--++-" rhyme="D">y fuera alegre al tiempo que fue <w type="rhyme">triste</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">y gozara los gustos sin <w type="rhyme">escote</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

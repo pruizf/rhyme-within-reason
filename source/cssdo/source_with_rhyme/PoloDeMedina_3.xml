@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A una rosa antes de abrir</title>
+            <author> Polo De Medina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Polo de  Medina,  Jacinto</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A una rosa antes de abrir </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-++--+-" rhyme="A">Si en verde oriente, ya luz <w type="rhyme">encarnada</w>
+            </l>
+            <l n="2" met="+--+-++--+-" rhyme="B">es de tu sol -oh flor- seña <w type="rhyme">olorosa</w>,</l>
+            <l n="3" met="++---+--++-" rhyme="B">no crezcas hasta el día de ser <w type="rhyme">rosa</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">que son las horas muerte <w type="rhyme">disfrazada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+---+-" rhyme="A">No más beldad aspires <w type="rhyme">engañada</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que estás si creces, en llegando a <w type="rhyme">hermosa</w>,</l>
+            <l n="7" met="--+--++--+-" rhyme="B">del achaque de un día <w type="rhyme">peligrosa</w>,</l>
+            <l n="8" met="---+++---+-" rhyme="A">de enfermedad de un sol <w type="rhyme">amenazada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Arrepentida en balde, flor <w type="rhyme">vecina</w>,</l>
+            <l n="10" met="---+++---+-" rhyme="D">pues a tu error no sirve su <w type="rhyme">experiencia</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">aproveche a tu riesgo <w type="rhyme">documento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+-+-+--+-" rhyme="C">Baste ya de otras rosas la <w type="rhyme">ruina</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">no te prosigas, que en mortal <w type="rhyme">dolencia</w>,</l>
+            <l n="14" met="-+--+++--+-" rhyme="E">ninguno de sí mismo es <w type="rhyme">escarmiento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

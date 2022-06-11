@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIII -</title>
+            <author> Juan De Almeida</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Almeida</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+--+--+-+-" rhyme="A">Si rota el asta del cruel <w type="rhyme">tirano</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">puesto por tierra el descreído <w type="rhyme">pecho</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">que tuvo tantas veces en <w type="rhyme">estrecho</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">el duro Capitán del Rey <w type="rhyme">Cristiano</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">vuelves con paz la valerosa <w type="rhyme">mano</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">de aquel gallardo Joven que ha <w type="rhyme">deshecho</w>
+            </l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">el enemigo campo y tiene <w type="rhyme">hecho</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">tan temeroso el nombre de su <w type="rhyme">hermano</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">por esta gran victoria, fiero <w type="rhyme">Marte</w>,</l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">quiero ofrecerte aquel manchado <w type="rhyme">toro</w>
+            </l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">que entre el ganado viene allí el <w type="rhyme">primero</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">y prometo en memoria <w type="rhyme">consagrarte</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">aquesta hacha que en el asta de <w type="rhyme">oro</w>
+            </l>
+            <l n="14" met="+--+-+-+-+-" rhyme="E">lleve con sangre escrito: A Dios <w type="rhyme">Guerrero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

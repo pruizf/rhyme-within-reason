@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 7 - Al saco de Mantua por el ejército del César, con el verso de la Égloga nona de Virgilio. Escribe en seso porque hablaba de él</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 7 - Al saco de Mantua por el ejército del César, con el verso de la Égloga nona de Virgilio. Escribe en seso porque hablaba de él </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">¡O gran Virgilio, si sangrientas <w type="rhyme">vieras</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">de tu primera cuna las <w type="rhyme">pizarras</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">y el águila Imperial con pico y <w type="rhyme">garras</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">morder murallas, y romper <w type="rhyme">banderas</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Con trompa, y no con lira, <w type="rhyme">interrumpieras</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">el ocio a sombra de hayas y de <w type="rhyme">parras</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y la pluma de cisne en las <w type="rhyme">bizarras</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">del intrépido Marte <w type="rhyme">convirtieras</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Mejor, viendo que el César los <w type="rhyme">soldados</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">Germánicos de nuevo <w type="rhyme">galardona</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">hicieras versos de dolor <w type="rhyme">bañados</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">¡Ay del verde laurel de tu <w type="rhyme">corona</w>
+            </l>
+            <l n="13" met="---+---+-+-" rhyme="C">entre vestigios de ceniza <w type="rhyme">helados</w>!</l>
+            <l n="14" met="-+---+---+-" rhyme="D">¡Ay Mantua la vecina de <w type="rhyme">Cremona</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">Más cierto está en perderse el que <w type="rhyme">procura</w>
+            </l>
+            <l n="2" met="-+-+-----+-" rhyme="B">seguir, volando, vuestro <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">que quien al bravo mar, al bravo <w type="rhyme">viento</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">la vida entrega en barca mal <w type="rhyme">segura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++---+-+-" rhyme="A">Cuando más que ésa de constancia <w type="rhyme">pura</w>,</l>
+            <l n="6" met="--+------+-" rhyme="B">gobernada por vuestro <w type="rhyme">entendimiento</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">muestra ir a quien es, a <w type="rhyme">salvamento</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">señora, de la vela y de <w type="rhyme">ventura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Si vos regís las velas, ¿Qué <w type="rhyme">aprovecha</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">que entre Escila y Caribdis <w type="rhyme">peligrosos</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="E">bramen las olas alterándose <w type="rhyme">ellas</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">Aunque sea la fortuna más <w type="rhyme">desecha</w>,</l>
+            <l n="13" met="--++-++--+-" rhyme="D">impedir no podrán vientos <w type="rhyme">furiosos</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">que pongáis vuestra barca en las <w type="rhyme">estrellas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

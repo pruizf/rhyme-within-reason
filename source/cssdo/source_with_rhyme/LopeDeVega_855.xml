@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 764 - Jornada III, FEBO De El animal de Hungría</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 764 - Jornada III, FEBO De El animal de Hungría </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--++--+-" rhyme="A">Al autor de la luz tanto <w type="rhyme">desvelo</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">tanto desdén, y desigual <w type="rhyme">porfía</w>,</l>
+            <l n="3" met="-+-+-+--++-" rhyme="B">estoy por no salir, ni formar <w type="rhyme">día</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">aunque la tierra se lamente al <w type="rhyme">cielo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+--++-+-" rhyme="A">Caiga la noche de sí misma al <w type="rhyme">suelo</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">sin esperanza de la lumbre <w type="rhyme">mía</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">porque la caza que estas selvas <w type="rhyme">cría</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">se envuelva en sombra de su eterno <w type="rhyme">velo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Suspende el arco al hombro, que <w type="rhyme">profana</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">la ley de amor, y si es buscar <w type="rhyme">severa</w>
+            </l>
+            <l n="11" met="+----++--+-" rhyme="C">fieras, tu condición dulce <w type="rhyme">tirana</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">Que fiera más cruel hallar <w type="rhyme">espera</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">que la que tiene con belleza <w type="rhyme">humana</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">de piedra el alma, el corazón de <w type="rhyme">fiera</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

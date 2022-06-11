@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXIX -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Montes se ensalzan y dilatan <w type="rhyme">ríos</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="-">señora, entre los dos, mas por momento</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">vuelan a ti mis dulces <w type="rhyme">pensamientos</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">que dijera mejor mis <w type="rhyme">desvaríos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Por altas sierras, por extremos <w type="rhyme">fríos</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">dejan atrás los animosos <w type="rhyme">vientos</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">aunque llevan consigo mis <w type="rhyme">tormentos</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">con ser tan graves los tormentos <w type="rhyme">míos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Si de mi vida con su luz <w type="rhyme">reparte</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">tu sol los días, cuando verte <w type="rhyme">intente</w>,</l>
+            <l n="11" met="++---+---+-" rhyme="C">qué importa que me acerque o que me <w type="rhyme">aparte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Donde quiera se ve su hermoso <w type="rhyme">oriente</w>,</l>
+            <l n="13" met="---+----++-" rhyme="C">pues, si se ve desde cualquier <w type="rhyme">parte</w>,</l>
+            <l n="14" met="-+-+++-+-+-" rhyme="D">quien es mi sol no puede estar <w type="rhyme">ausente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

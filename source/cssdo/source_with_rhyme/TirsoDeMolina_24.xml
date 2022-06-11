@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La villana de la Sagra</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De La villana de la Sagra </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">¿Cómo podrá admitir el alma <w type="rhyme">dueño</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">que ablande su dureza, si es de <w type="rhyme">encina</w>?</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">Ni ¿qué provecho hará la <w type="rhyme">medicina</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">a quien la muerte sepultó en su <w type="rhyme">sueño</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A"> Fuego pide a la nieve, lengua al <w type="rhyme">leño</w>,</l>
+            <l n="6" met="-+---++--+-" rhyme="B">mi padre, que mi alma es <w type="rhyme">peregrina</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">pues siendo amor bordón, mi fe <w type="rhyme">esclavina</w>,</l>
+            <l n="8" met="-++--+---+-" rhyme="A">por ver un peregrino la <w type="rhyme">despeño</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-++--+-" rhyme="C">¡Válgame Dios! Si fue Roque <w type="rhyme">divino</w>,</l>
+            <l n="10" met="+-+--+--++-" rhyme="D">¿quién me dio libertad y dejó <w type="rhyme">loca</w>?</l>
+            <l n="11" met="--+--+---+-" rhyme="C">Que después que le adoro, <w type="rhyme">desatino</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D"> Mas no, que amor humano me <w type="rhyme">provoca</w>;</l>
+            <l n="13" met="---+-+---+-" rhyme="C">y cuando Roque sea el <w type="rhyme">peregrino</w>,</l>
+            <l n="14" met="-++-++--++-" rhyme="D">en no amar a don Pedro seré <w type="rhyme">roca</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

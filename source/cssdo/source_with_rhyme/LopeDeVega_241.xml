@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - No tiene por hombres los que no aman, aunque no lo siente mucho</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - No tiene por hombres los que no aman, aunque no lo siente mucho </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--++--+-" rhyme="A">Quien no sabe de amor, viva entre <w type="rhyme">fieras</w>,</l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">quien no ha querido bien, fieras <w type="rhyme">espante</w>,</l>
+            <l n="3" met="-+-+--++-+-" rhyme="B">o si es Narciso de sí mismo <w type="rhyme">amante</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">retrátese en las aguas <w type="rhyme">lisonjeras</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Quien en las flores de su edad <w type="rhyme">primeras</w>
+            </l>
+            <l n="6" met="-+-+++-+-+-" rhyme="B">se niega a amor, no es hombre, que es <w type="rhyme">diamante</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">pues no lo puede ser el que <w type="rhyme">ignorante</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">ni vio sus burlas, ni temió sus <w type="rhyme">veras</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+-+-+-" rhyme="C">Yo no me alabaré, que humilde <w type="rhyme">vengo</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">al dulce yugo, Amor, de tu <w type="rhyme">cadena</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">con Sancha Sánchez y con Manga <w type="rhyme">Mengo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">Fuerte vivir por voluntad <w type="rhyme">ajena</w>,</l>
+            <l n="13" met="-++--+---+-" rhyme="C">pues no puedo comer, sino lo <w type="rhyme">tengo</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">ni tengo gusto, mientras tengo <w type="rhyme">pena</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

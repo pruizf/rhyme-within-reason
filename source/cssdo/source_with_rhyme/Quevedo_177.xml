@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A una fea, y espantadiza de ratones</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A una fea, y espantadiza de ratones  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">¿Lo que al ratón tocaba, si te <w type="rhyme">viera</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="B">haces con el ratón, cuando, <w type="rhyme">espantada</w>,</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">huyes y gritas, siendo, bien <w type="rhyme">mirada</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">en limpiezas y en trampas <w type="rhyme">ratonera</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Juzgara, quien huyendo de él te <w type="rhyme">viera</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">eras de queso añejo <w type="rhyme">fabricada</w>;</l>
+            <l n="7" met="---+-++--+-" rhyme="B">y con razón, que estás tan <w type="rhyme">arrugada</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">que pareces al queso por de <w type="rhyme">fuera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">¿Quién pensó (por si ansí tu espanto <w type="rhyme">abones</w>)</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">que coman solimán, que, atenta, <w type="rhyme">guardas</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="C">el que en tu cara juntas a <w type="rhyme">montones</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="D">¿Saltan huyendo quieres aun las <w type="rhyme">bardas</w>,</l>
+            <l n="13" met="---+++---+-" rhyme="C">cuando en roer no piensan los <w type="rhyme">ratones</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">tu tez de lana sucia de las <w type="rhyme">cardas</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

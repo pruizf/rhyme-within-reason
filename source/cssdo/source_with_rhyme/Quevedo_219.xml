@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Un delito igual se reputa desigual si son diferentes los sujetos que le cometen, y aun los delitos, desiguales</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Un delito igual se reputa desigual si son diferentes los sujetos que le cometen, y aun los delitos, desiguales  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+++-+-" rhyme="A">Si de un delito propio es precio <w type="rhyme">Lido</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">la horca, y en Menandro la <w type="rhyme">dilema</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">¿quién pretendes, ¡oh Júpiter!, que <w type="rhyme">tema</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">el rayo a las maldades <w type="rhyme">prometido</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+-++---+-" rhyme="A">Cuando fueras un pobre <w type="rhyme">endurecido</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">y no del cielo majestad <w type="rhyme">suprema</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">gritaras, tronco, a la injusticia <w type="rhyme">extrema</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">y, dios de mármol, dieras un <w type="rhyme">gemido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Sacrilegios pequeños se <w type="rhyme">castigan</w>;</l>
+            <l n="10" met="-+---+---+-" rhyme="D">los grandes en los triunfos se <w type="rhyme">coronan</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">y tienen por blasón que se los <w type="rhyme">digan</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Lido robó una choza, y le <w type="rhyme">aprisionan</w>;</l>
+            <l n="13" met="-+++---+-+-" rhyme="C">Menandro un reino, y su maldad <w type="rhyme">obligan</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">con nuevas dignidades que le <w type="rhyme">abonan</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

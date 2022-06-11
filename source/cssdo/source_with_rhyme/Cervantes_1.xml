@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Amadís de Gaula a don Quijote de La Mancha</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Amadís de Gaula a don Quijote de La Mancha</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Tú, que imitaste la llorosa <w type="rhyme">vida</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">que tuve, ausente y desdeñado, <w type="rhyme">sobre</w>
+            </l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">el gran ribazo de la Peña <w type="rhyme">Pobre</w>.</l>
+            <l n="4" met="-+---+---+-" rhyme="A">De alegre a penitencia <w type="rhyme">reducida</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">tú, a quien los ojos dieron la <w type="rhyme">bebida</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">de abundante licor, aunque <w type="rhyme">salobre</w>;</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">y alzándote la plata, estaño y <w type="rhyme">cobre</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">te dio la tierra en tierra la <w type="rhyme">comida</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-----+-" rhyme="C">vive seguro de que <w type="rhyme">eternamente</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">(en tanto al menos que en la cuarta <w type="rhyme">esfera</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">sus cabellos aguije el bello <w type="rhyme">Apolo</w>)</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="C">Tendrás claro renombre de <w type="rhyme">valiente</w>;</l>
+            <l n="13" met="-+--++---+-" rhyme="D">tu patria será en todas la <w type="rhyme">primera</w>,</l>
+            <l n="14" met="-+-+-++--+-" rhyme="E">tu sabio autor al mundo único y <w type="rhyme">solo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

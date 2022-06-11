@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVI -</title>
+            <author> Lopez De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lopez de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++-++--+-" rhyme="A">Virginal templo do el verbo <w type="rhyme">divino</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">vistió la forma de humanal <w type="rhyme">librea</w>,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="A">a quien anela todo amor <w type="rhyme">benigno</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="B">a quien contempla commo a santa <w type="rhyme">idea</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+++++-" rhyme="A">si de fablar de ti yo no soy <w type="rhyme">digno</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">la graçia del tu fijo me <w type="rhyme">provea</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="A">indocto soy e lasso <w type="rhyme">peregrino</w>,</l>
+            <l n="8" met="---+--+--+-" rhyme="B">pero mi lengua loarte <w type="rhyme">dessea</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">¿Fablaron, por ventura, Johan e <w type="rhyme">Johan</w>,</l>
+            <l n="10" met="-+-+-++--+-" rhyme="D">Jacobo, Pedro tan grand <w type="rhyme">theolugía</w>,</l>
+            <l n="11" met="+-+--+---+-" rhyme="C">nin el asna podiera de <w type="rhyme">Balán</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+--++-+-" rhyme="D">sin graçia suya, fablar, nin <w type="rhyme">sabía</w>?</l>
+            <l n="13" met="---+-+---+-" rhyme="C">Pues el que puede, fable sin <w type="rhyme">affán</w>
+            </l>
+            <l n="14" met="---+---+-+-" rhyme="D">tus alabanças en la lengua <w type="rhyme">mía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

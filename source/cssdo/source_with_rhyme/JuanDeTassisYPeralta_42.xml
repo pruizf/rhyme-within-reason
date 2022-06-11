@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXVI - Al Duque del Infantado por la muerte del mismo niño</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXVI - Al Duque del Infantado por la muerte del mismo niño </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Vuestra prenda, señor, cediendo al <w type="rhyme">hado</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">con inmatura muerte <w type="rhyme">lastimosa</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">quedó marchita y mustia, como <w type="rhyme">rosa</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">sin sazón ofendida del <w type="rhyme">arado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Mas a fragancia en culto no <w type="rhyme">alterado</w>
+            </l>
+            <l n="6" met="-++--+-+-+-" rhyme="B">de más noble pureza y más <w type="rhyme">hermosa</w>,</l>
+            <l n="7" met="+----+---+-" rhyme="B">mano que nos parece <w type="rhyme">rigurosa</w>,</l>
+            <l n="8" met="--+--++--+-" rhyme="A">para fruto mejor la ha <w type="rhyme">trasplantado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Aunque el rigor de aquella sombra <w type="rhyme">oscura</w>,</l>
+            <l n="10" met="-+---++--+-" rhyme="D">efecto natural, lágrimas <w type="rhyme">fueron</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">y tenidas al trance de <w type="rhyme">perderla</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">fe y esperanza cierta os <w type="rhyme">asegura</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="D">que a los mortales ojos que la <w type="rhyme">vieron</w>
+            </l>
+            <l n="14" met="+-++-+---+-" rhyme="E">ha de dar luz eterna para <w type="rhyme">verla</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

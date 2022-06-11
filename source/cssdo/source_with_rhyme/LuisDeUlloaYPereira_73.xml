@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXIX - La planta del girasol...</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXIX - La planta del girasol... </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Si al Sol miraba Ninfa, y más <w type="rhyme">atenta</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">su lumbre adora Clicie <w type="rhyme">transformada</w>;</l>
+            <l n="3" met="--+--+---+-" rhyme="B">si en las ondas de rayos <w type="rhyme">anegada</w>,</l>
+            <l n="4" met="--+--++--+-" rhyme="A">o en el golde de luz arde <w type="rhyme">sedienta</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">adulta flor la inclinación <w type="rhyme">violenta</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">reduce al escarmiento <w type="rhyme">dedicada</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y en Teatro fondoso <w type="rhyme">coronada</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">victorias del destino <w type="rhyme">representa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Como siempre obstinado mi <w type="rhyme">albedrío</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">su primitiva ceguedad <w type="rhyme">imita</w>,</l>
+            <l n="11" met="+-++-+-+-+-" rhyme="E">todo error, todo infancia, todo <w type="rhyme">engaños</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">y en menos disculpado <w type="rhyme">desvarío</w>,</l>
+            <l n="13" met="+-+--+---+-" rhyme="D">sombra sigue, tiniebla <w type="rhyme">solicita</w>,</l>
+            <l n="14" met="-+---++--+-" rhyme="E">rebelde a la razón, sordo a los <w type="rhyme">años</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

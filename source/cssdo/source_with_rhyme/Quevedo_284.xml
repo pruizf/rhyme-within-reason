@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Describe el apetito exquisito de pegar</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Describe el apetito exquisito de pegar  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+---+-" rhyme="A">No agradan a Polycles los <w type="rhyme">pecados</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">con el uso plebeyo <w type="rhyme">repetidos</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">ni delitos por otro <w type="rhyme">introducidos</w>:</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">sí los mayores, y por sí <w type="rhyme">inventados</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Cual si fueran virtud, los <w type="rhyme">moderados</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">vicios Polycles tiene <w type="rhyme">aborrecidos</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y los templadamente <w type="rhyme">distraídos</w>
+            </l>
+            <l n="8" met="+----+---+-" rhyme="A">yacen de su privanza <w type="rhyme">desterrados</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">De puro pecador, le son <w type="rhyme">ingratos</w>
+            </l>
+            <l n="10" met="--+-++---+-" rhyme="D">los pecados tal vez, pues al <w type="rhyme">pequeño</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">o desprecia, o le admite con <w type="rhyme">recatos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">De vicios hace escrupuloso <w type="rhyme">empeño</w>;</l>
+            <l n="13" met="--+--+---+-" rhyme="C">ni los quiere ordinarios ni <w type="rhyme">baratos</w>:</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">si tú le imitas, tú serás su <w type="rhyme">dueño</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

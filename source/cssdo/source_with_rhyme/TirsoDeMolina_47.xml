@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Santa Juana</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De Santa Juana </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+-+-+-" rhyme="A">Quiere hacer un tapiz la industria <w type="rhyme">humana</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">en donde el arte a la materia <w type="rhyme">exceda</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y con su adorno componer se <w type="rhyme">pueda</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">la pared de la cuadra más <w type="rhyme">profana</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A"> Matiza en el telar la mano <w type="rhyme">ufana</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">y mezcla hilos con que hermoso <w type="rhyme">queda</w>;</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">pero entre el oro ilustre y noble <w type="rhyme">seda</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">entreteje también la humilde <w type="rhyme">lana</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C"> Lo propio hace el amor, que mezcla y <w type="rhyme">teje</w>
+            </l>
+            <l n="10" met="--+--+--++-" rhyme="D">con la lana la seda, aunque más <w type="rhyme">valga</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">igualando al villano con el <w type="rhyme">noble</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+++-+-" rhyme="C"> Noble yerno me da, no es bien que <w type="rhyme">deje</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="D">que con mi lana y con su seda <w type="rhyme">hidalga</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">saldrá el tapiz de amor curioso al <w type="rhyme">doble</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

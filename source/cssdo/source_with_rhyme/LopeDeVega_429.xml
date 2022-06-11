@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 48 -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 48 - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Detén el curso a la veloz <w type="rhyme">carrera</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">desbocado apetito, que me <w type="rhyme">pierdes</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">pues ya es razón que a la razón <w type="rhyme">recuerdes</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">no se nos vaya la ocasión <w type="rhyme">ligera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Si te disculpas con la edad <w type="rhyme">primera</w>,</l>
+            <l n="6" met="++-+-+-+-+-" rhyme="B">no puedo yo creer que no te <w type="rhyme">acuerdes</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">que por los pasos de los años <w type="rhyme">verdes</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">llegaste al puerto de la edad <w type="rhyme">postrera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">¡En qué esperanza mis errores <w type="rhyme">fundo</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">blancas las sienes y las venas <w type="rhyme">hielos</w>,</l>
+            <l n="11" met="++-+-+-+-+-" rhyme="C">vil nave, airado viento, mar <w type="rhyme">profundo</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">Corre a tu engaño los fingidos <w type="rhyme">velos</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">porque lo que es vergüenza para el <w type="rhyme">mundo</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="D">¿cómo no lo será para los <w type="rhyme">cielos</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

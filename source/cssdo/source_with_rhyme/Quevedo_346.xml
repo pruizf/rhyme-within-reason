@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto amoroso</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto amoroso </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Dejadme resollar <w type="rhyme">desconfianzas</w>,</l>
+            <l n="2" met="+--+-----+-" rhyme="B">que es de manera vuestro <w type="rhyme">desconsuelo</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">que tiene derribado por el <w type="rhyme">suelo</w>
+            </l>
+            <l n="4" met="---+-----+-" rhyme="A">el fundamento de mis <w type="rhyme">esperanzas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="C">Ni fe tan pura no hay quien os la <w type="rhyme">ofrezca</w>,</l>
+            <l n="6" met="--+-++---+-" rhyme="D">como yo con esta alma vuestra <w type="rhyme">ofrezco</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="D">y nadie agradeció, como <w type="rhyme">agradezco</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="C">pena, que tanto ofenda, y <w type="rhyme">entristezca</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="E">Y aunque en valor estemos <w type="rhyme">desiguales</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="F">a tener compasión de mis <w type="rhyme">dolores</w>,</l>
+            <l n="11" met="+-+--+-+-+-" rhyme="E">bien os pueden mover extremos <w type="rhyme">tales</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="F">Pues cuantos piden que les deis <w type="rhyme">favores</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="E">en bien amaros, no me son <w type="rhyme">iguales</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="F">ni os han sufrido tantos <w type="rhyme">disfavores</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

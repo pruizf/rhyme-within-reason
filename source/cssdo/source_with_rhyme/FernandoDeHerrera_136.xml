@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXVI -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+--++-" rhyme="A">Volved, suaves ojos, la luz <w type="rhyme">pura</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">si a esto da lugar vuestra <w type="rhyme">grandeza</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y templad mi dolor, que la <w type="rhyme">dureza</w>
+            </l>
+            <l n="4" met="++---+---+-" rhyme="A">no cabe en vuestra inmensa <w type="rhyme">hermosura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">La soberbia y desdén harán <w type="rhyme">oscura</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">la mucha claridad de vuestra <w type="rhyme">alteza</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">y no es blasón de singular <w type="rhyme">belleza</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">trocar en mal el bien de mi <w type="rhyme">ventura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Después que Amor dejó, serenos <w type="rhyme">ojos</w>,</l>
+            <l n="10" met="-+--++-+-+-" rhyme="D">por vos el celeste orbe, el dulce <w type="rhyme">puesto</w>
+            </l>
+            <l n="11" met="--++-+-+-+-" rhyme="E">mejoró alegre en vos, y honró la <w type="rhyme">tierra</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Mirad o no mi cuita y mis <w type="rhyme">enojos</w>
+            </l>
+            <l n="13" met="++-+-+++-+-" rhyme="D">(¡tal es mi noble afán!), yo estoy <w type="rhyme">dispuesto</w>
+            </l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">para morir ufano en esta <w type="rhyme">guerra</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

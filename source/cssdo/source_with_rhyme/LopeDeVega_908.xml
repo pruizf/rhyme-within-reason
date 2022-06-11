@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 89 - Acto II, TELLO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 89 - Acto II, TELLO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">A quien pudiera suceder la <w type="rhyme">afrenta</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">que con Álvaro Núñez me ha <w type="rhyme">pasado</w>,</l>
+            <l n="3" met="---+++---+-" rhyme="B">sino a quien es, y ha sido <w type="rhyme">desdichado</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">desde que tiene ser en cuanto <w type="rhyme">intenta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Como podré vengarme, que a esta <w type="rhyme">cuenta</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">por armas el camino se ha <w type="rhyme">cerrado</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">mas por la industria quedaré <w type="rhyme">vengado</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">porque el dolor, y no la mano, <w type="rhyme">sienta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Quiero emprender, que el Rey por mil <w type="rhyme">caminos</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">de su favor, y gracia le <w type="rhyme">derribe</w>,</l>
+            <l n="11" met="--+--+--++-" rhyme="C">de que fueron sus méritos tan <w type="rhyme">dignos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Y bien podré, que el agraviado <w type="rhyme">escribe</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">tu afrenta en letra de diamantes <w type="rhyme">finos</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">y el que pudo agraviar seguro <w type="rhyme">vive</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXX - A don Juan de Arguijo, viendo un Adonis, Venus y Cupido de mármol</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXX - A don Juan de Arguijo, viendo un Adonis, Venus y Cupido de mármol </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+--++---+-" rhyme="A">Quien dice que fue Adonis <w type="rhyme">convertido</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">en flor de lirio y venus en <w type="rhyme">estrella</w>,</l>
+            <l n="3" met="++-+++-+-+-" rhyme="B">no vio, señor don Juan, la imagen <w type="rhyme">bella</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">que a España habéis de Génova <w type="rhyme">traído</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+++-" rhyme="A">Transformación, que no escultura, ha <w type="rhyme">sido</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">y porque no quedó beldad sin <w type="rhyme">ella</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">ni amor sin él, a las espaldas de <w type="rhyme">ella</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">también en piedra se mudó <w type="rhyme">Cupido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Los mismos son, que no pudiera el <w type="rhyme">arte</w>
+            </l>
+            <l n="10" met="-+-+---+++-" rhyme="D">vencer al cielo en perfección tan <w type="rhyme">rara</w>;</l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">testigo son las piedras de <w type="rhyme">Anaxarte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">Y si todas a sí las <w type="rhyme">transformara</w>,</l>
+            <l n="13" met="++++-+-+-+-" rhyme="C">yo os diera un mármol tan divino en <w type="rhyme">parte</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="D">que el olvidado amor <w type="rhyme">resucitara</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

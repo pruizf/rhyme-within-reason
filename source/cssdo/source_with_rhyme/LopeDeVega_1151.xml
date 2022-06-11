@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1207 - El HOMBRE a la VIRGEN De Las Batuecas del Duque de Alba</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1207 - El HOMBRE a la VIRGEN De Las Batuecas del Duque de Alba </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Hermosa Virgen, si alabaros <w type="rhyme">quiero</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">por hermosa, por Virgen, por <w type="rhyme">prudente</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">noble, humilde, magnánima y <w type="rhyme">valiente</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">puesto que en todo a todos os <w type="rhyme">prefiero</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">miro a Judit sangriento el blanco <w type="rhyme">acero</w>;</l>
+            <l n="6" met="--+---+--+-" rhyme="B">y, clavando de Sisara la <w type="rhyme">frente</w>
+            </l>
+            <l n="7" met="+--+-+---+-" rhyme="B">fuerte a Jael, a Débora <w type="rhyme">elocuente</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">y a la humilde Esther rendida a <w type="rhyme">Asuero</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">la gracia de Abisag, y la <w type="rhyme">dulzura</w>
+            </l>
+            <l n="10" met="--+-++-+-+-" rhyme="D">de Abigail, que un rey venció con <w type="rhyme">ella</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">y de Raquel la cándida <w type="rhyme">hermosura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">Pero ninguna tuvo, Virgen <w type="rhyme">bella</w>,</l>
+            <l n="13" met="-+-+++-+-+-" rhyme="C">después de ser más santa, honesta y <w type="rhyme">pura</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="D">gozo de Madre y honra de <w type="rhyme">doncella</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

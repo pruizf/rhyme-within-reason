@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1184 - Acto I, EL INFANTE DON VELA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1184 - Acto I, EL INFANTE DON VELA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+++-+-+-+-" rhyme="A">Amor, no ha sido trato de hombre <w type="rhyme">honrado</w>,</l>
+            <l n="2" met="-+---++--+-" rhyme="B">que entrándome a burlar libre <w type="rhyme">contigo</w>,</l>
+            <l n="3" met="+-+-++---+-" rhyme="B">me hayas dado tan áspero <w type="rhyme">castigo</w>,</l>
+            <l n="4" met="-----++--+-" rhyme="A">que hasta la libertad me hayas <w type="rhyme">quitado</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">el alma, siendo huésped, me has <w type="rhyme">robado</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">y la vida, con máscara de <w type="rhyme">amigo</w>;</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">si yo pensara tanto mal <w type="rhyme">conmigo</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">no me salieras al camino <w type="rhyme">armado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+-+-+-" rhyme="C">Amor, grande es tu fuerza, amor, tu <w type="rhyme">entrada</w>
+            </l>
+            <l n="10" met="+--+---+-+-" rhyme="D">fácil se muestra, pero siempre <w type="rhyme">oscura</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">la salida, de engaños <w type="rhyme">atajada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Ya conocí, aunque tarde. mi <w type="rhyme">locura</w>;</l>
+            <l n="13" met="-++--+-+-+-" rhyme="C">que no es bueno esgrimir con blanca <w type="rhyme">espada</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">ni probar libertad en <w type="rhyme">hermosura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

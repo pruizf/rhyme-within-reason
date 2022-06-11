@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIII -</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Copia del Babilónico <w type="rhyme">tumulto</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">irracional en las informes <w type="rhyme">voces</w>
+            </l>
+            <l n="3" met="++--++---+-" rhyme="B">tan legas que tú sólo las <w type="rhyme">conoces</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">a ciegas docto, y tan certero a <w type="rhyme">bulto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Varón dificultoso por lo <w type="rhyme">inculto</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">tus desalmados versos tan <w type="rhyme">atroces</w>
+            </l>
+            <l n="7" met="+--+-+--++-" rhyme="B">son, que sin pie sus números dan <w type="rhyme">coces</w>
+            </l>
+            <l n="8" met="-++---+-++-" rhyme="A">que en esto eres el Arcade más <w type="rhyme">culto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">Tú, tú, retú, que turbas la <w type="rhyme">sincera</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">verdad, riscoso haciendo el fácil <w type="rhyme">verso</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">que produce la Vega de <w type="rhyme">Pactolo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Si por tu estilo todo se <w type="rhyme">rigiera</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="D">redujérase a Caos el <w type="rhyme">universo</w>
+            </l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">fuera sombra la luz y ciego <w type="rhyme">Apolo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

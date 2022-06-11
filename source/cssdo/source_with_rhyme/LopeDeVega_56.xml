@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CL -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CL - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Rota barquilla mía que, <w type="rhyme">arrojada</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">de tanta envidia y amistad <w type="rhyme">fingida</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">de mi paciencia por el mar <w type="rhyme">regida</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">con remos de mi pluma y de mi <w type="rhyme">espada</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">una sin corte y otra mal <w type="rhyme">cortada</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">conservaste las fuerzas de la <w type="rhyme">vida</w>
+            </l>
+            <l n="7" met="---+---+-+-" rhyme="B">entre los puertos del favor <w type="rhyme">rompida</w>
+            </l>
+            <l n="8" met="-----+---+-" rhyme="A">y entre las esperanzas <w type="rhyme">quebrantada</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">sigue tu estrella en tantos <w type="rhyme">desengaños</w>,</l>
+            <l n="10" met="--+--+-+++-" rhyme="D">que quien no los creyó sin duda es <w type="rhyme">loco</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">ni hay enemigo vil, ni amigo <w type="rhyme">cierto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Pues has pasado los mejores <w type="rhyme">años</w>,</l>
+            <l n="13" met="+----+--++-" rhyme="D">ya para lo que queda, pues es <w type="rhyme">poco</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">ni temas a la mar ni esperes <w type="rhyme">puerto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

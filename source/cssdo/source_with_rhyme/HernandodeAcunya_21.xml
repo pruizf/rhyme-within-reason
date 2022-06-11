@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVIII - Soneto en la muerte del Marqués de Vasto, y este primero habla con la Marquesa</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVIII - Soneto en la muerte del Marqués de Vasto, y este primero habla con la Marquesa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Alta señora, que en la edad <w type="rhyme">presente</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">divina más que hermana <w type="rhyme">hermosura</w>
+            </l>
+            <l n="3" met="-++--+---+-" rhyme="B">y mil dotes de cielo y de <w type="rhyme">ventura</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">os hacen un milagro entre la <w type="rhyme">gente</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+-+-+-" rhyme="A"> de cuyo resplandor el mundo <w type="rhyme">siente</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">que en nuestra vida trabajosa y <w type="rhyme">dura</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">nos hace clara de la noche <w type="rhyme">oscura</w>,</l>
+            <l n="8" met="--++-+---+-" rhyme="A">como el bien más perfecto y <w type="rhyme">excelente</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+-++-+-+-" rhyme="C"> aunque causa tan justa os haya <w type="rhyme">dado</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">para llanto y dolor la cruda <w type="rhyme">muerte</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="E">contra quien no hay reparo ni <w type="rhyme">remedio</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C"> el saber de que el cielo os ha <w type="rhyme">dotado</w>
+            </l>
+            <l n="13" met="+--+---+-+-" rhyme="D">ponga en el llanto doloroso y <w type="rhyme">fuerte</w>,</l>
+            <l n="14" met="-+++-+-+-+-" rhyme="E">si fin no puede ser, al menos <w type="rhyme">medio</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

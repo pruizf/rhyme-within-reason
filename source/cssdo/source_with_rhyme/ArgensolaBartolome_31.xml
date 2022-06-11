@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXVI - Respuesta de Argensola</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXVI - Respuesta de Argensola </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++---+-+-" rhyme="A"> El pintor raro, a quien el arte <w type="rhyme">sobra</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">aunque acabada la pintura <w type="rhyme">deja</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">vuélvela a ver, y con severa <w type="rhyme">ceja</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">la acusa, y pone en perfección su <w type="rhyme">obra</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++---+-+-" rhyme="A"> y el que cada año con usuras <w type="rhyme">cobra</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">sembrando en tierra ejercitada y <w type="rhyme">vieja</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">no del culto solícito se <w type="rhyme">aleja</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">que con socorros sucesivos <w type="rhyme">obra</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+-+-+-" rhyme="C">pero ni la que vos llamáis <w type="rhyme">divina</w>
+            </l>
+            <l n="10" met="+----+--++-" rhyme="D">sátira, ni el laurel, que llamáis <w type="rhyme">palma</w>,</l>
+            <l n="11" met="+-+--+--++-" rhyme="E">de estas dos diligencias darán <w type="rhyme">señas</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C"> si ya vuestra elocuencia <w type="rhyme">peregrina</w>
+            </l>
+            <l n="13" met="+--+---+-+-" rhyme="D">no les infunde a las pinturas <w type="rhyme">alma</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">y no cultiva las heladas <w type="rhyme">peñas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXCV - Al mismo</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXCV - Al mismo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Digno construye a tu memoria <w type="rhyme">nido</w>,</l>
+            <l n="2" met="++-+-+---+-" rhyme="B">no pompa vana, en vano <w type="rhyme">mausoleo</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">al cielo, si católico <w type="rhyme">trofeo</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">a mortales trabajos <w type="rhyme">ofrecido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">En dos eternidades ya <w type="rhyme">esculpido</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">a soberana luz tu nombre <w type="rhyme">veo</w>,</l>
+            <l n="7" met="--+--+-+++-" rhyme="B">y en cerúleo papel impreso aun <w type="rhyme">leo</w>
+            </l>
+            <l n="8" met="--+--++--+-" rhyme="A">tu incesable anhelar nunca <w type="rhyme">perdido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+-+-+-" rhyme="C">De sudar deje ya fecundo <w type="rhyme">aroma</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">el que en remoto y no apartado <w type="rhyme">clima</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="E">tu fatigar compadeció <w type="rhyme">piadoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+++-+-" rhyme="C">Claro, pues, vencedor mil palmas <w type="rhyme">toma</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="D">hoy que el sagrado cónclave te <w type="rhyme">estima</w>
+            </l>
+            <l n="14" met="+-+--+---+-" rhyme="E">más que digno del triunfo <w type="rhyme">glorioso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

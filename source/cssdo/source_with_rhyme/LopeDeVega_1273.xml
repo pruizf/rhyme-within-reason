@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 8 - Acto I, DOÑA JUANA De Quien más no puede</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 8 - Acto I, DOÑA JUANA De Quien más no puede </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Si en un carcaj dorado están <w type="rhyme">metidas</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">amor, tus flechas, bien se ve que a <w type="rhyme">tiento</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">ciego las sacas, con diverso <w type="rhyme">intento</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">del que después se mira en las <w type="rhyme">heridas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Quitas sin vista diferentes <w type="rhyme">vidas</w>,</l>
+            <l n="6" met="-----+---+-" rhyme="B">y como las esparces por el <w type="rhyme">viento</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y el blanco no se ve del <w type="rhyme">pensamiento</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">por esto quieres, y por esto <w type="rhyme">olvidas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+--++---+-" rhyme="C">Tirando así, no hay alma que <w type="rhyme">resista</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="E">las duras puntas de tus flechas <w type="rhyme">fieras</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="D">porque el mundo contigo se <w type="rhyme">resista</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="E">O si con vista dulce, amor, <w type="rhyme">nacieras</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">y acertaras las almas con la <w type="rhyme">vista</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">mas no fueras amor, si la <w type="rhyme">tuvieras</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

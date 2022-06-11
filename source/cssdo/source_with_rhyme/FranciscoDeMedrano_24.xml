@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXX - Al retrato de Luciano de Negrón por el pintor Francisco Pacheco</title>
+            <author> Francisco De Medrano</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de Medrano</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXX - Al retrato de Luciano de Negrón por el pintor Francisco Pacheco </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Este breve retrato los <w type="rhyme">mayores</w>
+            </l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">dos varones que al mundo dio <w type="rhyme">Sevilla</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">nos ofrece a los ojos; <w type="rhyme">maravilla</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="A">ambos y emulación a los <w type="rhyme">mejores</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Los primores del cielo, los <w type="rhyme">primores</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">del arte aquí la envidia vio <w type="rhyme">amarilla</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y sobrada de entrambos la <w type="rhyme">rodilla</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">dobla, y suelta la lengua en sus <w type="rhyme">loores</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="C">En ti ¡oh Negrón! sin límite así <w type="rhyme">crece</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">la ciencia y la bondad, que en todos <w type="rhyme">mengua</w>;</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">la pintura ¡oh Pacheco! en ti se <w type="rhyme">suma</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-----+-" rhyme="C">Mi pluma y lengua para y se <w type="rhyme">enmudece</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">por no llegar a tu virtud mi <w type="rhyme">lengua</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">por no llegar a tu pincel mi <w type="rhyme">pluma</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

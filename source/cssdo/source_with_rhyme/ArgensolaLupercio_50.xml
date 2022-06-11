@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LV -</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A"> El lamentable son del campo <w type="rhyme">griego</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">los golpes fieros del troyano <w type="rhyme">fuerte</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">mil espantosos géneros de <w type="rhyme">muerte</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">y en suma cuanto pueden hierro y <w type="rhyme">fuego</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A"> Aquiles oye y mira con <w type="rhyme">sosiego</w>,</l>
+            <l n="6" met="---+---+-+-" rhyme="B">sin que se duela de su adversa <w type="rhyme">suerte</w>;</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">antes tañe su lira y se <w type="rhyme">divierte</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">y al sol confunde la piedad y el <w type="rhyme">ruego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C"> En él vive la injuria <w type="rhyme">solamente</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">de que Briseida bella, su <w type="rhyme">querida</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">de Agamenón por fuerza ocupa el <w type="rhyme">lecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-++--+-" rhyme="C"> Y así consigo mismo es <w type="rhyme">inclemente</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">pues de su gloria, que es lo más, se <w type="rhyme">olvida</w>:</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">tanto puede la fuerza de un <w type="rhyme">despecho</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

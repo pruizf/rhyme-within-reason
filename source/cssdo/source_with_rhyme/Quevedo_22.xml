@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Al toro a quien con bala dio muerte el Rey Nuestro Señor</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Al toro a quien con bala dio muerte el Rey Nuestro Señor  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A"> En el bruto, que fue bajel <w type="rhyme">viviente</w>
+            </l>
+            <l n="2" met="-----+---+-" rhyme="B">donde Jove embarcó su <w type="rhyme">monarquía</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y la esfera del fuego donde <w type="rhyme">ardía</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">cuando su rayo navegó <w type="rhyme">tridente</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">yace vivo el león que, <w type="rhyme">humildemente</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">coronó por vivir su <w type="rhyme">cobardía</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y vive muerta fénix <w type="rhyme">valentía</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">que de glorioso fuego nace <w type="rhyme">ardiente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="A">Cada grano de pólvora le <w type="rhyme">aumenta</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="C">de primer magnitud estrella <w type="rhyme">pura</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="A">pues la primera magnitud le <w type="rhyme">alienta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">Entrará con respeto en su <w type="rhyme">figura</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="A">el sol, y los caballos que <w type="rhyme">violenta</w>,</l>
+            <l n="14" met="--+--++--+-" rhyme="C">con temor de la sien áspera y <w type="rhyme">dura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXIX - Al rey don Rodrigo, último de los godos</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXIX - Al rey don Rodrigo, último de los godos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Godo Infeliz, Rodrigo <w type="rhyme">desgraciado</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">que terciando la Pica, y <w type="rhyme">Coselete</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">te vio funesto el claro <w type="rhyme">Guadalete</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">más de delicia, que de hierro <w type="rhyme">armado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-++--+-" rhyme="A">Adónde está el valor que has <w type="rhyme">heredado</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">adónde el brío, que tu ardor <w type="rhyme">promete</w>,</l>
+            <l n="7" met="++-+-+---+-" rhyme="B">triunfo eres ya de bárbaro <w type="rhyme">Jinete</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">en su ondas, y arenas <w type="rhyme">anegado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">O triste España cuanto Alarbe <w type="rhyme">cruza</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">teñida en sangre tu feroz <w type="rhyme">campaña</w>,</l>
+            <l n="11" met="+-+--+---+-" rhyme="C">de una y otra morisca <w type="rhyme">escaramuza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="D">Cuanta Marlota, y Capellar <w type="rhyme">rebaña</w>
+            </l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">espera o tú caudillo, aguarda <w type="rhyme">Muza</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">que ya Pelayo baja la <w type="rhyme">montaña</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

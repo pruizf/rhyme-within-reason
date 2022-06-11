@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Don Belianís de Grecia a don Quijote de La Mancha</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Don Belianís de Grecia a don Quijote de La Mancha </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Rompí, corté, abollé, y dije, y <w type="rhyme">hice</w>
+            </l>
+            <l n="2" met="+--+---+-+-" rhyme="B">más que en el orbe castellano <w type="rhyme">andante</w>;</l>
+            <l n="3" met="++-+-+-+-+-" rhyme="B">fui diestro, fui valiente, fui <w type="rhyme">arrogante</w>;</l>
+            <l n="4" met="+-+--+++-+-" rhyme="A">mil agravios vengué, cien mil <w type="rhyme">deshice</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Hazañas di a la fama que <w type="rhyme">eternice</w>;</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">fui comedido y regalado <w type="rhyme">amante</w>;</l>
+            <l n="7" met="++---++--+-" rhyme="B">fue enano para mí todo <w type="rhyme">gigante</w>,</l>
+            <l n="8" met="-+--++---+-" rhyme="A">y el duelo en cualquier punto <w type="rhyme">satisfice</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Tuve a mis pies postrada la <w type="rhyme">fortuna</w>.</l>
+            <l n="10" met="-+---+---+-" rhyme="D">Y trajo del copete mi <w type="rhyme">cordura</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">a la calva ocasión al <w type="rhyme">estricote</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="C">Mas, aunque sobre el cuerno de la <w type="rhyme">luna</w>
+            </l>
+            <l n="13" met="+--+-+---+-" rhyme="D">siempre se vio encumbrada mi <w type="rhyme">ventura</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="E">tus proezas envidio, ¡oh gran <w type="rhyme">Quijote</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

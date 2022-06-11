@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXX -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+++-+-" rhyme="A">¡Oh cara perdición! ¡oh dulce <w type="rhyme">engaño</w>!</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">suave mal, sabroso <w type="rhyme">descontento</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">amado error del tierno <w type="rhyme">pensamiento</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">luz, que nunca descubre el <w type="rhyme">desengaño</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+-+-+-" rhyme="A">puerta por la cual entra el bien y el <w type="rhyme">daño</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">descanso y pena grave del <w type="rhyme">tormento</w>,</l>
+            <l n="7" met="+--++----+-" rhyme="B">vida del mal, alma del <w type="rhyme">sufrimiento</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">de confusión revuelta, cerco <w type="rhyme">extraño</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">vario mar de tormenta y de <w type="rhyme">bonanza</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">segura playa y peligroso <w type="rhyme">puerto</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">sereno, instable, oscuro y claro <w type="rhyme">cielo</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">¿por qué como me diste <w type="rhyme">confianza</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">de osar perderme, ya que estoy <w type="rhyme">desierto</w>
+            </l>
+            <l n="14" met="-+++---+-+-" rhyme="E">de bien, no pones a mi mal <w type="rhyme">consuelo</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

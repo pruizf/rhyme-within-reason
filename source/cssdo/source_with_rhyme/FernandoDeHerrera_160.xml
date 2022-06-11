@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXVIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Quejoso ya del tiempo mal <w type="rhyme">perdido</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">las armas con que al dulce rey <w type="rhyme">tirano</w>
+            </l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">ofrecido seguí, esperando en <w type="rhyme">vano</w>,</l>
+            <l n="4" met="+----+---+-" rhyme="A">pongo, de mis deseos <w type="rhyme">ofendido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Basta en mi tierna edad haber <w type="rhyme">crecido</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">Amor, que en mí cansó su diestra <w type="rhyme">mano</w>;</l>
+            <l n="7" met="-+---+-+++-" rhyme="B">consejo me parece ya bien <w type="rhyme">sano</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">desviarme del curso <w type="rhyme">proseguido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">Bien puedo, y tengo fuerzas y <w type="rhyme">osadía</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">y valgo a contrastar su gran <w type="rhyme">dureza</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">y negar de mis males la <w type="rhyme">victoria</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="C">Mas no sufre el cruel que en la alma <w type="rhyme">mía</w>
+            </l>
+            <l n="13" met="-++--+---+-" rhyme="D">mi luz no me presente su <w type="rhyme">belleza</w>;</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">y así, me aflige y vence la <w type="rhyme">memoria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

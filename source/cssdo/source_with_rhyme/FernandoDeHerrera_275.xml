@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Tal vez abrasa con vapor <w type="rhyme">fogoso</w>,</l>
+            <l n="2" met="++-+---+-+-" rhyme="B">tal vez enfría con horror <w type="rhyme">helado</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">de la africana fuente <w type="rhyme">desatado</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">el cristal en el mismo trato <w type="rhyme">ondoso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Cuando el cielo en la sombra está <w type="rhyme">medroso</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">hierve en ardor su curso <w type="rhyme">destemplado</w>,</l>
+            <l n="7" met="---+-++--+-" rhyme="B">y cuando yace el sol más <w type="rhyme">inflamado</w>,</l>
+            <l n="8" met="++-+---+-+-" rhyme="A">corre un invierno de rigor <w type="rhyme">nevoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+---+-" rhyme="C">Son tales los milagros en mi <w type="rhyme">pecho</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">sujeto y condenado a tu <w type="rhyme">crudeza</w>,</l>
+            <l n="11" met="+-+--+--++-" rhyme="E">haces, fiero tirano y señor <w type="rhyme">mío</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+++-+-" rhyme="C">que estoy en el calor un hielo <w type="rhyme">hecho</w>,</l>
+            <l n="13" met="++---+---+-" rhyme="D">y un fuego de inmortal <w type="rhyme">naturaleza</w>
+            </l>
+            <l n="14" met="--+--+--++-" rhyme="E">en la fuerza y vigor del mayor <w type="rhyme">frío</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

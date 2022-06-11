@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIV -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Labra Artemisa el grande <w type="rhyme">mausoleo</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">que los altos pirámides <w type="rhyme">afrenta</w>
+            </l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">del egipcio soberbio, y no <w type="rhyme">contenta</w>
+            </l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">busca a su ilustre fe mayor <w type="rhyme">trofeo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Del tierno y casto pecho en nuevo <w type="rhyme">empleo</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">hacer sepulcro al muerto esposo <w type="rhyme">intenta</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">cuyas cenizas, de su amor <w type="rhyme">sedienta</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">bebe con ansias de inmortal <w type="rhyme">deseo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++---+-+-" rhyme="-">«Mal podrá, dice, la enemiga muerte</l>
+            <l n="10" met="-++--+---+-" rhyme="C">de ti, dulce Mauseolo, <w type="rhyme">dividirme</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="D">ni en largo olvido sepultar tu <w type="rhyme">gloria</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Que de su injuria basta a <w type="rhyme">defenderme</w>
+            </l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">mi pecho, más que el bronce y mármol <w type="rhyme">firme</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">y eternizar mi amor y su <w type="rhyme">memoria</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

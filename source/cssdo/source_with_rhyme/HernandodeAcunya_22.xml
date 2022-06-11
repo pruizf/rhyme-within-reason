@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIX - Al Marqués de Pescara</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> - XXIX - Al Marqués de Pescara </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A"> Señor, en quien nos vive y ha <w type="rhyme">quedado</w>
+            </l>
+            <l n="2" met="-++--+---+-" rhyme="B">el gran nombre del Vasto y, su <w type="rhyme">memoria</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">después que de esta breve y <w type="rhyme">transitoria</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">a al vida inmortal mudó su <w type="rhyme">estado</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A"> donde desprecia nuestro bajo <w type="rhyme">grado</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">y goza para siempre inmensa <w type="rhyme">gloria</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">quedando en todo verso, en toda <w type="rhyme">historia</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">del mundo eternamente <w type="rhyme">celebrado</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++---+-+-" rhyme="C"> mirad cuán ancha y espaciosa <w type="rhyme">vía</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">os muestran sus hazañas <w type="rhyme">inmortales</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="E">de haceros inmortal entre la <w type="rhyme">gente</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+--++-" rhyme="C"> y seguid su valor, que con tal <w type="rhyme">guía</w>
+            </l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">los más famosos no os serán <w type="rhyme">iguales</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">del siglo ya pasado o del <w type="rhyme">presente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

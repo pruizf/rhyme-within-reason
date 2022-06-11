@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XI - Al Cid Campeador</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XI - Al Cid Campeador </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Esplendor generoso de <w type="rhyme">Castilla</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">ínclito Godo, valeroso <w type="rhyme">Atlante</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que teñiste vestido de <w type="rhyme">diamante</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">en sangre Mora la fatal <w type="rhyme">cuchilla</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Coronada de España <w type="rhyme">maravilla</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">que en huestes Africanas el <w type="rhyme">radiante</w>
+            </l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">acero, a tanto rojo fue <w type="rhyme">Turbante</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">rayo invencible, que su orgullo <w type="rhyme">humilla</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Estudien en tus hechos <w type="rhyme">soberanos</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">copiando tu valor y tus <w type="rhyme">acciones</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="C">los Griegos, los Latinos, y <w type="rhyme">Romanos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---++--+-" rhyme="D">Tú solo afrentarás tantos <w type="rhyme">blasones</w>,</l>
+            <l n="13" met="+----+---+-" rhyme="C">díganlo los Cenetes <w type="rhyme">Africanos</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="D">callen Pericles, César, y <w type="rhyme">Scipiones</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

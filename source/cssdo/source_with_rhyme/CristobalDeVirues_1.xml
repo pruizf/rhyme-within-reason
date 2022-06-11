@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Virués, Cristóbal de Valencia. 0 - 1609 Poeta y dramaturgo. Hijo del médico Alonso de Virués, amigo de Luis Vives. Sonetos en su honor (Por su estilo y forma se suponen son de Vinués.) El doctor Francisco de la Portilla, capellán de Su Majestad</title>
+            <author> Cristobal De Virues</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Virués,  Cristóbal de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Virués, Cristóbal de Valencia. 0 - 1609 Poeta y dramaturgo. Hijo del médico Alonso de Virués, amigo de Luis Vives. Sonetos en su honor (Por su estilo y forma se suponen son de Vinués.) El doctor Francisco de la Portilla, capellán de Su Majestad </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">Si entre los sabios griegos fue <w type="rhyme">ilustrado</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">Homero por su tan subida <w type="rhyme">rima</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y entre latinos se le dio la <w type="rhyme">prima</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">al Mantuano heroico <w type="rhyme">celebrado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">¿Qué merece el que el vuelo a <w type="rhyme">levantado</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">cantando lo que el Cielo tanto <w type="rhyme">estima</w>,</l>
+            <l n="7" met="-++--+---+-" rhyme="B">como es un pecador cuando se <w type="rhyme">anima</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">a salir con fervor de su <w type="rhyme">pecado</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+--++-" rhyme="C">Mayor palma es la vuestra y mayor <w type="rhyme">gloria</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">Virués pues con Poema <w type="rhyme">peregrino</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">cantáis del gran Garín las <w type="rhyme">alabanzas</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">y de aquel Santuario la <w type="rhyme">memoria</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="D">eternizáis, abriéndonos <w type="rhyme">camino</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="E">a contemplar divinas <w type="rhyme">Esperanzas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

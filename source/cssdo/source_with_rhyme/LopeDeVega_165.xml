@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXVII - A su amante, Micaela de Luján</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXVII - A su amante, Micaela de Luján </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+++--+---+-" rhyme="A">Yo no espero la flota, ni <w type="rhyme">importuno</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">al cielo, al mar, al viento por su <w type="rhyme">ayuda</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">ni que segura pase la <w type="rhyme">Bermuda</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">sobre el azul tridente de <w type="rhyme">Neptuno</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Ni tengo hierba en campo, o rompo <w type="rhyme">alguno</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">con el arado, en que el villano <w type="rhyme">suda</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">ni del vasallo, que con renta <w type="rhyme">acuda</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">provecho espero en mi favor <w type="rhyme">ninguno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">Mira estas hiedras, que con tiernos <w type="rhyme">lazos</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">para formar sin alma su <w type="rhyme">himeneo</w>
+            </l>
+            <l n="11" met="++-+-+---+-" rhyme="C">dan a estos verdes álamos <w type="rhyme">abrazos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">Y si tienes, Lucinda, mi <w type="rhyme">deseo</w>,</l>
+            <l n="13" met="+----+---+-" rhyme="C">hálleme la vejez entre tus <w type="rhyme">brazos</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">y pasaremos juntos el <w type="rhyme">Leteo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

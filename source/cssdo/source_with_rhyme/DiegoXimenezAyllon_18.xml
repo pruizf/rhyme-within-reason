@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXV - Al capitán don Juan Pacheco</title>
+            <author> Diego Ximenez Ayllon</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Ximenez Ayllon</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXV - Al capitán don Juan Pacheco </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">Cerralvo es la cabeza del <w type="rhyme">estado</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">Pacheco el claro nombre y <w type="rhyme">apellido</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">de Lusitana estirpe <w type="rhyme">producido</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">en virtud de las armas <w type="rhyme">ilustrado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Y como don del quinto cielo <w type="rhyme">dado</w>
+            </l>
+            <l n="6" met="-+--++-+-+-" rhyme="B">que en vos singularmente está <w type="rhyme">infundido</w>
+            </l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">mostráis vuestro valor como es <w type="rhyme">debido</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">a la milicia en tiernos años <w type="rhyme">dado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">El mar surcando con prudencia y <w type="rhyme">arte</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="D">diste principio al muy alto <w type="rhyme">ejercicio</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="C">siguiendo del Hispano el <w type="rhyme">estandarte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="D">Y sin os alejar de su <w type="rhyme">servicio</w>
+            </l>
+            <l n="13" met="-+---+--++-" rhyme="C">en Frisa y en Bramante y cualquier <w type="rhyme">parte</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">en él prevaleció con buen <w type="rhyme">auspicio</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

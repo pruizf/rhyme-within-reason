@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 64 - Jornada I, FABIO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 64 - Jornada I, FABIO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Si pudiera mirar como en <w type="rhyme">espejo</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">el alma, cosa tan suprema y <w type="rhyme">rara</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">maestro mío, el alma <w type="rhyme">retratara</w>,</l>
+            <l n="4" met="-----++--+-" rhyme="A">aunque con mi pincel fuera en <w type="rhyme">bosquejo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Voy a buscarla, aunque de mí me <w type="rhyme">alejo</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">adonde fuera justo que la <w type="rhyme">hallara</w>;</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">mas no la hallando, la razón se <w type="rhyme">para</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">pierdo el discurso y los pinceles <w type="rhyme">dejo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">En esta confusión en esta <w type="rhyme">calma</w>,</l>
+            <l n="10" met="++-+-+-+-+-" rhyme="D">yo mismo a no saber del alma <w type="rhyme">vengo</w>,</l>
+            <l n="11" met="---+-++--+-" rhyme="C">que para dar a amor traje en la <w type="rhyme">palma</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---++--+-" rhyme="D">Pues ¿qué definición de ella <w type="rhyme">prevengo</w>?</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">Que si he perdido en un desprecio el <w type="rhyme">alma</w>,</l>
+            <l n="14" met="+-+--+--++-" rhyme="D">¿cómo puedo decir lo que no <w type="rhyme">tengo</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1 - Desordenados, con alusión a la fábula de Acteón</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1 - Desordenados, con alusión a la fábula de Acteón </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Ingratos canes, para mí <w type="rhyme">dañosos</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">que sustento del alma vuestra <w type="rhyme">vida</w>,</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">si es vuestra rabia en mí de sí <w type="rhyme">homicida</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">¿para qué en perseguirme tan <w type="rhyme">furiosos</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Mas ¡ay! en vano os volverá <w type="rhyme">piadosos</w>
+            </l>
+            <l n="6" met="-----+-+-+-" rhyme="B">quien por naturaleza así os <w type="rhyme">convida</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">que os tiene mi razón <w type="rhyme">embrutecida</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">hartos, hambrientos, y sin sed <w type="rhyme">rabiosos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+++-" rhyme="C">Si os di sustento, yo la causa he <w type="rhyme">dado</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">para ser de vosotros <w type="rhyme">perseguido</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">pues en bruto merezco ser <w type="rhyme">mudado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">Que no acoséis el alma tanto os <w type="rhyme">pido</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">bástale al cuerpo ser el <w type="rhyme">desdichado</w>,</l>
+            <l n="14" met="+++--+---+-" rhyme="D">no tome ella la forma del <w type="rhyme">vestido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XX -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A"> Huyo de ti, y a tus umbrales <w type="rhyme">llego</w>,</l>
+            <l n="2" met="--++-+-+-+-" rhyme="B">como tú infieles, Gala, y temo <w type="rhyme">hallarte</w>;</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">triste, que busco en los peligros <w type="rhyme">parte</w>
+            </l>
+            <l n="4" met="+--+-----+-" rhyme="A">fiel y segura para mi <w type="rhyme">sosiego</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Puédenlo ser tus fraudes, no lo <w type="rhyme">niego</w>;</l>
+            <l n="6" met="-+--++---+-" rhyme="B">mas viéndote, ¿quién pudo <w type="rhyme">desarmarte</w>?</l>
+            <l n="7" met="+-+--+-+-+-" rhyme="B">ya mis nuevas defensas quiso al <w type="rhyme">arte</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">y a tu pérfido antojo las <w type="rhyme">entrego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Yo moriré quejoso y tuyo, <w type="rhyme">Gala</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">habiendo sido fábula <w type="rhyme">increíble</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">de fe indiscreta y vergonzosa <w type="rhyme">pena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+++-+-" rhyme="D">¡Oh justicia de amor! ¡Qué no es <w type="rhyme">posible</w>
+            </l>
+            <l n="13" met="--+--+--++-" rhyme="E">avenirme contigo aunque seas <w type="rhyme">buena</w>,</l>
+            <l n="14" met="--+--+--++-" rhyme="C">ni dejarte de amar, aunque seas <w type="rhyme">mala</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

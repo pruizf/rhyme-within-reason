@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Tú, que con la robusta y ancha <w type="rhyme">frente</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">y grandes hombros sustentaste, <w type="rhyme">alzado</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">rey africano, todo el <w type="rhyme">consagrado</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="A">cerco de las estrellas <w type="rhyme">reluciente</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+--++-" rhyme="A">y tú, que cuando Atlante temblar <w type="rhyme">siente</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">la inmensa carga, sin doblar <w type="rhyme">cansado</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">el vigor de tu cuello, <w type="rhyme">levantado</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">sufriste tanto peso <w type="rhyme">osadamente</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-----+-" rhyme="C">yo no os envidio, aunque en la <w type="rhyme">grandeza</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">y en valor desigual, porque el <w type="rhyme">sereno</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="E">cielo y estrellas, do el Amor se <w type="rhyme">cría</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">y donde reina eterna la <w type="rhyme">belleza</w>,</l>
+            <l n="13" met="-+---+--++-" rhyme="D">sostuve glorioso y de bien <w type="rhyme">lleno</w>
+            </l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">cuanto sufrió la corta suerte <w type="rhyme">mía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

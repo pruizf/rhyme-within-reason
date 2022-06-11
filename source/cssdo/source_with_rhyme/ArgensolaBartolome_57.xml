@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XV -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++---+-+-" rhyme="A">De la unión, Silvio, con que amor <w type="rhyme">prospera</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">o endiosa nuestras almas, el <w type="rhyme">conceto</w>
+            </l>
+            <l n="3" met="---+-+++-+-" rhyme="B">que la esperanza forma es tan <w type="rhyme">perfeto</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">que la opresión del yugo le <w type="rhyme">aligera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+--++-" rhyme="A">Y así, quien ama y dice que no <w type="rhyme">espera</w>,</l>
+            <l n="6" met="--+-++-+-+-" rhyme="B">por ostentan más fe al amado <w type="rhyme">objeto</w>,</l>
+            <l n="7" met="---+-++--+-" rhyme="B">a su interior verdad pierde el <w type="rhyme">respeto</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">sin cuyo alivio ni alentar <w type="rhyme">pudiera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Bien que sí, generosa en la <w type="rhyme">tardanza</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">(mientras que en gloria no se le <w type="rhyme">convierte</w>),</l>
+            <l n="11" met="--+-++---+-" rhyme="E">a finezas más nobles les <w type="rhyme">convida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+++-" rhyme="D"> Sufra y espere, mas con ley tan <w type="rhyme">fuerte</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="E">que aunque le falte esfuerzo, no le <w type="rhyme">pida</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="C">jamás el sufrimiento a la <w type="rhyme">esperanza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

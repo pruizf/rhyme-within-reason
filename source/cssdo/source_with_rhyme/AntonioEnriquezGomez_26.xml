@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXII - A la dormida Venus</title>
+            <author> Antonio Enriquez Gomez</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Antonio Enriquez Gomez</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXII - A la dormida Venus </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Dormida Venus que en viviente <w type="rhyme">forma</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">alientas con descuido la <w type="rhyme">hermosura</w>,</l>
+            <l n="3" met="++---+---+-" rhyme="B">tan hija de la espuma en la <w type="rhyme">blancura</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">que la nieve en tu fuego se <w type="rhyme">transforma</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Inmóvil Chipre, donde amor te <w type="rhyme">forma</w>,</l>
+            <l n="6" met="+-+--+---+-" rhyme="B">siendo ciego, su cándida <w type="rhyme">pintura</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">del robador de Europa mal <w type="rhyme">segura</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">pues el honor la oculta si la <w type="rhyme">informa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">Si la ocasión mi dicha me <w type="rhyme">comprende</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">dure el engaño donde el alma <w type="rhyme">cierta</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="C">busca la Troya que el deseo <w type="rhyme">enciende</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Y pues vives también estando <w type="rhyme">muerta</w>,</l>
+            <l n="13" met="++-+-+---+-" rhyme="C">no trates mal el sueño si te <w type="rhyme">ofende</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">pues matas más dormida que <w type="rhyme">despierta</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

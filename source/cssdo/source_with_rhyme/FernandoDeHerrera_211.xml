@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXIII - A la muerte de don Luis Ponce de León</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXIII - A la muerte de don Luis Ponce de León </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+--++---+-" rhyme="A">Aquí, donde tú yaces <w type="rhyme">sepultado</w>,</l>
+            <l n="2" met="-+---++--+-" rhyme="B">oh gloria de León más <w type="rhyme">excelente</w>,</l>
+            <l n="3" met="--++-+---+-" rhyme="B">el valor todo yace de <w type="rhyme">Occidente</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">con envidia de Marte <w type="rhyme">derribado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="A">No culpes la dureza de tu <w type="rhyme">hado</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que en tierra ajena tu dolor <w type="rhyme">consiente</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">pues cuanto ves del austro al <w type="rhyme">oriente</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">es sepulcro a los fuertes <w type="rhyme">consagrado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Será eterna en nosotros tu <w type="rhyme">memoria</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">y puesto en el dorado y alto <w type="rhyme">asiento</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">defenderás mejor tu patrio <w type="rhyme">suelo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+--++-" rhyme="C">No queda ya a la muerte mayor <w type="rhyme">gloria</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">pero queda igualado el <w type="rhyme">sentimiento</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">tristeza a España y alegría al <w type="rhyme">cielo</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

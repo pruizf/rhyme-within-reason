@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LI -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Miraba Fabio en un reloj de <w type="rhyme">arena</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">de la muerta Lucinda las <w type="rhyme">cenizas</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">las blancas manos, y las trenzas <w type="rhyme">rizas</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">olvido triste, y afrentosa <w type="rhyme">pena</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Miró la suya en la desdicha <w type="rhyme">ajena</w>,</l>
+            <l n="6" met="-+-+-++--+-" rhyme="B">y dijo: ¿Qué beldad no <w type="rhyme">atemorizas</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">cenizas que inconstante <w type="rhyme">solemnizas</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">al ser, que a su inconstancia te <w type="rhyme">condena</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">¡O no excusado golpe de la <w type="rhyme">muerte</w>!</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">Pues corta siempre con la misma <w type="rhyme">espada</w>;</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">la dulce vida, y la amorosa <w type="rhyme">suerte</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">que fingiendo conformes su <w type="rhyme">jornada</w>;</l>
+            <l n="13" met="---+-+---+-" rhyme="C">cuando la vida en polvo se <w type="rhyme">convierte</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="D">queda el fuego de amor ceniza <w type="rhyme">helada</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

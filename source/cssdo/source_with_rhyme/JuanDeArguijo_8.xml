@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIII -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Baña llorando el ofendido <w type="rhyme">lecho</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">de Colatino la consorte <w type="rhyme">amada</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y en la tirana fuerza <w type="rhyme">disculpada</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">si no la voluntad, castiga el <w type="rhyme">hecho</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Rompe con hierro agudo el casto <w type="rhyme">pecho</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">y abre camino al alma, que <w type="rhyme">indignada</w>
+            </l>
+            <l n="7" met="+--+-+-+-+-" rhyme="B">baja a la oscura sombra, do <w type="rhyme">vengada</w>
+            </l>
+            <l n="8" met="++---++--+-" rhyme="A">aun duda si su ofensa ha <w type="rhyme">satisfecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Venció el paterno llanto <w type="rhyme">endurecida</w>,</l>
+            <l n="10" met="---+-+--++-" rhyme="D">y de su esposo el ruego, que no <w type="rhyme">basta</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">menospreció, con un mortal <w type="rhyme">desvío</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">«Ceda al debido honor la dulce <w type="rhyme">vida</w>,</l>
+            <l n="13" met="-+++-+-+-+-" rhyme="D">que no es bien, dijo, que otra menos <w type="rhyme">casta</w>
+            </l>
+            <l n="14" met="+--+---+-+-" rhyme="E">ose vivir con el ejemplo <w type="rhyme">mío</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

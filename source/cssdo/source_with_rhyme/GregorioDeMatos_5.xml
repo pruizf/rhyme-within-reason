@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- II -</title>
+            <author> Gregorio De Matos</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Matos,  Gregorio de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- II - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Divina flor, si en esa pompa <w type="rhyme">vana</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">los martirios ostentas <w type="rhyme">reverente</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">corona con los clavos a tu <w type="rhyme">frente</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">pues brillas con las llagas tan <w type="rhyme">lozana</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">Venera esa corona altiva, <w type="rhyme">ufana</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">que en tus garbos te ostenta <w type="rhyme">floreciente</w>:</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">los calvos enarbola <w type="rhyme">eternamente</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">pues Dios con tus heridas se te <w type="rhyme">hermana</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Si flor naciste para más <w type="rhyme">pomposa</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">desvanecer floridos <w type="rhyme">crecimientos</w>,</l>
+            <l n="11" met="++---+-+-+-" rhyme="C">ya, flor, te reconocen más <w type="rhyme">dichosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">Que el cielo te ha grabado en dos <w type="rhyme">tormentos</w>:</l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">en clavos la corona más <w type="rhyme">gloriosa</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">y en llagas sublimados <w type="rhyme">lucimientos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

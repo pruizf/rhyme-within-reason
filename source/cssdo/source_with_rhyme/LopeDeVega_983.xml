@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 34 - Acto III, CLAVELA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 34 - Acto III, CLAVELA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Hermosas aguas, puras, <w type="rhyme">cristalinas</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">que dais al cuerpo de estas fuentes <w type="rhyme">venas</w>
+            </l>
+            <l n="3" met="-----+-+-+-" rhyme="B">y hasta que os levantáis de perlas <w type="rhyme">llenas</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">buscáis su centro por secretas <w type="rhyme">minas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Plantas que hacéis con esmeraldas <w type="rhyme">finas</w>
+            </l>
+            <l n="6" met="-----++--+-" rhyme="B">para seguridad verdes <w type="rhyme">almenas</w>
+            </l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">de fruto, que entre ramas siempre <w type="rhyme">amenas</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">os hace con el arte <w type="rhyme">peregrinas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Oíd mis quejas, pero no <w type="rhyme">conviene</w>
+            </l>
+            <l n="10" met="-+++-+---+-" rhyme="D">quejarse un triste a libres <w type="rhyme">arroyuelos</w>,</l>
+            <l n="11" met="++-+---+-+-" rhyme="C">ni a un árbol verde quien celoso <w type="rhyme">viene</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">Oígame el Cielo en sus azules <w type="rhyme">velos</w>,</l>
+            <l n="13" met="---+--++-+-" rhyme="C">pues por los celos, que de él nombre <w type="rhyme">tiene</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="D">dicen que el cielo se vistió de <w type="rhyme">celos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLV - A la renunciación que hizo el emperador Carlos en el hijo y el hermano</title>
+            <author> Francisco De Medrano</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de Medrano</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLV - A la renunciación que hizo el emperador Carlos en el hijo y el hermano </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">De sostener cual nuevo Atlante el <w type="rhyme">mundo</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">el siempre augusto Carlos ya <w type="rhyme">cansado</w>,</l>
+            <l n="3" met="+-+-++-+-+-" rhyme="B">«Gentes, dice, no vistas he <w type="rhyme">domado</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">hollado el suelo, hollado el mar <w type="rhyme">profundo</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">hecho el persa monarca a mi <w type="rhyme">segundo</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">preso al francés, al moro leyes <w type="rhyme">dado</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">el cielo en ambos hombros <w type="rhyme">sustentado</w>,</l>
+            <l n="8" met="++---+--++-" rhyme="A">más grave con las glorias que en él <w type="rhyme">fundo</w>.»</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="B">Luego, del mundo desdeñoso y <w type="rhyme">harto</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="C">«Tú gobierna (al hermano le <w type="rhyme">decía</w>)</l>
+            <l n="11" met="-+-+-+---+-" rhyme="D">de Roma el ancho imperio y de <w type="rhyme">Alemaña</w>.»</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Y al hijo: «Tú de la invencible <w type="rhyme">España</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="C">y del indio tendrás la <w type="rhyme">monarquía</w>,</l>
+            <l n="14" met="-+-+-+--++-" rhyme="B">y entrambos junte amor lo que yo <w type="rhyme">parto</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

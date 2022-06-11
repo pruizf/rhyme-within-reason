@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A un rayo, que abrasó el retrato de una dama, de quien su galán estaba celoso. En boca del galán</title>
+            <author> Cancer Y Velasco</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cáncer y  Velasco,  Jerónimo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A un rayo, que abrasó el retrato de una dama, de quien su galán estaba celoso. En boca del galán </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-----+-" rhyme="A">Rayo veloz, que por <w type="rhyme">naturaleza</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">buscas la cumbre con ardiente <w type="rhyme">saña</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">sin duda hiciste paz con la <w type="rhyme">montaña</w>,</l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">cuanto en Clori fulminas, es <w type="rhyme">bajeza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="A">Si es blanco de tus iras la <w type="rhyme">firmeza</w>,</l>
+            <l n="6" met="---+---+-+-" rhyme="B">como en lo vario tu esplendor se <w type="rhyme">empaña</w>
+            </l>
+            <l n="7" met="+----+-+-+-" rhyme="B">firme te pareció, también se <w type="rhyme">engaña</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">la luz, si la divierte la <w type="rhyme">belleza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Pues abrasó tu fuego tanta <w type="rhyme">nieve</w>,</l>
+            <l n="10" met="+-+-++---+-" rhyme="D">que aun copiada no sé si la <w type="rhyme">encendiste</w>:</l>
+            <l n="11" met="-+-+-++--+-" rhyme="E">vengaras de una vez tantos <w type="rhyme">recelos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">O abrasarás también su dueño <w type="rhyme">aleve</w>,</l>
+            <l n="13" met="--+--++--+-" rhyme="D">y si sólo a arruinar sombras <w type="rhyme">naciste</w>,</l>
+            <l n="14" met="+--+-+-+-+-" rhyme="E">sombras mis celos son, veré en mis <w type="rhyme">celos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

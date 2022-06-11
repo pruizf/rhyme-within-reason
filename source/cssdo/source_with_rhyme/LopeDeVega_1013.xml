@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 61 - Jornada II, GUADALARA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 61 - Jornada II, GUADALARA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Esclavo de mis ojos, ya he <w type="rhyme">sabido</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">que nunca te venció quien te lo <w type="rhyme">llama</w>,</l>
+            <l n="3" met="--+-++---+-" rhyme="B">que quien ama no calla a lo que <w type="rhyme">ama</w>
+            </l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">lo que callar mejor hubiera <w type="rhyme">sido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">A vencerme viviste no <w type="rhyme">vencido</w>;</l>
+            <l n="6" met="---+-++--+-" rhyme="B">pero el traidor que así quiere tu <w type="rhyme">fama</w>
+            </l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">infamar, apagando aquesta <w type="rhyme">llama</w>,</l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">¿me ha de ganar quedando tú <w type="rhyme">perdido</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Luego a Bélmez me voy; pero <w type="rhyme">pretendo</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">buscarte desde allí, cristiano. <w type="rhyme">Espera</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">y no te hieles, pues por ti me <w type="rhyme">enciendo</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-++-++-" rhyme="D">que en hombre no ha de haber alma tan <w type="rhyme">fiera</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="C">que, amándole, rogando y <w type="rhyme">persuadiendo</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="D">no se convierta de diamante en <w type="rhyme">cera</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

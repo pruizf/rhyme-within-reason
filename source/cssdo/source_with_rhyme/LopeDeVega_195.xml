@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCIV -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Este mi triste y miserable <w type="rhyme">estado</w>
+            </l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">me ha reducido a punto tan <w type="rhyme">estrecho</w>,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">que cuando espero el bien, el mal <w type="rhyme">sospecho</w>,</l>
+            <l n="4" met="-+--+-+--+-" rhyme="A">temiendo el mal, del bien <w type="rhyme">desconfiado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">El daño me parece <w type="rhyme">declarado</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">y entre mil imposibles el <w type="rhyme">provecho</w>,</l>
+            <l n="7" met="+--+-+-+-+-" rhyme="B">propios efectos de un dudoso <w type="rhyme">pecho</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">cobarde al bien y al mal <w type="rhyme">determinado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Deseo la muerte para ver si <w type="rhyme">ella</w>
+            </l>
+            <l n="10" met="+-++-+-+-+-" rhyme="D">halla tan grave mal el bien <w type="rhyme">extremo</w>;</l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">mas quien por bien la tiene no la <w type="rhyme">alcanza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Quién la pasara ya por no <w type="rhyme">temella</w>,</l>
+            <l n="13" met="-++--+-+-+-" rhyme="D">que estoy tal de esperar, que menos <w type="rhyme">temo</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="E">la pena del morir que la <w type="rhyme">tardanza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

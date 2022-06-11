@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVII -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Alcé los ojos, de llorar <w type="rhyme">cansados</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">por tornar al descanso que <w type="rhyme">solía</w>;</l>
+            <l n="3" met="---+-+---+-" rhyme="C">y como no lo vi donde <w type="rhyme">solía</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">abajelos con lágrimas <w type="rhyme">bañados</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+++-+---+-" rhyme="A">Si algún bien yo hallaba en mis <w type="rhyme">cuidados</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">cuando por más contento me <w type="rhyme">tenía</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">pues que ya la perdí por culpa <w type="rhyme">mía</w>,</l>
+            <l n="8" met="-++--++--+-" rhyme="A">razón es que los llore ahora <w type="rhyme">doblados</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="E">Tendí todas las velas en <w type="rhyme">bonanza</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="F">sin recelar humano <w type="rhyme">entendimiento</w>;</l>
+            <l n="11" met="-++--+---+-" rhyme="E">alzose una borrasca de <w type="rhyme">mudanza</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="F">como si tierra y mar y fuego y <w type="rhyme">viento</w>
+            </l>
+            <l n="13" met="+-+------+-" rhyme="E">no me fueran en contra mi <w type="rhyme">esperanza</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="F">y castigaron solo el <w type="rhyme">sufrimiento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

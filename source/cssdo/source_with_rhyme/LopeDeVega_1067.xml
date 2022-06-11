@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Acto III, CELAURO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Acto III, CELAURO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Fábricas de la tierra, polvo, <w type="rhyme">nada</w>;</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">vano mortal, caduco <w type="rhyme">fundamento</w>;</l>
+            <l n="3" met="--+--+---+-" rhyme="B">esperanzas del viento que en el <w type="rhyme">viento</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">paráis, al fin, en fin de la <w type="rhyme">jornada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Máquinas de soberbia <w type="rhyme">levantada</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">en las alas del loco <w type="rhyme">pensamiento</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">razón dormida, ciego <w type="rhyme">entendimiento</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">señora voluntad <w type="rhyme">desenfrenada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+-+-+-" rhyme="C">Ícaro corazón, Faetonte <w type="rhyme">pecho</w>,</l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">que cara a cara al sol miró la <w type="rhyme">suya</w>,</l>
+            <l n="11" met="+----+-+-+-" rhyme="C">hoy nuestro laberinto se ha <w type="rhyme">deshecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-++--+-+-" rhyme="D">¡Oh, justo Juez!, ¿quién mirará la <w type="rhyme">tuya</w>?</l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">Ya de la muerte llega el paso <w type="rhyme">estrecho</w>.</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">¡Piedad, Señor, que no hay adonde <w type="rhyme">huya</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

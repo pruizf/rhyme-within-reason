@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- X -</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- X - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A"> ¡Oh tú, que a los peligros e <w type="rhyme">inconstancia</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">del mar te obligas, y en el viento <w type="rhyme">esperas</w>
+            </l>
+            <l n="3" met="+-+--+---+-" rhyme="B">ver del indio tostado las <w type="rhyme">riberas</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">y envuelta en sus arenas tu <w type="rhyme">ganancia</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A"> Sin huir de tu patria tal <w type="rhyme">distancia</w>,</l>
+            <l n="6" met="-++--+---+-" rhyme="B">coger perlas finísimas <w type="rhyme">pudieras</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">si a Filis los divinos ojos <w type="rhyme">vieras</w>,</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">tristes, vertiendo de ellas <w type="rhyme">abundancia</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+-+-+-" rhyme="C">Pero no quiso amor que avara <w type="rhyme">mano</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">las viese, ni dejó llegar <w type="rhyme">alguna</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">aparte donde ser robada <w type="rhyme">pueda</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C">que en su tesoro las encierra, <w type="rhyme">ufano</w>
+            </l>
+            <l n="13" met="-+-+++---+-" rhyme="D">de ver que aunque hoy más triunfe la <w type="rhyme">fortuna</w>,</l>
+            <l n="14" met="+-++---+-+-" rhyme="E">esto, que es mucho, por ganar le <w type="rhyme">queda</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

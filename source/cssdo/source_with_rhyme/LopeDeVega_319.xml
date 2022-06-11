@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 9 - A la braveza de un toro que rompió la guarda tudesca</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 9 - A la braveza de un toro que rompió la guarda tudesca </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Sirvan de ramo a sufridora <w type="rhyme">frente</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">las aspas de la tuya, hosquillo <w type="rhyme">fiero</w>,</l>
+            <l n="3" met="++-+---+-+-" rhyme="B">no sepan cuantos de civil <w type="rhyme">tintero</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">ni en pretina escolástica <w type="rhyme">pendiente</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">jamás humano pie la planta <w type="rhyme">asiente</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">sobre la piel del arrugado <w type="rhyme">cuero</w>,</l>
+            <l n="7" met="+------+-+-" rhyme="B">antes al mayo que vendrá <w type="rhyme">primero</w>
+            </l>
+            <l n="8" met="+-++---+-+-" rhyme="A">corra dos toros el planeta <w type="rhyme">ardiente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">Tú solo el vulgo mísero <w type="rhyme">vengaste</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">de tanto palo, y con tu media <w type="rhyme">esfera</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">la tudesca nación <w type="rhyme">atropellaste</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">pues desgarrando tanta calza y <w type="rhyme">cuera</w>,</l>
+            <l n="13" met="+----++--+-" rhyme="C">tantas con el temor calzas <w type="rhyme">dejaste</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="D">tan amarillas dentro como <w type="rhyme">fuera</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

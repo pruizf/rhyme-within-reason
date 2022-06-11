@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1277 - Jornada I, RICARDO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1277 - Jornada I, RICARDO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Suele el astuto y práctico <w type="rhyme">hortelano</w>
+            </l>
+            <l n="2" met="++-+---+-+-" rhyme="B">un árbol tierno trasplantarle a <w type="rhyme">donde</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">a sus nobles raíces <w type="rhyme">corresponde</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">dejando de su tierra el ser <w type="rhyme">tirano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Dale el cielo su auxilio <w type="rhyme">soberano</w>,</l>
+            <l n="6" met="+---+--+-+-" rhyme="B">Virgo las influencias, y no <w type="rhyme">esconde</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">su fruto al fin de la mudanza, <w type="rhyme">donde</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">voluntaria fortuna ofrece <w type="rhyme">mano</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">como árbol tierno quiero <w type="rhyme">transponerme</w>;</l>
+            <l n="10" met="-++--+---+-" rhyme="D">pues un noble deseo me <w type="rhyme">levanta</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="E">y con las armas el valor se <w type="rhyme">aumenta</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--++--+-" rhyme="C">al servicio de Dios quiero <w type="rhyme">ofrecerme</w>.</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">Que porque no se pierda aquella <w type="rhyme">planta</w>,</l>
+            <l n="14" met="--+--+--++-" rhyme="E">el divino Hortelano tendrá <w type="rhyme">cuenta</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De El valor de las mujeres. Acto III, VARIOS (LUCINDO FINEO LUCRECIA)</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De El valor de las mujeres. Acto III, VARIOS (LUCINDO FINEO LUCRECIA)</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++-+-+-+-" rhyme="-">Pues Marqués, yo me parto en busca suya,</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="-">vuelva mi gente al mar, y el Duque advierta</l>
+            <l n="3" met="-+-+-+---+-" rhyme="-">que ya es su hijo el Conde, y que sin esto</l>
+            <l n="4" met="-++--+---+-" rhyme="-">será bueno tenerle por amigo.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="-">No es tiempo de traer a la memoria</l>
+            <l n="6" met="-+---++--+-" rhyme="-">del Conde la prisión; parte, Lucindo,</l>
+            <l n="7" met="-+---+--++-" rhyme="-">en busca de tu hermano, que yo quiero</l>
+            <l n="8" met="++---+---+-" rhyme="A">dar vuelta con mi gente a mis <w type="rhyme">estados</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="-">Guárdeme el cielo y logre tus deseos,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="A">que el Conde y yo quedamos <w type="rhyme">obligados</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="B">Marqués, a tu servicio <w type="rhyme">eternamente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="B">Lucindo, adiós. Embárquese mi <w type="rhyme">gente</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">acosta lanchas, llega presto a <w type="rhyme">tierra</w>,</l>
+            <l n="14" met="++-+---+-+-" rhyme="C">gran bien, sin armas, acabar la <w type="rhyme">guerra</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

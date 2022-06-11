@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La Galatea, Libro VI, Galatea</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De La Galatea, Libro VI, Galatea 	                </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">Tanto cuanto el amor convida y <w type="rhyme">llama</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">al alma con sus gustos de <w type="rhyme">apariencia</w>,</l>
+            <l n="3" met="+-++---+-+-" rhyme="B">tanto más huye su mortal <w type="rhyme">dolencia</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">quien sabe el nombre que le da la <w type="rhyme">fama</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Y el pecho opuesto a su amorosa <w type="rhyme">llama</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">armado de una honesta <w type="rhyme">resistencia</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">poco puede empecerle su <w type="rhyme">inclemencia</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">poco su fuego y su rigor le <w type="rhyme">inflama</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Segura está, quien nunca fue <w type="rhyme">querida</w>
+            </l>
+            <l n="10" met="-+--++-+-+-" rhyme="D">ni supo querer bien, de aquella <w type="rhyme">lengua</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="E">que en su deshonra se adelgaza y <w type="rhyme">lima</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+++-" rhyme="D">mas si el querer y el no querer da <w type="rhyme">mengua</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">¿en qué ejercicios pasará la <w type="rhyme">vida</w>
+            </l>
+            <l n="14" met="--+--+-+-+-" rhyme="E">la que más que al vivir la honra <w type="rhyme">estima</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

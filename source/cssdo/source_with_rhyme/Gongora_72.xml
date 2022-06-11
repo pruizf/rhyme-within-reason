@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VI - Pálida restituye</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VI - Pálida restituye </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Pálida restituye a su <w type="rhyme">elemento</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">su ya esplendor purpúreo casta <w type="rhyme">rosa</w>,</l>
+            <l n="3" met="-+-+++---+-" rhyme="B">que en planta dulce un tiempo, si <w type="rhyme">espinosa</w>,</l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">gloria del sol, lisonja fue del <w type="rhyme">viento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">El mismo que aspiró suave <w type="rhyme">aliento</w>
+            </l>
+            <l n="6" met="+-+--+-+-+-" rhyme="B">fresca, expira marchita, y siempre <w type="rhyme">hermosa</w>,</l>
+            <l n="7" met="++-+-+---+-" rhyme="B">no yace, no, en la tierra, mas <w type="rhyme">reposa</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">negándole aun el hado lo <w type="rhyme">violento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-++--+-+-" rhyme="C">Sus hojas sí, no su fragancia, <w type="rhyme">llora</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">en polvo el patrio Betis, hojas <w type="rhyme">bellas</w>,</l>
+            <l n="11" met="+-+--+-+-+-" rhyme="C">que aun en polvo el materno Tajo <w type="rhyme">dora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+++-+-" rhyme="D">Ya en nuevos campos una es hoy de <w type="rhyme">aquellas</w>
+            </l>
+            <l n="13" met="+--++--+-+-" rhyme="C">flores que ilustra otra mejor <w type="rhyme">aurora</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">cuyo caduco aljófar son <w type="rhyme">estrellas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

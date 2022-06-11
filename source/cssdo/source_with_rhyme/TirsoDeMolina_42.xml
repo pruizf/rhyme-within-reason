@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Quien calla otorga Acto II, AURORA</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De Quien calla otorga Acto II, AURORA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">¿Qué mudanzas, decid, envidia <w type="rhyme">mía</w>,</l>
+            <l n="2" met="++---++--+-" rhyme="B">son éstas, que a mi amor hacen <w type="rhyme">Proteo</w>?</l>
+            <l n="3" met="---+-++--+-" rhyme="B">¿Cuando os pensáis quietar, loco <w type="rhyme">deseo</w>,</l>
+            <l n="4" met="-++--++--+-" rhyme="A">que amáis, no la elección, más la <w type="rhyme">porfía</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Al conde quiero ya que <w type="rhyme">aborrecía</w>;</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">porque Narcisa pone en él su <w type="rhyme">empleo</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">al español me inclino porque <w type="rhyme">veo</w>
+            </l>
+            <l n="8" met="-+-+-+--++-" rhyme="A">que en ella amor, y celos en mí <w type="rhyme">cría</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+--++-" rhyme="C"> Sombra soy de mi hermana. A cualquier <w type="rhyme">parte</w>
+            </l>
+            <l n="10" met="-+---++--+-" rhyme="D">que va su voluntad, doy en <w type="rhyme">seguilla</w>;</l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">y sin amar, amor me da <w type="rhyme">desvelos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C">Mas si su hacienda entre las dos <w type="rhyme">reparte</w>
+            </l>
+            <l n="13" met="-++--++--+-" rhyme="D">mi padre aun hasta aquí, ¿qué <w type="rhyme">maravilla</w>
+            </l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">que ella herede el amor y yo los <w type="rhyme">celos</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

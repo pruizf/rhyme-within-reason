@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXIII -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">O tú, que siempre mides <w type="rhyme">peregrino</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">de tu jornada eterna los <w type="rhyme">linderos</w>;</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y con iguales pasos, y <w type="rhyme">ligeros</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">ni acortas, ni dilatas el <w type="rhyme">camino</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Por ti el gobierno del errante <w type="rhyme">pino</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">doma indolentes mares <w type="rhyme">extranjeros</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">y usando el hombre los comunes <w type="rhyme">fueros</w>,</l>
+            <l n="8" met="-+-+--+--+-" rhyme="A">en él imitas el pode <w type="rhyme">divino</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Jamás la tierra, que tu luz <w type="rhyme">rodea</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">con piadosos objetos la <w type="rhyme">retira</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">ni altera la igualdad de tu <w type="rhyme">corriente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Así a la hermosa altiva <w type="rhyme">Galatea</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">ni el mal que siento, ni el dolor que <w type="rhyme">mira</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">turbar pudieron la enemiga <w type="rhyme">frente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

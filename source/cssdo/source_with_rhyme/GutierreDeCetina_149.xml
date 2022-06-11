@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CCXXXIV - Soneto de Gutierre de Cetina, siendo enamorado en la corte, para donde Montemayor se partía</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CCXXXIV - Soneto de Gutierre de Cetina, siendo enamorado en la corte, para donde Montemayor se partía </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+--+-++-" rhyme="A">Si como vas, Lusitano, yo <w type="rhyme">fuese</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">do el alma dejé, que no <w type="rhyme">debiera</w>;</l>
+            <l n="3" met="----++---+-" rhyme="B">si como verás presto la <w type="rhyme">ribera</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">del hermoso Pisuerga, así la <w type="rhyme">viese</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+-+-+-" rhyme="A">si como partirás do yo <w type="rhyme">partiese</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">y llegarás do yo llegar <w type="rhyme">quisiera</w>;</l>
+            <l n="7" met="-+--++++-+-" rhyme="B">si el bien que verás tú, yo ver <w type="rhyme">pudiera</w>,</l>
+            <l n="8" met="--++--++-+-" rhyme="A">y el poder ir como tú vas , <w type="rhyme">tuviese</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">estos húmidos ojos que <w type="rhyme">llorando</w>
+            </l>
+            <l n="10" met="-+---++--+-" rhyme="D">te mueven a piedad, vieras <w type="rhyme">gozosos</w>
+            </l>
+            <l n="11" met="-+--++---+-" rhyme="C">andar, su mayor bien <w type="rhyme">manifestando</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">Mas ordenan los hados <w type="rhyme">enojosos</w>,</l>
+            <l n="13" met="---+-++--+-" rhyme="C">porque lo sienta más, irme <w type="rhyme">alargando</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="-">los días del destierro trabajoso.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

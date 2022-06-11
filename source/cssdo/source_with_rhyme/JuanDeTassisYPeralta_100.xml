@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXXXIX - A San Isidro de Madrid</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXXXIX - A San Isidro de Madrid </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Los campos de Madrid, Isidro <w type="rhyme">santo</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">de querúbicas manos <w type="rhyme">cultivados</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">fieles responden hoy a tus <w type="rhyme">arados</w>
+            </l>
+            <l n="4" met="+--+---+-+-" rhyme="A">fruto de gloria por sazón de <w type="rhyme">llanto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">Previsto, agricultor, logra, pues, <w type="rhyme">cuanto</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">el cielo debe a surcos <w type="rhyme">nivelados</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">que Elíseos, que diáfanos <w type="rhyme">collados</w>
+            </l>
+            <l n="8" met="+-++---+-+-" rhyme="A">nunca dan menos a quien siembra <w type="rhyme">tanto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Rústicas ya supliéndole <w type="rhyme">fatigas</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">jornaleros del gremio <w type="rhyme">soberano</w>,</l>
+            <l n="11" met="-+-+-++--+-" rhyme="E">en cuanto rinde al cielo alto <w type="rhyme">tributo</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">a sacro labrador le dan <w type="rhyme">espigas</w>
+            </l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">de empíreo campo al mismo Cristo en <w type="rhyme">grano</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">sembrando aquí sus lágrimas el <w type="rhyme">fruto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

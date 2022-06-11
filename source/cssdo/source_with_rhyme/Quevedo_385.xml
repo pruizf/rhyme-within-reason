@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XII - Un hermosísimo pedazo de cristal del que el Duque de Lerma con gran gusto hizo una custodia, que para el Santísimo Sacramento dio al convento de San Pablo de Valladolid, dice poéticamente las opiniones que hay cerca de la naturaleza del cristal</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XII - Un hermosísimo pedazo de cristal del que el Duque de Lerma con gran gusto hizo una custodia, que para el Santísimo Sacramento dio al convento de San Pablo de Valladolid, dice poéticamente las opiniones que hay cerca de la naturaleza del cristal </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Sea que, descansando, la <w type="rhyme">corriente</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">torcida y libre de espumoso <w type="rhyme">río</w>,</l>
+            <l n="3" met="-++--+-+-+-" rhyme="B">labró artífice duro, yerto y <w type="rhyme">frío</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">este puro milagro <w type="rhyme">transparente</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+-+-+-" rhyme="A">sea que, aprisionada, libre <w type="rhyme">fuente</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">encarceló con yelo su <w type="rhyme">albedrío</w>,</l>
+            <l n="7" met="--+--++--+-" rhyme="B">o en incendios del sol, la alba el <w type="rhyme">rocío</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">cuajó a región benigna del <w type="rhyme">Oriente</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">o ya monstruo diáfano <w type="rhyme">naciese</w>,</l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">hijo de peñas duras, parto <w type="rhyme">hermoso</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">a llama universal rebelde <w type="rhyme">yelo</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+--+--+-" rhyme="C">fue bien que cielo a Dios <w type="rhyme">contrahiciese</w>,</l>
+            <l n="13" met="---+-++--+-" rhyme="D">porque podáis decir, Duque <w type="rhyme">glorioso</w>,</l>
+            <l n="14" met="---+-+--++-" rhyme="E">que, aunque imitado y breve, le dais <w type="rhyme">Cielo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

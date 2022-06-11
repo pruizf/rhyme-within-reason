@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVI - A Lisi, que su cabello rubio tenía sembrados claveles carmesíes por el cuello</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVI - A Lisi, que su cabello rubio tenía sembrados claveles carmesíes por el cuello </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+--++-" rhyme="A">Rizas en ondas ricas del rey <w type="rhyme">Midas</w>,</l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">Lisi, el acto precioso, cuanto <w type="rhyme">avaro</w>;</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">arden claveles en su cerco <w type="rhyme">claro</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">flagrante sangre, espléndidas <w type="rhyme">heridas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Minas ardientes, al jardín <w type="rhyme">unidas</w>,</l>
+            <l n="6" met="+-+--+-+-+-" rhyme="B">son milagro de amor, portento <w type="rhyme">raro</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">cuando Hibla matiza el mármol <w type="rhyme">paro</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">y en su dureza flores ve <w type="rhyme">encendidas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Esos que en tu cabeza <w type="rhyme">generosa</w>
+            </l>
+            <l n="10" met="++---+-+-+-" rhyme="D">son cruenta hermosura y son <w type="rhyme">agravio</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="C">a la melena rica y <w type="rhyme">victoriosa</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="D">dan al claustro de perlas, en tu <w type="rhyme">labio</w>,</l>
+            <l n="13" met="--+--++--+-" rhyme="C">elocuente rubí, púrpura <w type="rhyme">hermosa</w>,</l>
+            <l n="14" met="+-+--++-++-" rhyme="D">ya sonoro clavel, ya coral <w type="rhyme">sabio</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

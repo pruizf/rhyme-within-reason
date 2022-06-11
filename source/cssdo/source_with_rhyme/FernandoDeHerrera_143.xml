@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Por estrecho camino, al sol <w type="rhyme">abierto</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">de espinas y de abrojos mal <w type="rhyme">sembrado</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">al tardo paso muevo, y voy <w type="rhyme">cansado</w>
+            </l>
+            <l n="4" met="-++--+-+-+-" rhyme="A">a do cierra la vuelta el mar <w type="rhyme">incierto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-++--+-" rhyme="A">Silencio triste habita este <w type="rhyme">desierto</w>,</l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">y el mal que hay me importa ser <w type="rhyme">callado</w>;</l>
+            <l n="7" met="---+-+---+-" rhyme="B">cuando acaballo cuido, <w type="rhyme">acrecentado</w>
+            </l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">veo el sendero y veo el daño <w type="rhyme">cierto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+-+-+-" rhyme="C">A un lado empina yerto inmensa <w type="rhyme">cumbre</w>
+            </l>
+            <l n="10" met="-++--+-+-+-" rhyme="D">el monte hórrido, opuesto al alto <w type="rhyme">cielo</w>;</l>
+            <l n="11" met="++---+-+-+-" rhyme="-">corta un despeñadero la otra parte.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Crecer la sombra y anublar la <w type="rhyme">lumbre</w>
+            </l>
+            <l n="13" met="+--+-+---+-" rhyme="D">siento, y no hallo, solo en mi <w type="rhyme">recelo</w>,</l>
+            <l n="14" met="-++--+-+-+-" rhyme="-">a do pueda valerme alguna parte.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXV -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A"> Ya no murmura el pueblo, sino <w type="rhyme">brama</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">contra tus fraudes, Lico, porque <w type="rhyme">siente</w>
+            </l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">que no hay seguro en tu modesta <w type="rhyme">frente</w>
+            </l>
+            <l n="4" met="+--+-+---+-" rhyme="A">más que en la de una fiera de <w type="rhyme">Jarama</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">La voz del pueblo voz de Dios se <w type="rhyme">llama</w>;</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">mas yo, para juzgar <w type="rhyme">sencillamente</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">hago por ti una excusa <w type="rhyme">suficiente</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">por quitar las calumnias de esta <w type="rhyme">fama</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++++---+-" rhyme="C">que tú no crees que hay vida que <w type="rhyme">comienza</w>
+            </l>
+            <l n="10" met="-+-+---+++-" rhyme="D">donde esta acaba, ni la suerte, oh <w type="rhyme">Lico</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">a las obras humanas <w type="rhyme">prometida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Pues no te juzgo yo por tan <w type="rhyme">inico</w>,</l>
+            <l n="13" met="---+-+++-+-" rhyme="E">que si creyeses tú que hay otra <w type="rhyme">vida</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="C">vivirías con tanta <w type="rhyme">desvergüenza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

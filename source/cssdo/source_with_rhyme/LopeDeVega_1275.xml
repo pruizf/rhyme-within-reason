@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1360 - Acto II, MENANDRO De Quien todo lo quiere</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1360 - Acto II, MENANDRO De Quien todo lo quiere </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---++--+-" rhyme="A">Belisa, por tus pies andan <w type="rhyme">perdidos</w>
+            </l>
+            <l n="2" met="+-+--+--++-" rhyme="B">más poetas que bancos, aunque hay <w type="rhyme">tantos</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">que tus paños lavando entre unos <w type="rhyme">cantos</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">oscureció su nieve a los <w type="rhyme">tendidos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Virgilio no los tiene tan <w type="rhyme">medidos</w>;</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">las musas hacen con la envidia <w type="rhyme">espantos</w>;</l>
+            <l n="7" met="-++--+-+-+-" rhyme="B">pues no hay picos de rosca en Todos <w type="rhyme">Santos</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">como sus dedos blancos y <w type="rhyme">bruñidos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Andar en puntos nunca lo <w type="rhyme">recelas</w>,</l>
+            <l n="10" met="-++--+--++-" rhyme="D">que no llegan a cuatro tus pies <w type="rhyme">bellos</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">ni por calzar con pena te <w type="rhyme">desvelas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+-+-+-" rhyme="D">Que es tanta la belleza que hay en <w type="rhyme">ellos</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">que pueden ser zarcillos sus <w type="rhyme">chinelas</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">con higas de cristal pendientes de <w type="rhyme">ellos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 67 - Acto III, Escena I, JULIO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 67 - Acto III, Escena I, JULIO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Canta pájaro amante en la <w type="rhyme">enramada</w>
+            </l>
+            <l n="2" met="+--+---+-+-" rhyme="B">selva a su amor, que por el verde <w type="rhyme">suelo</w>
+            </l>
+            <l n="3" met="++---+---+-" rhyme="B">no ha visto el cazador que con <w type="rhyme">desvelo</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">le está escuchando la ballesta <w type="rhyme">armada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Tírale, yerra, vuelva y la <w type="rhyme">turbada</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">voz en el pico transformada en <w type="rhyme">hielo</w>,</l>
+            <l n="7" met="+--+-+-+-+-" rhyme="B">vuelve, y de rama en rama corta el <w type="rhyme">vuelo</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">por no alejarse de la prenda <w type="rhyme">amada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--++--+-" rhyme="C">De esta suerte el amor canta en el <w type="rhyme">nido</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">mas luego que los celos que <w type="rhyme">recela</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">le tiran flechas de temor de <w type="rhyme">olvido</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+-+-+-" rhyme="D">huye, teme, sospecha, inquiere, <w type="rhyme">cela</w>,</l>
+            <l n="13" met="---+---+++-" rhyme="C">y hasta que ve que el cazador es <w type="rhyme">ido</w>
+            </l>
+            <l n="14" met="---+---+-+-" rhyme="D">de pensamiento en pensamiento <w type="rhyme">vuela</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIX - A la obstinación en pecar causa de todos los daños</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIX - A la obstinación en pecar causa de todos los daños </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Cuán vecinos estamos a la <w type="rhyme">muerte</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">pues se oponen estorbos a la <w type="rhyme">vida</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">que el médico sirviendo de <w type="rhyme">homicida</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">con venenos antídotos <w type="rhyme">pervierte</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">O tú, sólo en causar dolores, <w type="rhyme">fuerte</w>;</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">la cura alarga, sanarás la <w type="rhyme">herida</w>
+            </l>
+            <l n="7" met="---+---+-+-" rhyme="B">que la salud universal <w type="rhyme">perdida</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">al más robusto, de su fin <w type="rhyme">advierte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++--++---+-" rhyme="C">Si es pacto de dar gozos al <w type="rhyme">Infierno</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">por deshacer la imagen que le <w type="rhyme">altera</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">intento, en que se vale de tu <w type="rhyme">mano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Mira feliz la muerte en mundo <w type="rhyme">eterno</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="D">pues con tener, a quien matar, <w type="rhyme">viviera</w>
+            </l>
+            <l n="14" met="---+---+-+-" rhyme="E">mas a la rabia se persuade en <w type="rhyme">vano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

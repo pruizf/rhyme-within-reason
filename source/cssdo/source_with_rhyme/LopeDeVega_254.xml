@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 147 - Responde a un poeta...</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 147 - Responde a un poeta... </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+---+-" rhyme="A">Livio, yo siempre fui vuestro <w type="rhyme">devoto</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">nunca a la fe de la amistad <w type="rhyme">perjuro</w>;</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">vos en amor, como en los versos <w type="rhyme">duro</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">tenéis el lazo a consonantes <w type="rhyme">roto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Si vos imperceptible, si <w type="rhyme">remoto</w>,</l>
+            <l n="6" met="++-+---+-+-" rhyme="-">yo blando, fácil, elegante, puto,</l>
+            <l n="7" met="++-+---+-+-" rhyme="B">tan claro escribo como vos <w type="rhyme">oscuro</w>;</l>
+            <l n="8" met="-+++---+-+-" rhyme="A">la vega es llana e intrincado el <w type="rhyme">soto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++---+-+-" rhyme="C">También soy yo del ornamento <w type="rhyme">amigo</w>;</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">sólo en los tropos imposibles <w type="rhyme">paro</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">y de este error mis números <w type="rhyme">desligo</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">en la sentencia sólida <w type="rhyme">reparo</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">porque dejen la pluma y el <w type="rhyme">castigo</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">oscuro el borrador y el verso <w type="rhyme">claro</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

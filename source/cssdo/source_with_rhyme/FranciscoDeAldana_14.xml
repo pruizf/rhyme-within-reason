@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIII -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Cual sin arrimo vid; cual planta <w type="rhyme">umbrosa</w>,</l>
+            <l n="2" met="+----++--+-" rhyme="B">viuda del ruiseñor que antes <w type="rhyme">solía</w>
+            </l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">con dulce canto, al parecer del <w type="rhyme">día</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">invocar de Titón la blanca <w type="rhyme">esposa</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">cual navecilla en noche <w type="rhyme">tenebrosa</w>,</l>
+            <l n="6" met="+-+--+---+-" rhyme="B">do el gobierno faltó que la <w type="rhyme">regía</w>;</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">cual caminante que perdió su <w type="rhyme">guía</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">en selva oscura, horrible y <w type="rhyme">tenebrosa</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++--++---+-" rhyme="C">cual nube de mil vientos <w type="rhyme">combatida</w>;</l>
+            <l n="10" met="++---+-+-+-" rhyme="D">cual ave que atajó la red su <w type="rhyme">vuelo</w>;</l>
+            <l n="11" met="++---+---+-" rhyme="E">cual siervo fugitivo y <w type="rhyme">cautivado</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--++--+-" rhyme="C">cual de peso infernal alma <w type="rhyme">afligida</w>;</l>
+            <l n="13" met="---+---+-+-" rhyme="D">o cual quedó tras el diluvio el <w type="rhyme">suelo</w>...;</l>
+            <l n="14" met="+-++-+-+-+-" rhyme="E">tal quedé yo sin vos, hermano <w type="rhyme">amado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

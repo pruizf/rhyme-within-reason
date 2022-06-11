@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 19 - Libro II Al sepulcro del Marqués de Santa Cruz</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 19 - Libro II Al sepulcro del Marqués de Santa Cruz </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+++-" rhyme="A">Aunque de roble y de laurel no <w type="rhyme">enrames</w>,</l>
+            <l n="2" met="-++--+---+-" rhyme="B">España, este sagrado <w type="rhyme">mauseolo</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">Si no de lienzos que combata <w type="rhyme">Eolo</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">velas, bastardos, gavias y <w type="rhyme">velames</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Aunque César marítimo le <w type="rhyme">llames</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">y en vez de Dafne, la que adora <w type="rhyme">Apolo</w>,</l>
+            <l n="7" met="-+-+-+--++-" rhyme="B">sus nobles sienes ciña coral <w type="rhyme">solo</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">a pesar de la envidia y odio <w type="rhyme">infames</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">De ningún Capitán de tierra <w type="rhyme">debes</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">honrarte más, que del Bazán <w type="rhyme">famoso</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">Crucígero Neptuno, Marte <w type="rhyme">Hispano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+-+-+-" rhyme="C">Llora, que le perdiste en años <w type="rhyme">breves</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">pues era con su brazo <w type="rhyme">belicoso</w>
+            </l>
+            <l n="14" met="+----+-+-+-" rhyme="E">Argos de nuestra Fe, Jasón <w type="rhyme">Cristiano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

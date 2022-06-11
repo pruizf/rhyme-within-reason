@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Enseña que, aunque tarde, es mejor reconocer el engaño de las pretensiones y retirarse a la granjería del campo</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Enseña que, aunque tarde, es mejor reconocer el engaño de las pretensiones y retirarse a la granjería del campo  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Cuando esperando está la <w type="rhyme">sepultura</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">por semilla mi cuerpo <w type="rhyme">fatigado</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">doy mi sudor al reluciente <w type="rhyme">arado</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">y sigo la robusta <w type="rhyme">agricultura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Disculpa tiene, Fabio, mi <w type="rhyme">locura</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">si me quieres creer <w type="rhyme">escarmentado</w>:</l>
+            <l n="7" met="-+---+---+-" rhyme="B">probé la pretensión con mi <w type="rhyme">cuidado</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">y hallo que es la tierra menos <w type="rhyme">dura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Recojo en fruto lo que aquí <w type="rhyme">derramo</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">y derramaba allá lo que <w type="rhyme">cogía</w>:</l>
+            <l n="11" met="--+--++-++-" rhyme="C">quien se fía de Dios sirve a buen <w type="rhyme">amo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+-+-+-" rhyme="D">Más quiero depender del sol y el <w type="rhyme">día</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">y de la agua, aunque tarde, si la <w type="rhyme">llamo</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">que de la áulica infiel <w type="rhyme">astrología</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

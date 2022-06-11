@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XV -</title>
+            <author> Pedro De Padilla</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro de Padilla</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Si no estuviera tan <w type="rhyme">certificado</w>
+            </l>
+            <l n="2" met="-+-+-+--++-" rhyme="B">que no ha de haber ninguno que no <w type="rhyme">muera</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">por inmortal, señora, me <w type="rhyme">tuviera</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">pues tanto mal con vida me ha <w type="rhyme">dejado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+++-+-" rhyme="A">Vuestra memoria en mí sólo ha <w type="rhyme">quedado</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">que es mi descanso, y vida <w type="rhyme">verdadera</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">que si esta me faltara, ya <w type="rhyme">estuviera</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">de volveros a ver <w type="rhyme">desconfiado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+-+++-" rhyme="C">Nuevas del corazón que os di, no <w type="rhyme">tengo</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="A">y el vuestro temo que me habéis <w type="rhyme">quitado</w>,</l>
+            <l n="11" met="-+-+-----+-" rhyme="D">que a cada paso se me <w type="rhyme">representa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">Con la fe que me diste me <w type="rhyme">sostengo</w>,</l>
+            <l n="13" met="--++-+---+-" rhyme="A">aunque no estoy de nada <w type="rhyme">asegurado</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">que nunca se asegura, quien se <w type="rhyme">ausenta</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

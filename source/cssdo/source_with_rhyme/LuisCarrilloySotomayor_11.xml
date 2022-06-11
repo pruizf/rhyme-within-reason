@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIX - Al sepulcro de un varón ilustre</title>
+            <author> Luis Carrilloy Sotomayor</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis Carrilloy Sotomayor</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIX - Al sepulcro de un varón ilustre </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Blandamente en los mármoles <w type="rhyme">reposa</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">quien ves, ¡oh caminante!, <w type="rhyme">adormecido</w>,</l>
+            <l n="3" met="++---+-+-+-" rhyme="B">no muerto, que la muerte no ha <w type="rhyme">podido</w>
+            </l>
+            <l n="4" met="-++--+---+-" rhyme="A">en él, bien que soberbia y <w type="rhyme">poderosa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+-+-+-" rhyme="A">No pidas triste, no, con voz <w type="rhyme">llorosa</w>,</l>
+            <l n="6" met="+-+--+-+-+-" rhyme="B">poco peso a la tierra, la ha <w type="rhyme">vestido</w>
+            </l>
+            <l n="7" met="-+---+---+-" rhyme="B">cual fuerte vencedor, cual de <w type="rhyme">vencido</w>
+            </l>
+            <l n="8" met="-++-++---+-" rhyme="A">despojo; antes le es carga <w type="rhyme">victoriosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Si llorares su muerte, no, que al <w type="rhyme">cielo</w>
+            </l>
+            <l n="10" met="--++-+-+-+-" rhyme="D">vencedor vive; mil desdichas <w type="rhyme">siente</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">en ésta, en nombre tuyo y de la <w type="rhyme">tierra</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Haz compañía en esto, triste, al <w type="rhyme">suelo</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">y luego de tus ojos la <w type="rhyme">corriente</w>
+            </l>
+            <l n="14" met="+--+-+---+-" rhyme="E">trueca, en respeto al mármol que lo <w type="rhyme">encierra</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

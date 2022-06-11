@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXI - A la Oración del Huerto, sobre estas palabras de Cristo Nuestro Señor: transeat a me calix iste</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXI - A la Oración del Huerto, sobre estas palabras de Cristo Nuestro Señor: transeat a me calix iste </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++-+---+-" rhyme="A">Si de Vos pasa el cáliz de <w type="rhyme">amargura</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">¿quién le podrá endulzar, para que <w type="rhyme">sea</w>
+            </l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">bebida alegre, que salud <w type="rhyme">posea</w>
+            </l>
+            <l n="4" met="-----+-+-+-" rhyme="A">contra la enfermedad antigua y <w type="rhyme">dura</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Bebed el cáliz Vos, pues os <w type="rhyme">apura</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">amor del alma por la culpa <w type="rhyme">fea</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">que en Vos le beberá (después que os <w type="rhyme">vea</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">líquido Dios en sangre) la <w type="rhyme">criatura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+--+-++-" rhyme="C">Pase por Vos, y así será <w type="rhyme">triaca</w>,</l>
+            <l n="10" met="-++--+---+-" rhyme="D">mas no pase de Vos, pues, <w type="rhyme">ofendido</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">mi culpa sus castigos os <w type="rhyme">achaca</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="D">Bebiendo sanaréis lo que he <w type="rhyme">comido</w>:</l>
+            <l n="13" met="-++--+-+-+-" rhyme="C">bebed cáliz que tanta sed <w type="rhyme">aplaca</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">de ser en cáliz inmortal <w type="rhyme">bebido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

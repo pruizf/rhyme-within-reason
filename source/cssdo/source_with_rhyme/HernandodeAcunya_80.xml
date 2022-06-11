@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXI -</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A"> ¡Oh sin ventura yo, oh mal <w type="rhyme">nacido</w>!</l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">¿En qué estrella cruel vine a la <w type="rhyme">tierra</w>
+            </l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">sujeto a tierno llanto, a dura <w type="rhyme">guerra</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">a siempre amar sin serme <w type="rhyme">agradecido</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+-+-+-" rhyme="A"> ¿Cuál hado inexorable me ha <w type="rhyme">traído</w>
+            </l>
+            <l n="6" met="--+-++---+-" rhyme="B">a las manos de un tigre, en que se <w type="rhyme">encierra</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">beldad del cielo y crueldad de <w type="rhyme">tierra</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">mi alma en el abismo del <w type="rhyme">olvido</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">¡Ay, enemigo cruel!, ¿y quién <w type="rhyme">creyera</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="-">que estaban en mi muerte conjurados</l>
+            <l n="11" met="++---+-+-+-" rhyme="D">tan nueva ingratitud y tal <w type="rhyme">crudeza</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="-"> ¡Ay vida, y tiempo, y horas mal gastadas!</l>
+            <l n="13" met="++-+-+-+-+-" rhyme="C">¡No quiera Dios que adore yo a una <w type="rhyme">fiera</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">que paga tanto amor con tal <w type="rhyme">dureza</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

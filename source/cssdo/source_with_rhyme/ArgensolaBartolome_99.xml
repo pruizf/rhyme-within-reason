@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLV -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A"> Pues no siempre tus rayos <w type="rhyme">vengativos</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">sobre montes y alcázares <w type="rhyme">fulminas</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">y alguna vez destroncas las <w type="rhyme">encinas</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">y abrasas los pacíficos <w type="rhyme">olivos</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">un pedante que, a gritos <w type="rhyme">excesivos</w>,</l>
+            <l n="6" met="-+---++--+-" rhyme="B">enseña a variar voces <w type="rhyme">latinas</w>,</l>
+            <l n="7" met="+-----+--+-" rhyme="B">júntalo a los estragos y <w type="rhyme">ruinas</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">cuyas memorias guardan tus <w type="rhyme">archivos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C"> El de pálido boj, labrado al <w type="rhyme">torno</w>,</l>
+            <l n="10" met="+++-++---+-" rhyme="D">vibra un cetro a mil madres <w type="rhyme">formidable</w>;</l>
+            <l n="11" met="+-+--+---+-" rhyme="E">caiga el brazo inhumano con <w type="rhyme">ejemplo</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+-++---+-" rhyme="D">que en el barrio que él hace <w type="rhyme">inhabitable</w>,</l>
+            <l n="13" met="+--+++--++-" rhyme="E">hoy te dedico, oh Júpiter, un <w type="rhyme">templo</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="C">y de inscripción piadosa te lo <w type="rhyme">adorno</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

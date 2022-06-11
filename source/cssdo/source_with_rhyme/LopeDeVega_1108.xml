@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1126 - Jornada I, TEOPISTE De La mayor hazaña de Alejandro Magno</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1126 - Jornada I, TEOPISTE De La mayor hazaña de Alejandro Magno </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Bruta atalaya, inaccesible <w type="rhyme">peña</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">se descuella a los páramos del <w type="rhyme">viento</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y aunque encubra por cátedra y <w type="rhyme">asiento</w>
+            </l>
+            <l n="4" met="++---++--+-" rhyme="A">un águila imperial, no la <w type="rhyme">desdeña</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Desde ella a sus hijuelos les <w type="rhyme">enseña</w>,</l>
+            <l n="6" met="--+-++-+-+-" rhyme="B">al que quiera, al sol mire tan <w type="rhyme">atento</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que le sirvan sus rayos de <w type="rhyme">alimento</w>;</l>
+            <l n="8" met="-----+---+-" rhyme="A">mas al que se acobarda le <w type="rhyme">despeña</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Desde la piedra del bautismo <w type="rhyme">santo</w>
+            </l>
+            <l n="10" met="+----+---+-" rhyme="D">águila en sus cristales <w type="rhyme">renacida</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">sólo con Dios se ocupa mi <w type="rhyme">albedrío</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C">Pero si de este soberano <w type="rhyme">encanto</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">se sabe algún intento, <w type="rhyme">enfurecida</w>,</l>
+            <l n="14" met="-+-+----++-" rhyme="E">de mí le arrojo como que no es <w type="rhyme">mío</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

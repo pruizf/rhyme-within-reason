@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXIV -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">El corazón huido busco y <w type="rhyme">llamo</w>;</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">el do el rigor esfuerza el duro <w type="rhyme">hielo</w>
+            </l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">entra, y sin miedo pisa estéril <w type="rhyme">suelo</w>;</l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">yo, esquivando el dolor, mis males <w type="rhyme">amo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Las lágrimas y quejas que <w type="rhyme">derramo</w>
+            </l>
+            <l n="6" met="++---+---+-" rhyme="B">no vencen su porfía, y sin <w type="rhyme">recelo</w>
+            </l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">allí se pierde, y no osa alzar el <w type="rhyme">vuelo</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">y su obstinado error al fin <w type="rhyme">desamo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">No por que tema ya peligro <w type="rhyme">alguno</w>;</l>
+            <l n="10" met="-+++-+-+-+-" rhyme="D">que no doy más lugar a miedo <w type="rhyme">cierto</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">ni admito en tanto afán remedio <w type="rhyme">vano</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--++--+-" rhyme="C">mas porque es poquedad ser <w type="rhyme">importuno</w>
+            </l>
+            <l n="13" met="++-+-+++-+-" rhyme="D">a un lento pecho, y ser más precio <w type="rhyme">muerto</w>
+            </l>
+            <l n="14" met="--+--+-+-+-" rhyme="E">que esperar la salud de ingrata <w type="rhyme">mano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

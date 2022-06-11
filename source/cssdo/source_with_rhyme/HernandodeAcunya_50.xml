@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIV -</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--++--+-+-" rhyme="A">Cierto escogí bien peligrosa <w type="rhyme">vía</w>
+            </l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">cuando primero en vos los ojos <w type="rhyme">puse</w>,</l>
+            <l n="3" met="---+++---+-" rhyme="B">pues a pasar tal vida me <w type="rhyme">dispuse</w>
+            </l>
+            <l n="4" met="-+-+-+++-+-" rhyme="A">cual vos, señora, veis que ahora es la <w type="rhyme">mía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+-+++-" rhyme="A"> Para más no vivir viví aquel <w type="rhyme">día</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">y, porque el veros todo bien <w type="rhyme">pospuse</w>,</l>
+            <l n="7" met="-++--+-+-+-" rhyme="B">ni sé a quién acusar ni a quién <w type="rhyme">excuse</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">ni hallo parte en mí del que <w type="rhyme">solía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+-+-+-" rhyme="C"> Mas tomar tanto gusto en muerte <w type="rhyme">ajena</w>,</l>
+            <l n="10" met="--+--++--+-" rhyme="D">contra tanta humildad tal <w type="rhyme">aspereza</w>,</l>
+            <l n="11" met="+--+-----+-" rhyme="E">y obras a muerte tan <w type="rhyme">enderezadas</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C"> sin dar jamás alivio a tanta <w type="rhyme">pena</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">ved vuestras manos, que de tal <w type="rhyme">fiereza</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">por fuerza se han de ver <w type="rhyme">ensangrentadas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

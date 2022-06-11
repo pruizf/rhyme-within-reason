@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Boda de matadores y mataduras; esto es, un boticario con la hija de un albéitar</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Boda de matadores y mataduras; esto es, un boticario con la hija de un albéitar  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Viendo el martirologio de la <w type="rhyme">vida</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">con música bailar, y viendo al <w type="rhyme">preste</w>,</l>
+            <l n="3" met="+--+++---+-" rhyme="B">dije: «Sin duda hay nuevas de la <w type="rhyme">peste</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">o la epidemia viene bien <w type="rhyme">podrida</w>.»</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++-+---+-" rhyme="A">Supe que era una boda <w type="rhyme">entretejida</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">de albéiter y botica, en que la <w type="rhyme">hueste</w>
+            </l>
+            <l n="7" met="-+---+---+-" rhyme="B">de Hipócrates, unánime y <w type="rhyme">conteste</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">«¡Calavera!» por «¡Himen!» <w type="rhyme">apellida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">El barbero tocaba el <w type="rhyme">punteado</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">de la lanceta en guitarrón <w type="rhyme">parlero</w>;</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">de bote en bote el novio está <w type="rhyme">atestado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="D">El dote es mataduras en <w type="rhyme">dinero</w>;</l>
+            <l n="13" met="-+---+---+-" rhyme="C">y el médico, de barbas <w type="rhyme">enfaldado</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">bailaba el Rastro siendo el <w type="rhyme">Matadero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

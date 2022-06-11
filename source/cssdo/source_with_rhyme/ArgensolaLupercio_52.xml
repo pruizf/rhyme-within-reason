@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVII -</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">Sin que contraste la humildad <w type="rhyme">profunda</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">con que huyó de la gloria humana <w type="rhyme">Diego</w>,</l>
+            <l n="3" met="+++--+--++-" rhyme="B">hoy ve altar en su nombre, y arder <w type="rhyme">fuego</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">de donde grato olor a Dios <w type="rhyme">redunda</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++-+---+-" rhyme="A">Él, que dio humilde el cuello a la <w type="rhyme">coyunda</w>,</l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">y fue del siglo vano oprobio y <w type="rhyme">juego</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">vedlo gozando celestial <w type="rhyme">sosiego</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">y cómo de riqueza eterna <w type="rhyme">abunda</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Póstranse las Coronas y <w type="rhyme">Tiaras</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">a donde puso la desnuda <w type="rhyme">planta</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">y cumplen peregrinos votos <w type="rhyme">sacros</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-++-+-+-+-" rhyme="C"> Vivo no osó tratar la santas <w type="rhyme">Aras</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">y muerto, Dios sobre ellas se <w type="rhyme">levanta</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">en eterna memoria y <w type="rhyme">simulacros</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

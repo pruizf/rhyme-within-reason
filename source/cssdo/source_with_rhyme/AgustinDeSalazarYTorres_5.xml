@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIII - A dos hermanos nacidos de un parto...</title>
+            <author> Agustin De Salazar Y Torres</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Agustin de Salazar y Torres</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIII - A dos hermanos nacidos de un parto... </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">¿Qué domino adquirís, <w type="rhyme">constelaciones</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">allá en la fija luz del <w type="rhyme">firmamento</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">que puedan de un influjo en un <w type="rhyme">aliento</w>
+            </l>
+            <l n="4" met="-+---++--+-" rhyme="A">nacer y respirar dos <w type="rhyme">corazones</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+-+-+-" rhyme="A">Repitióse una vida en dos <w type="rhyme">acciones</w>,</l>
+            <l n="6" met="--++---+-+-" rhyme="B">y de dos voces se formó un <w type="rhyme">aliento</w>,</l>
+            <l n="7" met="-++-+++--+-" rhyme="B">de dos almas fue sólo un <w type="rhyme">movimiento</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">pues también se imitaron las <w type="rhyme">pasiones</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">De ver prodigio igual el mar <w type="rhyme">airado</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">a uno anegó; pero los dos <w type="rhyme">murieron</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">y unidos a la playa los <w type="rhyme">condujo</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">como diciendo al cielo el ponto <w type="rhyme">helado</w>:</l>
+            <l n="13" met="+--+-+---+-" rhyme="D">«Yo uno anegué; si entrambos <w type="rhyme">fenecieron</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">divídase la culpa con tu <w type="rhyme">influjo</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

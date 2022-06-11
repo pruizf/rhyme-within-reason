@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 827 - Acto II, MÓNICA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 827 - Acto II, MÓNICA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---++--+-" rhyme="A">Estrella de Jacob, vara de <w type="rhyme">Aarón</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">puerta oriental por donde entró mi <w type="rhyme">bien</w>,</l>
+            <l n="3" met="+----+---+-" rhyme="B">torre en la celestial <w type="rhyme">Jerusalén</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">aljofarada piel de <w type="rhyme">Gedeón</w>:</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Arca y arco de paz y <w type="rhyme">redención</w>,</l>
+            <l n="6" met="+----++--+-" rhyme="B">rosa de Jericó, viña en <w type="rhyme">Belén</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">palma del monte, zarza de <w type="rhyme">Moysén</w>,</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">templo y trono Real de <w type="rhyme">Salomón</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Vos que paristeis al segundo <w type="rhyme">Adán</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">aunque doncella siempre, madre, en <w type="rhyme">fin</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">por cuya gracia a vuestros pies <w type="rhyme">están</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">la luna, el cielo, el sol, el <w type="rhyme">serafín</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">pues sabéis el cuidado que hijos <w type="rhyme">dan</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">rogad que no se pierda mi <w type="rhyme">Agustín</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

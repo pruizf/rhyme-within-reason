@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXII - Dos amantes ausentes se soñaron juntos</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXII - Dos amantes ausentes se soñaron juntos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Soñando yo, pensé, que no <w type="rhyme">dormía</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">y Celia imaginó, que no <w type="rhyme">soñaba</w>,</l>
+            <l n="3" met="+-----+--+-" rhyme="B">ella, que a mi deseo se <w type="rhyme">fiaba</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">y yo, que su belleza <w type="rhyme">merecía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">La unión que a nuestras almas <w type="rhyme">asistía</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">al sentido inferior se <w type="rhyme">trasladaba</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que los dos corazones <w type="rhyme">animaba</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">y sus alas solícito <w type="rhyme">batía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Con vuelo igual de la fingida <w type="rhyme">gloria</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">el término llegó al postrer <w type="rhyme">empeño</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">y la dulce ilusión <w type="rhyme">desaparece</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Pero dejó gustosa la <w type="rhyme">memoria</w>
+            </l>
+            <l n="13" met="--+--+--++-" rhyme="D">el suceso feliz, que si fue <w type="rhyme">sueño</w>,</l>
+            <l n="14" met="---+-++--+-" rhyme="E">cuando el pasado bien no lo <w type="rhyme">parece</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

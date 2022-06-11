@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1209 - Acto I, GIROTO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1209 - Acto I, GIROTO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Quedan los campos cuando el sol se <w type="rhyme">zampa</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">y de los nuevos ojos se <w type="rhyme">zabulle</w>,</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">tales, que ni ave canta, ni agua <w type="rhyme">bulle</w>;</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">todo parece que su luz lo <w type="rhyme">escampa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">El oso cae en la acechanza y <w type="rhyme">trampa</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">la trucha por lo fondo se <w type="rhyme">escabulle</w>,</l>
+            <l n="7" met="++-+-+---+-" rhyme="B">non hay casada tórtola que <w type="rhyme">arrulle</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">ni ganado en la arena cama <w type="rhyme">estampa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">En viéndole enhebrar sus hebras de <w type="rhyme">oro</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">asómase la noche fresca y <w type="rhyme">fría</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="C">todo lo llora en lamentoso <w type="rhyme">coro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+++--+---+-" rhyme="D">Yo soy campo vestido de <w type="rhyme">alegría</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">y en soras que me falta el sol que <w type="rhyme">adoro</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">la negra noche que sociede el <w type="rhyme">día</w>
+            </l>
+         </lg>
+      </body>
+   </text>
+</TEI>

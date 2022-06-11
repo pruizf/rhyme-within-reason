@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A la muerte del Cuaro Enrico, Rey de Francia</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A la muerte del Cuaro Enrico, Rey de Francia  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+---+-" rhyme="A">No llegó a tanta envidia de los <w type="rhyme">hados</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">ni bastó para tanto fuerza <w type="rhyme">alguna</w>;</l>
+            <l n="3" met="-++--+---+-" rhyme="B">temió quejas del mundo la <w type="rhyme">Fortuna</w>;</l>
+            <l n="4" met="+----+---+-" rhyme="A">vio sus atrevimientos <w type="rhyme">respetados</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Y veisle: yace en mármoles <w type="rhyme">helados</w>
+            </l>
+            <l n="6" met="-+-+-----+-" rhyme="B">(así lo quiere Dios) el que <w type="rhyme">ninguna</w>
+            </l>
+            <l n="7" met="+--+-+---+-" rhyme="B">diestra temió debajo de la <w type="rhyme">luna</w>;</l>
+            <l n="8" met="--+--+---+-" rhyme="A">el que armó con su pecho sus <w type="rhyme">soldados</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">La cana edad le perdonó <w type="rhyme">piadosa</w>;</l>
+            <l n="10" met="-+---+--++-" rhyme="D">la flaca enfermedad le guardó <w type="rhyme">vida</w>
+            </l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">con que buscar pudiera honrosa <w type="rhyme">muerte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----++--+-" rhyme="C">Todo lo malogró mano <w type="rhyme">alevosa</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">quitando al mundo el miedo en una <w type="rhyme">herida</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">desmintiendo promesas a su <w type="rhyme">suerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

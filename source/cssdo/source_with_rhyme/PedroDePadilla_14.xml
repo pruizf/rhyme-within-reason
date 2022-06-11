@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXI -</title>
+            <author> Pedro De Padilla</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro de Padilla</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--++--+-" rhyme="A">Cuando no es el amor tan <w type="rhyme">confirmado</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">que tenga ya en el alma firme <w type="rhyme">asiento</w>,</l>
+            <l n="3" met="--++-+---+-" rhyme="B">para no dar lugar al <w type="rhyme">pensamiento</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">que pueda caminar <w type="rhyme">desenfrenado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+++-+-+-" rhyme="A">Cualquiera no sé qué, cualquiera <w type="rhyme">enfado</w>,</l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">deshace aquella torre que es de <w type="rhyme">viento</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">y suélese olvidar en un <w type="rhyme">momento</w>,</l>
+            <l n="8" met="--+--++--+-" rhyme="A">lo que fue al parecer muy <w type="rhyme">delicado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+---+-" rhyme="C">Y así yo nunca pude <w type="rhyme">asegurarme</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">que en vuestro amor hubiese la <w type="rhyme">fineza</w>,</l>
+            <l n="11" met="++-+-+---+-" rhyme="C">que un poco tiempo distes en <w type="rhyme">mostrarme</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">Para conmigo no hacéis <w type="rhyme">bajeza</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">ni novedad ninguna en <w type="rhyme">olvidarme</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">que en mujer, y en fortuna no hay <w type="rhyme">firmeza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

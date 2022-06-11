@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXIII -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Camina nuestro engaño a su <w type="rhyme">castigo</w>,</l>
+            <l n="2" met="-+---++--+-" rhyme="B">al paso que la edad corre a la <w type="rhyme">muerte</w>;</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">igual en todos se ordenó la <w type="rhyme">suerte</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">mas no el suceso a la virtud <w type="rhyme">amigo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Pasan los años, sin poder <w type="rhyme">conmigo</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">que el término común medroso <w type="rhyme">acierte</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">y opuesto a la razón, sin armas <w type="rhyme">fuerte</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">de ajenos desengaños soy <w type="rhyme">testigo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">¡O larga vida! ¡O larga <w type="rhyme">servidumbre</w>!</l>
+            <l n="10" met="---+-+---+-" rhyme="D">a quien el alma vive <w type="rhyme">agradecida</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">las horas siendo a su tormento <w type="rhyme">iguales</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Y con alegre, y cierta <w type="rhyme">pesadumbre</w>,</l>
+            <l n="13" met="-+-++--+-+-" rhyme="D">el bien, que alcanza una prolija <w type="rhyme">vida</w>,</l>
+            <l n="14" met="++---+-+-+-" rhyme="E">es medio para ver mayores <w type="rhyme">males</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

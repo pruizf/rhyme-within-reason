@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1326 - Acto II, CONDE De La madre de la mejor Comedia sencilla al nacimiento de la Virgen</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1326 - Acto II, CONDE De La madre de la mejor Comedia sencilla al nacimiento de la Virgen </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">¡A buen tiempo me cogen <w type="rhyme">desengaños</w>
+            </l>
+            <l n="2" met="+--+++--++-" rhyme="B">de una mujer, tan locos y tan <w type="rhyme">necios</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que se llevan tras sí con sus <w type="rhyme">desprecios</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">lo más florido de mis verdes <w type="rhyme">años</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+-+-+-" rhyme="A">Pero si en el amor están los <w type="rhyme">daños</w>
+            </l>
+            <l n="6" met="-+-+--++-+-" rhyme="B">que compra el alma por tan caros <w type="rhyme">precios</w>,</l>
+            <l n="7" met="--+--+--++-" rhyme="B">los que quieren favores están <w type="rhyme">necios</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">si en tenerlos consisten los <w type="rhyme">engaños</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">¡Crezca tu mar, amor, que yo, <w type="rhyme">seguro</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">del caudal que en mi casa está <w type="rhyme">guardado</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">ni siento el agua ni perder la <w type="rhyme">estrella</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="C">No siento no alcanzar lo que <w type="rhyme">procuro</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">porque he llegado amando a tal <w type="rhyme">estado</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">que pierdo la esperanza de <w type="rhyme">tenella</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

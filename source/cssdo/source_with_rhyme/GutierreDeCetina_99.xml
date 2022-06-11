@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXC -</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXC - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+---++---+-" rhyme="A">No me engañaréis más, vana <w type="rhyme">esperanza</w>,</l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">mi desengaño ya cerró la <w type="rhyme">puerta</w>,</l>
+            <l n="3" met="+-+--+-+-+-" rhyme="B">y esa falsa salud que os trae <w type="rhyme">cubierta</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">con el sueño se ira, como es su <w type="rhyme">usanza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">Solía desear una <w type="rhyme">mudanza</w>,</l>
+            <l n="6" met="-+++-+-+-+-" rhyme="B">hacer muy gran caudal de cosa <w type="rhyme">incierta</w>,</l>
+            <l n="7" met="-+---++--+-" rhyme="B">y agora el desear no se <w type="rhyme">concierta</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">con mudar, que consiste en <w type="rhyme">confianza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+++-++-+-+-" rhyme="C">Ya sé, falsa, quién sois; quitaos el <w type="rhyme">velo</w>;</l>
+            <l n="10" met="+---++---+-" rhyme="D">no me engañarán más vuestras <w type="rhyme">blanduras</w>;</l>
+            <l n="11" met="-+-+++-+-+-" rhyme="E">vivir podéis de hoy más con otro <w type="rhyme">dueño</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">¡Ay dura ley de Amor! Permite el <w type="rhyme">cielo</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="D">que el cabo de tan grandes <w type="rhyme">desventuras</w>
+            </l>
+            <l n="14" met="+--+-+-+-+-" rhyme="E">sea mostrarme el bien durmiendo, en <w type="rhyme">sueño</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

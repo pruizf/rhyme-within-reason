@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXIX -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A"> Hoy, real Señora, hasta la empírea <w type="rhyme">esfera</w>
+            </l>
+            <l n="2" met="+--+---+-+-" rhyme="B">sube en las alas de tu afecto el <w type="rhyme">oro</w>,</l>
+            <l n="3" met="-++--+---+-" rhyme="B">con tal fe, que al del místico <w type="rhyme">tesoro</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">que en Belén se ofreció, emular <w type="rhyme">pudiera</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A"> fe, a cuyo aplauso en la región <w type="rhyme">primera</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">las angélicas mentes forman <w type="rhyme">coro</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">para anunciar con júbilo <w type="rhyme">sonoro</w>
+            </l>
+            <l n="8" met="---+-+--++-" rhyme="A">la sucesión que el orbe de ti <w type="rhyme">espera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---++--+-" rhyme="C">El mártir, cuya fiel sangre <w type="rhyme">revive</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">infunda, pues le invocas. el <w type="rhyme">aliento</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="E">que inspira en su prodigio, en tu <w type="rhyme">esperanza</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="D">que ya naturaleza al dulce <w type="rhyme">intento</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="E">de compensar con frutos su <w type="rhyme">tardanza</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="C">los términos geniales <w type="rhyme">apercibe</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

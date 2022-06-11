@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIV - Vaya con Dios (Beatriz) el ser estafa</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIV - Vaya con Dios (Beatriz) el ser estafa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Vaya con Dios (Beatriz) el ser <w type="rhyme">Estafa</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="C">que esto se te conoce, hasta en el <w type="rhyme">Tufo</w>;</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="C">mas no es razón, que siendo yo tu <w type="rhyme">Rufo</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">les sirvas a otros gustos de <w type="rhyme">Garrafa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">Fiaste en que tu traza es quien te <w type="rhyme">Zafa</w>
+            </l>
+            <l n="6" met="--+----+++-" rhyme="C">de mi cólera, cuando yo más <w type="rhyme">Bufo</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="C">pues advierte (Beatriz) que si me <w type="rhyme">Atufo</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">te abriré en la cabeza tanta <w type="rhyme">Rafa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++-+-+-+-" rhyme="A">Dime, si es bien, que el otro a ti te <w type="rhyme">Estafe</w>,</l>
+            <l n="10" met="-----++-++-" rhyme="A">y cuando por tu Amor eche yo <w type="rhyme">Bofe</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="A">te vayas tú con ese <w type="rhyme">Mequetrefe</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="A">Y yo me vaya al Rollo, o a <w type="rhyme">Getafe</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="A">y sufra que el Picaño de mi <w type="rhyme">Mofe</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="A">en Asa, Uso, Afe, Ofe, y <w type="rhyme">Efe</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

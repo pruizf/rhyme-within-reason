@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXXXV -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXXXV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-++--+-+-" rhyme="A">Meliso, amor no es calidad ni <w type="rhyme">elige</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">ni de la sangre ni el valor se <w type="rhyme">informa</w>;</l>
+            <l n="3" met="++---+---+-" rhyme="B">él dura, donde el alma se <w type="rhyme">conforma</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">con ley de no escuchar quien le <w type="rhyme">corrige</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">A sólo conservarse amor <w type="rhyme">dirige</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">la materia amorosa de su <w type="rhyme">forma</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y, si el que ama en lo amado se <w type="rhyme">transforma</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">amor sin calidad a nadie <w type="rhyme">aflige</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Quiérome a mí, queriendo lo que <w type="rhyme">quiero</w>;</l>
+            <l n="10" met="+--++--+++-" rhyme="D">es lo que soy, luego mi amor no es <w type="rhyme">culpa</w>;</l>
+            <l n="11" met="--+--+---+-" rhyme="E">y si pueden vencerse las <w type="rhyme">estrellas</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">las de unos ojos no; por eso <w type="rhyme">espero</w>
+            </l>
+            <l n="13" met="-+---++--+-" rhyme="D">que entrambas me darán justa <w type="rhyme">disculpa</w>
+            </l>
+            <l n="14" met="+--+---+-+-" rhyme="E">éstas por fuerza, y por belleza <w type="rhyme">aquellas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

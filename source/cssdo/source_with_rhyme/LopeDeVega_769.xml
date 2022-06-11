@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 937 - Acto III, MARCELA De El perseguido</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 937 - Acto III, MARCELA De El perseguido </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+---+-" rhyme="A">¿Qué intentan imposibles mis <w type="rhyme">sentidos</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">contra tanto poder <w type="rhyme">determinados</w>?</l>
+            <l n="3" met="-+---+---+-" rhyme="B">Que celos poderosos <w type="rhyme">declarados</w>
+            </l>
+            <l n="4" met="-++--+---+-" rhyme="A">harán un desatino, <w type="rhyme">resistidos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-++--+-" rhyme="A">Volved, volved atrás, pasos <w type="rhyme">perdidos</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">que corréis a mi fin <w type="rhyme">precipitados</w>;</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">árboles son amores <w type="rhyme">desdichados</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">a quien el hielo marchitó <w type="rhyme">floridos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Alegraron el alma los <w type="rhyme">colores</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">que el tirano poder cubrió de <w type="rhyme">luto</w>;</l>
+            <l n="11" met="-+-+-++--+-" rhyme="C">que hiela ajeno amor muchos <w type="rhyme">amores</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----++--+-" rhyme="D">Y cuando de esperar deba <w type="rhyme">tributo</w>,</l>
+            <l n="13" met="++---+---+-" rhyme="C">¿qué importa la hermosura de las <w type="rhyme">flores</w>,</l>
+            <l n="14" met="---+---+-+-" rhyme="D">si se perdieron esperando el <w type="rhyme">fruto</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

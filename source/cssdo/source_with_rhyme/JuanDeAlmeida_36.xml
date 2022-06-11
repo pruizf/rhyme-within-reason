@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLI - Fileno</title>
+            <author> Juan De Almeida</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Almeida</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLI - Fileno </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Debajo de un aliso <w type="rhyme">recostado</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">confuso y pensativo está <w type="rhyme">Fileno</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">de lágrimas el rostro todo <w type="rhyme">lleno</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">llorando el bien que Amor le había <w type="rhyme">quitado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">Si Amor, dice, me puso en tal <w type="rhyme">estado</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">que aquella que escondida está en mi <w type="rhyme">seno</w>
+            </l>
+            <l n="7" met="-+---+--++-" rhyme="B">se olvida de mi pena, ¿por qué <w type="rhyme">peno</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">y muestro amargo rostro a mi <w type="rhyme">ganado</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="-">¿Por qué por quien se hace sorda y muda</l>
+            <l n="10" met="-+-+-+---+-" rhyme="C">me aflijo yo, pues veo que mi <w type="rhyme">llanto</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="D">le alegra y entristece mi <w type="rhyme">contento</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Quiero mudar en risa el triste <w type="rhyme">planto</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="-">que, en fin, Dios favorece a quien se muda</l>
+            <l n="14" met="++-+-+---+-" rhyme="D">y es sólo aquél que muda <w type="rhyme">pensamiento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

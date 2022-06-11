@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIX - La mexicana musa, hija eminente</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIX - La mexicana musa, hija eminente </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-++--+-" rhyme="A">La Mexicana Musa, Hija <w type="rhyme">eminente</w>
+            </l>
+            <l n="2" met="-+---+++-+-" rhyme="B">de Apolo, y que las Nueve aún más <w type="rhyme">divina</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">porque fuese del Sol la <w type="rhyme">Benjamina</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">le nació en la vejez de su <w type="rhyme">Poniente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">¡Qué sutil, si discurre! ¡Qué <w type="rhyme">elocuente</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">si razona! ¡Si habla, qué <w type="rhyme">ladina</w>!</l>
+            <l n="7" met="--+--+++-+-" rhyme="B">Y si canta de amor, cuerda es tan <w type="rhyme">fina</w>,</l>
+            <l n="8" met="-++--+---+-" rhyme="A">que no se oye rozado en lo <w type="rhyme">indecente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----++--+-" rhyme="C">Única poetisa, ese <w type="rhyme">talento</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">(que no le desperdicias, que le <w type="rhyme">empleas</w>)</l>
+            <l n="11" met="+-+--+++-+-" rhyme="C">aun le envidia mi amor, que es lince a <w type="rhyme">tiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="D">¡O enhorabuena Peregrina <w type="rhyme">seas</w>,</l>
+            <l n="13" met="--+-++---+-" rhyme="C">por si vago tal vez mi <w type="rhyme">pensamiento</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">se encontrase contigo en sus <w type="rhyme">ideas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

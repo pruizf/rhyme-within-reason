@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 14 - La rosa Sonetos a la rosa</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 14 - La rosa Sonetos a la rosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Despliega el Alba la purpúrea <w type="rhyme">Rosa</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">su loca vanidad en pompa <w type="rhyme">altiva</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">y una túnica de otra <w type="rhyme">sucesiva</w>
+            </l>
+            <l n="4" met="+--+---+-+-" rhyme="A">forma a su centro su corona <w type="rhyme">hermosa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Envidia de las flores <w type="rhyme">generosa</w>
+            </l>
+            <l n="6" met="-+---+--++-" rhyme="B">jazmines y claveles de honor <w type="rhyme">priva</w>,</l>
+            <l n="7" met="---+-++--+-" rhyme="B">y dilatando al sol púrpura <w type="rhyme">viva</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">viene a ser de sus rayos <w type="rhyme">mariposa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="C">Así la vida en término de una <w type="rhyme">hora</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">perdió con la hermosura la <w type="rhyme">esperanza</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">y se ha de aborrecer lo que se <w type="rhyme">adora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">¡O Frágil Rosa, que con tal <w type="rhyme">mudanza</w>
+            </l>
+            <l n="13" met="+-+--+---+-" rhyme="C">diste envidia a las flores de la <w type="rhyme">Aurora</w>,</l>
+            <l n="14" met="-----++--+-" rhyme="D">y cuando anocheció tanta <w type="rhyme">venganza</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

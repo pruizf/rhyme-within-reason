@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXVI -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Probemos esta vez el <w type="rhyme">sufrimiento</w>,</l>
+            <l n="2" met="+-+--+---+-" rhyme="B">tantas veces rendido a la <w type="rhyme">fortuna</w>;</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">quizá podrá de tantas veces <w type="rhyme">una</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">resistir a la fuerza del <w type="rhyme">tormento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Y vos, rebelde y dulce <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="6" met="++---+---+-" rhyme="B">que aun tiempo os engendraste con la <w type="rhyme">luna</w>,</l>
+            <l n="7" met="-++--+-+-+-" rhyme="B">¿de qué sirve tener firmeza <w type="rhyme">alguna</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">pues la mayor del mundo imita al <w type="rhyme">viento</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Salid del alma, confianza <w type="rhyme">vana</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">esperanza fundada en <w type="rhyme">apariencias</w>,</l>
+            <l n="11" met="-+---+++-+-" rhyme="E">si os falta calidad, ¿qué importa el <w type="rhyme">nombre</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Quien hoy pasare, pasará <w type="rhyme">mañana</w>:</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">si enojada Lucinda sufre <w type="rhyme">ausencias</w>,</l>
+            <l n="14" met="++-+---+++-" rhyme="E">¿qué más vergüenza que rendirse un <w type="rhyme">hombre</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

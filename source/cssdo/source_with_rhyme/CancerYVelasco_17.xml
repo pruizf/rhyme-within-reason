@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Cancer Y Velasco</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cáncer y  Velasco,  Jerónimo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Docto Museo, cuyo aliento <w type="rhyme">altivo</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">escribe el Sol en láminas <w type="rhyme">lucientes</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">y es la memoria de futuras <w type="rhyme">gentes</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">de tanto escrito tomo <w type="rhyme">sucesivo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Hospede grato el bronce, siempre <w type="rhyme">vivo</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">vuestros nombres, y espíritus <w type="rhyme">valientes</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">pues aun con ser Apolos <w type="rhyme">elocuentes</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">os festeja amoroso el ramo <w type="rhyme">esquivo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Venid, vivid la edad de vuestro <w type="rhyme">nombre</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">por más que el tiempo destruidor <w type="rhyme">presuma</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">de tanto ingenio oscurecer la <w type="rhyme">llama</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="C">Y para que os debáis vuestro <w type="rhyme">renombre</w>,</l>
+            <l n="13" met="++-+-+---+-" rhyme="D">no ajena voz alaba vuestra <w type="rhyme">pluma</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">prestad plumas, y voz a vuestra <w type="rhyme">fama</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

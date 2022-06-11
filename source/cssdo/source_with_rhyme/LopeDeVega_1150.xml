@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1206 - Acto I, SANCHA De Las aventuras del hombre (Auto)</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1206 - Acto I, SANCHA De Las aventuras del hombre (Auto) </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">No sé que tengo, dulce <w type="rhyme">pensamiento</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">que en un instante mismo lloro, y <w type="rhyme">río</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">solicito lo mismo que <w type="rhyme">desvío</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">y tengo en el temor <w type="rhyme">atrevimiento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Entristéceme a veces el <w type="rhyme">contento</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">y en la misma esperanza <w type="rhyme">desconfío</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">que puede ser el sentimiento <w type="rhyme">mío</w>?</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">que sin sentir la causa el daño <w type="rhyme">siento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="C">Mas quien a un tiempo espera, y <w type="rhyme">desconfía</w>,</l>
+            <l n="10" met="-++--+-+-+-" rhyme="D">está triste, y alegre, qué <w type="rhyme">pregunta</w>?</l>
+            <l n="11" met="---+-+-+++-" rhyme="C">pues que responde, amor, la causa es <w type="rhyme">mía</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="D">Amor, que por la vista el alma <w type="rhyme">apunta</w>,</l>
+            <l n="13" met="++-+-+-+-+-" rhyme="C">¿qué quiere? espera, teme, abrasa, <w type="rhyme">enfría</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">y en un sujeto mil contrario <w type="rhyme">junta</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

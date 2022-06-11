@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIX -</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Al hijo fuerte, del mayor <w type="rhyme">planeta</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="-">que al Cielo, y a los dioses fue columna,</l>
+            <l n="3" met="+----+---+-" rhyme="B">Sierpes le acometieron en la <w type="rhyme">cuna</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">y las llamas le apuran en <w type="rhyme">Oeta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="----+---++-" rhyme="A"> Y hasta llegar a la región <w type="rhyme">quieta</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">su madrastra le fue tan <w type="rhyme">importuna</w>,</l>
+            <l n="7" met="-++--+-+-+-" rhyme="B">que no pudo del techo vez <w type="rhyme">alguna</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">colgar la maza en ocio, o la <w type="rhyme">saeta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C"> Pero viendo la misma que los <w type="rhyme">dioses</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">le daban con aplauso eterno <w type="rhyme">asiento</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">depuso la venganza, y <w type="rhyme">aprobólo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++++---+-" rhyme="C"> Así yo espero un tiempo en que <w type="rhyme">reposes</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">que pues concurren tantos a un <w type="rhyme">intento</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">no podrá contestarlos uno <w type="rhyme">solo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

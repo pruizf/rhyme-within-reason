@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 31 - Envió una dama una bigotera de ámbar a un galán, que no la había menester</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 31 - Envió una dama una bigotera de ámbar a un galán, que no la había menester </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Ocioso, Helena, fue vuestro <w type="rhyme">presente</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">para tanto marfil lustroso y <w type="rhyme">liso</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">que los bigotes del galán <w type="rhyme">Narciso</w>
+            </l>
+            <l n="4" met="--+--+--++-" rhyme="A">sostenidos están <w type="rhyme">naturalmente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Si vos le presumís <w type="rhyme">barbiponiente</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">muy de mañana madrugó el <w type="rhyme">aviso</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">y si a la cara hacéis moldura y <w type="rhyme">friso</w>,</l>
+            <l n="8" met="-++--+---+-" rhyme="A">lo mismo es en la barba que en la <w type="rhyme">frente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">Donde concurren tantos <w type="rhyme">desengaños</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">incrédula debéis de ser, <w type="rhyme">Helena</w>,</l>
+            <l n="11" met="-+---++--+-" rhyme="C">¿mas quién a de creer tales <w type="rhyme">engaños</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+++-+-" rhyme="D">El ámbar y el cairel no os causen <w type="rhyme">pena</w>,</l>
+            <l n="13" met="--+--+-+++-" rhyme="C">que a poderlos vivir, de aquí a mil <w type="rhyme">años</w>
+            </l>
+            <l n="14" met="---+-++-++-" rhyme="D">os la podré volver tal y tan <w type="rhyme">buena</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

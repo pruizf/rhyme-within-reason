@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Describe un monte</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Describe un monte </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++++---+-" rhyme="A">Caen de un monte a un valle entre <w type="rhyme">pizarras</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">guarnecidas de frágiles <w type="rhyme">helechos</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">a su margen carámbanos <w type="rhyme">deshechos</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">que cercan olmos y silvestres <w type="rhyme">parras</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----++--+-" rhyme="A">Nadan en su cristal ninfas <w type="rhyme">bizarras</w>,</l>
+            <l n="6" met="--+--++--+-" rhyme="B">compitiendo con él cándidos <w type="rhyme">pechos</w>,</l>
+            <l n="7" met="+-+--+-+-+-" rhyme="B">dulces naves de amor, en más <w type="rhyme">estrechos</w>
+            </l>
+            <l n="8" met="---+---+-+-" rhyme="A">que las que salen de españolas <w type="rhyme">barras</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+++-" rhyme="C">Tiene este monte por vasallo a un <w type="rhyme">prado</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">que para tantas flores le <w type="rhyme">importuna</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="C">sangre las venas de su pecho <w type="rhyme">helado</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">y en este monte y líquida <w type="rhyme">laguna</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="C">para decir verdad como hombre <w type="rhyme">honrado</w>,</l>
+            <l n="14" met="-+---++--+-" rhyme="D">jamás me sucedió cosa <w type="rhyme">ninguna</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

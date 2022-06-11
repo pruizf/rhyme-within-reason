@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLVIII - Al capitán Josué, que hizo parar el sol</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLVIII - Al capitán Josué, que hizo parar el sol </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Pelea el obstinado <w type="rhyme">Gabaonita</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">contra el pueblo de Dios en lid <w type="rhyme">trabada</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y fiado en los golpes de su <w type="rhyme">espada</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">y en la luz que se va, el laurel le <w type="rhyme">quita</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Anima el incansable <w type="rhyme">Israelita</w>;</l>
+            <l n="6" met="-+--+-+--+-" rhyme="B">valiente Josué con mano <w type="rhyme">armada</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y en la fiera pelea <w type="rhyme">ensangrentada</w>
+            </l>
+            <l n="8" met="+----+---+-" rhyme="A">cada cual la victoria <w type="rhyme">solicita</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">Huirse quiere el Sol que no <w type="rhyme">miralla</w>,</l>
+            <l n="10" met="+--+-+---+-" rhyme="D">viendo correr la sangre por el <w type="rhyme">llano</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">que inundara las tiendas y la <w type="rhyme">valla</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Mas el Caudillo en todo <w type="rhyme">soberano</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">el triunfo logra, y gana la <w type="rhyme">batalla</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">parando el Sol que iba al <w type="rhyme">Océano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

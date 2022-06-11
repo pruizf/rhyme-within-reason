@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXIV - A la muerte de un niño</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXIV - A la muerte de un niño </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Este pimpollo tierno y <w type="rhyme">generoso</w>,</l>
+            <l n="2" met="---+-++--+-" rhyme="B">que se mostraba ya fresco y <w type="rhyme">lucido</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">del patrio y fértil tronco <w type="rhyme">dividido</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">cayó en el seno del común <w type="rhyme">reposo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Mas transpuesto en terrenos más <w type="rhyme">dichoso</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">renueva flor y fruto <w type="rhyme">enriquecido</w>;</l>
+            <l n="7" met="++---+---+-" rhyme="B">no teme la inclemencia, ni el <w type="rhyme">bramido</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">del seco invierno y austro <w type="rhyme">tempestuoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">Que en el eterno reino sin <w type="rhyme">mudanza</w>
+            </l>
+            <l n="10" met="++-+++-+-+-" rhyme="D">luce otro sol más puro, y otro <w type="rhyme">cielo</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">que en las plantas influye eterna <w type="rhyme">vida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">¿Quién, pues, con tan segura <w type="rhyme">confianza</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="D">oso soltar la rienda al <w type="rhyme">desconsuelo</w>,</l>
+            <l n="14" met="+-+--++--+-" rhyme="E">viendo en verde sazón gloria <w type="rhyme">florida</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

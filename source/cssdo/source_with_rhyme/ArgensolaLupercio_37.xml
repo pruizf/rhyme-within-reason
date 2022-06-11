@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLII -</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Este prolijo y tenebroso <w type="rhyme">día</w>,</l>
+            <l n="2" met="---+-+--++-" rhyme="B">el cual con piedra negra notar <w type="rhyme">quiero</w>,</l>
+            <l n="3" met="-+++-+---+-" rhyme="B">memoria es dignamente del <w type="rhyme">primero</w>
+            </l>
+            <l n="4" met="--+-++-+-+-" rhyme="A">de mi vida, si es vida aquesta <w type="rhyme">mía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Entonces lo lloraba en <w type="rhyme">profecía</w>,</l>
+            <l n="6" met="-----+-+-+-" rhyme="B">y de su soledad tomando <w type="rhyme">agüero</w>,</l>
+            <l n="7" met="-+---+-+++-" rhyme="B">en tanto que viviere ya no <w type="rhyme">espero</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">tener en él sucesos de <w type="rhyme">alegría</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Odioso me será, y odioso <w type="rhyme">sea</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">al cielo y a la tierra <w type="rhyme">eternamente</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">pues en él se me esconde <w type="rhyme">Galatea</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Entre las noches lóbregas se <w type="rhyme">cuente</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">y en él ninguna acción jamás se <w type="rhyme">vea</w>
+            </l>
+            <l n="14" met="+----+---+-" rhyme="D">digna de que la fama la <w type="rhyme">sustente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

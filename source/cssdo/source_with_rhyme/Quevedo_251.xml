@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Título crepúsculo entre dos luces, si titulece no titulece</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Título crepúsculo entre dos luces, si titulece no titulece  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Son los vizcondes unos condes <w type="rhyme">bizcos</w>,</l>
+            <l n="2" met="-+-+--++-+-" rhyme="B">que no se sabe hacia qué parte <w type="rhyme">conden</w>;</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">a mercedes humanas no <w type="rhyme">responden</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">(y a las damas regalan con <w type="rhyme">pellizcos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-++--+-" rhyme="A">Todas tus rentas son pizcas, y <w type="rhyme">pizcos</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">sus estados, y nísperos que <w type="rhyme">monden</w>:</l>
+            <l n="7" met="++-+-+---+-" rhyme="B">es conde cada cual de los que <w type="rhyme">esconden</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">los mendrugos, que comen a <w type="rhyme">repizcos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+-+-+-" rhyme="C">Andan a titulillos; cosa <w type="rhyme">fea</w>;</l>
+            <l n="10" met="+-++--+-++-" rhyme="D">y aún del rey mismos a no admitir se <w type="rhyme">aúnan</w>
+            </l>
+            <l n="11" met="--------++-" rhyme="C">lo de «O como la nuestra merced <w type="rhyme">sea</w>».</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Sus despensas traspasos son que <w type="rhyme">ayunan</w>;</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">mas no, aunque su hambre hasta morir <w type="rhyme">pelea</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">de la merced de Dios se <w type="rhyme">desayunan</w>.)</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

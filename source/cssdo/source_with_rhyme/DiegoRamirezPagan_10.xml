@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Al Marqués de Montesclaros</title>
+            <author> Diego Ramirez Pagan</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Ramírez  Pagan,  Diego</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Al Marqués de Montesclaros </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Dilatando, señor, de día en <w type="rhyme">día</w>,</l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">este tiempo me ha vendido <w type="rhyme">caro</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">al crecido deseo acude <w type="rhyme">avaro</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">el premio que tu vista <w type="rhyme">prometía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+----+--+-" rhyme="A">Encógese de Tytiro la <w type="rhyme">cría</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">brama el ciervo, y enturbia el río <w type="rhyme">claro</w>,</l>
+            <l n="7" met="++-+---+++-" rhyme="B">rara es el ave, y el pastor es <w type="rhyme">raro</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">que el monte y la campaña <w type="rhyme">descubría</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Con toda esta ocasión me <w type="rhyme">determino</w>
+            </l>
+            <l n="10" met="---+--+--+-" rhyme="D">como Leandro en mar <w type="rhyme">tempestuoso</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">al río, al viento y lluvia, al frío <w type="rhyme">insano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">En paso estrecho, en áspero <w type="rhyme">camino</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="E">Dardanio en la virtud de su <w type="rhyme">Montano</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">presume de valiente y <w type="rhyme">animoso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXV - Nueva alabanza del hecho de Lucrecia</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXV - Nueva alabanza del hecho de Lucrecia </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Intenta de Tarquino el <w type="rhyme">artificio</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">a tu pecho, Lucrecia, dar <w type="rhyme">batalla</w>,</l>
+            <l n="3" met="++-+-+-+-+-" rhyme="B">ya amante llora, ya modesto <w type="rhyme">calla</w>,</l>
+            <l n="4" met="++-+-+---+-" rhyme="A">ya ofrece toda el alma en <w type="rhyme">sacrificio</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Y cuando piensa ya que más <w type="rhyme">propicio</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">tu pecho a tanto imperio se <w type="rhyme">avasalla</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">el premio, como Sísifo, que <w type="rhyme">halla</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">es empezar de nuevo el <w type="rhyme">ejercicio</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Arde furioso, y la amorosa <w type="rhyme">tema</w>
+            </l>
+            <l n="10" met="+----+---+-" rhyme="D">crece en la resistencia de tu <w type="rhyme">honra</w>,</l>
+            <l n="11" met="-+---++--+-" rhyme="E">con tanta privación más <w type="rhyme">obstinada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C">¡Oh Providencia de Deidad <w type="rhyme">suprema</w>!</l>
+            <l n="13" met="---+-+---+-" rhyme="D">¡Tu honestidad motiva tu <w type="rhyme">deshonra</w>,</l>
+            <l n="14" met="---+---+-+-" rhyme="E">y tu deshonra te eterniza <w type="rhyme">honrada</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

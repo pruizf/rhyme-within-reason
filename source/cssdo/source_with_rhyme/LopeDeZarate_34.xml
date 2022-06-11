@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- IV - Habla un amante a un ciego</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- IV - Habla un amante a un ciego </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+--++-" rhyme="A">Ciego a quien faltan ojos y no <w type="rhyme">llanto</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">envidio en tus tinieblas tu <w type="rhyme">sosiego</w>,</l>
+            <l n="3" met="-+---++--+-" rhyme="B">estímote feliz viéndote <w type="rhyme">ciego</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">y de tus ciegas lágrimas me <w type="rhyme">espanto</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">¡oh si valiesen, si valiesen <w type="rhyme">tanto</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">estos incendios en que yo me <w type="rhyme">anego</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">pues nacen llamas si cenizas <w type="rhyme">riego</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">que incendios con mis lágrimas <w type="rhyme">levanto</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+--++-" rhyme="C">con pensión de la vida te fue <w type="rhyme">dada</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">el alma, y a mi vista <w type="rhyme">aborrecida</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">con pensión de que viva me es <w type="rhyme">dejada</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="D">tu ceguedad con la razón <w type="rhyme">medida</w>
+            </l>
+            <l n="13" met="+-+--++--+-" rhyme="C">ya que no sin dolor, queda <w type="rhyme">aliviada</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">¡ay del que está con ojos y con <w type="rhyme">vida</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

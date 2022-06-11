@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXIII -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Yo vi una ninfa, que entre rosas <w type="rhyme">fuera</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">Guzmán, y entre jazmines blanca y <w type="rhyme">lisa</w>;</l>
+            <l n="3" met="-----+---+-" rhyme="B">pero con metamórfosi <w type="rhyme">improvisa</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">verde horror le ofuscó la tez <w type="rhyme">primera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-++--+-" rhyme="A"> Díjome: «Euterpe soy, que esta <w type="rhyme">ribera</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">que con sus flores céfiro <w type="rhyme">divisa</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">a mí, que aliento su nativa <w type="rhyme">risa</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">procura, ingrata, convertirme en <w type="rhyme">fiera</w>».</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C"> Si el Tormes, dije yo, mancilla, <w type="rhyme">Euterpe</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">tu lustre con escama <w type="rhyme">tenebrosa</w>,</l>
+            <l n="11" met="+--+-+-+-+-" rhyme="E">¿quién se podrá quejar del Lago <w type="rhyme">Averno</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="D"> ¿Tú sólo ignoras, replicó la <w type="rhyme">Diosa</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="E">que el estilo enigmático <w type="rhyme">moderno</w>
+            </l>
+            <l n="14" met="+--+---+-+-" rhyme="C">es quien de ninfa me transforma en <w type="rhyme">sierpe</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

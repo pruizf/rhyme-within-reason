@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVIII - A la pura y limpia concepción de Nuestra Señora</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVIII - A la pura y limpia concepción de Nuestra Señora </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Quien hay que con soberbia <w type="rhyme">desbocada</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">y de luz racional <w type="rhyme">inadvertido</w>
+            </l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">cuando padece el sol recién <w type="rhyme">nacido</w>
+            </l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">ose decir la Aurora está <w type="rhyme">eclipsada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">O humanidad de Dios <w type="rhyme">calificada</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">con la razón, descanso del <w type="rhyme">sentido</w>
+            </l>
+            <l n="7" met="-+---+-+++-" rhyme="B">que osado en el dudar crisol ha <w type="rhyme">sido</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">pues deja la verdad <w type="rhyme">purificada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Mirándote los ojos, no te <w type="rhyme">vieron</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">o por querer con presunción <w type="rhyme">humana</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">sondar misterios que la fe <w type="rhyme">apadrina</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C">porque por ver, sin adorar, <w type="rhyme">quisieron</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="D">reconózcante Aurora <w type="rhyme">soberana</w>,</l>
+            <l n="14" met="+----+-+-+-" rhyme="E">toda tu humanidad verán <w type="rhyme">divina</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

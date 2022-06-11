@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXXXVII - A San Agustín, pintado entre Cristo y la Virgen</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXXXVII - A San Agustín, pintado entre Cristo y la Virgen </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">No entre Escila y Caribdis viva <w type="rhyme">nave</w>
+            </l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">niega a impulsos australes blanco <w type="rhyme">lino</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">entre nortes de luz, si aserto <w type="rhyme">dino</w>,</l>
+            <l n="4" met="-+++-+---+-" rhyme="A">violencia es dulce, rémora <w type="rhyme">suave</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Neutral piloto amor apenas <w type="rhyme">sabe</w>
+            </l>
+            <l n="6" met="+-+--++--+-" rhyme="B">uno u otro elegir puerto <w type="rhyme">divino</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">de gracia eterna aquél, inmenso y <w type="rhyme">trino</w>,</l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">éste, en que el mismo trino eterno <w type="rhyme">cabe</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Éxtasis, acordado <w type="rhyme">parasismo</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">del que pendiente del ambiguo <w type="rhyme">acierto</w>,</l>
+            <l n="11" met="+-++-+--++-" rhyme="C">más en sí está, saliendo de sí <w type="rhyme">mismo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+--++-" rhyme="D">Y en dudoso elegir, de acertar <w type="rhyme">cierto</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="C">las suertes menosprecia del <w type="rhyme">abismo</w>,</l>
+            <l n="14" met="-+--++-+-+-" rhyme="D">bajel que entre dos cielos toma <w type="rhyme">puerto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

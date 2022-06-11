@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVIII - A un poema de San Bruno</title>
+            <author> Trillo Y Figueroa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Trillo y Figueroa</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVIII - A un poema de San Bruno </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Aun la alta cumbre de la envidia <w type="rhyme">sea</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">pequeño afán al vuelo de tu <w type="rhyme">pluma</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">¡Oh docto Bruno! cuya ardiente <w type="rhyme">suma</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">de acentos no apagada el tiempo <w type="rhyme">vea</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">El canto heroico de tu santa <w type="rhyme">idea</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">del sagrado Genil la blanca <w type="rhyme">espuma</w>
+            </l>
+            <l n="7" met="--++-+-+-+-" rhyme="B">comunique a ambos mares, y aun <w type="rhyme">presuma</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">luciente hacerlo en cuanto el sol <w type="rhyme">rodea</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Tu nombre al santo cuya vida <w type="rhyme">cantas</w>,</l>
+            <l n="10" met="++-+-+---+-" rhyme="D">de hoy más iguale (bien que <w type="rhyme">reverente</w>);</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">que bien podrá, pues te acrecientas <w type="rhyme">gloria</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">Y este culto trofeo que <w type="rhyme">levantas</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="D">a su fama, en la tuya se <w type="rhyme">acreciente</w>
+            </l>
+            <l n="14" met="++-+---+-+-" rhyme="E">aun más allá de la mayor <w type="rhyme">memoria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

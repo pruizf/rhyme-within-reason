@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXIII - Siente la violencia de los celos</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXIII - Siente la violencia de los celos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-++--+-" rhyme="A">Celos que al alma sois tan <w type="rhyme">inmortales</w>,</l>
+            <l n="2" met="+-+--+---+-" rhyme="B">muerte viva, tormento sin <w type="rhyme">sosiego</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">volcán en que se atiza tanto <w type="rhyme">fuego</w>,</l>
+            <l n="4" met="+----+-+-+-" rhyme="A">hidra donde renacen tantos <w type="rhyme">males</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Víboras, que entre flores y <w type="rhyme">cristales</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">la, ponzoña guardáis, para que <w type="rhyme">ciego</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">luchando beba aquel <w type="rhyme">desasosiego</w>,</l>
+            <l n="8" met="-+---++--+-" rhyme="A">que muere por saber causas <w type="rhyme">fatales</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">De cual Patria vinisteis tan <w type="rhyme">violentos</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">a embarazar las glorias de una <w type="rhyme">dicha</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">que sacrifica el alma en <w type="rhyme">rendimientos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--++--+-+-" rhyme="D">Sepa el Amor, que es su mayor <w type="rhyme">desdicha</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="C">sujetar sus altivos <w type="rhyme">pensamientos</w>
+            </l>
+            <l n="14" met="-+-+-++--+-" rhyme="D">a una pena, que aun no es para <w type="rhyme">dicha</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

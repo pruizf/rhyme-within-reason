@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVI - Al mismo propósito</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVI - Al mismo propósito </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Celia, de tus centellas <w type="rhyme">abrasada</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">como el Verano de la infancia <w type="rhyme">ruda</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">arde la edad, que se introduce <w type="rhyme">muda</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">ya del Invierno en la estación <w type="rhyme">helada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Poco de los avisos <w type="rhyme">recatada</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">al gran incendio la obediencia <w type="rhyme">duda</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">mejor que pudo la atención <w type="rhyme">desnuda</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">la emprende ahora de experiencia <w type="rhyme">armada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Que mucho, si en las llamas <w type="rhyme">inmortales</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">descubre el alma la inmortal <w type="rhyme">pureza</w>,</l>
+            <l n="11" met="-----+---+-" rhyme="E">y entre los pensamientos <w type="rhyme">encendidos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Muestra el respeto, y el amor <w type="rhyme">iguales</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">separado el deseo y la <w type="rhyme">belleza</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">conformes la razón, y los <w type="rhyme">sentidos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

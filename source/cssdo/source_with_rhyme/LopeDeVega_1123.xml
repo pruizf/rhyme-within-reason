@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1181 - SOBERBIA De La sortija del olvido</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1181 - SOBERBIA De La sortija del olvido </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+++-+---+-" rhyme="A">Si fui más luz que el sol, si mi <w type="rhyme">nación</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">la patria celestial, reinó sin <w type="rhyme">fin</w>;</l>
+            <l n="3" met="---+-+---+-" rhyme="B">si por la pompa cedro de <w type="rhyme">Sethín</w>;</l>
+            <l n="4" met="---+--+--+-" rhyme="A">si por la altura alcázar de <w type="rhyme">Sión</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">si por ciencia, divino <w type="rhyme">Salomón</w>;</l>
+            <l n="6" met="---+-+---+-" rhyme="B">si por belleza, Aurora de <w type="rhyme">jazmín</w>;</l>
+            <l n="7" met="-----+---+-" rhyme="B">si por naturaleza, <w type="rhyme">Querubín</w>;</l>
+            <l n="8" met="-+---+---+-" rhyme="A">si Dios por pensamiento y <w type="rhyme">presunción</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--++--+-" rhyme="C">¿cómo temo que ya pena me <w type="rhyme">den</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">los verdes campos del segundo <w type="rhyme">Adán</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">aunque sembrados de su mano <w type="rhyme">estén</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----++--+-" rhyme="D">Mas ¡ay! que con razón pena me <w type="rhyme">dan</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">pues siembra Dios el trigo de <w type="rhyme">Belén</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">en tierra virgen para darles <w type="rhyme">pan</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

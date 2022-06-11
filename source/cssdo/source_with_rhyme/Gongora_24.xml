@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVI -</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+--++-" rhyme="A">Llegué a Valladolid; registré <w type="rhyme">luego</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">desde el bonete al clavo de la <w type="rhyme">mula</w>;</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">guardo el registro, que será mi <w type="rhyme">bula</w>
+            </l>
+            <l n="4" met="---+---+++-" rhyme="A">contra el cuidado de el señor don <w type="rhyme">Diego</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+++-" rhyme="A">Busqué la corte en él y yo estoy <w type="rhyme">ciego</w>,</l>
+            <l n="6" met="---+++---+-" rhyme="B">o en la ciudad no está o se <w type="rhyme">disimula</w>.</l>
+            <l n="7" met="--+-+-+--+-" rhyme="B">Celebrando dietas vi a la <w type="rhyme">gula</w>,</l>
+            <l n="8" met="--+--+--++-" rhyme="A">que Platón para todos está en <w type="rhyme">griego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">La lisonja hallé y la <w type="rhyme">ceremonia</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">con luto, idolatrados los <w type="rhyme">caciques</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">amor sin fe, interés con sus <w type="rhyme">virotes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">Todo se halla en esta <w type="rhyme">Babilonia</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">como en botica grandes <w type="rhyme">alambiques</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">y más en ella títulos que <w type="rhyme">botes</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

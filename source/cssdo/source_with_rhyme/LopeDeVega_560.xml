@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Al Príncipe</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Al Príncipe </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Teócrito Español, en quien se <w type="rhyme">humana</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">Apolo con blandura tan <w type="rhyme">divina</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que sin voz extranjera o <w type="rhyme">peregrina</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">eternizas la tuya <w type="rhyme">soberana</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Honor de nuestra lengua siempre <w type="rhyme">llana</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">como su propio nombre <w type="rhyme">determina</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">que sin perder la imitación <w type="rhyme">Latina</w>,</l>
+            <l n="8" met="++---+---+-" rhyme="A">no excedes la pureza <w type="rhyme">castellana</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="C">Pues con tan alto estilo se <w type="rhyme">levanta</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">donde la envidia tus laureles <w type="rhyme">mira</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">y de tu pluma la excelencia <w type="rhyme">canta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">Escribe, inventa, mueve, enseña, <w type="rhyme">admira</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">y las Arpías de su mesa <w type="rhyme">espanta</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">Alcides con el arco de la <w type="rhyme">lira</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

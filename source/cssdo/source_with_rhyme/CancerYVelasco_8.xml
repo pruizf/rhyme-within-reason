@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A una mujer que fue muy celebrada y muy hermosa y se vio despreciada por ser vieja</title>
+            <author> Cancer Y Velasco</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cáncer y  Velasco,  Jerónimo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A una mujer que fue muy celebrada y muy hermosa y se vio despreciada por ser vieja </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Flora es aquella, cuya edad <w type="rhyme">luciente</w>
+            </l>
+            <l n="2" met="+-+---+--+-" rhyme="B">alma fue del Abril, copia del <w type="rhyme">cielo</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">cuyo dorado, cuyo hermoso <w type="rhyme">pelo</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">equivocó las luces del <w type="rhyme">Oriente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Fueros impuso a amor, que <w type="rhyme">blandamente</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">introdujo en el pecho mas de <w type="rhyme">hielo</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">y libre casi del común <w type="rhyme">recelo</w>,</l>
+            <l n="8" met="-+---++--+-" rhyme="A">creyó que su beldad no era <w type="rhyme">accidente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Ya de todos se mira <w type="rhyme">despreciada</w>,</l>
+            <l n="10" met="+-++-+---+-" rhyme="D">siendo horror, siendo enfado a los <w type="rhyme">sentidos</w>
+            </l>
+            <l n="11" met="---+-+-+-+-" rhyme="-">a quien avisa, en vez de hacer engaño.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-++--+-" rhyme="C">Ni aun por su edad de nadie es <w type="rhyme">venerada</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">con que nos muestra, que años <w type="rhyme">divertidos</w>
+            </l>
+            <l n="14" met="--+--+-+++-" rhyme="-">en la cuenta del tiempo no son años.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

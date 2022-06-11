@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1403 - Libro I</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1403 - Libro I </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++--+-+--+-" rhyme="-">O viña de Engadi, no de Naboth,</l>
+            <l n="2" met="+-+--+---+-" rhyme="A">zarza más defendida que <w type="rhyme">Sidrach</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="A">que Abdenago bellísimo y <w type="rhyme">Misach</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="B">del fuego de Nabuc, luzbel <w type="rhyme">Nemrot</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="B">O planta sobre el cuello de <w type="rhyme">Behemot</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="C">prudente Ruth, carísima <w type="rhyme">Abisac</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="C">divina madre de otro nuevo <w type="rhyme">Isac</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="B">por quien se libra el mundo como <w type="rhyme">Lot</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--++--+-" rhyme="D">O Jordán a Israel, arca a <w type="rhyme">Jafet</w>,</l>
+            <l n="10" met="-+----+--+-" rhyme="D">espada contra el fiero <w type="rhyme">Goliat</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">estirpe de David y de <w type="rhyme">Sadoc</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+---+-" rhyme="-">O estrella de Jacob en Nazareth,</l>
+            <l n="13" met="+--+-+---+-" rhyme="D">sol que se puso al mundo en <w type="rhyme">Josafat</w>,</l>
+            <l n="14" met="++---+-+-+-" rhyme="E">¿quién fuera de tus pies perpetuo <w type="rhyme">Enoc</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

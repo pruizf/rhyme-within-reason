@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Despídese de la ambición y de la corte</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Despídese de la ambición y de la corte  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--++--+-" rhyme="A">Pues que vuela la edad, ande la <w type="rhyme">loza</w>;</l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">y si pasare tragos, sean de <w type="rhyme">taza</w>;</l>
+            <l n="3" met="++---+-+-+-" rhyme="B">bien puede la ambición mondar la <w type="rhyme">haza</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">que el «satis est» me alegra y me <w type="rhyme">remoza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+--++-" rhyme="A">Ya dije a los palacios: «Adiós, <w type="rhyme">choza</w>.»</l>
+            <l n="6" met="-+---++--+-" rhyme="B">Cualquiera pretensión tengo por <w type="rhyme">maza</w>;</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">oigo el dácala y siento el <w type="rhyme">ambaraza</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">y solamente el libre humor me <w type="rhyme">goza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Menos veces vomito que <w type="rhyme">bostezo</w>:</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">la hambre dice que el ingenio <w type="rhyme">aguza</w>,</l>
+            <l n="11" met="---+++---+-" rhyme="C">y que la gula es horca del <w type="rhyme">pescuezo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">El pedir a los ricos me <w type="rhyme">espeluza</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="C">pues saben mi mendrugo y mi <w type="rhyme">arrapiezo</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">y darme saben sólo en <w type="rhyme">caperuza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

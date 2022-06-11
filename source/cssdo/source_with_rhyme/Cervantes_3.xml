@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Del Quijote, Primera parte, capítulo XXXIV, Lotario a Anselmo</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Del Quijote, Primera parte, capítulo XXXIV, Lotario a Anselmo 	                </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+--++-+-" rhyme="A">Yo sé que muero, y no soy <w type="rhyme">creído</w>;</l>
+            <l n="2" met="+++--+-+++-" rhyme="B">es más cierto el morir, como es más <w type="rhyme">cierto</w>
+            </l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">verme a tus pies, ¡oh bella ingrata!, <w type="rhyme">muerto</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="A">antes que de adorarte <w type="rhyme">arrepentido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+++---+-+-" rhyme="A">Podré yo verme en la región de <w type="rhyme">olvido</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">de vida y gloria y de favor <w type="rhyme">desierto</w>,</l>
+            <l n="7" met="-++--+-+-+-" rhyme="B">y allí verse podrá en mi pecho <w type="rhyme">abierto</w>
+            </l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">cómo tu hermoso rostro está <w type="rhyme">esculpido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Que esta reliquia guardo para el <w type="rhyme">duro</w>
+            </l>
+            <l n="10" met="+----+---+-" rhyme="D">trance que me amenaza mi <w type="rhyme">porfía</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">que en tu mismo rigor se <w type="rhyme">fortalece</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+-+-+-" rhyme="C">¡Ay de aquel que navega, el cielo <w type="rhyme">oscuro</w>,</l>
+            <l n="13" met="-+++---+-+-" rhyme="D">por mar no usado y peligrosa <w type="rhyme">vía</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">adonde norte o puerto no se <w type="rhyme">ofrece</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+-+--+-+-" rhyme="A">Pura, bella, suave Estrella <w type="rhyme">mía</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">que sin temor de oscuridad <w type="rhyme">profana</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">vestís de luz serena la <w type="rhyme">mañana</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">y la tierra encendéis desnuda y <w type="rhyme">fría</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">pues vos, a quien mi alma triste <w type="rhyme">envía</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">mil suspiros, movéis la <w type="rhyme">soberana</w>
+            </l>
+            <l n="7" met="---+--+--+-" rhyme="B">vuestra empresa, cual ínclita <w type="rhyme">Diana</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">contra Venus y Amor con <w type="rhyme">osadía</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">yo seré como aquel que su <w type="rhyme">belleza</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">con hierro amancilló, y el casto <w type="rhyme">hecho</w>
+            </l>
+            <l n="11" met="--+-++---+-" rhyme="E">lo mostró con más gloria y <w type="rhyme">hermosura</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">pero, si luna sois, tendré en la <w type="rhyme">alteza</w>
+            </l>
+            <l n="13" met="+----+-+-+-" rhyme="D">latmia del cazador el triste <w type="rhyme">pecho</w>,</l>
+            <l n="14" met="-+--++---+-" rhyme="E">y no del que honró Arcadia la <w type="rhyme">figura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

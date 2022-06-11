@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVII - A unas flores presentadas</title>
+            <author> Luis Carrilloy Sotomayor</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis Carrilloy Sotomayor</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVII - A unas flores presentadas </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Las honras, la osadía del <w type="rhyme">Verano</w>,</l>
+            <l n="2" met="-----+-+-+-" rhyme="B">con que se ennobleció y atrevió al <w type="rhyme">cielo</w>,</l>
+            <l n="3" met="--++--++-+-" rhyme="B">al mejor cielo del más fértil <w type="rhyme">suelo</w>
+            </l>
+            <l n="4" met="+--+---+-+-" rhyme="A">hoy las trasladas mi atrevida <w type="rhyme">mano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">Parece es por demás al que es <w type="rhyme">tirano</w>,</l>
+            <l n="6" met="-+---++--+-" rhyme="B">de cuanto presunción honra su <w type="rhyme">vuelo</w>,</l>
+            <l n="7" met="++---+-+-+-" rhyme="B">dar flores, si tus flores son <w type="rhyme">recelo</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">a las del cielo, rostro <w type="rhyme">soberano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">Dallas es por demás, si estás <w type="rhyme">segura</w>
+            </l>
+            <l n="10" met="-+---+--++-" rhyme="D">envidian de tu rostro las más <w type="rhyme">bellas</w>
+            </l>
+            <l n="11" met="+--+-+-+-+-" rhyme="E">partes (y partes no, por no <w type="rhyme">atreverse</w>).</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+++-+-" rhyme="D">¡Ay, cuales, Celia, son! da vida el <w type="rhyme">vellas</w>.</l>
+            <l n="13" met="++---+---+-" rhyme="C">Flor eres; mientras flor, de tu <w type="rhyme">hermosura</w>
+            </l>
+            <l n="14" met="+--++++--+-" rhyme="E">coge la flor, que es flor, y ha de <w type="rhyme">perderse</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

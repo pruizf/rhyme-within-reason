@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Tan largo me lo fiáis FIN DE LOS Sonetos DE TIRSO DE MOLINA</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De Tan largo me lo fiáis     FIN DE LOS Sonetos DE TIRSO DE MOLINA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Envidian las coronas de los <w type="rhyme">reyes</w>
+            </l>
+            <l n="2" met="--++---+-+-" rhyme="B">los que no saben la pensión que <w type="rhyme">tienen</w>,</l>
+            <l n="3" met="-++--+---+-" rhyme="B">y mil quejas, y lástimas <w type="rhyme">previenen</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">porque viven sujetos a sus <w type="rhyme">leyes</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++---+-+-" rhyme="A"> Pero yo envidio los que guardan <w type="rhyme">bueyes</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">y en cultivar la tierra se <w type="rhyme">entretienen</w>,</l>
+            <l n="7" met="-----+---+-" rhyme="B">que aunque de su trabajo se <w type="rhyme">mantienen</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">ni agravios lloran ni gobiernan <w type="rhyme">greyes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="----++-+-+-" rhyme="C"> Porque, aunque con más ojos que Argos <w type="rhyme">vivan</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">y miren por la espalda y por el <w type="rhyme">pecho</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">los reyes, no proceden como <w type="rhyme">sabios</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C"> si de oír con el mirar se <w type="rhyme">privan</w>:</l>
+            <l n="13" met="++++-+-+-+-" rhyme="D">que un rey siempre ha de estar orejas <w type="rhyme">hecho</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">oyendo quejas, y vengando <w type="rhyme">agravios</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

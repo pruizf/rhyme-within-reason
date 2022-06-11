@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIII -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Osaste alzar el peligroso <w type="rhyme">vuelo</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">Ícaro, vanamente <w type="rhyme">confiado</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">en mal seguras alas; y <w type="rhyme">olvidado</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">del sano aviso, te acercaste al <w type="rhyme">cielo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Donde el ardor del que gobierna <w type="rhyme">Delo</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">deshaciendo tus plumas, <w type="rhyme">castigado</w>
+            </l>
+            <l n="7" met="--++---+++-" rhyme="B">te arrojó al mar, a quien tu nombre has <w type="rhyme">dado</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">y sepultura a ti en el hondo <w type="rhyme">suelo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C">Por más cierto camino el sabio <w type="rhyme">viejo</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="-">de tal peligro discurrió ligero,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="D">y a Febo dedicó el cumano <w type="rhyme">templo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">¡Oh si guardar supieras su <w type="rhyme">consejo</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="-">y no quedara en tu castigo duro</l>
+            <l n="14" met="---+-+---+-" rhyme="D">de las rendidas alas el <w type="rhyme">ejemplo</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

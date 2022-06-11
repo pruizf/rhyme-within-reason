@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVII - A Octavio Gonzaga</title>
+            <author> Diego Ximenez Ayllon</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Ximenez Ayllon</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVII - A Octavio Gonzaga </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">Gonzaga es el origen y <w type="rhyme">apellido</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">de vuestra gran Prosapia y <w type="rhyme">excelente</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">en nuestra Europa muy <w type="rhyme">resplandeciente</w>
+            </l>
+            <l n="4" met="---+-----+-" rhyme="A">mediante el padre vuestro <w type="rhyme">esclarecido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">El cual del Quinto Carlos fue <w type="rhyme">querido</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">sus huestes gobernando <w type="rhyme">sabiamente</w>
+            </l>
+            <l n="7" met="---+---+-+-" rhyme="B">contra Franceses y su Rey <w type="rhyme">potente</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">con ánimo y valor jamás <w type="rhyme">vencido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-++--+-" rhyme="C">Vos que imitando vais tanta <w type="rhyme">grandeza</w>
+            </l>
+            <l n="10" met="-----++--+-" rhyme="D">adonde la virtud armas se <w type="rhyme">encierra</w>
+            </l>
+            <l n="11" met="++---+-+-+-" rhyme="E">sois digno de hacer de vos <w type="rhyme">memoria</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="D">Pues siendo en vuestra patria casa y <w type="rhyme">tierra</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="C">volviste a conquistar con <w type="rhyme">fortaleza</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">eterna fama con crecida <w type="rhyme">gloria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

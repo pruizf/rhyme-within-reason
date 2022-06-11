@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXVII -</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-++--+-" rhyme="A">¿Cuál hombre fue jamás tan sin <w type="rhyme">sentido</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">que si entiende de amor el duro <w type="rhyme">estado</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">viendo en claros ejemplos lo <w type="rhyme">pasado</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">quiera seguir su bando o su <w type="rhyme">partido</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+---+++-" rhyme="A">Yo solo soy a quien el hado ha <w type="rhyme">sido</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">tan contrario, que siendo <w type="rhyme">destinado</w>
+            </l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">a amar sabiendo el daño, soy <w type="rhyme">forzado</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">quedar, si me defiendo, al fin <w type="rhyme">vencido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+-++---+-" rhyme="C">Si trabajo, tal vez por <w type="rhyme">alegrarme</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">como cosa contraria al mal que <w type="rhyme">siento</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">luego se ve lo falso <w type="rhyme">descubierto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---++--+-" rhyme="C">Si en otro que en amor quiero <w type="rhyme">ocuparme</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">el hábito que ha hecho el <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="14" met="+--+-+-+++-" rhyme="E">hace lo más dudoso en mí más <w type="rhyme">cierto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

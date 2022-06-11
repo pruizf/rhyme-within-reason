@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXIV -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Del fresco seno ya la blanca <w type="rhyme">Aurora</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">perlas de hielo puras <w type="rhyme">esparcía</w>,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">y con serena frente alegre <w type="rhyme">abría</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">el resplandor süave que <w type="rhyme">atesora</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">El lúcido confín de Euro y de <w type="rhyme">Flora</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">con la rosada llama, que <w type="rhyme">encendía</w>
+            </l>
+            <l n="7" met="++++-+-+-+-" rhyme="B">Delio aún no rojo, al tierno y nuevo <w type="rhyme">día</w>
+            </l>
+            <l n="8" met="--+--++--+-" rhyme="A">esclarece y esmalta, orla y <w type="rhyme">colora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Cuando sale mi Luz, y en <w type="rhyme">Oriente</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">desmaya el vivo ilustre. Oh vos del <w type="rhyme">cielo</w>
+            </l>
+            <l n="11" met="+-+--+---+-" rhyme="-">vagas lumbres, si tanto se consienten,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+--++-" rhyme="D">digo con vuestra paz que en mortal <w type="rhyme">velo</w>
+            </l>
+            <l n="13" met="--++-++--+-" rhyme="C">pareció más que vos bella y <w type="rhyme">fulgente</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">mi Luz, que honora el rico Hesperio <w type="rhyme">suelo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

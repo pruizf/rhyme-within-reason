@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCVII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Aquel sagrado ardor que <w type="rhyme">resplandece</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">en la belleza de la Aurora <w type="rhyme">mía</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">mi espíritu moviendo, al pecho <w type="rhyme">envía</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">la pura imagen que en mi alma <w type="rhyme">crece</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+--++-" rhyme="A">En ella está fijada, y de allí <w type="rhyme">ofrece</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">al pecho su valor en <w type="rhyme">compañía</w>,</l>
+            <l n="7" met="--++-+-+-+-" rhyme="B">y de sí misma efectos altos <w type="rhyme">cría</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">con que mi ingenio y nombre se <w type="rhyme">engrandece</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++---+-+-" rhyme="C">Vuelo tan alto, que con rayo <w type="rhyme">fiero</w>
+            </l>
+            <l n="10" met="---+-++--+-" rhyme="D">o con ardiente sol fuera <w type="rhyme">impedido</w>
+            </l>
+            <l n="11" met="-+-+-+--++-" rhyme="E">si no me diera aliento mi Luz <w type="rhyme">pura</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">mas, ya que muero como siempre <w type="rhyme">espero</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">ni en mar seré ni en río <w type="rhyme">sumergido</w>;</l>
+            <l n="14" met="-+---+---+-" rhyme="E">que el mundo me será la <w type="rhyme">sepultura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

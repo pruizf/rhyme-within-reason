@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVII -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+-+-" rhyme="A">Llegar, ver y entregarme a sido <w type="rhyme">junto</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">la deuda general pagada os <w type="rhyme">tengo</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">y a ser de vos injustamente <w type="rhyme">vengo</w>
+            </l>
+            <l n="4" met="--+--+-+++-" rhyme="A">condenado si culpa en sólo un <w type="rhyme">punto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Padezco el mal, la causa no <w type="rhyme">barrunto</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">que yo sin esperanza me <w type="rhyme">entretengo</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y sólo de adoraros me <w type="rhyme">mantengo</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">vivo al servir y al merecer <w type="rhyme">difunto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Quien sabe tanto y claramente <w type="rhyme">entiende</w>
+            </l>
+            <l n="10" met="--++++---+-" rhyme="D">que esperar algo es yerro sin <w type="rhyme">disculpa</w>,</l>
+            <l n="11" met="---+++-+-+-" rhyme="E">con la intención no puede haber <w type="rhyme">errado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">Miro, y no hallo en mí de que me <w type="rhyme">enmiende</w>;</l>
+            <l n="13" met="---+---+-+-" rhyme="D">mas, si desdichas las tenéis por <w type="rhyme">culpa</w>,</l>
+            <l n="14" met="+--+-++--+-" rhyme="E">¿cómo estará sin ella un <w type="rhyme">desdichado</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

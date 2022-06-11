@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VI -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Con el puro sereno en campo <w type="rhyme">abierto</w>
+            </l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">vuela mi alado carro, y fresco <w type="rhyme">llega</w>.</l>
+            <l n="3" met="-+-+-+--++-" rhyme="B">El viento arando el golfo; la paz <w type="rhyme">niega</w>
+            </l>
+            <l n="4" met="+-++-+-+-+-" rhyme="A">cielo airado, aire adverso, flujo <w type="rhyme">incierto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Desampara huyendo el mar <w type="rhyme">desierto</w>;</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">mas el miedo y horror lo aflige y <w type="rhyme">ciega</w>;</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">noto cruel, que su furor <w type="rhyme">despliega</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">las velas rompe, impide entrar el <w type="rhyme">puerto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="C">Cuando ríe una luz en <w type="rhyme">occidente</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">que alegra el orbe etéreo, y <w type="rhyme">desfallece</w>
+            </l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">el soplo austrino y cesa el ponto <w type="rhyme">oscuro</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">la prora vuelvo, y lejos <w type="rhyme">tardamente</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">la tierra sola en puntas <w type="rhyme">aparece</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">y nunca al puerto arribo que <w type="rhyme">procuro</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 831 - Acto II, FLORIANO De El Duque de Viseo</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 831 - Acto II, FLORIANO De El Duque de Viseo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Si alguno justamente quejas <w type="rhyme">forma</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">de su contraria estrella y de los <w type="rhyme">cielos</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">consuélense los suyos con mis <w type="rhyme">duelos</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">y no se queje mientras no se <w type="rhyme">informa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+---+-" rhyme="A">Ya Circe, de hombre en piedra me <w type="rhyme">transforma</w>,</l>
+            <l n="6" met="++-+-+-+-+-" rhyme="B">y aun fuera bien, por no sentir mis <w type="rhyme">celos</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que, en efecto, presentes <w type="rhyme">sufrirelos</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">y no en la ausencia, que al morir <w type="rhyme">conforma</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+++---+-" rhyme="C">Bien puede ser de un hombre <w type="rhyme">resistido</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="D">un contrario cruel y su <w type="rhyme">violencia</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">mas no cuando a traición como éste <w type="rhyme">embiste</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">Los celos por los ojos me han <w type="rhyme">venido</w>,</l>
+            <l n="13" met="-----+---+-" rhyme="D">pero por las espaldas el <w type="rhyme">ausencia</w>,</l>
+            <l n="14" met="---+-++--+-" rhyme="E">y lo que no se ve, no se <w type="rhyme">resiste</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

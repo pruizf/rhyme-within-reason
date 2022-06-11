@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 0 - A unos ojos bellos</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 0 - A unos ojos bellos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">¡Cuánto debes, amor, a aquellos <w type="rhyme">ojos</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">de cuya fuerza siempre te <w type="rhyme">acompañas</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">pues usando por flechas de <w type="rhyme">pestañas</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">autorizas tu templo con <w type="rhyme">despojos</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Son las cajas sus arcos nunca <w type="rhyme">flojos</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">por más victorias o por más <w type="rhyme">hazañas</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">verificas con ellas cuanto <w type="rhyme">engañas</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">dorando insultos, desmintiendo <w type="rhyme">antojos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+--++-" rhyme="C">Poco debe a los suyos quien no <w type="rhyme">mira</w>
+            </l>
+            <l n="10" met="+--+---+-+-" rhyme="D">almas de sol con claridad sin <w type="rhyme">velo</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">virtud que al mundo por milagro <w type="rhyme">admira</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+---+++--+-" rhyme="D">Mucho pues por no ver es en el <w type="rhyme">suelo</w>
+            </l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">absoluto señor, y no <w type="rhyme">suspira</w>,</l>
+            <l n="14" met="--++---+-+-" rhyme="D">mas por tal gloria desdeñara el <w type="rhyme">cielo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

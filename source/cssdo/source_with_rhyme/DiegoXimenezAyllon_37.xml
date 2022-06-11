@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLII - Al conde de Mega</title>
+            <author> Diego Ximenez Ayllon</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Ximenez Ayllon</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLII - Al conde de Mega </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+--++-" rhyme="A">Conocimiento fue de virtud <w type="rhyme">lleno</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">el no hallaros en la falsa <w type="rhyme">trama</w>
+            </l>
+            <l n="3" met="-----+---+-" rhyme="B">adonde resplandece vuestra <w type="rhyme">fama</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">quedando exento vos del daño <w type="rhyme">ajeno</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">A cada cual de aquellos fuera <w type="rhyme">bueno</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">matar con tiempo la encendida <w type="rhyme">llama</w>
+            </l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y no infamar su sangre como <w type="rhyme">infama</w>
+            </l>
+            <l n="8" met="--++-++--+-" rhyme="A">el que allí no metió mano en su <w type="rhyme">seno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">A Dios y al Rey hiciste gran <w type="rhyme">servicio</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">con fe y prudencia y con valor <w type="rhyme">rigiendo</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="E">la tierra que os fuera <w type="rhyme">encomendada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Y la Romana iglesia <w type="rhyme">defendiendo</w>
+            </l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">en Fisia siendo os Marte muy <w type="rhyme">propicio</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">Grumingue fue por vos <w type="rhyme">recuperada</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

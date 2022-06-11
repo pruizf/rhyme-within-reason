@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Amor y celos hacen discretos</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De Amor y celos hacen discretos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+-++-+-+-" rhyme="A"> Mariscal, si sois cuerdo en esta <w type="rhyme">empresa</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">amando, mucho vuestra dicha <w type="rhyme">gana</w>.</l>
+            <l n="3" met="--+--+---+-" rhyme="B">Estimad los favores de mi <w type="rhyme">hermana</w>,</l>
+            <l n="4" met="--++-+---+-" rhyme="A">pues que no dan disgusto a la <w type="rhyme">duquesa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+-+----+-" rhyme="-">Proseguid, pues veis lo que interesa</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">con ella vuestro amor, la pena <w type="rhyme">vana</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">que tenéis, olvidad de la <w type="rhyme">tirana</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">voluntad que vuestra alma tiene <w type="rhyme">presa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Mirad que, si os preciáis de <w type="rhyme">agradecido</w>,</l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">eterna fama y triunfo de esta <w type="rhyme">gloria</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="C">gozoso ganaréis contra el <w type="rhyme">olvido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Acordaos, y a vuestra alma haced <w type="rhyme">memoria</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">que siempre, de que sois de mí <w type="rhyme">querido</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">me acuerdo, mucho más que de <w type="rhyme">Victoria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

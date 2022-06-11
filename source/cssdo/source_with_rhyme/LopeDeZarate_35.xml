@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XL - A don Fernando de Viedna en la vida que escribió de Alejandro</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XL - A don Fernando de Viedna en la vida que escribió de Alejandro </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Si para vida hazañas <w type="rhyme">emprendías</w>
+            </l>
+            <l n="2" met="+-+-++-+-+-" rhyme="B">tú, a quien, cuanto no es magno, vino <w type="rhyme">estrecho</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y cabiendo los orbes en tu <w type="rhyme">pecho</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">liberal los ganabas, y <w type="rhyme">vertías</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">A tus cenizas nunca, nunca <w type="rhyme">frías</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">bien que en helado mármol y <w type="rhyme">deshecho</w>
+            </l>
+            <l n="7" met="-+---+---+-" rhyme="B">construye, de los siglos a <w type="rhyme">despecho</w>,</l>
+            <l n="8" met="+++--+---+-" rhyme="A">Viedma aun Pira mayor, que <w type="rhyme">pretendías</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">No estatua en Athos, monumento en <w type="rhyme">vano</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">trompa mayor, que la de ti <w type="rhyme">envidiada</w>,</l>
+            <l n="11" met="--+-++---+-" rhyme="E">que a su estilo no hay fuerza que <w type="rhyme">consuma</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Tu propia Idea se prestó a su <w type="rhyme">mano</w>;</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">pues si medida al mundo fue tu <w type="rhyme">espada</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="E">de tu vida, y tu fama lo es tu <w type="rhyme">pluma</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

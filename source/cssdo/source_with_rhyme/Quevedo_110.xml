@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Retrato no vulgar de Lisis</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Retrato no vulgar de Lisis</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Crespas hebras, sin ley <w type="rhyme">desenlazadas</w>,</l>
+            <l n="2" met="++-+---+-+-" rhyme="B">que un tiempo tuvo entre la manos <w type="rhyme">Midas</w>;</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">en nieve estrellas negras <w type="rhyme">encendidas</w>,</l>
+            <l n="4" met="--++-++--+-" rhyme="A">y cortésmente en paz de ella <w type="rhyme">guardadas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Rosas a abril y mayo <w type="rhyme">anticipadas</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">de la injuria del tiempo <w type="rhyme">defendidas</w>;</l>
+            <l n="7" met="-+---+---+-" rhyme="B">auroras en la risa <w type="rhyme">amanecidas</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">con avaricia del clavel <w type="rhyme">guardadas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Vivos planetas de animado <w type="rhyme">cielo</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">por quien a ser monarca Lisi <w type="rhyme">aspira</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="E">de libertades, que en sus luces <w type="rhyme">ata</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="C">Esfera es racional, que ilustra el <w type="rhyme">suelo</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">en donde reina Amor cuando ella <w type="rhyme">mira</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">y en donde vive Amor cuando ella <w type="rhyme">mata</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

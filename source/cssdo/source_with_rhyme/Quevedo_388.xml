@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XV - Por los reyes buenos de quien murmuran malos vasallos, muestra cuán antiguo es tapar a los reyes los ojos con el texto de San Marcos, cap. 14</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XV - Por los reyes buenos de quien murmuran malos vasallos, muestra cuán antiguo es tapar a los reyes los ojos con el texto de San Marcos, cap. 14 </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">Señor, si es el reinar se <w type="rhyme">escupido</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">y en tu cara lo muestran los <w type="rhyme">escribas</w>,</l>
+            <l n="3" met="++---+---+-" rhyme="B">¿qué rey se librará de las <w type="rhyme">salivas</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">si las padece el Hombre y Dios <w type="rhyme">ungido</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Tan coronado estás como <w type="rhyme">herido</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">pues que tu frente suda venas <w type="rhyme">vivas</w>;</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">golpes y afrentas quieren que <w type="rhyme">recibas</w>,</l>
+            <l n="8" met="--++-+---+-" rhyme="A">y que des gloria al pueblo <w type="rhyme">endurecido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Llámante rey, y véndante los <w type="rhyme">ojos</w>,</l>
+            <l n="10" met="+--+-+---+-" rhyme="D">hieren tu faz, y dicen que <w type="rhyme">adivines</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">y en tu sangre descansan sus <w type="rhyme">enojos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="D">Si tal hacen con Dios vasallos <w type="rhyme">ruines</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">¿en cuál corona faltarán <w type="rhyme">abrojos</w>?</l>
+            <l n="14" met="++-+-+-+-+-" rhyme="D">¿Qué cetro habrá seguro de estos <w type="rhyme">fines</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

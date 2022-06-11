@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXX -</title>
+            <author> Francisco De La Torre</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de La Torre</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Clara y hermosa Virgen del <w type="rhyme">triunfante</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">cielo primero, bella y <w type="rhyme">adornada</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">de la clara corona y de la <w type="rhyme">amada</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">manadilla de cabras de tu <w type="rhyme">amante</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">así la soberana y <w type="rhyme">circunstante</w>
+            </l>
+            <l n="6" met="+----+---+-" rhyme="B">máquina de lumbreras <w type="rhyme">estrellada</w>
+            </l>
+            <l n="7" met="+----+---+-" rhyme="B">deje de acompañarte, y la <w type="rhyme">sagrada</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">cara de Febo veas <w type="rhyme">rutilante</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="A">que al tiempo que la Maga que me <w type="rhyme">encanta</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="C">con palabra y deseos te <w type="rhyme">mirare</w>
+            </l>
+            <l n="11" met="+-+--+---+-" rhyme="D">no recibas la lumbre de tu <w type="rhyme">Apolo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">Y si aquella belleza te <w type="rhyme">forzare</w>,</l>
+            <l n="13" met="+----+-+-+-" rhyme="A">sea para mirar entonces <w type="rhyme">cuanta</w>
+            </l>
+            <l n="14" met="--+--+++-+-" rhyme="D">sinrazón se le hace a un hombre <w type="rhyme">solo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

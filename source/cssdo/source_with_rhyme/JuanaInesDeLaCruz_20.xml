@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVII - Resuelve la cuestión de cual sea pesar mas molesto en encontradas correspondencias, amar o aborrecer</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVII - Resuelve la cuestión de cual sea pesar mas molesto en encontradas correspondencias, amar o aborrecer </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Que no me quiera Fabio, al verse <w type="rhyme">amado</w>,</l>
+            <l n="2" met="+-+--+---+-" rhyme="B">es dolor, sin igual, en mi <w type="rhyme">sentido</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">más, que me quiera Silvio <w type="rhyme">aborrecido</w>
+            </l>
+            <l n="4" met="++-+++-+-+-" rhyme="A">es menos mal, más no menor <w type="rhyme">enfado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Que sufrimiento no estará <w type="rhyme">cansado</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">si siempre le resuenan al <w type="rhyme">oído</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">tras la vana arrogancia de un <w type="rhyme">querido</w>,</l>
+            <l n="8" met="--+--++--+-" rhyme="A">el cansado gemir de un <w type="rhyme">desdeñado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Si de Silvio me cansa el <w type="rhyme">rendimiento</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">a Fabio canso, con estar <w type="rhyme">rendida</w>,</l>
+            <l n="11" met="-+-+-----+-" rhyme="C">si de este busco el <w type="rhyme">agradecimiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">A mí me busca el otro <w type="rhyme">agradecida</w>,</l>
+            <l n="13" met="--+--++--+-" rhyme="C">por activa, y pasiva es mi <w type="rhyme">tormento</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">pues padezco en querer, y en ser <w type="rhyme">querida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

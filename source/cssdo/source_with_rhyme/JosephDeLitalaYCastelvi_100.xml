@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LI - A san Hermenegildo, rey godo de España, que murió martirizado por su padre, y por la fe</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LI - A san Hermenegildo, rey godo de España, que murió martirizado por su padre, y por la fe </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">La Hesperia Monarquía <w type="rhyme">Coronada</w>
+            </l>
+            <l n="2" met="+--+---+-+-" rhyme="B">vio Hermenegildo tu Real <w type="rhyme">Alteza</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y fuerte con Católica <w type="rhyme">entereza</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">la Secta de Arrio huiste <w type="rhyme">despreciada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Al golpe duro de Pagana <w type="rhyme">espada</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">intrépido rendiste tu <w type="rhyme">Cabeza</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y triunfó tu valor de la <w type="rhyme">braveza</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">de Leovigildo en furia <w type="rhyme">desatada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Tu sangre fue el celaje de la <w type="rhyme">Aurora</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">de España, y su extendida <w type="rhyme">Monarquía</w>,</l>
+            <l n="11" met="-++--+---+-" rhyme="E">y el más bello Rubí de su <w type="rhyme">Diadema</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----++--+-" rhyme="C">Música celestial dulce y <w type="rhyme">canora</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="D">celebró tus exequias a <w type="rhyme">porfía</w>,</l>
+            <l n="14" met="---+-+--++-" rhyme="E">y con Divina luz tu prisión <w type="rhyme">quema</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

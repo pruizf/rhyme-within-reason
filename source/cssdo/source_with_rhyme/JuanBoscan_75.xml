@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXVI -</title>
+            <author> Juan Boscan</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan Boscan</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+-+-+-" rhyme="A">¿Qué estrella fue por dónde yo <w type="rhyme">caí</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">en el mundo con tanta <w type="rhyme">pesadumbre</w>?</l>
+            <l n="3" met="-++-+-+-++-" rhyme="B">¿Cuál madre ya de vida dio <w type="rhyme">lumbre</w>?</l>
+            <l n="4" met="-++--+---+-" rhyme="A">¿Por qué me echo tan huérfano y <w type="rhyme">así</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">¿Quién primero holgó, cuando <w type="rhyme">nací</w>?</l>
+            <l n="6" met="+-+--+---+-" rhyme="B">¿Cuál dolor me subió tan en su <w type="rhyme">cumbre</w>
+            </l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">que no hallé remedio en la <w type="rhyme">costumbre</w>,</l>
+            <l n="8" met="++-+--++-+-" rhyme="A">y hoy siento más lo que ayer más <w type="rhyme">sentí</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++-++---+-" rhyme="C">¿Por qué no morí en vientre o en <w type="rhyme">naciendo</w>?</l>
+            <l n="10" met="-+--++---+-" rhyme="D">¿Por qué me tomó nadie en sus <w type="rhyme">rodillas</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">criándome entre vivos, no <w type="rhyme">viviendo</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+---+-" rhyme="C">Forzado es ya que vaya <w type="rhyme">descubriendo</w>,</l>
+            <l n="13" met="-----+---+-" rhyme="D">entre mis enemigos, mis <w type="rhyme">mancillas</w>
+            </l>
+            <l n="14" met="+-+--++--+-" rhyme="C">y unos lloren y estén otros <w type="rhyme">riendo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

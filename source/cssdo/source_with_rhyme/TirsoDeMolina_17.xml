@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La venganza de Tamar</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De La venganza de Tamar </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A"> Agora, noche, si que a oscuras <w type="rhyme">quedo</w>,</l>
+            <l n="2" met="-++--++--+-" rhyme="B">pues un sol hasta aquí tuve <w type="rhyme">delante</w>,</l>
+            <l n="3" met="+--+-+++-+-" rhyme="B">libre de amor entré, ya salgo <w type="rhyme">amante</w>;</l>
+            <l n="4" met="-+-+-++-++-" rhyme="A">reíame antes de él, ya llorar <w type="rhyme">puedo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">¡Ay amorosa voz, oscuro <w type="rhyme">enredo</w>!</l>
+            <l n="6" met="-+---+-+++-" rhyme="B">cifrad vuestra aventura en sólo un <w type="rhyme">guante</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que si iguala a su música el <w type="rhyme">semblante</w>,</l>
+            <l n="8" met="--+--++--+-" rhyme="A">victorioso quedáis, yo os lo <w type="rhyme">concedo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">¡Cuándo más descuidado, más <w type="rhyme">rendido</w>!</l>
+            <l n="10" met="--+--+---+-" rhyme="D">¡Sin saber a quien quiero, <w type="rhyme">enamorado</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">asaltando murallas, y <w type="rhyme">vencido</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D"> Mas ¡dichoso rapaz, vuestro <w type="rhyme">cuidado</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">si sacando quien es por el <w type="rhyme">vestido</w>,</l>
+            <l n="14" met="-+-+++---+-" rhyme="D">la suerte echáis, no en blanco, en <w type="rhyme">encarnado</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLII - Al profeta Jeremías</title>
+            <author> Trillo Y Figueroa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Trillo y Figueroa</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLII - Al profeta Jeremías </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">¡Oh cuánto, envuelta la sagrada <w type="rhyme">lumbre</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">esplendor manifiesta de tu <w type="rhyme">celo</w>!</l>
+            <l n="3" met="-+-+++---+-" rhyme="B">¡Oh cuánto! Más ¿qué mucho, si a tu <w type="rhyme">vuelo</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">de los cielos humilla la alta <w type="rhyme">cumbre</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">A las antiguas aras la <w type="rhyme">costumbre</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">volviste del lucir, su honor al <w type="rhyme">cielo</w>.</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">Ya de tu fe lo diga sin <w type="rhyme">recelo</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">la undosa de centellas <w type="rhyme">muchedumbre</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Arder en llamas líquidas las <w type="rhyme">ondas</w>,</l>
+            <l n="10" met="-+++---+-+-" rhyme="D">¿a quién no enseña convertirse en <w type="rhyme">llanto</w>,</l>
+            <l n="11" met="+-++-+---+-" rhyme="E">que es la fe de un profundo <w type="rhyme">sentimiento</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+-+-+-" rhyme="C">¿Qué importa pues que el fuego en agua <w type="rhyme">escondas</w>,</l>
+            <l n="13" met="+-+--+---+-" rhyme="E">si aun el mar arderá mi <w type="rhyme">pensamiento</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">bebiendo siglos de dolor en <w type="rhyme">tanto</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

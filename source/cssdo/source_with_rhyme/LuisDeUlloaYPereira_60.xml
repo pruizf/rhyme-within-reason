@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVII - Al señor Infante don Carlos</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVII - Al señor Infante don Carlos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+--++-" rhyme="A">O rompa ya el silencio el dolor <w type="rhyme">mío</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">y salga de este pecho <w type="rhyme">desatado</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que sufrir los rigores de <w type="rhyme">callado</w>,</l>
+            <l n="4" met="++---+---+-" rhyme="A">no cabe en lo que siento, aunque <w type="rhyme">porfío</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">De obedecerte, Anarda, <w type="rhyme">desconfío</w>,</l>
+            <l n="6" met="+----+---+-" rhyme="B">muero de confusión <w type="rhyme">desesperado</w>;</l>
+            <l n="7" met="-+--++---+-" rhyme="B">ni quieres que sea tuyo mi <w type="rhyme">cuidado</w>,</l>
+            <l n="8" met="-+--++---+-" rhyme="A">ni dejas que yo tenga mi <w type="rhyme">albedrío</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Mas ya tanto la pena me <w type="rhyme">maltrata</w>,</l>
+            <l n="10" met="-+---+-+++-" rhyme="D">que vence el sufrimiento, ya no <w type="rhyme">espero</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">vivir alegre, el llanto se <w type="rhyme">desata</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="D">Y otra vez de la vida <w type="rhyme">desespero</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">pues si me quejo, tu rigor me <w type="rhyme">mata</w>,</l>
+            <l n="14" met="--+--+++-+-" rhyme="D">y si callo mi mal, dos veces <w type="rhyme">muero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

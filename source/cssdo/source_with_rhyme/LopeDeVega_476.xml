@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 90 -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 90 - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Buscaba Magdalena <w type="rhyme">pecadora</w>
+            </l>
+            <l n="2" met="++-+-+-+-+-" rhyme="B">un hombre y Dios, halló sus pies, y en <w type="rhyme">ellos</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">perdón, que más la fe que los <w type="rhyme">cabellos</w>
+            </l>
+            <l n="4" met="+--+-+---+-" rhyme="A">ata sus pies, sus ojos <w type="rhyme">enamora</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">De su muerte a su vida se <w type="rhyme">mejora</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">efecto en Cristo de sus ojos <w type="rhyme">bellos</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">sigue su luz, y al occidente de <w type="rhyme">ellos</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">canta en los cielos, y en peñascos <w type="rhyme">llora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Si amabas, dijo Cristo, soy tan <w type="rhyme">blando</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">que con amor, a quien amó, <w type="rhyme">conquisto</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">si amabas, Magdalena, vive <w type="rhyme">amando</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Discreta amante, que el peligro <w type="rhyme">visto</w>
+            </l>
+            <l n="13" met="+--+--+--+-" rhyme="C">súbitamente traslado <w type="rhyme">llorando</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="D">los amores del mundo a los de <w type="rhyme">Cristo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

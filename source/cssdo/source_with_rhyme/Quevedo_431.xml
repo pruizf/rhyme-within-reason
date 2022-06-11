@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>En los elogios a la Parte primera de varias aplicaciones y transformaciones de Diego de Rosel y Fuenllana, Nápoles, 1613</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>En los elogios a la Parte primera de varias aplicaciones y transformaciones de Diego de Rosel y Fuenllana, Nápoles, 1613 </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Coronado de lauro, yedra y <w type="rhyme">box</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">Rosel le quita a Febo su <w type="rhyme">carcax</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">pues hace los esdrújulos sin <w type="rhyme">ax</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">y a todos los poetas dice <w type="rhyme">ox</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Es de los hieroglíficos la <w type="rhyme">trox</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">siendo en la ciencia del saber <w type="rhyme">arrax</w>
+            </l>
+            <l n="7" met="+++--+---+-" rhyme="B">y es tan claro cual lúcido <w type="rhyme">valax</w>,</l>
+            <l n="8" met="-++--+-+-+-" rhyme="A">y muy más concertado que un <w type="rhyme">relox</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+--++-+-+-" rhyme="B">Al carro del gran Febo sirve de <w type="rhyme">ex</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="C">y es de aquesta Academia el <w type="rhyme">armandix</w>;</l>
+            <l n="11" met="--+--+--++-" rhyme="D">obedécenle todos como a un <w type="rhyme">dux</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-++--+-+-" rhyme="B">Es tan veloz cuanto en el agua el <w type="rhyme">pex</w>;</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">danle las musas nombre de su <w type="rhyme">dix</w>,</l>
+            <l n="14" met="-+-+-+-+++-" rhyme="D">pues hizo en todas artes un gran <w type="rhyme">flux</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

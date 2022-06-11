@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXV -</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A"> Puede en amor la discreción <w type="rhyme">obrarse</w>
+            </l>
+            <l n="2" met="---+-++--+-" rhyme="B">cuando se siente amor tibio o <w type="rhyme">ligero</w>,</l>
+            <l n="3" met="-++--+---+-" rhyme="B">que no teme peligro el <w type="rhyme">verdadero</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">ni puede con razones <w type="rhyme">desviarse</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Es allegarse más el <w type="rhyme">apartarse</w>,</l>
+            <l n="6" met="-+---+++-+-" rhyme="B">y el duro corazón más fuerte y <w type="rhyme">fiero</w>
+            </l>
+            <l n="7" met="+--+-+---+-" rhyme="B">viene a encenderse más que de <w type="rhyme">primero</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">con lo que más espera <w type="rhyme">remediarse</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">Por donde, en este mal tan <w type="rhyme">congojoso</w>,</l>
+            <l n="10" met="-++-++---+-" rhyme="D">sufrir es el más sano <w type="rhyme">regimiento</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">pues otro que aproveche no se <w type="rhyme">halla</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-++--+-" rhyme="C">y el que en buscar remedio es <w type="rhyme">presuroso</w>
+            </l>
+            <l n="13" met="+--+-+--++-" rhyme="D">sé que vendrá a sentir lo que yo <w type="rhyme">siento</w>,</l>
+            <l n="14" met="---+++++-+-" rhyme="E">que la salud más cierta es no <w type="rhyme">buscalla</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

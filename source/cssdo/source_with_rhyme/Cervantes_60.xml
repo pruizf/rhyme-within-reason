@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La Galatea, Libro II, Damon</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De La Galatea, Libro II, Damon</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+-+-+-" rhyme="A">Más blando fui que no la blanda <w type="rhyme">cera</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">cuando imprimí en mi alma la <w type="rhyme">figura</w>
+            </l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">de la bella Amarili, esquiva y <w type="rhyme">dura</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">cual duro mármol o silvestre <w type="rhyme">fiera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Amor me puso entonces en la <w type="rhyme">esfera</w>
+            </l>
+            <l n="6" met="++---+---+-" rhyme="B">más alta de su bien y su <w type="rhyme">ventura</w>;</l>
+            <l n="7" met="-+-+-----+-" rhyme="B">y ahora temo que la <w type="rhyme">sepultura</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">ha de acabar mi presunción <w type="rhyme">primera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Arrimose el amor a la <w type="rhyme">esperanza</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="-">cual vid al olmo, y fue subiendo aprisa;</l>
+            <l n="11" met="--+--+--++-" rhyme="D">mas faltole el humor, y cesó el <w type="rhyme">vuelo</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">no el de mis ojos que por larga <w type="rhyme">usanza</w>,</l>
+            <l n="13" met="-+-+-+--++-" rhyme="-">fortuna sabe bien que jamás cesa</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">de dar tributo al rostro, al pecho, al <w type="rhyme">suelo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

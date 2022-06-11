@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XI - Piedad declarada por rigor</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XI - Piedad declarada por rigor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">Puso en ti del autor la sabia <w type="rhyme">mano</w>
+            </l>
+            <l n="2" met="+-+--+---+-" rhyme="B">alma quieta en sangre <w type="rhyme">generosa</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">anciano fruto en niña flor <w type="rhyme">hermosa</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">divino ingenio en un sujeto <w type="rhyme">humano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Mas luego puso, ¡ay triste!, amor <w type="rhyme">tirano</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">entre blanco jazmín y fresca <w type="rhyme">rosa</w>
+            </l>
+            <l n="7" met="--+--++--+-" rhyme="B">la Ceraste mordaz más <w type="rhyme">venenosa</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">que humor vertió de racional <w type="rhyme">insano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">Tú, piadoso, quizás por no <w type="rhyme">acabarme</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">huyes y escondes su veneno <w type="rhyme">esquivo</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">como si esto bastara a <w type="rhyme">remediarme</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">pero es aumento que en mi mal <w type="rhyme">recibo</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="C">pues muero cuando dejas de <w type="rhyme">matarme</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">y sólo el tiempo que me matas <w type="rhyme">vivo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXIX - Contra las pretensiones de la Corte</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXIX - Contra las pretensiones de la Corte </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+---+-" rhyme="A">Ya no me engañarán las <w type="rhyme">esperanzas</w>,</l>
+            <l n="2" met="-----+---+-" rhyme="B">ni me disgustarán los <w type="rhyme">desengaños</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que el aviso costoso de mis <w type="rhyme">años</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">advertimiento saca de <w type="rhyme">tardanzas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">Y con igual semblante a las <w type="rhyme">mudanzas</w>,</l>
+            <l n="6" met="---+---+-+-" rhyme="B">el escarmiento deberé a mis <w type="rhyme">daños</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">de lástima sujeto y no de <w type="rhyme">engaños</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">justificando ofensas y <w type="rhyme">venganzas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Y retirado del común <w type="rhyme">abuso</w>
+            </l>
+            <l n="10" met="--++-+---+-" rhyme="D">de anhelar vanamente <w type="rhyme">pretendiendo</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="E">con vil indignidades mi <w type="rhyme">desprecio</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+-+-+-" rhyme="C">nueva naturaleza haré del <w type="rhyme">uso</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">ufano ya de no quedar <w type="rhyme">perdiendo</w>
+            </l>
+            <l n="14" met="--+--+-+-+-" rhyme="E">lo que menos se estima, y es sin <w type="rhyme">precio</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

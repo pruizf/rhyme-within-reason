@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LX -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">A vos la cazadora gorda y <w type="rhyme">flaca</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">que nunca os falta el moco y <w type="rhyme">romadizo</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">¿por qué un pastor a oscuras os lo <w type="rhyme">hizo</w>,</l>
+            <l n="4" met="--+-+-+--+-" rhyme="A">si de casta os precia, doña <w type="rhyme">Bellaca</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+-+-+-" rhyme="A">Y si en la matadura de una <w type="rhyme">jaca</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">os cebáis al entrar por <w type="rhyme">cobertizo</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">¿por qué traéis el mar <w type="rhyme">espantadizo</w>,</l>
+            <l n="8" met="-++--++--+-" rhyme="A">que no es poco sorberse una <w type="rhyme">carraca</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+-++---+-" rhyme="C">Todos dicen que es Luna a <w type="rhyme">trochemoche</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">y tráenos el seso a la <w type="rhyme">redonda</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="E">con esta vanidad e <w type="rhyme">hipocresía</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++-+---+-" rhyme="D">pues si el sol no alumbrase a la <w type="rhyme">cachonda</w>,</l>
+            <l n="13" met="+-+-++---+-" rhyme="E">no alcanzara más luz su <w type="rhyme">señoría</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="C">que el rabo de una negra a <w type="rhyme">medianoche</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

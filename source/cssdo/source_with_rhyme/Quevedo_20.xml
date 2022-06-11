@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Muestra lo que se indigna Dios de las peticiones execrables de los hombres, y que sus obligaciones para alcanzarlas son graves ofensas</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Muestra lo que se indigna Dios de las peticiones execrables de los hombres, y que sus obligaciones para alcanzarlas son graves ofensas</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Con mudo incienso y grande ofrenda, ¡Oh, <w type="rhyme">Licas</w>!,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">cogiendo a Dios a solas, entre <w type="rhyme">dientes</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">los ruegos que recatas de las <w type="rhyme">gentes</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">sin voz, a sus orejas <w type="rhyme">comunicas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Las horas pides prósperas y <w type="rhyme">ricas</w>,</l>
+            <l n="6" met="-----+---+-" rhyme="B">y que para heredar a tu <w type="rhyme">parientes</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">fiebres reparta el cielo <w type="rhyme">pestilentes</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">y de ruinas fraternas te <w type="rhyme">fabricas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-----+-" rhyme="C">(¡Oh grande error! Pues cuando de <w type="rhyme">ejemplares</w>
+            </l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">rayos a Dios armó la culpa, el <w type="rhyme">vicio</w>,</l>
+            <l n="11" met="+----+---+-" rhyme="C">víctimas le temblaron los <w type="rhyme">pesares</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+++-+-" rhyme="D">Y hoy le ofenden así, no ya <w type="rhyme">propicio</w>,</l>
+            <l n="13" met="-+--+----+-" rhyme="C">que, vueltos sacrílegos los <w type="rhyme">altares</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="D">arma su diestra el mismo <w type="rhyme">sacrificio</w>.)</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

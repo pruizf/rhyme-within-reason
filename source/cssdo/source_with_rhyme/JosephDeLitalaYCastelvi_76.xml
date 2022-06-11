@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III - A Luis XIV, rey de Francia</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - A Luis XIV, rey de Francia </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--++--+-" rhyme="A">Generoso Luis, Sire <w type="rhyme">Sagrado</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">que empuñando el Bastón, con la <w type="rhyme">trompeta</w>
+            </l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">vagaroso tu Campo el Norte <w type="rhyme">inquieta</w>
+            </l>
+            <l n="4" met="-+---++--+-" rhyme="A">pisando tu confín yerto y <w type="rhyme">helado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+++-+-" rhyme="A">Ya el Belga y el Inglés te han visto <w type="rhyme">armado</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">quejoso el parche al son de la <w type="rhyme">baqueta</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y espumoso el Bridón en la <w type="rhyme">corbeta</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">incita a escaramuzas el <w type="rhyme">Estado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">No es gloria tuya, no, que la <w type="rhyme">campaña</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">numeroso te cuente en <w type="rhyme">escuadrones</w>
+            </l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">estando Infante el Grande Rey de <w type="rhyme">España</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Deja que crezca y junte sus <w type="rhyme">Leones</w>,</l>
+            <l n="13" met="---+-+--++-" rhyme="C">que el pelear entonces será <w type="rhyme">hazaña</w>,</l>
+            <l n="14" met="--++-+---+-" rhyme="D">y tendrán más disculpa tus <w type="rhyme">pendones</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

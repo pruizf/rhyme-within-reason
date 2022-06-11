@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXVIII - Confiésase digno de tal castigo</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXVIII - Confiésase digno de tal castigo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">Si el Semidiós engendrador del <w type="rhyme">justo</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">que en tanta piedra impuso tanta <w type="rhyme">vida</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">por una antorcha que usurpó <w type="rhyme">encendida</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">ministro dulce del humano <w type="rhyme">gusto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">En el Cáucaso preso, al más <w type="rhyme">injusto</w>
+            </l>
+            <l n="6" met="-+--++-+-+-" rhyme="B">verdugo, al más cruel, por no <w type="rhyme">homicida</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">para la eterna penetrante <w type="rhyme">herida</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">expone el pecho, el corazón <w type="rhyme">robusto</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-++--+-" rhyme="C">que me querello yo, que aun <w type="rhyme">imposible</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">atado esté con esperanza <w type="rhyme">incierta</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">y que un desdén me firma de <w type="rhyme">tormento</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">si en las luces del cielo <w type="rhyme">inaccesible</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">de Fénix encendí mi vista <w type="rhyme">muerta</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="E">mas ¡ay! que amor anima el <w type="rhyme">sentimiento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

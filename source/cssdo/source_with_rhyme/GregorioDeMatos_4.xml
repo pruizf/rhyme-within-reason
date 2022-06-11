@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sonetos - I -</title>
+            <author> Gregorio De Matos</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Matos,  Gregorio de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Sonetos - I - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">A coronarte nubes, Castro, al <w type="rhyme">cielo</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="C">río a acabar te escondes en la <w type="rhyme">tierra</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="C">Mendoza vuelas, rayo de la <w type="rhyme">guerra</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">Hurtado bajas desatado el <w type="rhyme">cielo</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Hurtado Río mueres en el <w type="rhyme">suelo</w>,</l>
+            <l n="6" met="-+-+-+--++-" rhyme="C">Mendoza brillas Astro que no <w type="rhyme">yerra</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="C">en tu curso fatal sutil se <w type="rhyme">encierra</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">en fin sagrado dueño y otro <w type="rhyme">vuelo</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="E">Río en la mar, en el calor <w type="rhyme">Hurtado</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="F">Mendoza en aire, en ceniza <w type="rhyme">Castro</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="G">fue lamentar, compuesto se <w type="rhyme">destroza</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="E">pero espíritu todo <w type="rhyme">arrebatado</w>
+            </l>
+            <l n="13" met="+--+-+-+++-" rhyme="F">nuevo te admira el Orbe, todo un <w type="rhyme">Astro</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="G">de Hurtado Castro, Río de <w type="rhyme">Mendoza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVII - EL autor hablando con Dios después de una enfermedad</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVII - EL autor hablando con Dios después de una enfermedad </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--++--+-" rhyme="A">Tantas, tantas, Señor, tantas las <w type="rhyme">veces</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">de tu piedad y tanta la <w type="rhyme">porfía</w>,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">de obstinación, que no la llamo <w type="rhyme">mía</w>,</l>
+            <l n="4" met="--+--++--+-" rhyme="A">de vergüenza, que tú no la <w type="rhyme">mereces</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++-++-+-+-" rhyme="A">¿En qué noche, en qué instante no <w type="rhyme">amaneces</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">a los que saben conocer el <w type="rhyme">día</w>?</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">que aun en vil error tu diestra <w type="rhyme">envía</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">pues con lo mismo alumbras que <w type="rhyme">estremeces</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="A">Alumbras, mas en ojos <w type="rhyme">incapaces</w>
+            </l>
+            <l n="10" met="---+-+--++-" rhyme="-">de resplandor divino la luz ciega,</l>
+            <l n="11" met="---+-+--++-" rhyme="C">como a nocturnas aves el sol <w type="rhyme">claro</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="A">los míos de tu lumbre sean <w type="rhyme">capaces</w>,</l>
+            <l n="13" met="++-+-+---+-" rhyme="-">no venga a ser, o no, para mi ciega,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="C">ni pueda más mi culpa que tu <w type="rhyme">amparo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

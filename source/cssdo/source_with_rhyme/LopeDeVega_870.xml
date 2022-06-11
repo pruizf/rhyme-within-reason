@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 778 - Acto III, ELISA De El bastardo Mudarra</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 778 - Acto III, ELISA De El bastardo Mudarra </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+++--++--+-" rhyme="A">¡Qué propio es en amor, cómo lo <w type="rhyme">cantan</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">ir y quedar y con quedar, <w type="rhyme">partirse</w>!</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">¡Oh, cuántos pensamientos quieren <w type="rhyme">irse</w>
+            </l>
+            <l n="4" met="--++---+-+-" rhyme="A">que al primer paso del partir se <w type="rhyme">espantan</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Los pies con el agravio se <w type="rhyme">adelantan</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">a la tierna piedad del <w type="rhyme">despedirse</w>;</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">mas suele amor al mismo agravio <w type="rhyme">asirse</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">y sentarse donde ellos se <w type="rhyme">levantan</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+---+-" rhyme="C">Si amor es un colérico <w type="rhyme">accidente</w>,</l>
+            <l n="10" met="++-+-+---+-" rhyme="D">no puede hacer efectos de <w type="rhyme">cobarde</w>;</l>
+            <l n="11" met="++++++++-+-" rhyme="C">que es fuego, es ira, es furia, es rayo <w type="rhyme">ardiente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+-+-+-" rhyme="D">Mal huye quien de amor se abrasa y <w type="rhyme">arde</w>;</l>
+            <l n="13" met="---+-+---+-" rhyme="C">que como amor se precia de <w type="rhyme">valiente</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="D">vuelve la espalda a su enemigo <w type="rhyme">tarde</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

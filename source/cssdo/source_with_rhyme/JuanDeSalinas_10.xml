@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Juan De Salinas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Salinas,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Los dos Pompeyos del mayor <w type="rhyme">Romano</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">hijos, a Europa y Asia <w type="rhyme">dividieron</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">sus cenizas; y allí donde se <w type="rhyme">vieron</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">triunfar, cedieron a enemiga <w type="rhyme">mano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Las arenas que baña el <w type="rhyme">africano</w>
+            </l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">Nilo, sepulcro al gran Pompeyo <w type="rhyme">fueron</w>,</l>
+            <l n="7" met="+-+--+-+-+-" rhyme="B">si es que al Cielo los Dioses no <w type="rhyme">subieron</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">del divino valor asombro <w type="rhyme">humano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Las tres partes del mundo <w type="rhyme">sujetadas</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">por su valor, por su saber <w type="rhyme">profundo</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">por túmulo la Parca les <w type="rhyme">destina</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Prodigio grande, ¡oh, suertes <w type="rhyme">desdichadas</w>!</l>
+            <l n="13" met="---+-+-+++-" rhyme="D">porque menor lugar, que todo un <w type="rhyme">mundo</w>
+            </l>
+            <l n="14" met="-+++--++-+-" rhyme="E">capaz no fuera de tan grande <w type="rhyme">ruina</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

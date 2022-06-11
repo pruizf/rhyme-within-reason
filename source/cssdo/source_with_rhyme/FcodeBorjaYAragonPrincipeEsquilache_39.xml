@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXIII -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+--++-" rhyme="A">Aquí reposa un singular <w type="rhyme">Poeta</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">por la gracia de algunos <w type="rhyme">solamente</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">que hicieron más rumor entre la <w type="rhyme">gente</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">que Mahoma en Arabia con su <w type="rhyme">seta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Fue comenzando, despreciada <w type="rhyme">geta</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">que nace de un arroyo en la <w type="rhyme">corriente</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">después osada hiedra, que <w type="rhyme">insolente</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">desprecia el olmo, que enlazado <w type="rhyme">aprieta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Mudo de oficio, y libros, y <w type="rhyme">forzado</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">de lo poco que el nuevo le <w type="rhyme">valía</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">trocó por el de cómico su <w type="rhyme">estado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Ninguno el arte propio le <w type="rhyme">admitía</w>,</l>
+            <l n="13" met="-----+-+-+-" rhyme="C">que como de verano fue <w type="rhyme">nublado</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="D">cada cual de su haza le <w type="rhyme">desvía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

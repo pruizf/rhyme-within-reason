@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La Galatea, Libro V, Timbrio</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De La Galatea, Libro V, Timbrio 	                </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">Tan bien fundada tengo la <w type="rhyme">esperanza</w>,</l>
+            <l n="2" met="--++---+-+-" rhyme="B">que, aunque más sople riguroso <w type="rhyme">viento</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">no podrá desdecir de su <w type="rhyme">cimiento</w>:</l>
+            <l n="4" met="++++-+-+-+-" rhyme="A">tal fe, tal fuerza, tal valor <w type="rhyme">alcanza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+---+-+-" rhyme="A">Tan lejos voy de consentir <w type="rhyme">mudanza</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">en mi firme amoroso <w type="rhyme">pensamiento</w>,</l>
+            <l n="7" met="++---+---+-" rhyme="B">cuan cerca de acabar en mi <w type="rhyme">tormento</w>
+            </l>
+            <l n="8" met="+--+-----+-" rhyme="A">antes la vida que la <w type="rhyme">confianza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Que si, al contraste del amor, <w type="rhyme">vacila</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">el pecho enamorado, no <w type="rhyme">merece</w>
+            </l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">del mismo amor la dulce paz <w type="rhyme">tranquila</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Por esto el mío, que su fe <w type="rhyme">engrandece</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="C">rabie Caribdis o amenace <w type="rhyme">Cila</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">al mar se arroja y al amor se <w type="rhyme">ofrece</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

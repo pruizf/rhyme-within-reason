@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 63 - Perdonaron a un regidor sentenciado a degollar, y la guarda por las albricias empeñaba la mula quedó por las albricias empeñada.</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 63 - Perdonaron a un regidor sentenciado a degollar, y la guarda por las albricias empeñaba la mula quedó por las albricias empeñada. </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Era la mula de un Doctor <w type="rhyme">hallada</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">en un zaguán, y perdonando el <w type="rhyme">Credo</w>
+            </l>
+            <l n="3" met="---+---+-+-" rhyme="B">su Majestad al degollado en <w type="rhyme">miedo</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">quedó por las albricias <w type="rhyme">empeñada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Corrió el Doctor con alma <w type="rhyme">degollada</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">y dijo al Tasador: Soldados, <w type="rhyme">quedo</w>,</l>
+            <l n="7" met="--++-+---+-" rhyme="B">que la crió un Canónigo en <w type="rhyme">Toledo</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">a paja en flor, y almíbar de <w type="rhyme">cebada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="----++---+-" rhyme="C">Si mientras que yo curo, se la <w type="rhyme">llevan</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="D">¿qué delito a mi mula se <w type="rhyme">acumula</w>?</l>
+            <l n="11" met="---+---+-+-" rhyme="C">pero pues todos la sentencia <w type="rhyme">aprueban</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">Sea también para la mula <w type="rhyme">nula</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">porque como otros la coartada <w type="rhyme">prueban</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">probaré la mulada de mi <w type="rhyme">mula</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

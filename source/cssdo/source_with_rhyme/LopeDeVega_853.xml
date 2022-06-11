@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 762 - Acto I, LISAURA De El amor enamorado</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 762 - Acto I, LISAURA De El amor enamorado </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">No importa bien nacidos <w type="rhyme">pensamientos</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">pues sois del dueño que os acoge <w type="rhyme">honrados</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">que andéis entre las gentes <w type="rhyme">declarados</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">si saben la verdad de mis <w type="rhyme">intentos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Que sólo a vuestros altos <w type="rhyme">fundamentos</w>
+            </l>
+            <l n="6" met="+--+-++--+-" rhyme="B">puede importar el ser tan <w type="rhyme">envidiados</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">que al sol de vuestras penas y <w type="rhyme">cuidados</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">están los ojos de la vida <w type="rhyme">atentos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">Yo quiero, y soy querida con <w type="rhyme">extremo</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">mude el desdén en diferente <w type="rhyme">nombre</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">en gusto la crueldad, el hielo en <w type="rhyme">llama</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">Ni burlo ya ni ser burlada <w type="rhyme">temo</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">que la mujer discreta escucha al <w type="rhyme">hombre</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">y primero le prueba que le <w type="rhyme">ama</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

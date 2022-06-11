@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto con estrambote</title>
+            <author> Baltasar De Alcazar</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Alcázar,  Baltasar del</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto con estrambote </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Haz un soneto que levante el <w type="rhyme">vuelo</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">sobre el Cáucaso, monte <w type="rhyme">inaccesible</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">de estilo generoso y <w type="rhyme">apacible</w>,</l>
+            <l n="4" met="+----+-+-+-" rhyme="A">lleno de variedad de Cipro y <w type="rhyme">Delo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Con perlas, ámbar, oro, grana y <w type="rhyme">yelo</w>
+            </l>
+            <l n="6" met="+-+--+++-+-" rhyme="B">(nieve quise decir, no fue <w type="rhyme">posible</w>):</l>
+            <l n="7" met="++---+---+-" rhyme="B">no sea lo esencial <w type="rhyme">inteligible</w>,</l>
+            <l n="8" met="--+--++--+-" rhyme="A">pues que no ha de faltarle un <w type="rhyme">Velutelo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Luego que este soneto se <w type="rhyme">concluya</w>
+            </l>
+            <l n="10" met="+--+-++--+-" rhyme="-">cuenta el caudal; si ves que ha mejorado,</l>
+            <l n="11" met="+--+-+-+-+-" rhyme="D">bueno será, pues hizo algún <w type="rhyme">efecto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="C">Mas si, por mi desgracia y por la <w type="rhyme">tuya</w>,</l>
+            <l n="13" met="++-+-+---+-" rhyme="-">no hallas un bayoco mejorado,</l>
+            <l n="14" met="--+-+++--+-" rhyme="D">¿para qué será bueno este <w type="rhyme">soneto</w>?</l>
+         </lg>
+         <lg type="estrambote">
+            <l n="15" met="--+--+-" rhyme="D">Aunque yo te <w type="rhyme">prometo</w>
+            </l>
+            <l n="16" met="-+--++---+-" rhyme="E">que sé para qué es bueno el <w type="rhyme">cuitadillo</w>;</l>
+            <l n="17" met="--+--+---+-" rhyme="E">pero tengo vergüenza de <w type="rhyme">decillo</w>.</l>
+            <l n="18" met="-+---+-" rhyme="E">Si quieres <w type="rhyme">conferillo</w>
+            </l>
+            <l n="19" met="---+-+-+-+-" rhyme="F">sin la pasión de padre, allá en tu <w type="rhyme">seno</w>,</l>
+            <l n="20" met="+-+--+--++-" rhyme="F">tú sabrás, como yo, para qué es <w type="rhyme">bueno</w>
+            </l>
+         </lg>
+      </body>
+   </text>
+</TEI>

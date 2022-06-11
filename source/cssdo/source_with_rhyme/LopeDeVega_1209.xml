@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1298 - Acto II, EL REY</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1298 - Acto II, EL REY </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">¿Para qué se lamentan por <w type="rhyme">historias</w>
+            </l>
+            <l n="2" met="+--+---+-+-" rhyme="B">Píramo, triste, ni el sangriento <w type="rhyme">Edipo</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">pues que yo a sus desdichas me <w type="rhyme">anticipo</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">en la mitad del curso de mis <w type="rhyme">glorias</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++-+---+-" rhyme="A">Borren de hoy más sus trágicas <w type="rhyme">memorias</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">Estampa soy de las desdichas <w type="rhyme">tipo</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">porque yo de sus penas <w type="rhyme">participo</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">y no de sus grandezas y <w type="rhyme">victorias</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Ángeles, perdonad que vuestra <w type="rhyme">madre</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">me hace vuestro Herodes tan <w type="rhyme">sangriento</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">que intento semejante <w type="rhyme">desvarío</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">En el dolor parezco vuestro <w type="rhyme">padre</w>;</l>
+            <l n="13" met="--+--+---+-" rhyme="D">pero, a ser Salomón, mi <w type="rhyme">entendimiento</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">supiera de los dos cual era el <w type="rhyme">mío</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

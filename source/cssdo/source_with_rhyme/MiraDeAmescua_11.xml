@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIX - Acto segundo, Blanca</title>
+            <author> Mira De Amescua</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Mira de Amescua</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIX - Acto segundo, Blanca </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Noche, por ser oscura, a amor <w type="rhyme">propicia</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">si acaso tus estrellas hechas <w type="rhyme">ojos</w>
+            </l>
+            <l n="3" met="+-++-+---+-" rhyme="B">vieran que un hombre roba mis <w type="rhyme">despojos</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">de aqueste yerro calla su <w type="rhyme">justicia</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Cintia divina, así de la <w type="rhyme">avaricia</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">de tu esposo Plutón y sus <w type="rhyme">enojos</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">libren los cielos tus cabellos <w type="rhyme">rojos</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">que calles si me roba el de <w type="rhyme">Galicia</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Paredes altas, no digáis las <w type="rhyme">quejas</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">que me hace dar el ciego amor que <w type="rhyme">encierro</w>
+            </l>
+            <l n="11" met="-+--++---+-" rhyme="C">si acaso tenéis lengua como <w type="rhyme">orejas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Jardín, si de tus flores me <w type="rhyme">destierro</w>,</l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">no lo digáis a nadie. Duras <w type="rhyme">rejas</w>
+            </l>
+            <l n="14" met="-+-+---+++-" rhyme="D">callad mis yerros, pues que yo soy <w type="rhyme">hierro</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

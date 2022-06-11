@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXVII - A la muerte de la reina doña Isabel de Borbón</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXVII - A la muerte de la reina doña Isabel de Borbón </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-++--+-+-" rhyme="A">El lirio Real que era el pensil <w type="rhyme">hermoso</w>,</l>
+            <l n="2" met="--+--++--+-" rhyme="B">de la Francia nació bello <w type="rhyme">cuidado</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">de la Aurora, y el Sol está <w type="rhyme">tronchado</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">del fiero Noto, y Aquilón <w type="rhyme">furioso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Descansa ya en el último <w type="rhyme">reposo</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">obediente a la ley del duro <w type="rhyme">hado</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">la que leyes a España, y gloria a <w type="rhyme">dado</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">en dulces lazos de su amante <w type="rhyme">esposo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Murió Isabel ceñida de <w type="rhyme">coronas</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">y de virtudes, y valor <w type="rhyme">ceñida</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">Palas de España, asombro de <w type="rhyme">Belonas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Lleve la fama en Bronces <w type="rhyme">repetida</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">su nombre Augusto por las cinco <w type="rhyme">Zonas</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="D">llore su muerte, envídiele su <w type="rhyme">vida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

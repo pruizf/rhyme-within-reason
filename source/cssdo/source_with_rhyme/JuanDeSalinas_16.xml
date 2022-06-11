@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>(1600?)</title>
+            <author> Juan De Salinas</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Salinas,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>(1600?) </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Conservada cereza, guinda <w type="rhyme">cruda</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">y en pesado vellón, de ciento en <w type="rhyme">ciento</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">los años del glorioso <w type="rhyme">nacimiento</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">de la encubierta majestad <w type="rhyme">desnuda</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">mercedes tales son que nadie <w type="rhyme">duda</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">ser imposible recibir <w type="rhyme">descuento</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">y cuando alguno de palabra <w type="rhyme">intento</w>,</l>
+            <l n="8" met="+-+--+-+-+-" rhyme="A">hallo corto el caudal, la lengua <w type="rhyme">muda</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Varios sucesos, nuevos <w type="rhyme">desengaños</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">tristes malogros de esperanzas <w type="rhyme">ciertas</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">me tienen tanto más <w type="rhyme">reconocido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Vívame el par sin par dichosos <w type="rhyme">años</w>
+            </l>
+            <l n="13" met="---+-++--+-" rhyme="D">pues tan de par en par abre sus <w type="rhyme">puertas</w>
+            </l>
+            <l n="14" met="---+-++--+-" rhyme="E">del corazón piadoso a un <w type="rhyme">desvalido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

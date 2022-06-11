@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- IX - Al mismo asunto</title>
+            <author> Antonio Enriquez Gomez</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Antonio Enriquez Gomez</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- IX - Al mismo asunto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-----+---+-" rhyme="A">Si de la libertad <w type="rhyme">desposeído</w>
+            </l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">estoy y formo voz, ¿cómo <w type="rhyme">lamento</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">suspiros que se quedan en el <w type="rhyme">viento</w>,</l>
+            <l n="4" met="-+--++---+-" rhyme="A">pesares que no llegan al <w type="rhyme">oído</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--++--+-" rhyme="A">Quien su patria perdió, tiene <w type="rhyme">perdido</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">el que juzga tener <w type="rhyme">entendimiento</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que el que vive sujeto al <w type="rhyme">sentimiento</w>
+            </l>
+            <l n="8" met="-++--+---+-" rhyme="A">y no muere, carece de <w type="rhyme">sentido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+---+-" rhyme="C">Mas, ay, que como vive la <w type="rhyme">esperanza</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">vecina del dolor, por <w type="rhyme">consolarme</w>
+            </l>
+            <l n="11" met="+--+--+--+-" rhyme="C">dice que tenga en ella <w type="rhyme">confianza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">Pero mejor le fuera no <w type="rhyme">engañarme</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="C">pues si me sale falsa su <w type="rhyme">fianza</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="D">ha de pagar la deuda con <w type="rhyme">matarme</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

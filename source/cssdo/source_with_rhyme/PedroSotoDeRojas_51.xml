@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXX - Al sueño</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXX - Al sueño </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+-+-" rhyme="A">¿Por qué, di, de mis ojos sueño <w type="rhyme">blando</w>
+            </l>
+            <l n="2" met="---+-+--++-" rhyme="B">los desvelados párpados no <w type="rhyme">pegas</w>?</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">¿por qué a mis miembros tus licores <w type="rhyme">niegas</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">si por el mundo los estás <w type="rhyme">regando</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">De mí, porque te invoco vas <w type="rhyme">volando</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">y a quien menos te busca más te <w type="rhyme">llegas</w>;</l>
+            <l n="7" met="++-+---+-+-" rhyme="B">bien claro el arte de tus obras <w type="rhyme">ciegas</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">con castigo cruel me va <w type="rhyme">mostrando</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Si oscuridad procuras, ¿qué <w type="rhyme">tiniebla</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">como mis ojos? Si el silencio <w type="rhyme">estrecho</w>,</l>
+            <l n="11" met="-+-+-+--++-" rhyme="E">su imagen son, sin dedo, mis dos <w type="rhyme">labios</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">llega que alcázar te dará mi <w type="rhyme">pecho</w>,</l>
+            <l n="13" met="+--+-+--++-" rhyme="C">gruta será mi herida, mi amor <w type="rhyme">niebla</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">mi llanto humor, ministros mis <w type="rhyme">agravios</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

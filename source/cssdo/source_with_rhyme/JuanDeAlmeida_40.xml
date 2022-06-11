@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII -</title>
+            <author> Juan De Almeida</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Almeida</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Afuera el fuego, el lazo, el hielo y <w type="rhyme">flecha</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">de amor, que abrasa, aprieta, enfría y <w type="rhyme">hiere</w>;</l>
+            <l n="3" met="-++--+-+-+-" rhyme="B">que tal llama mi alma no la <w type="rhyme">quiere</w>,</l>
+            <l n="4" met="-+--++---+-" rhyme="A">ni queda de tal nudo <w type="rhyme">satisfecha</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Consuma, ciña, hiele, mate, <w type="rhyme">estrecha</w>
+            </l>
+            <l n="6" met="++---+---+-" rhyme="B">tenga otra voluntad cuanto <w type="rhyme">quisiere</w>,</l>
+            <l n="7" met="--+--+-+++-" rhyme="B">que por dardo, o por nieve, o red no <w type="rhyme">espere</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">tener la mía en su calor <w type="rhyme">deshecha</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Su fuego enfriará mi casto <w type="rhyme">intento</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">el nudo romperé con fuerza o <w type="rhyme">arte</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">la nieve deshará mi ardiente <w type="rhyme">celo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">La flecha embotará mi <w type="rhyme">pensamiento</w>.</l>
+            <l n="13" met="-++--+-+-+-" rhyme="D">Y así, no temerá en segura <w type="rhyme">parte</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">de amor el fuego, el lazo, el dardo, el <w type="rhyme">hielo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

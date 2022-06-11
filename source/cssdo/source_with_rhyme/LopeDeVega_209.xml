@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 6 - La necesidad en las mujeres es disculpa</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 6 - La necesidad en las mujeres es disculpa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Penélope dichosa, no <w type="rhyme">disputo</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">si fuiste casta o no, porque <w type="rhyme">tenías</w>
+            </l>
+            <l n="3" met="+-+--+---+-" rhyme="B">muy gentiles capones, que <w type="rhyme">comías</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">mientras faltaba tu marido <w type="rhyme">astuto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Las tocas bajas y el funesto <w type="rhyme">luto</w>
+            </l>
+            <l n="6" met="+--+---+++-" rhyme="B">deja la falta de comer dos <w type="rhyme">días</w>,</l>
+            <l n="7" met="+----+---+-" rhyme="B">dura necesidad, que si <w type="rhyme">porfías</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">será traidora Porcia al mismo <w type="rhyme">Bruto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+-++---+-" rhyme="C">Las mujeres son todas <w type="rhyme">principales</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">si alguna su valor y ser <w type="rhyme">desprecia</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="C">necesidad la obliga a casos <w type="rhyme">tales</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="D">No estaba pobre la feliz <w type="rhyme">Lucrecia</w>,</l>
+            <l n="13" met="-+---+--++-" rhyme="C">que a darle don Tarquino dos mil <w type="rhyme">reales</w>
+            </l>
+            <l n="14" met="+-+-++-+-+-" rhyme="D">ella fuera más blanda y menos <w type="rhyme">necia</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A Cristo</title>
+            <author> Baltasar De Alcazar</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Alcázar,  Baltasar del</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A Cristo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Cansado estoy de haber sin Ti <w type="rhyme">vivido</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">que todo cansa en tan dañosa <w type="rhyme">ausencia</w>.</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">Mas, ¿qué derecho tengo a tu <w type="rhyme">clemencia</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">si me falta el dolor de <w type="rhyme">arrepentido</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Pero, Señor, en pecho tan <w type="rhyme">rendido</w>
+            </l>
+            <l n="6" met="+----+---+-" rhyme="B">algo descubrirás de <w type="rhyme">suficiencia</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">que te obligue a curar como <w type="rhyme">dolencia</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">mi obstinación y yerro <w type="rhyme">cometido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+-+-+-" rhyme="C">Tuya es mi conversión y Tú la <w type="rhyme">quieres</w>;</l>
+            <l n="10" met="++-+-+-+-+-" rhyme="D">tuya es, Señor, la traza y tuyo el <w type="rhyme">medio</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="E">de conocerme yo y de <w type="rhyme">conocerte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+--++-" rhyme="C">Aplícale a mi mal, por quien Tú <w type="rhyme">eres</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">aquel eficacísimo <w type="rhyme">remedio</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">compuesto de tu sangre, vida y <w type="rhyme">muerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXV -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Desatan del Egipcio <w type="rhyme">Ptolomeo</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">las dudas, y políticas <w type="rhyme">cuestiones</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">con libre unión, desnuda de <w type="rhyme">opiniones</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">de cada Tribu seis del pueblo <w type="rhyme">Hebreo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Y el de setenta y dos glorioso <w type="rhyme">empleo</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">para enseñanza, y luz de las <w type="rhyme">naciones</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">transfiere nuestros Numas, y <w type="rhyme">Catones</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">trabajo igual a su mayor <w type="rhyme">trofeo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Al docto Careaga estima, y <w type="rhyme">debe</w>
+            </l>
+            <l n="10" met="++---+-+-+-" rhyme="D">tan grande aplicación tu Imperio <w type="rhyme">Augusto</w>,</l>
+            <l n="11" met="+--+-++--+-" rhyme="E">siempre feliz en ti, Cuarto <w type="rhyme">Felipe</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Si estudio tanto tu grandeza <w type="rhyme">mueve</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">será piedad en su gobierno <w type="rhyme">justo</w>,</l>
+            <l n="14" met="-----+---+-" rhyme="E">que del quien le engrandece <w type="rhyme">participe</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

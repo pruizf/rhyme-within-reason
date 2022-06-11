@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- V - Al mismo asunto</title>
+            <author> Antonio Enriquez Gomez</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Antonio Enriquez Gomez</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- V - Al mismo asunto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Sin tener de mi error <w type="rhyme">conocimiento</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">los años de una vida tan <w type="rhyme">perdida</w>
+            </l>
+            <l n="3" met="+--+---+-+-" rhyme="B">(siendo incurable su terrible <w type="rhyme">herida</w>)</l>
+            <l n="4" met="+-++-+---+-" rhyme="A">años no fueron, siglos de <w type="rhyme">tormento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Viví muriendo: ¡oh loco <w type="rhyme">pensamiento</w>!</l>
+            <l n="6" met="+-+--++--+-" rhyme="B">¿Cómo quieres vivir siendo <w type="rhyme">homicida</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">tu vida breve de tu propia <w type="rhyme">vida</w>,</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">hidra interior del ciego <w type="rhyme">entendimiento</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Vive para morir; y si te <w type="rhyme">fías</w>
+            </l>
+            <l n="10" met="--+--++--+-" rhyme="D">de la vida que traes, cuenta los <w type="rhyme">daños</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">causa exterior de lógicas <w type="rhyme">porfías</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+---+-" rhyme="D">Mira que cuando quieras <w type="rhyme">desengaños</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">te faltarán los años y los <w type="rhyme">días</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="D">y sobrarán los días y los <w type="rhyme">años</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

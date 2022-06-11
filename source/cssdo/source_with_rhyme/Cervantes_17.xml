@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto a la Reina Isabel II</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto a la Reina Isabel II </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Serenísima reina, en quien se <w type="rhyme">halla</w>
+            </l>
+            <l n="2" met="--++-+++-+-" rhyme="B">lo que Dios pudo dar a un ser <w type="rhyme">humano</w>;</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">amparo universal del ser <w type="rhyme">cristiano</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">de quien la santa fama nunca <w type="rhyme">calla</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">arma feliz, de cuya fina <w type="rhyme">malla</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">se viste el gran Felipe <w type="rhyme">soberano</w>,</l>
+            <l n="7" met="+--+-+-+-+-" rhyme="B">ínclito rey del ancho suelo <w type="rhyme">hispano</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">a quien Fortuna y Mundo se <w type="rhyme">avasalla</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">¿cuál ingenio podría <w type="rhyme">aventurarse</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">a pregonar el bien que estás <w type="rhyme">mostrando</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">si ya en divino viese <w type="rhyme">convertirse</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Que, en ser mortal, habrá de <w type="rhyme">acobardarse</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">y así le va mejor sentir <w type="rhyme">callando</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="C">aquello que es difícil de <w type="rhyme">decirse</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

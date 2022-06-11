@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXIII - Enfermedad de amor, no se cura con favores</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXIII - Enfermedad de amor, no se cura con favores </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++---+-+-" rhyme="A">Tiento fue ya, que las entrañas <w type="rhyme">mías</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">con el Fuego colérico <w type="rhyme">lucharon</w>;</l>
+            <l n="3" met="+----+---+-" rhyme="B">tiempo que con el Aire <w type="rhyme">pelearon</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">mis labios, noches suspirando, y <w type="rhyme">días</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Tiempo fue, que del alma las <w type="rhyme">espías</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">en el mar de mi llanto <w type="rhyme">navegaron</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y que a la seca Tierra, le <w type="rhyme">usurparon</w>
+            </l>
+            <l n="8" met="---+-----+-" rhyme="A">la pesadumbre, y las <w type="rhyme">melancolías</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="-">Mas hoy el viento calmo, el mar quiero,</l>
+            <l n="10" met="-+----+--+-" rhyme="C">la tierra (a mi placer) <w type="rhyme">restituida</w>
+            </l>
+            <l n="11" met="++-+---+-+-" rhyme="D">no alcanzo instante de quietud <w type="rhyme">perfecto</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+--++-" rhyme="C">que pues que el viento cese (si está <w type="rhyme">sida</w>)</l>
+            <l n="13" met="++-+-+---+-" rhyme="D">no cesa, llama que arde en lo <w type="rhyme">secreto</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="C">ni sana dulce filo, abierta <w type="rhyme">herida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

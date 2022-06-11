@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVIII -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++++-+---+-" rhyme="A"> Bien sé yo, Cintia, el culto que se <w type="rhyme">debe</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">al que de dos sustancias <w type="rhyme">desiguales</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">tan superiores forma los <w type="rhyme">mortales</w>,</l>
+            <l n="4" met="++--++++-+-" rhyme="A">que es cada cual un dios de un mundo <w type="rhyme">breve</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">y que este honor le obliga a que se <w type="rhyme">eleve</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">sobre el ser de las obras <w type="rhyme">naturales</w>,</l>
+            <l n="7" met="--++-+---+-" rhyme="B">y asaltando esas máquinas <w type="rhyme">fatales</w>,</l>
+            <l n="8" met="+-+--+---+-" rhyme="A">viva unido a la causa que las <w type="rhyme">mueve</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C"> y soy con esto a quien tu amor <w type="rhyme">desvía</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">del uso de este gran <w type="rhyme">conocimiento</w>
+            </l>
+            <l n="11" met="-----+---+-" rhyme="E">por la divinidad de tu <w type="rhyme">hermosura</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">y a venerarte vive tan <w type="rhyme">atento</w>,</l>
+            <l n="13" met="-+--++---+-" rhyme="E">que gime si tal vez se le <w type="rhyme">figura</w>
+            </l>
+            <l n="14" met="-+--++---+-" rhyme="C">que puede tener fin su <w type="rhyme">idolatría</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

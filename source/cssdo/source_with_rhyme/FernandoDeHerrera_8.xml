@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CV -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Alegre, fértil, vario, fresco <w type="rhyme">prado</w>,</l>
+            <l n="2" met="++-+-+---+-" rhyme="B">tú, monte y bosque de árboles <w type="rhyme">hermoso</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">el uno y otro siempre <w type="rhyme">venturoso</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">que de las bellas plantas fue <w type="rhyme">tocado</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Betis, con puras ondas <w type="rhyme">ensalzado</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">y con ricas olivas <w type="rhyme">abundoso</w>,</l>
+            <l n="7" met="++-+-+---+-" rhyme="B">¡cuánto eres más felice y <w type="rhyme">glorioso</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">pues eres de mi Aglaya <w type="rhyme">visitado</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Siempre tendréis perpetua <w type="rhyme">primavera</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">y del Elisio campo tiernas <w type="rhyme">flores</w>
+            </l>
+            <l n="11" met="-+---+--++-" rhyme="E">si os viere el resplandor de la luz <w type="rhyme">mía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">Ni estéril hielo o soplo crudo os <w type="rhyme">hiera</w>,</l>
+            <l n="13" met="+-+--+---+-" rhyme="D">antes Venus, las gracias, los <w type="rhyme">amores</w>
+            </l>
+            <l n="14" met="-+--++---+-" rhyme="E">os miren y en vos reine la <w type="rhyme">alegría</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

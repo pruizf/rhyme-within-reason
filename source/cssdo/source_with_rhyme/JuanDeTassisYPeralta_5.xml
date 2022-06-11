@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CII - A la hermosura de las cosas criadas</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CII - A la hermosura de las cosas criadas </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+++---+-" rhyme="A">Es la belleza un rayo del <w type="rhyme">primero</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">lumen, por mil centellas <w type="rhyme">derribado</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">a donde vibra en parte <w type="rhyme">trasladado</w>
+            </l>
+            <l n="4" met="-+-+++---+-" rhyme="A">del Sol Eterno un campo <w type="rhyme">verdadero</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">Color que condición muda <w type="rhyme">severo</w>
+            </l>
+            <l n="6" met="+-++-+---+-" rhyme="B">este bien altamente <w type="rhyme">originado</w>,</l>
+            <l n="7" met="-+++-+---+-" rhyme="B">que ser no puede en carta <w type="rhyme">retratado</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">en tela si de juicio y no <w type="rhyme">grosero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Cuando Diana argenta y dora <w type="rhyme">Apolo</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">supedita la luz de sus <w type="rhyme">centellas</w>,</l>
+            <l n="11" met="-+++-+-+-+-" rhyme="C">y templo es suyo el uno y otro <w type="rhyme">polo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Los milagros de amor que ostenta en <w type="rhyme">ellas</w>
+            </l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">él los describe, y sean de ellos <w type="rhyme">sólo</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">los orbes carta y letras sus <w type="rhyme">estrellas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

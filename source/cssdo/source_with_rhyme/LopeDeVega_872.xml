@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 779 - Acto I, LAMBRA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 779 - Acto I, LAMBRA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Cae sobre el dragón que le ha <w type="rhyme">mordido</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">el indiano elefante, y en el <w type="rhyme">prado</w>
+            </l>
+            <l n="3" met="+-++-+-+-+-" rhyme="B">muerde aquel mismo pie que le ha <w type="rhyme">pisado</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">el áspid, a vengarse <w type="rhyme">promovido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Celoso el toro, con feroz <w type="rhyme">bramido</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">desnuda el verde bosque, y el <w type="rhyme">pintado</w>
+            </l>
+            <l n="7" met="+--+-+---+-" rhyme="B">tigre se arroja al mar <w type="rhyme">precipitado</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">del fugitivo cazador <w type="rhyme">vencido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">No es en las fieras y animales <w type="rhyme">solos</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">a quien la ira del vengarse <w type="rhyme">alcanza</w>
+            </l>
+            <l n="11" met="-+---++--+-" rhyme="C">con tal solicitud, fraudes y <w type="rhyme">dolos</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="D">que la mujer, sin admitir <w type="rhyme">mudanza</w>,</l>
+            <l n="13" met="+----+--++-" rhyme="C">tiene su condición sobre dos <w type="rhyme">polos</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">que mueven el amor y la <w type="rhyme">venganza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

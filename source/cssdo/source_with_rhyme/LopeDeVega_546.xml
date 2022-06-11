@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 32 - Al libro El peregrino indiano, de Antonio Saavedra</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 32 - Al libro El peregrino indiano, de Antonio Saavedra </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+++---+-" rhyme="A">Un gran Cortés y un grande <w type="rhyme">Cortesano</w>,</l>
+            <l n="2" met="-+-++--+-+-" rhyme="B">autores son de esta famosa <w type="rhyme">historia</w>,</l>
+            <l n="3" met="--+--+--++-" rhyme="B">si Cortés con la espada alcanzó <w type="rhyme">gloria</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">vos con la pluma, ingenio <w type="rhyme">soberano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+---+-" rhyme="A">Si él vence al Indio, debe a vuestra <w type="rhyme">mano</w>
+            </l>
+            <l n="6" met="-++--+---+-" rhyme="B">que no venza el olvido su <w type="rhyme">memoria</w>,</l>
+            <l n="7" met="-++--++--+-" rhyme="B">y así fue de los dos esta <w type="rhyme">victoria</w>,</l>
+            <l n="8" met="-++--+++-+-" rhyme="A">que si es César Cortés vos sois <w type="rhyme">Lucano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Corteses sois los dos que al <w type="rhyme">Cristianismo</w>
+            </l>
+            <l n="10" met="++-+---+-+-" rhyme="D">dais vos su frente de laurel <w type="rhyme">cercada</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">y él vuestra Musa bélica <w type="rhyme">Española</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+++-+-+-" rhyme="C">Y aun más Cortés sois vos, si hacéis lo <w type="rhyme">mismo</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">que Cortés con el corte de la <w type="rhyme">espada</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="E">siéndolo tanto con la pluma <w type="rhyme">sola</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

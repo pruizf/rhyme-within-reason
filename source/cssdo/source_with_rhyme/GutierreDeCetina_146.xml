@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CCXXXI -</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CCXXXI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Vuestro nombre, señora, que <w type="rhyme">asegura</w>
+            </l>
+            <l n="2" met="+----++--+-" rhyme="B">cuanto vuestra beldad hace <w type="rhyme">dudoso</w>,</l>
+            <l n="3" met="-+-+-++--+-" rhyme="B">demás de aquel mirar dulce y <w type="rhyme">piadoso</w>
+            </l>
+            <l n="4" met="++---+---+-" rhyme="A">han sido la ocasión de mi <w type="rhyme">tristura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">Temía, y con razón, esta <w type="rhyme">aventura</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">puesto que fue el principio <w type="rhyme">venturoso</w>;</l>
+            <l n="7" met="++---+---+-" rhyme="B">no era por mi parte <w type="rhyme">temeroso</w>,</l>
+            <l n="8" met="--+------+-" rhyme="A">mas de parte de vuestra <w type="rhyme">hermosura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">El alma, en el tormento <w type="rhyme">ejercitada</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">de nueva sujeción quería <w type="rhyme">librarse</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">del antiguo error <w type="rhyme">escarmentada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Pero ¿cómo podía decir <w type="rhyme">salvarse</w>
+            </l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">quien tanto del primero mal se <w type="rhyme">agrada</w>
+            </l>
+            <l n="14" met="-++--+-+-+-" rhyme="D">y no quiere de vos saber <w type="rhyme">guardarse</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

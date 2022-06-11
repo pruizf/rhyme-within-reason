@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mató un médico su candil estudiando, por despabilarle, y reconoce el candil justa aquella pena por su culpa</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Mató un médico su candil estudiando, por despabilarle, y reconoce el candil justa aquella pena por su culpa  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Si alumbro yo porque a matar <w type="rhyme">aprenda</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">¿de qué me espanto yo de que me <w type="rhyme">apague</w>?</l>
+            <l n="3" met="--+-++--++-" rhyme="B">Pues en mí «Quien tal hace que tal <w type="rhyme">pague</w>»</l>
+            <l n="4" met="--+---+--+-" rhyme="A">justifica el doctor se <w type="rhyme">comprenda</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Despabila al que cura y a su <w type="rhyme">hacienda</w>;</l>
+            <l n="6" met="+----+---+-" rhyme="B">cura al que despabila, aunque le <w type="rhyme">halague</w>;</l>
+            <l n="7" met="+----+-+-+-" rhyme="B">basta para matar que sólo <w type="rhyme">amague</w>:</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">de calaveras es su estudio <w type="rhyme">tienda</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="C">Por ser matar la hambre comer, <w type="rhyme">come</w>;</l>
+            <l n="10" met="---+-+---+-" rhyme="D">hasta a su mula mata de <w type="rhyme">repente</w>;</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">ninguno escapa que a su cargo <w type="rhyme">tome</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+-+-+-" rhyme="D">Es matalos hablando <w type="rhyme">eternamente</w>;</l>
+            <l n="13" met="-++--++--+-" rhyme="C">será el mundo al revés siempre que <w type="rhyme">asome</w>,</l>
+            <l n="14" met="-----++--+-" rhyme="D">pues el amanecer vuelve <w type="rhyme">Occidente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

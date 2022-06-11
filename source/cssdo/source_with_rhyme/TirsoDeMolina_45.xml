@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Quien no cae no se levanta</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De Quien no cae no se levanta </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Rosario soberano: mi <w type="rhyme">esperanza</w>
+            </l>
+            <l n="2" met="---+-+++-+-" rhyme="B">en vuestras cuentas tiene un firme <w type="rhyme">estribo</w>;</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">esclava fui del infernal <w type="rhyme">cautivo</w>,</l>
+            <l n="4" met="+++--+-+-+-" rhyme="A">un año ha que tomó de mí <w type="rhyme">venganza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Mucho os debo, mi Dios; en mucho <w type="rhyme">alcanza</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">a mis pequeños gastos el <w type="rhyme">recibo</w>;</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">no saquéis mandamiento <w type="rhyme">ejecutivo</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">que yo os daré en Domingo una <w type="rhyme">fianza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Mas, Señor, si os agradan las <w type="rhyme">migajas</w>
+            </l>
+            <l n="10" met="--+--+--++-" rhyme="D">de mi corto caudal, aunque son <w type="rhyme">cosas</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">de pequeño valor y prendas <w type="rhyme">bajas</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="D"> ejecutadlas y serán <w type="rhyme">dichosas</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">que si el mal pagador os paga en <w type="rhyme">pajas</w>,</l>
+            <l n="14" met="--++-+--++-" rhyme="D">aunque yo os pague mal, pagaré en <w type="rhyme">rosas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

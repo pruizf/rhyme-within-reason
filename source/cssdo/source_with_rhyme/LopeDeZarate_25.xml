@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXI - La Reina Nuestra Señora a Su Majestad en ocasión de haber muerto en El Pardo un javalí, que el día antes le huyó</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXI - La Reina Nuestra Señora a Su Majestad en ocasión de haber muerto en El Pardo un javalí, que el día antes le huyó </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Desconoció tu esfuerzo, en tu <w type="rhyme">belleza</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">el jabalí primero <w type="rhyme">fugitivo</w>,</l>
+            <l n="3" met="+-+--+++-+-" rhyme="B">tan furioso, que muerto, es miedo <w type="rhyme">vivo</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">mostrando con su horror, su <w type="rhyme">fortaleza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Blasón de Alcides, blanco a su <w type="rhyme">destreza</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">pudo ser por lo rápido y <w type="rhyme">nocivo</w>;</l>
+            <l n="7" met="+-+--+-+-+-" rhyme="B">no se viera en estrella tan <w type="rhyme">altivo</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">como a tus pies postrada su <w type="rhyme">fiereza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Por Adonis teniéndote, y por <w type="rhyme">Marte</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">respeta al uno, contra el otro <w type="rhyme">osara</w>;</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">mas estímate flor y no se <w type="rhyme">altera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+++--+-+-+-" rhyme="C">No fue bruto en morir, pues fue <w type="rhyme">alabarte</w>,</l>
+            <l n="13" met="+----+---+-" rhyme="D">hoy como si Belisa lo <w type="rhyme">juzgara</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">murió a tus manos racional la <w type="rhyme">fiera</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

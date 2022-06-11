@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIII - Efectos de los celos</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIII - Efectos de los celos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Este penar, sin deshacer los <w type="rhyme">hielos</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">el alma entre las llamas <w type="rhyme">anegada</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">la privanza del bien <w type="rhyme">desesperada</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">en que faltan alivios, y <w type="rhyme">consuelos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--++--+-" rhyme="A">Estas ansias sin fin, estos <w type="rhyme">desvelos</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">esta inquietud del pecho <w type="rhyme">acelerada</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">esta violencia en la razón <w type="rhyme">turbada</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">poco se explica, si se laman <w type="rhyme">celos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Agravios son de causa <w type="rhyme">verdadera</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">donde falta el auxilio del <w type="rhyme">engaño</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">y el favor de la duda se ha <w type="rhyme">deshecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C">Ni fenecerte, ni templarse <w type="rhyme">espera</w>
+            </l>
+            <l n="13" met="-+-+-----+-" rhyme="D">dolor que crece con el <w type="rhyme">desengaño</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">y no llega a matar con el <w type="rhyme">despecho</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

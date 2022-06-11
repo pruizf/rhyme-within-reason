@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXX -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-++--+-" rhyme="A">Sacó al teatro Menio una <w type="rhyme">comedia</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">con gran soberbia, y con igual <w type="rhyme">amparo</w>;</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">y el Silvo popular sonoro, y <w type="rhyme">claro</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">ni con industria, y fuerza le <w type="rhyme">remedia</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--++--+-" rhyme="A">¿Quién creyó, que parar pudo en <w type="rhyme">tragedia</w>
+            </l>
+            <l n="6" met="+-+-++--++-" rhyme="B">un aplauso tan célebre, y tan <w type="rhyme">raro</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">sin dar las iras al furor <w type="rhyme">reparo</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">del fiero vulgo, que escuchó la <w type="rhyme">media</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Perdió la nueva Musa su <w type="rhyme">decoro</w>,</l>
+            <l n="10" met="-+---++--+-" rhyme="D">tu armada vecindad dime que <w type="rhyme">aguardas</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">si viste profanar sus cuerdas de <w type="rhyme">oro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+-+-+-" rhyme="D">Y antes que despidiese el Sol las <w type="rhyme">guardas</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">murió la gran comedia como el <w type="rhyme">coro</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">con silbos, alguaciles, y <w type="rhyme">alabardas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

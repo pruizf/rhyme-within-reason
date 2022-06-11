@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Acto I, TEODOSIA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Acto I, TEODOSIA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Asperísimas sierras, que en <w type="rhyme">altura</w>
+            </l>
+            <l n="2" met="++---+---+-" rhyme="B">sois Ícaros del Sol, pues a su <w type="rhyme">llama</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">ambiciosa a la tierra os <w type="rhyme">encarama</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">para que deis asalto a su <w type="rhyme">hermosura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Las blancas alas de la nieve <w type="rhyme">pura</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">derrite, y como plumas las <w type="rhyme">derrama</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">en este prado, a sus arroyos <w type="rhyme">cama</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">y en aquella laguna <w type="rhyme">sepultura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++---+-+-" rhyme="C">Años he sido vuestra humana <w type="rhyme">fiera</w>;</l>
+            <l n="10" met="++---+---+-" rhyme="D">yo pienso que en mi muerte se <w type="rhyme">declaran</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="C">los mismos que intentaron la <w type="rhyme">primera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">Mas aunque cielo y suelo en vos me <w type="rhyme">amparan</w>,</l>
+            <l n="13" met="++---+--++-" rhyme="C">¿qué fuera de los tristes si no <w type="rhyme">hubiera</w>
+            </l>
+            <l n="14" met="+--+---+-+-" rhyme="D">muerte, en que todas las desdichas <w type="rhyme">paran</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

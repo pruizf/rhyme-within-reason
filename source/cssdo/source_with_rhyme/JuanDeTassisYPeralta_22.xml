@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXVIII -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Víctima ya de su holocausto <w type="rhyme">sea</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">a la del niño dios deidad <w type="rhyme">gigante</w>,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">el corazón del más feliz <w type="rhyme">amante</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">que envidia con sus lágrimas <w type="rhyme">granjea</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+-+-+-" rhyme="A">No rico incienso y llama no <w type="rhyme">sabea</w>
+            </l>
+            <l n="6" met="+-+--++--+-" rhyme="B">gloria opima te dé, gloria <w type="rhyme">abundante</w>,</l>
+            <l n="7" met="---+-++--+-" rhyme="B">mas entre afectos mil arda <w type="rhyme">constante</w>,</l>
+            <l n="8" met="+-+--+---+-" rhyme="A">nuevo Adonis por nueva <w type="rhyme">Citerea</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Tiña de envidia y no de sangre <w type="rhyme">ahora</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">celoso Marte el espumoso <w type="rhyme">diente</w>
+            </l>
+            <l n="11" met="++-+-+---+-" rhyme="E">que arco es de paz el arco de <w type="rhyme">Cupido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">Rosas prestando el tálamo de <w type="rhyme">Flora</w>
+            </l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">al sujeto que más <w type="rhyme">gloriosamente</w>
+            </l>
+            <l n="14" met="--+--++-++-" rhyme="E">en la dulce de amor red está <w type="rhyme">asido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

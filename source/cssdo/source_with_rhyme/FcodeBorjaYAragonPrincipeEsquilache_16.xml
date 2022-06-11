@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXII -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Lauso no con estoica <w type="rhyme">fantasía</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">el frágil hipo popular <w type="rhyme">desdeño</w>;</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">ni a la humana ambición miró con <w type="rhyme">ceño</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="A">falso con la común <w type="rhyme">hipocresía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Que a sí naturaleza sabia, <w type="rhyme">cría</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">nutre, y prosigue su mortal <w type="rhyme">empeño</w>;</l>
+            <l n="7" met="-+-++--+++-" rhyme="B">conozco bien, que esta vigilia es <w type="rhyme">sueño</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">y el amor de Raquel, se cobra en <w type="rhyme">Lía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+---+-" rhyme="C">Por lo cual el vigor de los <w type="rhyme">engaños</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">con que alimentan otros sus <w type="rhyme">intentos</w>,</l>
+            <l n="11" met="++---+---+-" rhyme="C">es luz que me descubre <w type="rhyme">desengaños</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">y aparta de los vanos <w type="rhyme">pensamientos</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="C">que compran con afanes de los <w type="rhyme">años</w>,</l>
+            <l n="14" met="+-++-+---+-" rhyme="D">premios, que aun no los gozan los <w type="rhyme">momentos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

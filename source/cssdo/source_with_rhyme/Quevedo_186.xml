@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Bebe vino precioso con mosquitos dentro</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Bebe vino precioso con mosquitos dentro  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Tudescos moscos de los sorbos <w type="rhyme">finos</w>,</l>
+            <l n="2" met="+----+-+-+-" rhyme="B">caspa de las azumbres más <w type="rhyme">famosas</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">que porque el fuego tiene <w type="rhyme">mariposas</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">queréis que el mosto tenga <w type="rhyme">marivinos</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">aves luquetes, átomos <w type="rhyme">mezquinos</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">motas borrachas, pájaras <w type="rhyme">vinosas</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">pelusas de los vinos <w type="rhyme">envidiosas</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">abejas de la miel de los <w type="rhyme">tocinos</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+-+-+-" rhyme="C">liendres de la vendimia, yo os <w type="rhyme">admito</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">en mi gaznate, pues tenéis por <w type="rhyme">soga</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">al nieto de la vid, licor <w type="rhyme">bendito</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Tomá en el trago hacia mi nuez la <w type="rhyme">boga</w>;</l>
+            <l n="13" met="--+--+---+-" rhyme="C">que, bebiéndoos a todos, me <w type="rhyme">desquito</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">del vino que bebistes y os <w type="rhyme">ahoga</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

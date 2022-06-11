@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLVIII -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+-++-+-+-" rhyme="A">¡Oh carnero muy manso, oh buey <w type="rhyme">hermoso</w>!</l>
+            <l n="2" met="+----++--+-" rhyme="B">manso trabajador siempre <w type="rhyme">contento</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">de tu mujer trazada y <w type="rhyme">paramento</w>,</l>
+            <l n="4" met="-++--+---+-" rhyme="A">mastín blando al que viene <w type="rhyme">deseoso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-++--+-" rhyme="A">No se dirá por mí que hombre <w type="rhyme">celoso</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">que bravo, que feroz, y que <w type="rhyme">sangriento</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">destocado al sereno en grande <w type="rhyme">asiento</w>,</l>
+            <l n="8" met="+----+-+-+-" rhyme="A">oyes de tu vecino el mal <w type="rhyme">ocioso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">El que dentro tu casa está <w type="rhyme">encerrado</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">contemplando tus hechos y <w type="rhyme">renombre</w>,</l>
+            <l n="11" met="+-+-++-+-+-" rhyme="C">dice: «¡Vivas mil años, padre <w type="rhyme">honrado</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Que si todo el correr que está en tu <w type="rhyme">nombre</w>
+            </l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">a tus pies por natura fuera <w type="rhyme">dado</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">pudiéramos llamarte ciervo y <w type="rhyme">hombre</w>».</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

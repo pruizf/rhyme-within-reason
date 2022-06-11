@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLVIII -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>María Ángeles Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">¿Qué me quieres, tiránica <w type="rhyme">porfía</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">con insultos de bárbara <w type="rhyme">violencia</w>?</l>
+            <l n="3" met="+++-++---+-" rhyme="B">¿A un tiempo ha de ser culpa la <w type="rhyme">paciencia</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">y mérito y virtud la <w type="rhyme">tiranía</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Premie el tiempo su misma <w type="rhyme">idolatría</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">cubra modesto manto la <w type="rhyme">insolencia</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y bandido el candor de la <w type="rhyme">inocencia</w>
+            </l>
+            <l n="8" met="+----+-+-+-" rhyme="A">niéguese a la virtud la luz del <w type="rhyme">día</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">En el rigor inicuo, en la <w type="rhyme">cautela</w>
+            </l>
+            <l n="10" met="+-+--+---+-" rhyme="D">de esta injuria, obstinada <w type="rhyme">tolerancia</w>
+            </l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">parecerá modestia y es <w type="rhyme">locura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">Por esto mi fortuna ahora <w type="rhyme">apela</w>
+            </l>
+            <l n="13" met="+--+-----+-" rhyme="D">Corte y Palacio, para tu <w type="rhyme">instancia</w>
+            </l>
+            <l n="14" met="+----+-+-+-" rhyme="E">menos acomodada y más <w type="rhyme">segura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

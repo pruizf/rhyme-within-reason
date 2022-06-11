@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LX - En metáfora de una flor, que es reloj en la India, se pondera su amor</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LX - En metáfora de una flor, que es reloj en la India, se pondera su amor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Sigue del Sol, los abrasados <w type="rhyme">pasos</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">flor especiosa, que la India <w type="rhyme">cría</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">y siendo a sus caminos verde <w type="rhyme">espía</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">los Orientes registra, y los <w type="rhyme">Ocasos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">En sus hojas señala sin <w type="rhyme">acasos</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">las horas que notó en su <w type="rhyme">compañía</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">reloj del Prado en muda <w type="rhyme">Astrología</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">así en los turbios, como en días <w type="rhyme">rasos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-++--+-" rhyme="C">No de otra suerte yo bella <w type="rhyme">Sirene</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">flor que los rayos de tus ojos <w type="rhyme">sigo</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">las horas cuento, que en prisión me <w type="rhyme">tiene</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+--++-" rhyme="D">Tu tirano rigor, a quien no <w type="rhyme">obligo</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">esto el cuidado mío me <w type="rhyme">previene</w>
+            </l>
+            <l n="14" met="+-+--+---+-" rhyme="D">siendo yo mi reloj para <w type="rhyme">conmigo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

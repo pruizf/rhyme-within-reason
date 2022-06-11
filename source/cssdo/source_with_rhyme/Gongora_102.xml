@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXVII - Alegoría de la primera de sus Soledades</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXVII - Alegoría de la primera de sus Soledades </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Restituye a tu mundo horror <w type="rhyme">divino</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">amiga Soledad, al pie <w type="rhyme">sagrado</w>,</l>
+            <l n="3" met="--+--++--+-" rhyme="B">que cautiva lisonja es del <w type="rhyme">poblado</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">en hierros leves pájaro <w type="rhyme">ladino</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Prudente cónsul, de las selvas <w type="rhyme">dino</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">de impedimentos busca <w type="rhyme">desatado</w>
+            </l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">tu claustro verde, en valle <w type="rhyme">profanado</w>
+            </l>
+            <l n="8" met="-+-+-----+-" rhyme="A">de fiera menos que de <w type="rhyme">peregrino</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">¡Cuán dulcemente de la encina <w type="rhyme">vieja</w>
+            </l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">tórtola viuda al mismo bosque <w type="rhyme">incierto</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">apacibles desvíos <w type="rhyme">aconseja</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">Endeche el siempre amado esposo <w type="rhyme">muerto</w>
+            </l>
+            <l n="13" met="-+-+--++-+-" rhyme="C">con voz doliente, que tan sorda <w type="rhyme">queja</w>
+            </l>
+            <l n="14" met="+----+---+-" rhyme="D">tiene la soledad como el <w type="rhyme">desierto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

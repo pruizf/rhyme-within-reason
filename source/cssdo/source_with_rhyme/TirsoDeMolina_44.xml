@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Doña Beatriz de Silva</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De Doña Beatriz de Silva </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A"> ¡Oh premio rico, que a perder <w type="rhyme">provoca</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">el seso del dichoso que te <w type="rhyme">alcanza</w>!</l>
+            <l n="3" met="---+-+---+-" rhyme="B">Pues si enloquece una <w type="rhyme">desconfianza</w>,</l>
+            <l n="4" met="-+-+-+++-+-" rhyme="A">también el gozo vuelve un alma <w type="rhyme">loca</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Ya la sentencia mi temor <w type="rhyme">revoca</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">pues a pesar de celos y <w type="rhyme">mudanza</w>,</l>
+            <l n="7" met="-+---++--+-" rhyme="B">Beatriz (por sustentar vos mi <w type="rhyme">esperanza</w>),</l>
+            <l n="8" met="--++-+---+-" rhyme="A">os lo habéis hoy quitado de la <w type="rhyme">boca</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+--++-" rhyme="C"> Haga flecha de vos el rapaz <w type="rhyme">ciego</w>;</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">báculo sed, en que mi dicha <w type="rhyme">estribe</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">vara en mis celos, id a <w type="rhyme">reducillos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Leña de amor con que atizáis mi <w type="rhyme">fuego</w>,</l>
+            <l n="13" met="-+---+--++-" rhyme="D">puntal de su edificio, que amor <w type="rhyme">vive</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">(como es rapaz) en casas de <w type="rhyme">palillos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

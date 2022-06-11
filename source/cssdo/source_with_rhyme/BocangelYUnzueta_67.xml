@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII -</title>
+            <author> Bocangel Y Unzueta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+++-+-+-" rhyme="A">Vivo de amor tan libre, y he <w type="rhyme">vivido</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">que voluntario pruebo su <w type="rhyme">dolencia</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">dando ejercicio a tanta <w type="rhyme">resistencia</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">como huelga en mi pecho <w type="rhyme">endurecido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Miro la llama a la distancia <w type="rhyme">asido</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">siendo costumbre libre y no <w type="rhyme">prudencia</w>,</l>
+            <l n="7" met="--+-++---+-" rhyme="B">que a beldad, donde es alma la <w type="rhyme">apariencia</w>
+            </l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">harto le sirve el riesgo de un <w type="rhyme">sentido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Huya del mar el que en seguro <w type="rhyme">suelo</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">los claros riesgos vio del <w type="rhyme">anegado</w>;</l>
+            <l n="11" met="++-+-+-+-+-" rhyme="E">no tiente el mar en fe de luz <w type="rhyme">divina</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C">Que las piedades las reserva el <w type="rhyme">cielo</w>
+            </l>
+            <l n="13" met="---+---+-+-" rhyme="D">para quien gime a su ruina <w type="rhyme">atado</w>,</l>
+            <l n="14" met="+---+-+--+-" rhyme="E">no para aquel que labra su <w type="rhyme">ruina</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

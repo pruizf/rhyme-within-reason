@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Acto III, CHACÓN De La niñez de San Isidro</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Acto III, CHACÓN De La niñez de San Isidro </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">Un soneto me manda hacer <w type="rhyme">Violante</w>
+            </l>
+            <l n="2" met="--+-++-+-+-" rhyme="B">y en mi vida me he visto en tal <w type="rhyme">aprieto</w>:</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">catorce versos dicen que es <w type="rhyme">soneto</w>:</l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">burla burlando van los tres <w type="rhyme">delante</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+-++---+-" rhyme="A">Yo pensé que no hallara <w type="rhyme">consonante</w>
+            </l>
+            <l n="6" met="-+---++--+-" rhyme="B">y estoy a la mitad de otro <w type="rhyme">cuarteto</w>;</l>
+            <l n="7" met="---+---+-+-" rhyme="B">mas, si me veo en el primer <w type="rhyme">terceto</w>,</l>
+            <l n="8" met="++---+---+-" rhyme="A">no hay cosa en los cuartetos que me <w type="rhyme">espante</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Por el primer terceto voy <w type="rhyme">entrando</w>
+            </l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">y aun presumo que entré con pie <w type="rhyme">derecho</w>,</l>
+            <l n="11" met="-+-+-+--++-" rhyme="C">pues fin con este verso le voy <w type="rhyme">dando</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+-+-+-" rhyme="D">Ya estoy en el segundo, y aun <w type="rhyme">sospecho</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">que estoy los trece versos <w type="rhyme">acabando</w>:</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">contad si son catorce, y está <w type="rhyme">hecho</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

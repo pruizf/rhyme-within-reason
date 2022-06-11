@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVII - Al mismo asunto</title>
+            <author> Antonio Enriquez Gomez</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Antonio Enriquez Gomez</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVII - Al mismo asunto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Huésped mortal, si lloras la <w type="rhyme">posada</w>
+            </l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">antes de entrar en ella, mira, <w type="rhyme">advierte</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">que has de pagar la vista con la <w type="rhyme">muerte</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">mejor a la salida que a la <w type="rhyme">entrada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">La vida para hacer esta <w type="rhyme">jornada</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">es el tesoro de tu archivo <w type="rhyme">fuerte</w>;</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">gástase poco a poco y se <w type="rhyme">convierte</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">la paga en algo y la posada, en <w type="rhyme">nada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Caro albergue te da quien te <w type="rhyme">condena</w>
+            </l>
+            <l n="10" met="--+----+-+-" rhyme="D">a vivir donde te será <w type="rhyme">homicida</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="C">la que imaginas de virtudes <w type="rhyme">llena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Perdonarás en parte la <w type="rhyme">venida</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">pero nunca será posada <w type="rhyme">buena</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">aquella que se paga con la <w type="rhyme">vida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

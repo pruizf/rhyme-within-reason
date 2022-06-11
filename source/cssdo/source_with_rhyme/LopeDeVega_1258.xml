@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Acto II, COMENDADOR De Pobreza no es vileza</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Acto II, COMENDADOR De Pobreza no es vileza </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++++---+-" rhyme="A">Cuentan de un rey que a un árbol <w type="rhyme">adoraba</w>,</l>
+            <l n="2" met="-+-+++---+-" rhyme="B">y que un mancebo a un mármol <w type="rhyme">asistía</w>,</l>
+            <l n="3" met="-----+-+-+-" rhyme="B">a quien, sin dividirse noche y <w type="rhyme">día</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">sus amores y quejas le <w type="rhyme">contaba</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+-+-+-" rhyme="A">pero el que un tronco y una piedra <w type="rhyme">amaba</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">más esperanza de su bien <w type="rhyme">tenía</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">pues en fin acercársele <w type="rhyme">podía</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">y a hurto de la gente le <w type="rhyme">abrazaba</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">¡Mísero yo, que adoro en otro <w type="rhyme">muro</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">colgada, aquella ingrata y verde <w type="rhyme">hiedra</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">cuya dureza enternecer <w type="rhyme">procuro</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="D">Tal es el fin que mi esperanza <w type="rhyme">medra</w>;</l>
+            <l n="13" met="-----+-+-+-" rhyme="C">mas, pues que de morir estoy <w type="rhyme">seguro</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="D">¡Plega el amor que te convierta en <w type="rhyme">piedra</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Padece ardiendo y llorando sin que le remedie la oposición de las contrarias calidades</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Padece ardiendo y llorando sin que le remedie la oposición de las contrarias calidades  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Los que ciego me ven de haber <w type="rhyme">llorado</w>
+            </l>
+            <l n="2" met="--+---++-+-" rhyme="B">y las lágrimas saber que he <w type="rhyme">vertido</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">admiran de que, en fuentes <w type="rhyme">dividido</w>
+            </l>
+            <l n="4" met="-+-+++---+-" rhyme="A">o en lluvias, ya no corra <w type="rhyme">derramado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----++--+-" rhyme="A">Pero mi corazón arde <w type="rhyme">admirado</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">(porque en tus llamas, Lisi, está <w type="rhyme">encendido</w>)</l>
+            <l n="7" met="-++--+---+-" rhyme="B">de no verme en centellas <w type="rhyme">repartido</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">y en humo negro y llamas <w type="rhyme">desatado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+-+-+-" rhyme="C">En mí no vencen largos y altos <w type="rhyme">ríos</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">a incendios, que animosos me <w type="rhyme">maltratan</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">ni el llanto se defiende de sus <w type="rhyme">bríos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">La agua y el fuego en mí de paces <w type="rhyme">tratan</w>;</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">y amigos son, por ser contrarios <w type="rhyme">míos</w>;</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">y los dos, por matarme, no se <w type="rhyme">matan</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

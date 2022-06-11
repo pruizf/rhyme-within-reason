@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Enseña que las dignidades y puestos altos se suelen ocupar de sujetos indignos e ignorantes.</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Enseña que las dignidades y puestos altos se suelen ocupar de sujetos indignos e ignorantes.</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Resístete a la rueda que <w type="rhyme">procura</w>
+            </l>
+            <l n="2" met="+----+---+-" rhyme="B">subas a donde el verte <w type="rhyme">escandalice</w>;</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">atiende al Job que la humildad te <w type="rhyme">dice</w>,</l>
+            <l n="4" met="++---+---+-" rhyme="A">no al arre, en que te aguija la <w type="rhyme">locura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Caminas a la albarda y <w type="rhyme">matadura</w>,</l>
+            <l n="6" met="-++--+---+-" rhyme="-">si no luz racional lo contradices;</l>
+            <l n="7" met="-----+---+-" rhyme="B">y para que el rebuzno te <w type="rhyme">autorice</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">con la oreja asnina se <w type="rhyme">conjura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">El Viejo cojitranco cada <w type="rhyme">día</w>
+            </l>
+            <l n="10" met="---++++--+-" rhyme="D">te pensará, y a esa otra hija del <w type="rhyme">diablo</w>
+            </l>
+            <l n="11" met="+--+-+-+-+-" rhyme="C">ya la tendrás cargada, ya <w type="rhyme">vacía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="D">Bestia, contigo (seas quien fueres) <w type="rhyme">hablo</w>:</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">crecer en cola, y no en <w type="rhyme">filosofía</w>,</l>
+            <l n="14" met="+--+-+-+-+-" rhyme="D">es figurar salón el que es <w type="rhyme">establo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

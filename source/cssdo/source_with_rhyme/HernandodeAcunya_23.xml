@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III - Soneto sobre la red de amor</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - Soneto sobre la red de amor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+++-" rhyme="A">Dígame quién lo sabe: ¿cómo es <w type="rhyme">hecha</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">la red de Amor, que tanta gente <w type="rhyme">prende</w>?</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">¿Y cómo, habiendo tanto que la <w type="rhyme">tiende</w>,</l>
+            <l n="4" met="++-+-++--+-" rhyme="A">no está del tiempo ya rota o <w type="rhyme">deshecha</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+++-+--++-" rhyme="A">¿Y cómo es hecho el arco que Amor <w type="rhyme">flecha</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">pues hierro ni valor se le <w type="rhyme">defiende</w>?</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">¿Y cómo y dónde halla, o quién le <w type="rhyme">vende</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">de plomo, plata y oro tanta <w type="rhyme">flecha</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+-++-+-+-" rhyme="C">Y si dicen que es niño, ¿cómo <w type="rhyme">viene</w>
+            </l>
+            <l n="10" met="--+--+--++-" rhyme="D">a vencer los gigantes? Y si es <w type="rhyme">ciego</w>,</l>
+            <l n="11" met="+-+--++--+-" rhyme="E">¿cómo toma al tirar cierta la <w type="rhyme">mira</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+-+-+-" rhyme="C"> Y si, como se escribe, siempre <w type="rhyme">tiene</w>
+            </l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">en una mano el arco, en otra el <w type="rhyme">fuego</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">¿cómo tiende la red y cómo <w type="rhyme">tira</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

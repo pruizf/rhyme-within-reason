@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Inscripción al túmulo del Rey de Francia Enrique IV</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Inscripción al túmulo del Rey de Francia Enrique IV  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Su mano coronó su cuello <w type="rhyme">ardiente</w>
+            </l>
+            <l n="2" met="--+--++--+-" rhyme="B">y el acero le dio cetro y <w type="rhyme">espada</w>;</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">hízose reino a sí con mano <w type="rhyme">armada</w>;</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">conquistó y gobernó francesa <w type="rhyme">gente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Su diestra fue su ejército <w type="rhyme">valiente</w>;</l>
+            <l n="6" met="-+-+-++--+-" rhyme="B">sintió su peso el mar; vio, <w type="rhyme">fatigada</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">el alto Pirineo, de gente <w type="rhyme">osada</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">la nieve, ceño cano de su <w type="rhyme">frente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Su herencia conquistó, por <w type="rhyme">merecerla</w>;</l>
+            <l n="10" met="-++--+---+-" rhyme="D">nació rey por la sangre que <w type="rhyme">tenía</w>;</l>
+            <l n="11" met="-----+++-+-" rhyme="E">por la que derramó, fue rey <w type="rhyme">famoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">A Fortuna quitó (por no <w type="rhyme">deberla</w>
+            </l>
+            <l n="13" met="+----+---+-" rhyme="D">sólo a la sucesión) la <w type="rhyme">monarquía</w>:</l>
+            <l n="14" met="-+---++--+-" rhyme="E">y vengo a la Fortuna un <w type="rhyme">alevoso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

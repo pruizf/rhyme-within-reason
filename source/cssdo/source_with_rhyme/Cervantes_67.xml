@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La Galatea, Libro V, Silerio</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De La Galatea, Libro V, Silerio 	                </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Gracias al cielo doy, pues he <w type="rhyme">escapado</w>
+            </l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">de los peligros de este mar <w type="rhyme">incierto</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y al recogido favorable <w type="rhyme">puerto</w>,</l>
+            <l n="4" met="+--+--++-+-" rhyme="A">tan sin saber por donde, he ya <w type="rhyme">llegado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Recójanse las velas del <w type="rhyme">cuidado</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">repárese el navío pobre <w type="rhyme">abierto</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">cumpla los votos quien con rostro <w type="rhyme">muerto</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">hizo promesas en el mar <w type="rhyme">airado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Beso la tierra, reverencio al <w type="rhyme">cielo</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">mi suerte abrazo mejorada y <w type="rhyme">buena</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="E">llamo dichoso a mi fatal <w type="rhyme">destino</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--++--+-" rhyme="D">y a la nueva sin par blanda <w type="rhyme">cadena</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">con nuevo intento y amoroso <w type="rhyme">celo</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">el lastimado cuello alegre <w type="rhyme">inclino</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

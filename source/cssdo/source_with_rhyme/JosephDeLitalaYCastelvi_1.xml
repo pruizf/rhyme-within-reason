@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- I - A don Carlos II, rey de España</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- I - A don Carlos II, rey de España </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-++--+-" rhyme="A">Empuña el Real bastón Carlos <w type="rhyme">Segundo</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">veate Francia con arnés <w type="rhyme">tranzado</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">y sepa el Asia, que vincula el <w type="rhyme">hado</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">a tu poder los términos del <w type="rhyme">mundo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Entienda el sucesor de <w type="rhyme">Pharamundo</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que te ha de ver en la campaña <w type="rhyme">armado</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y tu Bridón del polvo <w type="rhyme">fatigado</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">ha de beber del Nilo en lo <w type="rhyme">profundo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Por ti el cielo milita en tus <w type="rhyme">clarines</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">vasallo el aire suene <w type="rhyme">conducido</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="C">llenando de victorias los <w type="rhyme">confines</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Ruge León de España <w type="rhyme">esclarecido</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">desnuda alfanjes, péinate las <w type="rhyme">crines</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">al espejo del Ganges <w type="rhyme">extendido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

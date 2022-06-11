@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVII - Vístela a Pablo...</title>
+            <author> Francisco De La Torre</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de La Torre</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVII - Vístela a Pablo... </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Vístela a Pablo, palma <w type="rhyme">generosa</w>,</l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">que fiel triunfó de sí, aun en <w type="rhyme">vestido</w>,</l>
+            <l n="3" met="--+--++--+-" rhyme="B">a su vista, el Cambray quede <w type="rhyme">encogido</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">y la Púrpura regia, <w type="rhyme">vergonzosa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">De Túnica, de prenda tan <w type="rhyme">preciosa</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">fue el heredero Antonio <w type="rhyme">esclarecido</w>,</l>
+            <l n="7" met="---+-++--+-" rhyme="B">en cuya anciana tierra ha <w type="rhyme">renacido</w>,</l>
+            <l n="8" met="++-+-+---+-" rhyme="A">más de una vez, la palma <w type="rhyme">victoriosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+++-+-" rhyme="C">Ser el adorno Palma, es gran <w type="rhyme">concierto</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">porque en la cumbre el fruto brinda al <w type="rhyme">alma</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">y recto el tronco, al cuerpo instruye <w type="rhyme">acierto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+--++-" rhyme="D">Y darla Pablo, a Antonio en final <w type="rhyme">calma</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">es exprimir, que Antonio en el <w type="rhyme">desierto</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">después de Pablo, se llevó la <w type="rhyme">palma</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

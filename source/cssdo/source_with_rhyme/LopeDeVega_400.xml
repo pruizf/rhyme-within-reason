@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-20- La rosa</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-20- La rosa</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+--++-" rhyme="A">Doncella en los pimpollos de Abril <w type="rhyme">nace</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">la fresca Rosa de su vida <w type="rhyme">incierta</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y en su casa de aljófares <w type="rhyme">cubierta</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">de cinco trenzas verdes muros <w type="rhyme">hace</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">La abeja aguarda, y de otras flores <w type="rhyme">pace</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">hasta que ve los granos de oro <w type="rhyme">abierta</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">declina el día, y en los brazos <w type="rhyme">muerta</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">del encendido sol marchita <w type="rhyme">yace</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Así comienza la belleza <w type="rhyme">humana</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">que nuestro loco error deleite <w type="rhyme">nombra</w>,</l>
+            <l n="11" met="--+--+--++-" rhyme="C">y a la verde sucede la edad <w type="rhyme">cana</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">Mas ver su breve fin ¿de qué me <w type="rhyme">asombra</w>,</l>
+            <l n="13" met="-+-+-+++-+-" rhyme="C">si todo bien mortal es pompa <w type="rhyme">vana</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">y cuanto nace en sol, fenece en <w type="rhyme">sombra</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LI -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">Quita ese afeite, Lais; que se <w type="rhyme">aceda</w>,</l>
+            <l n="2" met="++---+-+-+-" rhyme="B">y él mismo en el olor su fraude <w type="rhyme">acusa</w>;</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">déjanos ver tu rostro, y si <w type="rhyme">rehúsa</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">el despegarse, quítalo con <w type="rhyme">greda</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+--++-" rhyme="A"> ¿Qué tirano la ley natural <w type="rhyme">veda</w>?</l>
+            <l n="6" met="-++--+-+-+-" rhyme="B">o ¿qué murtas el diestro acero <w type="rhyme">atusa</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">que alegren más que la verdad <w type="rhyme">confusa</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">de bosque inculto o bárbara <w type="rhyme">arboleda</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C"> Si lo blanco y purpúreo que <w type="rhyme">reparte</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="D">Dios con sus rosas, puso en tus <w type="rhyme">mejillas</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">con no imitable natural <w type="rhyme">mistura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D"> ¿Por qué con dedo ingrato las <w type="rhyme">mancillas</w>?</l>
+            <l n="13" met="-+++---+++-" rhyme="E">Oh Lais, no más; que en perfección tan <w type="rhyme">pura</w>
+            </l>
+            <l n="14" met="++-+---+-+-" rhyme="C">arte ha de ser el despreciar el <w type="rhyme">arte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

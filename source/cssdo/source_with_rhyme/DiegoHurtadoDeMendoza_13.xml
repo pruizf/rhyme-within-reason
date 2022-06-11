@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XX -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Amor me dijo en mi primera <w type="rhyme">edad</w>:</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">«Si amares no te cures de <w type="rhyme">razón</w>»</l>
+            <l n="3" met="-+---+---+-" rhyme="B">Siguió su voluntad mi <w type="rhyme">corazón</w>;</l>
+            <l n="4" met="-++--+---+-" rhyme="A">mas él nunca siguió mi <w type="rhyme">voluntad</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+---+--+-" rhyme="A">tráeme ciego de verdad en <w type="rhyme">verdad</w>;</l>
+            <l n="6" met="++-+-+---+-" rhyme="B">ya yo sería contento en mi <w type="rhyme">pasión</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que con falsa esperanza de <w type="rhyme">ocasión</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">me sostenga siquiera en <w type="rhyme">vanidad</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-++--+-" rhyme="C">Tanto sería de vana esta <w type="rhyme">esperanza</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">que no podría caber en mi <w type="rhyme">sentido</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">ni en consejo de amor ni en <w type="rhyme">vanagloria</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="E">que finja yo que estoy en tu <w type="rhyme">memoria</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">señora, ni lo espero ni lo <w type="rhyme">pido</w>;</l>
+            <l n="14" met="-++--+---+-" rhyme="C">que no es bien de afligidos <w type="rhyme">confianza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

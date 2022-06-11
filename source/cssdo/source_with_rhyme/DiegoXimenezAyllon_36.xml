@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLI - Al duque de Arischote</title>
+            <author> Diego Ximenez Ayllon</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Ximenez Ayllon</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLI - Al duque de Arischote </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">De vos prudente Duque de <w type="rhyme">Arischote</w>
+            </l>
+            <l n="2" met="+----++--+-" rhyme="B">debe Su Majestad bien <w type="rhyme">confiarse</w>
+            </l>
+            <l n="3" met="-----+---+-" rhyme="B">y de sus patrimonios <w type="rhyme">descuidarse</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">al daros lealtad y fe por <w type="rhyme">mote</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">En el flagelo puede y duro <w type="rhyme">azote</w>
+            </l>
+            <l n="6" met="-+-+-----+-" rhyme="B">con Dios el Alma vuestra <w type="rhyme">recrearse</w>
+            </l>
+            <l n="7" met="----+-+---+-" rhyme="B">y la de los dos malvados <w type="rhyme">congojarse</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">que del convite pagan el <w type="rhyme">escote</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Odiosa unión y odioso <w type="rhyme">parlamento</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">aquel por cierto fue a vuestra <w type="rhyme">limpieza</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">traiciones siendo el cisma y <w type="rhyme">fundamento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++++---+-" rhyme="D">Se mostró allí muy clara la <w type="rhyme">firmeza</w>
+            </l>
+            <l n="13" met="-----+---+-" rhyme="C">de vuestro valeroso <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">ganando más renombre y más <w type="rhyme">grandeza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

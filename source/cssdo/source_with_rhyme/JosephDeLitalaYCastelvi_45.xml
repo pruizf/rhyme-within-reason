@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXIX - Al sepulcro de Raquel</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXIX - Al sepulcro de Raquel </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">Encierra este Mosaico <w type="rhyme">Monumento</w>,</l>
+            <l n="2" met="-+---++--+-" rhyme="B">los huesos de Raquel bella <w type="rhyme">serrana</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que candores prestaba a la <w type="rhyme">mañana</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">y luces añadía al <w type="rhyme">firmamento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Lloró Jacob en fúnebre <w type="rhyme">lamento</w>,</l>
+            <l n="6" met="---+---+-+-" rhyme="B">la palidez de juventud <w type="rhyme">lozana</w>,</l>
+            <l n="7" met="-+++---+-+-" rhyme="B">lloró ya polvo la purpúrea <w type="rhyme">grana</w>,</l>
+            <l n="8" met="----+-+--+-" rhyme="A">y arrebatada flor del <w type="rhyme">viento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Que incendios, que fatigas, que de <w type="rhyme">ardores</w>,</l>
+            <l n="10" met="+-+-+----+-" rhyme="D">no bebió de Sichen en los <w type="rhyme">cristales</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">que glorias, que regalos, que de <w type="rhyme">amores</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">mas tantos bienes se volvieron <w type="rhyme">males</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">las que fueron delicias son <w type="rhyme">horrores</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">que todo tiene términos <w type="rhyme">fatales</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

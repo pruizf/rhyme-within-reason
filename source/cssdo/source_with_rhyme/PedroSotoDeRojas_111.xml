@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXVI - Amor razonable no se mitiga con la posesión</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXVI - Amor razonable no se mitiga con la posesión </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">¿Si Amor echó de su vibrante <w type="rhyme">cuerda</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">la rubia flecha, que en su sangre <w type="rhyme">viste</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">como tu sueño su dolor <w type="rhyme">resiste</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">si al más ajeno de sentir <w type="rhyme">recuerda</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Ya que no de tu mal, de mí te <w type="rhyme">acuerda</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">escucha el curso de mi llanto <w type="rhyme">triste</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">escucha el cierzo que a mi pecho <w type="rhyme">embiste</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">antes que el sueño en tus pestañas <w type="rhyme">muerda</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+-+-+-" rhyme="C">No temas, que el deleite oscuro, <w type="rhyme">reo</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">mi amor ofenda, pues razón le <w type="rhyme">obliga</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="-">y firme estrella, a la razón le llama.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-++-++--+-" rhyme="C">Hijo suyo es mi amor, no del <w type="rhyme">deseo</w>,</l>
+            <l n="13" met="-+---++--+-" rhyme="D">y así la posesión no le <w type="rhyme">mitiga</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="-">antes es, la materia de su llama.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIII - A Bernardo del Carpio</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIII - A Bernardo del Carpio </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+-+-+-" rhyme="A">Qué bien manchado está el heroico <w type="rhyme">acero</w>,</l>
+            <l n="2" met="++-+-+---+-" rhyme="B">qué bien teñida miro la <w type="rhyme">cuchilla</w>,</l>
+            <l n="3" met="++---+---+-" rhyme="B">que es timbre generoso de <w type="rhyme">Castilla</w>,</l>
+            <l n="4" met="--+-++---+-" rhyme="A">y el renombre te ha dado de <w type="rhyme">guerrero</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Fuerte Campeón, Ilustre <w type="rhyme">Caballero</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">el Ebro te admiró en su verde <w type="rhyme">orilla</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y el Borrén oprimido de la <w type="rhyme">filla</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">tu lanza dio a Marsilio el fin <w type="rhyme">postrero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+-++-+-+-" rhyme="C">Qué paveses, qué feudos, qué <w type="rhyme">pendones</w>
+            </l>
+            <l n="10" met="++-+-+---+-" rhyme="D">qué glorias, qué trofeos <w type="rhyme">militares</w>,</l>
+            <l n="11" met="+-+--+---+-" rhyme="C">no alcanzaron tus ínclitos <w type="rhyme">Leones</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="D">Todos penden Bernardo en los <w type="rhyme">altares</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">y en el Templo de Marte por <w type="rhyme">blasones</w>
+            </l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">de tu brazo, que admiran ambos <w type="rhyme">mares</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

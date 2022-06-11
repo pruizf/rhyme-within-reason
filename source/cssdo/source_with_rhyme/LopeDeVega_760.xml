@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 928 - Jornada II, CAMARÓN</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 928 - Jornada II, CAMARÓN </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Rábano os juzgo, ¡oh, Laura!, muy <w type="rhyme">lavado</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">y nabo en reverenda y grande <w type="rhyme">olla</w>;</l>
+            <l n="3" met="---+-++--+-" rhyme="B">en escabeche sois blanca <w type="rhyme">cebolla</w>,</l>
+            <l n="4" met="+----+-+-+-" rhyme="A">y ajo con abadejo bien <w type="rhyme">guisado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Alcachofa en relleno <w type="rhyme">piñonado</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">y puerro entre hortaliza y toda <w type="rhyme">folla</w>;</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">repollo con tocino, vaca y <w type="rhyme">polla</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">y chiribía con atún <w type="rhyme">picado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="C">El sabor sois de toda <w type="rhyme">salsería</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">y de los gustos buenos un <w type="rhyme">pimpollo</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">que en sí recoge toda <w type="rhyme">especería</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="D">Y, en fin, sois reducida a dulce <w type="rhyme">bollo</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">rábano, nabo, puerro, <w type="rhyme">chiribía</w>,</l>
+            <l n="14" met="--+--++--+-" rhyme="D">alcachofa, cebolla, ajo y <w type="rhyme">repollo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

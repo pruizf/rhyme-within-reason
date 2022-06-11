@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- II - Al peregrino</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- II - Al peregrino </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">¿Dónde vuelas, soberbio <w type="rhyme">pensamiento</w>?</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">Ícaro mozo, mi consejo <w type="rhyme">espera</w>:</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">mira que al polvo humilde y blanda <w type="rhyme">cera</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">ni el sol perdona, ni respeta el <w type="rhyme">viento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++---+-+-" rhyme="A">Fénix es sol, y su divino <w type="rhyme">aliento</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">la procelosa de Aquilón <w type="rhyme">esfera</w>;</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">de cera y polvo tu porción <w type="rhyme">ligera</w>;</l>
+            <l n="8" met="+-+--+-+-+-" rhyme="A">teme, vuelve a la tierra, que es tu <w type="rhyme">asiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Pero sube, camina, no <w type="rhyme">repares</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">rompa tu fuerza los contrarios <w type="rhyme">vientos</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">hasta ver de tu sol su luz a <w type="rhyme">solas</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">que, si muerto cual Ícaro <w type="rhyme">bajares</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="D">nombre darás al mar de mis <w type="rhyme">tormentos</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="E">y eterno vivirás entre sus <w type="rhyme">olas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

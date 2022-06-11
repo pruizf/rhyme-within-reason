@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVII - Alaba en el padre Baltasar de Mansilla de la Compañía de Jesús, gran predicador y confesor de la Señora Virreina, tanta sabiduría como modestia</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVII - Alaba en el padre Baltasar de Mansilla de la Compañía de Jesús, gran predicador y confesor de la Señora Virreina, tanta sabiduría como modestia </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Docto Mansilla, no para <w type="rhyme">aplaudirte</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="A">ponderaciones buscaré del <w type="rhyme">arte</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="A">retórica, que fuera <w type="rhyme">limitarte</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">querer entre sus cláusulas <w type="rhyme">ceñirte</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Sólo en mi intento, cuando llego a <w type="rhyme">oírte</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="A">alabarte con sólo no <w type="rhyme">alabarte</w>;</l>
+            <l n="7" met="---+-+---+-" rhyme="A">pues quien mejor llegare a <w type="rhyme">ponderarte</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">será el que no intentare <w type="rhyme">definirte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+++-" rhyme="B">Aún en tu mismo juicio tú no <w type="rhyme">cabes</w>;</l>
+            <l n="10" met="---+---+-+-" rhyme="C">ni de tu ingenio las riquezas <w type="rhyme">raras</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="B">pudiera, del discurso con los <w type="rhyme">graves</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">reflejos, conocer si lo <w type="rhyme">intentaras</w>:</l>
+            <l n="13" met="---+-+---+-" rhyme="B">porque si tú supieras lo que <w type="rhyme">sabes</w>,</l>
+            <l n="14" met="+----+---+-" rhyme="C">mucho de lo que sabes <w type="rhyme">ignoraras</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

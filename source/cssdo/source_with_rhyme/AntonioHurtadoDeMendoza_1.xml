@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Hurtado de Mendoza, Antonio Castro Urdiales (Santander). 86 - Zaragoza. 1644 Poeta. Caballero de Calatrava. Secretario de S. M. y de su Cámara. Autor de comedias y colaborador de Quevedo. Al matar el toro Felipe IV</title>
+            <author> Antonio Hurtado De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hurtado de  Mendoza,  Antonio</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Hurtado de Mendoza, Antonio Castro Urdiales (Santander). 86 - Zaragoza. 1644 Poeta. Caballero de Calatrava. Secretario de S. M. y de su Cámara. Autor de comedias y colaborador de Quevedo. Al matar el toro Felipe IV </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">En denuedo alevoso, en campo <w type="rhyme">abierto</w>
+            </l>
+            <l n="2" met="-++--+---+-" rhyme="B">cedió sólo a tu imperio <w type="rhyme">soberano</w>
+            </l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">el bruto, que a su rey osó <w type="rhyme">tirano</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">quitar la monarquía del <w type="rhyme">desierto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Más al aplauso que al destrozo <w type="rhyme">muerto</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">la misma brevedad le halló <w type="rhyme">temprano</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que en las glorias, Felipe, de tu <w type="rhyme">mano</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">nada menos que admira que el <w type="rhyme">acierto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">La fiera, al real estrago <w type="rhyme">agradecida</w>,</l>
+            <l n="10" met="-++--+-+-+-" rhyme="D">lisonja hizo al morir, y no <w type="rhyme">violencia</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">que antes llegó la muerte que la <w type="rhyme">herida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---++--+-" rhyme="D">Y al brazo que ni al orbe es <w type="rhyme">resistencia</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">feroz rindiendo la rebelde <w type="rhyme">vida</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="D">muerte no pareció, sino <w type="rhyme">obediencia</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

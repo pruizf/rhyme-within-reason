@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVII - A la hazaña sin ejemplo de Alonso Pérez de Guzmán, el Bueno.</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVII - A la hazaña sin ejemplo de Alonso Pérez de Guzmán, el Bueno. </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Sobre Tarifa y su ínclita <w type="rhyme">muralla</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">Alonso Pérez de Guzmán el <w type="rhyme">Bueno</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">vencía el poder del Bárbaro <w type="rhyme">Agareno</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">que la plaza pidió desde la <w type="rhyme">Valla</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Cautivo en el reencuentro, y la <w type="rhyme">batalla</w>
+            </l>
+            <l n="6" met="-+---+--++-" rhyme="B">el hijo, que abrigó paternal <w type="rhyme">seno</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">de valor y lealtad heroica <w type="rhyme">lleno</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">degollar le dejó por no <w type="rhyme">entregalla</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-++--+-" rhyme="C">Sino tenéis puñal, dice el <w type="rhyme">Caudillo</w>,</l>
+            <l n="10" met="-----+-+-+-" rhyme="D">para que derraméis su sangre <w type="rhyme">altiva</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">tomad, y les arroja su <w type="rhyme">cuchillo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+--++-" rhyme="D">El Hijo amado muera, y mi fe <w type="rhyme">viva</w>,</l>
+            <l n="13" met="-+-+++-+-+-" rhyme="C">que el buen Guzmán no entrega aquel <w type="rhyme">Castillo</w>,</l>
+            <l n="14" met="---+--+--+-" rhyme="D">que en su lealtad, y confianza <w type="rhyme">estriba</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

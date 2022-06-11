@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIX - Al obispo de Lieja</title>
+            <author> Diego Ximenez Ayllon</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Ximenez Ayllon</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIX - Al obispo de Lieja </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Sacro varón ilustre y muy <w type="rhyme">prudente</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">pastor benigno fuerte y <w type="rhyme">animoso</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">de lobos muy temido y <w type="rhyme">espantoso</w>
+            </l>
+            <l n="4" met="-----++--+-" rhyme="A">a quien la dignidad es <w type="rhyme">conveniente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+++---+-" rhyme="A">Vuestra virtud muy alta y <w type="rhyme">excelente</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">por don que el cielo os dio <w type="rhyme">maravilloso</w>
+            </l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">guerrero os hace siendo <w type="rhyme">Religioso</w>
+            </l>
+            <l n="8" met="-+-+-++-++-" rhyme="A">y de uno y otro usáis bien <w type="rhyme">igualmente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">A Dios servís con mitra y con <w type="rhyme">almete</w>
+            </l>
+            <l n="10" met="-+-+--+--+-" rhyme="D">con almas, carnes, cayado y <w type="rhyme">espada</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">herejes muy potentes <w type="rhyme">resistiendo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Y al Duque de Alba invicto en la <w type="rhyme">jornada</w>
+            </l>
+            <l n="13" met="-----+---+-" rhyme="C">con lo que a vuestra Iglesia le <w type="rhyme">compete</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">y tanto celo estáis <w type="rhyme">favoreciendo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XX -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++--++---+-" rhyme="A">Tal alto esforzó el vuelo mi <w type="rhyme">esperanza</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">que mereció perderse en su <w type="rhyme">osadía</w>;</l>
+            <l n="3" met="++---+---+-" rhyme="B">yo bien lo sospechaba y le <w type="rhyme">temía</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">de su atrevida empresa la <w type="rhyme">venganza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+--+--+-" rhyme="A">No me escuchó, y siguió con <w type="rhyme">confianza</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">que huyó con los bienes que <w type="rhyme">tenía</w>;</l>
+            <l n="7" met="--+--++--+-" rhyme="B">y conmigo en tal cuita y <w type="rhyme">agonía</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">se adolece y lamenta en la <w type="rhyme">mudanza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Para aliviar la culpa en tanto <w type="rhyme">daño</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">de Faetón el rayo le <w type="rhyme">recuerdo</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="E">y de su intento ufano la <w type="rhyme">memoria</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">que solo ya me sirvo del <w type="rhyme">engaño</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">en mi mal, y en mi error, penando <w type="rhyme">pierdo</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">sin razón, las promesas de mi <w type="rhyme">gloria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

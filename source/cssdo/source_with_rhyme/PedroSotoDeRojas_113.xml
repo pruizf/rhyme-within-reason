@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXVIII - Resistencia a los celos</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXVIII - Resistencia a los celos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--++--+-" rhyme="A">Este mundo abreviado, este <w type="rhyme">edificio</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="B">fábrica del artífice del <w type="rhyme">cielo</w>;</l>
+            <l n="3" met="---+---+-+-" rhyme="B">desde la cima hasta el humilde <w type="rhyme">suelo</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">de Fénix es, a Fénix es <w type="rhyme">propicio</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Aquí reverenciando su <w type="rhyme">servicio</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">la voluntad, con amoroso <w type="rhyme">celo</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">(altar mi corazón) mejor que <w type="rhyme">Delo</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">hace del gusto eterno <w type="rhyme">sacrificio</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---++--+-" rhyme="C">¡Oh celos! y queréis ciegos <w type="rhyme">profanos</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">violando el templo de mi dulce <w type="rhyme">hermosa</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="C">dentro en mi pecho ensangrentar las <w type="rhyme">manos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="D">Hijo de una sospecha <w type="rhyme">temerosa</w>
+            </l>
+            <l n="13" met="++---+-+-+-" rhyme="C">¿no sois (al parecer) de envidia <w type="rhyme">hermanos</w>?</l>
+            <l n="14" met="-++--+---+-" rhyme="D">¿por qué empresa intentáis <w type="rhyme">dificultosa</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

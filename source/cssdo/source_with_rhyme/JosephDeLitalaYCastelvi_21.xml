@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXVII - A la violenta muerte de la hermosa Anarda</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXVII - A la violenta muerte de la hermosa Anarda </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Tente mano alevosa, y <w type="rhyme">fementida</w>,</l>
+            <l n="2" met="-+---++--+-" rhyme="B">que manchas tu valor, manchas la <w type="rhyme">pura</w>
+            </l>
+            <l n="3" met="---+---+-+-" rhyme="B">Casta Azucena, con acción <w type="rhyme">impura</w>,</l>
+            <l n="4" met="-----+-+-+-" rhyme="A">y la naturaleza está <w type="rhyme">ofendida</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++++-+---+-" rhyme="A">¿Qué te ha hecho esta flor tan <w type="rhyme">escogida</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">en qué te ofende dime su <w type="rhyme">hermosura</w>?</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">Advierte, que es bajeza, y que es <w type="rhyme">locura</w>
+            </l>
+            <l n="8" met="-+-++--+-+-" rhyme="A">quitar cruel a una mujer la <w type="rhyme">vida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----++--+-" rhyme="C">Muévate a compasión tanta <w type="rhyme">belleza</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">y tanta nieve como ostenta el <w type="rhyme">cuello</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">hiele tu fuego, ablande tu <w type="rhyme">fiereza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Cieguen tu luz los rayos del <w type="rhyme">cabello</w>,</l>
+            <l n="13" met="--++-+---+-" rhyme="C">pero bien ciega estás con tu <w type="rhyme">braveza</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">si a la infamia postrera echaste el <w type="rhyme">sello</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

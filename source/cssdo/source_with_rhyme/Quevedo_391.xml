@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIX - A Caín y Abel. San Pedro Crisólogo acuerda aquellas palabras del Génesis: Respexit ad Abel</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIX - A Caín y Abel. San Pedro Crisólogo acuerda aquellas palabras del Génesis: Respexit ad Abel </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+++---+-" rhyme="A">Caín, por más bien visto, tu <w type="rhyme">fiereza</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">quitó la vida a Abel, porque <w type="rhyme">ofrecía</w>
+            </l>
+            <l n="3" met="-+--++---+-" rhyme="B">a Dios el mejor fruto que <w type="rhyme">tenía</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">como tú lo peor de tu <w type="rhyme">riqueza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">A quien hizo mayor <w type="rhyme">Naturaleza</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">hizo la envidia sólo <w type="rhyme">alevosía</w>
+            </l>
+            <l n="7" met="--+-++-+-+-" rhyme="B">que a la sangre dio voz, y llanto al <w type="rhyme">día</w>;</l>
+            <l n="8" met="-+---++--+-" rhyme="A">a ti, condenación, miedo y <w type="rhyme">tristeza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Temblado vives, y el temblor <w type="rhyme">advierte</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">que aunque mereces muerte por <w type="rhyme">tirano</w>,</l>
+            <l n="11" met="-+---++--+-" rhyme="C">que tiene en despreciarte honra la <w type="rhyme">muerte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">La quijada de fiera, que en tu <w type="rhyme">mano</w>
+            </l>
+            <l n="13" met="+--+---+-+-" rhyme="C">sangre inocente de tu padre <w type="rhyme">vierte</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">la tuya chupará sobre tu <w type="rhyme">hermano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

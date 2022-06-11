@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XII - A la memoria del doctor Juan Pérez de Montalbán en su túmulo</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XII - A la memoria del doctor Juan Pérez de Montalbán en su túmulo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+--++-" rhyme="A">Leerás, que yace aquí, porque está <w type="rhyme">escrito</w>;</l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">y es, que el mármol usurpa la alta <w type="rhyme">gloria</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">de Montalbán, debido a la <w type="rhyme">memoria</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">no de honor limitado, de <w type="rhyme">infinito</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Si se observara el Egipciano <w type="rhyme">rito</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">de eternizar en pira en vez de <w type="rhyme">historia</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">Egipto fuera todo <w type="rhyme">vanagloria</w>,</l>
+            <l n="8" met="++--++---+-" rhyme="A">que él dice, que no yace con lo <w type="rhyme">escrito</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">El se imprime en la Fama, y se <w type="rhyme">coloca</w>
+            </l>
+            <l n="10" met="--++-+---+-" rhyme="D">donde, a ser tinta el Nilo <w type="rhyme">caudaloso</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="C">a su alabanza fuera tinta <w type="rhyme">poca</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="E">Pues él lo más por sí se <w type="rhyme">constituye</w>,</l>
+            <l n="13" met="---+-++--+-" rhyme="D">quien lo pretende hacer menos <w type="rhyme">glorioso</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">a sus letras pirámides <w type="rhyme">construye</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

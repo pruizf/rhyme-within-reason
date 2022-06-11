@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 971 - Jornada III, SOLIMÁN De El rey sin reino</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 971 - Jornada III, SOLIMÁN De El rey sin reino </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">El libre pajarillo se <w type="rhyme">cautiva</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">y en la jaula se viene a ser <w type="rhyme">afable</w>;</l>
+            <l n="3" met="+----++--+-" rhyme="B">dómase el animal más <w type="rhyme">indomable</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">y hácese que humilde y manso <w type="rhyme">viva</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Con gobernar la nao al puerto <w type="rhyme">arriba</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">por el furioso mar <w type="rhyme">inexorable</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">y el hielo y sol, con la costumbre <w type="rhyme">estable</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">sucede que con gusto se <w type="rhyme">reciba</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Tanto la industria y la costumbre <w type="rhyme">puede</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">si no es en la mujer, que sí es <w type="rhyme">forzada</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">se puede de su amor tener <w type="rhyme">recelo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">No se domeña si ella no <w type="rhyme">concede</w>,</l>
+            <l n="13" met="++-+-+---+-" rhyme="D">que es más furiosa, amando <w type="rhyme">disgustada</w>,</l>
+            <l n="14" met="-+---+++-+-" rhyme="E">que el pájaro, animal, mar, sol y <w type="rhyme">hielo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

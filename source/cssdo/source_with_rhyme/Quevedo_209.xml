@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragilidad de la vida, representada en el mísero donaire y moralidad de un candil y reloj justamente</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Fragilidad de la vida, representada en el mísero donaire y moralidad de un candil y reloj justamente  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">A moco de candil escoge, <w type="rhyme">Fabio</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">los desengaños de tu intento <w type="rhyme">loco</w>:</l>
+            <l n="3" met="---+-+++-+-" rhyme="B">que en los candiles es muy docto el <w type="rhyme">moco</w>,</l>
+            <l n="4" met="---+---+++-" rhyme="A">y su catarro, en el refrán, es <w type="rhyme">sabio</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Tiene el moco en la llama lengua, y <w type="rhyme">labio</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">en el índex, que habla poco a <w type="rhyme">poco</w>;</l>
+            <l n="7" met="--+--++--+-" rhyme="B">contador que a la edad sirve de <w type="rhyme">coco</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">y es del vivir imperceptible <w type="rhyme">agravio</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Con llama y con aceite te <w type="rhyme">retrata</w>
+            </l>
+            <l n="10" met="+-+--+---+-" rhyme="D">cuantas veces te alumbra, si lo <w type="rhyme">advierte</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">tu salud presumida y <w type="rhyme">mentecata</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---++--+-" rhyme="D">La mano del reloj es de la <w type="rhyme">muerte</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">y la de Judas, pues las luces <w type="rhyme">mata</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">si no las soplan ni el candil se <w type="rhyme">vierte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

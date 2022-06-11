@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1287 - Jornada I, PRÍNCIPE</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1287 - Jornada I, PRÍNCIPE </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Flaco, amarillo, lánguido y <w type="rhyme">sediento</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">tiene el enfermo ardiente <w type="rhyme">calentura</w>;</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">con vivas ansias su salud <w type="rhyme">procura</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">que es el último fin de su <w type="rhyme">contento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">Con discursivo y alto <w type="rhyme">entendimiento</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">el fisco de su mal la causa <w type="rhyme">apura</w>;</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">empieza luego la difícil <w type="rhyme">cura</w>
+            </l>
+            <l n="8" met="--+--++--+-" rhyme="A">y en celeste favor logra su <w type="rhyme">intento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+++---+-" rhyme="C">La enfermedad más fiera y <w type="rhyme">detestable</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">si su maligna causa bien se <w type="rhyme">explora</w>,</l>
+            <l n="11" met="--++-+-+-+-" rhyme="C">entendida una vez será <w type="rhyme">curable</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+++-+-+-" rhyme="D">pero mi mal tan cruel que el alma <w type="rhyme">llora</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">sin duda alguna es <w type="rhyme">irremediable</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">pues que la dulce causa de él se <w type="rhyme">ignora</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

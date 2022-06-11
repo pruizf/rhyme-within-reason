@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXI - Soneto a la muerte de nuestro emperador Carlos V</title>
+            <author> Juan De Timoneda</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Timoneda</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXI - Soneto a la muerte de nuestro emperador Carlos V </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">La amarga, fatigosa, y dura <w type="rhyme">pena</w>
+            </l>
+            <l n="2" met="-+--++---+-" rhyme="B">que causa del gran Carlos <w type="rhyme">invencible</w>
+            </l>
+            <l n="3" met="-+---++--+-" rhyme="B">la presta despedida, es <w type="rhyme">imposible</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">contarla si dolor nos <w type="rhyme">desordena</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+--++-" rhyme="A">De vates glorioso la gran <w type="rhyme">vena</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">es impedida del dolor <w type="rhyme">terrible</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">y en pena tan aguda, y tan <w type="rhyme">sensible</w>
+            </l>
+            <l n="8" met="+--+-+--++-" rhyme="A">es insensible peña al que no <w type="rhyme">pena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C">Si el gran rey celestial a Carlos <w type="rhyme">daba</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">la general terrena <w type="rhyme">monarquía</w>,</l>
+            <l n="11" met="---+-++--+-" rhyme="E">universal será que esta <w type="rhyme">tristura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+++-" rhyme="C">Y en relatar fatiga que es tan <w type="rhyme">brava</w>,</l>
+            <l n="13" met="-+--+----+-" rhyme="E">los versos faltaran, y la <w type="rhyme">amargura</w>
+            </l>
+            <l n="14" met="+--+-+-+-+-" rhyme="D">no faltarán que aumentan cada <w type="rhyme">día</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

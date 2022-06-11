@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXV - Aunque presume (Nife) que soy tosco</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXV - Aunque presume (Nife) que soy tosco </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+--++-" rhyme="A">Aunque presume (Nife) que soy <w type="rhyme">Tosco</w>,</l>
+            <l n="2" met="-----+---+-" rhyme="A">y que, (cual Palomilla) me <w type="rhyme">Chamusco</w>,</l>
+            <l n="3" met="+--+---+++-" rhyme="A">yo te aseguro, que tu luz no <w type="rhyme">Busco</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="-">porque ya tus engaños Reconozco.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Y así aunque en tus enredos más me <w type="rhyme">Embosco</w>,</l>
+            <l n="6" met="++-+-+---+-" rhyme="A">muy poco viene a ser lo que me <w type="rhyme">Ofusco</w>,</l>
+            <l n="7" met="-----+++-+-" rhyme="A">porque, si en el color soy algo <w type="rhyme">Fusco</w>,</l>
+            <l n="8" met="+----++-++-" rhyme="A">soy en la condición mucho más <w type="rhyme">Hosco</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="B">Lo que es de tus Picones, no me <w type="rhyme">Rasco</w>,</l>
+            <l n="10" met="+--+-+-+-+-" rhyme="A">antes estoy con ellos ya tan <w type="rhyme">Fresco</w>,</l>
+            <l n="11" met="--+--+-+++-" rhyme="B">que te puedo servir de helar un <w type="rhyme">Frasco</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="-">Que a darte nieve sólo me Enternezco,</l>
+            <l n="13" met="-++-++-+-+-" rhyme="B">y así (Nife) no piensa darme <w type="rhyme">Chasco</w>,</l>
+            <l n="14" met="--++++---+-" rhyme="A">porque yo sé muy bien lo que me <w type="rhyme">Pesco</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

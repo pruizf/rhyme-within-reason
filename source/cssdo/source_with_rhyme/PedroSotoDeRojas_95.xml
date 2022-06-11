@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXI - Quitósele de la ventana</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXI - Quitósele de la ventana </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+++--+-+-+-" rhyme="A">¡Dadme un rayo de luz, oh sol <w type="rhyme">hermoso</w>!</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">y al puto (¡ay triste!) que a mirar le <w type="rhyme">llego</w>
+            </l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">la luz me quitas; y me das el <w type="rhyme">fuego</w>,</l>
+            <l n="4" met="+-++-+---+-" rhyme="A">que eres a un tiempo avaro, y <w type="rhyme">generoso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Como entre sueño, y confusión <w type="rhyme">dudoso</w>
+            </l>
+            <l n="6" met="-+-+-+--++-" rhyme="B">me dejas, ya pensando, que estoy <w type="rhyme">ciego</w>;</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">ya que en la zona helada, o que me <w type="rhyme">entrego</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">al círculo tostado <w type="rhyme">caluroso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++---+-+-" rhyme="C">Ciego no estoy, pues que tu luz <w type="rhyme">recibo</w>;</l>
+            <l n="10" met="+++--+---+-" rhyme="D">no estoy cerca del Polo, pues me <w type="rhyme">abraso</w>;</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">ni junto al Sol, pues en tinieblas <w type="rhyme">vivo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+--++-" rhyme="D">Esto, cansa mi amor, tu veloz <w type="rhyme">paso</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">mi imaginar, y tu esplendor <w type="rhyme">esquivo</w>,</l>
+            <l n="14" met="-++--+-+-+-" rhyme="D">que da una hora de Oriente, y mil de <w type="rhyme">Ocaso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIV - Al capitán don Fernando de Toledo el Tío, y a los españoles en la escaramuza de Iafa</title>
+            <author> Diego Ximenez Ayllon</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Ximenez Ayllon</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIV - Al capitán don Fernando de Toledo el Tío, y a los españoles en la escaramuza de Iafa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">Los Españoles con esfuerzo y <w type="rhyme">maña</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">con fortaleza y ánimo <w type="rhyme">extremado</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">al Luterano ejército <w type="rhyme">malvado</w>
+            </l>
+            <l n="4" met="++---+---+-" rhyme="A">hoy muestran su valor en la <w type="rhyme">campaña</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+--++-" rhyme="A">Sus gentes despedazan con gran <w type="rhyme">saña</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">el campo de ellos queda <w type="rhyme">ensangrentado</w>
+            </l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">llevando en su favor el pueblo <w type="rhyme">osado</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">la mano del Señor que lo <w type="rhyme">acompaña</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">El Tío don Fernando en este <w type="rhyme">día</w>
+            </l>
+            <l n="10" met="-+-+-+-+++-" rhyme="D">la espada tinta en sangre hecho un <w type="rhyme">Marte</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">mostró valor esfuerzo y <w type="rhyme">valentía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+-+-+-" rhyme="D">Y con solicitud prudencia y <w type="rhyme">arte</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="C">el nombre apellidando de <w type="rhyme">María</w>
+            </l>
+            <l n="14" met="-+---+--++-" rhyme="D">allí se señaló y en cualquier <w type="rhyme">parte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

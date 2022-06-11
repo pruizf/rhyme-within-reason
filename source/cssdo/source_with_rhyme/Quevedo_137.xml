@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Niega al amor ser deidad, sino esclavo de Lisi</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Niega al amor ser deidad, sino esclavo de Lisi  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Quédate a Dios, Amor, pues no lo <w type="rhyme">eres</w>;</l>
+            <l n="2" met="--+--+++-+-" rhyme="B">que servir a quien sirve es vil <w type="rhyme">locura</w>.</l>
+            <l n="3" met="-++--+--++-" rhyme="B">Esclavo eres de Lisi en prisión <w type="rhyme">dura</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">¿y qué te sirva yo de esclavo <w type="rhyme">quieres</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Ni templo habites ni holocausto <w type="rhyme">esperes</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">pues yaces, sacrificio a la <w type="rhyme">hermosura</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">de aquella vista que me abrasa <w type="rhyme">pura</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">donde, ardiendo, con flechas y arco <w type="rhyme">mueres</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--++--+-" rhyme="C">El virote, que fue peso a tu <w type="rhyme">aljaba</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">en tu cuello te muestre <w type="rhyme">fugitivo</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">de humana majestad, deidad <w type="rhyme">esclava</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="D">Cierra el palacio, en otro tiempo <w type="rhyme">altivo</w>;</l>
+            <l n="13" met="+-+--+---+-" rhyme="C">forje grillos tu padre, que <w type="rhyme">forjaba</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="D">para tu enojo el rayo <w type="rhyme">vengativo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

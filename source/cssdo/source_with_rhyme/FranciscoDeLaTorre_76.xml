@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXVIII -</title>
+            <author> Francisco De La Torre</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de La Torre</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Bellas lumbres del alto <w type="rhyme">firmamento</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">que puestas en su cumbre <w type="rhyme">soberana</w>
+            </l>
+            <l n="3" met="+--+---+-+-" rhyme="B">dais vuestra luz a la región <w type="rhyme">humana</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">y al trono eterno del empíreo <w type="rhyme">asiento</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">¿vistes jamás amante tan <w type="rhyme">contento</w>
+            </l>
+            <l n="6" met="---++--+-+-" rhyme="B">en perdición tan conocida y <w type="rhyme">llana</w>
+            </l>
+            <l n="7" met="+-++-++--+-" rhyme="B">ninfa tan dura, fe tan <w type="rhyme">inhumana</w>,</l>
+            <l n="8" met="++-+-+++-+-" rhyme="A">tan mal pagado amor, tan gran <w type="rhyme">tormento</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">¿Vistes, en cuanto la sagrada <w type="rhyme">lumbre</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">del claro padre de Faetón <w type="rhyme">alcanza</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">ídolo más divino y <w type="rhyme">adorado</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---++--+-+-" rhyme="C">Si de su luz es vuestra luz <w type="rhyme">vislumbre</w>,</l>
+            <l n="13" met="+-+--+---+-" rhyme="D">y es de más perfección su <w type="rhyme">semejanza</w>,</l>
+            <l n="14" met="++-+---+-+-" rhyme="E">¿qué puede ser mi simulacro <w type="rhyme">amado</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

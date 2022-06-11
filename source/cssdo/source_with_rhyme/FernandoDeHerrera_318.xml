@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCVII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Bárbara Tierra, que en tu frío <w type="rhyme">seno</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">cubres los grandes cuerpos <w type="rhyme">derribados</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">de aquellos españoles, que, <w type="rhyme">domados</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">dejaron de terror el orbe <w type="rhyme">lleno</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">mira en los altos troncos el <w type="rhyme">ajeno</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">trofeo y gime viendo allí <w type="rhyme">colgados</w>
+            </l>
+            <l n="7" met="--+--++--+-" rhyme="B">los despojos, jamás nunca <w type="rhyme">esperados</w>
+            </l>
+            <l n="8" met="-+-+--+--+-" rhyme="A">en tanto honor del impío <w type="rhyme">sarraceno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Y tú, Mar, que manchaste tu <w type="rhyme">corriente</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">con generosa sangre, suena <w type="rhyme">airado</w>,</l>
+            <l n="11" met="--++-+-+-+-" rhyme="E">y decid ambos, tristes, de esta <w type="rhyme">suerte</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Heroicas almas, gloria de <w type="rhyme">Occidente</w>,</l>
+            <l n="13" met="+-+--+-+-+-" rhyme="D">id dichosas, que ya el acerbo <w type="rhyme">hado</w>
+            </l>
+            <l n="14" met="-++-++---+-" rhyme="E">lloró España, honró el mundo vuestra <w type="rhyme">muerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

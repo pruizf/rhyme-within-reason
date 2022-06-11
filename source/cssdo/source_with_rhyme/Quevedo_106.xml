@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Inútil y débil victoria del amor, en el que ya es vencido amante</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Inútil y débil victoria del amor, en el que ya es vencido amante  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">¡Mucho del valeroso y <w type="rhyme">esforzado</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">y viéneslo a mostrar en un <w type="rhyme">rendido</w>!</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">Bástame, Amor, haberte <w type="rhyme">agradecido</w>
+            </l>
+            <l n="4" met="+----+-+-+-" rhyme="A">penas, de que me puedo haber <w type="rhyme">quejado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+-+++-" rhyme="A">¿Qué sangre de mis venas no te he <w type="rhyme">dado</w>?</l>
+            <l n="6" met="++---+-+-+-" rhyme="B">¿Qué flecha de tu aljaba no he <w type="rhyme">sentido</w>?</l>
+            <l n="7" met="+----+---+-" rhyme="B">Mira que la paciencia del <w type="rhyme">sufrido</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">suele vencer las armas del <w type="rhyme">airado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Con otro de tu igual quisiera <w type="rhyme">verte</w>;</l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">que yo me siento arder de tal <w type="rhyme">manera</w>,</l>
+            <l n="11" met="--++-+-+-+-" rhyme="C">que mayor fuera el mal de hacerme <w type="rhyme">fuerte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="D">¿De qué sirve encender al que es <w type="rhyme">hoguera</w>,</l>
+            <l n="13" met="-+-+-++--+-" rhyme="C">si no es que quieres dar muerte a la <w type="rhyme">Muerte</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">introduciendo en mí que el muerto <w type="rhyme">muera</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

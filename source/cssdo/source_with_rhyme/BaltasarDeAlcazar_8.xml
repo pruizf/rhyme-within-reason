@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Primer soneto del soneto que se conoce en letra castellana1</title>
+            <author> Baltasar De Alcazar</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Alcázar,  Baltasar del</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Primer soneto del soneto que se conoce en letra castellana1 </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+-+-+-" rhyme="A">Yo acuerdo revelaros un <w type="rhyme">secreto</w>
+            </l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">en un soneto, Inés, bella <w type="rhyme">enemiga</w>;</l>
+            <l n="3" met="--++--++-+-" rhyme="B">mas por buen orden que yo en esto <w type="rhyme">siga</w>,</l>
+            <l n="4" met="+-++---+-+-" rhyme="A">no podrá ser en el primer <w type="rhyme">cuarteto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Venidos al segundo, yo os <w type="rhyme">prometo</w>
+            </l>
+            <l n="6" met="-++--+---+-" rhyme="B">que no se ha de pasar sin que os lo <w type="rhyme">diga</w>;</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">mas estoy hecho, Inés, como una <w type="rhyme">hormiga</w>
+            </l>
+            <l n="8" met="--+-+--+-+-" rhyme="A">al trabajo diario y bien <w type="rhyme">sujeto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Pues ved, Inés, que ordena el duro <w type="rhyme">hado</w>:</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">que, teniendo el secreto ya en la <w type="rhyme">boca</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">y el orden de decillo ya <w type="rhyme">estudiado</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">conté los versos todos y he <w type="rhyme">hallado</w>
+            </l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">que por la cuenta que a un soneto <w type="rhyme">toca</w>,</l>
+            <l n="14" met="+--+-+-+-+-" rhyme="C">ya este soneto, Inés, está <w type="rhyme">acabado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

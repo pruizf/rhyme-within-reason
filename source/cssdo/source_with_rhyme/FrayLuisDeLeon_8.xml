@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII -</title>
+            <author> Fray Luis De Leon</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fray  Luis de  León</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Tiéneme el agua de los ojos <w type="rhyme">ciego</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">del corazón el fuego me <w type="rhyme">maltrata</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">cualquiera de los dos por si me <w type="rhyme">mata</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">mas nunca al fin de aquesta muerte <w type="rhyme">llego</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+-+-+-" rhyme="A">De esta agua alguna parte mata el <w type="rhyme">fuego</w>,</l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">y el agua parte de este fuego <w type="rhyme">mata</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">lo que el uno deshace y <w type="rhyme">desbarata</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">el otro torna y lo renueva <w type="rhyme">luego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">El uno viene cuando el otro <w type="rhyme">muere</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">y con entrambos vivo y muero <w type="rhyme">junto</w>.</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">¡Ay, gran dolor! ¡Ay, desigual <w type="rhyme">ventura</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">Por si cualquiera darme muerte <w type="rhyme">quiere</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">pero impedido el uno y otro al <w type="rhyme">punto</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">la vida me renuevan triste y <w type="rhyme">dura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

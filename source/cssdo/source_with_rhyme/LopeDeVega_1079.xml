@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1266 - Acto III, EL REY De Los hechos de Garcilaso de la Vega y moro Tarfe</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1266 - Acto III, EL REY De Los hechos de Garcilaso de la Vega y moro Tarfe </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Nace en el hombre, cuando al mundo <w type="rhyme">nace</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">derecho de cumplir <w type="rhyme">obligaciones</w>,</l>
+            <l n="3" met="-+-+-++--+-" rhyme="B">y aquel que más usase estas <w type="rhyme">acciones</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">más a la tierra y cielo <w type="rhyme">satisface</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">El Rey, cabeza de su imperio <w type="rhyme">hace</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">a quien en bajas o altas <w type="rhyme">condiciones</w>
+            </l>
+            <l n="7" met="+--+---+-+-" rhyme="B">siguen los miembros, porque así <w type="rhyme">blasones</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">honran, que el tiempo volador <w type="rhyme">deshace</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+--++---+-" rhyme="C">Si imitan, según esto, la <w type="rhyme">cabeza</w>,</l>
+            <l n="10" met="+-++-+---+-" rhyme="D">y ésta no paga deudas, <w type="rhyme">obligada</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">indigna viene a ser de real <w type="rhyme">alteza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-++--+-" rhyme="D">Greida, tu causa está bien <w type="rhyme">sentenciada</w>,</l>
+            <l n="13" met="+-+----+-+-" rhyme="C">hoy cenizas con inmortal <w type="rhyme">firmeza</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">laurel de amor, mi obligación <w type="rhyme">pagada</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCI -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Pensé, mas fue engañoso <w type="rhyme">pensamiento</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">armar de intensa nieve el pecho <w type="rhyme">mío</w>,</l>
+            <l n="3" met="--+--+++-+-" rhyme="B">porque el rayo de Amor no al lento <w type="rhyme">frío</w>
+            </l>
+            <l n="4" met="-+--++-+-+-" rhyme="A">rompiese el rigor duro en vivo <w type="rhyme">aliento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+-+-+-" rhyme="A">Procuré no rendirme al mal que <w type="rhyme">siento</w>,</l>
+            <l n="6" met="-++--+---+-" rhyme="B">y fue todo mi esfuerzo <w type="rhyme">desvarío</w>;</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">mi libertad perdí y mi usado <w type="rhyme">brío</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">cobré un dolor perpetuo en mi <w type="rhyme">tormento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+++-" rhyme="C">La llama al hielo destempló en tal <w type="rhyme">suerte</w>,</l>
+            <l n="10" met="--+--+-+++-" rhyme="D">que, gastando su humor, quedó ardor <w type="rhyme">hecho</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">y es inexhausto fuego cuando <w type="rhyme">espiro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+++--+-+-+-" rhyme="C">No puede este mi incendio darme <w type="rhyme">muerte</w>;</l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">que cuanto de su fuerza más <w type="rhyme">deshecho</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">tanto más de su eterno afán <w type="rhyme">respiro</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III - En alabanza de Enoch</title>
+            <author> Antonio Enriquez Gomez</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Antonio Enriquez Gomez</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - En alabanza de Enoch </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Arrebatada fábrica <w type="rhyme">viviente</w>,</l>
+            <l n="2" met="-----+---+-" rhyme="B">que en la inmortalidad te <w type="rhyme">colocaste</w>.</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">Paloma alada, cuyo nido <w type="rhyme">hallaste</w>
+            </l>
+            <l n="4" met="---+++---+-" rhyme="A">en la región más alta y <w type="rhyme">eminente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">Exhalación de luz <w type="rhyme">resplandeciente</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">que en la esfera del Sol te <w type="rhyme">avecindaste</w>.</l>
+            <l n="7" met="+----+---+-" rhyme="B">Fénix que sin morir te <w type="rhyme">conservaste</w>
+            </l>
+            <l n="8" met="--+-++-+-+-" rhyme="A">en ceniza más alta y más <w type="rhyme">decente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+--++-" rhyme="C">Vive a par de los siglos, que algún <w type="rhyme">día</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">vendrás a publicar donde has <w type="rhyme">estado</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">domando de Babel la <w type="rhyme">tiranía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++-+-+-+-" rhyme="E">Inmortal ha de ser tu Regio <w type="rhyme">estado</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">que la que fue divina <w type="rhyme">Monarquía</w>
+            </l>
+            <l n="14" met="-----++--+-" rhyme="D">en la inmortalidad se ha <w type="rhyme">colocado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

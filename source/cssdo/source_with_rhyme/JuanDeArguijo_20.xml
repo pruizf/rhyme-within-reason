@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIV -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">Del vencedor huyendo, a Lesbos <w type="rhyme">deja</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">Pompeyo, roto en la farsalia <w type="rhyme">guerra</w>;</l>
+            <l n="3" met="--+--+---+-" rhyme="B">con su esposa se embarca, y a la <w type="rhyme">tierra</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">que inunda el Nilo, por su mal se <w type="rhyme">aleja</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Que el hado riguroso que le <w type="rhyme">aqueja</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">y al extranjero reino le <w type="rhyme">destierra</w>,</l>
+            <l n="7" met="-----+-+-+-" rhyme="B">en la seguridad que busca <w type="rhyme">encierra</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">el fin que dio a Cornelia eterna <w type="rhyme">queja</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Fiera tormenta en el buscado <w type="rhyme">puerto</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">el gran Pompeyo halla en vez de <w type="rhyme">abrigo</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="E">¿Quién las mudanzas de la suerte <w type="rhyme">ignora</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+-+-+-" rhyme="C">¿Quién no recelará el suceso <w type="rhyme">incierto</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">si da la muerte el obligado <w type="rhyme">amigo</w>,</l>
+            <l n="14" met="---+---+-+-" rhyme="E">si el enemigo vencedor le <w type="rhyme">llora</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

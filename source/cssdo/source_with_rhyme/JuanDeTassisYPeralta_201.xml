@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCVII - A una nave que después de muchas borrascas, flotando segura, llegó al puerto</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCVII - A una nave que después de muchas borrascas, flotando segura, llegó al puerto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">Este en selva constante alado <w type="rhyme">pino</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">que los impulsos resistió de <w type="rhyme">Eolo</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">pisó las metas de uno y otro <w type="rhyme">polo</w>
+            </l>
+            <l n="4" met="-++--+---+-" rhyme="A">felizmente en entrambos <w type="rhyme">peregrino</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Cuyo vuelo inmortal, cuyo <w type="rhyme">camino</w>,</l>
+            <l n="6" met="-+-+-+--++-" rhyme="B">primer milagro al mundo, si no <w type="rhyme">solo</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">émulo puerto al discurrir de <w type="rhyme">Apolo</w>
+            </l>
+            <l n="8" met="-----+--++-" rhyme="A">en la inmortalidad a lograr <w type="rhyme">vino</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">Donde con nombre digno de <w type="rhyme">Victoria</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">en los álgidos senos no hay <w type="rhyme">ninguno</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">sin viva luz de su farol <w type="rhyme">ardiente</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">tal que el tiempo tributa a la <w type="rhyme">memoria</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">del gran Jasón, del ínclito <w type="rhyme">Neptuno</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="E">náutico honor del húmedo <w type="rhyme">tridente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

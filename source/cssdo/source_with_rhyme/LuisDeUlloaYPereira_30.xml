@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III - A la memoria amorosa de una dama, en una ausencia</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - A la memoria amorosa de una dama, en una ausencia </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--++--+-" rhyme="A">Oye, Filis, que muero, oye que <w type="rhyme">muero</w>;</l>
+            <l n="2" met="+-+--++--+-" rhyme="B">ya tu nombre en tu voz suena <w type="rhyme">imperfeto</w>,</l>
+            <l n="3" met="+----+---+-" rhyme="B">oye como te invoca mi <w type="rhyme">respeto</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">entre las ansias del dolor <w type="rhyme">postrero</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Lo demás que te ofrece el <w type="rhyme">verdadero</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">y último ejemplar de amor <w type="rhyme">perfeto</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">quede oculto, señora, en mi <w type="rhyme">secreto</w>.</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">No lastimarte, prevenirte <w type="rhyme">quiero</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">resto verás que el sacro <w type="rhyme">Manzanares</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">envuelve mi ceniza en las <w type="rhyme">arenas</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="E">más veneradas del sagrado <w type="rhyme">río</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Si alguna vez sus márgenes <w type="rhyme">pisares</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">en tanto que te adoran sus <w type="rhyme">sirenas</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="E">vuelve los ojos al sepulcro <w type="rhyme">frío</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

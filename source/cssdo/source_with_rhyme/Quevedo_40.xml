@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Elogio ilustre en la muerte del Marqués de Alcalá, padre de la excelentísima Señora Duquesa de Medinaceli</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Elogio ilustre en la muerte del Marqués de Alcalá, padre de la excelentísima Señora Duquesa de Medinaceli</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+---+--+-+-" rhyme="A">¡Cuánto dejarás de vivir si <w type="rhyme">hubieras</w>
+            </l>
+            <l n="2" met="-+++-+---+-" rhyme="B">vivido una hora más, oh <w type="rhyme">generoso</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">marqués, pues, ya en el reino del <w type="rhyme">reposo</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">ni tiempo temes, ni la muerte <w type="rhyme">esperas</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Nueva lumbre contemplo en las <w type="rhyme">esferas</w>:</l>
+            <l n="6" met="--+--+---+-" rhyme="B">la piedad de tu espíritu <w type="rhyme">glorioso</w>
+            </l>
+            <l n="7" met="-+---++--+-" rhyme="B">robole a nuestra edad hado <w type="rhyme">envidioso</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">a ti. clemente, en glorias <w type="rhyme">verdaderas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">En vos, excelentísima <w type="rhyme">señora</w>,</l>
+            <l n="10" met="-----+---+-" rhyme="D">cuando vuestro dolor con las <w type="rhyme">querellas</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="C">en tan piadosas lágrimas le <w type="rhyme">llora</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">estrellas deja, y va a gozar <w type="rhyme">estrellas</w>;</l>
+            <l n="13" met="+--+---+-+-" rhyme="C">éstas enluta cuando aquéllas <w type="rhyme">dora</w>,</l>
+            <l n="14" met="-----+-+-+-" rhyme="D">y, para consolaros, vive en <w type="rhyme">ellas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

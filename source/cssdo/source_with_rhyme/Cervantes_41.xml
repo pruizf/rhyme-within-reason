@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Persiles y Sigismunda, Libro VI, capítulo III</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De Persiles y Sigismunda, Libro VI, capítulo III 	                </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">¡Oh grande, oh poderosa, oh <w type="rhyme">sacrosanta</w>,</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">alma ciudad de Roma! A ti me <w type="rhyme">inclino</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">devoto, humilde y nuevo <w type="rhyme">peregrino</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">a quien admira ver belleza <w type="rhyme">tanta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Tu vista, que a tu fama se <w type="rhyme">adelanta</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">al ingenio suspende, aunque <w type="rhyme">divino</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">de aquél que a verte y adorarte <w type="rhyme">vino</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">con tierno afecto y con desnuda <w type="rhyme">planta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">La tierra de tu suelo, que <w type="rhyme">contemplo</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">con la sangre de mártires <w type="rhyme">mezclada</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="E">es la reliquia universal del <w type="rhyme">suelo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-++--+-" rhyme="C">No hay parte en ti que no sirva de <w type="rhyme">ejemplo</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="D">de santidad, así como <w type="rhyme">trazada</w>
+            </l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">de la ciudad de Dios al gran <w type="rhyme">modelo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 849 - Acto III, EL REY De Las cuentas del Gran Capitán</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 849 - Acto III, EL REY De Las cuentas del Gran Capitán </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="-">Soñaba, Conde, que esta gran Sirena,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="-">que tiene ahora en Nápoles sepulcro,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="-">me apareció, durmiendo yo en mi cama,</l>
+            <l n="4" met="-++--+---+-" rhyme="-">con un arpa en las manos, y cantando</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="-">profetizaba así mi injusta muerte:</l>
+            <l n="6" met="-+---+---+-" rhyme="A">«¡Oh, gran Partenopeo, que mi <w type="rhyme">nombre</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="-">en honra de mis huesos has tomado,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="-">despierta, que te quieren dar la muerte,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+++-" rhyme="A">sin que la veas, a traición un <w type="rhyme">hombre</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="-">que es de tu misma tierra y de tu sangre.</l>
+            <l n="11" met="--++-+---+-" rhyme="-">Pero toma este anillo, que sin duda</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="-">veras con él la daga, ya que sea</l>
+            <l n="13" met="+--++--+-+-" rhyme="-">ver al traidor tan imposible caso.»</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="-">y diome, al fin, Rodulfo, aqueste anillo.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

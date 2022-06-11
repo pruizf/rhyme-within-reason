@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III -</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A"> Aquel rayo de Marte <w type="rhyme">acelerado</w>,</l>
+            <l n="2" met="--++-+---+-" rhyme="B">que domó tantas gentes <w type="rhyme">extranjeras</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y volvió contra Roma las <w type="rhyme">banderas</w>
+            </l>
+            <l n="4" met="-+---+--++-" rhyme="A">que Roma contra Francia le había <w type="rhyme">dado</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">en el corriente Rubicón <w type="rhyme">parado</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">revolviendo las cosas <w type="rhyme">venideras</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">detuvo el curso de sus huestes <w type="rhyme">fieras</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">del mismo caso que emprendió <w type="rhyme">forzado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-++--+-" rhyme="C">Determinado, al fin, de ir <w type="rhyme">adelante</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">«Vamos, dijo, que echada está la <w type="rhyme">suerte</w>;</l>
+            <l n="11" met="+-+--+---+-" rhyme="E">cuantas dudas se ofrezcan <w type="rhyme">atropello</w>».</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++-+---+-" rhyme="C">Y resuelto una vez, como <w type="rhyme">constante</w>,</l>
+            <l n="13" met="++-+---+-+-" rhyme="D">no quiso menos que victoria o <w type="rhyme">muerte</w>:</l>
+            <l n="14" met="-+-+++-+-+-" rhyme="E">Así dudé, y así pienso yo <w type="rhyme">hacello</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A una contemplación amorosa que tenía y deseándola no la quería lograr</title>
+            <author> Juan De Salinas</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Salinas,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A una contemplación amorosa que tenía y deseándola no la quería lograr </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Si desdicha en amor desdicha <w type="rhyme">fuera</w>,</l>
+            <l n="2" met="++-+-+---+-" rhyme="B">yo fuera más que todos <w type="rhyme">desdichado</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">pues siempre pretendí <w type="rhyme">desesperado</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">porque nunca alcancé lo que <w type="rhyme">quisiera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Mas si dejar de amarte yo <w type="rhyme">pudiera</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">al punto diera fin a mi <w type="rhyme">cuidado</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">con la experiencia ya <w type="rhyme">desengañado</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">de que mi amor su fruto en vano <w type="rhyme">espera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Quisiera no quererte, no <w type="rhyme">gozarte</w>,</l>
+            <l n="10" met="-+-+-++--+-" rhyme="D">que ya es desdicha en mí haberte <w type="rhyme">querido</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">pues si te gozo tengo de <w type="rhyme">perderte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-++--+-+-" rhyme="C">No quiero bien, si he de dejar de <w type="rhyme">amarte</w>,</l>
+            <l n="13" met="--+-++-+++-" rhyme="D">que el amarte no más mi vida ha <w type="rhyme">sido</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="C">y no quiero gozarte, por <w type="rhyme">quererte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sepulcro de su entendimiento en las perfecciones de Lisi</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>&gt;Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Sepulcro de su entendimiento en las perfecciones de Lisi</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">En este incendio hermoso que, <w type="rhyme">partido</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">en dos esferas breves, <w type="rhyme">fulminando</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">reina glorioso, y con imperio <w type="rhyme">blando</w>
+            </l>
+            <l n="4" met="-+++-+-+-+-" rhyme="A">autor es de un dolor tan bien <w type="rhyme">nacido</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">en esta nieve, donde está <w type="rhyme">florido</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">mayo, los duros Alpes <w type="rhyme">matizando</w>;</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">en este Oriente, donde están <w type="rhyme">hablando</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">por coral las sirenas del <w type="rhyme">sentido</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">debajo de esta piedra <w type="rhyme">endurecida</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">en quien mi afecto está <w type="rhyme">fortificado</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">y quedó mi esperanza <w type="rhyme">convertida</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+---+-" rhyme="D">yace mi entendimiento <w type="rhyme">fulminado</w>.</l>
+            <l n="13" met="+--+---+-+-" rhyme="C">Si es su inscripción mi congojosa <w type="rhyme">vida</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="D">dentro del cielo viva <w type="rhyme">sepultado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

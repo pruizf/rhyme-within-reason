@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XV - A don Alonso de Santillán, que se embarcaba en los galeones de la armada de las Indias</title>
+            <author> Francisco De Medrano</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de Medrano</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XV - A don Alonso de Santillán, que se embarcaba en los galeones de la armada de las Indias </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+-+-+-" rhyme="A">Tú surcas ¡oh Santiso! el mar <w type="rhyme">furioso</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">y de este sol huyendo la <w type="rhyme">tardanza</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">te avecinas al otro en <w type="rhyme">esperanza</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">del hado, que te aguarda más <w type="rhyme">piadoso</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">y sabio el rostro opones y <w type="rhyme">animoso</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">a una y otra fortuna sin <w type="rhyme">mudanza</w>;</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">uno te ve y te admira la <w type="rhyme">bonanza</w>,</l>
+            <l n="8" met="+-+-++---+-" rhyme="A">y uno el Euro más turbio y <w type="rhyme">proceloso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+-+-+-" rhyme="C">Yo quedo en tierra firme y mal <w type="rhyme">constante</w>;</l>
+            <l n="10" met="--+--+---+-" rhyme="D">de dolor embestido y de <w type="rhyme">alegría</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">altero por momentos el <w type="rhyme">semblante</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+-+-+-" rhyme="D">mas si un mar brama dentro en la alma <w type="rhyme">mía</w>,</l>
+            <l n="13" met="++-+-+-+-+-" rhyme="C">no fuera, no, cual tú lo ves <w type="rhyme">delante</w>.</l>
+            <l n="14" met="+--+-+---+-" rhyme="D">Júpiter ¿cuántas formas <w type="rhyme">mudaría</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>
