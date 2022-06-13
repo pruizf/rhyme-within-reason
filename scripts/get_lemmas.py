@@ -14,25 +14,21 @@ from time import strftime
 import warnings
 warnings.filterwarnings('ignore')
 
-#TODO
-# read df
-# read and split text into lines
-# find call and echo as the last word of each line
-# get lemmas for each
-# write the lemmas to the dataframe
-# write df out
 
-DBG = True
+DBG = False
 
 puncts = ".,;:!?«»"
 
 def clean_token(tk):
+  #TODO remov these cases
   if tk == "descubrilla":
     return "descubrirla"
   elif tk == "decillo":
     return "decirlo"
   elif tk == "sentillo":
     return "sentirlo"
+  elif tk == "sentillos":
+    return "sentirlos"
   tk = re.sub("-$", "", tk)
   tk = tk.replace("?", "")
   tk = tk.replace("…", "")
@@ -42,18 +38,16 @@ def clean_token(tk):
 
 
 def strip_affixes(tk):
+  """Strip clitics off"""
+  #TODO remove these cases
   if tk == "decillos":
     return "decir"
   tk = re.sub(r"^(vert|alleg|.*?r|.*?)([aeiáéí][rd])(?:[mts]e|l[oea]s?|[nv]?os?)+", r"\1\2", tk)
   return tk
 
 
-def custom_replacements(tk):
-  tk = re.sub("^desve$", "desvelo", tk)
-  return tk
-
-
 def clean_line(line):
+  """Pre-treat line for better tokenization"""
   line_orig = line
   line = re.sub(r"-[\s{}]?$".format(puncts), "", line)
   line = re.sub(r"^-[\s]?", "- ", line)
@@ -86,38 +80,73 @@ def add_lemmas_to_df(part_df, whole_df, column, word_forms):
       assert len(call_word_infos) > 0
 
 
+# Word-forms with clitics not all caught by the `strip_affixes()` function above
 custom_lemmas = {"desvelo": "desvelar",
-                 "estandartes": "estandarte",
+                 "acometellas": "acometer",
+                 "alcanzallas": "alcanzar",
+                 "bastalle": "vencer",
+                 "cantimploras": "cantimplora",
+                 "cegalle": "cegar",
+                 "conocellas": "conocer",
+                 "contalle": "contar",
+                 "descomponellos": "descomponer",
                  "egehe(n)la": "egeheno",
+                 "entendellas": "entender",
+                 "escribillos": "escribir",
                  "esp(e)çial": "especial",
-                 "mayordomo": "mayordomo",
+                 "estandartes": "estandarte",
+                 "formalle": "formar",
                  "frondoso": "frondoso",
-                 "perseguirme": "perseguir",
-                 "vero-longino": "vero-longino",
-                 "vero": "vero-longino",
-                 "longino": "vero-longino",
-                 "çial": "especial",
-                 "maldecillo": "maldecir",
+                 "ladralle": "ladrar",
                  "levantose": "levantar",
+                 "longino": "vero-longino",
+                 "maldecillo": "maldecir",
+                 "matalle": "matar",
+                 "mayordomo": "mayordomo",
+                 "mostralle": "mostrar",
+                 "padecelle": "padecer",
+                 "padecellos": "padecer",
+                 "perdellas": "perder",
+                 "perseguirme": "perseguir",
+                 "preguntole": "preguntar",
+                 "premialle": "premiar",
+                 "rebelallos": "rebelar",
+                 "regalallos": "regalar",
                  "sacerdote": "sacerdote",
+                 "satisfacelle": "satisfacer",
+                 "sentillos": "sentir",
                  "tabardillo": "tabardillo",
-                 "preguntole": "preguntar"}
+                 "temellas": "temer",
+                 "temellos": "temer",
+                 "tenellas": "tender",
+                 "tenellos": "tener",
+                 "tomalle": "tomar",
+                 "vencelle": "vencer",
+                 "vencello": "vencer",
+                 "vencellos": "vencer",
+                 "vendellos": "vender",
+                 "vero": "vero-longino",
+                 "vero-longino": "vero-longino",
+                 "çial": "especial"}
 
 skip_call_words = {"esp", "e"}
+skip_echo_words = {}
 
+# in case need to examine lemmas
 logfd = open("../data/lemma_log.txt", mode="w")
 
 if __name__ == "__main__":
   print(f"- Start [{strftime('%R')}]")
-  #snlp = stanza.Pipeline(lang="es", processors="tokenize,pos")
   #nlp = spacy.load(cf.spacy_model)
-  #nlp = StanzaLanguage(snlp)
   nlp = spacy_stanza.load_pipeline("es", processors="tokenize,pos,lemma",
                                    verbose=False, logging_level='ERROR')
   df = pd.read_csv(cf.df_path, sep="\t", index_col=None)
   poem_ids = df['SonnetID'].unique()
   # nan not equal to itself
   poem_ids = list(filter(lambda pid: pid==pid, poem_ids))
+  call_word_lemmas = []
+  echo_word_lemmas = []
+  # main loop =================================================================
   for pidx, poem_id in enumerate(poem_ids):
     if pidx < 0:
       continue
@@ -128,43 +157,29 @@ if __name__ == "__main__":
     all_rhyme_words = []
     all_rhyme_contexts = []
     stanzas = re.split(r"#+", raw_txt)
-    # store rhyme word-forms
     for stz in stanzas:
       lines = [clean_line(l.strip()) for l in re.split(r"~+", stz)]
       all_lines.extend(lines)
-
-    # line_anas = [nlp(l) for l in all_lines]
-    # line_words = [[tok.text for tok in ana if not tok.is_punct and not tok.is_space]
-    #               for ana in line_anas]
-    # rhyme_words = [clean_token(line[-1]).lower() for line in line_words]
-    # all_rhyme_words.extend(rhyme_words)
-    # all_rhyme_contexts = {}
-    # for idx, line_for_context in enumerate(line_words):
-    #   if idx == len(line_words) - 1:
-    #     all_rhyme_contexts[(line_for_context[-2], None)] = line_for_context[-1]
-    #   # elif line_for_context[-1] in ("me", "te", "se", "nos", "os", "vos", "le",
-    #   #                               "lo", "les", "los", "la", "las"):
-    #   #
-    #   else:
-    #     all_rhyme_contexts[(line_for_context[-2], line_words[idx+1][0])] = line_for_context[-1]
-
-    # reanalyze poem with complete text (for context before and after rhyme)
+    # analyze poem with complete text (for context before and after rhyme)
     wf_infos = []
     clean_txt = "\n".join(all_lines)
     poem_ana = nlp(clean_txt)
     for toko in poem_ana:
       wf_infos.append([toko.text.lower(), toko.lemma_.lower(), toko.idx])
+    # get lemmas for call words ---------------------------
     call_words = poem_infos['Call'].str.lower().tolist()
     last_call_index = 0
     for call_word in call_words:
       clean_call_word = clean_token(call_word)
       if clean_call_word in skip_call_words:
+        print(f"  - Skipping call word: [{clean_call_word}]")
+        call_word_lemmas.append("BADWF")
         continue
       if clean_call_word in custom_lemmas:
         call_lemma = [custom_lemmas[clean_call_word]]
         call_word_infos = [['', '', last_call_index]]
       elif "(" in call_word or ")" in clean_call_word:
-        call_lemma = "UNK"
+        call_lemma = ["UNK"]
         call_word_infos = [['', '', last_call_index]]
         print(f"  - Call: [{call_word}] Lemma: [UNK]")
       else:
@@ -172,74 +187,51 @@ if __name__ == "__main__":
         if len(call_word_infos) == 0:
           call_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == strip_affixes(clean_call_word)]
         assert len(call_word_infos) > 0
+        # get the lemma for the first possible word-form after the last one covered
         call_lemma = [cw[1] for cw in call_word_infos if cw[-1] >= last_call_index]
         assert len(call_lemma) > 0
       last_call_index = min([cw[-1] for cw in call_word_infos if cw[-1] >= last_call_index])
       DBG and logfd.write("{}\t{}\n".format(call_word, call_lemma[0]))
       #print("  - {} {}".format(call_word, call_lemma[0]))
+      call_word_lemmas.append(call_lemma[0])
     logfd.flush()
 
-    # # tokos_for_rhyme_words = [clean_token(txt.text).lower() for txt in tokos_for_rhyme_words]
-    # tokos_for_rhyme_words = []
-    # no_punct = [toko for toko in poem_ana if not toko.is_punct and not toko.is_space]
-    # #breakpoint()
-    # for tidx, toko in enumerate(no_punct):
-    #   if tidx == len(no_punct) - 1:
-    #     tokos_for_rhyme_words.append(toko)
-    #   # elif (no_punct[tidx-1].text, no_punct[tidx+1].text) in all_rhyme_contexts:
-    #   #
-    #   #   tokos_for_rhyme_words.append(toko)
-    #   #
-    #   elif no_punct[tidx + 1].is_space:
-    #     tokos_for_rhyme_words.append(toko)
-    # rhyme_words_texts = [clean_token(txt.text).lower() for txt in tokos_for_rhyme_words]
-    #
-    # #assert len(all_rhyme_words) == len(tokos_for_rhyme_words)
-    # #assert len(tokos_for_rhyme_words) == len(rhyme_words_texts)
-    #
-    # line_nbr = 0
-    # all_poem_lemmas = {}
-    # for ridx, row in poem_infos.iterrows():
-    #   assert row.Text == raw_txt
-    #   call_word = row.Call
-    #   echo_word = row.Echo
-    #   if clean_token(call_word).lower() not in all_rhyme_words:
-    #     if tokos_for_rhyme_words[line_nbr].text in cf.clitics:
-    #       call_lemma = no_punct[no_punct.index(tokos_for_rhyme_words[line_nbr])-1].lemma_
-    #     else:
-    #       call_lemma = "##ERROR##"
-    #   # assert clean_token(call_word).lower() in all_rhyme_words
-    #   # assert clean_token(tokos_for_rhyme_words[line_nbr].text).lower() == clean_token(call_word).lower()
-    #   else:
-    #     call_lemma = tokos_for_rhyme_words[line_nbr].lemma_
-    #   all_poem_lemmas.setdefault(call_word.lower(), [])
-    #   all_poem_lemmas[call_word.lower()].append(call_lemma)
-    #   if ridx == 1:
-    #     print(clean_txt)
-    #     # print(raw_txt)
-    #   if ridx > 0 and not ridx % 500:
-    #     print(f"- Done {ridx} rows [{strftime('%R')}]")
-    #   line_nbr += 1
-
-    # add echo
-    # consumed_lemma_counts = {rw: 0 for rw in rhyme_words_texts}
-    # for ridx, row in poem_infos.iterrows():
-    #   echo_word = row.Echo
-    #   if echo_word == ' ':
-    #     continue
-    #   echo_lemma = \
-    #     all_poem_lemmas[clean_token(echo_word).lower()][consumed_lemma_counts[clean_token(echo_word).lower()]]
-    #   consumed_lemma_counts[clean_token(echo_word).lower()] += 1
-      # if clean_token(toko.text.lower()) in
-      #assert echo_word.lower() in all_rhyme_words
-      # try:
-      #   pass
-      # except TypeError as e:
-      #   print(f" - Error Line {idx}: Line:[] Error:[{repr(e)}]")
-      #   continue
     if pidx > 0 and not pidx % 100:
       print(f"- Done {pidx} poems [{strftime('%R')}]")
-
     if pidx > 10000:
       break
+
+    # get lemmas for echo ---------------------------------
+    if False:
+      echo_words = poem_infos['Echo'].str.lower().tolist()
+      last_echo_index = 0
+      for echo_word in echo_words:
+        clean_echo_word = clean_token(echo_word)
+        if clean_echo_word in skip_echo_words:
+          continue
+        if clean_echo_word in custom_lemmas:
+          echo_lemma = [custom_lemmas[clean_echo_word]]
+          echo_word_infos = [['', '', last_echo_index]]
+        elif "(" in echo_word or ")" in clean_echo_word:
+          echo_lemma = ["UNK"]
+          echo_word_infos = [['', '', last_echo_index]]
+          print(f"  - Call: [{echo_word}] Lemma: [UNK]")
+        else:
+          echo_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == clean_echo_word]
+          if len(echo_word_infos) == 0:
+            echo_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == strip_affixes(clean_echo_word)]
+          assert len(echo_word_infos) > 0
+          echo_lemma = [cw[1] for cw in echo_word_infos if cw[-1] >= last_echo_index]
+          assert len(echo_lemma) > 0
+        last_echo_index = min([cw[-1] for cw in echo_word_infos if cw[-1] >= last_echo_index])
+        DBG and logfd.write("{}\t{}\n".format(echo_word, echo_lemma[0]))
+        #print("  - {} {}".format(echo_word, echo_lemma[0]))
+        echo_word_lemmas.append(echo_lemma[0])
+    logfd.flush()
+
+  assert len(call_word_lemmas) == len(df)
+  df['CallLemma'] = call_word_lemmas
+
+  df.to_csv(cf.df_lem, sep='\t', index=False)
+
   logfd.close()
