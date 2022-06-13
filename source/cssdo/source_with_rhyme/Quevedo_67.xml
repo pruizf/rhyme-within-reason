@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A Aminta, que teniendo un clavel en la boca, por morderle se mordió los labios, y salió sangre</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A Aminta, que teniendo un clavel en la boca, por morderle se mordió los labios, y salió sangre  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---++--+-" rhyme="A">Bastábale al clavel verse <w type="rhyme">vencido</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">del labio en que se vio (cuando, <w type="rhyme">esforzado</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">con su propia vergüenza, lo <w type="rhyme">encarnado</w>
+            </l>
+            <l n="4" met="---+-++--+-" rhyme="A">a tu rubí se vio más <w type="rhyme">parecido</w>),</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">sin que, en tu boca hermosa, <w type="rhyme">dividido</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">fuese de blancas perlas <w type="rhyme">granizado</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">pues tu enojo, con él <w type="rhyme">equivocado</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">el labio por clavel dejó <w type="rhyme">mordido</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">si no cuidado de la sangre <w type="rhyme">fuese</w>,</l>
+            <l n="10" met="-----+-+-+-" rhyme="D">para que, a presumir de tiria <w type="rhyme">grana</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">de tu púrpura líquida <w type="rhyme">aprendiese</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Sangre vertió tu boca <w type="rhyme">soberana</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">porque, roja victoria, <w type="rhyme">amaneciese</w>
+            </l>
+            <l n="14" met="+--+-+---+-" rhyme="D">llanto al clavel y risa a la <w type="rhyme">mañana</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

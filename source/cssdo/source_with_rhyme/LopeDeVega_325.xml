@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 64 - A una dama cómica vestida de otra</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 64 - A una dama cómica vestida de otra </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Reliquias ya de navegante <w type="rhyme">flota</w>
+            </l>
+            <l n="2" met="---++--+-+-" rhyme="B">entre los pies de un empinado <w type="rhyme">risco</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">burla del mar, colmena de <w type="rhyme">marisco</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">dorada tablazón descansa <w type="rhyme">rota</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Sin estayes, sin brújula y <w type="rhyme">escota</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">picada de un pequeño <w type="rhyme">basilisco</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">la que fue de las nubes <w type="rhyme">obelisco</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">perdió del rumbo la feliz <w type="rhyme">derrota</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">En este, pues, deshecho <w type="rhyme">anfiteatro</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">que entre las siete maravillas <w type="rhyme">nombro</w>,</l>
+            <l n="11" met="+-+--+-+-+-" rhyme="C">triste voz repitió por partes <w type="rhyme">cuatro</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="D">«Yo soy aquella cómica de <w type="rhyme">asombro</w>,</l>
+            <l n="13" met="+----+---+-" rhyme="C">reina de las acciones del <w type="rhyme">teatro</w>;</l>
+            <l n="14" met="++-+---+-+-" rhyme="D">que hoy beso el pie de quien pisaba el <w type="rhyme">hombro</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

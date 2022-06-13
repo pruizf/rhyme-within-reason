@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXII - Respuesta</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXII - Respuesta </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A"> Si la ambición, que llega adonde <w type="rhyme">aspira</w>,</l>
+            <l n="2" met="++-+---+-+-" rhyme="B">no topa el gozo que esperó <w type="rhyme">Lamberto</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">¿cuál ingenio, o por cauto o por <w type="rhyme">experto</w>,</l>
+            <l n="4" met="---+-++--+-" rhyme="A">de la esperanza infiel no se <w type="rhyme">retira</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A"> Corrido estoy de no poder sin <w type="rhyme">ira</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">contarte cuán a juego <w type="rhyme">descubierto</w>,</l>
+            <l n="7" met="+----+++-+-" rhyme="B">siempre que me abonó algún bien por <w type="rhyme">cierto</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">en la fiel posesión lo hallé <w type="rhyme">mentira</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Si esperado el placer, cuando se <w type="rhyme">alcanza</w>,</l>
+            <l n="10" met="++-+-+-+-+-" rhyme="D">tan otro viene ya, que no le <w type="rhyme">queda</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">sino aquella apacible <w type="rhyme">semejanza</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+++-+-+-" rhyme="D"> hágame Dios tan recto juez, que <w type="rhyme">pueda</w>
+            </l>
+            <l n="13" met="-+++-+---+-" rhyme="C">echar un lazo al cuello a mi <w type="rhyme">esperanza</w>,</l>
+            <l n="14" met="-----+---+-" rhyme="D">por falsificadora de <w type="rhyme">moneda</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

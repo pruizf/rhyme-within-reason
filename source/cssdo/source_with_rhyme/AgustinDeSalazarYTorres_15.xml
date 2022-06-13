@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXII -</title>
+            <author> Agustin De Salazar Y Torres</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Agustin de Salazar y Torres</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Los campos de Agenor nevado <w type="rhyme">toro</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">por Europa pacía <w type="rhyme">enamorado</w>,</l>
+            <l n="3" met="--++-+---+-" rhyme="B">el mayor dios, el siempre <w type="rhyme">venerado</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">grave esplendor del soberano <w type="rhyme">coro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">El Caistro le oyó cisne <w type="rhyme">canoro</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">en blanca pluma amor <w type="rhyme">disimulado</w>,</l>
+            <l n="7" met="-+---++--+-" rhyme="B">y hallando la deidad nuevo <w type="rhyme">cuidado</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">los aires coronó con plumas de <w type="rhyme">oro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+++-+-" rhyme="C">Ya es fauno, ya pastor, ya estrella <w type="rhyme">errante</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">y ni sus fraudes vencen sus <w type="rhyme">ardores</w>,</l>
+            <l n="11" met="--+--++--+-" rhyme="E">ni la llama se ve menos <w type="rhyme">remisa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">¡Ah! Deja los engaños, gran <w type="rhyme">Tonante</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">si quieres al amor matar de <w type="rhyme">amores</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">transfórmate en los ojos de <w type="rhyme">Belisa</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- II - Al mismo</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- II - Al mismo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Carlos invicto, Carlos <w type="rhyme">soberano</w>,</l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">en cuyas venas Reales bien se <w type="rhyme">exalta</w>
+            </l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">el esplendor de aquella sangre <w type="rhyme">Baltha</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">que es honor al Imperio <w type="rhyme">Castellano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----++--+-" rhyme="A">Carlos Imperial, Carlos <w type="rhyme">Germano</w>,</l>
+            <l n="6" met="-+--+----+-" rhyme="B">Austriaco clavel, en quien se <w type="rhyme">esmalta</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">la púrpura Real Augusta, y <w type="rhyme">alta</w>,</l>
+            <l n="8" met="-+---++--+-" rhyme="A">y Carlos, que serás Carlo <w type="rhyme">Otomano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Crece, o pimpollo Rey, León de <w type="rhyme">España</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">crece a los años, y al valor <w type="rhyme">nativo</w>
+            </l>
+            <l n="11" met="-+---++--+-" rhyme="E">de tanto esclarecido Héroe <w type="rhyme">ascendiente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">Veate el Protestante en la <w type="rhyme">campaña</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">respire en ti Ataulfo <w type="rhyme">redivivo</w>,</l>
+            <l n="14" met="+--+-+++-+-" rhyme="E">Carlos te informe, y un Don Jaime <w type="rhyme">aliente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

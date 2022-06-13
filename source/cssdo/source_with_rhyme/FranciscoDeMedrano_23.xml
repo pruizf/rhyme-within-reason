@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III - A San Pedro, en una borrasca viniendo de Roma</title>
+            <author> Francisco De Medrano</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de Medrano</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - A San Pedro, en una borrasca viniendo de Roma </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Pescador soberano, en cuyas <w type="rhyme">redes</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">los mayores monarcas han <w type="rhyme">estado</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">dichosamente presos, y <w type="rhyme">cambiado</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">en gloria sus prisiones, y en <w type="rhyme">mercedes</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">tú, que abrir y cerrar el cielo <w type="rhyme">puedes</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">con poderosa llave a tu <w type="rhyme">ganado</w>,</l>
+            <l n="7" met="-+---++--+-" rhyme="B">y alcázar en la tierra has <w type="rhyme">alcanzado</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">con columnas de pórtico y <w type="rhyme">paredes</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">los ojos vuelve al mar <w type="rhyme">enfurecido</w>;</l>
+            <l n="10" met="--++-+-+-+-" rhyme="D">y pues tal vez osó mojar tu <w type="rhyme">planta</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">aun siendo hollado de tu fe <w type="rhyme">animosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++-+---+-" rhyme="C">Su hinchazón rompe, acalla su <w type="rhyme">ruido</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">y enseñado discípulo, <w type="rhyme">levanta</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">mi fe y mis pies con mano <w type="rhyme">poderosa</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

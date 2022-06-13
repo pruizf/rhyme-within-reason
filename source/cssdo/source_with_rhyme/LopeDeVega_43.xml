@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXVIII -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Inmenso monte, cuya blanca <w type="rhyme">nieve</w>
+            </l>
+            <l n="2" met="-++--+---+-" rhyme="B">te muestra antes de tiempo <w type="rhyme">encanecido</w>,</l>
+            <l n="3" met="-++--+-+++-" rhyme="B">en ti quiero vivir, por ver si ha <w type="rhyme">sido</w>
+            </l>
+            <l n="4" met="++-+---+-+-" rhyme="A">fuego este amor, pues acabar se <w type="rhyme">debe</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+--++-" rhyme="A">Pero si está en el alma, aunque más <w type="rhyme">pruebe</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">hacer de nieve a su memoria <w type="rhyme">olvido</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">será trabajo eterno del <w type="rhyme">sentido</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">y de mi largo error engaño <w type="rhyme">breve</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-++--+-" rhyme="C">Nieve por nieve al fin, puerto por <w type="rhyme">puerto</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">blancura y condición, Lucinda <w type="rhyme">helada</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">a mi fuego darán remedio <w type="rhyme">cierto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-++--+-+-" rhyme="D">¿Oh duro puerto una mujer <w type="rhyme">airada</w>!</l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">pero pásele yo quedando <w type="rhyme">muerto</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">que a quien cansa el vivir, la muerte <w type="rhyme">agrada</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

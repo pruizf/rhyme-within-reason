@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 60 - A la braveza de un toro que rompió la guarda tudesca</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 60 - A la braveza de un toro que rompió la guarda tudesca </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Trece son los tudescos que el <w type="rhyme">hosquillo</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">hirió en la fiesta, aunque en conciencia <w type="rhyme">jura</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">que no lo hizo adrede, y me <w type="rhyme">asegura</w>
+            </l>
+            <l n="4" met="++---+---+-" rhyme="A">que él iba a sus negocios al <w type="rhyme">sotillo</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">mas descortés el socarrón <w type="rhyme">torillo</w>,</l>
+            <l n="6" met="--+--++--+-" rhyme="B">sin hacer al balcón de oro <w type="rhyme">mesura</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">desbarató la firme <w type="rhyme">arquitectura</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">del muro colorado y <w type="rhyme">amarillo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Y como el polvo entre las nubes <w type="rhyme">pardas</w>
+            </l>
+            <l n="10" met="+--+---+-+-" rhyme="D">no le dejaba ejecutar sus <w type="rhyme">tretas</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">por tantas partes se metió en las <w type="rhyme">guardas</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">que muchos que mostraron las <w type="rhyme">secretas</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="C">en vez de las rompidas <w type="rhyme">alabardas</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">llevaban en las manos las <w type="rhyme">braguetas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

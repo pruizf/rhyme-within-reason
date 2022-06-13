@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXVIII -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Si cada cual fabrica su <w type="rhyme">fortuna</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">y está en mayor peligro la <w type="rhyme">envidiada</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">con una me contento <w type="rhyme">moderada</w>,</l>
+            <l n="4" met="-----+-+++-" rhyme="A">porque la moderada siempre es <w type="rhyme">una</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Goce el otro su suerte, si es <w type="rhyme">alguna</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">la esperanza entre envidias <w type="rhyme">adulada</w>,</l>
+            <l n="7" met="-----+---+-" rhyme="B">y mi moderación <w type="rhyme">desengañada</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">ni sea importunada ni <w type="rhyme">importuna</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++---+-+-" rhyme="C">Que por no ver sobre mis hombros <w type="rhyme">puesto</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="-">el peso del gobierno, murmurando</l>
+            <l n="11" met="-+---+---+-" rhyme="D">del vario discurrir de los <w type="rhyme">quejosos</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">escojo por seguro <w type="rhyme">presupuesto</w>
+            </l>
+            <l n="13" met="++---+---+-" rhyme="-">un fin de pretensiones olvidado</l>
+            <l n="14" met="-+---+---+-" rhyme="D">y ajeno de designios <w type="rhyme">ambiciosos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

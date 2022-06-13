@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXII - A la flor de Quilola, que señala las horas, y los movimientos de la luna</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXII - A la flor de Quilola, que señala las horas, y los movimientos de la luna </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Ronda los pasos de la Luna <w type="rhyme">hermosa</w>
+            </l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">una flor, que en Quilola el Cielo <w type="rhyme">cría</w>,</l>
+            <l n="3" met="+----+---+-" rhyme="B">y esta por soberana <w type="rhyme">Astrología</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">índice es de su esfera <w type="rhyme">tenebrosa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">En sus hojas señala <w type="rhyme">misteriosa</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">las horas, que el Planeta en sombras <w type="rhyme">fía</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y al rústico sirviéndole de <w type="rhyme">guía</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">por ellos vuelve a la tarea <w type="rhyme">forzosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">¡O singular portento, y <w type="rhyme">peregrino</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">que secreta virtud las pardas <w type="rhyme">huellas</w>
+            </l>
+            <l n="11" met="+--+++---+-" rhyme="E">te hace seguir este Astro <w type="rhyme">refulgente</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">O que influjo gobierna tu <w type="rhyme">destino</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">pues siendo fiel reloj de las <w type="rhyme">estrellas</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="E">eres del Prado pompa <w type="rhyme">reluciente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

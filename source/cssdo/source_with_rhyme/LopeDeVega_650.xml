@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Jornada II, OTAVIO De El divino africano</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Jornada II, OTAVIO De El divino africano </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Suele en oscuro y tímido <w type="rhyme">aposento</w>
+            </l>
+            <l n="2" met="-++-++---+-" rhyme="B">sentir ruido un hombre <w type="rhyme">desvelado</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">y más de honor, que del valor <w type="rhyme">armado</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">la causa examinar con miedo <w type="rhyme">atento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Pero llegando a donde sólo el <w type="rhyme">viento</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">sus pasos repetía, con <w type="rhyme">alentado</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">peligro, entonces abrazar <w type="rhyme">turbado</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">la sombra de su mismo <w type="rhyme">pensamiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Mas de otra suerte, en ciega noche <w type="rhyme">asombra</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">Lifarda este ruido mil <w type="rhyme">recelos</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">que tiene cuerpo, aunque parece <w type="rhyme">sombra</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Van donde suena el golpe mis <w type="rhyme">desvelos</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">pero ofendido con razón se <w type="rhyme">nombra</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">quien topa agravios cuando busca <w type="rhyme">celos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

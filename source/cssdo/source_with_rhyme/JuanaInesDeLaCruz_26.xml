@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXII - Aunque eres (Teresilla) tan muchacha</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXII - Aunque eres (Teresilla) tan muchacha </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Aunque eres (Teresilla) tan <w type="rhyme">Muchacha</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">le das que hacer al pobre de <w type="rhyme">Camacho</w>,</l>
+            <l n="3" met="---+---+++-" rhyme="B">porque dará tu disimulo un <w type="rhyme">Chacho</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">a aquel que se pintase más sin <w type="rhyme">Tacha</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">De los empleos que tu Amor <w type="rhyme">Despacha</w>,</l>
+            <l n="6" met="+-+--+--++-" rhyme="B">anda el triste cargado como un <w type="rhyme">Macho</w>
+            </l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">y tienen tan crecido ya el <w type="rhyme">Penacho</w>,</l>
+            <l n="8" met="-+++-+---+-" rhyme="A">que ya no puede entrar, si no se <w type="rhyme">Agacha</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+-+-+-" rhyme="C">Estás a hacerle burlas ya tan <w type="rhyme">Ducha</w>,</l>
+            <l n="10" met="--++-+-+-+-" rhyme="D">y a salir de ellas bien estás tan <w type="rhyme">Hecha</w>,</l>
+            <l n="11" met="-----+---+-" rhyme="C">que, de lo que tu vientre <w type="rhyme">Desembucha</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="D">sabes darle a entender, cuando <w type="rhyme">Sospecha</w>,</l>
+            <l n="13" met="++---+-+-+-" rhyme="C">que has hecho, por hacer su hacienda <w type="rhyme">Mucha</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">de ajena siembra suya la <w type="rhyme">Cosecha</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

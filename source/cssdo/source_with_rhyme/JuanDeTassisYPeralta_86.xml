@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXXVI - A un sueño</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXXVI - A un sueño </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">¡Aguarda, sombra inquietadora, <w type="rhyme">espera</w>!</l>
+            <l n="2" met="--+--++--+-" rhyme="B">Si de causa cruel naces <w type="rhyme">cobarde</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">cuando mi queja tu rigor <w type="rhyme">aguarde</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">será tu asombro la merced <w type="rhyme">postrera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Apareces piadosa y huyes <w type="rhyme">fiera</w>,</l>
+            <l n="6" met="---+---+-+-" rhyme="B">de tus efectos conocido <w type="rhyme">alarde</w>,</l>
+            <l n="7" met="++-+---+-+-" rhyme="B">que aún sombra falta que del mal me <w type="rhyme">guarde</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">o bien fingido, porque amando <w type="rhyme">muera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Lisonjero traidor, tirano <w type="rhyme">dueño</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">su gusto obliga, su inclemencia <w type="rhyme">asombra</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">a leve prueba, cauteloso <w type="rhyme">engaña</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">¡Sueño enemigo, si mis glorias <w type="rhyme">sueño</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="E">con la luz que me animas me <w type="rhyme">acompaña</w>,</l>
+            <l n="14" met="---+---+++-" rhyme="D">que en mis tormentos el alivio es <w type="rhyme">sombra</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

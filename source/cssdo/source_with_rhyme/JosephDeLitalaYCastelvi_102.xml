@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIII - A la estatua de Memnon que hablaba herida de los rayos del sol en ponderación de su amor</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIII - A la estatua de Memnon que hablaba herida de los rayos del sol en ponderación de su amor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Purpúreos rosicleres de la <w type="rhyme">Aurora</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">vencía el Sol en su primer <w type="rhyme">Oriente</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">coronando de luces su alta <w type="rhyme">frente</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">cuando los Montes con sus rayos <w type="rhyme">dora</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+--+--+-" rhyme="A">Hirió la estatua de Memnon, que <w type="rhyme">adora</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">el Nilo undoso en húmeda <w type="rhyme">corriente</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y a contactos solares <w type="rhyme">obediente</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">habló con voz dulcísima, y <w type="rhyme">sonora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-++--+-" rhyme="C">¿Qué es esto, Lisi, Amor? ¿Qué <w type="rhyme">Astrología</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="D">tiene en su Cielo, guarda en sus <w type="rhyme">arcones</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">que tocándome el Sol del bello <w type="rhyme">día</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">de tu hermosura no encontré <w type="rhyme">razones</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">y sólo adoro en muda <w type="rhyme">idolatría</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="D">tu desdén, tu rigor, y tus <w type="rhyme">baldones</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

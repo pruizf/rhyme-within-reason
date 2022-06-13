@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 771 - Acto III, Escena IV, DINARDA De El arenal de Sevilla</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 771 - Acto III, Escena IV, DINARDA De El arenal de Sevilla </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Cuenten luego novelas y <w type="rhyme">ocasiones</w>
+            </l>
+            <l n="2" met="-----++--+-" rhyme="B">de la imaginación más <w type="rhyme">divertida</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">que allá saldrá el romance de la <w type="rhyme">vida</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">alegando mezquinas <w type="rhyme">invenciones</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">Por el amor de Albano y sus <w type="rhyme">pasiones</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">cruzo el mar, me disfrazo <w type="rhyme">decidida</w>
+            </l>
+            <l n="7" met="---+++---+-" rhyme="B">y a la mujer que es más <w type="rhyme">aborrecida</w>,</l>
+            <l n="8" met="-+--+++--+-" rhyme="A">fingiéndome don Juan, canto <w type="rhyme">ilusiones</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+-+-+-" rhyme="C">Romper trato esta farsa y burda <w type="rhyme">treta</w>
+            </l>
+            <l n="10" met="-++--+---+-" rhyme="D">y cien veces de Albano el <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">a sus grillos me amarra y me <w type="rhyme">sujeta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="E">¡Cumple, Amor, tu decreto <w type="rhyme">soberano</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">que he de seguir en el primer <w type="rhyme">intento</w>
+            </l>
+            <l n="14" met="-----+-+-+-" rhyme="E">hasta que de Fenisa libre a <w type="rhyme">Albano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

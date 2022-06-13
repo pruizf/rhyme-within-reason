@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIX -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">Mientras, llevado de un delfín <w type="rhyme">piadoso</w>,</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">pasa Arión el mar, suspende el <w type="rhyme">viento</w>
+            </l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">y las aguas enfrena el blando <w type="rhyme">acento</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">de la cítara y canto <w type="rhyme">artificioso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Las Nereidas, dejando el <w type="rhyme">espumoso</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">albergue, al dulce son de su <w type="rhyme">instrumento</w>
+            </l>
+            <l n="7" met="+----+---+-" rhyme="B">tejen en concertado <w type="rhyme">movimiento</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">festivo coro en el teatro <w type="rhyme">undoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Tetis, Nereo y Doris con <w type="rhyme">espanto</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">oyeron su armonía; ni <w type="rhyme">faltaste</w>,</l>
+            <l n="11" met="+--+-++--+-" rhyme="E">grande Neptuno, y tú, Glauco, <w type="rhyme">saliste</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+-+--+-+-" rhyme="C">¡Oh inmensa fuerza del suave <w type="rhyme">canto</w>!</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">Si la fiera codicia no <w type="rhyme">amansaste</w>,</l>
+            <l n="14" met="+-+--++--+-" rhyme="E">aguas, vientos, delfín, dioses, <w type="rhyme">venciste</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

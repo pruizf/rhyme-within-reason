@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXX - A un jazmín asido a una estatua de Diana</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXX - A un jazmín asido a una estatua de Diana </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">De aquel jazmín, que su verdor se <w type="rhyme">atreve</w>
+            </l>
+            <l n="2" met="--++--+--+-" rhyme="B">a escalar esta imagen de <w type="rhyme">Diana</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">nieva centellas la experiencia <w type="rhyme">cana</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">precipitadas de su peso <w type="rhyme">leve</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">El Austro tarde, que a usurpar se <w type="rhyme">atreve</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">el desaliño de la flor <w type="rhyme">lozana</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">pretende triunfo con violencia <w type="rhyme">vana</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">del estrago que al tiempo se le <w type="rhyme">debe</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Cándido así de frágil <w type="rhyme">esperanza</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">mi pensamiento despeñado <w type="rhyme">miro</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="E">por el poder de natural <w type="rhyme">efecto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Cuando le oprime, Celia, tu <w type="rhyme">mudanza</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">que llega sin obrar en mi <w type="rhyme">retiro</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">a dejar deslucido mi <w type="rhyme">respeto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

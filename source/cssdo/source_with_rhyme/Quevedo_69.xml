@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A una fénix de diamantes que Aminta traía en el cuello</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A una fénix de diamantes que Aminta traía en el cuello  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Aminta, si a tu pecho y a tu <w type="rhyme">cuello</w>
+            </l>
+            <l n="2" met="+-+--+--++-" rhyme="B">esa fénix preciosa a olvidar <w type="rhyme">viene</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">la presunción de única que <w type="rhyme">tiene</w>,</l>
+            <l n="4" met="--+--+--++-" rhyme="A">en tu rara belleza podrá <w type="rhyme">hacello</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Si viene a mejorar, sin <w type="rhyme">merecello</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">de incendio (que dichosamente <w type="rhyme">estrene</w>),</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">hoguera de oro crespo la <w type="rhyme">previene</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">el piélago de luz en tu <w type="rhyme">cabello</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+--+----+-" rhyme="C">Si varias de muerte y de <w type="rhyme">elemento</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="D">quiere, y morir en nieve, la <w type="rhyme">blancura</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">de tus manos la ofrece <w type="rhyme">monumento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Si quieres más eterna <w type="rhyme">sepultura</w>,</l>
+            <l n="13" met="-+++-+---+-" rhyme="C">si ya no fuese eterno <w type="rhyme">nacimiento</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">con mi envidia la alcance en tu <w type="rhyme">hermosura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

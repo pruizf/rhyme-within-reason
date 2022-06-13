@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- L - Que explica la más sublime calidad de amor</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- L - Que explica la más sublime calidad de amor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Yo adoro a Lisi, pero no <w type="rhyme">pretendo</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">que Lisi corresponda mi <w type="rhyme">fineza</w>;</l>
+            <l n="3" met="--+--+---+-" rhyme="B">pues si juzgo posible su <w type="rhyme">belleza</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">a su decoro y mi aprehensión <w type="rhyme">ofendo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++-++--+-" rhyme="A">No emprender, solamente, es lo que <w type="rhyme">emprendo</w>:</l>
+            <l n="6" met="-+---++--+-" rhyme="B">pues sé que a merecer tanta <w type="rhyme">grandeza</w>
+            </l>
+            <l n="7" met="-++--+-+-+-" rhyme="B">ningún mérito basta, y es <w type="rhyme">simpleza</w>
+            </l>
+            <l n="8" met="-+---+--++-" rhyme="A">obrar contra lo mismo que yo <w type="rhyme">entiendo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Como cosa concibo tan <w type="rhyme">sagrada</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">su beldad que ni quiere mi <w type="rhyme">osadía</w>
+            </l>
+            <l n="11" met="---+-+++-+-" rhyme="C">a la esperanza dar ni aun leve <w type="rhyme">entrada</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">pues cediendo a la suya mi <w type="rhyme">alegría</w>,</l>
+            <l n="13" met="-+-+-++--+-" rhyme="C">por no llegarla a ver mal <w type="rhyme">empleada</w>,</l>
+            <l n="14" met="++---+-+-+-" rhyme="D">aun pienso que sintiera verla <w type="rhyme">mía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

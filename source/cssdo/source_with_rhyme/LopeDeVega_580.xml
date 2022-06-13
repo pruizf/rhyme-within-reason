@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 63 -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 63 - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Tú que Epitafios a los vivos <w type="rhyme">haces</w>,</l>
+            <l n="2" met="-----++--+-" rhyme="B">y en tu imaginación muertos los <w type="rhyme">tienes</w>,</l>
+            <l n="3" met="++---++--+-" rhyme="B">¿qué exequias para ti, qué honras <w type="rhyme">previenes</w>?</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">pero si no las tienes no las <w type="rhyme">traces</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--++-++-" rhyme="A">Todos yacen por ti, ¿tú por quién <w type="rhyme">yaces</w>?</l>
+            <l n="6" met="+-+--++--+-" rhyme="B">¿qué funesto ciprés das a tus <w type="rhyme">sienes</w>?</l>
+            <l n="7" met="++-+-+---+-" rhyme="B">¿qué mal dirás de ti? porque los <w type="rhyme">bienes</w>
+            </l>
+            <l n="8" met="-++-++---+-" rhyme="A">vendrán aun a ti mismo <w type="rhyme">pertinaces</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">No es bien que vivos como muertos <w type="rhyme">trates</w>,</l>
+            <l n="10" met="++---+---+-" rhyme="D">y aun muertos con libelos <w type="rhyme">descubiertos</w>,</l>
+            <l n="11" met="++---+---+-" rhyme="E">no es tanta tu virtud que lo <w type="rhyme">presuma</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">Pues que no los heredas, no los <w type="rhyme">mates</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">que abrir las sepulturas a los <w type="rhyme">muertos</w>
+            </l>
+            <l n="14" met="++---+---+-" rhyme="E">más es del azadón que de la <w type="rhyme">pluma</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

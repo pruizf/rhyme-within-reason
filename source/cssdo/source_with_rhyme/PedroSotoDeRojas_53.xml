@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXII - Tapices de rosas</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXII - Tapices de rosas </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">Borde el Darro gentil su margen de <w type="rhyme">oro</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">sobre tapetes de esmeralda <w type="rhyme">hermosa</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y matutina, deshojada <w type="rhyme">rosa</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">en él disipe intacto su <w type="rhyme">tesoro</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">las bellas ninfas, olvidando el <w type="rhyme">coro</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">en profusión de flores <w type="rhyme">olorosa</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">imiten divertidas a la <w type="rhyme">diosa</w>
+            </l>
+            <l n="8" met="-+-----+-+-" rhyme="A">que presta a mayo su primer <w type="rhyme">decoro</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">para que Fénix con altivo <w type="rhyme">orgullo</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">favorecida pise arroyo y <w type="rhyme">prado</w>:</l>
+            <l n="11" met="---+---+-+-" rhyme="E">mas si le da como el amor <w type="rhyme">desvío</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">ni deshoje la rosa su <w type="rhyme">capullo</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">ni de Flora las ninfas sean <w type="rhyme">traslado</w>:</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">ni de oro el margen suyo borde el <w type="rhyme">río</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

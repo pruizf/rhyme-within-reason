@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Trenzas que en la serena y limpia <w type="rhyme">frente</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">de anillos de oro crespo <w type="rhyme">coronadas</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">formáis lucientes vueltas y <w type="rhyme">lazadas</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">donde el mayor Vulcano espira <w type="rhyme">ardiente</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">el Sol, o que aparezca en <w type="rhyme">Oriente</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">con las puntas de llamas <w type="rhyme">dilatadas</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">o que las junte, de subir <w type="rhyme">cansadas</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">se rinde a vuestra luz <w type="rhyme">resplandeciente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Vos, mis hermosos cercos, <w type="rhyme">anudado</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">tenéis mi cuello, y nunca espero el <w type="rhyme">día</w>,</l>
+            <l n="11" met="-+---++--+-" rhyme="E">principio a libertad, fin a la <w type="rhyme">pena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">Porque alegre en el mal de mi <w type="rhyme">cuidado</w>,</l>
+            <l n="13" met="---+-+++-+-" rhyme="D">de la prisión huir no pienso <w type="rhyme">mía</w>;</l>
+            <l n="14" met="--+--++--+-" rhyme="E">ni los lazos romper de esta <w type="rhyme">cadena</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

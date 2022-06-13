@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIX -</title>
+            <author> Francisco De La Torre</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de La Torre</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Claras y transparentes <w type="rhyme">luminarias</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">del cielo, y de la noche <w type="rhyme">compañeras</w>,</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">hijas del crudo tiempo y Parcas <w type="rhyme">fieras</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">por casos varios y por suertes <w type="rhyme">varias</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Ya que de las amigas y <w type="rhyme">contrarias</w>
+            </l>
+            <l n="6" met="+----+---+-" rhyme="B">horas de mi contento <w type="rhyme">lastimeras</w>
+            </l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">testigo fuisteis, sedlo en las <w type="rhyme">postreras</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">a mi cansada vida <w type="rhyme">necesarias</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">No me fuerce, mirad, el tiempo <w type="rhyme">acaso</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">a pediros palabras <w type="rhyme">quebrantadas</w>:</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">pues sois fiadoras y testigo de <w type="rhyme">ellas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="E">Dijo Damón, y de las luces <w type="rhyme">bellas</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">del claro cielo, errante y <w type="rhyme">fijadas</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="C">resplandeció el Oriente y el <w type="rhyme">Ocaso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dificulta retratar una grande hermosura, que se lo había mandado, y enseña el modo que solo alcanza para que fuera posible</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Dificulta retratar una grande hermosura, que se lo había mandado, y enseña el modo que solo alcanza para que fuera posible  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Si quien ha de pintaros ha de <w type="rhyme">veros</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="A">y no es posible sin cegar <w type="rhyme">miraros</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="A">¿quién será poderoso a <w type="rhyme">retrataros</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">sin ofender su vista y <w type="rhyme">ofenderos</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">En nieve y rosas quise <w type="rhyme">floreceros</w>;</l>
+            <l n="6" met="-+-+-+---+-" rhyme="A">mas fuera honrar las rosa y <w type="rhyme">agraviaros</w>;</l>
+            <l n="7" met="+-+--+-+-+-" rhyme="A">dos luceros por ojos quise <w type="rhyme">daros</w>;</l>
+            <l n="8" met="-+---+---+-" rhyme="A">mas ¿cuándo lo soñaron los <w type="rhyme">luceros</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="B">Conocí el imposible en el <w type="rhyme">bosquejo</w>;</l>
+            <l n="10" met="---+---+-+-" rhyme="C">mas vuestro espejo a vuestra lumbre <w type="rhyme">propia</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="B">aseguró el acierto en su <w type="rhyme">reflejo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="C">Podraos él retratar sin luz <w type="rhyme">impropia</w>,</l>
+            <l n="13" met="+-+-++---+-" rhyme="B">siendo vos de vos propia, en el <w type="rhyme">espejo</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="C">original, pintor, pincel y <w type="rhyme">copia</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

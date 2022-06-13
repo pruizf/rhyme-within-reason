@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Miguel de Cervantes, autor de Don Quijote: «Este soneto hice a la muerte de don Fernando de Herrera y, para entender el primer cuarteto, advierto que él celebraba en sus versos a una señora debajo de este nombre de Luz. Creo que es de los buenos que he hecho en mi vida.»</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Miguel de Cervantes, autor de Don Quijote: «Este soneto hice a la muerte de don Fernando de Herrera y, para entender el primer cuarteto, advierto que él celebraba en sus versos a una señora debajo de este nombre de Luz. Creo que es de los buenos que he hecho en mi vida.» </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">El que subió por sendas nunca <w type="rhyme">usadas</w>
+            </l>
+            <l n="2" met="-+-+--++-+-" rhyme="B">del sacro monte a la más alta <w type="rhyme">cumbre</w>;</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">el que a una Luz se hizo todo <w type="rhyme">lumbre</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">y lágrimas, en dulce voz <w type="rhyme">cantadas</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">el que con culta vena las <w type="rhyme">sagradas</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">de Elicón y Pirene en <w type="rhyme">muchedumbre</w>
+            </l>
+            <l n="7" met="+--+-+---+-" rhyme="B">(libre de toda humana <w type="rhyme">pesadumbre</w>)</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">bebió y dejó en divinas <w type="rhyme">transformadas</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">aquél a quien envidia tuvo <w type="rhyme">Apolo</w>
+            </l>
+            <l n="10" met="--+--++--+-" rhyme="D">porque, a par de su Luz, tiene su <w type="rhyme">fama</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="E">de donde nace a donde muere el <w type="rhyme">día</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">el agradable al cielo, al suelo <w type="rhyme">solo</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">vuelto en ceniza de su ardiente <w type="rhyme">llama</w>,</l>
+            <l n="14" met="+--+-+-+-+-" rhyme="E">yace debajo de esta losa <w type="rhyme">fría</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

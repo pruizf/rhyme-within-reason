@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVIII - Encarece su amor con ocasión de un eclipse de luna que pareció muy sangriento</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVIII - Encarece su amor con ocasión de un eclipse de luna que pareció muy sangriento </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+---+-" rhyme="A">Celia, no ves la saña del <w type="rhyme">Planeta</w>,</l>
+            <l n="2" met="----+-+--+-" rhyme="B">que amenazando trágica <w type="rhyme">ruina</w>,</l>
+            <l n="3" met="+-+--++--+-" rhyme="B">llama vierte feroz, sangre <w type="rhyme">fulmina</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">en usurpada forma de <w type="rhyme">Cometa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+--+--+-" rhyme="A">Mira cual tiembla la Tiara <w type="rhyme">inquieta</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">de lo que el vano Astrólogo <w type="rhyme">imagina</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">y cuantos Cetros al horror <w type="rhyme">destina</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">oscura voz de equívoco <w type="rhyme">Profeta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Y advierte, que seguro en sus <w type="rhyme">enojos</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">de su semblante pende mi <w type="rhyme">cuidado</w>,</l>
+            <l n="11" met="--++-+---+-" rhyme="E">que ni sabe otro cielo, ni le <w type="rhyme">mira</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">y atento a las estrellas de tus <w type="rhyme">ojos</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">ni quiere más fortuna que tu <w type="rhyme">agrado</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">ni teme más prodigios, que tu <w type="rhyme">ira</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

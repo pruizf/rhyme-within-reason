@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIII - A la espada que ha de ganar a Jerusalén presuponiendo que la de Su Majestad</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIII - A la espada que ha de ganar a Jerusalén presuponiendo que la de Su Majestad </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Sacro metal que en fragua <w type="rhyme">celestiales</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">iras te dan de rayo los <w type="rhyme">cercanos</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">espíritus a Dios, de cuyas <w type="rhyme">manos</w>
+            </l>
+            <l n="4" met="+--+---+-+-" rhyme="A">has de mostrar en el herir <w type="rhyme">señales</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Temas, sientan los Monstruos <w type="rhyme">infernales</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">tu virtud, tus efectos <w type="rhyme">soberanos</w>
+            </l>
+            <l n="7" met="++---+---+-" rhyme="B">no hallando sus Plutones y <w type="rhyme">Vulcanos</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">contra tu fuerza escudos en <w type="rhyme">metales</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Baja a la tierra, ven, que ya te <w type="rhyme">espera</w>
+            </l>
+            <l n="10" met="+--+---+++-" rhyme="D">Rey Español a quien el cielo ha <w type="rhyme">dado</w>
+            </l>
+            <l n="11" met="--+--+++-+-" rhyme="E">por destino fatal tan alta <w type="rhyme">gloria</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Mas ya llegaste, ya, pues <w type="rhyme">reverbera</w>
+            </l>
+            <l n="13" met="---+---+-+-" rhyme="D">en la que ciñe el celestial <w type="rhyme">cuidado</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">así como en su celo la <w type="rhyme">victoria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

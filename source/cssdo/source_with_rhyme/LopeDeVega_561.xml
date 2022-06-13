@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 46 - A don Luis de Góngora</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 46 - A don Luis de Góngora </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Claro cisne del Betis, que <w type="rhyme">sonoro</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">y grave ennobleciste el <w type="rhyme">instrumento</w>
+            </l>
+            <l n="3" met="++---++--+-" rhyme="B">más dulce, que ilustró músico <w type="rhyme">acento</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">bañando en ámbar puro el arco de <w type="rhyme">oro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">A ti la lira, a ti el Castalio <w type="rhyme">coro</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">debe su honor, su fama y su <w type="rhyme">ornamento</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">único al siglo, y a la envidia <w type="rhyme">exento</w>,</l>
+            <l n="8" met="-+--++---+-" rhyme="A">vencida, si no muda en tu <w type="rhyme">decoro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+-+-+-" rhyme="C">Los que por tu defensa escriben <w type="rhyme">sumas</w>,</l>
+            <l n="10" met="+----+---+-" rhyme="D">propias ostentaciones <w type="rhyme">solicitan</w>,</l>
+            <l n="11" met="+--+-++--+-" rhyme="C">dando a tu inmenso mar viles <w type="rhyme">espumas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Los Ícaros defiendan que te <w type="rhyme">imitan</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">que como acercan a tu sol las <w type="rhyme">plumas</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">de tu divina luz se <w type="rhyme">precipitan</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

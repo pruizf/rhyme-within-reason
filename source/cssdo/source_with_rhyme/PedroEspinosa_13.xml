@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 20 - Soneto por el llanto de Nuestra Señora y de San José al Niño perdido</title>
+            <author> Pedro Espinosa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Espinosa</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 20 -  Soneto por el llanto de Nuestra Señora y de San José al Niño perdido </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A"> Pastor a cuya gloria me <w type="rhyme">levanto</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">zagala, honor de aquestas selvas <w type="rhyme">bellas</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">en lágrimas bañáis las nobles <w type="rhyme">huellas</w>:</l>
+            <l n="4" met="+-+--+--++-" rhyme="A">¿que un cordero perdido lloráis <w type="rhyme">tanto</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A"> Lloras, María, y tu precioso <w type="rhyme">llanto</w>
+            </l>
+            <l n="6" met="+----+---+-" rhyme="B">suben para su lumbre las <w type="rhyme">estrellas</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y lloras tú, José, cuyas <w type="rhyme">querellas</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">son de los aires ornamento <w type="rhyme">santo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">Más de una voz al aire <w type="rhyme">desordena</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">del uno y otro pecho <w type="rhyme">atribulado</w>,</l>
+            <l n="11" met="--++---+-+-" rhyme="E">que a Jesús llama entre mortal <w type="rhyme">gemido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+++-+-" rhyme="C">Mas de aqueste dolor nace otra <w type="rhyme">pena</w>,</l>
+            <l n="13" met="+----+-+-+-" rhyme="D">viendo que, cuando más habéis <w type="rhyme">llorado</w>,</l>
+            <l n="14" met="+--+-+-+-+-" rhyme="E">no igualará el dolor al bien <w type="rhyme">perdido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- V - A la muerte de Adonis</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- V - A la muerte de Adonis </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Boca con boca Venus <w type="rhyme">porfiaba</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">a detener el alma que <w type="rhyme">salía</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">del desdichado Adonis, que <w type="rhyme">moría</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">más herido del bien que acá <w type="rhyme">dejaba</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-++--+-" rhyme="A">El no poder morir ella <w type="rhyme">lloraba</w>,</l>
+            <l n="6" met="+-+--+---+-" rhyme="B">no lloraba la muerte que <w type="rhyme">veía</w>;</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">Amor allí, mostró que no <w type="rhyme">podía</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">ayudar a sentir lo que <w type="rhyme">causaba</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="-">Ella en brazos le tiene; quien los viera,</l>
+            <l n="10" met="-++--+---+-" rhyme="C">igualmente llorar la <w type="rhyme">despedida</w>,</l>
+            <l n="11" met="-+---+++-+-" rhyme="D">apenas juzgará cuál de ellos <w type="rhyme">muere</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">Mas la diosa mostró quedar <w type="rhyme">vencida</w>
+            </l>
+            <l n="13" met="--++-+--++-" rhyme="D">de dolor tanto más, cuanto más <w type="rhyme">quiere</w>
+            </l>
+            <l n="14" met="+-+--+---+-" rhyme="C">dar a Adonis el alma que la <w type="rhyme">vida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

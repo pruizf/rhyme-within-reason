@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVI - Conocimiento perfecto</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVI - Conocimiento perfecto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Dichoso aquel que de su techo <w type="rhyme">amado</w>
+            </l>
+            <l n="2" met="+----+-+-+-" rhyme="B">lejos de la vulgar y ciega <w type="rhyme">gente</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">con pecho firme, con serena <w type="rhyme">frente</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">vive de amores, de ambición, <w type="rhyme">purgado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Dichoso aquel que de su techo <w type="rhyme">amado</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">ve la Aurora nacer por el <w type="rhyme">Oriente</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">dejando entre las flores, <w type="rhyme">dulcemente</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">de su terneza y su color <w type="rhyme">traslado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Macize el pecho de oro el Midas <w type="rhyme">necio</w>,</l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">sufra inconstante aliento a dulces <w type="rhyme">labios</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">pues cosas tan vacías tienen <w type="rhyme">precio</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="D">¡Oh mil veces feliz, quien ya de <w type="rhyme">agravios</w>
+            </l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">de una esperanza sale, en un <w type="rhyme">desprecio</w>!</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">¡Feliz quien ama el oro de los <w type="rhyme">sabios</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

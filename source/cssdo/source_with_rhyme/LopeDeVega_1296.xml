@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1412 - Libro I</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1412 - Libro I </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Siendo de amor Susana <w type="rhyme">requerida</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">estándose lavando en una <w type="rhyme">fuente</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">de dos Jueces, que <w type="rhyme">lascivamente</w>
+            </l>
+            <l n="4" met="+--+---+-+-" rhyme="A">vieron desnuda y de virtud <w type="rhyme">vestida</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Dijo llorando: ¡Ay sola y <w type="rhyme">combatida</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">por todas partes del dolor <w type="rhyme">presente</w>!</l>
+            <l n="7" met="---+-+---+-" rhyme="B">pues morirá mi honor, si lo <w type="rhyme">consiente</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">y si lo niega, perderé la <w type="rhyme">vida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">¡Ay muerte victoriosa, no me <w type="rhyme">asombres</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">pues la vida del alma, que <w type="rhyme">pretendo</w>,</l>
+            <l n="11" met="-+---+++-+-" rhyme="C">muriendo gozará más altos <w type="rhyme">nombres</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Porque será mejor, si me <w type="rhyme">defiendo</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">caer sin culpa en manos de los <w type="rhyme">hombres</w>,</l>
+            <l n="14" met="---+---+-+-" rhyme="D">que con pecar en las del Dios que <w type="rhyme">ofendo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

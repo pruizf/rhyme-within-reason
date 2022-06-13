@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXV - Ausentándose</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXV - Ausentándose </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-++--+-" rhyme="A">Al campo Fénix vais, vais a la <w type="rhyme">aldea</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">para que esté cuando volváis <w type="rhyme">difunto</w>
+            </l>
+            <l n="3" met="---+---+++-" rhyme="B">pues si estuviere en la ciudad un <w type="rhyme">punto</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">de vos mi amor aborrecido <w type="rhyme">vea</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Desde hoy (Bootes de esta luz) me <w type="rhyme">emplea</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">amor al carro perezoso <w type="rhyme">junto</w>,</l>
+            <l n="7" met="-----+-+-+-" rhyme="B">y sin dispensación mi dulce <w type="rhyme">asunto</w>,</l>
+            <l n="8" met="-+-+-++--+-" rhyme="A">azada, reja, y hoz, quiere que <w type="rhyme">sea</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+-+-+-" rhyme="C">Viviré cuan gozoso, cuan <w type="rhyme">ufano</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">aunque en vez de escarpín, y guante <w type="rhyme">estrecho</w>
+            </l>
+            <l n="11" met="-+-+-++--+-" rhyme="C">vejigas calce el pie, llagas la <w type="rhyme">mano</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">y si la llaga antigua de mi <w type="rhyme">pecho</w>
+            </l>
+            <l n="13" met="++---+-+-+-" rhyme="C">no tienen satisfecho a amor <w type="rhyme">tirano</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">quedará en las recientes <w type="rhyme">satisfecho</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

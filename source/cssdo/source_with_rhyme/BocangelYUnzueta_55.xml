@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIX -</title>
+            <author> Bocangel Y Unzueta</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Del ya postrero sueño en que <w type="rhyme">yacía</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">el solícito amante se <w type="rhyme">burlaba</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">Anaxarte, mirando que <w type="rhyme">robaba</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">la nieve su postrera rosa <w type="rhyme">fría</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Ella, rebelde siempre <w type="rhyme">despedía</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">no la dureza, mas el alma <w type="rhyme">brava</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">y al odio alcázar de alabastro <w type="rhyme">daba</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">que por blanda su carne <w type="rhyme">aborrecía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-++++-++-" rhyme="C">Vos no podéis ser ya, Lisi, más <w type="rhyme">dura</w>
+            </l>
+            <l n="10" met="-----+-+-+-" rhyme="D">y, puesto que os aguarde algún <w type="rhyme">castigo</w>,</l>
+            <l n="11" met="-+--++--++-" rhyme="E">será de tomar forma en mi amor <w type="rhyme">tierno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+--++-" rhyme="C">Seréis más inmortal en mi fe <w type="rhyme">pura</w>,</l>
+            <l n="13" met="-----+-+-+-" rhyme="D">pues a vuestra dureza yo me <w type="rhyme">obligo</w>,</l>
+            <l n="14" met="--+--+--++-" rhyme="E">que en el mármol odioso, aunque sea <w type="rhyme">eterno</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

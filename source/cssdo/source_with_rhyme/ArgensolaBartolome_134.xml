@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-- LXXVII -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-- LXXVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++-++--+-" rhyme="A">De los dos sabios son estos <w type="rhyme">retratos</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="B">Nuño, que con igual <w type="rhyme">filosofía</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">lloraba el uno, el otro se <w type="rhyme">reía</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">del vano error del mundo y de sus <w type="rhyme">tratos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A"> Mirando el cuadro, pienso algunos <w type="rhyme">ratos</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">si hubiese de dejar mi <w type="rhyme">medianía</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">a cuál de los extremos <w type="rhyme">seguiría</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">de estos dos celebrados <w type="rhyme">mentecatos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----++--+-" rhyme="C"> Tú, que de gravedad eres <w type="rhyme">amigo</w>,</l>
+            <l n="10" met="--++-+-+-+-" rhyme="D">juzgarás que es mejor juntarse al <w type="rhyme">coro</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">que a lágrimas provoca, en la <w type="rhyme">tragedia</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">pero yo, como sé que nunca el <w type="rhyme">lloro</w>
+            </l>
+            <l n="13" met="---+-+-+-+-" rhyme="E">nos restituye el bien ni el bien <w type="rhyme">remedia</w>,</l>
+            <l n="14" met="---+---+-+-" rhyme="C">con tu licencia el de la risa <w type="rhyme">sigo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

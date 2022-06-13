@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCIV -</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+-+-" rhyme="A">Si no os digo verdad, si en algo os <w type="rhyme">miento</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">sobre mi vida torne el <w type="rhyme">desengaño</w>;</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">si falta hay en mi fe, si os trato <w type="rhyme">engaño</w>,</l>
+            <l n="4" met="-+++-+-+-+-" rhyme="A">dolor no quepa en vos del mal que <w type="rhyme">siento</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+++-+-+-+-" rhyme="A">si no sois causa vos del mal que <w type="rhyme">siento</w>
+            </l>
+            <l n="6" met="-+++-+---+-" rhyme="B">de vos sea yo tratado como <w type="rhyme">extraño</w>;</l>
+            <l n="7" met="--++-+--++-" rhyme="B">si por vos tengo en algo el mayor <w type="rhyme">daño</w>,</l>
+            <l n="8" met="++-+-+---+-" rhyme="A">no pueda en vos caber <w type="rhyme">consentimiento</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-++--+-" rhyme="C">si no estáis hecha ya sola <w type="rhyme">señora</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">de aquella libertad que no era <w type="rhyme">mía</w>,</l>
+            <l n="11" met="+-+--++--+-" rhyme="E">¡plega a Dios que sin vos y ella me <w type="rhyme">vea</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Mas si la mísera ánima os <w type="rhyme">adora</w>,</l>
+            <l n="13" met="-++--+---+-" rhyme="D">si está llena de vos mi <w type="rhyme">fantasía</w>,</l>
+            <l n="14" met="++-+-+-+++-" rhyme="E">¿qué puedo yo decir que a sí no <w type="rhyme">sea</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

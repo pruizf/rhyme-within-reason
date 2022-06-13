@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Los quince misterios del Rosario</title>
+            <author> Rey De Artieda</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Rey de  Artieda,  Andrés</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Los quince misterios del Rosario </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Cuando a María el Ángel la <w type="rhyme">saluda</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">y ella visita a Elisabet su <w type="rhyme">prima</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">cuando pare al que cielo y mundo <w type="rhyme">anima</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">y cuando ordena Dios que al templo <w type="rhyme">acuda</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">cuando Cristo en el huerto sangre <w type="rhyme">suda</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">el azote y corona le <w type="rhyme">lastima</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">cuando el sagrado leño se echa <w type="rhyme">encima</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">y pasa muerte tan acerba y <w type="rhyme">cruda</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">cuando con triunfo y gloria <w type="rhyme">resucita</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">sube a los cielos, y a su Iglesia <w type="rhyme">santa</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">el Espíritu Santo la <w type="rhyme">visita</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">cuando llama a María <w type="rhyme">sacrosanta</w>
+            </l>
+            <l n="13" met="---+---+-+-" rhyme="C">y la corona con aplauso, y <w type="rhyme">grita</w>
+            </l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">para siempre sin fin la Iglesia <w type="rhyme">canta</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

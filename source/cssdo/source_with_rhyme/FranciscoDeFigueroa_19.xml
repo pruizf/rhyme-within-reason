@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VIII -</title>
+            <author> Francisco De Figueroa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Figueroa,  Francisco de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-++--+-" rhyme="A">Fiero dolor, que alegre alma y <w type="rhyme">segura</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">hacer pudieras triste y <w type="rhyme">temerosa</w>
+            </l>
+            <l n="3" met="+--+-+---+-" rhyme="B">¿cómo con mano larga y <w type="rhyme">enojosa</w>
+            </l>
+            <l n="4" met="-+---++--+-" rhyme="A">derramas sobre mí tanta <w type="rhyme">dulzura</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+++--+---+-" rhyme="A">No siente otro descanso, ni <w type="rhyme">procura</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">mayor deleite el alma <w type="rhyme">congojosa</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">que abrir la vena fértil y <w type="rhyme">abundosa</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">al llanto que me da mi <w type="rhyme">desventura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Por ti le alcanza, que tu sombra <w type="rhyme">encubre</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="-">la causa de mis lágrimas apenas,</l>
+            <l n="11" met="-+---+---+-" rhyme="D">confiada a mi mismo <w type="rhyme">pensamiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+--++-" rhyme="-">Mas sólo he de llorar las que van ellas</l>
+            <l n="13" met="-+---+---+-" rhyme="C">del fuego que me abrasa, y se <w type="rhyme">descubre</w>
+            </l>
+            <l n="14" met="-+--++---+-" rhyme="D">que nacen de más áspero <w type="rhyme">tormento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

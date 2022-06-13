@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto amoroso</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto amoroso </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+-++---+-" rhyme="A">Por la cumbre de un monte <w type="rhyme">levantado</w>,</l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">mis temerosos pasos, triste, <w type="rhyme">guío</w>;</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">por norte llevo sólo mi <w type="rhyme">albedrío</w>,</l>
+            <l n="4" met="-----+---+-" rhyme="A">y por mantenimiento, mi <w type="rhyme">cuidado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Llega la noche, y hállome <w type="rhyme">engañado</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">y sólo en la esperanza me <w type="rhyme">confío</w>;</l>
+            <l n="7" met="+--+-+++-+-" rhyme="B">llego al corriente mar de un hondo <w type="rhyme">río</w>:</l>
+            <l n="8" met="+-+--+-+-+-" rhyme="A">ni hallo barca ni puente, ni hallo <w type="rhyme">vado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Por la ribera arriba el paso <w type="rhyme">arrojo</w>;</l>
+            <l n="10" met="+--+-+---+-" rhyme="D">dame contento el agua con su <w type="rhyme">ruido</w>;</l>
+            <l n="11" met="--+--+---+-" rhyme="C">mas en verme perdido me <w type="rhyme">congojo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="D">Hallo pisadas de otro que ha <w type="rhyme">subido</w>;</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">párome a verlas; pienso con <w type="rhyme">enojo</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">si son de otro, como yo, <w type="rhyme">perdido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

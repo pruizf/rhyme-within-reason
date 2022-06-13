@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXLIV -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXLIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Esta nueva deidad <w type="rhyme">aprisionada</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">y entre grillos y rejas no <w type="rhyme">segura</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">mueve el orden fatal de la <w type="rhyme">ventura</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">con misteriosa mano <w type="rhyme">arrebatada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Cisne, Fénix de amor, ave <w type="rhyme">dotada</w>
+            </l>
+            <l n="6" met="---+---+++-" rhyme="B">del atributo de la luz más <w type="rhyme">pura</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">cuyo fraude en letargos de <w type="rhyme">dulzura</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">nos entrega a la muerte <w type="rhyme">idolatrada</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">los eternos sufragios <w type="rhyme">escarnece</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">y en tribunal de apetecida <w type="rhyme">pena</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">la causa esconde que el milagro <w type="rhyme">hace</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Pasa el peligro al que el aviso <w type="rhyme">ofrece</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">y con la misma muerte que <w type="rhyme">condena</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="E">a los que deja muerto <w type="rhyme">satisface</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

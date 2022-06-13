@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- I - A una dama sentada en su cama que, al calzarse los coturnos, se desmayó de ver a su amante, que impensadamente la cogió con el hurto en los pies, como otros en las manos (Soneto de un poeta ridículo en una academia)</title>
+            <author> Antonio Enriquez Gomez</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Antonio Enriquez Gomez</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- I - A una dama sentada en su cama que, al calzarse los coturnos, se desmayó de ver a su amante, que impensadamente la cogió con el hurto en los pies, como otros en las manos (Soneto de un poeta ridículo en una academia) </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">En Tirias tersa de purpúrea <w type="rhyme">pompa</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">Amariles deidad colura <w type="rhyme">campa</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">y unos talares de cristal se <w type="rhyme">zampa</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">de Venus alma, de Mercurio <w type="rhyme">trompa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+---+-" rhyme="A">Sin temer que un mosquito le <w type="rhyme">interrompa</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">en fuegos sulfurantes ampos <w type="rhyme">ampa</w>;</l>
+            <l n="7" met="---+---+-+-" rhyme="B">cuando su ninfo su conturno <w type="rhyme">estampa</w>
+            </l>
+            <l n="8" met="---+---+-+-" rhyme="A">en el Adonis, jabalí se <w type="rhyme">rompa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Colúmbralo la diosa medio <w type="rhyme">zamba</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">y queriendo imitar a la <w type="rhyme">hecatomba</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">extiende helante la cerúlea <w type="rhyme">gamba</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">suspiros gira por luciente <w type="rhyme">bomba</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">y el hijo propio del nocturno <w type="rhyme">Bamba</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="D">cuadrupedantes rayos le <w type="rhyme">rimbomba</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

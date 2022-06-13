@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIV - Al suceso de Susana en el baño</title>
+            <author> Trillo Y Figueroa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Trillo y Figueroa</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIV - Al suceso de Susana en el baño </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Al frío pedernal de nieve <w type="rhyme">cano</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">a pesar de las llamas que <w type="rhyme">fomenta</w>,</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">¿quiere, ¡oh duro amor! que el golpe <w type="rhyme">sienta</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">del acerado impulso de tu <w type="rhyme">mano</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-++--+-+-" rhyme="A">Caduco roble ha de ilustrar el <w type="rhyme">llano</w>
+            </l>
+            <l n="6" met="-----++--+-" rhyme="B">cuando su ancianidad vive por <w type="rhyme">cuenta</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">del duro escollo que en la lumbre <w type="rhyme">alienta</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">débil raíz fortalecida en <w type="rhyme">vano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="C">¿Qué flecha el casto pecho de <w type="rhyme">Susana</w>
+            </l>
+            <l n="10" met="+--++----+-" rhyme="D">no rebatiera, aun cuando la <w type="rhyme">porfía</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">de cuerda juvenil le diera <w type="rhyme">plumas</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Quebranta el arco pues, la sombra <w type="rhyme">vana</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">desata de esos ojos, porque el <w type="rhyme">día</w>
+            </l>
+            <l n="14" met="++---+---+-" rhyme="E">no muere aunque fluctúe en las <w type="rhyme">espumas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

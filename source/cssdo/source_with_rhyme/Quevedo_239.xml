@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Valimiento de la mentira</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Valimiento de la mentira  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+---+-" rhyme="A">Mal oficio es mentir, pero <w type="rhyme">abrigado</w>:</l>
+            <l n="2" met="+-+--+---+-" rhyme="B">eso tiene de sastre la <w type="rhyme">mentira</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">que viste al que la dice; y aun si <w type="rhyme">aspira</w>
+            </l>
+            <l n="4" met="-+---+++-+-" rhyme="A">a puesto el mentiroso, es bien <w type="rhyme">premiado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Pues la verdad amarga, tal <w type="rhyme">bocado</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">mi boca espuma con enojo y <w type="rhyme">ira</w>;</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y ayuno, el verdadero, que <w type="rhyme">suspira</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">envidie mi pellejo bien <w type="rhyme">curado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Yo trocaré mentiras a <w type="rhyme">dineros</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">que las mentiras ya quebrantan <w type="rhyme">peñas</w>;</l>
+            <l n="11" met="--+--+---+-" rhyme="C">y pidiendo andaré en los <w type="rhyme">mentideros</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">prestadas las mentiras a las <w type="rhyme">dueñas</w>:</l>
+            <l n="13" met="---+-+---+-" rhyme="C">que me las den a censo <w type="rhyme">caballeros</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">que me las vendan Lamias <w type="rhyme">halagüeñas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

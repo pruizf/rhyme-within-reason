@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXII - A estas palabras: nescitis quid petatis, que dijo Cristo a San Jacobo y a San Juan, cuando pidieron las sillas a su lado</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXII - A estas palabras: nescitis quid petatis, que dijo Cristo a San Jacobo y a San Juan, cuando pidieron las sillas a su lado </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">Si mereciendo sillas Juan y <w type="rhyme">Diego</w>,</l>
+            <l n="2" met="+-+--+---+-" rhyme="B">dice Cristo que erraron en <w type="rhyme">pedillas</w>,</l>
+            <l n="3" met="-----+-+-+-" rhyme="B">al que sin merecellas pide <w type="rhyme">sillas</w>,</l>
+            <l n="4" met="+--+-++--+-" rhyme="A">más le valiera ser mudo que <w type="rhyme">ciego</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">En la atención de Dios, humano <w type="rhyme">ruego</w>
+            </l>
+            <l n="6" met="++--++---+-" rhyme="B">no puede por sí solo <w type="rhyme">conseguillas</w>:</l>
+            <l n="7" met="+----+---+-" rhyme="B">hanse de conquistar con <w type="rhyme">maravillas</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">de amor nacido de divino <w type="rhyme">fuego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Sólo se sienta quien el cáliz <w type="rhyme">bebe</w>;</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">la Cruz el trono en la Pasión <w type="rhyme">dispensa</w>;</l>
+            <l n="11" met="--+--+---+-" rhyme="C">el descanso al tormento se le <w type="rhyme">debe</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Y en la bondad espléndida y <w type="rhyme">inmensa</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">la culpa gracia, como sangre, <w type="rhyme">llueve</w>,</l>
+            <l n="14" met="-----+-+-+-" rhyme="D">y la satisfacción está en la <w type="rhyme">ofensa</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

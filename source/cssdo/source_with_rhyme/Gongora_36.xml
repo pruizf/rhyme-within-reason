@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVII - A la Purísima Concepción de Nuestra Señora</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVII - A la Purísima Concepción de Nuestra Señora </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Si ociosa no asistió <w type="rhyme">naturaleza</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">admirada, a la tuya, ¡oh gran <w type="rhyme">Señora</w>!,</l>
+            <l n="3" met="--++---+-+-" rhyme="B">concepción limpia, donde ciega <w type="rhyme">ignora</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">lo que muda admiró de tu <w type="rhyme">pureza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Díganlo, ¡oh Virgen!, la mayor <w type="rhyme">belleza</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">del día cuya luz tu manto <w type="rhyme">dora</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">la que calza nocturna <w type="rhyme">brilladora</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">los que ciñen carbunclos tu <w type="rhyme">cabeza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-++--+-" rhyme="C">Pura la Iglesia ya, pura te <w type="rhyme">llama</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">la escuela, y todo pío afecto <w type="rhyme">sabio</w>
+            </l>
+            <l n="11" met="+----+++-+-" rhyme="E">cultas en tu favor da plumas <w type="rhyme">bellas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++--++-+-+-" rhyme="D">¿Qué mucho, pues, si aun hoy sellado el <w type="rhyme">labio</w>,</l>
+            <l n="13" met="-----+++-+-" rhyme="C">si la naturaleza aun hoy te <w type="rhyme">aclama</w>
+            </l>
+            <l n="14" met="+-+--++--+-" rhyme="E">Virgen pura, si el Sol, Luna y <w type="rhyme">estrellas</w>...?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- I -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- I - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">«¿Cuál es la causa, mi Damón, que, <w type="rhyme">estando</w>
+            </l>
+            <l n="2" met="--+--++--+-" rhyme="B">en la lucha de amor juntos, <w type="rhyme">trabados</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">con lenguas, brazos, pies, y <w type="rhyme">encadenados</w>
+            </l>
+            <l n="4" met="++---+-+-+-" rhyme="A">cual vid que entre el jazmín se va <w type="rhyme">enredando</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-++--+-" rhyme="A">y que el vital aliento ambos <w type="rhyme">tomando</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">en nuestros labios, de chupar <w type="rhyme">cansados</w>,</l>
+            <l n="7" met="-+-+-++--+-" rhyme="B">en medio a tanto bien, somos <w type="rhyme">forzados</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">llorar y suspirar de cuando en <w type="rhyme">cuando</w>?»</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="C">«Amor, mi Filis bella, que allá <w type="rhyme">dentro</w>
+            </l>
+            <l n="10" met="--+--++--+-" rhyme="D">nuestras almas juntó, quiere en su <w type="rhyme">fragua</w>
+            </l>
+            <l n="11" met="-+---+-+++-" rhyme="E">los cuerpos ajuntar también tan <w type="rhyme">fuerte</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">que, no pudiendo, como esponja el <w type="rhyme">agua</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">pasar del alma al dulce amado <w type="rhyme">centro</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">llora el velo mortal su avara <w type="rhyme">suerte</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

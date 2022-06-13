@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Si Amor el generoso y dulce <w type="rhyme">aliento</w>
+            </l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">en mi rendido pecho ardiendo <w type="rhyme">inspira</w>,</l>
+            <l n="3" met="++---+-+-+-" rhyme="B">yo ufano ensalzaré con noble <w type="rhyme">lira</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">la hermosa ocasión de mi <w type="rhyme">tormento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Aquel que en tierno y nuevo y alto <w type="rhyme">acento</w>
+            </l>
+            <l n="6" met="--++-+---+-" rhyme="B">celebró el verde lauro en quien <w type="rhyme">espira</w>
+            </l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">Erato, y a quien sigue, honra y <w type="rhyme">admira</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">de Italia bella el docto <w type="rhyme">ayuntamiento</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Oiría en le puro Elisio <w type="rhyme">prado</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">entre felices almas la <w type="rhyme">armonía</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="E">que llevaría deleitosa el <w type="rhyme">aura</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">y diría, del canto <w type="rhyme">arrebatado</w>:</l>
+            <l n="13" met="-++--+-+-+-" rhyme="D">«O es esta la suave lira <w type="rhyme">mía</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">o Betis, cual mi Sorga, tiene a <w type="rhyme">Laura</w>».</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

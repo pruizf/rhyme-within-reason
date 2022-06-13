@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVI -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--++--+-" rhyme="A">Sacrosanta, inmortal fuente que <w type="rhyme">sales</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">de Dios, de quien manaste <w type="rhyme">eternamente</w>,</l>
+            <l n="3" met="---+++-+-+-" rhyme="B">cuya lleneza es tal que, siendo <w type="rhyme">fuente</w>
+            </l>
+            <l n="4" met="-+-+-++--+-" rhyme="A">de Dios, el mismo Dios eres y <w type="rhyme">vales</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">redentora verdad, que a los <w type="rhyme">mortales</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">-¡oh, bien dichoso aquel que bien te <w type="rhyme">siente</w>!-</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">tu cuerpo das, velado en <w type="rhyme">accidente</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">de pan, restaurador de nuestros <w type="rhyme">males</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="C">Señor, pues ya se encubre el mortal <w type="rhyme">velo</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">la luz que en alto ardor de fe se <w type="rhyme">mira</w>,</l>
+            <l n="11" met="+--+-+--++-" rhyme="E">que es proporción igual con tu gran <w type="rhyme">llama</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">-¡Oh, Palabra de Dios bajada al <w type="rhyme">suelo</w>!-,</l>
+            <l n="13" met="+--+++-+-+-" rhyme="D">sube la mía do estás, tu luz <w type="rhyme">inspira</w>
+            </l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">a quien por fe te busca, adora y <w type="rhyme">ama</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

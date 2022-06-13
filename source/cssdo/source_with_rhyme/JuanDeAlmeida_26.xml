@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXII - A las que preguntaron como podía amar sin dar muestras de ello</title>
+            <author> Juan De Almeida</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Almeida</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXII - A las que preguntaron como podía amar sin dar muestras de ello </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-++--+-" rhyme="A">No falta amor do no falta <w type="rhyme">firmeza</w>
+            </l>
+            <l n="2" met="++-+-+---+-" rhyme="B">ni es sólo muestras piense que <w type="rhyme">consiste</w>,</l>
+            <l n="3" met="+-++-+-+-+-" rhyme="B">que él que sólo una ves de amor se <w type="rhyme">viste</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">su traje nunca olvida, ni <w type="rhyme">riqueza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+-++---+-" rhyme="A">Bien podrás tener muestras de <w type="rhyme">pobreza</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">pero no perderás lo que <w type="rhyme">quisiste</w>,</l>
+            <l n="7" met="++-+-----+-" rhyme="B">alma, una vez, que pues <w type="rhyme">obedeciste</w>
+            </l>
+            <l n="8" met="-+++++---+-" rhyme="A">su ley, no habrá en ti un punto de <w type="rhyme">flaqueza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----++-++-" rhyme="C">Mas si me preguntáis cómo en qué <w type="rhyme">suerte</w>
+            </l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">puedo tener amor y no <w type="rhyme">mostrarlo</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">que debe estar mi alma de él <w type="rhyme">ajena</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+--++-" rhyme="C">diré que aquél merece mayor <w type="rhyme">muerte</w>
+            </l>
+            <l n="13" met="-++--+---+-" rhyme="D">que no sabe su mal <w type="rhyme">disimularlo</w>,</l>
+            <l n="14" met="--++-+--++-" rhyme="E">pues que fe no se alcanza con gran <w type="rhyme">pena</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

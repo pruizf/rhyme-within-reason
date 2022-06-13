@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 721 - Acto III, FLAVIA De ¡Ay, verdades, que en amor...!</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 721 - Acto III, FLAVIA De ¡Ay, verdades, que en amor...! </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Cansada barca, que a morir <w type="rhyme">navega</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">cárcel cruel y cautiverio <w type="rhyme">largo</w>
+            </l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">con que la muerte tiene puesto <w type="rhyme">embargo</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">mientras el plazo de su deuda <w type="rhyme">llega</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Confuso caos y Babilonia <w type="rhyme">ciega</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">pesada carga y temeroso <w type="rhyme">cargo</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">dulce al dichoso, al desdichado <w type="rhyme">amargo</w>,</l>
+            <l n="8" met="+-+--++--+-" rhyme="A">que a uno excusa el morir y a otro le <w type="rhyme">ruega</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+-+-+-" rhyme="C">¡Qué largas esperanzas son <w type="rhyme">aquestas</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">con que vive la vida <w type="rhyme">entretenida</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">con el alma en demandas y <w type="rhyme">respuestas</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+-+++-" rhyme="D">Dicen que hasta la muerte todo es <w type="rhyme">vida</w>.</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">Mejor dijeran muertes <w type="rhyme">manifiestas</w>
+            </l>
+            <l n="14" met="---+---+-+-" rhyme="D">hasta que el alma en su lugar <w type="rhyme">resida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXV -</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">En medio del placer que el <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">me causa con mostrárseme <w type="rhyme">presente</w>,</l>
+            <l n="3" met="-+--+++--+-" rhyme="B">Amor, que por ser bien no lo <w type="rhyme">consiente</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">le vuelve por usanza al mal que <w type="rhyme">siento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="A"> Yo al gusto del primer <w type="rhyme">contentamiento</w>
+            </l>
+            <l n="6" met="-+---++--+-" rhyme="B">le esfuerzo para el bien do me <w type="rhyme">contente</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">mas no me vale, que <w type="rhyme">absolutamente</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">Amor en sólo el mal le tiene <w type="rhyme">atento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++---+-+-" rhyme="C">Y aunque Amor todo su poder me <w type="rhyme">diese</w>,</l>
+            <l n="10" met="++---+-+-+-" rhyme="D">no vale contra el vuestro, en siendo <w type="rhyme">mío</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">ni quiero yo que valga, aunque <w type="rhyme">pudiese</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">Mi bien y mal podéis, de vos lo <w type="rhyme">fío</w>:</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">bástame el mal, si yo lo <w type="rhyme">mereciese</w>,</l>
+            <l n="14" met="--+--++--+-" rhyme="D">que pensar en el bien es <w type="rhyme">desvarío</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

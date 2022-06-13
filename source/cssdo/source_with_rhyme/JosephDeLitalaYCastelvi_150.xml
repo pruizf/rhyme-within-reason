@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCVII - Al haber erigido templo los romanos a la belleza de Flora, mujer sensual y profana</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCVII - Al haber erigido templo los romanos a la belleza de Flora, mujer sensual y profana </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">Las travesuras de la edad <w type="rhyme">mejora</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">con Altares y Templo tu <w type="rhyme">hermosura</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y la belleza que lució de <w type="rhyme">impura</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">por Deidad la conoce Roma (a <w type="rhyme">Flora</w>).</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Tu imagen venerada en culto <w type="rhyme">adora</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">vencida del cincel la <w type="rhyme">Arquitectura</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y ceñida en diademas tu <w type="rhyme">figura</w>,</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">votos y ofrendas próvida <w type="rhyme">atesora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">¡O ceguedad! ¡O necio <w type="rhyme">Gentilismo</w>!</l>
+            <l n="10" met="---+-+---+-" rhyme="D">que los delitos honras, y <w type="rhyme">torpezas</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">dignos de eterna llama, y del <w type="rhyme">Abismo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-++--+-" rhyme="D">Mas estas Fabio no son <w type="rhyme">extrañezas</w>,</l>
+            <l n="13" met="+-+--+-+-+-" rhyme="C">cada día tocamos esto <w type="rhyme">mismo</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="D">Aras tienen, insultos, y <w type="rhyme">bajezas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

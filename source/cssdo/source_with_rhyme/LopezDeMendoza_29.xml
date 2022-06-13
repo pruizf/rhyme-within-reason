@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXV -</title>
+            <author> Lopez De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lopez de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Del çelestial exército <w type="rhyme">patrón</w>
+            </l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">e del segundo choro más <w type="rhyme">preçioso</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="A">de los ángeles malos <w type="rhyme">dampnaçión</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="B">Miguel Arcángel, duque <w type="rhyme">glorioso</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+--+--+-" rhyme="A">muy digo alférez del sacro <w type="rhyme">pendón</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">invencible cruzado <w type="rhyme">victorioso</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="A">tú debellaste al cruel <w type="rhyme">dragón</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="B">en virtud del excelso <w type="rhyme">poderoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Por todos estos premios te <w type="rhyme">honoramos</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">e veneramos, príncipe <w type="rhyme">excellente</w>,</l>
+            <l n="11" met="--+-+---+-" rhyme="C">e por ellos mesmos te <w type="rhyme">rogamos</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">que ruegues al Señor <w type="rhyme">Omnipoetnte</w>
+            </l>
+            <l n="13" met="---+-----+-" rhyme="C">nos dignifique, porque <w type="rhyme">poseamos</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">la gloria a todas glorias <w type="rhyme">preçedente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

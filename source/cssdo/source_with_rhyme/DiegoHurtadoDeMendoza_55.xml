@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIX -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">¡Oh Venus, alcahueta y <w type="rhyme">hechicera</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">que nos traes embaucados tierra y <w type="rhyme">cielo</w>,</l>
+            <l n="3" met="+-+--+-+-+-" rhyme="A">cuántas veces, por falta de una <w type="rhyme">estera</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="B">hiciste monipodios en el <w type="rhyme">suelo</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+-++-+-+-" rhyme="B">¡Cuántas veces te han visto andar en <w type="rhyme">celo</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="A">tras los planetas machos, <w type="rhyme">cachondera</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">abrazada luchando pelo a <w type="rhyme">pelo</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">y pellejo a pellejo dentro y <w type="rhyme">fuera</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">No me andes rodeando, puta <w type="rhyme">vieja</w>,</l>
+            <l n="10" met="-++-++---+-" rhyme="D">que no tengo tan dura la <w type="rhyme">costilla</w>;</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">guarda que está mi mano te <w type="rhyme">apareja</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="D">con un cuarto abrochado o <w type="rhyme">calderilla</w>,</l>
+            <l n="13" met="++---+-+-+-" rhyme="C">un mínimo caudal de rabo a <w type="rhyme">oreja</w>,</l>
+            <l n="14" met="-+-+-++--+-" rhyme="D">cual nunca dio a mujer hombre en <w type="rhyme">Castilla</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La entretenida, Segunda jornada, DON AMBROSIO</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De La entretenida, Segunda jornada, DON AMBROSIO</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+-+-" rhyme="A">Por ti, virgen hermosa, esparce <w type="rhyme">ufano</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">contra el rigor con que amenaza el <w type="rhyme">cielo</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">entre los surcos del labrado <w type="rhyme">suelo</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">el pobre labrador el rico <w type="rhyme">grano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+--++-" rhyme="A">Por ti surca las aguas del mar <w type="rhyme">cano</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">el mercader en débil leño a <w type="rhyme">vuelo</w>;</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y, en el rigor del sol como del <w type="rhyme">hielo</w>,</l>
+            <l n="8" met="+-+--+-+-+-" rhyme="A">pisa alegre el soldado el risco y <w type="rhyme">llano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Por ti infinitas veces, ya <w type="rhyme">perdida</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">la fuerza del que busca y del que <w type="rhyme">ruega</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">se cobra y se promete la <w type="rhyme">victoria</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="C">Por ti, báculo fuerte de la <w type="rhyme">vida</w>,</l>
+            <l n="13" met="++-+---+-+-" rhyme="D">tal vez se aspira a lo imposible, y <w type="rhyme">llega</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">el deseo a las puertas de la <w type="rhyme">gloria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXIX - Del Príncipe de Esquilache</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXIX - Del Príncipe de Esquilache </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+--++---+-" rhyme="A">Si a Filis por qué llora le <w type="rhyme">pregunto</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">que no es del alma su tristeza <w type="rhyme">jura</w>;</l>
+            <l n="3" met="-+---+---+-" rhyme="B">mas yo, por la inquietud de su <w type="rhyme">hermosura</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">que son de amor las lágrimas <w type="rhyme">barrunto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A"> Llorando niega, y a sus penas <w type="rhyme">junto</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">lo que ella siempre desmentir <w type="rhyme">procura</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">sin ver que encubre su infeliz <w type="rhyme">cordura</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">en cuerpo alegre corazón <w type="rhyme">difunto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+-+-+-" rhyme="C"> ¡Qué pasos da su engaño tan <w type="rhyme">perdidos</w>!</l>
+            <l n="10" met="++-++--+-+-" rhyme="D">¡Qué mal se tuerce una costumbre <w type="rhyme">larga</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">pues no la vencen máquinas ni <w type="rhyme">ruegos</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="C"> ¡Qué poco debe amor a los <w type="rhyme">sentidos</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">si al tiempo que el secreto les <w type="rhyme">encarga</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="E">juran los ojos contra el alma <w type="rhyme">ciegos</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

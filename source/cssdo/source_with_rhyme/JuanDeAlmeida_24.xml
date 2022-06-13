@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXX - De Fileno a la que dio a besar sus manos</title>
+            <author> Juan De Almeida</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Almeida</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXX - De Fileno a la que dio a besar sus manos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Se escribe de Achilles el <w type="rhyme">greciano</w>,</l>
+            <l n="2" met="--++-+---+-" rhyme="B">de Peleo hijo fuerte y <w type="rhyme">animoso</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">en todas sus hazañas tan <w type="rhyme">famoso</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">cuanto en aquellas mismas <w type="rhyme">inhumano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="-">Que a Telepho con lanza y cruda muerte</l>
+            <l n="6" met="++-+-+---+-" rhyme="B">dio tal herida y golpe <w type="rhyme">peligroso</w>,</l>
+            <l n="7" met="--++++---+-" rhyme="B">que si no fue él, no fue otro <w type="rhyme">poderoso</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">a hacerle de su mal que fuese <w type="rhyme">sano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-++--+-" rhyme="C">Así, señora, a mí me ha <w type="rhyme">sucedido</w>,</l>
+            <l n="10" met="-+-+-----+-" rhyme="D">con esas manos vuestras <w type="rhyme">cristalinas</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="-">de do salió el efecto de mi pena.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Con ellas fue herido y <w type="rhyme">socorrido</w>,</l>
+            <l n="13" met="+----++--+-" rhyme="D">dándoseme a besar manos <w type="rhyme">divinas</w>;</l>
+            <l n="14" met="-+-+-+--++-" rhyme="-">que dais mayor remedio a mayor pena.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

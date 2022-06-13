@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXIV - Al padre Pineda, porque no le dio premio en un certamen</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXIV - Al padre Pineda, porque no le dio premio en un certamen </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">En justa, injusta expuesto a la <w type="rhyme">sentencia</w>
+            </l>
+            <l n="2" met="++---+---+-" rhyme="B">de un Padre positivo <w type="rhyme">azafranado</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">paciencia Job si alguna os han <w type="rhyme">dejado</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="-">los prolijos escritos de su Encía.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Consuelo me dará, sino <w type="rhyme">paciencia</w>,</l>
+            <l n="6" met="+-+---+--+-" rhyme="B">ver que en Justas entre, y fui <w type="rhyme">desgraciado</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">en el mes que perdió el <w type="rhyme">Apostolado</w>,</l>
+            <l n="8" met="++---+---+-" rhyme="A">un justo por divina <w type="rhyme">providencia</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---++--+-" rhyme="C">Quien justo de la tela es <w type="rhyme">Pinabete</w>,</l>
+            <l n="10" met="-++--+--++-" rhyme="D">y no muy de seguro, aunque sea <w type="rhyme">pino</w>,</l>
+            <l n="11" met="-++--+--++-" rhyme="C">que hoy es pino, y mañana será <w type="rhyme">vete</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+---+-" rhyme="D">No más judicatura de <w type="rhyme">Teatino</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">cofre te digo, obrero con <w type="rhyme">bonete</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="D">que más tiene de tea, que de <w type="rhyme">tino</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

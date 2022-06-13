@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Francisco De Figueroa</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Figueroa,  Francisco de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Hierbas floridas, verdes, <w type="rhyme">deleitosas</w>,</l>
+            <l n="2" met="---+-++--+-" rhyme="B">que con el blanco pie sois <w type="rhyme">oprimidas</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">de aquella que en su bulto <w type="rhyme">recogidas</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">tiene todas las gracias más <w type="rhyme">preciosas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Dichosas sombras suaves y <w type="rhyme">amorosas</w>,</l>
+            <l n="6" met="-+----+-++-" rhyme="B">tan gratas a la que roba mil <w type="rhyme">vidas</w>
+            </l>
+            <l n="7" met="+---++---+-" rhyme="B">aire que del fino oro <w type="rhyme">desparcidas</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">las hebras traes revueltas con las <w type="rhyme">rosas</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">claras y frescas fuentes <w type="rhyme">cristalinas</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">que de bañar en vos sus blancas <w type="rhyme">manos</w>
+            </l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">os quiso hacer mi Filis tanto <w type="rhyme">dignas</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">cuando sintáis sus pasos <w type="rhyme">soberanos</w>
+            </l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">direisle, si a mis ojos son <w type="rhyme">benignas</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">que no me sean los suyos tan <w type="rhyme">tiranos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

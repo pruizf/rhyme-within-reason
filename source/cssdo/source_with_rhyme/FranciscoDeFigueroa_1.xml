@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Figueroa, Francisco de Alcalá de Henares. 36 - 1620 Pertenece al grupo de poetas de Alcalá - Salamanca. Alcanzó el apelativo de «El Divino». Casado con María de Vargas. Cervantes incluyó en La Galatea uno de sus sonetos. ¡Ay, esperanza, lisonjera vana...</title>
+            <author> Francisco De Figueroa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Figueroa,  Francisco de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Figueroa, Francisco de Alcalá de Henares. 36 - 1620 Pertenece al grupo de poetas de Alcalá - Salamanca. Alcanzó el apelativo de «El Divino». Casado con María de Vargas. Cervantes incluyó en La Galatea uno de sus sonetos. ¡Ay, esperanza, lisonjera vana... </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">¡Ay, esperanza lisonjera y <w type="rhyme">vana</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">ministra de cuidado y de <w type="rhyme">tormento</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">que el más osado y loco <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">haces juzgar segura empresa y <w type="rhyme">llana</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--++--+-" rhyme="A">Si, cual suele llevar pluma <w type="rhyme">liviana</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">te me ha llevado de continuo el <w type="rhyme">viento</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y con daño y verguenza, me <w type="rhyme">arrepiento</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">de haber creído en confianza <w type="rhyme">humana</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Déjame, que si amor y mi <w type="rhyme">fortuna</w>
+            </l>
+            <l n="10" met="+-+-++---+-" rhyme="D">te han cortado, mil veces <w type="rhyme">floreciendo</w>,</l>
+            <l n="11" met="++---++--+-" rhyme="E">¿qué puedes prometer, seca y <w type="rhyme">perdida</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Marchítanse tus flores en <w type="rhyme">saliendo</w>,</l>
+            <l n="13" met="--++---+-+-" rhyme="C">sin hacer fruto, y si le hace <w type="rhyme">alguna</w>,</l>
+            <l n="14" met="++-+---+-+-" rhyme="E">es cebo dulce para amarga <w type="rhyme">vida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La reina de los reyes</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De La reina de los reyes </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Muerto, sin duda, Virgen <w type="rhyme">Soberana</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">estuve cuando os vi, pues que me <w type="rhyme">privo</w>
+            </l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">de aquella gloria cuando me hallo <w type="rhyme">vivo</w>,</l>
+            <l n="4" met="-++--+-+-+-" rhyme="A">por ser de ella incapaz la vida <w type="rhyme">humana</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+--++-" rhyme="A"> El alma de gozarla quedó <w type="rhyme">ufana</w>,</l>
+            <l n="6" met="-++--+-+-+-" rhyme="B">y yo preso de amor, y aquí <w type="rhyme">cautivo</w>,</l>
+            <l n="7" met="-++--+---+-" rhyme="B">haciendo estos favores que <w type="rhyme">recibo</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">mi fe segura y mi esperanza <w type="rhyme">llana</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+--++-" rhyme="C"> Si el ausente amador con razón <w type="rhyme">pide</w>
+            </l>
+            <l n="10" met="+-+--+---+-" rhyme="D">un retrato a quien ama, que <w type="rhyme">entretenga</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="E">las esperanzas de la vista y <w type="rhyme">trato</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C"> mientras la carne vuestra vista <w type="rhyme">impide</w>,</l>
+            <l n="13" met="--++-+--++-" rhyme="D">permitid, gran Señora, que yo <w type="rhyme">tenga</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="E">por prenda de mi fe vuestro <w type="rhyme">retrato</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

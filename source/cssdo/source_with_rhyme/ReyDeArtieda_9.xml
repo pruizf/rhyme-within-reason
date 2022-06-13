@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De El gran Semiramis Jornada tercera - Semiramis</title>
+            <author> Rey De Artieda</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Rey de  Artieda,  Andrés</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De El gran Semiramis Jornada tercera - Semiramis </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+---+-" rhyme="A">Ya el tiempo con su vuelo <w type="rhyme">acostumbrado</w>
+            </l>
+            <l n="2" met="+-+-++---+-" rhyme="B">ha traído a tal punto mis <w type="rhyme">deseos</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">que libre, sin ficciones ni <w type="rhyme">rodeos</w>
+            </l>
+            <l n="4" met="+----++--+-" rhyme="A">muestre mi corazón fuerte y <w type="rhyme">osado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-++--+-" rhyme="A">El Capitán y Rey tan <w type="rhyme">señalado</w>,</l>
+            <l n="6" met="--++-+---+-" rhyme="B">que con tan grandes triunfos y <w type="rhyme">trofeos</w>
+            </l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">de persa, libios, medos, <w type="rhyme">nabateos</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">y de otros mil sus templos ha <w type="rhyme">adornado</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+++--+--++-" rhyme="C">no ha sido Ninías, como habéis <w type="rhyme">creído</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">¡oh mil vasallos fuertes y <w type="rhyme">leales</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">sino su madre, puesta en su <w type="rhyme">vestido</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+---+-" rhyme="D">Yo he sido el Capitán de los <w type="rhyme">Reales</w>,</l>
+            <l n="13" met="---+-++-++-" rhyme="C">y mi querido hijo es quien ha <w type="rhyme">sido</w>
+            </l>
+            <l n="14" met="+----+---+-" rhyme="D">virgen entre las vírgenes <w type="rhyme">vestales</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

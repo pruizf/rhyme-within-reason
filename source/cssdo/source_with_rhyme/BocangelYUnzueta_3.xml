@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XI -</title>
+            <author> Bocangel Y Unzueta</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">No puede ser; y miente el <w type="rhyme">sentimiento</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">que el dolor, como ciego, no es <w type="rhyme">testigo</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">o padece excepción como <w type="rhyme">enemigo</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">que presenta la lid al <w type="rhyme">sufrimiento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+++---+-" rhyme="A">Temo de Fili un falso <w type="rhyme">pensamiento</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">y más cuando le temo por <w type="rhyme">castigo</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">de que acaso madrugo yo <w type="rhyme">conmigo</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">lo que aún de Filis duerme en el <w type="rhyme">intento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Darla que no temer a su <w type="rhyme">mudanza</w>
+            </l>
+            <l n="10" met="-++--+---+-" rhyme="D">será darla a pensar que <w type="rhyme">desconfío</w>;</l>
+            <l n="11" met="+--+-+-+-+-" rhyme="E">temo avivar mi mal si no le <w type="rhyme">creo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="C">Neutral quiero que estés, <w type="rhyme">desconfianza</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="E">que, como mientras el temido <w type="rhyme">empleo</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="D">sé verdadera en el momento <w type="rhyme">mío</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

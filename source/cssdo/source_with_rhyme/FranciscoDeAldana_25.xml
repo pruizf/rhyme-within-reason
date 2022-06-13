@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIII -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">¡Oh, del inmenso ser <w type="rhyme">concebidora</w>,</l>
+            <l n="2" met="-+--++-+-+-" rhyme="B">después de quien sois vos la más <w type="rhyme">subida</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">antes del tiempo amada y <w type="rhyme">conocida</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">de la mente inmortal que os <w type="rhyme">enamora</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">¡Oh, dichosa la edad, bendita el <w type="rhyme">hora</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">-flor de belleza en Jericó <w type="rhyme">nacida</w>-</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">que en vos, por nuestro bien, quedó <w type="rhyme">escondida</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">la encarnada verdad que el alma <w type="rhyme">adora</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+---+-" rhyme="C">Reina eres de los coros <w type="rhyme">celestiales</w>,</l>
+            <l n="10" met="+----++--+-" rhyme="D">risa del serafín, gozo del <w type="rhyme">mundo</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">sol de la inmensa luz del <w type="rhyme">Paraíso</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">honra, puerto y salud de los <w type="rhyme">mortales</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">terror, castigo y pena del <w type="rhyme">profundo</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="E">criada en Dios, de quien nacer El <w type="rhyme">quiso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

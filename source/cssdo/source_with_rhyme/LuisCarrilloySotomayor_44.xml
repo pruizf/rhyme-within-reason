@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIX - A las prisiones del amor, imposibles de romper</title>
+            <author> Luis Carrilloy Sotomayor</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis Carrilloy Sotomayor</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIX - A las prisiones del amor, imposibles de romper </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">¿Vosotras sois? segunda vez, <w type="rhyme">dudoso</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="B">tiemblo vuestro rigor y mi <w type="rhyme">ventura</w>:</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">apenas libre el pecho se <w type="rhyme">asegura</w>,</l>
+            <l n="4" met="-+-+-++--+-" rhyme="A">apenas libre Amor goza <w type="rhyme">reposo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">¡Prisiones que os rompí! ¡Oh yo <w type="rhyme">dichoso</w>!</l>
+            <l n="6" met="---+-+---+-" rhyme="B">si en mi ventura cabe mi <w type="rhyme">cordura</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">¡gracias, oh santo tiempo, oh dios! <w type="rhyme">procura</w>
+            </l>
+            <l n="8" met="+--+-++--+-" rhyme="A">dicha, si puede ser, pecho <w type="rhyme">animoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Esto libre canté cuando <w type="rhyme">romperlas</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">el tiempo permitió, y Amor <w type="rhyme">tirano</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="-">así me respondió, soberbio entre ellas:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">«Huyes, ¡oh Fabio!, tu prisión en <w type="rhyme">vano</w>:</l>
+            <l n="13" met="--+++--+-+-" rhyme="C">volverá Amor, que es poderoso, a <w type="rhyme">hacerlas</w>,</l>
+            <l n="14" met="-+-+++-+-+-" rhyme="D">que Amor en fin es dios, y el tiempo <w type="rhyme">humano</w>».</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

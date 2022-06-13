@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XII - A Micaela de Luján, su amante</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XII - A Micaela de Luján, su amante </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Así en las olas de la mar <w type="rhyme">feroces</w>,</l>
+            <l n="2" met="+-++---+-+-" rhyme="B">Betis, mil siglos tu cristal <w type="rhyme">escondas</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">y otra tanta ciudad sobre tus <w type="rhyme">ondas</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">de mil navales edificio <w type="rhyme">goces</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Así tus cuevas no interrumpan <w type="rhyme">voces</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">ni quillas toquen, ni permitan <w type="rhyme">sondas</w>;</l>
+            <l n="7" met="--+-++---+-" rhyme="B">y en tus campos tan fértil <w type="rhyme">correspondas</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">que rompa el trigo las agudas <w type="rhyme">hoces</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Así en tu arena el indio margen <w type="rhyme">rinda</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">y al avariento corazón <w type="rhyme">descubras</w>
+            </l>
+            <l n="11" met="++--++-+-+-" rhyme="E">más barras que en ti mira el cielo <w type="rhyme">estrellas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">Que si pusiere en ti sus pies <w type="rhyme">Lucinda</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">no por besarlos sus estampas <w type="rhyme">cubras</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">que estoy celoso, y voy leyendo en <w type="rhyme">ellas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

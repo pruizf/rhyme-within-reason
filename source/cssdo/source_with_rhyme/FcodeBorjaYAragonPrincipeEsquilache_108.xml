@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXVIII -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-----+-+-+-" rhyme="A">Quien de disimular ignora el <w type="rhyme">arte</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">ni amar pretenda, ni reinar <w type="rhyme">espere</w>;</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">pues más trofeos desarmado <w type="rhyme">adquiere</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">con maña el tiempo, que con fuerzas <w type="rhyme">Marte</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Y el cielo atento con la industria <w type="rhyme">parte</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">el bien, que ciega la violencia <w type="rhyme">quiere</w>;</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">y cuanto más en le furor <w type="rhyme">creciere</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">la busca más en escondida <w type="rhyme">parte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Quien calla, encubre su animoso <w type="rhyme">intento</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">sin armas mata, y del mayor <w type="rhyme">despojo</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">la suerte aguarda, que a gozar <w type="rhyme">convenga</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">Ni estima la ambición del <w type="rhyme">vencimiento</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">porque es en quien venció su propio <w type="rhyme">enojo</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">menor victoria, que a los otros <w type="rhyme">venga</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

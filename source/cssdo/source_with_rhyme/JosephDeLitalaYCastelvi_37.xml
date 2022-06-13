@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXI - Al sepulcro de Orfeo</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXI - Al sepulcro de Orfeo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">Sí en el Mudo silencio, sí en la <w type="rhyme">umbría</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">estancia, y en la sombra (o <w type="rhyme">caminante</w>)</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">el Mármol te callare el tierno <w type="rhyme">Amante</w>
+            </l>
+            <l n="4" met="-+---+--++-" rhyme="A">que esconde, te lo dice la voz <w type="rhyme">mía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+-+-+-" rhyme="A">Yace pues con su Losa yerta, y <w type="rhyme">fría</w>,</l>
+            <l n="6" met="---+-++--+-" rhyme="B">el que con dulce Amor, tierno <w type="rhyme">distante</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">a Eurídice libró con paso <w type="rhyme">errante</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">de la región de Rhadamanto <w type="rhyme">impía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">El Orfeo divino, a cuyo <w type="rhyme">acento</w>,</l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">la selva pasos dio, siguió la <w type="rhyme">fiera</w>,</l>
+            <l n="11" met="-+---+--++-" rhyme="C">corrieron los escollos, cesó el <w type="rhyme">viento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">El Ebro le detuvo en su <w type="rhyme">ribera</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">y pudo tanto el lírico <w type="rhyme">momento</w>,</l>
+            <l n="14" met="---+---+-+-" rhyme="D">que hasta el Erebo melodías <w type="rhyme">era</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

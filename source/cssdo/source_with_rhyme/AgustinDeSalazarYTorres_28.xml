@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII - A las ojeras de una dama</title>
+            <author> Agustin De Salazar Y Torres</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Agustin de Salazar y Torres</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - A las ojeras de una dama </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">Iluminados del color del <w type="rhyme">cielo</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">los párpados hermosos de unos <w type="rhyme">ojos</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">raudales de zafir que, sin <w type="rhyme">enojos</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">los sentidos anegan por <w type="rhyme">consuelo</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">piratas son del sol que, sin <w type="rhyme">desvelo</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">las luces roban a sus rayos <w type="rhyme">rojos</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que valiosos blasonan por <w type="rhyme">despojos</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">sombra a sus luces y a sus rayos <w type="rhyme">hielo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Del alma más esquiva las <w type="rhyme">potencias</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">el sitio azul en cercos y <w type="rhyme">clausura</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">sitiadas rinde sin acción <w type="rhyme">violenta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+--+--+-" rhyme="C">Que es imposible en tantas <w type="rhyme">influencias</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="D">resistir el imán de su <w type="rhyme">hermosura</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">por centro de la vida, que la <w type="rhyme">alienta</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

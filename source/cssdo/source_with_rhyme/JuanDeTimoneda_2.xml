@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- X -</title>
+            <author> Juan De Timoneda</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Timoneda</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- X - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Encierra, oh claro sol de <w type="rhyme">hermosura</w>,</l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">tu luz, y deja ver esas <w type="rhyme">estrellas</w>,</l>
+            <l n="3" met="++--++-+-+-" rhyme="B">¿no ves que ningún modo deja <w type="rhyme">vellas</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">el grande resplandor de tu <w type="rhyme">figura</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Qué petición la mía, y qué <w type="rhyme">locura</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">tu claridad extiende en medio de <w type="rhyme">ellas</w>,</l>
+            <l n="7" met="-+---+++-+-" rhyme="B">conozcan que ante ti son todas <w type="rhyme">ellas</w>
+            </l>
+            <l n="8" met="--+---+--+-" rhyme="A">como es ante lo vio la <w type="rhyme">pintura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Si alguno contradice lo que <w type="rhyme">digo</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">si alguno tiene falso el <w type="rhyme">pensamiento</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">si alguno de pequeña luz se <w type="rhyme">ciega</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="C">quien no tiene pasión me sea <w type="rhyme">testigo</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">que a tu beldad, valor ,<w type="rhyme">merecimiento</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">de cuantas visto he ninguna <w type="rhyme">allega</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

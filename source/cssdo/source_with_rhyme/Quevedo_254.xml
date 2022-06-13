@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A las cenizas de un amante puestas en un reloj</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A las cenizas de un amante puestas en un reloj </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Ostentas, ¡oh felice!, en tus <w type="rhyme">cenizas</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">el afecto inmortal del alma <w type="rhyme">interno</w>;</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">que como es del amor el curso <w type="rhyme">eterno</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">los días a tus ansias <w type="rhyme">eternizas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Muerto del tiempo, el orden <w type="rhyme">tiranizas</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">pues mides, derogando su <w type="rhyme">gobierno</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">las horas al dolor del pecho <w type="rhyme">tierno</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">los minutos al bien que <w type="rhyme">inmortalizas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">¡Oh milagro! ¡Oh portento <w type="rhyme">peregrino</w>!,</l>
+            <l n="10" met="-----+---+-" rhyme="D">que de lo natural los <w type="rhyme">estatutos</w>
+            </l>
+            <l n="11" met="+----+---+-" rhyme="E">rompes con eternar su <w type="rhyme">movimiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+---+-" rhyme="C">Tú mismo constituyes tu <w type="rhyme">destino</w>:</l>
+            <l n="13" met="--+--+---+-" rhyme="D">pues por días, por horas, por <w type="rhyme">minutos</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">eternizas tu propio <w type="rhyme">sentimiento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

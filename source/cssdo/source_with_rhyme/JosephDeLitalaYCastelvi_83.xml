@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVI - Al Conde de Villamediana en el Poema de Apolo y Daphne</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVI - Al Conde de Villamediana en el Poema de Apolo y Daphne </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">Huye Daphne cruel la Ninfa <w type="rhyme">bella</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">que la margen honraba del <w type="rhyme">Peneo</w>;</l>
+            <l n="3" met="+--+-----+-" rhyme="B">huye de Apolo, cuyo <w type="rhyme">devaneo</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">por gozarla anhelaba, y por <w type="rhyme">cogella</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Sorda a sus voces, muda a su <w type="rhyme">querella</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">con su esquivez aumenta su <w type="rhyme">deseo</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">y huyendo de Cupido el dulce <w type="rhyme">empleo</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">tronco frondoso sus desdenes <w type="rhyme">sella</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Vida le da tu acento <w type="rhyme">repetido</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">en plectro (o ilustre Conde <w type="rhyme">armonioso</w>),</l>
+            <l n="11" met="--+--++--+-" rhyme="E">cuyos ecos el Monte oye <w type="rhyme">eminente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+++-" rhyme="C">Su rigor para ti dichoso ha <w type="rhyme">sido</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">pues cuantas ramas forma el bulto <w type="rhyme">hermoso</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">laureles son para tu Augusta <w type="rhyme">frente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

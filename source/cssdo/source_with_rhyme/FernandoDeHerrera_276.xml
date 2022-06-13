@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIX - A don Álvaro de Bazán primer marqués de Santa Cruz</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIX - A don Álvaro de Bazán primer marqués de Santa Cruz </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Esconde, tardo Bágrada, en tu <w type="rhyme">seno</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">la fiera armada de tu osada <w type="rhyme">gente</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y arrancando los cuernos de la <w type="rhyme">frente</w>
+            </l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">pierde el orgullo ya, de esfuerzo <w type="rhyme">ajeno</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Que a todo el ancho Ponto pone <w type="rhyme">freno</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">vengando con la aguda espada <w type="rhyme">ardiente</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">los insultos, que sufre el <w type="rhyme">Occidente</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">el domador del cita y <w type="rhyme">agareno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Verás la tierra presa, el mar <w type="rhyme">sangriento</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">y al nombre de Bazán temblar <w type="rhyme">medroso</w>
+            </l>
+            <l n="11" met="---+++---+-" rhyme="E">el corazón más bravo y <w type="rhyme">arrogante</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">y atado en hierro el cuello <w type="rhyme">descontento</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">rendirse al brazo suyo <w type="rhyme">poderoso</w>
+            </l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">cuanto abrazan el Nilo y grande <w type="rhyme">Atlante</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

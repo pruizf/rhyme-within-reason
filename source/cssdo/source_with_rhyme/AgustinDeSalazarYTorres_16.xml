@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIII - A un retrato de Cintia, antes de haberla visto</title>
+            <author> Agustin De Salazar Y Torres</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Agustin de Salazar y Torres</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIII - A un retrato de Cintia, antes de haberla visto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Copiado tu esplendor llegué a <w type="rhyme">mirar</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">adelantando, Cintia, el <w type="rhyme">padecer</w>;</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">y no pudiendo, por fingida, <w type="rhyme">arder</w>,</l>
+            <l n="4" met="--+--++--+-" rhyme="A">aun fingida la voz, pudo <w type="rhyme">abrasar</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Imaginada te llegué a <w type="rhyme">mirar</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">no imaginando nunca <w type="rhyme">merecer</w>;</l>
+            <l n="7" met="+----+-+-+-" rhyme="B">¿cómo idolatrará quien llega a <w type="rhyme">ver</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">lo que adoró de sólo <w type="rhyme">imaginar</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Toda el alma de mí se <w type="rhyme">enajenó</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">y a ti sin alma el alma te <w type="rhyme">ofrecí</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">sin albedrío mi pasión <w type="rhyme">quedó</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">y así, en amarte nunca te <w type="rhyme">ofendí</w>,</l>
+            <l n="13" met="----++--++-" rhyme="-">puesto que sin mí mismo te amé yo,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">y tan atento, que era a ti sin <w type="rhyme">ti</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

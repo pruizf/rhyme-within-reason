@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXIX - A las obras de Lope de Vega</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXIX - A las obras de Lope de Vega </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">«Aquí del Conde Claros», dijo, y <w type="rhyme">luego</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">le agregaron a Lope los <w type="rhyme">secuaces</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">con la Estrella de Venus mil <w type="rhyme">Rapaces</w>,</l>
+            <l n="4" met="--+--+-+++-" rhyme="A">y con mil soliloquios sólo un <w type="rhyme">ciego</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---++--+-+-" rhyme="A">Con la espada un lanudazo <w type="rhyme">Lego</w>,</l>
+            <l n="6" met="--+-++---+-" rhyme="B">con la Arcadia dos Dueñas <w type="rhyme">incapaces</w>,</l>
+            <l n="7" met="++---+---+-" rhyme="B">tres Monjas con la Angélica <w type="rhyme">locuaces</w>,</l>
+            <l n="8" met="-----+++-+-" rhyme="A">y con el Peregrino un Fray <w type="rhyme">Borrego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+++-+-+-" rhyme="C">Con el Isidro un Cura de una <w type="rhyme">Aldea</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">con los Pastores de Belén <w type="rhyme">Burguillo</w>,</l>
+            <l n="11" met="-----+-+-+-" rhyme="E">y con la Filomena un <w type="rhyme">Idiota</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-----+-" rhyme="C">Vínose Tifis de la <w type="rhyme">Dragontea</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="E">candil, farol de la estampada <w type="rhyme">flota</w>,</l>
+            <l n="14" met="-+-+-++--+-" rhyme="D">aquella gente sigue a este <w type="rhyme">caudillo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

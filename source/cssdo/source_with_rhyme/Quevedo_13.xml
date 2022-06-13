@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A un juez mercadería</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A un juez mercadería  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Las leyes con que juzgas, ¡oh <w type="rhyme">Batino</w>!,</l>
+            <l n="2" met="+-+--+---+-" rhyme="B">menos bien las estudias que las <w type="rhyme">vendes</w>;</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">lo que te compran solamente <w type="rhyme">entiendes</w>;</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">más que Jasón te agrada el <w type="rhyme">Vellocino</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">El humano derecho y el <w type="rhyme">divino</w>,</l>
+            <l n="6" met="-----+---+-" rhyme="B">cuando los interpretas, los <w type="rhyme">ofendes</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y al compás que la encoges o la <w type="rhyme">extiendes</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">tu mano para el fallo se <w type="rhyme">previno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---++--+-" rhyme="C">No sabes escuchar ruegos <w type="rhyme">baratos</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">y sólo quien te da te quita <w type="rhyme">dudas</w>;</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">no te gobiernan textos, sino <w type="rhyme">tratos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+++-" rhyme="D">Pues que de intento y de interés no <w type="rhyme">mudas</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="C">o lávate las manos con <w type="rhyme">Pilatos</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">o, con la bolsa, ahórcate con <w type="rhyme">Judas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

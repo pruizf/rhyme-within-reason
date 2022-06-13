@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 3 - Argumento Libro XV</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 3 - Argumento Libro XV </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Para tomar la flecha se <w type="rhyme">aperciben</w>
+            </l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">los Castellanos, Castro a Alcandro <w type="rhyme">mata</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">visitar el sepulcro Osorio <w type="rhyme">trata</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">con Garcerán, los Moros lo <w type="rhyme">prohíben</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Dos bofetones al entrar <w type="rhyme">reciben</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">por el tributo, y no pagarle en <w type="rhyme">plata</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">Branzardo los conoce, y los <w type="rhyme">maltrata</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">aunque sus nombres en la fama <w type="rhyme">escriben</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">Vuela una mina a Claridoro, y <w type="rhyme">parte</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">Pacheco a rescatar a Osorio, <w type="rhyme">haciendo</w>
+            </l>
+            <l n="11" met="---++--+-+-" rhyme="E">sobre el asiento una Española <w type="rhyme">hazaña</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Tiembla de verlo el Saladino <w type="rhyme">Marte</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">y pacheco su nombre <w type="rhyme">engrandeciendo</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">desprecia el oro, y ennoblece a <w type="rhyme">España</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

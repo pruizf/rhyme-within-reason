@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIV -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Este lauro que tiene en su <w type="rhyme">corteza</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">verde escrita la honra de mi <w type="rhyme">pena</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">y en él el manso céfiro <w type="rhyme">resuena</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">mi mal, su resplandor y su <w type="rhyme">belleza</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">cuando el sol elevado en más <w type="rhyme">alteza</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">se vio, me dio en sus hojas sombra <w type="rhyme">llena</w>;</l>
+            <l n="7" met="+-++---+-+-" rhyme="B">fue el calor blando y la congoja <w type="rhyme">buena</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">y entonces me alegraba la <w type="rhyme">aspereza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Ahora, ¡oh triste hado, avaro <w type="rhyme">cielo</w>!</l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">que deja el sol ardiente el paso <w type="rhyme">abierto</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">y todo el mal y daño en mi <w type="rhyme">fortuna</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">con llanto eterno y falto de <w type="rhyme">consuelo</w>
+            </l>
+            <l n="13" met="+-+--+---+-" rhyme="D">miro el lauro, y padezco en el <w type="rhyme">desierto</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">por su culpa, el calor que me <w type="rhyme">importuna</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

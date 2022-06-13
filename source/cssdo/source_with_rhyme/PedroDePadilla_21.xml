@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVIII -</title>
+            <author> Pedro De Padilla</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro de Padilla</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-----+-+-+-" rhyme="A">Aunque vuestro linaje tanto <w type="rhyme">fuera</w>
+            </l>
+            <l n="2" met="-+--++---+-" rhyme="B">como es el de don Luis de <w type="rhyme">Bobadilla</w>,</l>
+            <l n="3" met="-----+---+-" rhyme="B">y lo que de las Indias a <w type="rhyme">Sevilla</w>,</l>
+            <l n="4" met="++---+---+-" rhyme="A">cada año a vuestra casa se <w type="rhyme">trajera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Y aunque Inés de Medina no <w type="rhyme">perdiera</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">el poco bien que tuvo en esta <w type="rhyme">villa</w>
+            </l>
+            <l n="7" met="+-+--+---+-" rhyme="B">diera yo a mi criada con la <w type="rhyme">silla</w>,</l>
+            <l n="8" met="-----+-+-+-" rhyme="A">que para que os sentarais bien <w type="rhyme">pusiera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Conoceros parece que <w type="rhyme">bastara</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">si en vos hubiera algún <w type="rhyme">conocimiento</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">para ver lo que sois, y lo que os <w type="rhyme">quiero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++-+-+-+-" rhyme="C">Porque sois un pelón de mala <w type="rhyme">cara</w>
+            </l>
+            <l n="13" met="+-+--+-+-+-" rhyme="D">galgo flaco cansado, y muy <w type="rhyme">hambriento</w>,</l>
+            <l n="14" met="-+-+-++--+-" rhyme="E">con seso triste, y muy gran <w type="rhyme">majadero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

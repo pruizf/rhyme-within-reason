@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVI - Al peligro de la gran felicidad</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVI - Al peligro de la gran felicidad </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--++--+-" rhyme="A">Teme Licio el placer, teme, si <w type="rhyme">tienes</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">en gracia de los Astros <w type="rhyme">celestiales</w>
+            </l>
+            <l n="3" met="+--+---+-+-" rhyme="B">siempre el deseo, y el suceso <w type="rhyme">iguales</w>,</l>
+            <l n="4" met="--+-++---+-" rhyme="A">o te influyen más dichas que <w type="rhyme">previenes</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Teme, si nunca viste los <w type="rhyme">desdenes</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">de la fortuna, ni en ligeros <w type="rhyme">males</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">que se ocultan las trágicas <w type="rhyme">señales</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">en el pródigo exceso de los <w type="rhyme">bienes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--++--+-" rhyme="C">De doliente mortal, Médico <w type="rhyme">atento</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">no limitando al apetito <w type="rhyme">nada</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">lisonjea los íntimos <w type="rhyme">enojos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">¡O gran dolor en traje de <w type="rhyme">contento</w>.</l>
+            <l n="13" met="-+---+---+-" rhyme="D">Presagio de salud <w type="rhyme">desesperada</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">cumplirse al gusto todos los <w type="rhyme">antojos</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

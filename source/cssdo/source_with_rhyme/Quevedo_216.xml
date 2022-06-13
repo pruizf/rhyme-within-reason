@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Riesgo de celebrar la hermosura de las tontas</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Riesgo de celebrar la hermosura de las tontas  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Sol os llamó mi lengua <w type="rhyme">pecadora</w>,</l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">y desmintiome a boca llena el <w type="rhyme">cielo</w>;</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">luz os dije que dábades al <w type="rhyme">suelo</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">y opúsose un candil, que alumbra y <w type="rhyme">llora</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Tan creído tuviste ser <w type="rhyme">aurora</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">que amanecer quisiste con <w type="rhyme">desvelo</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">en vos llamé rubí lo que mi <w type="rhyme">abuelo</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">llamara labio y jeta <w type="rhyme">comedora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Codicia os puse de vender los <w type="rhyme">dientes</w>,</l>
+            <l n="10" met="-+-+-+--++-" rhyme="D">diciendo que eran perlas; por ser <w type="rhyme">bellos</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">llamé los rizos minas de oro <w type="rhyme">ardientes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Pero si fueran oro los <w type="rhyme">cabellos</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">calvo su casco fuera, y, <w type="rhyme">diligentes</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">mis dedos los pelaran por <w type="rhyme">vendellos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

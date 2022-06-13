@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-XVII- Pide a Dios le de lo que le conviene con sospecha de sus propios deseos</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-XVII- Pide a Dios le de lo que le conviene con sospecha de sus propios deseos</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+++-+-" rhyme="A">Un nuevo corazón, un hombre <w type="rhyme">nuevo</w>
+            </l>
+            <l n="2" met="+--+-++--+-" rhyme="B">ha menester, Señor, la ánima <w type="rhyme">mía</w>;</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">desnúdame de mí, que ser <w type="rhyme">podría</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">que a tu piedad pagase lo que <w type="rhyme">debo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Dudosos pies por ciega noche <w type="rhyme">llevo</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que ya he llegado a aborrecer el <w type="rhyme">día</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">y temo que hallaré la muerte <w type="rhyme">fría</w>
+            </l>
+            <l n="8" met="-+-+-+--++-" rhyme="A">envuelta en (bien que dulce) mortal <w type="rhyme">cebo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+++-" rhyme="C">Tu hacienda soy; tu imagen, Padre, he <w type="rhyme">sido</w>,</l>
+            <l n="10" met="--+--+-+++-" rhyme="D">y, si no es tu interés en mí, no <w type="rhyme">creo</w>
+            </l>
+            <l n="11" met="+-+--+---+-" rhyme="C">que otra cosa defiende mi <w type="rhyme">partido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Haz lo que pide verme cual me <w type="rhyme">veo</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">no lo que pido yo: pues, de <w type="rhyme">perdido</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">recato mi salud de mi <w type="rhyme">deseo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

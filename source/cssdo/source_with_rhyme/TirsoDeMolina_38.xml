@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Marta la Piadosa</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De Marta la Piadosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A"> El tardo buey atado a la <w type="rhyme">coyunda</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">la noche espera y la cerviz <w type="rhyme">levanta</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y el que tiene el cuchillo a la <w type="rhyme">garganta</w>
+            </l>
+            <l n="4" met="--+--+--++-" rhyme="A">en alguna esperanza el vivir <w type="rhyme">funda</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A"> Espera la bonanza, aunque se <w type="rhyme">hunda</w>,</l>
+            <l n="6" met="-+---++--+-" rhyme="B">la nave a quien el mar bate y <w type="rhyme">quebranta</w>.</l>
+            <l n="7" met="+--+-+-+-+-" rhyme="B">Sólo el infierno causa pena <w type="rhyme">tanta</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">porque de él la esperanza no <w type="rhyme">redunda</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++-+---+-" rhyme="C">Es común este bien a los <w type="rhyme">mortales</w>,</l>
+            <l n="10" met="--++-+-+-+-" rhyme="D">pues quien más ha alcanzado más <w type="rhyme">espera</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">y a veces el que espera, el fin <w type="rhyme">alcanza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="C">Mas a mí la esperanza de mis <w type="rhyme">males</w>
+            </l>
+            <l n="13" met="-++--+---+-" rhyme="D">de tal modo me aflige y <w type="rhyme">desespera</w>,</l>
+            <l n="14" met="-++--++--+-" rhyme="E">que no puedo esperar ni aun <w type="rhyme">esperanza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

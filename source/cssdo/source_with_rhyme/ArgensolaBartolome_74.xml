@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXII -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A"> Fili, en tus ojos mi atención <w type="rhyme">respeta</w>
+            </l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">(antes adora) aquellos altos <w type="rhyme">fines</w>,</l>
+            <l n="3" met="-+-+-++--+-" rhyme="B">que, ya su vaga luz tiendas o <w type="rhyme">inclines</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">muestran furor de indignación <w type="rhyme">secreta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A"> Así el tirano en pálido <w type="rhyme">cometa</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que horrendo vibra prodigiosas <w type="rhyme">crines</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">donde rayan sus lúcidos <w type="rhyme">confines</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">amenazas y estragos <w type="rhyme">interpreta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--++--+-" rhyme="C"> Mas pues ya la piedad vence al <w type="rhyme">destino</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">y el mismo horror en la severa <w type="rhyme">lumbre</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">descubre al justo ostentación <w type="rhyme">propicia</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D"> anúncienos tu rostro <w type="rhyme">mansedumbre</w>;</l>
+            <l n="13" met="-+---+---+-" rhyme="E">que nunca por benigna la <w type="rhyme">justicia</w>
+            </l>
+            <l n="14" met="---+---+-+-" rhyme="C">se contrapuso al disponer <w type="rhyme">divino</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto X</title>
+            <author> Esteban Manuel De Villegas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Villegas,  Esteban  Manuel de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto X </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Vela el cuidado, y el amor <w type="rhyme">desvela</w>,</l>
+            <l n="2" met="--+--++--+-" rhyme="B">y aunque de ambos a dos es la <w type="rhyme">porfía</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">tienes por más ligera <w type="rhyme">tiranía</w>
+            </l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">la que ejercita amor, que mata y <w type="rhyme">vuela</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">No la que ahora del cuidado <w type="rhyme">anhela</w>
+            </l>
+            <l n="6" met="-----+--++-" rhyme="B">en la, que te frecuenta, vejez <w type="rhyme">fría</w>,</l>
+            <l n="7" met="-----+--++-" rhyme="B">ay, ay, quien te dijera en algún <w type="rhyme">día</w>
+            </l>
+            <l n="8" met="-+---++--+-" rhyme="A">que habías de sentir tanto la <w type="rhyme">espuela</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="-">Cuando mostrabas de azucena, fruta,</l>
+            <l n="10" met="-+-+-----+-" rhyme="C">la tez bruñida, o como sin <w type="rhyme">cuidado</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="D">de mí solicitabas tus <w type="rhyme">placeres</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+------+-+-" rhyme="-">déjame pues, que si te quise hermosa,</l>
+            <l n="13" met="++-+-+-+-+-" rhyme="C">ya no es posible, puesto que has <w type="rhyme">llegado</w>
+            </l>
+            <l n="14" met="-+--++-+-+-" rhyme="D">a tiempo, que a ti misma no te <w type="rhyme">quieres</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

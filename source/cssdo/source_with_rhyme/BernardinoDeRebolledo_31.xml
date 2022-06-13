@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVII -</title>
+            <author> Bernardino De Rebolledo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bernardino de Rebolledo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">Con achacosos pies a paso <w type="rhyme">lento</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">emprendo fatigado <w type="rhyme">peregrino</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">de la Virtud el áspero <w type="rhyme">camino</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">arrastrando mi propio <w type="rhyme">desaliento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-++--+-" rhyme="A">Del voluntario error no <w type="rhyme">descontento</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">a volverle a seguir me <w type="rhyme">determino</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">tropezando en mi torpe <w type="rhyme">desatino</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">con menos luz y más <w type="rhyme">conocimiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+++-" rhyme="C">Llegar a vos sin mi Señor no <w type="rhyme">puedo</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">y conmigo será <w type="rhyme">dificultoso</w>
+            </l>
+            <l n="11" met="--+--++-++-" rhyme="E">mientras no disolvéis lazo tan <w type="rhyme">fuerte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--++--+-" rhyme="C">Pues no basta el amor rómpale el <w type="rhyme">miedo</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="D">en el castigo os mostraréis <w type="rhyme">piadoso</w>
+            </l>
+            <l n="14" met="--++---+-+-" rhyme="E">si me dais vida amenazando <w type="rhyme">muerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

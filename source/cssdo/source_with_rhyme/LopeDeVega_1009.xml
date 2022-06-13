@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 7 - Acto I, REY De La difunta pleiteada</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 7 - Acto I, REY De La difunta pleiteada </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+-++---+-" rhyme="A">¿Qué es la causa que un hombre <w type="rhyme">valeroso</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">con la espada en la mano, altivo, <w type="rhyme">fuerte</w>,</l>
+            <l n="3" met="+-+--+-+-+-" rhyme="B">corta el cuello arrugado, rompe y <w type="rhyme">vierte</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">saliente humor del tronco <w type="rhyme">sanguinoso</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+---+-" rhyme="A">o discurre un ejército <w type="rhyme">furioso</w>,</l>
+            <l n="6" met="+-++---+-+-" rhyme="B">dando mil muertes sin temer la <w type="rhyme">muerte</w>,</l>
+            <l n="7" met="-++--++--+-" rhyme="B">amando una mujer tiemble de <w type="rhyme">suerte</w>
+            </l>
+            <l n="8" met="--+--+++-+-" rhyme="A">que le vence y derriba un rostro <w type="rhyme">hermoso</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="B">¿Cómo pedir el hombre, si <w type="rhyme">concede</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="C">el sueño y el sustento cada <w type="rhyme">día</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="B">sin que afligido y sin vergüenza <w type="rhyme">quede</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-++--+-" rhyme="C">y cuando pide amor tiembla y <w type="rhyme">porfía</w>?</l>
+            <l n="13" met="+--+---+++-" rhyme="B">Debe de ser que sin comer no <w type="rhyme">puede</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="C">pasar el hombre y sin amor <w type="rhyme">podía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

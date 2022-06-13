@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mentira y desvergüenza de la deidad venérea</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Mentira y desvergüenza de la deidad venérea </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Meona Venus, madre del <w type="rhyme">mocoso</w>
+            </l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">y rapacejo Amor, que ser <w type="rhyme">solías</w>
+            </l>
+            <l n="3" met="-----+---+-" rhyme="B">la que en las africanas <w type="rhyme">puterías</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">tomaste banco y trato <w type="rhyme">ganancioso</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">y tú, desnudo niño y <w type="rhyme">revoltoso</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">que de fraguel oculto le <w type="rhyme">servías</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">procurando también sus <w type="rhyme">granjerías</w>,</l>
+            <l n="8" met="--+-++---+-" rhyme="A">a sus mañas ya hecho, <w type="rhyme">codicioso</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">¿de dónde, enhoramala, habéis <w type="rhyme">tomado</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">de dioses apellido y <w type="rhyme">nombradía</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">haciendo a todo el mundo que os <w type="rhyme">respete</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">¿o quién de entendimiento había <w type="rhyme">privado</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="D">al vulgo, que por dioses <w type="rhyme">admitía</w>
+            </l>
+            <l n="14" met="+-+--+---+-" rhyme="E">a una puta probada y su <w type="rhyme">alcahuete</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

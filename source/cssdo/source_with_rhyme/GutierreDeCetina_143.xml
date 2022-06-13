@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CCXXIX - (A doña María de Cardona)</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CCXXIX - (A doña María de Cardona) </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Ilustre honor el nombre de <w type="rhyme">Cardona</w>,</l>
+            <l n="2" met="++---+---+-" rhyme="B">no décima a las nueve de <w type="rhyme">Parnaso</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">mas la primera del oriente a <w type="rhyme">ocaso</w>,</l>
+            <l n="4" met="--+--++--+-" rhyme="A">a quien rara beldad honra y <w type="rhyme">corona</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">y a quien la Fama por sin par <w type="rhyme">pregona</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">de virtudes colmado y rico <w type="rhyme">vaso</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">por elección, y no por suerte o <w type="rhyme">caso</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">dignísima de cetro y de <w type="rhyme">corona</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Perdería la pena y el <w type="rhyme">trabajo</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">donde la envidia su malicia <w type="rhyme">enfrena</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">si cantase de ti aun el más <w type="rhyme">instruto</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">pues tu santa virtud tomó a <w type="rhyme">destajo</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">con pura caridad de afectos <w type="rhyme">llena</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="E">producir para el cielo eterno <w type="rhyme">fruto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

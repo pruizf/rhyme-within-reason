@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VIII - Bella es mi ninfa…</title>
+            <author> Francisco De La Torre</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de La Torre</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VIII - Bella es mi ninfa… </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Bella es mi ninfa, si los lazos de <w type="rhyme">oro</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">al apacible viento <w type="rhyme">desordena</w>;</l>
+            <l n="3" met="+----+---+-" rhyme="B">bella, si de sus ojos <w type="rhyme">enajena</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">el altivo desdén que siempre <w type="rhyme">lloro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+-+-+-" rhyme="A">Bella, si con la luz que sólo <w type="rhyme">adoro</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">la tempestad del viento y mar <w type="rhyme">serena</w>;</l>
+            <l n="7" met="+----+---+-" rhyme="B">bella, si a la dureza de mi <w type="rhyme">pena</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">vuelve las gracias del celeste <w type="rhyme">coro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Bella, si mansa; bella, si <w type="rhyme">terrible</w>;</l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">bella, si cruda; bella, esquiva; y <w type="rhyme">bella</w>
+            </l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">si vuelve grave aquella luz del <w type="rhyme">cielo</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">cuya beldad humana y <w type="rhyme">apacible</w>
+            </l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">ni se puede saber lo que es sin <w type="rhyme">vella</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">ni, vista, entenderá lo que es el <w type="rhyme">suelo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

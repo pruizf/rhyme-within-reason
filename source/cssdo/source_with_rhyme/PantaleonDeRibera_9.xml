@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Al capitán Domingo Alonso de la Maza, caballero del hábito de Santiago</title>
+            <author> Pantaleon De Ribera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pantaleón de  Ribera,  Anastasio</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Al capitán Domingo Alonso de la Maza, caballero del hábito de Santiago </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+---+-+--+-" rhyme="A">Esta de Santiago Espada <w type="rhyme">ardiente</w>
+            </l>
+            <l n="2" met="--+--++--+-" rhyme="B">(merecido blasón, timbre <w type="rhyme">glorioso</w>)</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que ennoblece tu pecho <w type="rhyme">belicoso</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">que solicita lauros a tu <w type="rhyme">frente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Sonoras trompas a tu fama <w type="rhyme">aumente</w>,</l>
+            <l n="6" met="---+--+--+-" rhyme="B">pues con denuedo, y ánimo <w type="rhyme">brioso</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">te ostentas Marte al bárbaro <w type="rhyme">alevoso</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">te vibras rayo a la enemiga <w type="rhyme">gente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">¿De dónde gloria tanta se <w type="rhyme">ocasiona</w>?</l>
+            <l n="10" met="---+-+---+-" rhyme="D">Pues la primera cátedra <w type="rhyme">presides</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="C">de la fatal Escuela de <w type="rhyme">Belona</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Como árbitro absoluto de sus <w type="rhyme">lides</w>,</l>
+            <l n="13" met="-+--+--+-+-" rhyme="C">¿de dónde? de qué tu valor te <w type="rhyme">abona</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">por Maza fuerte del invicto <w type="rhyme">Alcides</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

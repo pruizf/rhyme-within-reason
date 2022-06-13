@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCIV - A Marco Bruto</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCIV - A Marco Bruto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++----+-+-" rhyme="A">Al fin yaces ¡oh del valor <w type="rhyme">latino</w>
+            </l>
+            <l n="2" met="+--+---+-+-" rhyme="B">última gloria! por tu fuerte <w type="rhyme">mano</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">tentado habiendo reducir en <w type="rhyme">vano</w>
+            </l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">la libertad al orbe, de ella <w type="rhyme">indino</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+-+-+--+-" rhyme="A">Tu virtud te guió, perdió el <w type="rhyme">destino</w>;</l>
+            <l n="6" met="--+--+---+-" rhyme="B">pero pudo tu esfuerzo <w type="rhyme">soberano</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">mostrar que fuiste capitán <w type="rhyme">romano</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">y sólo sucesor de Bruto <w type="rhyme">dino</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--++--+-" rhyme="C">¡Oh si ajena ambición no te <w type="rhyme">moviera</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">a desnudar el hierro, o ya <w type="rhyme">desnudo</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">siguiera tu hazaña la <w type="rhyme">ventura</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">Que ninguno tu igual en Roma <w type="rhyme">hubiera</w>;</l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">mas trájote en desprecio el hado <w type="rhyme">crudo</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">del grave yeso y la virtud <w type="rhyme">segura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

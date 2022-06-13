@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVIII - Misericordia</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVIII - Misericordia </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Vuelve a poner, Señor, en mí tus <w type="rhyme">ojos</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">puesto que tantas veces me <w type="rhyme">miraste</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">cuando de sombras vanas me <w type="rhyme">sacaste</w>
+            </l>
+            <l n="4" met="--++-+-+-+-" rhyme="A">tras quien fui ciego en falsa luz de <w type="rhyme">antojos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---++--+-" rhyme="A">No sufra tu piedad largos <w type="rhyme">enojos</w>,</l>
+            <l n="6" met="---+-++--+-" rhyme="B">pues de inmortal, mortal carne <w type="rhyme">tornaste</w>;</l>
+            <l n="7" met="-++--+---+-" rhyme="B">que no es bien que del soto que <w type="rhyme">plantaste</w>
+            </l>
+            <l n="8" met="+----+---+-" rhyme="A">gocen tus enemigos los <w type="rhyme">despojos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+++-+-+-" rhyme="C">Baste que al día mil veces lo han <w type="rhyme">cazado</w>
+            </l>
+            <l n="10" met="---+-+--++-" rhyme="D">en tu desgracia y mía, sin ser <w type="rhyme">suyo</w>;</l>
+            <l n="11" met="++--++-+-+-" rhyme="E">no lleven la ya leña estéril <w type="rhyme">seca</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">Y si mil desengaños no han <w type="rhyme">bastado</w>
+            </l>
+            <l n="13" met="---+++-+-+-" rhyme="E">a libertar a este hombre vil que <w type="rhyme">peca</w>,</l>
+            <l n="14" met="+--+-+--++-" rhyme="D">llévale Tú por fuerza, pues es <w type="rhyme">tuyo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

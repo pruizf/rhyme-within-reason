@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Acto III - Escena I - Preafán</title>
+            <author> Rey De Artieda</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Rey de  Artieda,  Andrés</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Acto III - Escena I - Preafán </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-----+---+-" rhyme="A">Si porque Sophonisba te lo <w type="rhyme">manda</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">contra Scipión resuelves, <w type="rhyme">Masinisa</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">siguiendo las bandera y <w type="rhyme">divisa</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">de Aníbal, que apretando al Cónsul <w type="rhyme">anda</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+---+-" rhyme="A">¿Por qué, di, si Cartago se <w type="rhyme">desmanda</w>
+            </l>
+            <l n="6" met="---+-+-+++-" rhyme="B">contra Scipión después, le das tal <w type="rhyme">prisa</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">que apenas Sophonisba el suelo <w type="rhyme">pisa</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">segura, cuando Roma la <w type="rhyme">demanda</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="C">Prometióme esa dama <w type="rhyme">casamiento</w>,</l>
+            <l n="10" met="----+-+--+-" rhyme="D">y por que la dio a Siface <w type="rhyme">Cartago</w>,</l>
+            <l n="11" met="--+-++---+-" rhyme="C">me le muestro tan áspero y <w type="rhyme">sangriento</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+--++-" rhyme="D">y si lo que me escribe Scipión <w type="rhyme">hago</w>,</l>
+            <l n="13" met="-+-+-----+-" rhyme="C">la falta de ella, y mi <w type="rhyme">desabrimiento</w>,</l>
+            <l n="14" met="--+--+--++-" rhyme="D">ni merece, ni pide menor <w type="rhyme">pago</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

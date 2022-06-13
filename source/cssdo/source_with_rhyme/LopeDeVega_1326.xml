@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1442 - Argumento Libro IV</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1442 - Argumento Libro IV </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">A Dios se queja la cautiva <w type="rhyme">Elía</w>:</l>
+            <l n="2" met="+--+++---+-" rhyme="B">baja a Ricardo un Ángel <w type="rhyme">soberano</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y a la conquista Alfonso <w type="rhyme">Castellano</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">convoca gente y Capitanes <w type="rhyme">cría</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Vende Guido al Soldán y el mismo <w type="rhyme">día</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">vuelve a cercarle el Bárbaro <w type="rhyme">Persiano</w>;</l>
+            <l n="7" met="-+---+---+-" rhyme="B">Sibila con sus hijos el <w type="rhyme">humano</w>
+            </l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">Imperio deja, el alma al cielo <w type="rhyme">envía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">De Italia el César Federico <w type="rhyme">baja</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">y el ejército bárbaro <w type="rhyme">destierra</w>,</l>
+            <l n="11" met="-----+-+-+-" rhyme="C">con que de Ptolemayda el cerco <w type="rhyme">ataja</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+--++-" rhyme="D">La soberbia se extiende a civil <w type="rhyme">guerra</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">pero si al cielo por subir <w type="rhyme">trabaja</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="D">menos intenta en oprimir la <w type="rhyme">tierra</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

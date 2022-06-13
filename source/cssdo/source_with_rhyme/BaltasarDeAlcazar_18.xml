@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Baltasar De Alcazar</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Alcázar,  Baltasar del</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Cercada está mi alma de <w type="rhyme">contrarios</w>;</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">la fuerza, flaca; el castellano, <w type="rhyme">loco</w>;</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">el presidio, infiel, bisoño y <w type="rhyme">poco</w>;</l>
+            <l n="4" met="-+---+---+-" rhyme="A">ninguno los pertrechos <w type="rhyme">necesarios</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">los socorros que espero, <w type="rhyme">voluntarios</w>,</l>
+            <l n="6" met="-----+---+-" rhyme="B">porque ni los merezco ni <w type="rhyme">provoco</w>;</l>
+            <l n="7" met="+--+-+-+++-" rhyme="B">tan desvalido que aun a Dios no <w type="rhyme">invoco</w>,</l>
+            <l n="8" met="-----+-+-+-" rhyme="A">porque mis consejeros andan <w type="rhyme">varios</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Los combates, continuos, y la <w type="rhyme">ofensa</w>;</l>
+            <l n="10" met="---+-+---+-" rhyme="D">los enemigos, de ánimo <w type="rhyme">indomable</w>;</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">rotas por todas partes la <w type="rhyme">muralla</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">Nadie quiere acudir a la <w type="rhyme">defensa</w>...</l>
+            <l n="13" met="+-+--+---+-" rhyme="D">¿Qué hará el castellano <w type="rhyme">miserable</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">que en tanto estrecho y confusión se <w type="rhyme">halla</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- I -</title>
+            <author> Fray Luis De Leon</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fray  Luis de  León</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- I -</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++-++-+-+-" rhyme="A">Amor casi de un vuelo me ha <w type="rhyme">encumbrado</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">a donde no llegó ni el <w type="rhyme">pensamiento</w>;</l>
+            <l n="3" met="-++--+---+-" rhyme="B">mas toda esta grandeza de <w type="rhyme">contento</w>
+            </l>
+            <l n="4" met="-+---++--+-" rhyme="A">me turba y me entristece este <w type="rhyme">cuidado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+--++---+-" rhyme="A">Que temo que no venga <w type="rhyme">derrocado</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">al suelo por faltarle <w type="rhyme">fundamento</w>;</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">que lo que en breve sube en alto <w type="rhyme">asiento</w>,</l>
+            <l n="8" met="+----+---+-" rhyme="A">suele desfallecer <w type="rhyme">apresurado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Mas luego me consuela y me <w type="rhyme">asegura</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">al ver que soy, señora ilustre, <w type="rhyme">obra</w>
+            </l>
+            <l n="11" met="---+-+--++-" rhyme="E">de vuestra sola gracia, y en vos <w type="rhyme">fío</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="C">porque conservaréis la vuestra <w type="rhyme">hechura</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="D">mis faltas supliréis con vuestra <w type="rhyme">sobra</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">y vuestro bien hará durable el <w type="rhyme">mío</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

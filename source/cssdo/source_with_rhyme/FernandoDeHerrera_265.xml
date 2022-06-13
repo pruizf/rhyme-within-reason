@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIX - A don Pedro Tello</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIX - A don Pedro Tello </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---++--+-" rhyme="A">En tanto que en el fiero hórrido <w type="rhyme">seno</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">de la antigua Cartago el <w type="rhyme">estandarte</w>
+            </l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">de España honráis, y al sarraceno <w type="rhyme">Marte</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">el pecho de temor mostráis <w type="rhyme">ajeno</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+--++-" rhyme="A">yo aquí, do el rico Betis, de honor <w type="rhyme">lleno</w>,</l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">el fértil curso ufano en vueltas <w type="rhyme">parte</w>,</l>
+            <l n="7" met="+--+-+--++-" rhyme="B">dando de mí al amor la mejor <w type="rhyme">parte</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">de mi incierta esperanza me <w type="rhyme">enajeno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C">Mi Luz bella y sus lazos y oro <w type="rhyme">canto</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">y aunque el valor insigne vuestro <w type="rhyme">admiro</w>,</l>
+            <l n="11" met="-+-+++---+-" rhyme="-">de lauro a vos no envidio la corona;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++-+---+-" rhyme="C">que a mayor premio el ánimo <w type="rhyme">levanto</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="D">si mi divina Luz, por quien <w type="rhyme">suspiro</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="-">de sus hermosas hebras me corona.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

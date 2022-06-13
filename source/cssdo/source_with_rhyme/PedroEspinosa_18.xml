@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 7 - Caídas de la Aurora</title>
+            <author> Pedro Espinosa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Espinosa</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 7 -  Caídas de la Aurora </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Estas púrpuras rosas, que a la <w type="rhyme">Aurora</w>,</l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">se le cayeron hoy del blanco <w type="rhyme">seno</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">y en vaso de pintadas flores <w type="rhyme">lleno</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">¡oh dulces auras! os ofrezco <w type="rhyme">ahora</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">si defendéis de mi divina <w type="rhyme">Flora</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">con vuestras alas el color <w type="rhyme">moreno</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">del sol, que, ardiente y de piedad <w type="rhyme">ajeno</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">su rostro ofende, porque al campo <w type="rhyme">dora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">¡Oh hijas de la tierra <w type="rhyme">peregrinas</w>!</l>
+            <l n="10" met="-+-+-----+-" rhyme="D">mirad si tiene mayo en su <w type="rhyme">guirnalda</w>
+            </l>
+            <l n="11" met="++-+-+-+-+-" rhyme="E">más frescas rosas, más bizarras <w type="rhyme">flores</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+--++-+-+-" rhyme="C"> llorando les dio el alba perlas <w type="rhyme">finas</w>;</l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">el sol colores; mi afición la <w type="rhyme">falda</w>
+            </l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">de mi hermosa Flora, y ella <w type="rhyme">olores</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

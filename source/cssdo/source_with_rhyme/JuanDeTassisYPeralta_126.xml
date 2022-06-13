@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIX -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">¡Oh cuánto dice en su favor quien <w type="rhyme">calla</w>,</l>
+            <l n="2" met="---+-+++-+-" rhyme="B">porque de amar sufrir es cierto <w type="rhyme">indicio</w>,</l>
+            <l n="3" met="--+-++---+-" rhyme="B">y el silencio el más puro <w type="rhyme">sacrificio</w>
+            </l>
+            <l n="4" met="---+-++--+-" rhyme="A">y adonde siempre amor mérito <w type="rhyme">halla</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Morir en su pasión sin <w type="rhyme">declaralla</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">es de quien ama el verdadero <w type="rhyme">oficio</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">que un callado llorar por <w type="rhyme">ejercicio</w>
+            </l>
+            <l n="8" met="++-+-+++-+-" rhyme="A">da más razón por sí, no osando <w type="rhyme">dalla</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Quien calla amando, sólo amando <w type="rhyme">muere</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">que el que acierta a decirse no es <w type="rhyme">cuidado</w>;</l>
+            <l n="11" met="+-+-++--++-" rhyme="C">menos dice y más ama quien más <w type="rhyme">quiere</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+-+-+-" rhyme="D">Porque si mi silencio no ha <w type="rhyme">hablado</w>,</l>
+            <l n="13" met="++-+-+---+-" rhyme="-">no sé deciros más que, si muriese,</l>
+            <l n="14" met="+-++---+-+-" rhyme="D">otro os ha dicho lo que yo he <w type="rhyme">callado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

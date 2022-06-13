@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXII -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">¿Por qué, Señor, prosperas el <w type="rhyme">camino</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">de tus rebeldes hijos, y <w type="rhyme">ofensores</w>?</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">¿Por qué a sus brazos siempre <w type="rhyme">vencedores</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">tu diestra sin castigo no <w type="rhyme">previno</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--++--+-" rhyme="A">Este modo de obrar tan <w type="rhyme">peregrino</w>,</l>
+            <l n="6" met="++---+---+-" rhyme="B">ha sido entre tus claros <w type="rhyme">resplandores</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">lo que el discurso humano en los <w type="rhyme">errores</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">opuso siempre al crédito <w type="rhyme">divino</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+++-+-" rhyme="C">¿Por qué en desigualdad tan justa, <w type="rhyme">esconde</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">tu mano, que dispensa nuestro <w type="rhyme">bienes</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">el peso fiel en tan contrarias <w type="rhyme">partes</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">Mas ya tu providencia me <w type="rhyme">responde</w>;</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">que bien se ve la estima en que los <w type="rhyme">tienes</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">si en tan injustos dueños los <w type="rhyme">repartes</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

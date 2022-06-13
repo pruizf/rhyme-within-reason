@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVIII - A Cintia, que mirando unos lienzos, le llevo la atención aquel en que estaba pintada la ruina de Troya</title>
+            <author> Agustin De Salazar Y Torres</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Agustin de Salazar y Torres</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVIII - A Cintia, que mirando unos lienzos, le llevo la atención aquel en que estaba pintada la ruina de Troya </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++---+-+-" rhyme="A">Cintia, ¿qué miras? ¿El engaño <w type="rhyme">griego</w>
+            </l>
+            <l n="2" met="--+--++--+-" rhyme="B">que atrevida mintió bárbara <w type="rhyme">mano</w>?</l>
+            <l n="3" met="++---+---+-" rhyme="B">¡Qué luego te llevase lo <w type="rhyme">inhumano</w>!</l>
+            <l n="4" met="+-+----+-+-" rhyme="A">¡Qué la ruina te inclinase <w type="rhyme">luego</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Mejore estragos el vendado <w type="rhyme">ciego</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">aumentando violencias al <w type="rhyme">tirano</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y de tu vista al rayo <w type="rhyme">soberano</w>
+            </l>
+            <l n="8" met="+-++-+--++-" rhyme="A">arda el Asia otra vez en mejor <w type="rhyme">fuego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Mas si de ver incendios sólo <w type="rhyme">trata</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">y engañas, Cintia hermosa, tu <w type="rhyme">despecho</w>,</l>
+            <l n="11" met="++-+-+---+-" rhyme="E">no mires, no, de Troya los <w type="rhyme">despojos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Vuelve a mi fe, donde verás, <w type="rhyme">ingrata</w>,</l>
+            <l n="13" met="--+-++---+-" rhyme="D">las cenizas que aun arden en mi <w type="rhyme">pecho</w>,</l>
+            <l n="14" met="--+-++---+-" rhyme="E">los engaños que aun viven en tus <w type="rhyme">ojos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

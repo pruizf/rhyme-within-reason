@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-XLIX- A una rosa</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-XLIX- A una rosa</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Ayer naciste y morirás <w type="rhyme">mañana</w>;</l>
+            <l n="2" met="---+-++-++-" rhyme="B">para tan breve ser, ¿quién te dio <w type="rhyme">vida</w>?</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">¡Para vivir tan poco estás <w type="rhyme">lucida</w>,</l>
+            <l n="4" met="---+++-+-+-" rhyme="A">y para no ser nada estás <w type="rhyme">lozana</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Si te engañó tu hermosura <w type="rhyme">vana</w>,</l>
+            <l n="6" met="++---+---+-" rhyme="B">bien presto la verás <w type="rhyme">desvanecida</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">porque en esa hermosura está <w type="rhyme">escondida</w>
+            </l>
+            <l n="8" met="--+--++--+-" rhyme="A">la ocasión de morir muerte <w type="rhyme">temprana</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Cuando te corte la robusta <w type="rhyme">mano</w>,</l>
+            <l n="10" met="+----+---+-" rhyme="B">ley de la agricultura <w type="rhyme">permitida</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="D">grosero aliento acabará tu <w type="rhyme">suerte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+-+-+-" rhyme="C">No salgas, que te guarde algún <w type="rhyme">tirano</w>;</l>
+            <l n="13" met="-+---+---+-" rhyme="B">dilata tu nacer para tu <w type="rhyme">vida</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">que anticipas tu ser para tu <w type="rhyme">muerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

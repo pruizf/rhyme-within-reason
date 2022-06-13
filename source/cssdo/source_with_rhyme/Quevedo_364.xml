@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto amoroso</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto amoroso </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-++--+-" rhyme="A">Artificiosa flor, rica y <w type="rhyme">hermosa</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">que adornas a la misma <w type="rhyme">primavera</w>,</l>
+            <l n="3" met="++---+-+-+-" rhyme="B">no temas que el color que tienes <w type="rhyme">muera</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">estando en una parte tan <w type="rhyme">dichosa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--++--+-" rhyme="A">Siempre verde serás, siempre <w type="rhyme">olorosa</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">aunque despoje el cielo la <w type="rhyme">ribera</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">triunfarás del invierno y de la <w type="rhyme">esfera</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">envidiada de mí por <w type="rhyme">venturosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Cuando caíste de su frente <w type="rhyme">bella</w>,</l>
+            <l n="10" met="+-+--+--++-" rhyme="D">no te tuve por flor; que, como es <w type="rhyme">cielo</w>,</l>
+            <l n="11" met="+-+-++-+-+-" rhyme="C">no esperaba yo de él sino una <w type="rhyme">estrella</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+-+-+-" rhyme="D">mas pues cuando se cae la flor al <w type="rhyme">suelo</w>
+            </l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">muestra que el fruto viene ya tras <w type="rhyme">ella</w>,</l>
+            <l n="14" met="+--+-+-+-+-" rhyme="D">ver que te vi caer me da <w type="rhyme">consuelo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

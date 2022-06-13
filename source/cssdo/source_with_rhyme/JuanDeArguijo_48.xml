@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LII -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">El jabalí de Arcadia, el león <w type="rhyme">Nemeo</w>,</l>
+            <l n="2" met="-+--++---+-" rhyme="B">el toro a los cien pueblos <w type="rhyme">pavoroso</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">cayeron a mis pies, y <w type="rhyme">victorioso</w>
+            </l>
+            <l n="4" met="--+--++--+-" rhyme="A">de la hidra me vio el lago <w type="rhyme">Lerneo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">El can de tres gargantas y <w type="rhyme">Tifeo</w>,</l>
+            <l n="6" met="+-+--+---+-" rhyme="B">fieras guardas del claustro <w type="rhyme">tenebroso</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">no burlaron mi intento <w type="rhyme">generoso</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">ni le valió caer al fuerte <w type="rhyme">Anteo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Ejemplos de mi ilustre <w type="rhyme">vencimiento</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="-">son Aceloo, Busiris y Diodemes,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="D">y el rey a quien huir Hesperia <w type="rhyme">mira</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++---+-+-" rhyme="C">Mas ¿por qué ufano mis historias <w type="rhyme">cuento</w>
+            </l>
+            <l n="13" met="-+---++-++-" rhyme="-">cautivo en tu prisión? ¡Cuánto más puedes</l>
+            <l n="14" met="---+-+---+-" rhyme="D">si me rendiste, oh bella <w type="rhyme">Deyamira</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

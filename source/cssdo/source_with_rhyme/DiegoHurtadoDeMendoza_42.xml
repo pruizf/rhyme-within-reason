@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLVII -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Creciendo va el dolor y mi <w type="rhyme">tormento</w>,</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">vuéltome ha el amor al tiempo <w type="rhyme">bueno</w>;</l>
+            <l n="3" met="-++--+-+-+-" rhyme="B">jamás nunca se vio de penas <w type="rhyme">lleno</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">ninguno por amores tan <w type="rhyme">contento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">De amores muera yo si en esto os <w type="rhyme">miento</w>,</l>
+            <l n="6" met="-+++-+--++-" rhyme="B">si no sois sola vos por quien yo <w type="rhyme">peno</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">y de mudarme de esto tan <w type="rhyme">ajeno</w>
+            </l>
+            <l n="8" met="++-+-+---+-" rhyme="A">cuan lejos de otro bravo <w type="rhyme">pensamiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="C">Mas temo no creeréis lo que yo os <w type="rhyme">quiero</w>,</l>
+            <l n="10" met="-+---++--+-" rhyme="D">que suele acontecer a un <w type="rhyme">desdichado</w>
+            </l>
+            <l n="11" met="-++--+-+-+-" rhyme="-">estar siempre sujeto a mil temores.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+--++-" rhyme="C">Acordaros, mi bien, que por vos <w type="rhyme">muero</w>;</l>
+            <l n="13" met="-+-+-++--+-" rhyme="D">¿y no es victoria ser tan <w type="rhyme">desdeñado</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="C">quien muere como yo del mal que <w type="rhyme">muero</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

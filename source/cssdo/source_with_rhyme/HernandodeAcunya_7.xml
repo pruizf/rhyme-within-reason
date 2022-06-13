@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XV -</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+++-" rhyme="A">La red de amor, pues por Amor es <w type="rhyme">hecha</w>,</l>
+            <l n="2" met="+----+-+-+-" rhyme="B">no es de maravillar si a tantos <w type="rhyme">prende</w>
+            </l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">ni que, pues él la coge y él la <w type="rhyme">tiende</w>,</l>
+            <l n="4" met="-+---++--+-" rhyme="A">la guarde sin estar rota o <w type="rhyme">deshecha</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+--++-+-" rhyme="A">ni que, del arco que Amor hace y <w type="rhyme">flecha</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">trabaje en vano aquel que se <w type="rhyme">defiende</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">ni que se engañe quien le da y le <w type="rhyme">vende</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">mirando y deseando, tanta <w type="rhyme">flecha</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+--++-+-" rhyme="C"> Es niño y vence, porque él solo <w type="rhyme">viene</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">a poder lo imposible, tal que <w type="rhyme">ciego</w>
+            </l>
+            <l n="11" met="++---++--+-" rhyme="E">muy cierta, sin mirar, toma la <w type="rhyme">mira</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+++-+-" rhyme="C">y nos hace sentir que a un tiempo <w type="rhyme">tiene</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="D">las manos en el arco y en el <w type="rhyme">fuego</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">y prende con la red, y abrasa y <w type="rhyme">tira</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

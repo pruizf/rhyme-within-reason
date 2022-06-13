@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Crudas y heladas ondas <w type="rhyme">fugitivas</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">que de mi bien la calidad <w type="rhyme">hurtasteis</w>,</l>
+            <l n="3" met="---+-++--+-" rhyme="B">cuando el hermoso pie ledas <w type="rhyme">bañasteis</w>,</l>
+            <l n="4" met="--++--++-+-" rhyme="A">al mayor sol entre mil piedras <w type="rhyme">vivas</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+++-++--+-" rhyme="A">así, tan alta suerte, ondas <w type="rhyme">esquivas</w>,</l>
+            <l n="6" met="-+---++--+-" rhyme="B">como ésta que mi luz visteis y <w type="rhyme">amasteis</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">nunca os dejé de honrar, pues le <w type="rhyme">abrazasteis</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">y siempre andéis de tal suceso <w type="rhyme">altivas</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">que, si de nuevo aquí volviere y <w type="rhyme">ella</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">pisare algún peñasco helado y <w type="rhyme">frío</w>,</l>
+            <l n="11" met="++---++--+-" rhyme="E">muy paso le digáis de esta <w type="rhyme">manera</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="C">«A ti misma te pisas, ninfa <w type="rhyme">bella</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">pues yo la yerba en mis riberas <w type="rhyme">crío</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">y matas tú quien honra a mi <w type="rhyme">ribera</w>».</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XV - A Fili, que suelto el cabello lloraba ausencias de su pastor</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XV - A Fili, que suelto el cabello lloraba ausencias de su pastor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Ondea el oro en hebras <w type="rhyme">proceloso</w>;</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">corre el humor en perlas hilo a <w type="rhyme">hilo</w>;</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">juntó la pena al Tajo con el <w type="rhyme">Nilo</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">éste creciente, cuando aquél <w type="rhyme">precioso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Tal el cabello, tal el rostro <w type="rhyme">hermoso</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">asiste en Fili al doloroso <w type="rhyme">estilo</w>,</l>
+            <l n="7" met="-----+---+-" rhyme="B">cuando por las ausencias de <w type="rhyme">Batilo</w>,</l>
+            <l n="8" met="+--+-++--+-" rhyme="A">uno derrama rico, otro <w type="rhyme">lloroso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Oyó gemir con músico <w type="rhyme">lamento</w>
+            </l>
+            <l n="10" met="-+-+-++--+-" rhyme="D">y mustia y ronca voz tórtola <w type="rhyme">amante</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">amancillando querellosa el <w type="rhyme">viento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">Dijo: «Si imitas mi dolor <w type="rhyme">constante</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">eres lisonja dulce de mi <w type="rhyme">acento</w>;</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">si le compites, no es tu mal <w type="rhyme">bastante</w>».</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Persevera en las quejas de su dolor y advierte a Lisi del inútil arrepentimiento que viene de la hermosura pasada</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Persevera en las quejas de su dolor y advierte a Lisi del inútil arrepentimiento que viene de la hermosura pasada  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+--++-+-" rhyme="A">En una vida de tan larga <w type="rhyme">pena</w>,</l>
+            <l n="2" met="-+-+-+--++-" rhyme="B">y en una muerte, Lísida, tan <w type="rhyme">grave</w>,</l>
+            <l n="3" met="++-+-+-+-+-" rhyme="B">bien sé lo que es amar, y Amor lo <w type="rhyme">sabe</w>;</l>
+            <l n="4" met="++-+-+-+-+-" rhyme="A">no sé lo que es amor, y Amor lo <w type="rhyme">ordena</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-++--+-" rhyme="A">Esa serena frente, esa <w type="rhyme">sirena</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">para mayor peligro, más <w type="rhyme">suave</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">¿siempre escarmientos cantará a mi <w type="rhyme">nave</w>?</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">¿Nunca propicia aplaudirá a su <w type="rhyme">entena</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+---+-" rhyme="C">¿No ves que si halagüeñas <w type="rhyme">tiranías</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">me consumen, que, mustio, cada <w type="rhyme">instante</w>
+            </l>
+            <l n="11" met="+----+-+-+-" rhyme="C">roba tu primavera en horas <w type="rhyme">frías</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">y al ya rugado cárdeno <w type="rhyme">semblante</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">que mancillan los pasos de los <w type="rhyme">días</w>,</l>
+            <l n="14" met="+--+-+-+-+-" rhyme="D">no volverá a su flor ni amor ni <w type="rhyme">amante</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

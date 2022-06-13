@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Pues de este luengo mal penando <w type="rhyme">muero</w>,</l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">sin que remedio alguno estorbe el <w type="rhyme">daño</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">amor me dé, en consuelo de mi <w type="rhyme">engaño</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">falso placer ajeno, aunque <w type="rhyme">postrero</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">que mi dolor anime el duro <w type="rhyme">acero</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">y en blanda saña el tibio <w type="rhyme">desengaño</w>,</l>
+            <l n="7" met="--++---+-+-" rhyme="B">y el desdén manso, en cuya ausencia <w type="rhyme">engaño</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">mi perdición, y en vano el bien <w type="rhyme">espero</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+---+-" rhyme="C">para que de mi muerte la <w type="rhyme">memoria</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">y en voluntad ingrata mi <w type="rhyme">firmeza</w>
+            </l>
+            <l n="11" met="+--+-+-+-+-" rhyme="C">haga a la edad siguiente insigne <w type="rhyme">historia</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="D">que de mis esperanzas y <w type="rhyme">riqueza</w>
+            </l>
+            <l n="13" met="--++-+-+-+-" rhyme="C">fincarán (¡corto premio a tanta <w type="rhyme">gloria</w>!)</l>
+            <l n="14" met="-+---+---+-" rhyme="D">deseos acabados en <w type="rhyme">tristeza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

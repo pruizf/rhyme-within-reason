@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXX - Fénix cabello suelto, fortuna de amor</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXX - Fénix cabello suelto, fortuna de amor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Esta que libre al regalado <w type="rhyme">viento</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">la madeja derrama de oro <w type="rhyme">hermosa</w>:</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">sin duda que es fortuna <w type="rhyme">poderosa</w>;</l>
+            <l n="4" met="-++--+-+-+-" rhyme="A">pues da bienes, y quita en un <w type="rhyme">momento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">No es la que el oro con poder <w type="rhyme">violento</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">distribuye avarienta, y <w type="rhyme">generosa</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">mas hace al alma pobre, o <w type="rhyme">venturosa</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">del tesoro de amor su libre <w type="rhyme">intento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++---+-+-" rhyme="C">Ciega no es ya, mas para mí <w type="rhyme">escondidas</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">las luces trae, que forma mis <w type="rhyme">enojos</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">y se finge sin vista a mis <w type="rhyme">heridas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">Ay quien dude en la rueda, y los <w type="rhyme">despojos</w>;</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">despojos son, las almas ya <w type="rhyme">rendidas</w>;</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">la rueda son, los giros de sus <w type="rhyme">ojos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

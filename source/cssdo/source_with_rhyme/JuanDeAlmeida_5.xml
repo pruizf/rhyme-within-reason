@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIII -</title>
+            <author> Juan De Almeida</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Almeida</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-++--+-" rhyme="A">-¿Adónde vas, Amor? -Vengo <w type="rhyme">huyendo</w>.</l>
+            <l n="2" met="++---+-+-+-" rhyme="B">-¿qué dices? -Lo que oyes. -¡No es <w type="rhyme">posible</w>!</l>
+            <l n="3" met="++-+-+---+-" rhyme="B">-¿Tú huyes, di?, ¿de quién? -De una <w type="rhyme">invencible</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">belleza que aun aquí la estoy <w type="rhyme">temiendo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+--++-" rhyme="A">-¿Por qué la temes, di? -Porque no <w type="rhyme">entiendo</w>
+            </l>
+            <l n="6" met="++-+-++--+-" rhyme="B">que gracia, que virtud tiene <w type="rhyme">invisible</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">que no la acierto tiro que <w type="rhyme">sensible</w>
+            </l>
+            <l n="8" met="-+---+--++-" rhyme="A">padezca, pues de mí se está <w type="rhyme">riendo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">-¿El nombre de esa Idea <w type="rhyme">soberana</w>
+            </l>
+            <l n="10" met="-+-+--+-++-" rhyme="D">me di, si sabes? -A nadie oculto <w type="rhyme">es</w>:</l>
+            <l n="11" met="++---+-+-+-" rhyme="C">más bella que mi madre aunque es <w type="rhyme">humana</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+--++-+-" rhyme="C">y a quien sin duda París más de <w type="rhyme">gana</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="D">le diera que a ninguna de las <w type="rhyme">tres</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="C">por premio de hermosura la <w type="rhyme">manzana</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

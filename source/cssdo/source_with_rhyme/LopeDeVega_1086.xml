@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1141 - Acto III, DON PEDRO De La noche toledana</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1141 - Acto III, DON PEDRO De La noche toledana </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Sueño, que fuiste como dulce <w type="rhyme">empeño</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">de los cuidados que tu sombra <w type="rhyme">asiste</w>,</l>
+            <l n="3" met="-----+-+-+-" rhyme="B">como para cuidados sueño <w type="rhyme">fuiste</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">si nunca diste a los cuidados <w type="rhyme">sueño</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Tú que de cuanto viste, fácil <w type="rhyme">dueño</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">las mayores tristezas <w type="rhyme">suspendiste</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">porqué me dejas desvelar de <w type="rhyme">triste</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">sin ver mis ojos tu sabroso <w type="rhyme">ceño</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">O muerte mentirosa en <w type="rhyme">perezosos</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">y muerte verdadera en <w type="rhyme">desvelados</w>,</l>
+            <l n="11" met="+-+--+---+-" rhyme="C">bien podemos llamarte los <w type="rhyme">quejosos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Amigo falso, que huye en los <w type="rhyme">cuidados</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">pues te vas a dormir con los <w type="rhyme">dichosos</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">y dejas desvelar los <w type="rhyme">desdichados</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

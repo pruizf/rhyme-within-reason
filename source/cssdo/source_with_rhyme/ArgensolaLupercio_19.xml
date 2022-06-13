@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVI -</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A"> Descuidado del lauro que <w type="rhyme">ennoblece</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">en una choza pobre se <w type="rhyme">aposenta</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">con mesa no dorada se <w type="rhyme">sustenta</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">y de pequeños bienes se <w type="rhyme">enriquece</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A"> Los miembros al descanso alegre <w type="rhyme">ofrece</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">y de solas sus redes tiene <w type="rhyme">cuenta</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">ni la bélica trompa la <w type="rhyme">amedrenta</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">ni el temor del suceso le <w type="rhyme">entristece</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C"> Ni le aflige el oráculo <w type="rhyme">dudoso</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">ni el envidiado cetro <w type="rhyme">considera</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">si lo ha de arrebatar violenta <w type="rhyme">Parca</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="C"> ¡Oh, cien veces, Amiclas, más <w type="rhyme">dichoso</w>
+            </l>
+            <l n="13" met="-----+---+-" rhyme="D">que quien imaginó que <w type="rhyme">obedeciera</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="E">el mar a su fortuna y a tu <w type="rhyme">barca</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

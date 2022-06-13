@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXVI - Por la victoria de Lepanto</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXVI - Por la victoria de Lepanto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Hondo Ponto, que bramas <w type="rhyme">atronado</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">con tumulto y terror, del turbio <w type="rhyme">seno</w>
+            </l>
+            <l n="3" met="+-+--+-+-+-" rhyme="B">saca el rostro de torpe miedo <w type="rhyme">lleno</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">mira tu campo arder <w type="rhyme">ensangrentado</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">y junto en este cerco y <w type="rhyme">encontrado</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">todo el cristiano esfuerzo y <w type="rhyme">sarraceno</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">y cubierto de humo y fuego y <w type="rhyme">trueno</w>,</l>
+            <l n="8" met="+-+--+---+-" rhyme="A">huir temblando el impío <w type="rhyme">quebrantado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Con profundo murmullo la <w type="rhyme">victoria</w>
+            </l>
+            <l n="10" met="-+-+---+++-" rhyme="D">mayor celebra, que jamás vio el <w type="rhyme">cielo</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">y más dudosa y singular <w type="rhyme">hazaña</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">y di que sólo mereció la <w type="rhyme">gloria</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="D">que tanto nombre da a tu sacro <w type="rhyme">suelo</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">el joven de Austria y el valor de <w type="rhyme">España</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

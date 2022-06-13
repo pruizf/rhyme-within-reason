@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXVI -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Hágame el tiempo cuanto mal <w type="rhyme">quisiere</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">y nunca de mis daños se <w type="rhyme">contente</w>,</l>
+            <l n="3" met="-++--+-+-+-" rhyme="B">que no me he de perder <w type="rhyme">inútilmente</w>
+            </l>
+            <l n="4" met="-----+---+-" rhyme="A">por lo que sin propósito <w type="rhyme">dijere</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Gobierne bien o mal el que <w type="rhyme">tuviere</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">a su cargo las leyes de la <w type="rhyme">gente</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">que a mí, y a mi censor <w type="rhyme">impretendiente</w>,</l>
+            <l n="8" met="+-+--+---+-" rhyme="A">no hay mudanza de estado que me <w type="rhyme">altere</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Lleve mi confianza por el <w type="rhyme">suelo</w>
+            </l>
+            <l n="10" met="-+---+--++-" rhyme="D">sus alas, pues parece que no <w type="rhyme">acierta</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="C">el que se atreve a peligroso <w type="rhyme">vuelo</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">quede mi queja y esperanza <w type="rhyme">muerta</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">pues vemos que la envidia más que el <w type="rhyme">celo</w>
+            </l>
+            <l n="14" met="-----+-+-+-" rhyme="D">a la murmuración abrió la <w type="rhyme">puerta</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

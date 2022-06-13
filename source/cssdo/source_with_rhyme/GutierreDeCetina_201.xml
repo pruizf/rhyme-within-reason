@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVII -</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+-++++++-" rhyme="A">Ojos, ¿ojos sois vos? No sois vos <w type="rhyme">ojos</w>,</l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">antes ira del cielo extraña y <w type="rhyme">fiera</w>.</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">Mas, ojos, si lo sois, ¿de qué <w type="rhyme">manera</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="A">roban vuestra beldad vuestros <w type="rhyme">enojos</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+-+++--+-" rhyme="A">Ojos, ¿ojos sois vos? Tristes <w type="rhyme">enojos</w>;</l>
+            <l n="6" met="-+++-+++-+-" rhyme="B">que no sois ojos ya, sois fin <w type="rhyme">postrera</w>.</l>
+            <l n="7" met="-+---++--+-" rhyme="B">Mas, ojos, si lo sois, antes que <w type="rhyme">muera</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">mostradme os agradáis de mis <w type="rhyme">despojos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++-+-+-+-" rhyme="C">Ojos, no os pido yo que el ceño <w type="rhyme">airado</w>
+            </l>
+            <l n="10" met="---+-++--+-" rhyme="D">lo levantéis de mí, más <w type="rhyme">limitada</w>
+            </l>
+            <l n="11" met="+----+-+-+-" rhyme="E">hace mi petición mi mala <w type="rhyme">suerte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">Mas, ojos, pues tan claro habéis <w type="rhyme">mostrado</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="D">que mi vivir os cansa y <w type="rhyme">desagrada</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">mostrad hora agradaros de mi <w type="rhyme">muerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

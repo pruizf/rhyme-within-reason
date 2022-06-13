@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXIV - De un amante, que donde otros hallan alivio, se aumenta más la fuerza de su ardor</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXIV - De un amante, que donde otros hallan alivio, se aumenta más la fuerza de su ardor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">En esta clara cristalina <w type="rhyme">fuente</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">en cuyos, sí, dulcísimos <w type="rhyme">raudales</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">halla salud la fuerza de los <w type="rhyme">males</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">mitigado al enfermo el <w type="rhyme">accidente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">En esta pues diáfana <w type="rhyme">corriente</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">bebí Vesubios, si toqué <w type="rhyme">cristales</w>,</l>
+            <l n="7" met="--+--++--+-" rhyme="B">y lloró el corazón vivos <w type="rhyme">corales</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">apoderado de una fiebre <w type="rhyme">ardiente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+++-+-+-" rhyme="C">¿Qué es esto Amor? ¿Qué es esto Ninfa <w type="rhyme">bella</w>?</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">deidad en estas ondas <w type="rhyme">venerada</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">¿dime? en su plata líquida que <w type="rhyme">estrella</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+--++-" rhyme="D">predomina, y influye, que así <w type="rhyme">airada</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">con su murmullo aumenta mi <w type="rhyme">querella</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">y con su hielo el Alma hallé <w type="rhyme">abrasada</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

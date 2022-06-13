@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXII -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-----+-+-" rhyme="A"> Yo, aquel en cuyo insuficiente <w type="rhyme">estilo</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">la verdad injuriada oyó el <w type="rhyme">consuelo</w>
+            </l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">que en mi mente infundió benigno el <w type="rhyme">cielo</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">para tener el ánimo <w type="rhyme">tranquilo</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+---+-" rhyme="A">Ya fuego exhalo, lágrimas <w type="rhyme">destilo</w>,</l>
+            <l n="6" met="-----+---+-" rhyme="B">y contra mis preceptos me <w type="rhyme">rebelo</w>;</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">rabio al fin, y en la furia de mi <w type="rhyme">celo</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">nuevos cuchillos de venganza <w type="rhyme">afilo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+-+-+-" rhyme="C"> ¡Que el valor ceda, y venza el brazo <w type="rhyme">astuto</w>!</l>
+            <l n="10" met="++---+---+-" rhyme="D">¿Qué es esto, celestial <w type="rhyme">Sabiduría</w>?</l>
+            <l n="11" met="+--+++++-+-" rhyme="E">¿Es la virtud no más que un nombre <w type="rhyme">vano</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="D"> Mas ya tu resplandor me muestra <w type="rhyme">pía</w>;</l>
+            <l n="13" met="++-+---+-+-" rhyme="E">haz que este afecto que me turba <w type="rhyme">humano</w>,</l>
+            <l n="14" met="-----+++-+-" rhyme="C">de su calamidad no pierda el <w type="rhyme">fruto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

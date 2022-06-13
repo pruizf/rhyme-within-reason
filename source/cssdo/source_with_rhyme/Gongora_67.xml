@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LV - A Lope de Vega</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LV - A Lope de Vega </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Embutiste Lopillo, a <w type="rhyme">Sabaot</w>
+            </l>
+            <l n="2" met="-++--+---+-" rhyme="B">en un mismo soneto con <w type="rhyme">Ylec</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y echándosele a cuesta a <w type="rhyme">Lamec</w>
+            </l>
+            <l n="4" met="-+++++-+-+-" rhyme="A">le diste un muy mal rato al justo <w type="rhyme">Lot</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">Sacrificaste al ídolo <w type="rhyme">Behemot</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">que matan mal coplón <w type="rhyme">Melquisedec</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y traiga para el fuego <w type="rhyme">Abimelec</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">sarmientos de la viña de <w type="rhyme">Nabot</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Guárdate de las lanzas de <w type="rhyme">Joab</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">de tablazos del arca de <w type="rhyme">Jafet</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">y leños de la escala de <w type="rhyme">Jacob</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">no te entrometas con el rey <w type="rhyme">Acab</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">ni en lugar de Bethlén me digas <w type="rhyme">Bet</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="E">que con tus versos cansas aun a <w type="rhyme">Job</w>.</l>
+         </lg>
+         <lg type="estrambote">
+            <l n="15" met="+--+-+-+-+-" rhyme="F">Y este soneto a buenas manos <w type="rhyme">va</w>:</l>
+            <l n="16" met="+-+--+---+-" rhyme="F">¡Ay del Alfa, y Omega, y <w type="rhyme">Jehová</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

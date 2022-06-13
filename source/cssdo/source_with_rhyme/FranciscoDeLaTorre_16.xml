@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIII - Vuelve Zafiro, brota…</title>
+            <author> Francisco De La Torre</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de La Torre</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIII - Vuelve Zafiro, brota… </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Vuelve zafiro, brota, viste y <w type="rhyme">cría</w>
+            </l>
+            <l n="2" met="+-+--+---+-" rhyme="B">flores, plantas y hierbas <w type="rhyme">olorosas</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">el cielo dora, y de purpúreas <w type="rhyme">rosas</w>,</l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">blancas y rojas, teje selva <w type="rhyme">umbría</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Al río el claro, y a la mansa y <w type="rhyme">fría</w>
+            </l>
+            <l n="6" met="+--+-----+-" rhyme="B">aura templanza, y a las <w type="rhyme">sonorosas</w>
+            </l>
+            <l n="7" met="+--+---+-+-" rhyme="B">aves el canto restituye <w type="rhyme">ociosas</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">cuando el Invierno el Cielo les <w type="rhyme">cubría</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">¡Y nunca, o tiempo, por mi mal <w type="rhyme">rogado</w>,</l>
+            <l n="10" met="++---+---+-" rhyme="D">traéis una Primavera <w type="rhyme">deseada</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">y la seca esperanza de mi <w type="rhyme">vida</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">Teman otros mudanza de tu <w type="rhyme">estado</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">que sólo tu firmeza <w type="rhyme">porfiada</w>
+            </l>
+            <l n="14" met="+-+--+---+-" rhyme="E">puede ser de mi espíritu <w type="rhyme">temida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

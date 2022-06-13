@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XX - Lamentaciones sobre la persecución que padece la cristiandad de los herejes del Aquilón, conducidos por el Rey de Suecia</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XX - Lamentaciones sobre la persecución que padece la cristiandad de los herejes del Aquilón, conducidos por el Rey de Suecia </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Los ojos, Hieremías, con que <w type="rhyme">leo</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">tus altas y sagradas <w type="rhyme">profecías</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">el llanto me los vuelve, <w type="rhyme">Hieremías</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">pues hoy la olla que miraste <w type="rhyme">veo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Hierve la fama, y, en volumen <w type="rhyme">feo</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">el humo que consume nuestros <w type="rhyme">días</w>
+            </l>
+            <l n="7" met="+----+---+-" rhyme="B">ciega, y del Aquilón las <w type="rhyme">herejías</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">nos acerca por áspero <w type="rhyme">rodeo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">Del Aquilón a todos se <w type="rhyme">reparte</w>
+            </l>
+            <l n="10" met="-++--+-+-+-" rhyme="D">el mal; díjolo Dios; así <w type="rhyme">sucede</w>:</l>
+            <l n="11" met="++---+-+-+-" rhyme="C">no vale contra el cielo fuerza o <w type="rhyme">arte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Y si a Dios por nosotros no <w type="rhyme">intercede</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="C">su clemencia, en el llanto <w type="rhyme">acompañarte</w>,</l>
+            <l n="14" met="--++---+-+-" rhyme="D">sobre sí propio, nuestro siglo <w type="rhyme">puede</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

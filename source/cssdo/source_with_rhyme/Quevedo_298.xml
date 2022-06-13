@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A Don Francisco Morovelli de Puebla</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A Don Francisco Morovelli de Puebla </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++-+-+-+-" rhyme="A">Convirtiose este moro, gran <w type="rhyme">Sevilla</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">perseguidor de todos tus <w type="rhyme">linajes</w>,</l>
+            <l n="3" met="--+--++--+-" rhyme="B">pues por sólo empatar hábitos, <w type="rhyme">gajes</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">pagaste a su estupenda <w type="rhyme">tarabilla</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Hoy te prefiere el resto de <w type="rhyme">Castilla</w>
+            </l>
+            <l n="6" met="-+---++--+-" rhyme="B">quien hizo de tu honor tantos <w type="rhyme">potajes</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">aloque de Moisés y <w type="rhyme">Bencerrajes</w>,</l>
+            <l n="8" met="+--+++---+-" rhyme="A">esto por raza, eso otro por <w type="rhyme">astilla</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">En Belli cabe moro y cabe <w type="rhyme">hebreo</w>;</l>
+            <l n="10" met="-+---+---+-" rhyme="D">en Puebla, sinagoga con <w type="rhyme">mezquita</w>;</l>
+            <l n="11" met="-+---+---+-" rhyme="C">presume de lección por <w type="rhyme">galileo</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-++--+-" rhyme="D">testigo es Polión, lengua <w type="rhyme">precita</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">de cuando fue su abuelo, el <w type="rhyme">idumeo</w>,,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">pastilla ardiendo por la ley <w type="rhyme">escrita</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

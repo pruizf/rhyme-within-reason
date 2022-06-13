@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 0 - Jornada I, DON JUAN De El gran Duque de Moscovia y emperador perseguido</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 0 - Jornada I, DON JUAN De El gran Duque de Moscovia y emperador perseguido </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--++--+-" rhyme="A">La opinión general pinta <w type="rhyme">desnudo</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">al ciego Amor, y en esto no se <w type="rhyme">engaña</w>,</l>
+            <l n="3" met="-----+---+-" rhyme="B">que cuando de intereses se <w type="rhyme">acompaña</w>
+            </l>
+            <l n="4" met="++---+-+-+-" rhyme="A">no lo es, ni lo será, ni serlo <w type="rhyme">pudo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++-+-+-+-" rhyme="A">Dicen que es gala al tosco, ingenio al <w type="rhyme">rudo</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">propia amistad, correspondencia <w type="rhyme">extraña</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">mano al avaro, y al inhábil <w type="rhyme">maña</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">freno al soberbio y al cobarde <w type="rhyme">escudo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++-+---+-" rhyme="C">Dicen que es un defecto que <w type="rhyme">conquista</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">la hermosura en quien hace el alma <w type="rhyme">empleo</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">sin que prudencia humana se <w type="rhyme">resista</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+-+-+-" rhyme="D">Yo digo que es amor, y en mí lo <w type="rhyme">veo</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="C">un animal que le engendró la <w type="rhyme">vista</w>,</l>
+            <l n="14" met="++-+-+---+-" rhyme="D">dio vida el trato y manos el <w type="rhyme">deseo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

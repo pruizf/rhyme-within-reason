@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXI - A la contradicción de sus afectos</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXI - A la contradicción de sus afectos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+--++-" rhyme="A">Este fuego que alumbra, y que no <w type="rhyme">abrasa</w>,</l>
+            <l n="2" met="-+-+-+--++-" rhyme="B">pues hay alguna parte que no <w type="rhyme">encienda</w>
+            </l>
+            <l n="3" met="+----++--+-" rhyme="B">esta dificultad, esta <w type="rhyme">contienda</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">que en la razón y en los afectos <w type="rhyme">pasa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Este incendio de fuerza tan <w type="rhyme">escasa</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que no hay sentido que guardar <w type="rhyme">emprenda</w>,</l>
+            <l n="7" met="-----+---+-" rhyme="B">y sin contradicción que le <w type="rhyme">defienda</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">tan eficaz a las potencias <w type="rhyme">pasa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Parece material en el <w type="rhyme">tormento</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">y eterno se descubre en lo que <w type="rhyme">dura</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="E">sin consumir el alma en quien se <w type="rhyme">ceba</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+++--+---+-" rhyme="C">Yo no sé descifrar mi <w type="rhyme">pensamiento</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">sé que el amor su calidad <w type="rhyme">apura</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">con el examen de una llama <w type="rhyme">nueva</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

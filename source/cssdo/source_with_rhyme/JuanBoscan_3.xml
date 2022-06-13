@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- C -</title>
+            <author> Juan Boscan</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan Boscan</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- C - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">¡Ay, corazón, ingrata en quien te <w type="rhyme">lleva</w>!</l>
+            <l n="2" met="+--+-++--+-" rhyme="B">¿Quién pensarás jamás no <w type="rhyme">reventaras</w>
+            </l>
+            <l n="3" met="-+-+-+++-+-" rhyme="B">en ver gustar de amor? ¿Quién no <w type="rhyme">pensaras</w>
+            </l>
+            <l n="4" met="-+-+-++-++-" rhyme="A">de sí pensase hacer una tal <w type="rhyme">prueba</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Siempre pensé le fuese cosa <w type="rhyme">nueva</w>,</l>
+            <l n="6" met="-+-+--+--+-" rhyme="B">y así tus daños jamás le <w type="rhyme">contaras</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">pensando que en decirlos le <w type="rhyme">enojaras</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">pues con sólo pensarlos te <w type="rhyme">reprueba</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Espántome de ver tu <w type="rhyme">sufrimiento</w>,</l>
+            <l n="10" met="-+---+--++-" rhyme="D">y espántome de mí como soy <w type="rhyme">vivo</w>
+            </l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">y más me espanta verme en tal <w type="rhyme">estado</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">de no poder quitar el <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="13" met="---+--++-+-" rhyme="D">de la que causan mi mal ten <w type="rhyme">esquivo</w>,</l>
+            <l n="14" met="-+-+-++--+-" rhyme="E">y no morirme el ver esto <w type="rhyme">enterrado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

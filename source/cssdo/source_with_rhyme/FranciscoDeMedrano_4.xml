@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XII - A Fernando de Soria Galvarro</title>
+            <author> Francisco De Medrano</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de Medrano</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XII - A Fernando de Soria Galvarro </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">En el secreto de la noche <w type="rhyme">suelo</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="C">Sorino, contemplar las luces <w type="rhyme">bellas</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="C">y mudo platicar así con <w type="rhyme">ellas</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">porque envidioso no me estorbe el <w type="rhyme">suelo</w>:</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+---+-" rhyme="A">«Ya, ya, soberbios astros, vuestro <w type="rhyme">cielo</w>
+            </l>
+            <l n="6" met="+-+--+-+-+-" rhyme="C">Flora pisa inmortal con firmes <w type="rhyme">huellas</w>;</l>
+            <l n="7" met="++-+-+-+-+-" rhyme="C">ya, eternamente hermosa, pisa <w type="rhyme">estrellas</w>;</l>
+            <l n="8" met="-+-+-+++-+-" rhyme="A">y ¡cuál sin ella yo! más cese el <w type="rhyme">duelo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+---+-" rhyme="E">Tú fuiste, Flora, y vos, que la <w type="rhyme">robaste</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="F">divinas luces, para mí <w type="rhyme">inhumanas</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">pues solo y vida y seso me <w type="rhyme">dejaste</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+++-+-+-" rhyme="G">Mas, porque tú no toda mueras, <w type="rhyme">Flora</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="F">ni en las miserias vivas toda <w type="rhyme">humanas</w>,</l>
+            <l n="14" met="+-++-+-+-+-" rhyme="G">viva yo y pene, y tú los cielos <w type="rhyme">mora</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

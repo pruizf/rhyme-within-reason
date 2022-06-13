@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CVII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">Yo vi unos ojos bellos, que <w type="rhyme">hirieron</w>
+            </l>
+            <l n="2" met="-+-++--+-+-" rhyme="B">con dulce flecha un corazón <w type="rhyme">cuitado</w>,</l>
+            <l n="3" met="-----++--+-" rhyme="B">y que para encender nuevo <w type="rhyme">cuidado</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">su fuerza toda contra mí <w type="rhyme">pusieron</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+---+-" rhyme="A">Yo vi que muchas veces <w type="rhyme">prometieron</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">remedio al mal, que sufro no <w type="rhyme">cansado</w>,</l>
+            <l n="7" met="-----++--+-" rhyme="B">y que cuando esperé vello <w type="rhyme">acabado</w>,</l>
+            <l n="8" met="+----+---+-" rhyme="A">poco mis esperanzas me <w type="rhyme">valieron</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+-+-+-" rhyme="C">Yo veo que se esconden ya mis <w type="rhyme">ojos</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">y crece mi dolor y llevo <w type="rhyme">ausente</w>
+            </l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">en el rendido pecho el golpe <w type="rhyme">fiero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="C">Yo veo ya perderse los <w type="rhyme">despojos</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">y el caro premio de mi bien <w type="rhyme">presente</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">y en ciego engaño de esperanza <w type="rhyme">muero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

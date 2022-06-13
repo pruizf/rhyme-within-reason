@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXVII -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Perdiste, o Clori, la mayor <w type="rhyme">riqueza</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">que el cuerpo tiene, y la mejor del <w type="rhyme">alma</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">igual en todo a la divina <w type="rhyme">palma</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">corona de tu Angélica <w type="rhyme">belleza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+---+-+-" rhyme="A">Y un solo honor, que a nuestra vil <w type="rhyme">flaqueza</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">concede el cielo, que piadoso <w type="rhyme">acalma</w>
+            </l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">el mar común, que no consiente <w type="rhyme">calma</w>
+            </l>
+            <l n="8" met="---+---+-+-" rhyme="A">sino le enfrena celestial <w type="rhyme">pureza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Corrida estás, pues yo afrentado <w type="rhyme">quedo</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">de ver en mano súplica <w type="rhyme">oprimida</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">la hermosa flor, admiración del <w type="rhyme">prado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Cobre el error en tus desdichas <w type="rhyme">miedo</w>;</l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">que a veces nace del temor la <w type="rhyme">vida</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">y aciertos nobles del amor <w type="rhyme">errado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

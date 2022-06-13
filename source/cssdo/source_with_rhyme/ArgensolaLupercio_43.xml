@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIX - Al padecer un gran desmayo</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIX - Al padecer un gran desmayo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--++--+-" rhyme="A"> Si un afecto, Señor, puedo <w type="rhyme">ofrecerte</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">al culto de sus ídolos <w type="rhyme">atento</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">con lágrimas de amor te lo <w type="rhyme">presento</w>;</l>
+            <l n="4" met="++---+---+-" rhyme="A">tú en víctima perfecta lo <w type="rhyme">convierte</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Que en este sueño tan intenso y <w type="rhyme">fuerte</w>,</l>
+            <l n="6" met="-----+---+-" rhyme="B">de sus misericordias <w type="rhyme">instrumento</w>,</l>
+            <l n="7" met="++---++--+-" rhyme="B">no imagen imitada es lo que <w type="rhyme">siento</w>,</l>
+            <l n="8" met="-++--+---+-" rhyme="A">sino un breve misterio de la <w type="rhyme">muerte</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">en quien con ojos superiores <w type="rhyme">miro</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">mi fábrica interior <w type="rhyme">oscurecida</w>.</l>
+            <l n="11" met="+--+-+-+-+-" rhyme="E">Báñela aquella luz, Señor, <w type="rhyme">aquella</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D"> que inspira perfecciones a la <w type="rhyme">vida</w>;</l>
+            <l n="13" met="--+--+---+-" rhyme="E">pues permites que goce, sin <w type="rhyme">perdella</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="C">experiencias del último <w type="rhyme">suspiro</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1242 - Jornada I, DOÑA SOL</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1242 - Jornada I, DOÑA SOL </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+++-+-+-+-" rhyme="A">Amor seis años ha que me has <w type="rhyme">jurado</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">pagarme aquella deuda en plazos <w type="rhyme">breves</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">mira que nunca pagas lo que <w type="rhyme">debes</w>,</l>
+            <l n="4" met="+-+-++-+-+-" rhyme="A">que esto sólo no tienes de hombre <w type="rhyme">honrado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Muchas veces en pajas me has <w type="rhyme">pagado</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">que de mal pagador cuanto te <w type="rhyme">atreves</w>,</l>
+            <l n="7" met="-+++---+-+-" rhyme="B">que todo es viento, y esperanzas <w type="rhyme">leves</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">cuanto me rinde en fruto mi <w type="rhyme">cuidado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+-+++-" rhyme="-">Amor hoy llega el plazo, el punto es hecho</l>
+            <l n="10" met="--+--+---+-" rhyme="C">si en palabras me traes, y con <w type="rhyme">engaños</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="D">que te echaré en la cárcel temo y <w type="rhyme">dudo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+++-" rhyme="-">Mas que podré cobrar amor, si has hecho</l>
+            <l n="13" met="+----+--++-" rhyme="C">pleito de acreedores por mil <w type="rhyme">años</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">y en buscando tu hacienda estás <w type="rhyme">desnudo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

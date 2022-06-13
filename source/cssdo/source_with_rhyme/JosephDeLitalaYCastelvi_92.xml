@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIV - Al apóstol Santiago, patrón de España</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIV - Al apóstol Santiago, patrón de España </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Llegaste a España atravesando <w type="rhyme">mares</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">adonde el Cielo tu mansión <w type="rhyme">destina</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y con Sal de Apostólica <w type="rhyme">Doctrina</w>
+            </l>
+            <l n="4" met="-+---++--+-" rhyme="A">le diste a su redil muchos <w type="rhyme">millares</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-++--+-" rhyme="A">Santificaste a Dios, Aras, y <w type="rhyme">Altares</w>,</l>
+            <l n="6" met="+---+-+--+-" rhyme="B">siendo del Genuino rayo, y <w type="rhyme">ruina</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y en su sagrada, y próvida <w type="rhyme">Oficina</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">muchas piedras labraste <w type="rhyme">singulares</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Te vio en campaña el pérfido <w type="rhyme">Pagano</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">sobre blanco caballo en las <w type="rhyme">hileras</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">Caudillo del Ejército <w type="rhyme">Cristiano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+-+----+-" rhyme="D">Y Patrón tutelas de sus <w type="rhyme">riberas</w>
+            </l>
+            <l n="13" met="-++--+---+-" rhyme="C">debió España las glorias a tu <w type="rhyme">mano</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">coronando tu Templo de <w type="rhyme">banderas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Persuade a la justicia que arroje el peso, pues usa sólo de la espada</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Persuade a la justicia que arroje el peso, pues usa sólo de la espada  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Arroja las balanzas, sacra <w type="rhyme">Astrea</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">pues que tiene tu mano <w type="rhyme">embarazada</w>;</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y si se mueven, tiemblan de tu <w type="rhyme">espada</w>:</l>
+            <l n="4" met="-+---++--+-" rhyme="A">que el peso y la igualdad no las <w type="rhyme">menea</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="A">No estás justificada, sino <w type="rhyme">fea</w>;</l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">y, en vez de estar igual, estás <w type="rhyme">armada</w>;</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">feroz te ve la gente, no <w type="rhyme">ajustada</w>:</l>
+            <l n="8" met="+----+-+-+-" rhyme="A">¿quieres que el tribunal batalla <w type="rhyme">sea</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Ya militan las leyes y el <w type="rhyme">derecho</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">y te sirven de textos las <w type="rhyme">heridas</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="C">que escribe nuestra sangre en nuestro <w type="rhyme">pecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="D">La Parca eres, fatal, para las <w type="rhyme">vidas</w>:</l>
+            <l n="13" met="---+-+-+-+-" rhyme="C">pues lo que hilaron otras has <w type="rhyme">deshecho</w>
+            </l>
+            <l n="14" met="++---+---+-" rhyme="D">y has vuelto las balanzas <w type="rhyme">homicidas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

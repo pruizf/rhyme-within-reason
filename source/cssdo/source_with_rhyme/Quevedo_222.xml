@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Procura también persuadir aquí a una pedidora perdurable la doctrina del trueco de las personas</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Procura también persuadir aquí a una pedidora perdurable la doctrina del trueco de las personas  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-++--+-" rhyme="A">Que no me quieren bien todas, <w type="rhyme">confieso</w>;</l>
+            <l n="2" met="-+++-+---+-" rhyme="B">que yo no soy doblón para <w type="rhyme">dudallo</w>.</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">Si alguno tengo, gusto de <w type="rhyme">guardallo</w>;</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">si me aborrecen, no será por <w type="rhyme">eso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Con quien tiene codicia, tengo <w type="rhyme">seso</w>;</l>
+            <l n="6" met="--++-+---+-" rhyme="B">en pagar soy discípulo del <w type="rhyme">gallo</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">y yo ningún inconveniente <w type="rhyme">hallo</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">en estas retenciones que <w type="rhyme">profeso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Es lenguaje de poyos y de <w type="rhyme">establo</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">«Tengamos y tengamos»; y «lo <w type="rhyme">cierto</w>
+            </l>
+            <l n="11" met="+--+-+-+-+-" rhyme="C">es lo de taz a taz», si yo le <w type="rhyme">entablo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+-+-+-" rhyme="D">No se tome en la boca el perro <w type="rhyme">muerto</w>:</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">quebremos de esta vez el ojo al <w type="rhyme">diablo</w>;</l>
+            <l n="14" met="---+-++--+-" rhyme="D">y pues cojuelo le hay, háyale <w type="rhyme">tuerto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

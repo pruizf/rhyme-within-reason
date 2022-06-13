@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 980 - Acto III, REINA De El tirano castigado</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 980 - Acto III, REINA De El tirano castigado </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Leña del sacrificio <w type="rhyme">riguroso</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">de esta culpada víctima <w type="rhyme">inocente</w>,</l>
+            <l n="3" met="---+-+--++-" rhyme="B">que de mi llanto apagas la gran <w type="rhyme">fuente</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">y no el rigor de mi engañado <w type="rhyme">esposo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Padre, sacrificaba, aunque <w type="rhyme">piadoso</w>,</l>
+            <l n="6" met="-+-+-++--+-" rhyme="B">al santo Isaac; aquí es tan <w type="rhyme">diferente</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">que el hijo sacrifica, o lo <w type="rhyme">consiente</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">la madre, a quien negó el amor <w type="rhyme">forzoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Pero la fe, que siempre firme <w type="rhyme">estuvo</w>
+            </l>
+            <l n="10" met="-+-+-++--+-" rhyme="D">en ese gran poder dice que <w type="rhyme">espere</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">sin temer que mi sangre se <w type="rhyme">derrame</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">que Dios, que el brazo de Abraham <w type="rhyme">detuvo</w>,</l>
+            <l n="13" met="+--+-+--++-" rhyme="D">si es que probar en esto mi fe <w type="rhyme">quiere</w>,</l>
+            <l n="14" met="-+-+-+++-+-" rhyme="E">mejor tendrá la espada a un hijo <w type="rhyme">infame</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 931 - Jornada III, FENISA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 931 - Jornada III, FENISA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++-+--++-" rhyme="A">Camarón más sonante, que no el <w type="rhyme">Dux</w>
+            </l>
+            <l n="2" met="--++-+---+-" rhyme="B">que en Venecia es el grande <w type="rhyme">agilimox</w>;</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">vos de mi vida y alma de mi <w type="rhyme">trox</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">cincuenta y cinco de mi dicha y <w type="rhyme">flux</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Hamaca mía, fino <w type="rhyme">almoradux</w>,</l>
+            <l n="6" met="--++-+-+-+-" rhyme="B">que de ti no me iré aunque digas <w type="rhyme">ox</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">porque espero a las horas del <w type="rhyme">relox</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">para jugar contigo al <w type="rhyme">dingandux</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">tu ajedrez aguardo en mi <w type="rhyme">almofrex</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="C">herida de la flecha del <w type="rhyme">carcax</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">pues eres de mi pecho rueda y <w type="rhyme">ex</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+++-+-" rhyme="C">que aunque me hieras, ya no temo el <w type="rhyme">ax</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">y nadaré contigo como el <w type="rhyme">pex</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="C">para apagar el fuego de tu <w type="rhyme">errax</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

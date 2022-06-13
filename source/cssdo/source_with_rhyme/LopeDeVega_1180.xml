@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1379 - Acto II, CARLOS</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1379 - Acto II, CARLOS </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Cuidados míos: muy aprisa <w type="rhyme">intenta</w>
+            </l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">un agraviado amor perder la <w type="rhyme">vida</w>,</l>
+            <l n="3" met="++-+-+-+-+-" rhyme="B">tan triste, tan cobarde, tan <w type="rhyme">perdida</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">que apenas un cabello la <w type="rhyme">sustenta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">A los agravios, la venganza <w type="rhyme">alienta</w>,</l>
+            <l n="6" met="-+++-+-+-+-" rhyme="B">y en mí no quiere amor que yo la <w type="rhyme">pida</w>;</l>
+            <l n="7" met="---+---+-+-" rhyme="B">que aunque la causa del amor se <w type="rhyme">olvida</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">nunca se olvida del honor la <w type="rhyme">afrenta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+--++-" rhyme="C">Como infiernos de amor, en que amor <w type="rhyme">pena</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="D">son los celos, que salen a los <w type="rhyme">labios</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">del fuego del que el alma vive <w type="rhyme">llena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Pues si infiernos de amor los llaman <w type="rhyme">sabios</w>,</l>
+            <l n="13" met="++-+-+---+-" rhyme="C">¿qué nombre tiene amor para su <w type="rhyme">pena</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">después que se averiguan los <w type="rhyme">agravios</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

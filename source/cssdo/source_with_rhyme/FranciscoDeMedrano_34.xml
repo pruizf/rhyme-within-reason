@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- IV - En la playa de Barcelona, volviendo de Roma</title>
+            <author> Francisco De Medrano</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de Medrano</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- IV - En la playa de Barcelona, volviendo de Roma </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Pláceme ver el mar cuando se <w type="rhyme">enoja</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">y a montes de agua montes <w type="rhyme">acumula</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y al experto patrón que <w type="rhyme">disimula</w>,</l>
+            <l n="4" met="-+---++--+-" rhyme="A">prudente su temor, puesto en <w type="rhyme">congoja</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">También me place verlo cuando <w type="rhyme">moja</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">la orilla mala vez, y en leche <w type="rhyme">adula</w>
+            </l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">a quien sus culpas lleva o bien su <w type="rhyme">gula</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">a cortejar cualquier birreta <w type="rhyme">roja</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Turbio me place y pláceme <w type="rhyme">sereno</w>;</l>
+            <l n="10" met="+--+-+---+-" rhyme="D">verlo seguro, digo, desde <w type="rhyme">afuera</w>,</l>
+            <l n="11" met="+--+-++--+-" rhyme="E">y éste medroso ver, y éste <w type="rhyme">engañado</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+---++-+-+-" rhyme="C">no porque me dé gusto el mal <w type="rhyme">ajeno</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">mas por hallarme libre en la <w type="rhyme">ribera</w>
+            </l>
+            <l n="14" met="--++-+---+-" rhyme="E">y del mar falso asaz <w type="rhyme">desengañado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

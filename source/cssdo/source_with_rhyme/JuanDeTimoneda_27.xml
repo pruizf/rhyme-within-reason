@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- V -</title>
+            <author> Juan De Timoneda</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Timoneda</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- V - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Dardanio con el cuento del <w type="rhyme">cayado</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">el nombre y la figura <w type="rhyme">deshacía</w>
+            </l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">de una hermosa ninfa que él <w type="rhyme">había</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">en mil cortezas de árboles <w type="rhyme">pintado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+---+-" rhyme="A">Y con un triste gesto, y <w type="rhyme">demudado</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">con un ay que del alma le <w type="rhyme">salía</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">«¡Ay traidora Maranta!» le <w type="rhyme">decía</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">«en quien puse mi seso y mi <w type="rhyme">cuidado</w>.»</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Si pudiese del alma tu <w type="rhyme">retrato</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">quitar, cual de estos árboles lo <w type="rhyme">quito</w>,</l>
+            <l n="11" met="++-+-+-+++-" rhyme="E">no harías tú mi vida ser tan <w type="rhyme">corta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--++--+-" rhyme="C">Mas hay cuan por demás triste me <w type="rhyme">mato</w>
+            </l>
+            <l n="13" met="---+---+-+-" rhyme="D">que lo que está en el corazón <w type="rhyme">escrito</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">borrarlo en la corteza poco <w type="rhyme">importa</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

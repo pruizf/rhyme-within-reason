@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1426 - Libro III</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1426 - Libro III </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+-+-" rhyme="A">Lloved nubes al justo, aquel <w type="rhyme">Eterno</w>,</l>
+            <l n="2" met="-----+-+-+-" rhyme="B">cuya generación ninguno <w type="rhyme">cuenta</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">y en tierra virgen de milicia <w type="rhyme">exenta</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">prodúzcale una flor, pimpollo <w type="rhyme">tierno</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">Llorad, cielo, el Verbo, que ab <w type="rhyme">eterno</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">se engendra en Dios, y vive y se <w type="rhyme">alimenta</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">por bien del hombre, y para eterna <w type="rhyme">afrenta</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">del envidioso Rey del lago <w type="rhyme">Averno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Baje la luz y gloria de las <w type="rhyme">gentes</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">al limbo oscuro a reparar sus <w type="rhyme">daños</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">tras tantos siglos de la vida <w type="rhyme">ausentes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Y adviertan nuestros frágiles <w type="rhyme">engaños</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">lo que enojan a Dios <w type="rhyme">desobedientes</w>,</l>
+            <l n="14" met="--+--++-++-" rhyme="D">pues lo estuvo de Adán cuatro mil <w type="rhyme">años</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

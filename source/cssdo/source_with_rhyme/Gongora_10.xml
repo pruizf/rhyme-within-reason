@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-CVII- De Isabel de la Paz</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-CVII- De Isabel de la Paz</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">De humildes padres hija, en pobres <w type="rhyme">paños</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">envuelta se crió para <w type="rhyme">criada</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">de la más que bellísima <w type="rhyme">Hurtada</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">do aprendió su provecho y nuestros <w type="rhyme">daños</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">De pajes fue orinal, y de <w type="rhyme">picaños</w>,</l>
+            <l n="6" met="-----+---+-" rhyme="B">hasta que por barata y por <w type="rhyme">taimada</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">un caballero de la verde <w type="rhyme">espada</w>
+            </l>
+            <l n="8" met="-+-+---+++-" rhyme="A">la puso casa y la sirvió dos <w type="rhyme">años</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Tulló a un Duque, y a cuatro <w type="rhyme">mercadantes</w>
+            </l>
+            <l n="10" met="++---+---+-" rhyme="D">más pobres los dejaron que el <w type="rhyme">Decreto</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">sus ojos dulces, sus desdenes <w type="rhyme">agros</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="E">Esta es, lector, la vida y los <w type="rhyme">milagros</w>
+            </l>
+            <l n="13" met="--+--++--+-" rhyme="D">de Isabel de la Paz, sea mi <w type="rhyme">soneto</w>
+            </l>
+            <l n="14" met="+--+-+---+-" rhyme="C">báculo a ciegos, Norte a <w type="rhyme">navegantes</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

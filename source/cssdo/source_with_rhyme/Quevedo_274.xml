@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Al haber quitado los cuellos y las calzas atacadas, y ver esgrimir por entretenimiento</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Al haber quitado los cuellos y las calzas atacadas, y ver esgrimir por entretenimiento </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Rey que desencarcelas los <w type="rhyme">gaznates</w>,</l>
+            <l n="2" met="+-+--+---+-" rhyme="B">rey que sacas los muslos de <w type="rhyme">tudescos</w>,</l>
+            <l n="3" met="+----+---+-" rhyme="B">rey que resucitaste los <w type="rhyme">greguescos</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">lisonja al Cid, merced a los <w type="rhyme">combates</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">rey sin chinelas, rey sin <w type="rhyme">acicates</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">rey sin ahogo, rey de miembros <w type="rhyme">frescos</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">rey en campaña fuera de <w type="rhyme">grutescos</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">que postas corres, que favonios <w type="rhyme">bates</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">miente quien se quejare por la <w type="rhyme">gola</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">pues son cabezas las que fueron <w type="rhyme">coles</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">y hombre mortal el bulto <w type="rhyme">tabaola</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="D">No quieres ver en calzas de <w type="rhyme">españoles</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="C">cuchilladas, por verlas con la <w type="rhyme">sola</w>:</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="D">humos quieres que tengan, no <w type="rhyme">arreboles</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

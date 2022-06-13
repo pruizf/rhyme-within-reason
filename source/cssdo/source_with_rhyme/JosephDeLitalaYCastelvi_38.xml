@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXII - A un amante difunto que por atrevido fue despreciado</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXII - A un amante difunto que por atrevido fue despreciado </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">Guarda este bien labrado <w type="rhyme">Monumento</w>,</l>
+            <l n="2" met="--+--++--+-" rhyme="B">que fatigas debió a Fidias <w type="rhyme">primeras</w>,</l>
+            <l n="3" met="+-+--++--+-" rhyme="-">un Amante que ardió Plumas, y Cera,</l>
+            <l n="4" met="--+--++--+-" rhyme="A">en los ojos de Inés, bello <w type="rhyme">elemento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Padeció glorioso su <w type="rhyme">tomento</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">encendido en las dulces <w type="rhyme">primaveras</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">de su rostro, y en alas <w type="rhyme">lisonjeras</w>,</l>
+            <l n="8" met="+-+--+-+-+-" rhyme="A">flores quiso libar, mas fue <w type="rhyme">escarmiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Escalar intentó la <w type="rhyme">refulgente</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">de Inés hermosa, y abrasada <w type="rhyme">Esfera</w>,</l>
+            <l n="11" met="+----+---+-" rhyme="E">Ícaro presumido con <w type="rhyme">engaño</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Mas al beber las luces de su <w type="rhyme">frente</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">despeñado cayó, para que <w type="rhyme">fuera</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">feliz el precipicio, y dulce el <w type="rhyme">daño</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A las sillas de mano cuando van acompañadas de muchos gentilhombres</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A las sillas de mano cuando van acompañadas de muchos gentilhombres  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Ya los pícaros saben en <w type="rhyme">Castilla</w>
+            </l>
+            <l n="2" met="+-++-+-+-+-" rhyme="B">cuál mujer es pesada y cuál <w type="rhyme">liviana</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y los bergantes sirven de <w type="rhyme">romana</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">al cuerpo que con más diamantes <w type="rhyme">brilla</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Ya llegó a tabernáculo la <w type="rhyme">silla</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">y, cristalina, el hábito <w type="rhyme">profana</w>
+            </l>
+            <l n="7" met="---+-+---+-" rhyme="B">de la custodia, y temo que <w type="rhyme">mañana</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">añadirá a las hachas <w type="rhyme">campanilla</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Al trono en correones, las <w type="rhyme">banderas</w>
+            </l>
+            <l n="10" met="+---++---+-" rhyme="D">ceden en hacer gente, pues que <w type="rhyme">toda</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="C">la juventud ocupan en <w type="rhyme">hileras</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-++-+-+-+-" rhyme="D">Una silla es pobreza de una <w type="rhyme">boda</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">pues, empeñada en oro y <w type="rhyme">vidrieras</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="D">antes la honra que el chapín se <w type="rhyme">enloda</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

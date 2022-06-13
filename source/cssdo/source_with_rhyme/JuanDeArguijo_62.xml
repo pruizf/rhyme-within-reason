@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>La tempestad y la calma</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>La tempestad y la calma </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+-+-+-" rhyme="A">Yo vi del rojo sol la luz <w type="rhyme">serena</w>
+            </l>
+            <l n="2" met="-+--++---+-" rhyme="B">turbarse, y que en un punto <w type="rhyme">desparece</w>
+            </l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">su alegre faz, y en torno se <w type="rhyme">oscurece</w>
+            </l>
+            <l n="4" met="-+---+--++-" rhyme="A">el cielo con tinieblas de horror <w type="rhyme">llena</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">El astro proceloso airado <w type="rhyme">suena</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">crece su furia, y la tormenta <w type="rhyme">crece</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y en los hombros de Atlante se <w type="rhyme">estremece</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">el alto Olimpo y con espanto <w type="rhyme">truena</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">mas luego vi romperse el negro <w type="rhyme">velo</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">deshecho en agua, y a su luz <w type="rhyme">primera</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">restituirse alegre el claro <w type="rhyme">día</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">y de nuevo esplendor ornado el <w type="rhyme">cielo</w>
+            </l>
+            <l n="13" met="-++-++---+-" rhyme="D">miré y dixe: ¿Quién sabe si le <w type="rhyme">espera</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">igual mudanza a la fortuna <w type="rhyme">mía</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

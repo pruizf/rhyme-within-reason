@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Contiene una grande advertencia a los reyes; conviene a saber: que con ser tan soberanos por la alteza de su dignidad, los que con su obligación no cumplen dignamente, se hacen despreciables en la estimación y en la memoria después</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Contiene una grande advertencia a los reyes; conviene a saber: que con ser tan soberanos por la alteza de su dignidad, los que con su obligación no cumplen dignamente, se hacen despreciables en la estimación y en la memoria después  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">En caña de pescar trocó <w type="rhyme">Artabano</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">El cetro, y las insignias <w type="rhyme">soberanas</w>
+            </l>
+            <l n="3" met="--+--+--++-" rhyme="B">ocupó diligente en pescar <w type="rhyme">ranas</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">por acallar el cieno de un <w type="rhyme">pantano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">Emperador araña, <w type="rhyme">Domiciano</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">cazando moscas, infamó sus <w type="rhyme">canas</w>;</l>
+            <l n="7" met="---+-+---+-" rhyme="B">cuando cerrando puertas y <w type="rhyme">ventanas</w>,</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">pudo limpiar las siestas al <w type="rhyme">verano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Fortuna, ¿no estuvieran más <w type="rhyme">decentes</w>
+            </l>
+            <l n="10" met="+--+-++--+-" rhyme="D">puestas en un moscón y un <w type="rhyme">renacuajo</w>
+            </l>
+            <l n="11" met="-+-+--++-+-" rhyme="C">las dos coronas, que en tan viles <w type="rhyme">frentes</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+-+++-" rhyme="D">Témome que el reinar oficio es <w type="rhyme">bajo</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">pues que ruegas, a costa de las <w type="rhyme">gentes</w>,</l>
+            <l n="14" met="-++--++--+-" rhyme="D">con cetro a un mosqueador y a un <w type="rhyme">espantajo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CCVII - Al Príncipe de Ascoli</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CCVII - Al Príncipe de Ascoli </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Quien tiene tan honrado <w type="rhyme">pensamiento</w>,</l>
+            <l n="2" met="-+---++--+-" rhyme="B">Lavinio, como yo, no es tan <w type="rhyme">ligero</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">mudar de voluntad sin que <w type="rhyme">primero</w>
+            </l>
+            <l n="4" met="+----++--+-" rhyme="A">pierda con el vivir todo el <w type="rhyme">contento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+-+-+-" rhyme="A">No fue el primero ardor el que ahora <w type="rhyme">siento</w>,</l>
+            <l n="6" met="-+++-+-+-+-" rhyme="B">mas sé yo bien al fin será el <w type="rhyme">postrero</w>;</l>
+            <l n="7" met="+-++-++-++-" rhyme="B">éste fue el muy sabroso, éste más <w type="rhyme">fiero</w>,</l>
+            <l n="8" met="+-++-+---+-" rhyme="A">de este fue el bien igual con el <w type="rhyme">tormento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Si me quejo, pastor, de mi <w type="rhyme">pastora</w>,</l>
+            <l n="10" met="-+-+-+++-+-" rhyme="D">si digo que es cruel, que es una <w type="rhyme">ingrata</w>,</l>
+            <l n="11" met="-+---++--+-" rhyme="E">a ti, que de mi ardor sabes la <w type="rhyme">historia</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+---+-" rhyme="D">es la contemplación que me <w type="rhyme">maltrata</w>,</l>
+            <l n="13" met="+-++-+-+-+-" rhyme="C">que ora el bien, ora el mal pasado <w type="rhyme">llora</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">según amor lo trae a la <w type="rhyme">memoria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

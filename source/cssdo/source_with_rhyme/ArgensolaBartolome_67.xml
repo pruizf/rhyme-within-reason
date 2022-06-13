@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVI -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A"> Amor, si de la parte más <w type="rhyme">perfeta</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">jamás mi sol su viva luz <w type="rhyme">retira</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">en vano Filis con piedad me <w type="rhyme">mira</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">y enciendes en su ojos tu <w type="rhyme">saeta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">No como yo lució sobre el <w type="rhyme">Oeta</w>
+            </l>
+            <l n="6" met="-+--++---+-" rhyme="B">el héroe que amó tanto a <w type="rhyme">Deyanira</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">ni la cumbre de Olimpo está de la <w type="rhyme">ira</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">de los rayos y vientos más <w type="rhyme">quieta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+--++---+-" rhyme="C">Y así como allá encima de su <w type="rhyme">altura</w>,</l>
+            <l n="10" met="-----++--+-" rhyme="D">cuando por religión sube la <w type="rhyme">gente</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">las cenizas de antiguos <w type="rhyme">sacrificios</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="D"> Fili hallará guardados <w type="rhyme">altamente</w>
+            </l>
+            <l n="13" met="---+-++--+-" rhyme="E">de mi primer amor sacros <w type="rhyme">indicios</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="C">con fe y tranquilidad serena y <w type="rhyme">pura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXX - Consideración de la palabra: «Perdónalos que no saben lo que hacen» y que dijo Jesucristo en la Cruz</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXX - Consideración de la palabra: «Perdónalos que no saben lo que hacen» y que dijo Jesucristo en la Cruz </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Vinagre y hiel para sus labios <w type="rhyme">pide</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">y perdón para el pueblo que le <w type="rhyme">hiere</w>:</l>
+            <l n="3" met="---+---+-+-" rhyme="B">que como sólo por que viva, <w type="rhyme">muere</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">con su inmensa piedad sus culpas <w type="rhyme">mide</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Señor que al que le deja no <w type="rhyme">despide</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que al siervo vil que le aborrece <w type="rhyme">quiere</w>,</l>
+            <l n="7" met="-----++--+-" rhyme="B">que porque su traidor no <w type="rhyme">desespere</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">a llamarle su amigo se <w type="rhyme">comide</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+++--+-+-+-" rhyme="C">ya no deja ignorancia al pueblo <w type="rhyme">hebreo</w>
+            </l>
+            <l n="10" met="-++--+---+-" rhyme="D">de que es Hijo de Dios, si, <w type="rhyme">agonizando</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="C">hace de amor, por su dureza, <w type="rhyme">empleo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="D">Quien por sus enemigos, <w type="rhyme">expirando</w>,</l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">pide perdón, mejor en tal <w type="rhyme">deseo</w>
+            </l>
+            <l n="14" met="-+++-+-+-+-" rhyme="D">mostró ser Dios, que el sol y el mar <w type="rhyme">bramando</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

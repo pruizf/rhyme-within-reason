@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 20 - Libro II Al sepulcro del Duque de Alba</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 20 - Libro II Al sepulcro del Duque de Alba </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+-+-+-" rhyme="A">No es esta del invicto Marco <w type="rhyme">Albano</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">la quinta esfera, que a la quinta <w type="rhyme">admira</w>,</l>
+            <l n="3" met="-+-+-+--++-" rhyme="B">que yo por otra eclíptica el sol <w type="rhyme">mira</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">del Alba suya el centro <w type="rhyme">soberano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Sólo yacen aquí espada y <w type="rhyme">mano</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">por quien España huérfana <w type="rhyme">suspira</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">y la ceniza, en que la vida <w type="rhyme">espira</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">del más famoso Capitán <w type="rhyme">Cristiano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Aquí la grande y la inferior <w type="rhyme">Germania</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">el Portugués, el Franco, el Moro, el <w type="rhyme">Belga</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">y todos al sepulcro muestran <w type="rhyme">miedo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Aquí delante del león de <w type="rhyme">Albania</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">la envidia misma sus despojos <w type="rhyme">cuelga</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">y humilla el suyo al nombre de <w type="rhyme">Toledo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

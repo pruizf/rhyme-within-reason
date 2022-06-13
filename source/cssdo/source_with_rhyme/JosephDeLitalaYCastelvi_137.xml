@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXV - A Rebeca</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXV - A Rebeca </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+--++-" rhyme="A">Rinde del Sol Rebeca la luz <w type="rhyme">pura</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">cuando en Nacor ostenta sus <w type="rhyme">primores</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">llega a la fuente despreciando <w type="rhyme">ardores</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">e incendios halla en el cristal que <w type="rhyme">apura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Cortesano Eliazer a su <w type="rhyme">hermosura</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">ya misterioso alienta su <w type="rhyme">temores</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">tierno la obliga, pídele <w type="rhyme">favores</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">pues siendo para Ifac su fe <w type="rhyme">asegura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Con gala, con donaire, y <w type="rhyme">gentileza</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">desenlaza la soga, que en el <w type="rhyme">brazo</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">prisionera de Amor la vence al <w type="rhyme">ruego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">Sírvele el agua, y logra su <w type="rhyme">belleza</w>,</l>
+            <l n="13" met="--+--+++-+-" rhyme="D">alcanzar en la ofrenda un dulce <w type="rhyme">lazo</w>,</l>
+            <l n="14" met="--+-+--+-+-" rhyme="E">que en el Cielo labro el Divino <w type="rhyme">fuego</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

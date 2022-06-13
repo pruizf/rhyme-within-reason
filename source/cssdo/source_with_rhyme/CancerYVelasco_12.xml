@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Lo que ha de hacer el que ha poco es grandísimo caballero</title>
+            <author> Cancer Y Velasco</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cáncer y  Velasco,  Jerónimo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Lo que ha de hacer el que ha poco es grandísimo caballero </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-++--+-" rhyme="A">Hacer con un rocín mucho <w type="rhyme">ruido</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">tenerle a ternas ferias <w type="rhyme">vinculado</w>,</l>
+            <l n="3" met="-+--++---+-" rhyme="B">jurársela a diez damas en el <w type="rhyme">prado</w>,</l>
+            <l n="4" met="-++--+---+-" rhyme="A">y no ser de ninguna <w type="rhyme">conocido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+++-+-" rhyme="A">Alabar un calor que aun no ha <w type="rhyme">venido</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">decir mi mercader, y mi <w type="rhyme">Letrado</w>,</l>
+            <l n="7" met="-+-+-+--++-" rhyme="B">mandadle muchas cosas a un <w type="rhyme">criado</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">y las que importan menos al <w type="rhyme">oído</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Buscar quien sobre joyas de <w type="rhyme">dinero</w>,</l>
+            <l n="10" met="-+-++--+-+-" rhyme="D">venir de oír a una mujer que <w type="rhyme">canta</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">y haber estado siempre en cierta <w type="rhyme">parte</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">Es lo que debe hacer el <w type="rhyme">Caballero</w>;</l>
+            <l n="13" met="---+---+-+-" rhyme="D">y sobre todo la Semana <w type="rhyme">Santa</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="E">sin que le llamen, siga su <w type="rhyme">estandarte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

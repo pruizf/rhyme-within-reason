@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A un ignorante muy derecho, severo y misterioso de figura</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A un ignorante muy derecho, severo y misterioso de figura  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+------+-" rhyme="A">Esa frente, ¡oh Gïaro!, en <w type="rhyme">remolinos</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">torva y rugas pálida y <w type="rhyme">funesta</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">antes señas de toro <w type="rhyme">manifiesta</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">que de estudios severos y <w type="rhyme">divinos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Tus semblantes ceñudos y <w type="rhyme">mohínos</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">si no descifran délfica <w type="rhyme">respuesta</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">obligan que, de risa <w type="rhyme">descompuesta</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">se descalcen los propios <w type="rhyme">calepinos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+---+-" rhyme="C">No tiene por fructífera el <w type="rhyme">villano</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">la espiga que con uso se <w type="rhyme">endereza</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">sino la corva, a quien derriba el <w type="rhyme">grano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Hacia la tierra inclina tu <w type="rhyme">entereza</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">porque lo erguido se promete <w type="rhyme">vano</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">y que está sin meollo la <w type="rhyme">cabeza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

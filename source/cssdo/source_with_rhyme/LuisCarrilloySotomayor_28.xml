@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIV - Al mediano remedio de su amor</title>
+            <author> Luis Carrilloy Sotomayor</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis Carrilloy Sotomayor</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIV - Al mediano remedio de su amor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">«Bien que sagrado incienso, bien que <w type="rhyme">puede</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">vencer ardiente víctima tu <w type="rhyme">saña</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">esta corriente que tus basas <w type="rhyme">baña</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">lloroso soy, que en calidad le <w type="rhyme">excede</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="-">Este tierno pesar tu reino herede,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">por culpa, ¡oh tiempo!, contra ti <w type="rhyme">tamaña</w>:</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">baste, pues, ya mi mal me <w type="rhyme">desengaña</w>,</l>
+            <l n="8" met="--++---+-+-" rhyme="A">a que de él limpio y de su culpa <w type="rhyme">quede</w>».</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">Esto, tierno, lloré, y mi tierno <w type="rhyme">acento</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">apenas alcanzó el divino <w type="rhyme">oído</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">cuando en brazos oí del manso <w type="rhyme">viento</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">«El poder restaurarte, ¡oh ya <w type="rhyme">vencido</w>
+            </l>
+            <l n="13" met="+--+---+-+-" rhyme="C">Fabio del tiempo, y de mi tiempo <w type="rhyme">exento</w>!,</l>
+            <l n="14" met="-++-++---+-" rhyme="D">será no perder más que lo <w type="rhyme">perdido</w>».</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

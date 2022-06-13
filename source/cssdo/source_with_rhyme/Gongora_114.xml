@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCVIII - A un libro de doce sermones que imprimió el padre Florencia, de la Compañía de Jesús</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCVIII - A un libro de doce sermones que imprimió el padre Florencia, de la Compañía de Jesús </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Doce sermones estampó <w type="rhyme">Florencia</w>,</l>
+            <l n="2" met="--++-+---+-" rhyme="B">orador cano sí, mas, aunque <w type="rhyme">cano</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">a cuanto ventosea en <w type="rhyme">castellano</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">se tapa las narices la <w type="rhyme">elocuencia</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Humos reconocí en Su <w type="rhyme">Chimenencia</w>
+            </l>
+            <l n="6" met="--+-++---+-" rhyme="B">de abstinente no menos que de <w type="rhyme">vano</w>,</l>
+            <l n="7" met="---+-+++-+-" rhyme="B">pues que por un capón deja un <w type="rhyme">milano</w>:</l>
+            <l n="8" met="-++-++---+-" rhyme="A">¡oh bien haya tan rígida <w type="rhyme">abstinencia</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="----++---+-" rhyme="C">En su religión santa, de <w type="rhyme">modesto</w>
+            </l>
+            <l n="10" met="++-+---+++-" rhyme="D">nunca ha querido lo que no le han <w type="rhyme">dado</w>:</l>
+            <l n="11" met="-++--+-+-+-" rhyme="E">¡oh bien haya modestia tan <w type="rhyme">ociosa</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+-++---+-" rhyme="C">En Palacio más mucho de lo <w type="rhyme">honesto</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="D">del dueño solicita, y del <w type="rhyme">privado</w>:</l>
+            <l n="14" met="-++--++--+-" rhyme="E">¡oh mal haya ambición tan <w type="rhyme">ambiciosa</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

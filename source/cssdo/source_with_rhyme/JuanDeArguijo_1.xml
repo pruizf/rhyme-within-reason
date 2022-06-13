@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Arguijo, Juan de Sevilla, 60- Sevilla, 1623 Poeta español, gran artífice del soneto, que practicó a lo largo de su acomodada vida. Procurador en Cortes. Su obra en sonetos está dedicada la mayor parte de ella a la los personajes pertenecientes a la Mitología. Soneto</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Arguijo, Juan de Sevilla, 60- Sevilla, 1623 Poeta español, gran artífice del soneto, que practicó a lo largo de su acomodada vida. Procurador en Cortes. Su obra en sonetos está dedicada la mayor parte de ella a la los personajes pertenecientes a la Mitología. Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">De ciega oscuridad y horror <w type="rhyme">cubierta</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">está la tierra, en tanto que el <w type="rhyme">hermano</w>
+            </l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">de la silvestre diosa sale <w type="rhyme">ufano</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">del rojo Oriente por la ebúrnea <w type="rhyme">puerta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Ante sus ojos ve la muerte <w type="rhyme">cierta</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">el piloto en el piélago <w type="rhyme">inhumano</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">mas dando el viento a sus deseos la <w type="rhyme">mano</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">en vida trueca la esperanza <w type="rhyme">muerta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">Tras la importuna guerra se <w type="rhyme">consigue</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">para dichosos años paz <w type="rhyme">segura</w>.</l>
+            <l n="11" met="+--+---+-+-" rhyme="E">Tú, pues en medio de tus males <w type="rhyme">fía</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+---+-" rhyme="C">que al fin es cosa cierta que se <w type="rhyme">sigue</w>
+            </l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">tras la tormenta, guerra, noche <w type="rhyme">oscura</w>,</l>
+            <l n="14" met="++-+-+-+-+-" rhyme="E">buen tiempo, dulce paz, alegre <w type="rhyme">día</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

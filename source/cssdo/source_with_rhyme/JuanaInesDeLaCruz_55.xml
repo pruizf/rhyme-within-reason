@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIX - Al presbítero Br. D. Diego de Ribera, cantor de las obras del Arzobispo Virrey Don Fray Payo Enríquez de Ribera</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIX - Al presbítero Br. D. Diego de Ribera, cantor de las obras del Arzobispo Virrey Don Fray Payo Enríquez de Ribera </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++--++---+-" rhyme="A">¿Qué importa al Pastor Sacro, que a la <w type="rhyme">llama</w>
+            </l>
+            <l n="2" met="--+-++---+-" rhyme="C">de su obrar negar quiera la <w type="rhyme">victoria</w>,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="C">si cuando más apaga tanta <w type="rhyme">gloria</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">la misma luz a los recuerdos <w type="rhyme">llama</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">¿Si en cada mármol mudamente <w type="rhyme">clama</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="C">de sus blasones indeleble <w type="rhyme">historia</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="C">porque sirva la letra a su <w type="rhyme">memoria</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">lo que de piedra al tiempo de su <w type="rhyme">Fama</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="E">A la sagrada cifra, que <w type="rhyme">venera</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="F">el discurso en las piedras, <w type="rhyme">comedido</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="E">y en duración eterna <w type="rhyme">persevera</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="F">exenta y libre del oscuro <w type="rhyme">olvido</w>,</l>
+            <l n="13" met="--+--++--+-" rhyme="E">alabarte podrás, culta <w type="rhyme">Ribera</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="F">que sólo le construyes el <w type="rhyme">sentido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

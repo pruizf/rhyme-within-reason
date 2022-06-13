@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 7 - Acto II, NUÑO De Quien ama no haga fieros</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 7 - Acto II, NUÑO De Quien ama no haga fieros </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">No hay cosa más sujeta a <w type="rhyme">destemplanza</w>
+            </l>
+            <l n="2" met="+--+---+-+-" rhyme="B">que es el sujeto de mujer: por <w type="rhyme">puntos</w>
+            </l>
+            <l n="3" met="+----++--+-" rhyme="B">mudan de parecer, viéndose <w type="rhyme">juntos</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">la inconstante fortuna y la <w type="rhyme">mudanza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Glorioso aquí su ejemplo nos <w type="rhyme">alcanza</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">con Grecias, Troyas, Romas y <w type="rhyme">Saguntos</w>;</l>
+            <l n="7" met="-----+-+-+-" rhyme="B">que si de la fortuna son <w type="rhyme">trasuntos</w>,</l>
+            <l n="8" met="--+-++---+-" rhyme="A">donde hay alma no falta la <w type="rhyme">esperanza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--++--+-" rhyme="C">El es un animal, necio o <w type="rhyme">discreto</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">de quien somos por fuerza tan <w type="rhyme">amigos</w>,</l>
+            <l n="11" met="+----+-+-+-" rhyme="C">que es de su imperfección lo más <w type="rhyme">perfecto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">Y aunque traigan sus gustos por <w type="rhyme">testigos</w>,</l>
+            <l n="13" met="--+-++-+-+-" rhyme="C">por lo menos un hombre, está <w type="rhyme">sujeto</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="D">a mentiras, desgracias y <w type="rhyme">enemigos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

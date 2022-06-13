@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXI - Ausencia de Fénix, sentida con razón</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXI - Ausencia de Fénix, sentida con razón </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Florecilla si pierdes tus <w type="rhyme">colores</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">por verte fuera de tu verde <w type="rhyme">asiento</w>;</l>
+            <l n="3" met="---+---+-+-" rhyme="B">donde gozabas el frescor del <w type="rhyme">viento</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">del agua la humedad, del sol <w type="rhyme">calores</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Te falta la razón, que mis <w type="rhyme">ardores</w>,</l>
+            <l n="6" met="---+---+-+-" rhyme="B">a tu amarillo servirán de <w type="rhyme">aumento</w>;</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">en vez del aire gozarás mi <w type="rhyme">aliento</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">y del agua mis lágrimas <w type="rhyme">mejores</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Mas si es porque mi Fénix se <w type="rhyme">destierra</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">de las Indias del oro de su <w type="rhyme">frente</w>,</l>
+            <l n="11" met="+-++---+-+-" rhyme="E">siente (cuán digno) disfavor <w type="rhyme">tamaño</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">que viendo así, que se disuelve en <w type="rhyme">tierra</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">tu hermoso imperio, por estarle <w type="rhyme">enfrente</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="E">no llamará a mis lágrimas <w type="rhyme">engaño</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

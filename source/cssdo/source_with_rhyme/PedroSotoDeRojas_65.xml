@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIII - Consejo sano a sus ojos</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIII - Consejo sano a sus ojos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-++--+-" rhyme="A">¿Qué pretendéis de amor? ¿qué de <w type="rhyme">fortuna</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">si muertes no? ¿sino pesares <w type="rhyme">tristes</w>?</l>
+            <l n="3" met="++---++--+-" rhyme="B">¡Ay ojos de llorar! Otros os <w type="rhyme">vistes</w>
+            </l>
+            <l n="4" met="+-+--+---+-" rhyme="A">(¡cómo pasan los bienes!) en la <w type="rhyme">cuna</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Otros cuando con lágrima <w type="rhyme">importuna</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">(lengua enloquece en la niñez) <w type="rhyme">perdistes</w>
+            </l>
+            <l n="7" met="+--+-+---+-" rhyme="B">dulce sustento, y dulce <w type="rhyme">obedecistes</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">materno arrullo sin violencia <w type="rhyme">alguna</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Rebeldes ya, ni conocéis <w type="rhyme">sustento</w>;</l>
+            <l n="10" met="+----+-+-+-" rhyme="D">muros si combatís, do amor <w type="rhyme">tirano</w>
+            </l>
+            <l n="11" met="++-+-+-+-+-" rhyme="C">(no el arco) rayos vibra ciento a <w type="rhyme">ciento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="D">Tan difícil conquista en bulto <w type="rhyme">humano</w>
+            </l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">ojos mejor será (mudad <w type="rhyme">intento</w>)</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">vencerse tarde, que morir <w type="rhyme">temprano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

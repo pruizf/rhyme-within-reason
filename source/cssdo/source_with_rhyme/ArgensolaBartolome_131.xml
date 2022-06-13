@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXIV -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++---+-+-" rhyme="A">Ni opinión, Carlos, ni esperanza <w type="rhyme">fundo</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">en los aplausos que el favor <w type="rhyme">derrama</w>;</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">¿quién los aprueba o sus lisonjas <w type="rhyme">ama</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">por más que en bronce las escriba el <w type="rhyme">mundo</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="A"> Sí, rotas por el tiempo <w type="rhyme">vagabundo</w>,</l>
+            <l n="6" met="+-++-+---+-" rhyme="B">muere el hombre otra vez cuando su <w type="rhyme">fama</w>,</l>
+            <l n="7" met="++-+-+-+-+-" rhyme="B">¿son más que esfuerzos de una débil <w type="rhyme">llama</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">que turbia cesa en el morir <w type="rhyme">segundo</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--++--+-" rhyme="C">Y si el no conocerse es el <w type="rhyme">abismo</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">de todo error, y cunde sin <w type="rhyme">mudanza</w>
+            </l>
+            <l n="11" met="+-+--+---+-" rhyme="E">una vez en los ánimos <w type="rhyme">impreso</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D"> ¿buscaré mi verdad en mi <w type="rhyme">alabanza</w>?</l>
+            <l n="13" met="+++--+-+-+-" rhyme="E">¿cuándo has visto volver con buen <w type="rhyme">suceso</w>
+            </l>
+            <l n="14" met="---+-+--++-" rhyme="C">a quien se busca fuera de sí <w type="rhyme">mismo</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

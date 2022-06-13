@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>En el Quijote de , Primera parte, capítulo XXXIV, con variante en La casa de los celos, Jornada tercera, LAUSO</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>En el Quijote de , Primera parte, capítulo XXXIV, con variante en La casa de los celos, Jornada tercera, LAUSO 	                </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">En el silencio de la noche, <w type="rhyme">cuando</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">ocupa el dulce sueño a las <w type="rhyme">mortales</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">la pobre cuenta de mis ricos <w type="rhyme">males</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">estoy al cielo y a mi Clori <w type="rhyme">dando</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Y al tiempo cuando el sol se va <w type="rhyme">mostrando</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">por las rosadas puertas <w type="rhyme">orientales</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">con suspiros y acentos <w type="rhyme">desiguales</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">voy la antigua querella <w type="rhyme">renovando</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Y cuando el sol, de su estrellado <w type="rhyme">asiento</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">derechos rayos a la tierra <w type="rhyme">envía</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">el llanto crece y doblo los <w type="rhyme">gemidos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Vuelve la noche, y vuelvo al triste <w type="rhyme">cuento</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">y siempre hallo, en mi mortal <w type="rhyme">porfía</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">al cielo, sordo; a Clori, sin <w type="rhyme">oídos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

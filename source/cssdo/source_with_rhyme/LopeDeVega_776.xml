@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 943 - Acto I, DON FERNANDO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 943 - Acto I, DON FERNANDO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+-++---+-" rhyme="A">Si palabras son viento, si <w type="rhyme">declara</w>
+            </l>
+            <l n="2" met="+--+---+-+-" rhyme="B">cuanto el humano proceder <w type="rhyme">previene</w>,</l>
+            <l n="3" met="--++---+-+-" rhyme="B">que de tan fácil fundamento <w type="rhyme">viene</w>
+            </l>
+            <l n="4" met="---+----++-" rhyme="A">desde la abarca a la mayor <w type="rhyme">Tiara</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Si cuanto del poder mortal se <w type="rhyme">armara</w>,</l>
+            <l n="6" met="++---+---+-" rhyme="B">es viento que las voces <w type="rhyme">entretiene</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">si cuanto aquella máquina <w type="rhyme">contiene</w>,</l>
+            <l n="8" met="++-+-+-+-+-" rhyme="A">es viento, en viento vive, en viento <w type="rhyme">para</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">El viento viene a ser de grande <w type="rhyme">clima</w>;</l>
+            <l n="10" met="---+---+-+-" rhyme="D">porque si el oro, y el mayor <w type="rhyme">contento</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">la fama, y gloria que la vida <w type="rhyme">anima</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">Tienen en sólo el viento el <w type="rhyme">fundamento</w>
+            </l>
+            <l n="13" met="++-+---+-+-" rhyme="C">y es todo viento cuanto el mundo <w type="rhyme">estima</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">lo más preciosos viene a ser el <w type="rhyme">viento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII -</title>
+            <author> Francisco De Figueroa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Figueroa,  Francisco de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Lágrimas que salís regando el <w type="rhyme">seno</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">por vuestra antigua exercitada <w type="rhyme">vía</w>,</l>
+            <l n="3" met="-+---++--+-" rhyme="B">seguras del temor justo que <w type="rhyme">había</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">a vos y mis suspiros puesto el <w type="rhyme">freno</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Creced en río tan profundo y <w type="rhyme">lleno</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">cuando el dolor, que el alma esconde y <w type="rhyme">cría</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">por ver sembrada la esperanza <w type="rhyme">mía</w>
+            </l>
+            <l n="8" met="--+-++---+-" rhyme="A">en glorioso, más áspero, <w type="rhyme">terreno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++---+-+-" rhyme="C">Y aunque mil causas dolorosas <w type="rhyme">mueven</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">el alma a tan amago <w type="rhyme">sentimiento</w>,</l>
+            <l n="11" met="+-+--++--+-" rhyme="E">esta sola razón ha de <w type="rhyme">causaros</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+--++-" rhyme="C">Mas tan preciosas lágrimas no <w type="rhyme">deben</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">perderse así, ni desparcirse al <w type="rhyme">viento</w>
+            </l>
+            <l n="14" met="+-+--+--++-" rhyme="E">tan gloriosos suspiros y tan <w type="rhyme">caros</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

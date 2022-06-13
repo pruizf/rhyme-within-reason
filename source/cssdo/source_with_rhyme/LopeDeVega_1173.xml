@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Santiago el Verde. Acto I, CELIA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De Santiago el Verde. Acto I, CELIA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Amor, enfermedad de los <w type="rhyme">sentidos</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">fundada en tiernos, fáciles <w type="rhyme">antojos</w>,</l>
+            <l n="3" met="++---+---+-" rhyme="B">¡qué presto satisfaces a los <w type="rhyme">ojos</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">lo que pudo faltar a los <w type="rhyme">oídos</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Algunos pensamientos, <w type="rhyme">atrevidos</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">a darme más victoria que <w type="rhyme">despojos</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">dieron dulce principio a mis <w type="rhyme">antojos</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">y entraron a robar, <w type="rhyme">desconocidos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+--++-" rhyme="C">Vienes y vas, amor, pero no <w type="rhyme">eres</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">poderoso ni igual en tus <w type="rhyme">extremos</w>;</l>
+            <l n="11" met="--++---+-+-" rhyme="C">porque bien sabes que si matas <w type="rhyme">mueres</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Comienzas bien, pero tu fin <w type="rhyme">tememos</w>;</l>
+            <l n="13" met="--+--+--++-" rhyme="C">porque vienes, amor, cuando tú <w type="rhyme">quieres</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">y no te puedes ir cuando <w type="rhyme">queremos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

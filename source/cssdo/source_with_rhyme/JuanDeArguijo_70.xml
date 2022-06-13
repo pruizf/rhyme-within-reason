@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A Dido</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A Dido </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">La tirana codicia del <w type="rhyme">hermano</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">impía ocasión del fin de tu <w type="rhyme">Siqueo</w>,</l>
+            <l n="3" met="+-+---+--+-" rhyme="B">huiste fiel por el airado <w type="rhyme">Egeo</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">Elisa, hasta el término <w type="rhyme">africano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Donde reliquias del ardor <w type="rhyme">troyano</w>
+            </l>
+            <l n="6" met="--+--++--+-" rhyme="B">encendieron en ti nuevo <w type="rhyme">deseo</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y entregaste en infausto <w type="rhyme">Himeneo</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">al Teucro engañador la fe y la <w type="rhyme">mano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Despreciaste, en tu daño <w type="rhyme">presurosa</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">la merecida fama, que <w type="rhyme">destruyes</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="E">con el engaño que obstinada <w type="rhyme">quieres</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">¡Oh en ambas bodas poco <w type="rhyme">venturosa</w>!</l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">Muriendo el uno, perseguida <w type="rhyme">huyes</w>;</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">huyendo el otro, desdeñada <w type="rhyme">mueres</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

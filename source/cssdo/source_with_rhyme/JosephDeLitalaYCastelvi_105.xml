@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVI - A la fábula de Safo y Phaon</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVI - A la fábula de Safo y Phaon </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">Regar un corazón <w type="rhyme">empedernido</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">con lágrimas, que ablanden su <w type="rhyme">dureza</w>,</l>
+            <l n="3" met="+-+--++--+-" rhyme="B">es de Safo en Amar dulce <w type="rhyme">fineza</w>,</l>
+            <l n="4" met="-+-+-++--+-" rhyme="A">mas no obliga a Phaon llanto y <w type="rhyme">gemido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">Si en Lesbos por feliz ha <w type="rhyme">merecido</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">rayos beber de soberana <w type="rhyme">alteza</w>,</l>
+            <l n="7" met="--++-++--+-" rhyme="B">felonía es rendir a una <w type="rhyme">belleza</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">pagando tanta fe con el <w type="rhyme">olvido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Discreta Safo, persuadirle <w type="rhyme">quiere</w>,</l>
+            <l n="10" met="---+++---+-" rhyme="D">mas conseguir no pueden los <w type="rhyme">favores</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">el que vuelva a sus ojos, de que <w type="rhyme">infiere</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Que tarde de un ingrato los <w type="rhyme">rigores</w>
+            </l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">se dejan obligar, y en fin <w type="rhyme">adquiere</w>
+            </l>
+            <l n="14" met="--+--++--+-" rhyme="D">en Epiro beber penas, y <w type="rhyme">amores</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

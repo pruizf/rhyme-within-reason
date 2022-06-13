@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIII - A la muerte del Señor Rey Felipe IV</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIII - A la muerte del Señor Rey Felipe IV </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+-+-" rhyme="A">¡Oh cuán frágil se muestra el ser <w type="rhyme">humano</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">en los últimos términos <w type="rhyme">fatales</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">donde sirven aromas <w type="rhyme">Orientales</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">de culto inútil, de resguardo <w type="rhyme">vano</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">Sólo a ti respetó el poder <w type="rhyme">tirano</w>,</l>
+            <l n="6" met="-+-+-----+-" rhyme="B">¡oh gran Felipe! pues con las <w type="rhyme">señales</w>
+            </l>
+            <l n="7" met="+-+--+-+-+-" rhyme="B">que ha mostrado que todos son <w type="rhyme">mortales</w>,</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">te ha acreditado a ti de <w type="rhyme">Soberano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Conoces ser de tierra <w type="rhyme">fabricado</w>
+            </l>
+            <l n="10" met="+-+--+--++-" rhyme="D">este cuerpo, y que está con mortal <w type="rhyme">guerra</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">el bien del alma en él <w type="rhyme">aprisionado</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">y así, subiendo al bien que el Cielo <w type="rhyme">encierra</w>,</l>
+            <l n="13" met="--+-++-+-+-" rhyme="C">que en la tierra no cabes has <w type="rhyme">probado</w>,</l>
+            <l n="14" met="-+-+-+--++-" rhyme="D">pues aun tu cuerpo dejas porque es <w type="rhyme">tierra</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

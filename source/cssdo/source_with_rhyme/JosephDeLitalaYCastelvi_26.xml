@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXI - A la trágica e infausta muerte del Gran Pompeyo</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXI - A la trágica e infausta muerte del Gran Pompeyo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Que haces traidor, así la fe <w type="rhyme">profanas</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="C">que al hospedaje debes, y al <w type="rhyme">seguro</w>
+            </l>
+            <l n="3" met="---+---+-+-" rhyme="C">de la maldad, indefectible <w type="rhyme">muro</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">en historias sagradas, y <w type="rhyme">profanas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Ah infelice Pompeyo, las <w type="rhyme">tercianas</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="C">de Campania te hicieran (hado <w type="rhyme">duro</w>)</l>
+            <l n="7" met="+-+--+-+-+-" rhyme="C">más gloriosa la muerte, y no el <w type="rhyme">perjuro</w>
+            </l>
+            <l n="8" met="-+---++--+-" rhyme="A">cuchillo, que cortó pompas <w type="rhyme">ufanas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="E">O muerte, en la Pharfalia no le <w type="rhyme">viste</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="F">haciendo frente César <w type="rhyme">vencedora</w>
+            </l>
+            <l n="11" met="--+--+--++-" rhyme="E">por la patria, que el caso lloró <w type="rhyme">triste</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="F">Cómo di le guardaste para <w type="rhyme">ahora</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="E">y acerbo fina tantas glorias <w type="rhyme">diste</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="F">quitando al mundo lo que Roma <w type="rhyme">adora</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

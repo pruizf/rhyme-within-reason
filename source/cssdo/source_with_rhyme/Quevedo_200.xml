@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Médico que para un mal que no quita, receta muchos</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Médico que para un mal que no quita, receta muchos</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">La losa en sortijón <w type="rhyme">pronosticada</w>
+            </l>
+            <l n="2" met="--+-+-+--+-" rhyme="B">y por boca una sala de <w type="rhyme">viuda</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">la habla entre ventosas y entre <w type="rhyme">ayuda</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">con el «Denle a cenar poquito o <w type="rhyme">nada</w>».</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---++--+-" rhyme="A">La mula, en el zaguán, tumba <w type="rhyme">enfrenada</w>;</l>
+            <l n="6" met="--++--+--+-" rhyme="B">y por julio un «Arropele si <w type="rhyme">suda</w>;</l>
+            <l n="7" met="++-+-+-+-+-" rhyme="B">no beba vino; menos agua <w type="rhyme">cruda</w>;</l>
+            <l n="8" met="-+---+---+-" rhyme="A">la hembra, ni por sueños, ni <w type="rhyme">pintada</w>».</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Haz la cuenta conmigo, <w type="rhyme">dotorcillo</w>:</l>
+            <l n="10" met="---+++-+++-" rhyme="D">para quitarme un mal, ¿me das mil <w type="rhyme">males</w>?</l>
+            <l n="11" met="-+---+---+-" rhyme="C">¿Estudias medicina o <w type="rhyme">Peralvillo</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+-+-+-" rhyme="D">¿De esta cura me pides ocho <w type="rhyme">reales</w>?</l>
+            <l n="13" met="++-+-+---+-" rhyme="C">Yo quiero hembra y vino y <w type="rhyme">tabardillo</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">y gasten tu salud los <w type="rhyme">hospitales</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

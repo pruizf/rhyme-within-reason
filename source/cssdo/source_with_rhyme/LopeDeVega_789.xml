@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Acto III, FELICIANO De El primer rey de Castilla</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Acto III, FELICIANO De El primer rey de Castilla </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Que pudo imaginar mi <w type="rhyme">pensamiento</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">que del alma viniese a la <w type="rhyme">medida</w>,</l>
+            <l n="3" met="--+-++---+-" rhyme="B">como hallar a don Juan en cuya <w type="rhyme">vida</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">estriba de mi amor el <w type="rhyme">fundamento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Cuando temí para mayor <w type="rhyme">tormento</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">mi muerte en el rigor de su <w type="rhyme">partida</w>
+            </l>
+            <l n="7" met="---+---+-+-" rhyme="B">de los cabellos la ocasión <w type="rhyme">asida</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">dispone a dulce fin mi <w type="rhyme">atrevimiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">Ya estaba el alma sin tener <w type="rhyme">sosiego</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="-">vestida de mortal desconfianzas</l>
+            <l n="11" met="---+---+-+-" rhyme="C">pero valiome la esperanza <w type="rhyme">luego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="D">Ella es el bien, mientras el bien se <w type="rhyme">alcanza</w>
+            </l>
+            <l n="13" met="---+-+-+-+-" rhyme="C">que como el árbol es materia al <w type="rhyme">fuego</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="D">así vive el amor con la <w type="rhyme">esperanza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVII - Al evangelista San Juan</title>
+            <author> Juan De Almeida</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Almeida</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVII - Al evangelista San Juan </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+--++-" rhyme="A">Águila caudal que con gran <w type="rhyme">vuelo</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">secretos muy secretos <w type="rhyme">penetraste</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y tu cabeza santa <w type="rhyme">reclinaste</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">en Cristo, en quien se inclina todo el <w type="rhyme">cielo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+-++--++-" rhyme="A">¡Ay de mí! ¡Con qué obras, con qué <w type="rhyme">celo</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">tan preciosas gracias <w type="rhyme">alcanzaste</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">porque tus siervos puedan sin <w type="rhyme">contraste</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">vivir lo que vivieren en el <w type="rhyme">suelo</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+---+-" rhyme="C">Tú, hijo de la virgen <w type="rhyme">adoptivo</w>,</l>
+            <l n="10" met="+--+-+---+-" rhyme="D">tú, del tesoro grande <w type="rhyme">tesorero</w>,</l>
+            <l n="11" met="+----+--++-" rhyme="C">tú, de los coronistas el más <w type="rhyme">vivo</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="D">tú eras primo hermano del <w type="rhyme">Cordero</w>,</l>
+            <l n="13" met="+----++--+-" rhyme="C">tú, quien mi corazón tiene <w type="rhyme">cautivo</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="D">tú, quien más que mi vida y alma <w type="rhyme">quiero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

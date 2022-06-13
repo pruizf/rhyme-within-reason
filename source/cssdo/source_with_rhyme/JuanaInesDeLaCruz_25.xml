@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXI - Inés, cuando te riñen por bellaca</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXI - Inés, cuando te riñen por bellaca </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Inés, cuando te riñen por <w type="rhyme">Bellaca</w>,</l>
+            <l n="2" met="---+-+-+-+-" rhyme="A">para disculpas, no te falta <w type="rhyme">Achaque</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="A">porque dices, que traque, y que <w type="rhyme">Barraque</w>
+            </l>
+            <l n="4" met="--+-++-+-+-" rhyme="A">con que sabes muy bien tapar la <w type="rhyme">Caca</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Si coges la palabra, no hay <w type="rhyme">Urraca</w>,</l>
+            <l n="6" met="-+-+--++-+-" rhyme="-">que así la gorja de mal año Saques</l>
+            <l n="7" met="---+-+++-+-" rhyme="A">y con tronidos, más que un triqui <w type="rhyme">Traque</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">a todo el Mundo aturdes, cual <w type="rhyme">Matraca</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="B">Este bullicio todo lo <w type="rhyme">Trabuca</w>,</l>
+            <l n="10" met="+--+-+---+-" rhyme="C">este embeleco todo lo <w type="rhyme">Embeleca</w>,</l>
+            <l n="11" met="+-+--+++-+-" rhyme="B">más, aunque eres (Inés) tan mala <w type="rhyme">Cuca</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+++---+-" rhyme="C">sabe mi amor muy bien lo que se <w type="rhyme">Peca</w>,</l>
+            <l n="13" met="-+---++--+-" rhyme="B">y así con tu afición no se <w type="rhyme">Embabuca</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="C">aunque eres Zancarrón, y yo de <w type="rhyme">Meca</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CI -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+---+-" rhyme="A">Mal haya el temerario, el <w type="rhyme">ambicioso</w>,</l>
+            <l n="2" met="--++---+-+-" rhyme="B">en el mar monstruo cuando no <w type="rhyme">marino</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">que hurtó al bosque el mal nacido <w type="rhyme">pino</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">para darle a Neptuno <w type="rhyme">proceloso</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">y fiero labrador de campo <w type="rhyme">algoso</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">sembró en el viento el porfiado <w type="rhyme">lino</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">que entre aquilón y cierzo dio <w type="rhyme">camino</w>
+            </l>
+            <l n="8" met="-+---++--+-" rhyme="A">a náutico inculcar piélago <w type="rhyme">undoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Porque a insultos piráticos el <w type="rhyme">puro</w>
+            </l>
+            <l n="10" met="+-+--+---+-" rhyme="D">rubio expuso, metal <w type="rhyme">solicitado</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">de tantas hoy fatigas <w type="rhyme">perennales</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">Por cuya ya venganza el frigio <w type="rhyme">muro</w>
+            </l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">de lágrimas sangrientas vio <w type="rhyme">bañado</w>
+            </l>
+            <l n="14" met="---+-++--+-" rhyme="E">cuando entre ciego honor, llamas <w type="rhyme">fatales</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Representa la mentirosa y verdadera riqueza</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Representa la mentirosa y verdadera riqueza  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">¿Ves, con el oro, áspero y <w type="rhyme">pesado</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">del poderoso Licas el <w type="rhyme">vestido</w>?</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">¿Ves el sol por sus dedos <w type="rhyme">repartido</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">y en círculos su fuego <w type="rhyme">encarcelado</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">¿Ves de inmortales cedros <w type="rhyme">fabricado</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">techo? ¿Ves en los jaspes de <w type="rhyme">tenido</w>
+            </l>
+            <l n="7" met="-+---+---+-" rhyme="B">el peso del palacio, <w type="rhyme">ennoblecido</w>
+            </l>
+            <l n="8" met="--+--++--+-" rhyme="A">con las telas que a Tiro han <w type="rhyme">desangrado</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Pues no lo admires, y alta envidia <w type="rhyme">guarda</w>
+            </l>
+            <l n="10" met="-----+-+-+-" rhyme="D">para quien de lo poco, <w type="rhyme">humildemente</w>,</l>
+            <l n="11" met="+--+-++--+-" rhyme="E">no deseando más, hace <w type="rhyme">tesoro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="C">No creas fácil vanidad <w type="rhyme">gallarda</w>:</l>
+            <l n="13" met="-----+-+-+-" rhyme="D">que con el resplandor y el lustre <w type="rhyme">miente</w>
+            </l>
+            <l n="14" met="+--+-+---+-" rhyme="E">pálida sed hidrópica del <w type="rhyme">oro</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

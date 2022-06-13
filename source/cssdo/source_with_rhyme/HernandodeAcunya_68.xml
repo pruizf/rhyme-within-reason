@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXX - Soneto en respuesta del pasado</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXX - Soneto en respuesta del pasado </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Bien os puedo decir, <w type="rhyme">considerando</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">lo que pruebo del mundo y lo que <w type="rhyme">siento</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">que, siendo los trabajos de él sin <w type="rhyme">cuento</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">se pueden los descansos ir <w type="rhyme">contando</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--++--+-" rhyme="A">mas el fuerte varón, no <w type="rhyme">desmayando</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">esfuerza con valor el <w type="rhyme">sufrimiento</w>,</l>
+            <l n="7" met="-+-+-+++-+-" rhyme="B">y al sabio da el saber un nuevo <w type="rhyme">aliento</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">con quien puesto que teme, va <w type="rhyme">esperando</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C"> Y si hay fortuna en el humano <w type="rhyme">estado</w>,</l>
+            <l n="10" met="++---+---+-" rhyme="D">no es justo que ninguno <w type="rhyme">desespere</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">pues todo a su mudanza está <w type="rhyme">sujeto</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+--+--+-" rhyme="C"> mas de remedio estar <w type="rhyme">desconfiado</w>
+            </l>
+            <l n="13" met="+-+--+---+-" rhyme="D">no se sufre, señor, en el que <w type="rhyme">fuere</w>,</l>
+            <l n="14" met="+-+--++--+-" rhyme="E">cual sabemos que sois, fuerte y <w type="rhyme">discreto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

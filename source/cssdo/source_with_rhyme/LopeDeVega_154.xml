@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVII -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A">Silvio en el monte vio con lazo <w type="rhyme">estrecho</w>
+            </l>
+            <l n="2" met="++--++---+-" rhyme="B">un nudo de dos áspides <w type="rhyme">asidas</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">que así enlazadas a furor <w type="rhyme">movidas</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">se mordían las bocas, cuello y <w type="rhyme">pecho</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">Así -dijo el pastor- que están, <w type="rhyme">sospecho</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">en el casado yugo <w type="rhyme">aborrecidas</w>
+            </l>
+            <l n="7" met="+--+---+-+-" rhyme="B">dos enlazadas diferentes <w type="rhyme">vidas</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">rotas las paces, el amor <w type="rhyme">deshecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Por dividir los intrincados <w type="rhyme">lazos</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">hasta la muerte de descanso <w type="rhyme">ajenos</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">alzó el cayado y prosiguió <w type="rhyme">diciendo</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">-Siendo enemigos, ¿para qué en los <w type="rhyme">brazos</w>?</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">¿para qué os regaláis, y os dais <w type="rhyme">venenos</w>?</l>
+            <l n="14" met="+--+-+-+-+-" rhyme="E">Dulce morir, por no vivir <w type="rhyme">muriendo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

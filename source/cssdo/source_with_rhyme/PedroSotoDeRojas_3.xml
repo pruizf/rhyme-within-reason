@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- C - Díjole que la viese, que tenía que pedirle</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- C - Díjole que la viese, que tenía que pedirle </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">¿Pedirme quieres poderosa <w type="rhyme">ingrata</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">qué me podrás pedir, que en tu <w type="rhyme">belleza</w>
+            </l>
+            <l n="3" met="+----+-+-+-" rhyme="B">no haga ostentación de más <w type="rhyme">riqueza</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">que usurpa el mar, a quien sus ondas <w type="rhyme">trata</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Mira tu rostro si quisieres <w type="rhyme">plata</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">peina si quieres oro tu <w type="rhyme">cabeza</w>,</l>
+            <l n="7" met="+----+---+-" rhyme="B">toca si los diamantes, tu <w type="rhyme">dureza</w>,</l>
+            <l n="8" met="--+-+--+-+-" rhyme="A">y si perlas quieres tu boca <w type="rhyme">grata</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Quieres las flores pompa del <w type="rhyme">verano</w>
+            </l>
+            <l n="10" met="+----+---+-" rhyme="D">goza de tus mejillas: si <w type="rhyme">alegría</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">el sol se muestra con la tuya <w type="rhyme">ufano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+-+++-" rhyme="D">¿Qué pides pues, que en ti el actor no <w type="rhyme">cría</w>?</l>
+            <l n="13" met="-+--++-+-+-" rhyme="C">¿Si pides (que no tienes) pecho <w type="rhyme">humano</w>?</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">¿Si ardiente amor? ¿Si la firmeza <w type="rhyme">mía</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

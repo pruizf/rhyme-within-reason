@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XX -</title>
+            <author> Bocangel Y Unzueta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Lloras, Filis, que el pueblo te <w type="rhyme">murmura</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">la vida, la opinión y el <w type="rhyme">ejercicio</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">y que da, temerario, a todo <w type="rhyme">indicio</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">como a delito, su mordaz <w type="rhyme">censura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Y es que llega tu audaz <w type="rhyme">desenvoltura</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">a querer que se llame el mismo <w type="rhyme">vicio</w>
+            </l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">indicio de él, y tomas por <w type="rhyme">oficio</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">y no por privilegio, la <w type="rhyme">hermosura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-----+-" rhyme="C">Tal vez te ríes de los <w type="rhyme">maldicientes</w>,</l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">no por ver su calumnia mal <w type="rhyme">fundada</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">que tal engaño te desmiente el <w type="rhyme">pecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">Su género de culpa sólo <w type="rhyme">sientes</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="D">que, como el fruto de pecar te <w type="rhyme">agrada</w>,</l>
+            <l n="14" met="+----+---+-" rhyme="E">ríes de los que pecan sin <w type="rhyme">provecho</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

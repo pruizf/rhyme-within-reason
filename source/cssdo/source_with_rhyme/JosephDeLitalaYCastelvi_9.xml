@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CVI - La muerte del príncipe don Baltasar de las Españas</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CVI - La muerte del príncipe don Baltasar de las Españas </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+++--+---+-" rhyme="A">Más duro eres que el mármol sino <w type="rhyme">lloras</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">desatado en sollozos <w type="rhyme">pasajero</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">pues ya el Planeta del Imperio <w type="rhyme">Ibero</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">las sombras mide, si contó las <w type="rhyme">horas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Malignas discurrieron las <w type="rhyme">auroras</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="-">en lástimas trocado el Hemisferio,</l>
+            <l n="7" met="-++--+---+-" rhyme="B">y aquel día que sientes por <w type="rhyme">postrero</w>
+            </l>
+            <l n="8" met="-+---++--+-" rhyme="A">culpado su crueldad, ya le <w type="rhyme">mejoras</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">El Príncipe murió de las <w type="rhyme">Españas</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">glorioso Baltasar, lucero <w type="rhyme">ardiente</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="E">en quien el Sol su luz <w type="rhyme">sustituía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+--++---+-" rhyme="C">Atropos cortó el hilo a sus <w type="rhyme">hazañas</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">vio coronada de esplendor su <w type="rhyme">frente</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">y le lloran los términos del <w type="rhyme">día</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

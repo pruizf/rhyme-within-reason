@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>En el día de la presentación</title>
+            <author> Juan De Jauregui</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Jauregui,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>En el día de la presentación </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">El justo Simeón al Verbo <w type="rhyme">humano</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">abraza, y a la muerte <w type="rhyme">apetecida</w>
+            </l>
+            <l n="3" met="+--+-+---+-" rhyme="B">grato se ofrece, al tiempo que la <w type="rhyme">Vida</w>
+            </l>
+            <l n="4" met="+--+-+---+-" rhyme="A">tiene, y el mismo Espíritu, en su <w type="rhyme">mano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Y cual sonoro cisne, el sabio <w type="rhyme">anciano</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">ya su esperanza y gran edad <w type="rhyme">cumplida</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">alegre de su fin, la <w type="rhyme">agradecida</w>
+            </l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">voz funeral así levanta <w type="rhyme">ufano</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">«La muerte agora (oh, claro sol, que <w type="rhyme">abierta</w>
+            </l>
+            <l n="10" met="+--+---+-+-" rhyme="D">senda nos muestras a la vida <w type="rhyme">ausente</w>!)</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">llegue, y en paz el cuerpo <w type="rhyme">desanime</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+-+-+-" rhyme="D">«No precie ya, quien ve tu luz <w type="rhyme">presente</w>,</l>
+            <l n="13" met="++-+---+-+-" rhyme="C">ver otra luz; ni el que la firme y <w type="rhyme">cierta</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">salud alcanza, la mortal <w type="rhyme">estime</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

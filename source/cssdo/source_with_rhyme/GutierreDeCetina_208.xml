@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXIII -</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+-+-+-" rhyme="A">Dama, tan claro en vos Amor me <w type="rhyme">muestra</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="C">de su cautela la experiencia <w type="rhyme">clara</w>
+            </l>
+            <l n="3" met="--+--++--+-" rhyme="C">que si el alma engañar no se <w type="rhyme">dejara</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">en vuestro gesto vio la clara <w type="rhyme">muestra</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+--++-+-+-" rhyme="A">La culpa de Amor fue, la gloria <w type="rhyme">vuestra</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="C">la pena mía, y tal, que me <w type="rhyme">bastara</w>
+            </l>
+            <l n="7" met="---+-++--+-" rhyme="C">sin que os sacara el mal todo a la <w type="rhyme">cara</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">el ciego que por vos mi vida <w type="rhyme">adiestra</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="E">El calor de esta fiebre que os <w type="rhyme">ofende</w>
+            </l>
+            <l n="10" met="+----+-+-+-" rhyme="F">ha hecho en mi dolor efecto <w type="rhyme">extraño</w>,</l>
+            <l n="11" met="+-+--+-+-+-" rhyme="G">muy contrario de aquél que yo <w type="rhyme">temía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="E">A vos os hiela el fuego, a mí me <w type="rhyme">enciende</w>;</l>
+            <l n="13" met="-++--+-+-+-" rhyme="F">en vos crece beldad, en mí el <w type="rhyme">engaño</w>
+            </l>
+            <l n="14" met="+--+-+-+-+-" rhyme="G">hace el deseo mayor que ser <w type="rhyme">solía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

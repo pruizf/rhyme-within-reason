@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Cancer Y Velasco</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cáncer y  Velasco,  Jerónimo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-++--+-" rhyme="A">Ya el corazón (Señor) vive <w type="rhyme">violento</w>
+            </l>
+            <l n="2" met="-----+---+-" rhyme="B">entre las sinrazones del <w type="rhyme">pecado</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y más que de gustoso de <w type="rhyme">dejado</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">está para la enmienda sin <w type="rhyme">aliento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-----+-" rhyme="A">Muy cerca miro de <w type="rhyme">arrepentimiento</w>;</l>
+            <l n="6" met="---+---+-+-" rhyme="B">(o me lo finge mi discurso <w type="rhyme">errado</w>)</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">este temor preciso, y <w type="rhyme">destemplado</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">que se mezcla en las horas del <w type="rhyme">contento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+++--+---+-" rhyme="C">Ya siento una ignorada <w type="rhyme">resistencia</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">al cometer de errores tanta <w type="rhyme">copia</w>;</l>
+            <l n="11" met="-++--+-+-+-" rhyme="E">y aunque esto es circunstancia, y no <w type="rhyme">disculpa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+---+-" rhyme="C">Sálgame a recibir vuestra <w type="rhyme">clemencia</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">que si me lleva a vos mi culpa <w type="rhyme">propia</w>,</l>
+            <l n="14" met="++-+++---+-" rhyme="E">no habéis de hacer vos menos, que mi <w type="rhyme">culpa</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

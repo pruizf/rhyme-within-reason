@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIII - A don Juan de Arguijo, contra el artificio</title>
+            <author> Francisco De Medrano</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de Medrano</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIII - A don Juan de Arguijo, contra el artificio </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Cansa a la vista el artificio <w type="rhyme">humano</w>
+            </l>
+            <l n="2" met="+--+++--++-" rhyme="B">cuanto mayor más presto; la más <w type="rhyme">clara</w>
+            </l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">fuente y jardín compuestos dan en <w type="rhyme">cara</w>
+            </l>
+            <l n="4" met="---+++---+-" rhyme="A">que nuestro ingenio es breve y nuestra <w type="rhyme">mano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Aquel, aquel descuido <w type="rhyme">soberano</w>
+            </l>
+            <l n="6" met="-----+-+-+-" rhyme="B">de la naturaleza, en nada <w type="rhyme">avara</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">con luenga admiración suspende y <w type="rhyme">para</w>
+            </l>
+            <l n="8" met="---+---+-+-" rhyme="A">a quien lo advierte con sentido <w type="rhyme">sano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+++-" rhyme="C">Ver como corre eternamente un <w type="rhyme">río</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="D">cómo el campo se tiende en las <w type="rhyme">llanuras</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">y en los montes se anuda y se <w type="rhyme">reduce</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+-+-+-" rhyme="C">grandeza es siempre nueva y grata, <w type="rhyme">Argío</w>,</l>
+            <l n="13" met="+-+--+---+-" rhyme="E">tal, pero es el autor que las <w type="rhyme">produce</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">¡oh inmenso Dios! en todas tus <w type="rhyme">criaturas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

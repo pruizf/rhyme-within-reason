@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-VII-</title>
+            <author> Garcilaso De La Vega</author>
+            <respStmt>
+               <name>María Ribes Lafoz</name>
+               <name>Noelia Sánchez López</name>
+               <name>Borja Navarro Colorado</name>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Garcilaso de La Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-VII-</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-++--+-" rhyme="A">No pierda más quien ha tanto <w type="rhyme">perdido</w>;</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">básteme, Amor, lo que ha por mí <w type="rhyme">pasado</w>;</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">válgame agora haber jamás <w type="rhyme">probado</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">a defenderme de lo que has <w type="rhyme">querido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Tu templo y sus paredes he <w type="rhyme">vestido</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">de mis mojadas ropas y <w type="rhyme">adornado</w>,</l>
+            <l n="7" met="---+--++-+-" rhyme="B">como acontece a quien ha ya <w type="rhyme">escapado</w>
+            </l>
+            <l n="8" met="+----+---+-" rhyme="A">libre de la tormenta en que se <w type="rhyme">vido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+-+-+-" rhyme="C">Yo habia jurado nunca más <w type="rhyme">meterme</w>,</l>
+            <l n="10" met="--++-----+-" rhyme="D">a poder mío y a mi <w type="rhyme">consentimiento</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">en otro tal peligro como <w type="rhyme">vano</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="C">mas del que viene no podré <w type="rhyme">valerme</w>,</l>
+            <l n="13" met="-+-++----+-" rhyme="D">y en esto no voy contra el <w type="rhyme">juramento</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">que ni es como los otros ni en mi <w type="rhyme">mano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

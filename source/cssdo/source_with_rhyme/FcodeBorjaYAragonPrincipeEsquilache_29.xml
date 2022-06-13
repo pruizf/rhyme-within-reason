@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXIV -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Con desiguales pasos me <w type="rhyme">guiaba</w>
+            </l>
+            <l n="2" met="-+--+----+-" rhyme="B">mi loca confianza a su <w type="rhyme">albedrío</w>;</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">y el más errado, y áspero <w type="rhyme">desvío</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">como camino cierto me <w type="rhyme">enseñaba</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Yo que del tiempo sólo me <w type="rhyme">fiaba</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">libre seguí su loco <w type="rhyme">desvarío</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y cuanto del remedio <w type="rhyme">desconfío</w>,</l>
+            <l n="8" met="+--+--+--+-" rhyme="A">tanto del ciego error me <w type="rhyme">confiaba</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Seguí pisadas siempre del <w type="rhyme">engaño</w>;</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">cuanto intentaba me sirvió de <w type="rhyme">afrenta</w>,</l>
+            <l n="11" met="-+---++--+-" rhyme="E">viví con la razón libre, <w type="rhyme">oprimida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Y al fin cogí este fruto de mi <w type="rhyme">daño</w>;</l>
+            <l n="13" met="---+-+---+-" rhyme="D">que quien en propias causas <w type="rhyme">escarmienta</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">a costa del vivir, procura <w type="rhyme">vida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

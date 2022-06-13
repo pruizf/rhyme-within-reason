@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 1144 - Acto III, CAPITÁN De La nueva victoria de don Gonzalo de Córdoba</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 1144 - Acto III, CAPITÁN De La nueva victoria de don Gonzalo de Córdoba </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Negra, desaseada, <w type="rhyme">descompuesta</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">desafeitada noche; <w type="rhyme">deslucida</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">de manto y de cabellos <w type="rhyme">esparcida</w>;</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">envidiosa del sol, con sombra <w type="rhyme">opuesta</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">remisa en bienes, y en traiciones <w type="rhyme">presta</w>;</l>
+            <l n="6" met="-+---+---+-" rhyme="B">adúltera, ladrona y <w type="rhyme">homicida</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">disfrazada, cobarde y <w type="rhyme">atrevida</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">del ganado, terror; del lobo, <w type="rhyme">fiesta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Por tus mismas traiciones te <w type="rhyme">conjuro</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">miedos, engaños, laberintos, <w type="rhyme">celos</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">que me dejes gozar lo que <w type="rhyme">procuro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Así te canten búhos y <w type="rhyme">mochuelos</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">o igualen con el sol hermoso y <w type="rhyme">puro</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">tu negro curso los piadosos <w type="rhyme">cielos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

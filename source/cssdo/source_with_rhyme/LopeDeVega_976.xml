@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 27 - Libro III, ENARETO Al cuchillo de Julia De La batalla del honor</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 27 - Libro III, ENARETO Al cuchillo de Julia De La batalla del honor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+--++-" rhyme="A">La mano, cuyo sois, si con vos <w type="rhyme">diera</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">cuchillo, el golpe y la amorosa <w type="rhyme">herida</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">hallárase burlada, y de <w type="rhyme">corrida</w>,</l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">menos desdén, y más amor <w type="rhyme">tuviera</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Porque apenas con vos la herida <w type="rhyme">hiciera</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">cuando en lugar de muerte diera <w type="rhyme">vida</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">viendo la muerte a su pesar <w type="rhyme">vencida</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">antídoto y veneno en esta <w type="rhyme">fiera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Corta en agraz mis esperanzas <w type="rhyme">verdes</w>,</l>
+            <l n="10" met="-----+---+-" rhyme="D">pues para mis verdades <w type="rhyme">apercibes</w>
+            </l>
+            <l n="11" met="-+---+-+++-" rhyme="E">en vez de galardón rigor tan <w type="rhyme">fiero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">Y tú, pues que me matas y me <w type="rhyme">pierdes</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="D">si ya resuelta de matarme <w type="rhyme">vives</w>,</l>
+            <l n="14" met="+----++--+-" rhyme="E">basta la voluntad, sobra el <w type="rhyme">acero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

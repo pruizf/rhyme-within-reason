@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXII -</title>
+            <author> Juan Boscan</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan Boscan</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Quien dice que la ausencia causa <w type="rhyme">olvido</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">merece ser de todos <w type="rhyme">olvidado</w>;</l>
+            <l n="3" met="---+-+---+-" rhyme="B">el verdadero y firme <w type="rhyme">enamorado</w>
+            </l>
+            <l n="4" met="-+--++-+-+-" rhyme="A">está, cuando está ausente, más <w type="rhyme">perdido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Aviva la memoria su <w type="rhyme">sentido</w>;</l>
+            <l n="6" met="---+-+---+-" rhyme="B">la soledad levanta su <w type="rhyme">cuidado</w>;</l>
+            <l n="7" met="-+---++--+-" rhyme="B">hallarse de su bien tan <w type="rhyme">apartado</w>,</l>
+            <l n="8" met="+----++--+-" rhyme="A">hace su desear más <w type="rhyme">encendido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+--++-" rhyme="C">No sanan las heridas en él <w type="rhyme">dadas</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">aunque cese el mirar que las <w type="rhyme">causó</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">si quedan en el alma <w type="rhyme">confirmadas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Que si uno está con muchas <w type="rhyme">cuchilladas</w>,</l>
+            <l n="13" met="--+------+-" rhyme="D">porque huya de quien le <w type="rhyme">acuchilló</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="C">no por eso serán mejor <w type="rhyme">curadas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-XXXIII-</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-XXXIII-</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+--++-" rhyme="A">No es tan duro mi pecho que no <w type="rhyme">sienta</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">la fuerza del dolor que en él <w type="rhyme">desciende</w>;</l>
+            <l n="3" met="--+-++---+-" rhyme="B">mas amor, por más daño, me <w type="rhyme">defiende</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">que descubra las llagas de mi <w type="rhyme">afrenta</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">quiere que calle el mal y que <w type="rhyme">consienta</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">la pena que me aqueja y siempre <w type="rhyme">ofende</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">y en fuego desusado tarde <w type="rhyme">enciende</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">el corazón, que en llama se <w type="rhyme">sustenta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--++--+-" rhyme="C">Si esta grave pasión no <w type="rhyme">perturbara</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">el pecho, bien pudiera <w type="rhyme">confiado</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">llegar al dulce fin de la <w type="rhyme">alegría</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+++--+-+-" rhyme="C">mas ¡ay, cuánto es esta esperanza <w type="rhyme">cara</w>!</l>
+            <l n="13" met="---+-+++-+-" rhyme="D">y por mirar su bien ¡cuánto ha <w type="rhyme">pasado</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">de afán y de tormento la alma <w type="rhyme">mía</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

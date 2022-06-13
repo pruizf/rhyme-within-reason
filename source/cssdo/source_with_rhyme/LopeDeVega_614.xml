@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 94 - Alusión a la fábula de Andrógenos</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 94 - Alusión a la fábula de Andrógenos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Filis, alma del alma, tu <w type="rhyme">hermosura</w>
+            </l>
+            <l n="2" met="--+-++---+-" rhyme="B">me encamina a mí mismo con <w type="rhyme">amarte</w>;</l>
+            <l n="3" met="-+---+---+-" rhyme="B">si juras que te ofendo con <w type="rhyme">buscarte</w>,</l>
+            <l n="4" met="--+--++--+-" rhyme="A">encubrirte de mí te hace <w type="rhyme">perjura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">No sin considerada <w type="rhyme">arquitectura</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">naturaleza procedió al <w type="rhyme">formarte</w>;</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">dividirte pudiera, y no <w type="rhyme">juntarte</w>;</l>
+            <l n="8" met="+-+--+---+-" rhyme="A">tú me niegas lo que ella me <w type="rhyme">asegura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++---+-+-" rhyme="C">Baste ya verme reducido a <w type="rhyme">estado</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">que me gobierno por ausentes <w type="rhyme">ojos</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="E">y me sustenta aliento de <w type="rhyme">esperanza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+---+-" rhyme="C">Haz, haz restitución de lo <w type="rhyme">usurpado</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">y no desprecio en mí de tus <w type="rhyme">despojos</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">que ser tuyo merece, sino <w type="rhyme">alcanza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

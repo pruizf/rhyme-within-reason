@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII - Duélete de esa puente</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - Duélete de esa puente </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Duélete de esa puente, <w type="rhyme">Manzanares</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">mira que dice por ahí la <w type="rhyme">gente</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">que no eres río para media <w type="rhyme">puente</w>,</l>
+            <l n="4" met="-+++---+-+-" rhyme="A">y que ella es puente para treinta <w type="rhyme">mares</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">Hoy arrogante te ha brotado a <w type="rhyme">pares</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">humildes crestas tu soberbia <w type="rhyme">frente</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y ayer me dijo humilde tu <w type="rhyme">corriente</w>,</l>
+            <l n="8" met="+--+-----+-" rhyme="A">que eran en Marzo los <w type="rhyme">caniculares</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--++--+-" rhyme="C">Por el alma de aquel, que ha <w type="rhyme">pretendido</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">con cuatro dagmas de agua de <w type="rhyme">achicoria</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">purgar la villa y darle lo <w type="rhyme">purgado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+-+-+-" rhyme="C">Me di, ¿cómo has menguado y has <w type="rhyme">crecido</w>?</l>
+            <l n="13" met="+-+-++-+-+-" rhyme="D">¿Cómo ayer te vi en pena, y hoy en <w type="rhyme">gloria</w>?</l>
+            <l n="14" met="--++-+++-+-" rhyme="E">-Me bebió un asno ayer y hoy me ha <w type="rhyme">ensuciado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

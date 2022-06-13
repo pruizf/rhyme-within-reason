@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXVI -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+---++-+-+-" rhyme="A">Estos que al impío turco en dura <w type="rhyme">guerra</w>;</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">al moro, al anglo y al escoto <w type="rhyme">airado</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y vencen al tudesco y al <w type="rhyme">dudado</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">francés, y al belga en su cercada <w type="rhyme">tierra</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+--++-+-" rhyme="A">y los estrechos que el mar hondo <w type="rhyme">encierra</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">sobran, pasando por lugar <w type="rhyme">vedado</w>
+            </l>
+            <l n="7" met="--+-++---+-" rhyme="B">con valor cual vio nunca el <w type="rhyme">estrellado</w>
+            </l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">cielo, que tantas cosas mira y <w type="rhyme">cierra</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+---+-" rhyme="C">bien muestran en la gloria de sus <w type="rhyme">hechos</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">que son tus hijos, ¡oh felice <w type="rhyme">España</w>!</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">honra del alto imperio de <w type="rhyme">Occidente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Alabe Roma los famosos <w type="rhyme">pechos</w>
+            </l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">de los suyos; que nunca, y no me <w type="rhyme">engaña</w>
+            </l>
+            <l n="14" met="--++-+-+-+-" rhyme="E">el amor, fue a esta igual su osada <w type="rhyme">gente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

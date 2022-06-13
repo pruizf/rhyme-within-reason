@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Diligencia amatoria</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Diligencia amatoria </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Esta mañana, en Dios y <w type="rhyme">enhorabuena</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">salí de casa y víneme el <w type="rhyme">mercado</w>;</l>
+            <l n="3" met="++-+---+-+-" rhyme="B">vi un ojo negro al parecer <w type="rhyme">rasgado</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">blanca la frente y rubia la <w type="rhyme">melena</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Llegué y le dije: «Gloria de mi <w type="rhyme">pena</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">muerto me tiene vivo tu <w type="rhyme">cuidado</w>;</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">vuélveme el alma, pues me la has <w type="rhyme">robado</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">con ese encanto de áspid o <w type="rhyme">sirena</w>.»</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+++-" rhyme="C">Pasó, pasé, miró, miré, vio, <w type="rhyme">vila</w>;</l>
+            <l n="10" met="++---+++-+-" rhyme="D">dio muestras de querer, hice otro <w type="rhyme">tanto</w>;</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">guiñó, guiñé, tosió, tosí, <w type="rhyme">seguila</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">fuese a su casa y, sin quitarse el <w type="rhyme">manto</w>,</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">alzó, llegué, toqué, besé, <w type="rhyme">cubrila</w>,</l>
+            <l n="14" met="+--+-+--++-" rhyme="D">deje el dinero y fuime como un <w type="rhyme">santo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

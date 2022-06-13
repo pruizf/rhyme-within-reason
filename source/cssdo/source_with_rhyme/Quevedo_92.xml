@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Admírase de que Flora, siendo todo fuego y luz, sea todo hielo</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Admírase de que Flora, siendo todo fuego y luz, sea todo hielo  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Hermosísimo invierno de mi <w type="rhyme">vida</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">sin estivo calor constante <w type="rhyme">yelo</w>,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">a cuya nieve da cortés el <w type="rhyme">cielo</w>
+            </l>
+            <l n="4" met="+--+-+---+-" rhyme="A">púrpura en tiernas flores <w type="rhyme">encendida</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">esa esfera de luz <w type="rhyme">enriquecida</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">que tiene por estrella al dios de <w type="rhyme">Delo</w>,</l>
+            <l n="7" met="+----++--+-" rhyme="B">¿cómo en la elemental guerra del <w type="rhyme">suelo</w>
+            </l>
+            <l n="8" met="+----+---+-" rhyme="A">reina de sus contrarios <w type="rhyme">defendida</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Eres Scytia de la alma que te <w type="rhyme">adora</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">cuando la vista, que te mira, <w type="rhyme">inflama</w>;</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">Etna, que ardientes nieves <w type="rhyme">atesora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">Si lo frágil perdonas a la <w type="rhyme">fama</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="C">eres al vidrio parecida, <w type="rhyme">Flora</w>,</l>
+            <l n="14" met="-+-+++---+-" rhyme="D">que siendo yelo, es hijo de la <w type="rhyme">llama</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Francisco De Figueroa</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Figueroa,  Francisco de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-++-++-" rhyme="A">Déjame en paz, Amor: ya te di el <w type="rhyme">fruto</w>
+            </l>
+            <l n="2" met="--++---+-+-" rhyme="B">de mis más verdes y floridos <w type="rhyme">años</w>;</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y mis ojos ligeros a sus <w type="rhyme">daños</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">pagaron bien su desigual <w type="rhyme">tributo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+-+-+-" rhyme="A">No quiero ahora yo con rostro <w type="rhyme">enjuto</w>,</l>
+            <l n="6" met="+-+--++--+-" rhyme="B">sano y libre cantar más <w type="rhyme">desengaños</w>;</l>
+            <l n="7" met="---+---+-+-" rhyme="B">ni por alegres y agradables <w type="rhyme">paños</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">trocar tu triste y congojoso <w type="rhyme">luto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---++--+-" rhyme="C">En llanto y en dolor presto y <w type="rhyme">cargado</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">de tus antiguos hierros, la <w type="rhyme">jornada</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="E">quiero acabar de mi cansada <w type="rhyme">vida</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-++--+-" rhyme="C">mas no me des, Amor, nuevo <w type="rhyme">cuidado</w>,</l>
+            <l n="13" met="-+---++--+-" rhyme="E">ni pienses que podrá nueva <w type="rhyme">herida</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">romper la fe que nunca fue <w type="rhyme">doblada</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

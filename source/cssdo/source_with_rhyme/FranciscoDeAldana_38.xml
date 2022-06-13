@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLV -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLV -   </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">En fin, en fin, tras tanto andar <w type="rhyme">muriendo</w>,</l>
+            <l n="2" met="-+--++---+-" rhyme="B">tras tanto variar vida y <w type="rhyme">destino</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">tras tanto de uno en otro <w type="rhyme">desatino</w>
+            </l>
+            <l n="4" met="-++--++--+-" rhyme="A">pensar todo apretar nada <w type="rhyme">cogiendo</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-++--+-" rhyme="A">tras tanto acá y allá yendo y <w type="rhyme">viniendo</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">cual sin aliento inútil <w type="rhyme">peregrino</w>
+            </l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">-¡oh, Dios!-, tras tanto error del buen <w type="rhyme">camino</w>,</l>
+            <l n="8" met="++---+-+-+-" rhyme="A">yo mismo de mi mal ministro <w type="rhyme">siendo</w>...,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+-++---+-" rhyme="C">hallo, en fin, que ser muerto en la <w type="rhyme">memoria</w>
+            </l>
+            <l n="10" met="-++--+-+-+-" rhyme="D">del mundo es lo mejor que en él se <w type="rhyme">esconde</w>,</l>
+            <l n="11" met="-+-+-++--+-" rhyme="E">pues es la paga de él muerte y <w type="rhyme">olvido</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">y en un rincón vivir con la <w type="rhyme">victoria</w>
+            </l>
+            <l n="13" met="-++--+++-+-" rhyme="D">de sí, puesto el querer tan sólo <w type="rhyme">adonde</w>
+            </l>
+            <l n="14" met="++-+-+---+-" rhyme="E">es premio el mismo Dios de lo <w type="rhyme">servido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

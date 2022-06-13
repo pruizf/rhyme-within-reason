@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Túmulo a la señora Doña María Enríquez, Marquesa de Villamaina</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Túmulo a la señora Doña María Enríquez, Marquesa de Villamaina  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">¿Quién alimentará de luz al <w type="rhyme">día</w>?</l>
+            <l n="2" met="+-+--++--+-" rhyme="B">¿Quién de rayos al sol? ¿Quién a la <w type="rhyme">aurora</w>
+            </l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">de perlas, que en tu risa y boca <w type="rhyme">llora</w>;</l>
+            <l n="4" met="--+--+---+-" rhyme="A">del coral, que en tus labios <w type="rhyme">encendía</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Ya falleció del mundo la <w type="rhyme">alegría</w>;</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">melancólica y mustia yace <w type="rhyme">Flora</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">cuando el cabello de tu frente <w type="rhyme">dora</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">en negro luto la ceniza <w type="rhyme">fría</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Por sólo unirse a Dios tu alma <w type="rhyme">pudo</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">desunirse del cuerpo, que en el <w type="rhyme">suelo</w>,</l>
+            <l n="11" met="-++--+++-+-" rhyme="C">si fue cuerpo o deidad, aún hoy lo <w type="rhyme">dudo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">Dichoso en tanto llanto fue su <w type="rhyme">vuelo</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">pues que sube tu espíritu <w type="rhyme">desnudo</w>
+            </l>
+            <l n="14" met="++---+-+-+-" rhyme="D">de un cielo, por vestirse de otro <w type="rhyme">cielo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

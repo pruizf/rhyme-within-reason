@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXX -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Tu gracia, tu encanto, tu <w type="rhyme">hermosura</w>
+            </l>
+            <l n="2" met="+-+--+---+-" rhyme="B">muestra todo del Cielo, <w type="rhyme">retirada</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="A">como cosa que está sobre <w type="rhyme">natura</w>,</l>
+            <l n="4" met="--+-++---+-" rhyme="B">ni pudiera ser vista ni <w type="rhyme">pintada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Pero yo, que en el alma tu <w type="rhyme">figura</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">tengo, en humana forma <w type="rhyme">abreviada</w>,</l>
+            <l n="7" met="++---+---+-" rhyme="A">tal hice retratarte de <w type="rhyme">pintura</w>
+            </l>
+            <l n="8" met="--+--++--+-" rhyme="B">que el amor te dejó en ella <w type="rhyme">estampada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+---++---+-" rhyme="C">No por ambición vana o por <w type="rhyme">memoria</w>
+            </l>
+            <l n="10" met="+-+----+-+-" rhyme="D">tuya, o ya por manifestar mis <w type="rhyme">males</w>;</l>
+            <l n="11" met="--+-++---+-" rhyme="E">mas por verte más veces que te <w type="rhyme">veo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">Y por solo gozar de tanta <w type="rhyme">gloria</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">señora, con los ojos <w type="rhyme">corporales</w>,</l>
+            <l n="14" met="-----+---+-" rhyme="E">como con los del alma y del <w type="rhyme">deseo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

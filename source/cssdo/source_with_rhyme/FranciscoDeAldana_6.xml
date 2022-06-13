@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIV -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-++--+-" rhyme="A">Hase movido, dama, una <w type="rhyme">pasión</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">entre Venus, Amor y la <w type="rhyme">Natura</w>,</l>
+            <l n="3" met="-----+---+-" rhyme="B">sobre vuestra hermosísima <w type="rhyme">figura</w>,</l>
+            <l n="4" met="---+-++--+-" rhyme="A">en la cual todos tres tienen <w type="rhyme">razón</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----++--+-" rhyme="A">Buscan quien les absuelva esta <w type="rhyme">cuestión</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">con viva diligencia y suma <w type="rhyme">cura</w>,</l>
+            <l n="7" met="+++-++-+-+-" rhyme="B">y es tan alta, tan honda y tan <w type="rhyme">oscura</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">que no hay quien darle pueda <w type="rhyme">solución</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Ponen estas querellas contra <w type="rhyme">vos</w>:</l>
+            <l n="10" met="+----+---+-" rhyme="D">Venus, que le usurpáis su <w type="rhyme">sacrificio</w>;</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">Amor, que no lo conocéis por <w type="rhyme">dios</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">Natura dice -y jura por su <w type="rhyme">oficio</w>-</l>
+            <l n="13" met="-----+++-+-" rhyme="C">que de vuestra impresión nunca hizo <w type="rhyme">dos</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="D">y que ingrata le sois del <w type="rhyme">beneficio</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

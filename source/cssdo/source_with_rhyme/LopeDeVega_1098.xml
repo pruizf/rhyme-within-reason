@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Jornada I, EUSTAQUIO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Jornada I, EUSTAQUIO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">En caja tersa, en seno <w type="rhyme">nacarado</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">naturaleza que prodigios <w type="rhyme">cría</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">junta el rocío que el aurora <w type="rhyme">envía</w>
+            </l>
+            <l n="4" met="--+--++--+-" rhyme="A">con el fuego del sol más <w type="rhyme">acendrado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+---+--+-+-" rhyme="A">De esta oposición, pues en sumo <w type="rhyme">grado</w>
+            </l>
+            <l n="6" met="-----+---+-" rhyme="B">como competidores a <w type="rhyme">porfía</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">perla engendran con tanta <w type="rhyme">bizarría</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">que llegar a dudar si la han <w type="rhyme">formado</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">del agua elemental que Dios <w type="rhyme">eleva</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">con fuego de su fe, que se <w type="rhyme">introduce</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">en el alma obediente al <w type="rhyme">albedrío</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Tanto el afecto de su ley me <w type="rhyme">lleva</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">que a veces a la duda me <w type="rhyme">conduce</w>
+            </l>
+            <l n="14" met="--+--+++-+-" rhyme="E">si el amor que me abrasa es hijo <w type="rhyme">mío</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

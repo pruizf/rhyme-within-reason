@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII - A la libertad perdida de la patria</title>
+            <author> Antonio Enriquez Gomez</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Antonio Enriquez Gomez</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - A la libertad perdida de la patria </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Vivo sin libertad y no es <w type="rhyme">posible</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">que pueda ser verdad mi <w type="rhyme">sentimiento</w>,</l>
+            <l n="3" met="-+-+-++--+-" rhyme="B">vivir y no sentir es <w type="rhyme">argumento</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">que conceder se debe a lo <w type="rhyme">insensible</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--++--+-" rhyme="A">Que no vivo sin duda es <w type="rhyme">infalible</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">pues siendo mi seguro <w type="rhyme">movimiento</w>
+            </l>
+            <l n="7" met="-+---+-+++-" rhyme="B">vivir para sentir, si ya no <w type="rhyme">siento</w>,</l>
+            <l n="8" met="++-+--+--+-" rhyme="A">no puede haber en mi parte <w type="rhyme">sensible</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">Mas bien puede el dolor <w type="rhyme">desengañarme</w>:</l>
+            <l n="10" met="-----+-+-+-" rhyme="D">cuando la libertad está <w type="rhyme">perdida</w>,</l>
+            <l n="11" met="+----++--+-" rhyme="C">ella por nacimiento ha de <w type="rhyme">acabarme</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+++-+-" rhyme="D">Sentir y no vivir fue acción <w type="rhyme">lucida</w>
+            </l>
+            <l n="13" met="-----++--+-" rhyme="C">pues cuando la pasión ha de <w type="rhyme">sobrarme</w>,</l>
+            <l n="14" met="+-++---+-+-" rhyme="D">¿qué mayor gloria que perder la <w type="rhyme">vida</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

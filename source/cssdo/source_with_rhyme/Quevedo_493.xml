@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Conjetura la causa de tocarse la campana de velilla, en Aragón, después de la muerte del piadoso Rey Don Felipe III, y muestra la diferencia con que la oirán los humanos</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Conjetura la causa de tocarse la campana de velilla, en Aragón, después de la muerte del piadoso Rey Don Felipe III, y muestra la diferencia con que la oirán los humanos  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">O el viento, sabedor de lo <w type="rhyme">futuro</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">clamoreó por el difunto <w type="rhyme">hado</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">o en doctos caracteres <w type="rhyme">anudado</w>,</l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">le repitió parlero gran <w type="rhyme">conjuro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+--++-" rhyme="A">Y puede ser que espíritu más <w type="rhyme">puro</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">a la advertencia humana <w type="rhyme">destinado</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">pronunció penitencias al <w type="rhyme">pecado</w>
+            </l>
+            <l n="8" met="--+-++-+-+-" rhyme="A">en lenguaje tan breve y tan <w type="rhyme">oscuro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Profético metal, los <w type="rhyme">ciudadanos</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">que de agüero y cometa son <w type="rhyme">exentos</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">a tu son bailarán por estos <w type="rhyme">llanos</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">en tanto que tu voz y tus <w type="rhyme">acentos</w>
+            </l>
+            <l n="13" met="+----+---+-" rhyme="C">oyen descoloridos los <w type="rhyme">tiranos</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="D">y te atienden los reyes <w type="rhyme">macilentos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

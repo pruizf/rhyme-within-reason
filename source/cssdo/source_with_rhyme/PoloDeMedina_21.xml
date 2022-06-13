@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Contra un ciprés que lo abrasó un rayo</title>
+            <author> Polo De Medina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Polo de  Medina,  Jacinto</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Contra un ciprés que lo abrasó un rayo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+-+-+-" rhyme="A">Es verdad, yo te vi ciprés <w type="rhyme">frondoso</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">estrechar de los vientos la <w type="rhyme">campaña</w>,</l>
+            <l n="3" met="+++--+---+-" rhyme="B">yo vi ser la soberbia que te <w type="rhyme">engaña</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">aguja verde en Menfis <w type="rhyme">oloroso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Creíste que por grande y <w type="rhyme">poderoso</w>
+            </l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">no te alcanzase de un dolor la <w type="rhyme">saña</w>.</l>
+            <l n="7" met="-++--+-+-+-" rhyme="B">Rodear sabe el mal, por senda <w type="rhyme">extraña</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">vino el castigo en traje <w type="rhyme">luminoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+++-+-" rhyme="C">Rigor tu vanidad llama a esta <w type="rhyme">furia</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">si fueran los castigos <w type="rhyme">impiedades</w>
+            </l>
+            <l n="11" met="+-+--+-+-+-" rhyme="E">no se quejen tus culpas tan a <w type="rhyme">gritos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+++-+-" rhyme="C">Nunca lo que es razón ha sido <w type="rhyme">injuria</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">ni por más que atormenten sus <w type="rhyme">verdades</w>
+            </l>
+            <l n="14" met="+--+-+---+-" rhyme="E">han de saber quejarse los <w type="rhyme">delitos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

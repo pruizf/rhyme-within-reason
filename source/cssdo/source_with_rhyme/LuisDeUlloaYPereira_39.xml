@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVIII - Su amor más advertido y atento a la fuerza se halla desobligado y sólo dura en la parte inferior</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVIII - Su amor más advertido y atento a la fuerza se halla desobligado y sólo dura en la parte inferior </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--++--+-" rhyme="A">De la playa de amor menos <w type="rhyme">serena</w>,</l>
+            <l n="2" met="+-+--+---+-" rhyme="B">tanto burla mi nave la <w type="rhyme">fiereza</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">que por salir del riesgo su <w type="rhyme">pureza</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">no se dispone la menor <w type="rhyme">faena</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Si las jarcias confuso <w type="rhyme">desordena</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">el ocio, que introduce la <w type="rhyme">torpeza</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">no repetidos votos de <w type="rhyme">fineza</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">algún gemido del deleite <w type="rhyme">suena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Solo corre tormenta el <w type="rhyme">apetito</w>,</l>
+            <l n="10" met="-----+-+-+-" rhyme="D">sino en tranquilidad están en <w type="rhyme">calma</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="E">memoria, voluntad, y <w type="rhyme">entendimiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Y aunque parece el piélago <w type="rhyme">infinito</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">como se engolfa el gusto sin el <w type="rhyme">alma</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="E">no se pierde de vista el <w type="rhyme">escarmiento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Diego Ramirez Pagan</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Ramírez  Pagan,  Diego</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Los ojos bellos, la amorosa <w type="rhyme">frente</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">los brazos, manos, pies, el claro <w type="rhyme">viso</w>,</l>
+            <l n="3" met="-++--++--+-" rhyme="B">que me han hecho de mí mismo <w type="rhyme">diviso</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">y en todo singular de la otra <w type="rhyme">gente</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">los crespados cabellos de oro <w type="rhyme">ardiente</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">el cuerdo resonar del dulce <w type="rhyme">riso</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">que en tierra hacer solía un <w type="rhyme">paraíso</w>,</l>
+            <l n="8" met="+++--+--++-" rhyme="A">ya es un poco de polvo que no <w type="rhyme">siente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Y yo, en dolor y desdeñado, <w type="rhyme">vivo</w>
+            </l>
+            <l n="10" met="-+---+--++-" rhyme="D">a oscuras, sin la lumbre que amé <w type="rhyme">tanto</w>
+            </l>
+            <l n="11" met="---+-+-+-+-" rhyme="C">como sin remos barco en mar <w type="rhyme">esquivo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Fenezca aquí mi enamorado <w type="rhyme">canto</w>,</l>
+            <l n="13" met="++-+---+-+-" rhyme="C">seca es la vena del ingenio <w type="rhyme">vivo</w>
+            </l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">y la cítara mía vuelta en <w type="rhyme">llanto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

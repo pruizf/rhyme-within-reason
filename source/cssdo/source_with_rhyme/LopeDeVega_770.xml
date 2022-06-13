@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 938 - Jornada II, CARLOS De El perseo</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 938 - Jornada II, CARLOS De El perseo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="-">Horas feas leona mi leona</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="A">sierpe de Limia llena de ira y <w type="rhyme">saña</w>,</l>
+            <l n="3" met="+-+-++---+-" rhyme="A">horas feas cruel toro de <w type="rhyme">España</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="B">que bebe el Tajo y las riberas <w type="rhyme">mora</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="B">Hora de sol la Circe <w type="rhyme">encantadora</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="A">y el cocodrilo que llorando <w type="rhyme">engaña</w>,</l>
+            <l n="7" met="++-+---+-+-" rhyme="A">más flaca y débil que la tierna <w type="rhyme">caña</w>:</l>
+            <l n="8" met="+--+---+-+-" rhyme="B">Hora sirena que cantando <w type="rhyme">llora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+-+-+-" rhyme="C">Que León, Sierpe, Circe, Toro, <w type="rhyme">Fiera</w>,</l>
+            <l n="10" met="--+--++--+-" rhyme="D">cocodrilo cruel, caña, <w type="rhyme">Sirena</w>:</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">en pena, en vida, en muerte, en gloria <w type="rhyme">quiero</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">darte mi alma de cualquier <w type="rhyme">manera</w>,</l>
+            <l n="13" met="-++--+-+-+-" rhyme="D">que más vale por ti tormento y <w type="rhyme">pena</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">que de otra mano el bien del mal que <w type="rhyme">muero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

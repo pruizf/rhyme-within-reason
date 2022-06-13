@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXVIII -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Contradicen razón y <w type="rhyme">entendimiento</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">las trazas y remedios que <w type="rhyme">imagino</w>,</l>
+            <l n="3" met="--++-+-+-+-" rhyme="B">y si Amor busca en vano algún <w type="rhyme">camino</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">sólo llega por él al <w type="rhyme">escarmiento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Es cuchillo del alma el <w type="rhyme">pensamiento</w>,</l>
+            <l n="6" met="+--+-++--+-" rhyme="B">siendo del cierto mal, cierto <w type="rhyme">adivino</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y siendo tanto aqueste <w type="rhyme">desatino</w>,</l>
+            <l n="8" met="---+-++-++-" rhyme="A">que desatino más cuanto más <w type="rhyme">siento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C">Si a mí quiere volverme en tal <w type="rhyme">estado</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">el errar por costumbre no me <w type="rhyme">deja</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">percibir cual me tienen mis <w type="rhyme">engaños</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">Siendo yo el ofensor y el <w type="rhyme">agraviado</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">el autor de la causa y de la <w type="rhyme">queja</w>,</l>
+            <l n="14" met="--+--+-+-+-" rhyme="E">y el que causa y padece tantos <w type="rhyme">daños</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A un galán que decía mucho mal de una dama de quien estaba celoso</title>
+            <author> Cancer Y Velasco</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cáncer y  Velasco,  Jerónimo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A un galán que decía mucho mal de una dama de quien estaba celoso </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+--++-" rhyme="A">Doy que Lisi te agravia, y que no <w type="rhyme">alcanza</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">o Fabio, el privilegio de <w type="rhyme">querida</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">porque ignorantemente se te <w type="rhyme">olvida</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">que es mujer, cuando acusas su <w type="rhyme">mudanza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Quizá la quieres, y esta <w type="rhyme">destemplanza</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">en tu amor la verás como <w type="rhyme">corrida</w>,</l>
+            <l n="7" met="--++-+---+-" rhyme="B">que después es vergüenza <w type="rhyme">enternecida</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">lo que en la ira pareció <w type="rhyme">venganza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">No es conveniencia publicar tu <w type="rhyme">agravio</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">que a todos los que ahora le <w type="rhyme">refieres</w>,</l>
+            <l n="11" met="+----+---+-" rhyme="E">luego los temerás como <w type="rhyme">enemigos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Mira que puede ser que vuelvas, <w type="rhyme">Fabio</w>,</l>
+            <l n="13" met="+--+-+--++-" rhyme="D">habla de Lisi bien, para qué <w type="rhyme">quieres</w>
+            </l>
+            <l n="14" met="-+-+-++--+-" rhyme="E">en una infame paz tantos <w type="rhyme">testigos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

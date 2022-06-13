@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXV -</title>
+            <author> Lopez De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lopez de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Alégrome de ver aquella <w type="rhyme">tierra</w>,</l>
+            <l n="2" met="++---+---+-" rhyme="B">non menos la çibdad e la <w type="rhyme">morada</w>,</l>
+            <l n="3" met="+--+--+--+-" rhyme="A">sean planiçies o campos o <w type="rhyme">sierra</w>,</l>
+            <l n="4" met="--+++--+-+-" rhyme="B">donde vos vi yo la primer <w type="rhyme">jornada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+--+--+-" rhyme="A">Mas luego vuelvo e aquesto <w type="rhyme">matierra</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">pensando cuanto es <w type="rhyme">infortunada</w>
+            </l>
+            <l n="7" met="-+-+-----+-" rhyme="A">mi triste vida, porque la mi <w type="rhyme">guerra</w>
+            </l>
+            <l n="8" met="++-+--+--+-" rhyme="B">non fue de passo, mas es de <w type="rhyme">morada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+--++-+-" rhyme="C">¿Fue visto bello o lid tan <w type="rhyme">mortal</w>
+            </l>
+            <l n="10" met="++-+-+---+-" rhyme="D">do non se viessen pazes o <w type="rhyme">suffrencia</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="C">nin adversario tanto <w type="rhyme">capital</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="D">que non fuese pungido de <w type="rhyme">conçiencia</w>,</l>
+            <l n="13" met="+-++--++-+-" rhyme="C">sinon vos sola sin par nin <w type="rhyme">egual</w>,</l>
+            <l n="14" met="++++-+---+-" rhyme="D">do yo non fallo punto de <w type="rhyme">clemençia</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

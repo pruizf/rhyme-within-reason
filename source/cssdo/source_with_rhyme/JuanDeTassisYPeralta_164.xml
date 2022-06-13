@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXIII -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Esta imaginación que sólo <w type="rhyme">estriba</w>
+            </l>
+            <l n="2" met="--+--++--+-" rhyme="B">en cerrar a mi bien siempre la <w type="rhyme">puerta</w>,</l>
+            <l n="3" met="+-+--+-+-+-" rhyme="B">un forzoso imposible en mí <w type="rhyme">concierta</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">hallando gusto en pena tan <w type="rhyme">esquiva</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+-+-+-" rhyme="A">Como no deja causa tan <w type="rhyme">altiva</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">vislumbre de descanso, ni aun <w type="rhyme">incierta</w>
+            </l>
+            <l n="7" met="-+++---+-+-" rhyme="B">quedó tan lejos la esperanza <w type="rhyme">muerta</w>,</l>
+            <l n="8" met="++-+---+-+-" rhyme="A">que aun no me acuerdo que llegase <w type="rhyme">viva</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+--++-" rhyme="C">Mi esperanza murió sin haber <w type="rhyme">sido</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">por no ofender la fe que <w type="rhyme">desterrada</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">la dejó por razón y por <w type="rhyme">ventura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Murió en idea sin haber <w type="rhyme">nacido</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="D">y en las razones a que fue <w type="rhyme">entregada</w>
+            </l>
+            <l n="14" met="+--+-+-+-+-" rhyme="E">vive la fe, señora, más <w type="rhyme">segura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

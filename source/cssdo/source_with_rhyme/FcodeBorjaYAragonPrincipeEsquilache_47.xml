@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXL -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXL - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">La llave, señor Conde, <w type="rhyme">restituyo</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">con tierna soledad de mi <w type="rhyme">Alcaldía</w>;</l>
+            <l n="3" met="---+---+-+-" rhyme="B">aunque en Diciembre, y su estación <w type="rhyme">sombría</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">del seco prado, y sus jardines <w type="rhyme">huyo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Con frailes no porfío ya, ni <w type="rhyme">arguyo</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">sobre pedir boleta cada <w type="rhyme">día</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">juzgando en mi paciencia, y su <w type="rhyme">porfía</w>;</l>
+            <l n="8" met="++-+---+++-" rhyme="A">que es mío el prado, y que el jardín es <w type="rhyme">suyo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+++-" rhyme="C">Y si por dicha, lo que Dios no <w type="rhyme">quiera</w>,</l>
+            <l n="10" met="--+--++--+-" rhyme="D">cuando el Sol por Abril corre su <w type="rhyme">toro</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="C">volvéis de Cataluña a la <w type="rhyme">frontera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Volvedme a mi regencia, y mi <w type="rhyme">decoro</w>.</l>
+            <l n="13" met="---+-+---+-" rhyme="C">Y gozaré en la verde <w type="rhyme">primavera</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">las dulces fresas, cuya ausencia <w type="rhyme">lloro</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

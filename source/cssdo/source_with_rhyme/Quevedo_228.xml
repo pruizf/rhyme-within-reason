@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vieja vuelta a la edad de las niñas</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Vieja vuelta a la edad de las niñas  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">¿Para qué nos persuades eres <w type="rhyme">niña</w>?</l>
+            <l n="2" met="-+---+---+-" rhyme="B">¿Importa que te mueras de <w type="rhyme">viruelas</w>?</l>
+            <l n="3" met="--+--+---+-" rhyme="B">Pues la falta de dientes y de <w type="rhyme">muelas</w>
+            </l>
+            <l n="4" met="+--+---+-+-" rhyme="A">boca de taita en la vejez te <w type="rhyme">aliña</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Tú te cierras de edad y de <w type="rhyme">campiña</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">y a que están por nacer, chicota, <w type="rhyme">apelas</w>;</l>
+            <l n="7" met="-+---+---+-" rhyme="B">gorgeas con quijadas <w type="rhyme">bisagüelas</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">y llamas metedor a la <w type="rhyme">basquiña</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+--++-+-+-" rhyme="C">La boca, que fue chirlo, agora <w type="rhyme">embudo</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">disimula lo rancio en los <w type="rhyme">antaños</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">y nos vende por barbas el <w type="rhyme">engrudo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Grandilla (porque logres tus <w type="rhyme">engaños</w>),</l>
+            <l n="13" met="-+-+-+-+-+-" rhyme="C">que tienes pocos años no lo <w type="rhyme">dudo</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">si son los por vivir los pocos <w type="rhyme">años</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

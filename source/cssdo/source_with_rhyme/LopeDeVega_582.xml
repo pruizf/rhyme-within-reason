@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Cuéntame, Lidia, que la Reina <w type="rhyme">Helena</w>
+            </l>
+            <l n="2" met="-+++---+-+-" rhyme="B">nació de un huevo, y que el rocín <w type="rhyme">Troyano</w>
+            </l>
+            <l n="3" met="-+++---+-+-" rhyme="B">parió mil hombres, y con fiera <w type="rhyme">mano</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">vengado a Pirro y muerta a <w type="rhyme">Policena</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Cuéntame, Lidia, el caso de <w type="rhyme">Porsena</w>,</l>
+            <l n="6" met="---+--+--+-" rhyme="B">pues conociste a Scevola <w type="rhyme">Romano</w>,</l>
+            <l n="7" met="+----+---+-" rhyme="B">cuéntame las desdichas de <w type="rhyme">Seyano</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">pues tú le viste en la sangrienta <w type="rhyme">arena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++---+-+-" rhyme="C">O si esto es mucho, porque no te <w type="rhyme">alteres</w>,</l>
+            <l n="10" met="+----+---+-" rhyme="D">cuéntame la traición, que a <w type="rhyme">Valdovinos</w>
+            </l>
+            <l n="11" met="-+---+---+-" rhyme="E">hicieron de Carloto los <w type="rhyme">engaños</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Y no me cuentes que casarte <w type="rhyme">quieres</w>,</l>
+            <l n="13" met="-++--+---+-" rhyme="D">que no es justo que diga <w type="rhyme">desatinos</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">mujer de tanto ingenio y tantos <w type="rhyme">años</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 21 - La rosa</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 21 - La rosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-----+---+-" rhyme="A">A tu circunferencia de <w type="rhyme">rubíes</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">atribuyen algunos la <w type="rhyme">templanza</w>,</l>
+            <l n="3" met="-+--++---+-" rhyme="B">O Rosa, de ti misma <w type="rhyme">semejanza</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">pues de tu loca vanidad te <w type="rhyme">ríes</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+---+-" rhyme="A">Si esto es así, te ruego que te <w type="rhyme">fíes</w>
+            </l>
+            <l n="6" met="-----+---+-" rhyme="B">de mi agradecimiento y <w type="rhyme">confianza</w>,</l>
+            <l n="7" met="-+++-+-+-+-" rhyme="B">mas no sé yo que fértil clima <w type="rhyme">alcanza</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">antídotos tus rayos <w type="rhyme">carmesíes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Si te viste de púrpuras <w type="rhyme">Pangeas</w>,</l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">no será peregrino amor <w type="rhyme">plebeyo</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">por voto visitar tus aras <w type="rhyme">rojas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+--++-" rhyme="C">¿En qué Pensiles ramas, en qué <w type="rhyme">Hibleas</w>
+            </l>
+            <l n="13" met="+--+-+---+-" rhyme="D">este apetito en forma de <w type="rhyme">Apuleyo</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">hallará la corona de tus <w type="rhyme">hojas</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

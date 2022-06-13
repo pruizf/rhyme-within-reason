@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LX - A Juan de Jáuregui</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LX - A Juan de Jáuregui </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Es el Orfeo del señor don <w type="rhyme">Juan</w>
+            </l>
+            <l n="2" met="--+--++--+-" rhyme="B">el primero, porque hay otro <w type="rhyme">segundo</w>.</l>
+            <l n="3" met="--++-+---+-" rhyme="B">Espantado han sus números al <w type="rhyme">mundo</w>
+            </l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">por el horror que algunas voces <w type="rhyme">dan</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">Mancebo es ingenioso, juro a <w type="rhyme">San</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">y leído en las cosas del <w type="rhyme">profundo</w>;</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">pluma valiente, si pincel <w type="rhyme">fecundo</w>.</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">Tan santo lo haga Dios como es <w type="rhyme">Letrán</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">Bien, pues, su Orfeo, que trilingüe <w type="rhyme">canta</w>,</l>
+            <l n="10" met="-+-+----++-" rhyme="D">pilló su esposa, puesto que no <w type="rhyme">pueda</w>
+            </l>
+            <l n="11" met="-+--+--+++-" rhyme="E">mirarla, en cuanto otra región no <w type="rhyme">mude</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--++--+-" rhyme="C">él volvió la cabeza, ella la <w type="rhyme">planta</w>;</l>
+            <l n="13" met="-+---+--++-" rhyme="D">la trova se acabó y el autor <w type="rhyme">queda</w>
+            </l>
+            <l n="14" met="+--+---+-+-" rhyme="E">cisne gentil de la infernal <w type="rhyme">palude</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

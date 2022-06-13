@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXV - A una mujer, que siendo muy puerca presumía que la querían por hermosa</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXV - A una mujer, que siendo muy puerca presumía que la querían por hermosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Sin esperar la lucha <w type="rhyme">picaril</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">el Zeroma previenes <w type="rhyme">infernal</w>,</l>
+            <l n="3" met="--+-++---+-" rhyme="B">cuando tienes un asco el <w type="rhyme">carnaval</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">anegado en tu sucio <w type="rhyme">perejil</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Si eres torcida en morro de <w type="rhyme">candil</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">y tu tálamo huele al <w type="rhyme">Hospital</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">como quieres matarle lo <w type="rhyme">carnal</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">al que llegue a probar de tu <w type="rhyme">pernil</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+---+-" rhyme="C">Púsole a resistencias tu <w type="rhyme">desdén</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">a las pruebas que hacía el más <w type="rhyme">galán</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="C">por parecer jinete muy de <w type="rhyme">bien</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="D">No presumas, que más te <w type="rhyme">esforzaran</w>
+            </l>
+            <l n="13" met="---+-+---+-" rhyme="C">porque te ven de bruja <w type="rhyme">Almagacén</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="D">y volar por los aires te <w type="rhyme">verán</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

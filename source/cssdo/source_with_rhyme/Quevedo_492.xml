@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Ciertas peticiones de los hombres a Dios</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Ciertas peticiones de los hombres a Dios  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">«¡Oh fallezcan los blancos, los <w type="rhyme">postreros</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">años de Clito! Y ya que, <w type="rhyme">ejercitado</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">corvo reluzga el diente del <w type="rhyme">arado</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">brote el surco tesoros y <w type="rhyme">dineros</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+---+-" rhyme="A">»Los que me apresuré por <w type="rhyme">herederos</w>,</l>
+            <l n="6" met="+----+---+-" rhyme="B">parto a mi sucesión <w type="rhyme">anticipado</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">por deuda de la muerte y el <w type="rhyme">pecado</w>,</l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">cóbrenlo ya los hados más <w type="rhyme">severos</w>.»</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--++--+-" rhyme="C">¿Por quién tienes a Dios? ¿De esa <w type="rhyme">manera</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">previenes el postrero <w type="rhyme">parasismo</w>?</l>
+            <l n="11" met="-++--+-+-+-" rhyme="C">¿A Dios pides insultos, alma <w type="rhyme">fiera</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Pues siendo Stayo de maldad <w type="rhyme">abismo</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">clamara a Dios, ¡oh Clito!, si te <w type="rhyme">oyera</w>;</l>
+            <l n="14" met="-++--++-++-" rhyme="D">y ¿no temes que Dios clame a Sí <w type="rhyme">mismo</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 2 - De la paciencia Ocho sonetos a la Santa Madre Teresa de Jesús</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 2 - De la paciencia Ocho sonetos a la Santa Madre Teresa de Jesús </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Fabio, después que a mis indignas <w type="rhyme">manos</w>
+            </l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">bajó del cielo el Rey de tierra y <w type="rhyme">cielo</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">en olvidar agravios me <w type="rhyme">desvelo</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">de lenguas viles y de versos <w type="rhyme">vanos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---++--+-+-" rhyme="A">Jerusalén ha e tener <w type="rhyme">tiranos</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">por ignorancia, o por soberbio <w type="rhyme">celo</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">si a vos os dan cuidado, a mí <w type="rhyme">consuelo</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">¡o Paciencia el mayor de los <w type="rhyme">humanos</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+---+-" rhyme="C">¿Qué importa que la lengua os <w type="rhyme">alborote</w>
+            </l>
+            <l n="10" met="---+++---+-" rhyme="D">del que por ella es bárbaro <w type="rhyme">malquisto</w>?</l>
+            <l n="11" met="---+-+-+-+-" rhyme="C">que cuando más me injurie, ofenda y <w type="rhyme">note</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="-">Con paciencia de Cristo me registro,</l>
+            <l n="13" met="-++--+---+-" rhyme="C">que si es Cristo de Dios el <w type="rhyme">Sacerdote</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="D">cómo pude faltar paciencia en <w type="rhyme">Cristo</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

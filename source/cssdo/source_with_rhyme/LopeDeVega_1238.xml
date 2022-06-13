@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Acto I, ROSELA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Acto I, ROSELA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+--++-+-+-" rhyme="A">Alfredo, si yo fuera blanca <w type="rhyme">aurora</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">os hiciera mi sol, mi claro <w type="rhyme">Anfriso</w>;</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">mi cristal os hiciera a ser <w type="rhyme">Narciso</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">y rey si fuera en cuanto veis <w type="rhyme">señora</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+-++---+-" rhyme="A">Mi armonía, a ser música <w type="rhyme">sonora</w>;</l>
+            <l n="6" met="---+-+---+-" rhyme="B">mi serafín si fuera <w type="rhyme">paraíso</w>;</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">si fuera Apolo os diera yo mi <w type="rhyme">aviso</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">y mi espada, si fuera Marte <w type="rhyme">ahora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Del todo de mi amor mostrara en <w type="rhyme">parte</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">de que rendidos mis sentidos <w type="rhyme">vienen</w>;</l>
+            <l n="11" met="---+-+---+-" rhyme="E">mas, ¡ay!, que son hazañas sin <w type="rhyme">provecho</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">que cielo, sol, Apolo, día, <w type="rhyme">Marte</w>,</l>
+            <l n="13" met="-+---+-+++-" rhyme="D">paraíso, armonía y rey no <w type="rhyme">tienen</w>
+            </l>
+            <l n="14" met="--+--+-+-+-" rhyme="E">vuestro talle, valor, ingenio y <w type="rhyme">pecho</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

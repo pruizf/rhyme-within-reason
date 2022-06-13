@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Muestra la iniquidad que los poderosos usan con la heredad del pobre, si tienen codicia de ella hasta que se la toman en bajo precio</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Muestra la iniquidad que los poderosos usan con la heredad del pobre, si tienen codicia de ella hasta que se la toman en bajo precio  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">En la heredad del pobre, las <w type="rhyme">espigas</w>
+            </l>
+            <l n="2" met="++---+-+-+-" rhyme="B">más gruesas te parecen, más <w type="rhyme">opacas</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y ni en tus trojes la codicia <w type="rhyme">aplacas</w>,</l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">no pudiendo sufrir su mies las <w type="rhyme">vigas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Arrójanle tus ansias <w type="rhyme">enemigas</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">con laso cuello en su quiñón tus <w type="rhyme">vacas</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">para que, hambrientas, las que entraron <w type="rhyme">flacas</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">le saquen la cosecha en las <w type="rhyme">barrigas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">¡Oh cuántos lloran robos <w type="rhyme">dolorosos</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">de la envidia opulenta! ¡Oh cuántos <w type="rhyme">males</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">ocasionan vecinos <w type="rhyme">poderosos</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+-+-+-" rhyme="D">Hasta que, a intersección de injurias <w type="rhyme">tales</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">les expongan los dueños <w type="rhyme">querellosos</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">aquella posesiones ya <w type="rhyme">venales</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIV -</title>
+            <author> Bocangel Y Unzueta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Como enfermo que anhela en lecho <w type="rhyme">ardiente</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">alcanzar con excesos <w type="rhyme">mejoría</w>,</l>
+            <l n="3" met="--+-++---+-" rhyme="B">y su engaño no más, o su <w type="rhyme">porfía</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">le alivia, con que crece el <w type="rhyme">accidente</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">y como el ciervo, que la flecha <w type="rhyme">siente</w>,</l>
+            <l n="6" met="+-+--+-+-+-" rhyme="B">huye en vano de sí la noche y <w type="rhyme">día</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">para ver si le dan lisonja <w type="rhyme">fría</w>
+            </l>
+            <l n="8" met="+--+---+-+-" rhyme="A">médicas ondas de templada <w type="rhyme">fuente</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">tal, esclavo de amor, herido el <w type="rhyme">pecho</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">buscaba yo reparo en el <w type="rhyme">ausencia</w>;</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">busqué la fuente contra el dardo <w type="rhyme">esquivo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">Hizo después amor, a mi <w type="rhyme">despecho</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">lo que hace el exceso en la <w type="rhyme">dolencia</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="E">y el señor con esclavo <w type="rhyme">fugitivo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

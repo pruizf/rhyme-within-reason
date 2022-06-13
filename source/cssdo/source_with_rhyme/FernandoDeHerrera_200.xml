@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="----++-+-+-" rhyme="A">Si para que yo sienta cuánto <w type="rhyme">fuego</w>
+            </l>
+            <l n="2" met="-+---+--++-" rhyme="B">abrasa vuestro pecho a la luz <w type="rhyme">pura</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y a los rayos de eterna <w type="rhyme">hermosura</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">queréis que llegue deslumbrado <w type="rhyme">luego</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">no me digáis que mire con <w type="rhyme">sosiego</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">su resplandor y su gentil <w type="rhyme">figura</w>;</l>
+            <l n="7" met="-+---+---+-" rhyme="B">mas que huya su ardor, si la <w type="rhyme">ventura</w>
+            </l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">puede librarme ya encendido y <w type="rhyme">ciego</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">¿Qué maravilla es que en viva <w type="rhyme">llama</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">os consumáis, teniendo el sol <w type="rhyme">presente</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">y siendo vos a su calor de <w type="rhyme">cera</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+--++-" rhyme="C">Conoce el mal ajeno quien bien <w type="rhyme">ama</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="D">y mi pasión en su presencia <w type="rhyme">siente</w>
+            </l>
+            <l n="14" met="-+-----+-+-" rhyme="E">la fuerza de la vuestra más <w type="rhyme">entera</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

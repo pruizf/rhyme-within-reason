@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXLII - Al ponerle en la Cruz</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXLII - Al ponerle en la Cruz </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Ya sacerdote y víctima <w type="rhyme">preparas</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">con tierno amor, ofrenda y <w type="rhyme">sacrificio</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">dando a los hombres generoso <w type="rhyme">indicio</w>,</l>
+            <l n="4" met="++-+---+-+-" rhyme="A">que es blando lecho, las sangrientas <w type="rhyme">aras</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">¿Cómo, Señor, venciendo no <w type="rhyme">reparas</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">en dar tus sacros miembros tan <w type="rhyme">propicio</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">al duro hierro y al cruento <w type="rhyme">oficio</w>,</l>
+            <l n="8" met="++-+---+-+-" rhyme="A">si aún más tormentos que morir <w type="rhyme">buscaras</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+---+-+-" rhyme="C">Y cuando fija en el madero <w type="rhyme">tienes</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">la culpa de los bárbaros <w type="rhyme">tiranos</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">y dar al mundo libertad <w type="rhyme">previenes</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">quisieron, ciegos de temores <w type="rhyme">vanos</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">por afrentas sus pasos y tus <w type="rhyme">bienes</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">clavar los pies y atravesar las <w type="rhyme">manos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

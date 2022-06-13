@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXXVI - Al Duque de Osuna</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXXVI - Al Duque de Osuna </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">En láminas de plata, en letras de <w type="rhyme">oro</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">que en almas escribirse <w type="rhyme">merecía</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">vuestro nombre a la fama el mundo <w type="rhyme">envía</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">Girón divino del mayor <w type="rhyme">tesoro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Será sujeto del Castalio <w type="rhyme">coro</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">mientras dura del cielo el <w type="rhyme">armonía</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">famoso en cuanto el sol dilata el <w type="rhyme">día</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">del Pez al Cantro, de la Libra al <w type="rhyme">Toro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Verá la envidia, en la mayor <w type="rhyme">alteza</w>
+            </l>
+            <l n="10" met="-+--++---+-" rhyme="-">de títulos tan grandes y escogidos</l>
+            <l n="11" met="---+-+---+-" rhyme="D">el del ingenio fértil y <w type="rhyme">abundante</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Igualará la pluma a la <w type="rhyme">grandeza</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="-">y el Parnaso de vos favorecido</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">tendrá en su frente el cielo como <w type="rhyme">Atlante</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

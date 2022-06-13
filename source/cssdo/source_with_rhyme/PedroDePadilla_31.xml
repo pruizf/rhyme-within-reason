@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVII -</title>
+            <author> Pedro De Padilla</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro de Padilla</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Aquella tarde habló con el <w type="rhyme">barbero</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">diciéndole el negocio que <w type="rhyme">procura</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">y entrambos fueron para hablar al <w type="rhyme">cura</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">que a rezar le salió al <w type="rhyme">humilladero</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Antón llegó quitándose el <w type="rhyme">sombrero</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">y le hizo en llegando gran <w type="rhyme">mesura</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y después humilló la <w type="rhyme">catadura</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">para dejar hablar al <w type="rhyme">compañero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Quedó que al padre de esta se le <w type="rhyme">hablase</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">y que Alonso Millón de Pero <w type="rhyme">Tiesto</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">se fuese con los dos y los <w type="rhyme">terciase</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Y que era necesario para <w type="rhyme">esto</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="C">que Antón se confesase, y se <w type="rhyme">sangrase</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">para que en todo hubiese buenos de <w type="rhyme">esto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

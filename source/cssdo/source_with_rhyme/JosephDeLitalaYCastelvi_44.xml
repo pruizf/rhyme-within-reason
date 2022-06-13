@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXVIII - Al sepulcro de una dama, grande música y hermosa</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXVIII - Al sepulcro de una dama, grande música y hermosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">No toques esta piedra <w type="rhyme">pasajero</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">que el contacto menor de impulso <w type="rhyme">leve</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">por cada poro consonancias <w type="rhyme">mueve</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="-">dulces, que alterna amante el Hemisferio.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+-+-+-" rhyme="A">No la lira de Tracia, no el <w type="rhyme">Jilguero</w>
+            </l>
+            <l n="6" met="+----+-+-+-" rhyme="B">músico, a quien la selva acentos <w type="rhyme">debe</w>,</l>
+            <l n="7" met="--+-++-+-+-" rhyme="B">y en la copa de un sauce perlas <w type="rhyme">bebe</w>,</l>
+            <l n="8" met="+++-++-+-+-" rhyme="A">es más tierno, más dulce, más <w type="rhyme">parlero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Sirene aquí descansa <w type="rhyme">blandamente</w>,</l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">colgado de un Ciprés el Plectro de <w type="rhyme">Oro</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">Sirene bello encanto de <w type="rhyme">Occidente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Cuyo concierto músico, y <w type="rhyme">sonoro</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">movió el escollo, congeló la <w type="rhyme">fuente</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">y aprisionó las almas con <w type="rhyme">decoro</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXVII - A la noche</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXVII - A la noche </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Noche, fabricadora de <w type="rhyme">embelecos</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="B">loca, imaginativa, <w type="rhyme">quimerista</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">que muestras al que en ti su bien <w type="rhyme">conquista</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">los montes llanos y los mares <w type="rhyme">secos</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">habitadora de cerebros <w type="rhyme">huecos</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">mecánica, filósofa, <w type="rhyme">alquimista</w>,</l>
+            <l n="7" met="---+-++--+-" rhyme="B">encubridora vil, lince sin <w type="rhyme">vista</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">espantadiza de tus mismos <w type="rhyme">ecos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">La sombra, el miedo, el mal se te <w type="rhyme">atribuya</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">solícita, poeta, enferma, <w type="rhyme">fría</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">manos del bravo y pies del <w type="rhyme">fugitivo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+++-" rhyme="C">Que vele o duerma, media vida es <w type="rhyme">tuya</w>;</l>
+            <l n="13" met="-+---+---+-" rhyme="D">si velo, te lo pago con el <w type="rhyme">día</w>,</l>
+            <l n="14" met="--+-++---+-" rhyme="E">y si duermo, no siento lo que <w type="rhyme">vivo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Comparación elegante de Hércules con sus penas, y del «non plux ultra» de sus columnas, que desmintió el Rey Católico</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Comparación elegante de Hércules con sus penas, y del «non plux ultra» de sus columnas, que desmintió el Rey Católico  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Si el cuerpo reluciente que en <w type="rhyme">Oeta</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">se desnudó, en cenizas <w type="rhyme">desatado</w>
+            </l>
+            <l n="3" met="+----+---+-" rhyme="B">Hércules, y de celos <w type="rhyme">fulminado</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">(ansí lo quiso Amor), murió <w type="rhyme">cometa</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">le volviera a habitar aquella <w type="rhyme">inquieta</w>
+            </l>
+            <l n="6" met="+---++---+-" rhyme="-">alma, que dejó el mundo descansando</l>
+            <l n="7" met="-+---+---+-" rhyme="B">de monstruos y portentos, y el <w type="rhyme">osado</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">brazo armaran la clava y la <w type="rhyme">saeta</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+--++-" rhyme="C">sólo en mi corazón hallará <w type="rhyme">fieras</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">que todos sus trabajos <w type="rhyme">renovaran</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">leones y centauros y <w type="rhyme">quimeras</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+---+-" rhyme="D">El Non Plus Ultra suyo <w type="rhyme">restauraran</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">su dos columnas, si en tus dos <w type="rhyme">esferas</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="D">Lisi, el fin de las luces <w type="rhyme">señalaran</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

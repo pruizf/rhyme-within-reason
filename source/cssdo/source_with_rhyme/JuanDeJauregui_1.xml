@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Jauregui, Juan de Sevilla. 83 - Madrid. 1641 Vive en sus primeros años en Sevilla. Más tarde es enviado a Italia para su formación artística y literaria. Enemigo de Góngora y Quevedo. Pintor. A San Ignacio de Loyola</title>
+            <author> Juan De Jauregui</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Jauregui,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Jauregui, Juan de Sevilla. 83 - Madrid. 1641 Vive en sus primeros años en Sevilla. Más tarde es enviado a Italia para su formación artística y literaria. Enemigo de Góngora y Quevedo. Pintor. A San Ignacio de Loyola </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Ved la columna que descubre <w type="rhyme">senda</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">en el piélago rubro al pueblo <w type="rhyme">amado</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">el fuego y el granizo ved <w type="rhyme">mezclado</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">porque el egipcio su amenaza <w type="rhyme">entienda</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Ved sobre el mar, porque su golfo <w type="rhyme">encienda</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">el ángel fuerte, de pureza <w type="rhyme">armado</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y en procelosas ondas <w type="rhyme">arrojado</w>,</l>
+            <l n="8" met="--++---+-+-" rhyme="A">a Jonás ved que al ninivita <w type="rhyme">enmienda</w>
+            </l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">de Dios ved el espíritu <w type="rhyme">influyendo</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">sobre las aguas; ved el arca <w type="rhyme">ufana</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">que vida ofrece en la borrasca a <w type="rhyme">tantos</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">así de Ignacio en la laguna <w type="rhyme">ardiendo</w>
+            </l>
+            <l n="13" met="-+---+-+-+-" rhyme="E">veréis la caridad, que ejemplos <w type="rhyme">santos</w>
+            </l>
+            <l n="14" met="-+---+++-+-" rhyme="D">pudieron describir, no voz <w type="rhyme">humana</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

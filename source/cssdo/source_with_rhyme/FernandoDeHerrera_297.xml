@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXVIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Osé y temí, mas pudo la <w type="rhyme">osadía</w>
+            </l>
+            <l n="2" met="+----+-+-+-" rhyme="B">tanto que desprecié el temor <w type="rhyme">cobarde</w>;</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">subí a do el fuego más se enciende y <w type="rhyme">arde</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">cuanto más la esperanza se <w type="rhyme">desvía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Gasté en error la edad florida <w type="rhyme">mía</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">ahora veo el daño, pero <w type="rhyme">tarde</w>,</l>
+            <l n="7" met="-+++-+-+-+-" rhyme="B">que ya mal puede ser que el seso <w type="rhyme">guarde</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">a quien se entrega ciego a su <w type="rhyme">porfía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+++--++--+-" rhyme="C">Tal vez pruebo (¿mas qué vale?) <w type="rhyme">alzarme</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">del grave peso que mi cuello <w type="rhyme">oprime</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">aunque falta a la poca fuerza el <w type="rhyme">hecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">Sigo al fin mi furor, porque <w type="rhyme">mudarme</w>
+            </l>
+            <l n="13" met="++-+-+---+-" rhyme="D">no es honra ya, ni justo que se <w type="rhyme">estime</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">tan mal de quien tan bien rindió su <w type="rhyme">pecho</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

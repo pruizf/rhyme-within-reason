@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Exhorta a los que amaren, que no sigan los pasos por donde ha hecho su viaje</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Exhorta a los que amaren, que no sigan los pasos por donde ha hecho su viaje  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-++--+-" rhyme="A">Cargado voy de mí: veo <w type="rhyme">delante</w>
+            </l>
+            <l n="2" met="+----+---+-" rhyme="B">muerte que me amenaza la <w type="rhyme">jornada</w>;</l>
+            <l n="3" met="+-+---+--+-" rhyme="B">ir porfiando por la senda <w type="rhyme">errada</w>
+            </l>
+            <l n="4" met="+-+--+---+-" rhyme="A">más de necio será que de <w type="rhyme">constante</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Si por su mal me sigue ciego <w type="rhyme">amante</w>
+            </l>
+            <l n="6" met="-+++-+---+-" rhyme="B">(que nunca es sola suerte <w type="rhyme">desdichada</w>),</l>
+            <l n="7" met="-+-+-+++-+-" rhyme="B">¡ay!, vuelva en sí y atrás: no dé <w type="rhyme">pisada</w>
+            </l>
+            <l n="8" met="---+++---+-" rhyme="A">donde la dio tan ciego <w type="rhyme">caminante</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+++-" rhyme="C">Ved cuán errado mi camino ha <w type="rhyme">sido</w>;</l>
+            <l n="10" met="++-+-+---+-" rhyme="D">cuán solo y triste, y cuán <w type="rhyme">desordenado</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">que nunca ansí le anduvo pie <w type="rhyme">perdido</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">pues, por no desandar lo <w type="rhyme">caminado</w>,</l>
+            <l n="13" met="+--+-+-+-+-" rhyme="C">viendo delante y cerca fin <w type="rhyme">temido</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="D">con pasos que otros huyen le he <w type="rhyme">buscado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

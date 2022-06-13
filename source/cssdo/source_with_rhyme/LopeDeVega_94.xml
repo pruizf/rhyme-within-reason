@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXXXVI - De doña Blanca de Borbón</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXXXVI - De doña Blanca de Borbón </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">La Blanca en el valor, venida a <w type="rhyme">España</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">y en Francia y en el mundo más <w type="rhyme">preciosa</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">vertiendo hielo marchitó la <w type="rhyme">rosa</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">de las mejillas que llorando <w type="rhyme">baña</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Del fuerte Pedro, armado en la <w type="rhyme">campaña</w>,</l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">vencido de otro amor, está <w type="rhyme">quejosa</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">y aunque no la de oír con voz <w type="rhyme">piadosa</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">movió la lengua propia en lengua <w type="rhyme">extraña</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C">-Amor, sangre conforme, estrella, <w type="rhyme">trato</w>,</l>
+            <l n="10" met="-+-+-++-++-" rhyme="D">faltando todo en mí, pudo hallar <w type="rhyme">modo</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">que amase, y me olvidase Pedro <w type="rhyme">ingrato</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="D">Amo, aborrece; pido, niega en <w type="rhyme">todo</w>;</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">su sombra adoro, y huye mi <w type="rhyme">retrato</w>;</l>
+            <l n="14" met="++++-+-+++-" rhyme="D">yo tierna, él fuerte; yo francesa, él <w type="rhyme">godo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

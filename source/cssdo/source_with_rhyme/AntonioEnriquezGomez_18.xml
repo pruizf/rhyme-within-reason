@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXV - Epitafio a un soberbio</title>
+            <author> Antonio Enriquez Gomez</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Antonio Enriquez Gomez</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXV - Epitafio a un soberbio </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Este que dividido en polvo <w type="rhyme">horrible</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">torre viviente fue de su <w type="rhyme">albedrío</w>,</l>
+            <l n="3" met="-----+---+-" rhyme="B">en cuya confesión, en cuyo <w type="rhyme">brío</w>,</l>
+            <l n="4" met="--+-++---+-" rhyme="A">Babilonia fue fábrica <w type="rhyme">insensible</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+-+-+-" rhyme="A">hoy, en el lago de este mar <w type="rhyme">terrible</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">océano de tanto <w type="rhyme">señorío</w>,</l>
+            <l n="7" met="+-+--+--++-" rhyme="B">ni aún el nombre le queda de ser <w type="rhyme">río</w>:</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">tumba le guarda el piélago <w type="rhyme">visible</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Pasajero, recuerda, mira el <w type="rhyme">Nilo</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">por siete bocas convertirse en <w type="rhyme">hielo</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">llorando su desgracia hilo a <w type="rhyme">hilo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Así castiga a la soberbia el <w type="rhyme">cielo</w>.</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">Vivió matando, y por el mismo <w type="rhyme">filo</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">murió sin duelo por vivir con <w type="rhyme">duelo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

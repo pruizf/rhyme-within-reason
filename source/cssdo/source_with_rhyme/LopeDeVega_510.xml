@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 120 - Al sepulcro de doña Ana de Villarroel</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 120 - Al sepulcro de doña Ana de Villarroel </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">Aquí yace la fénix de <w type="rhyme">hermosura</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="B">única a los humanos <w type="rhyme">desengaños</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">de propios luz, admiración de <w type="rhyme">extraños</w>,</l>
+            <l n="4" met="+--+---+-+-" rhyme="A">noble en la sangre, en las costumbres <w type="rhyme">pura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++---+-+-" rhyme="A">Fuese a ser sol de nuestra noche <w type="rhyme">oscura</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">traspuesta al cielo en sus mejores <w type="rhyme">años</w>,</l>
+            <l n="7" met="-----+---+-" rhyme="B">para desengañar nuestros <w type="rhyme">engaños</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">que sola la virtud florece y <w type="rhyme">dura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Aquí de vuestros lazos <w type="rhyme">desasida</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">la flor en polvo, en sombra el sol <w type="rhyme">convierte</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">y con memoria, que jamás se <w type="rhyme">olvida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+--++---+-" rhyme="D">Volando a mejor patria nos <w type="rhyme">advierte</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">que siendo espejo de belleza en <w type="rhyme">vida</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">lo fue de desengaños en la <w type="rhyme">muerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

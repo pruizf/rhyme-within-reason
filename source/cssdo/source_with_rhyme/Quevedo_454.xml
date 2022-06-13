@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Definición de amor</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Definición de amor </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Rogarla, desdeñarme; amarla, <w type="rhyme">hundirme</w>;</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">seguirla, defenderse; asirla, <w type="rhyme">airarse</w>;</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">querer y no querer dejar <w type="rhyme">tocarse</w>
+            </l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">y a persuasiones mil mostrarse <w type="rhyme">firme</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">tenerla bien, probar a <w type="rhyme">desasirme</w>;</l>
+            <l n="6" met="-+---+---+-" rhyme="B">luchar entre mis brazos y <w type="rhyme">enojarse</w>;</l>
+            <l n="7" met="-+---++--+-" rhyme="B">besarla a su pesar y ella <w type="rhyme">agraviarse</w>;</l>
+            <l n="8" met="-+-+-+---+-" rhyme="B">probar, y no poder, a <w type="rhyme">despedirse</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">decirse agravios, reprenderse el <w type="rhyme">gusto</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">y, en fin, a baterías de mi <w type="rhyme">prisa</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">dejar el ceño, no mostrar <w type="rhyme">disgusto</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">consentir que le aparte la <w type="rhyme">camisa</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">hallarlo limpio y encajarlo <w type="rhyme">justo</w>:</l>
+            <l n="14" met="++-+---+++-" rhyme="D">esto es amor y lo demás es <w type="rhyme">risa</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

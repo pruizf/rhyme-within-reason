@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Salinas, Juan de Sevilla. 62 - 1643 Estudió en Salamanca con Góngora con quien compartió versos y amistades. Recibió las órdenes sacerdotales y fue administrador del Hospital de Sevilla. Sonetos creados entre 86-87 Habiendo estado en Roma se desengañó de pretender</title>
+            <author> Juan De Salinas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Salinas,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Salinas, Juan de Sevilla. 62 - 1643 Estudió en Salamanca con Góngora con quien compartió versos y amistades. Recibió las órdenes sacerdotales y fue administrador del Hospital de Sevilla. Sonetos creados entre 86-87 Habiendo estado en Roma se desengañó de pretender </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Partí pensando que a vivir <w type="rhyme">venía</w>,</l>
+            <l n="2" met="-----+---+-" rhyme="B">y cuando en el camino <w type="rhyme">platicaba</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">al repartir las cosas <w type="rhyme">despreciaba</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">de Toledo o Sevilla <w type="rhyme">canonjía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Grandes cosas a todos <w type="rhyme">prometía</w>,</l>
+            <l n="6" met="+----+---+-" rhyme="B">Préstamo o Beneficio <w type="rhyme">aseguraba</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">al hijo que la casa no <w type="rhyme">heredaba</w>,</l>
+            <l n="8" met="+-+--+---+-" rhyme="A">cual si fuera señor de <w type="rhyme">Dataría</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+--++-" rhyme="C">Llegué a Roma, y al punto salió el <w type="rhyme">Papa</w>;</l>
+            <l n="10" met="++---+-+-+-" rhyme="D">ya estoy desengañado, de hambre <w type="rhyme">muero</w>,</l>
+            <l n="11" met="---+-++--+-" rhyme="E">que la experiencia causa esta <w type="rhyme">mudanza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">Quien quiere ver a Roma, acuda al <w type="rhyme">mapa</w>,</l>
+            <l n="13" met="-++--++--+-" rhyme="D">y no gaste, cual yo, tiempo y <w type="rhyme">dinero</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">que aquí sólo se vive de <w type="rhyme">esperanza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 997 - De Fuenteovejuna</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 997 - De Fuenteovejuna </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Esta del cielo imitación <w type="rhyme">sagrada</w>,</l>
+            <l n="2" met="-----++--+-" rhyme="B">de la curiosidad limpio <w type="rhyme">desvelo</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">este prado de flores en el <w type="rhyme">cielo</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">enigma de su fábrica <w type="rhyme">dorada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--++--+-" rhyme="A">Este huerto pensil, esta <w type="rhyme">colgada</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">primavera, que hurtó su signo al <w type="rhyme">suelo</w>
+            </l>
+            <l n="7" met="+-+--+---+-" rhyme="B">obra fue de Menores, cuyo <w type="rhyme">celo</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">con atreverse al cielo, a Dios <w type="rhyme">agrada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">No los menores de la fiesta <w type="rhyme">fueron</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="C">supuesto que Menores se <w type="rhyme">llamaron</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">pues el cielo gigantes <w type="rhyme">emprendieron</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Pero de tal manera le <w type="rhyme">adornaron</w>,</l>
+            <l n="13" met="-----+-+-+-" rhyme="C">que como de su esfera no <w type="rhyme">cayeron</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="C">parece que la gracia <w type="rhyme">confirmaron</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

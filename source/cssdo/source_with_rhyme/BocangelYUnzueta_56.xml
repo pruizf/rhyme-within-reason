@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VI -</title>
+            <author> Bocangel Y Unzueta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Huye del Sol, el Sol, y se <w type="rhyme">deshace</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">la vida a manos de la propia <w type="rhyme">vida</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">del tiempo, que a sus partos <w type="rhyme">homicida</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">en mies de siglos las edades <w type="rhyme">pace</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Nace la vida, y con la vida <w type="rhyme">nace</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">del cadáver la fábrica <w type="rhyme">temida</w>.</l>
+            <l n="7" met="++---+---+-" rhyme="B">¿Qué teme, pues, el hombre en la <w type="rhyme">partida</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">si vivo estriba en lo que muerto <w type="rhyme">yace</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+++---+-" rhyme="C">Lo que pasó ya falta; lo <w type="rhyme">futuro</w>
+            </l>
+            <l n="10" met="++-+---+-+-" rhyme="D">aun no se vive; lo que está <w type="rhyme">presente</w>,</l>
+            <l n="11" met="++-+-+---+-" rhyme="E">no está, porque es su esencia el <w type="rhyme">movimiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+++---+-" rhyme="C">Lo que se ignora es sólo lo <w type="rhyme">seguro</w>,</l>
+            <l n="13" met="+-+--+---+-" rhyme="E">este mundo, república de <w type="rhyme">viento</w>,</l>
+            <l n="14" met="-+---++--+-" rhyme="D">que tiene por Monarca un <w type="rhyme">accidente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

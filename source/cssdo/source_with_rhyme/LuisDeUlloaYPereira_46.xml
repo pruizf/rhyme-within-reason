@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIV - Propone librarse de la sujeción (Este soneto aparece en los Entremeses de los Bolatines con la firma de Diego de Silva.)</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIV - Propone librarse de la sujeción (Este soneto aparece en los Entremeses de los Bolatines con la firma de Diego de Silva.) </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+++---+-" rhyme="A">Mucho tormento es ya para <w type="rhyme">sufrido</w>,</l>
+            <l n="2" met="-+-+-----+-" rhyme="B">y mucho agravio para <w type="rhyme">declarado</w>,</l>
+            <l n="3" met="+--+-+++-+-" rhyme="B">Lesbia, presumes mal, no se ha <w type="rhyme">privado</w>
+            </l>
+            <l n="4" met="-+---++--+-" rhyme="A">el alma de razón, se ha <w type="rhyme">suspendido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Si verme entre las llamas <w type="rhyme">encendido</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">te asegura de eterno mi <w type="rhyme">cuidado</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">en las penas de amor el <w type="rhyme">condenado</w>,</l>
+            <l n="8" met="+-+--+---+-" rhyme="A">no padece incapaz de <w type="rhyme">arrepentido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+--++-" rhyme="C">Yo tiraré con ánimo tan <w type="rhyme">fuerte</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">del lazo en que mi cuello se <w type="rhyme">cautiva</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">que me ahogue, o le rompa la <w type="rhyme">violencia</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-++--+-" rhyme="C">Esto también por ti, que es <w type="rhyme">ofenderte</w>
+            </l>
+            <l n="13" met="++-+++-+-+-" rhyme="D">ser tuyo, y ser tan vil, que torpe <w type="rhyme">viva</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">infamando al amor con la <w type="rhyme">paciencia</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

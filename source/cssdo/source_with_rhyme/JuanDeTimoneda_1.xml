@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- I -</title>
+            <author> Juan De Timoneda</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Timoneda</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- I - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Naufragio, no te quejes de <w type="rhyme">fortuna</w>;</l>
+            <l n="2" met="---+---+-+-" rhyme="B">si de prosapia generosa <w type="rhyme">vienes</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">entiende que sus males y sus <w type="rhyme">bienes</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">estables nunca son en parte <w type="rhyme">una</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Si claro ves que sin razón <w type="rhyme">ninguna</w>
+            </l>
+            <l n="6" met="++---+---+-" rhyme="B">no rige sus mudanzas ni <w type="rhyme">vaivenes</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">menos razón alcanzarás, si <w type="rhyme">tienes</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">poder para quejarte en su <w type="rhyme">tribuna</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">¿Sabes de qué podrías tú <w type="rhyme">quejarte</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="C">con justa causa y valerosa <w type="rhyme">suerte</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="D">con alegre semblante <w type="rhyme">denodado</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">con espíritu sabio <w type="rhyme">moderado</w>?</l>
+            <l n="13" met="--++-++--+-" rhyme="C">porque más presto no quiso <w type="rhyme">traerte</w>
+            </l>
+            <l n="14" met="++-+-+---+-" rhyme="C">do amor, franqueza tanto se <w type="rhyme">reparte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

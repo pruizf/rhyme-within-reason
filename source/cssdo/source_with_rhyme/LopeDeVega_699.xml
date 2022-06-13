@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 869 - Acto III, JULIA De El ingrato</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 869 - Acto III, JULIA De El ingrato </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+++-+-+-" rhyme="A">Esto es amar, esto es temer, que en <w type="rhyme">esto</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">consiste el fin de mi amorosa <w type="rhyme">vida</w>;</l>
+            <l n="3" met="-+++-+-+-+-" rhyme="B">temer de un alto estado gran <w type="rhyme">caída</w>,</l>
+            <l n="4" met="++-+-+--++-" rhyme="A">¿quién duda que ha de estar en razón <w type="rhyme">puesto</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+---+-+-" rhyme="A">Ya toma el alma por partido <w type="rhyme">honesto</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">detener lo que pude tu <w type="rhyme">partida</w>,</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">hermoso dueño, de quien vive <w type="rhyme">asida</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">porque cortando el tiempo vuelvas <w type="rhyme">presto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Amé, temí, lloré que son <w type="rhyme">efectos</w>
+            </l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">de esta primera causa: ¡tanto <w type="rhyme">puede</w>
+            </l>
+            <l n="11" met="-+++-+---+-" rhyme="E">temer de un buen estado la <w type="rhyme">mudanza</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="C">¡Oh amor! Si eres manjar para <w type="rhyme">discretos</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">¿qué confianza quieres que me <w type="rhyme">quede</w>,</l>
+            <l n="14" met="-+-+--+--+-" rhyme="E">si es de necios la propia <w type="rhyme">confianza</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

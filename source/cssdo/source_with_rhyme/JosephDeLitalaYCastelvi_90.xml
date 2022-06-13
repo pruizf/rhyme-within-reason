@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLII - A don Francisco de Esquivel</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLII - A don Francisco de Esquivel </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+-+-+-" rhyme="A">Qué ufano, qué glorioso, qué <w type="rhyme">contento</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">la esfera pisas, Esquivel <w type="rhyme">triunfante</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">con escuadrón de Mártires <w type="rhyme">volante</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">nuevas estrellas dando al <w type="rhyme">Firmamento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Portento de virtudes, y <w type="rhyme">portento</w>
+            </l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">de celo santo fuiste, o Sacro <w type="rhyme">Atlante</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">y con alegre, y celestial <w type="rhyme">semblante</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">penetra el Cielo tu divino <w type="rhyme">aliento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Cuántos Pórfidos, Mármoles, y <w type="rhyme">Jaspes</w>
+            </l>
+            <l n="10" met="--+--+---+-" rhyme="D">animó tu cuidado en los <w type="rhyme">cinceles</w>,</l>
+            <l n="11" met="+-+--+-+-+-" rhyme="-">urnas sacras labrando a tanto Divo.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">Cuántas glorias de Pario, y del <w type="rhyme">Hidaspes</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="D">veneramos en Plintos, y <w type="rhyme">Boceles</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="-">Pastor sagrado siempre tierno, y vino.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 94 - Desmayose una dama de ver un ratón, y habla con él el poeta</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 94 - Desmayose una dama de ver un ratón, y habla con él el poeta </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Vete a roer legajos <w type="rhyme">procesales</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">fiero animal, o versos de <w type="rhyme">Poetas</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">las cartas atrasadas de <w type="rhyme">estafetas</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">o las cuentas de sastres <w type="rhyme">inmortales</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Destruye las despensas <w type="rhyme">figonales</w>,</l>
+            <l n="6" met="-----+---+-" rhyme="B">o las farmacopólicas <w type="rhyme">recetas</w>;</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y si otra vez a Fílida <w type="rhyme">inquietas</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">fulmínente sus ojos <w type="rhyme">celestiales</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">No halles queso bullicioso o <w type="rhyme">triste</w>,</l>
+            <l n="10" met="+----+---+-" rhyme="D">caigas en ratoneras de <w type="rhyme">lacayos</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">si celada de gatos no te <w type="rhyme">enviste</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Pero también te debo en sus <w type="rhyme">desmayos</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">poder mirar al sol, cuando <w type="rhyme">volviste</w>
+            </l>
+            <l n="14" met="+--+---+-+-" rhyme="D">nieve las rosas, y cristal los <w type="rhyme">rayos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

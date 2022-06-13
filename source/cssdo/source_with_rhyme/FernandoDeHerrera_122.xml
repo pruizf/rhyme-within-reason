@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LIII -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">Probó atento el artífice <w type="rhyme">dichoso</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">a la imagen impresa y forma <w type="rhyme">pura</w>
+            </l>
+            <l n="3" met="-++--+---+-" rhyme="B">hacer no inferior la <w type="rhyme">hermosura</w>,</l>
+            <l n="4" met="--+-++---+-" rhyme="A">por quien Betis va al piélago <w type="rhyme">pomposo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-++--+-+-" rhyme="A">La gracia dio, dio el resplandor <w type="rhyme">hermoso</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">que en la nieve la púrpura <w type="rhyme">figura</w>,</l>
+            <l n="7" met="+----+-+-+-" rhyme="B">lumbre que a la tiniebla vence <w type="rhyme">oscura</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">mas que todos osado y <w type="rhyme">temeroso</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+---+-" rhyme="C">pero la majestad de la <w type="rhyme">belleza</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="D">tierna, y serena gloria de la <w type="rhyme">frente</w>,</l>
+            <l n="11" met="+-+-++-+-+-" rhyme="E">y ojos dulces do el blando amor se <w type="rhyme">cría</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="C">no pudo, y justo fue que su <w type="rhyme">rudeza</w>
+            </l>
+            <l n="13" met="---+++---+-" rhyme="D">vuestra beldad no alcance <w type="rhyme">floreciente</w>,</l>
+            <l n="14" met="+--+-+---+-" rhyme="E">sola entre tantas, ¡oh ínclita <w type="rhyme">María</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

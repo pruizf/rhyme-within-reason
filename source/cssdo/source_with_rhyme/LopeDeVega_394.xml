@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Rosa gentil, que al alba de la <w type="rhyme">humana</w>
+            </l>
+            <l n="2" met="-++--+-+-+-" rhyme="B">belleza eres imagen, ¿qué <w type="rhyme">pretendes</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">que sobre verdes esmeraldas <w type="rhyme">tiendes</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">tu mano de coral teñida en <w type="rhyme">grana</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Si cetro, si laurel, si ser <w type="rhyme">tirana</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">de tantos ojos, que en tu cárcel <w type="rhyme">prendes</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">¡cuán en vano solícita <w type="rhyme">defiendes</w>
+            </l>
+            <l n="8" met="+-+--++--+-" rhyme="A">reino que ha de durar una <w type="rhyme">mañana</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+-+-+-" rhyme="C">Rinde la vanidad que al sol se <w type="rhyme">atreve</w>,</l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">¡oh cometa de abril!, tan presto <w type="rhyme">oscura</w>,</l>
+            <l n="11" met="-----+-+-+-" rhyme="C">que, puesto que tu vivo ardor te <w type="rhyme">mueve</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">el ejemplo de tantas te <w type="rhyme">asegura</w>
+            </l>
+            <l n="13" met="--+--++--+-" rhyme="C">que quien ha de tener vida tan <w type="rhyme">breve</w>
+            </l>
+            <l n="14" met="+--+-+---+-" rhyme="D">no ha de tener en tanto su <w type="rhyme">hermosura</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CIV - A don Diego Fernández de Córdoba, Señor de la Campana</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CIV - A don Diego Fernández de Córdoba, Señor de la Campana </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">El valor de cobardes <w type="rhyme">corregido</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">el corazón, y la derecha <w type="rhyme">mano</w>
+            </l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">herida aquesta de un traidor <w type="rhyme">villano</w>,</l>
+            <l n="4" met="-+++---+-+-" rhyme="A">y aquel de un noble, por leal <w type="rhyme">herido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">Libre, desesperado, y <w type="rhyme">ofendido</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">del yugo, gloria, y fuerzas del <w type="rhyme">tirano</w>,</l>
+            <l n="7" met="+--+-+-+-+-" rhyme="B">ya de fortuna (¡oh flaco aliento <w type="rhyme">humano</w>!)</l>
+            <l n="8" met="---+---+-+-" rhyme="A">al incesable trabajar <w type="rhyme">rendido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+---+-" rhyme="C">Estoy, (¡ved cuál! ajeno de <w type="rhyme">venganza</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="D">que es mi ofensa mayor, que el <w type="rhyme">enemigo</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">y que mi enojo el tiempo, y su <w type="rhyme">tardanza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Y en tantos males, por remedio <w type="rhyme">sigo</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="C">del hado incontrastable la <w type="rhyme">mudanza</w>:</l>
+            <l n="14" met="-+++---+-+-" rhyme="D">Sentid don Diego, pues que sois mi <w type="rhyme">amigo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

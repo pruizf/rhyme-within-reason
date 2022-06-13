@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 74 - Enfádase con las Musas porque intentaban escribir un poema</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 74 - Enfádase con las Musas porque intentaban escribir un poema </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Señoras Musas, pues que siempre <w type="rhyme">mienten</w>,</l>
+            <l n="2" met="+----+-+-+-" rhyme="B">auque de Memnosine hermosas <w type="rhyme">hijas</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">sepan que se han quebrado las <w type="rhyme">clavijas</w>,</l>
+            <l n="4" met="++---++--+-" rhyme="A">ya no hay que Euterpizar, chanzas <w type="rhyme">inventen</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">De las horas perdidas se <w type="rhyme">lamenten</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">que al sol de la opinión miraron <w type="rhyme">fijas</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">desgreñen del cabello las <w type="rhyme">sortijas</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">y de moños donados se <w type="rhyme">contenten</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Miren que llevo errada la <w type="rhyme">derrota</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">por ser a la grandeza <w type="rhyme">lisonjeras</w>,</l>
+            <l n="11" met="---+-+--++-" rhyme="C">pues donde espero siete, me dan <w type="rhyme">sota</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Dejemos Metafísicas <w type="rhyme">quimeras</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">vuestras mercedes parlen en <w type="rhyme">chacota</w>
+            </l>
+            <l n="14" met="-+++---+-+-" rhyme="D">que no está el mundo para hablar de <w type="rhyme">veras</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

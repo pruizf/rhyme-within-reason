@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLI - Al contador Gaspar de Barrionuevo, en la enfermedad de su amante, Micaela de Luján</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLI - Al contador Gaspar de Barrionuevo, en la enfermedad de su amante, Micaela de Luján </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Gaspar, si enferma está mi bien, <w type="rhyme">decilde</w>
+            </l>
+            <l n="2" met="-++--+-+-+-" rhyme="B">que yo tengo de amor el alma <w type="rhyme">enferma</w>
+            </l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">y en esta soledad desierta y <w type="rhyme">yerma</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">lo que sabéis que paso <w type="rhyme">persuadilde</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----++--+-" rhyme="A">Y para que el rigor temple <w type="rhyme">advertilde</w>
+            </l>
+            <l n="6" met="-+---+++-+-" rhyme="B">que el médico también tal vez <w type="rhyme">enferma</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">y que segura de mi ausencia <w type="rhyme">duerma</w>,</l>
+            <l n="8" met="-+-++--+-+-" rhyme="A">que soy leal, cuanto presente <w type="rhyme">humilde</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Y advertidle también, si el mal <w type="rhyme">porfía</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">que trueque mi salud y su <w type="rhyme">accidente</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">que la que tengo, el alma se la <w type="rhyme">envía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Decidle que del trueque se <w type="rhyme">contente</w>:</l>
+            <l n="13" met="---+-+--++-" rhyme="C">¿mas para qué le ofrezco salud <w type="rhyme">mía</w>,</l>
+            <l n="14" met="-++--+--++-" rhyme="D">que no tiene salud quien está <w type="rhyme">ausente</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

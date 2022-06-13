@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 906 - Acto III, TIRSE De El mayorazgo dudoso</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 906 - Acto III, TIRSE De El mayorazgo dudoso </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Los celos, que debieran ser <w type="rhyme">temidos</w>
+            </l>
+            <l n="2" met="-+---++--+-" rhyme="B">en grande estimación, no hay quien los <w type="rhyme">llame</w>
+            </l>
+            <l n="3" met="+--+-+---+-" rhyme="B">menos que nombre bárbaro e <w type="rhyme">infame</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">siendo quien abre amor nuestros <w type="rhyme">sentidos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Hubiera en las ausencias mil <w type="rhyme">olvidos</w>,</l>
+            <l n="6" met="+----+-+-+-" rhyme="B">esto confesará cualquiera que <w type="rhyme">ame</w>,</l>
+            <l n="7" met="-----++--+-" rhyme="B">pues para que el amor no se <w type="rhyme">disfame</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">está el amor de celos <w type="rhyme">permitidos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">Son los celos curiosos una <w type="rhyme">espía</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">que con su vista lince y sus <w type="rhyme">desvelos</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">de que ven la menor <w type="rhyme">alevosía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-++--+-" rhyme="D">Sin celos no hay amor, fuego ni <w type="rhyme">hielos</w>,</l>
+            <l n="13" met="-----+-+-+-" rhyme="C">porque como a la noche sigue el <w type="rhyme">día</w>,</l>
+            <l n="14" met="--+--++--+-" rhyme="D">las estampas de amor pisan los <w type="rhyme">celos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

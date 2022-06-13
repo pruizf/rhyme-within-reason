@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLVII -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLVII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A"> No temes tú mis versos, <w type="rhyme">Citaredo</w>;</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">finges temer, para que así <w type="rhyme">propicio</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">el vulgo, entre el clamor de su <w type="rhyme">bullicio</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">te señale por sabio con el <w type="rhyme">dedo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+++-" rhyme="A"> A lo menos sin risa, yo no <w type="rhyme">puedo</w>
+            </l>
+            <l n="6" met="++---+---+-" rhyme="B">dar tanto a la ambición de tu <w type="rhyme">artificio</w>,</l>
+            <l n="7" met="-+--+-+--+-" rhyme="B">que te halle alguna vez en mi <w type="rhyme">juicio</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">aprobado por digno de ese <w type="rhyme">miedo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C"> Para que obren con ley nuestros <w type="rhyme">decoros</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">sus acciones imiten <w type="rhyme">respetuosas</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">al que nace en las fieras no <w type="rhyme">adquirido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C"> Teman las uñas del león los <w type="rhyme">toros</w>;</l>
+            <l n="13" met="-+---+---+-" rhyme="D">mas pídanle perdón las <w type="rhyme">mariposas</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">si se juzgaren dignas de un <w type="rhyme">bramido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

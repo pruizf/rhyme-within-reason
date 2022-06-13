@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 8 - Preguntole un caballero si haría comedias, por el principio de una que le enviaba</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 8 - Preguntole un caballero si haría comedias, por el principio de una que le enviaba </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Si haré Comedias, me preguntas <w type="rhyme">Cloro</w>,</l>
+            <l n="2" met="++---+---+-" rhyme="B">y un acto de Penélope me <w type="rhyme">envías</w>,</l>
+            <l n="3" met="++---+-+-+-" rhyme="B">¿qué fama te engañó, que en tales <w type="rhyme">días</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">de Falaris te metes en el <w type="rhyme">toro</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++-+--+-+-" rhyme="A">Después que un Autoron cantante <w type="rhyme">loro</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">con idiotismos y objeciones <w type="rhyme">frías</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">la exponga al vulgo, comerante <w type="rhyme">Harpías</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">el dulce néctar del Castalio <w type="rhyme">coro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Es el teatro de ámbar un <w type="rhyme">escudo</w>
+            </l>
+            <l n="10" met="-++--+--++-" rhyme="D">en un carro de estiércol, o en un <w type="rhyme">coche</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">donde habla el ganso y está el cisne <w type="rhyme">mudo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Y cuando más tu ingenio se <w type="rhyme">trasnoche</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">veraste en una esquina con <w type="rhyme">engrudo</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">y no te faltará para la <w type="rhyme">noche</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

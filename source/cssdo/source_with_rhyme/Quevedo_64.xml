@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>No se disculpa, como los necios amantes, de atreverse a amar; antes persuade a ser superior hermosura, la que no permite resistencia para ser amada</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>No se disculpa, como los necios amantes, de atreverse a amar; antes persuade a ser superior hermosura, la que no permite resistencia para ser amada  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++-+-+-+-" rhyme="A">¡No si no fuera yo quien <w type="rhyme">solamente</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">tuviera libertad después de <w type="rhyme">veros</w>!</l>
+            <l n="3" met="+-+--+-+-+-" rhyme="B">Fuerza, no atrevimiento, fue el <w type="rhyme">quereros</w>,</l>
+            <l n="4" met="---+-+++-+-" rhyme="A">y presunción penar tan <w type="rhyme">altamente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+---+-" rhyme="A">Osé menos dichoso que <w type="rhyme">valiente</w>;</l>
+            <l n="6" met="+----+---+-" rhyme="B">supe, sino obligaros, <w type="rhyme">conoceros</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y ni puedo olvidaros ni <w type="rhyme">ofenderos</w>:</l>
+            <l n="8" met="-+-+-++--+-" rhyme="A">que nunca puro amor fue <w type="rhyme">delincuente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+-+++--+-" rhyme="C">No desdeña gran mar fuente <w type="rhyme">pequeña</w>;</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">admite el sol en su familia de <w type="rhyme">oro</w>
+            </l>
+            <l n="11" met="+--+-+---+-" rhyme="E">llama delgada, pobre y <w type="rhyme">temerosa</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">ni humilde y baja exhalación <w type="rhyme">desdeña</w>.</l>
+            <l n="13" met="+-+--+---+-" rhyme="D">Esto alegan las lágrimas que <w type="rhyme">lloro</w>;</l>
+            <l n="14" met="+--+-+---+-" rhyme="E">esto mi ardiente llama <w type="rhyme">generosa</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

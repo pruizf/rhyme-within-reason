@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXXXIV - A una religiosa muy hermosa, y de gran virtud, que murió moza</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXXXIV - A una religiosa muy hermosa, y de gran virtud, que murió moza </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">No he de llorar por más que te <w type="rhyme">contemplo</w>,</l>
+            <l n="2" met="+----+-+-+-" rhyme="B">muerta, y que a Abril sin alma le has <w type="rhyme">dejado</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y el arroyuelo de dolor <w type="rhyme">quebrado</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">en las guijas se queja sin <w type="rhyme">ejemplo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">A melodías pues, a glorias <w type="rhyme">templo</w>,</l>
+            <l n="6" met="---+--+--+-" rhyme="B">el instrumento que guarde <w type="rhyme">colgado</w>,</l>
+            <l n="7" met="-++--+---+-" rhyme="B">que no muere quien todo su <w type="rhyme">cuidado</w>,</l>
+            <l n="8" met="+----++--+-" rhyme="A">puso en la Religión, puso en el <w type="rhyme">Templo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Viniste ejemplo de virtud a <w type="rhyme">todas</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="D">siendo envidia de todas las <w type="rhyme">bellezas</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">despreciando las galas, y las <w type="rhyme">bodas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">fueron tu adorno duras <w type="rhyme">asperezas</w>,</l>
+            <l n="13" met="-----+---+-" rhyme="C">y cuando para el Cielo te <w type="rhyme">acomodas</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">se a de cantar, y no sentir <w type="rhyme">tristezas</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

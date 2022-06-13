@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fadrique de Villagrasa</title>
+            <author> Cristobal De Virues</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Virués,  Cristóbal de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Fadrique de Villagrasa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Si Francia está gloriosa y <w type="rhyme">arrogante</w>
+            </l>
+            <l n="2" met="--++-+---+-" rhyme="B">por tener doce pares de la <w type="rhyme">Fama</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">si Aníbal a Cartago la <w type="rhyme">encarama</w>
+            </l>
+            <l n="4" met="-++--++--+-" rhyme="A">pues dio en guerras de sí prueba <w type="rhyme">bastante</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+-+-+-" rhyme="A">si África con Cipion está <w type="rhyme">pujante</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">pues en las armas su valor <w type="rhyme">derrama</w>,</l>
+            <l n="7" met="++---+-+-+-" rhyme="B">hoy noble Capitán la misma <w type="rhyme">fama</w>
+            </l>
+            <l n="8" met="---+-+--++-" rhyme="A">y el enemigo triste quien sois <w type="rhyme">cante</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="C">Si Parnaso es tenido y <w type="rhyme">reputado</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">por ser morada de las musa <w type="rhyme">nueve</w>,</l>
+            <l n="11" met="-+-+-++--+-" rhyme="C">por eso vos también sois <w type="rhyme">alabado</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">si alguno ver quisiere si es quien <w type="rhyme">debe</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="C">en este curiosísimo <w type="rhyme">tratado</w>
+            </l>
+            <l n="14" met="-+-+-+--++-" rhyme="D">su grande ingenio y mucho saber <w type="rhyme">pruebe</w>,</l>
+         </lg>
+         <lg type="estrambote">
+            <l n="15" met="---+-+-" rhyme="D">que el Capitán se <w type="rhyme">atreve</w>
+            </l>
+            <l n="16" met="---+-+---+-" rhyme="E">en aspereza tal de la <w type="rhyme">montaña</w>
+            </l>
+            <l n="17" met="++---+---+-" rhyme="E">dar verso de dulzura tan <w type="rhyme">extraña</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

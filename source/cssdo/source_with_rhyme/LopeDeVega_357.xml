@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 93 - A un elogio que se hizo en Roma a su muerte fingida</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 93 - A un elogio que se hizo en Roma a su muerte fingida </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">La fama que del Tibre a la <w type="rhyme">ribera</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">de lenguas de mi muerte mal <w type="rhyme">vestida</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">Paulo, llegó, parece que <w type="rhyme">fingida</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">me enseña a prevenir la <w type="rhyme">verdadera</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">aunque jamás pensé que ser <w type="rhyme">pudiera</w>
+            </l>
+            <l n="6" met="+-+--+---+-" rhyme="B">más dichosa mi muerte que mi <w type="rhyme">vida</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">si a vuestro sol, en fénix <w type="rhyme">convertida</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">con nuevas plumas renacer <w type="rhyme">espera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">La envidia que mis años, como <w type="rhyme">espuma</w>
+            </l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">ir a la playa de ola en ola <w type="rhyme">advierte</w>,</l>
+            <l n="11" met="++--++---+-" rhyme="C">no es mucho que ya muerto me <w type="rhyme">presuma</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Dichoso yo, pues me mató de <w type="rhyme">suerte</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">que puedo oír de vuestra docta <w type="rhyme">pluma</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="C">después de muerto, elogios a mi <w type="rhyme">pluma</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

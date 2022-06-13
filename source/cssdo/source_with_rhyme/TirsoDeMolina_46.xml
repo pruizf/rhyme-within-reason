@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Quien no cae no se levanta</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De Quien no cae no se levanta </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Virgen divina: si mi vida <w type="rhyme">exenta</w>
+            </l>
+            <l n="2" met="--+--+--++-" rhyme="B">de mi casa me saca en que habéis <w type="rhyme">sido</w>
+            </l>
+            <l n="3" met="+--++--+-+-" rhyme="B">huéspeda mía un año que he <w type="rhyme">cogido</w>
+            </l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">rosas de aquel jardín que el bien <w type="rhyme">aumenta</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">ya que me parto por huir mi <w type="rhyme">afrenta</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">puesto que cuenta no me hayáis <w type="rhyme">pedido</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">tomadla, no digáis que me <w type="rhyme">despido</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">haciendo sin la huéspeda la <w type="rhyme">cuenta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Cuentas os debo de hoy, que no he <w type="rhyme">rezado</w>;</l>
+            <l n="10" met="---+++-+-+-" rhyme="D">pero, Señora, aún no es pasado el <w type="rhyme">día</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">mas no queréis que os pague en este <w type="rhyme">trance</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+---+-" rhyme="C">Mal viene la oración con el <w type="rhyme">pecado</w>;</l>
+            <l n="13" met="-++--++--+-" rhyme="D">huir es lo mejor, Virgen <w type="rhyme">María</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">mas temo vuestro alcance no me <w type="rhyme">alcance</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

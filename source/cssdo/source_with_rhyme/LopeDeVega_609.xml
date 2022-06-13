@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Acto I, DIANA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Acto I, DIANA</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">Mil veces he advertido en la <w type="rhyme">belleza</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="B">gracia y entendimiento de <w type="rhyme">Teodoro</w>,</l>
+            <l n="3" met="-++--+---+-" rhyme="B">que, a no ser desigual a mi <w type="rhyme">decoro</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">estimara su ingenio y <w type="rhyme">gentileza</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Es el amor común <w type="rhyme">naturaleza</w>,</l>
+            <l n="6" met="-++--+-+-+-" rhyme="B">mas yo tengo mi honor por más <w type="rhyme">tesoro</w>;</l>
+            <l n="7" met="---+---+-+-" rhyme="B">que los respetos de quien soy <w type="rhyme">adoro</w>,</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">y aun el pensarlo tengo por <w type="rhyme">bajeza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-++++--+-" rhyme="C">La envidia bien sé yo que ha de <w type="rhyme">quedarme</w>;</l>
+            <l n="10" met="---+-++--+-" rhyme="D">que si la suelen dar bienes <w type="rhyme">ajenos</w>,</l>
+            <l n="11" met="++---+---+-" rhyme="C">bien tengo de que pueda <w type="rhyme">lamentarme</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Porque quisiera yo que, por lo <w type="rhyme">menos</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">Teodoro fuera más, para <w type="rhyme">igualarme</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">o yo, para igualarme, fuera <w type="rhyme">menos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

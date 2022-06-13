@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXIV -</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Mientra en mí la esperanza <w type="rhyme">florecía</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">alegre el corazón vivió <w type="rhyme">cantando</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">mas hora que el temor la va <w type="rhyme">secando</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">paso el tiempo en llorar la pena <w type="rhyme">mía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-++--+-" rhyme="A">Entonces de un pensar dulce <w type="rhyme">vivía</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">hora en pensar y más pesar <w type="rhyme">pensando</w>,</l>
+            <l n="7" met="--+--++--+-" rhyme="B">en amargo dolor va <w type="rhyme">transformando</w>
+            </l>
+            <l n="8" met="++-+-+-+-+-" rhyme="A">cuanto antes dentro en él de dulce <w type="rhyme">había</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">Ha tomado del alma mía <w type="rhyme">gobierno</w>
+            </l>
+            <l n="10" met="++---+---+-" rhyme="D">un triste recelar, que con <w type="rhyme">espanto</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">amenaza hacer mi mal <w type="rhyme">eterno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="----++-+-+-" rhyme="D">Por lo cual, si tal vez en dulce <w type="rhyme">canto</w>
+            </l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">me pruebo, sale del dolor <w type="rhyme">interno</w>
+            </l>
+            <l n="14" met="--+--+-+-+-" rhyme="D">interrota la voz y envuelta en <w type="rhyme">llanto</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Finge dentro de sí un infierno, cuyas penas procura mitigar, como Orfeo, con la música de su canto, pero sin provecho.</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Finge dentro de sí un infierno, cuyas penas procura mitigar, como Orfeo, con la música de su canto, pero sin provecho.</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">A todas partes que me vuelvo <w type="rhyme">veo</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">las amenazas de la llama <w type="rhyme">ardiente</w>,</l>
+            <l n="3" met="---+-++--+-" rhyme="B">y en cualquier lugar tengo <w type="rhyme">presente</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">tormento esquivo y burlador <w type="rhyme">deseo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">La vida es mi prisión, y no lo <w type="rhyme">creo</w>;</l>
+            <l n="6" met="-+-+-----+-" rhyme="B">y al son del hierro, que <w type="rhyme">perpetuamente</w>
+            </l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">pesado arrastro, y humedezco <w type="rhyme">ausente</w>,</l>
+            <l n="8" met="+-++-+-+-+-" rhyme="A">dentro en mí propio pruebo a ser <w type="rhyme">Orfeo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----++--+-" rhyme="C">Hay en mi corazón furias y <w type="rhyme">penas</w>;</l>
+            <l n="10" met="-++--++--+-" rhyme="D">en él es el amor fuego y <w type="rhyme">tirano</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">y yo padezco en mí la culpa <w type="rhyme">mía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">¡Oh dueño sin piedad, que tal <w type="rhyme">ordenas</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="D">pues, del castigo de enemiga <w type="rhyme">mano</w>,</l>
+            <l n="14" met="++---+---+-" rhyme="E">no es precio ni rescate la <w type="rhyme">armonía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

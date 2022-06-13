@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 99 - Acto I, DOÑA JUANA</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 99 - Acto I, DOÑA JUANA </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Espera, ingrato, y mira lo que <w type="rhyme">debes</w>
+            </l>
+            <l n="2" met="--++-+---+-" rhyme="B">a quien te ha dado el alma que <w type="rhyme">desprecias</w>.</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">¡Oh, cómo somos las mujeres <w type="rhyme">necias</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">y en resolvernos al peligro <w type="rhyme">breves</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+++-+-" rhyme="A">¿Qué ejércitos, que mar, qué heladas <w type="rhyme">nieves</w>,</l>
+            <l n="6" met="-+---+--++-" rhyme="B">si precias el honor, si el amor <w type="rhyme">precias</w>
+            </l>
+            <l n="7" met="+-+--+---+-" rhyme="B">hierro y fuego de Porcias y <w type="rhyme">Lucrecias</w>
+            </l>
+            <l n="8" met="---+---+-+-" rhyme="A">defenderá que mi constancia <w type="rhyme">pruebes</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Si me aborreces, ¿quién habrá que <w type="rhyme">crea</w>
+            </l>
+            <l n="10" met="-+---+--++-" rhyme="D">que al paso que tu ingrato desdén <w type="rhyme">crece</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="C">crezca mi amor, sin que locura <w type="rhyme">sea</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">Mucho a la muerte la mujer <w type="rhyme">parece</w>:</l>
+            <l n="13" met="-+---+---+-" rhyme="C">que huye quien la busca y la <w type="rhyme">desea</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="D">y se cansa en buscar quien la <w type="rhyme">aborrece</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

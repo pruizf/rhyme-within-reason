@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLVI -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">No los mármoles rotos que <w type="rhyme">contemplo</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">reliquias nobles de la gran <w type="rhyme">Cartago</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">ni de Numancia el miserable <w type="rhyme">estrago</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">ni los despojos del efesio <w type="rhyme">templo</w>:</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-++--+-" rhyme="A">no de Sagunto el fin, único <w type="rhyme">ejemplo</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">de la lealtad y de su injusto <w type="rhyme">pago</w>
+            </l>
+            <l n="7" met="-+---+---+-" rhyme="B">decrecen mi dolor, ni <w type="rhyme">satisfago</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">con su memoria el mal que nunca <w type="rhyme">templo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+-++---+-" rhyme="C">Bien que prueba tal vez la <w type="rhyme">fantasía</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">mas en vano, aliviar su <w type="rhyme">desventura</w>
+            </l>
+            <l n="11" met="---+---+-+-" rhyme="E">con el desastre de sucesos <w type="rhyme">tales</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">mas la razón advierte que <w type="rhyme">confía</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="D">en remedio engañoso, si <w type="rhyme">procura</w>
+            </l>
+            <l n="14" met="---+---+-+-" rhyme="E">con los ajenos consolar sus <w type="rhyme">males</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

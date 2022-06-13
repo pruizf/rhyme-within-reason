@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCIX -</title>
+            <author> Juan Boscan</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan Boscan</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+++---+-" rhyme="A">¡Oh muerte!, di, ¿qué esperas de <w type="rhyme">llevarme</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">de mundo tan perverso y <w type="rhyme">desdichado</w>,</l>
+            <l n="3" met="-+---++--+-" rhyme="B">sin fe y sin lealtad, tan <w type="rhyme">acabado</w>
+            </l>
+            <l n="4" met="-+-+-++--+-" rhyme="A">en todo el mal que no puede <w type="rhyme">acabarme</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-----+-" rhyme="A">No tengo amigos con que <w type="rhyme">consolarme</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">porque el intento de ellos va <w type="rhyme">doblado</w>;</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">y así se dobla el mal y el triste <w type="rhyme">hado</w>
+            </l>
+            <l n="8" met="---+---+-+-" rhyme="A">con encubrirlo sin poder <w type="rhyme">quejarme</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">La buena orden toda ya <w type="rhyme">descrece</w>,</l>
+            <l n="10" met="-+-+++---+-" rhyme="D">y todo cuanto es bueno se <w type="rhyme">desama</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="E">las buenas horas malas veo se <w type="rhyme">mudan</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">respeto no se tiene a quien <w type="rhyme">merece</w>,</l>
+            <l n="13" met="--+--+--++-" rhyme="D">ni se tiene respeto a quien bien <w type="rhyme">ama</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">ni amigos se respetan ni se <w type="rhyme">ayudan</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

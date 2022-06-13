@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVI - Al rey don Fernando el Católico</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVI - Al rey don Fernando el Católico </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-++--+-" rhyme="A">Tú sólo fuiste Rey, sólo <w type="rhyme">tuviste</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">el arbitrio de Europa Gran <w type="rhyme">Fernando</w>,</l>
+            <l n="3" met="+-+--+-+-+-" rhyme="B">dando timbres a España, y leyes <w type="rhyme">dando</w>,</l>
+            <l n="4" met="-+-+++-+-+-" rhyme="A">y Marte, y Numa a un mismo tiempo <w type="rhyme">fuiste</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+----+-+-" rhyme="A">Con prudencia, y con valor <w type="rhyme">venciste</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">enemigos domésticos <w type="rhyme">triunfando</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">y desarmaste el uno, y otro <w type="rhyme">bando</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">que con poder en tus coronas <w type="rhyme">viste</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Por ti la Fe se veneró <w type="rhyme">exaltada</w>
+            </l>
+            <l n="10" met="-+----+--+-" rhyme="D">el pérfido agotando <w type="rhyme">Indaismo</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">y la Morisma, dígalo <w type="rhyme">Granada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-++--+-" rhyme="D">Libraste a España sí de un <w type="rhyme">barbarismo</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="C">y tu celo divino con tu <w type="rhyme">espada</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">Católico te aclama hasta el <w type="rhyme">Abismo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

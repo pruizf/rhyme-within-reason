@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXV -</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Ofensas son, señora, las que <w type="rhyme">veo</w>,</l>
+            <l n="2" met="+----+---+-" rhyme="B">hechas a vuestras grandes <w type="rhyme">perfecciones</w>,</l>
+            <l n="3" met="-----+---+-" rhyme="B">porque adonde acredita sus <w type="rhyme">pasiones</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">sólo Amor las escribe y yo las <w type="rhyme">leo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Vencida queda el arte del <w type="rhyme">deseo</w>,</l>
+            <l n="6" met="---+-+---+-" rhyme="B">los imposibles dando por <w type="rhyme">razones</w>,</l>
+            <l n="7" met="-+-+++---+-" rhyme="B">y en esta fe, tan libre de <w type="rhyme">opiniones</w>,</l>
+            <l n="8" met="+----+++-+-" rhyme="A">fundo lo que de vos no alcanzo y <w type="rhyme">creo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Si en lo menos se pierde más el <w type="rhyme">tino</w>,</l>
+            <l n="10" met="--++-+-+-+-" rhyme="D">¿en lo más qué será de aquel <w type="rhyme">traslado</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">que procura sacar el arte en <w type="rhyme">vano</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-++-++--+-" rhyme="C">Sólo yo tengo aquel tan <w type="rhyme">peregrino</w>
+            </l>
+            <l n="13" met="-----+++-+-" rhyme="D">en que el original no está <w type="rhyme">agraviado</w>,</l>
+            <l n="14" met="+----+---+-" rhyme="E">hecho en mi corazón por vuestra <w type="rhyme">mano</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

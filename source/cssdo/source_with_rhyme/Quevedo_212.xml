@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Un casado se ríe del adúltero que le paga el gozar con susto lo que a él le sobra</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Un casado se ríe del adúltero que le paga el gozar con susto lo que a él le sobra  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Díceme, don Jerónimo, que <w type="rhyme">dices</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">que me pones los cuernos con <w type="rhyme">Ginesa</w>;</l>
+            <l n="3" met="++---+-+-+-" rhyme="B">yo digo que me pones casa y <w type="rhyme">mesa</w>;</l>
+            <l n="4" met="--+--+---+-" rhyme="A">y en la mesa, capones y <w type="rhyme">perdices</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+---+-" rhyme="A">Yo hallo que me pones los <w type="rhyme">tapices</w>
+            </l>
+            <l n="6" met="---+-----+-" rhyme="B">cuando el calor por el octubre <w type="rhyme">cesa</w>;</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">por ti mi bolsa, no mi testa, <w type="rhyme">pesa</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">aunque con molde de oro me la <w type="rhyme">rices</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+++-+-" rhyme="C">Este argumento es fuerte y es <w type="rhyme">agudo</w>:</l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">tú imaginas ponerme cuernos; de <w type="rhyme">obra</w>
+            </l>
+            <l n="11" met="+----+---+-" rhyme="C">yo, porque lo imaginas, te <w type="rhyme">desnudo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+++--+---+-" rhyme="D">Más cuerno es el que paga que el que <w type="rhyme">cobra</w>;</l>
+            <l n="13" met="--+--++--+-" rhyme="C">ergo, aquel que me paga, es el <w type="rhyme">cornudo</w>,</l>
+            <l n="14" met="-----+-+-+-" rhyme="D">lo que de mi mujer a mí me <w type="rhyme">sobra</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

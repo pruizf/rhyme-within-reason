@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XL - A un mancebo y una doncella nobles, que se habían criado juntos desde niños, hasta edad mayor en que podían tener peligro</title>
+            <author> Argensola Lupercio</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XL - A un mancebo y una doncella nobles, que se habían criado juntos desde niños, hasta edad mayor en que podían tener peligro </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+++-" rhyme="A"> Silvio, en tu edad ningún peligro hay <w type="rhyme">leve</w>:</l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">ya comienzas a hablar con voz <w type="rhyme">oscura</w>,</l>
+            <l n="3" met="--++-+---+-" rhyme="B">y a extender sombra el bozo en tu <w type="rhyme">blancura</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">sobre este labio superior se <w type="rhyme">atreve</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A"> Y en ti, Drusila, de sutil <w type="rhyme">relieve</w>
+            </l>
+            <l n="6" met="++--++---+-" rhyme="B">ya el pecho sus dos bultos <w type="rhyme">apresura</w>,</l>
+            <l n="7" met="-+-----+-+-" rhyme="B">y en cada cual, sobre la cumbre <w type="rhyme">pura</w>,</l>
+            <l n="8" met="+-++-+-+-+-" rhyme="A">vivo forma un rubí su centro <w type="rhyme">breve</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----++--+-" rhyme="C">Sienta vuestra amistad leyes <w type="rhyme">mayores</w>
+            </l>
+            <l n="10" met="++---+---+-" rhyme="D">que hoy más, que en la sencilla <w type="rhyme">inadvertencia</w>
+            </l>
+            <l n="11" met="+-+--+---+-" rhyme="E">cubre amor con silencio su <w type="rhyme">veneno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+++--+---+-" rhyme="D">Fiel ha sido hasta aquí vuestra <w type="rhyme">frecuencia</w>;</l>
+            <l n="13" met="-+---+++-+-" rhyme="E">mas si áspide admite un suelo <w type="rhyme">ameno</w>,</l>
+            <l n="14" met="--++-+---+-" rhyme="C">con razón pierden crédito sus <w type="rhyme">flores</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

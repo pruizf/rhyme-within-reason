@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXIV -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Océano mar, que desde el frío <w type="rhyme">Arturo</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">las antárticas márgenes <w type="rhyme">combates</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">así con vientos prósperos <w type="rhyme">dilates</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">las ondas de tu campo crespo y <w type="rhyme">puro</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">que a la Armada Católica <w type="rhyme">seguro</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">una laguna de cristal <w type="rhyme">retrates</w>;</l>
+            <l n="7" met="+-++---+-+-" rhyme="B">vuelve a don Félix que dejó su <w type="rhyme">Acates</w>
+            </l>
+            <l n="8" met="---+---+-+-" rhyme="A">salvo a lo menos a su patrio <w type="rhyme">muro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Y tú, que con la espada en el <w type="rhyme">Piamonte</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">Castilla, Portugal, Italia y <w type="rhyme">Flandes</w>,</l>
+            <l n="11" met="-+---+--++-" rhyme="E">Girón, que entre los rayos del sol <w type="rhyme">vive</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+---+-+-" rhyme="C">y con la pluma en el Castalio <w type="rhyme">monte</w>
+            </l>
+            <l n="13" met="++-+---+++-" rhyme="D">has hecho hazañas de valor tan <w type="rhyme">grandes</w>,</l>
+            <l n="14" met="++---++--+-" rhyme="E">sé César español, vence y <w type="rhyme">escribe</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Polo De Medina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Polo de  Medina,  Jacinto</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">Tan hecho tengo el gusto a lo que <w type="rhyme">siento</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">que como el alma merecer <w type="rhyme">desea</w>
+            </l>
+            <l n="3" met="--+--+++-+-" rhyme="B">a la pena que en mí más furia <w type="rhyme">emplea</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">le agradece la furia al <w type="rhyme">sufrimiento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">Cuando la fuerza de un mortal <w type="rhyme">tormento</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">por vencer mi constancia más <w type="rhyme">pelea</w>,</l>
+            <l n="7" met="-++--+---+-" rhyme="B">lo templa otro mayor que me <w type="rhyme">recrea</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">si con nuevo dolor, con nuevo <w type="rhyme">aliento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+--++-" rhyme="C">Todos tienen rigor, pero son <w type="rhyme">tales</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">que a aquel mitiga el que se sigue <w type="rhyme">luego</w>,</l>
+            <l n="11" met="++---+---+-" rhyme="E">tan fuerte y eficaz como <w type="rhyme">importuno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Mas aunque son sin número mis <w type="rhyme">males</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">suspendiéndose el uno al otro, <w type="rhyme">llego</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">a no sentir en mí tormento <w type="rhyme">alguno</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

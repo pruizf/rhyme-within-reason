@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CLXXXVIII -</title>
+            <author> Gutierre De Cetina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gutierre de Cetina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CLXXXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+++-" rhyme="A">Aquel nudo que ya debía ser <w type="rhyme">suelto</w>
+            </l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">después que pude ver claros mis <w type="rhyme">daños</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">llevándose tras sí los tristes <w type="rhyme">años</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">en perpetua prisión me tiene <w type="rhyme">envuelto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-++-++-" rhyme="A">¿Quién pensará jamás viendo tan <w type="rhyme">vuelto</w>,</l>
+            <l n="6" met="+-++-+-+-+-" rhyme="B">tan mezclado un amor con mil <w type="rhyme">engaños</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">pudiera el corazón en tan <w type="rhyme">extraños</w>
+            </l>
+            <l n="8" met="+----++--+-" rhyme="A">lazos permanecer preso y <w type="rhyme">revuelto</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+++-+-" rhyme="C">Mas si la voluntad de un firme <w type="rhyme">amante</w>
+            </l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">puede el tiempo mudar, si libre <w type="rhyme">verme</w>
+            </l>
+            <l n="11" met="++-++--+-+-" rhyme="E">puedo una vez de este enojoso <w type="rhyme">nudo</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="C">de aquel mismo valor, de aquel <w type="rhyme">diamante</w>
+            </l>
+            <l n="13" met="+-+--++--+-" rhyme="D">que es agora mi fe, pienso <w type="rhyme">hacerme</w>
+            </l>
+            <l n="14" met="--+-++-+-+-" rhyme="E">a los ojos un yelmo, al alma <w type="rhyme">escudo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

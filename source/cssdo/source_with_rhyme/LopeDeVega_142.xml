@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLVI - A la jornada de Inglaterra a bordo del «San Juan»</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLVI - A la jornada de Inglaterra a bordo del «San Juan» </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Famosa armada de estandartes <w type="rhyme">llena</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">partidos todos de la roja <w type="rhyme">estola</w>,</l>
+            <l n="3" met="+----+---+-" rhyme="B">árboles de la Fe, donde <w type="rhyme">tremola</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">tanta fámula blanca en cada <w type="rhyme">entena</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">selva del mar, a nuestra vista <w type="rhyme">amena</w>,</l>
+            <l n="6" met="---+-+--++-" rhyme="B">que del cristiano Ulises la fe <w type="rhyme">sola</w>
+            </l>
+            <l n="7" met="-+---+---+-" rhyme="B">te saca de la margen <w type="rhyme">española</w>
+            </l>
+            <l n="8" met="-----++--+-" rhyme="A">contra la falsedad de una <w type="rhyme">sirena</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+--++-" rhyme="C">id y abrasad el mundo, que bien <w type="rhyme">llevan</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">las velas viento, y alquitrán los <w type="rhyme">tiros</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="C">que a mis suspiros y a mi pecho <w type="rhyme">deban</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="D">Segura de los dos podéis <w type="rhyme">partiros</w>,</l>
+            <l n="13" met="+--+--+--+-" rhyme="C">fiad que os guarden, y fiad que os <w type="rhyme">muevan</w>:</l>
+            <l n="14" met="++-+-+---+-" rhyme="D">tal es mi fuego, y tales mis <w type="rhyme">suspiros</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

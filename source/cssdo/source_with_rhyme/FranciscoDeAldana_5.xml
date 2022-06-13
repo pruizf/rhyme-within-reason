@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIII -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Galanio, tú sabrás que esotro <w type="rhyme">día</w>,</l>
+            <l n="2" met="++---+---+-" rhyme="B">bien lejos de la choza y el <w type="rhyme">ganado</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">en pacífico sueño <w type="rhyme">transportado</w>
+            </l>
+            <l n="4" met="-+++-++--+-" rhyme="A">quedé junto a una haya alta y <w type="rhyme">sombría</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-++--+-" rhyme="A">cuando -¿quién tal pensó?- Flérida <w type="rhyme">mía</w>,</l>
+            <l n="6" met="-+-+-+--++-" rhyme="B">traída allí de amigo y cortés <w type="rhyme">hado</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">llegóse y un abrazo <w type="rhyme">enamorado</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">me dio, cual otro ahora <w type="rhyme">tomaría</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+---+-+-" rhyme="C">No desperté, que el respirado <w type="rhyme">aliento</w>
+            </l>
+            <l n="10" met="+--+-++--+-" rhyme="D">de ella en mi boca entró suave y <w type="rhyme">puro</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">y allá en el alma o del caso <w type="rhyme">aviso</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="C">la cual, sin su corpóreo <w type="rhyme">impedimento</w>,</l>
+            <l n="13" met="--++---+-+-" rhyme="D">por aquel paso en que me vi te <w type="rhyme">juro</w>
+            </l>
+            <l n="14" met="-++--+---+-" rhyme="E">que el bien casi sintió del <w type="rhyme">Paraíso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

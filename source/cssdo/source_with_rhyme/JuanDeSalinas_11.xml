@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A las pensiones de una prevacía religiosa</title>
+            <author> Juan De Salinas</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Salinas,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A las pensiones de una prevacía religiosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">¡Oh carga de un Prelado <w type="rhyme">religioso</w>!</l>
+            <l n="2" met="-+++---+-+-" rhyme="B">Si alivia es fácil, y si no <w type="rhyme">pesado</w>;</l>
+            <l n="3" met="-+---++--+-" rhyme="B">si duerme, en extremo es <w type="rhyme">descuidado</w>;</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">si vela, dicen peca de <w type="rhyme">celoso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+-++---+-" rhyme="A">Si reprende, es bravo y <w type="rhyme">riguroso</w>;</l>
+            <l n="6" met="---+--+++-+-" rhyme="B">si disimula, de blando es muy <w type="rhyme">sobrado</w>;</l>
+            <l n="7" met="-++--++--+-" rhyme="B">si igualmente acudió, poco <w type="rhyme">acertado</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">y parcial, si acudió al <w type="rhyme">menesteroso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Si carece de amigos, es <w type="rhyme">terrible</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">y si los tiene, dicen, hace <w type="rhyme">bando</w>;</l>
+            <l n="11" met="++---+-+-+-" rhyme="E">es pródigo si da, si guarda <w type="rhyme">ofende</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---++--+-" rhyme="C">No tiene gravedad si es <w type="rhyme">apacible</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">y si la tiene va <w type="rhyme">menospreciando</w>;</l>
+            <l n="14" met="--+--++--+-" rhyme="E">si le ven puntual, algo <w type="rhyme">pretende</w>.</l>
+         </lg>
+         <lg type="estrambote">
+            <l n="15" met="---+++-" rhyme="F">Su mesurarse es <w type="rhyme">malo</w>,</l>
+            <l n="16" met="-----++--+-" rhyme="F">a su necesidad llaman <w type="rhyme">regalo</w>,</l>
+            <l n="17" met="-+++-+-" rhyme="G">y al cabo hay cuenta <w type="rhyme">larga</w>...</l>
+            <l n="18" met="+--+---+-+-" rhyme="G">¡Líbreme Dios de tan pesada <w type="rhyme">carga</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

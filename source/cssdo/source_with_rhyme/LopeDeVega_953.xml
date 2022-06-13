@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 04 - Acto III, BATO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 04 - Acto III, BATO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--++-+---+-" rhyme="A">¡Oh, pues, qué linda cosa el <w type="rhyme">casamiento</w>
+            </l>
+            <l n="2" met="---+-+++-+-" rhyme="B">para forzar con él a un hombre el <w type="rhyme">gusto</w>!</l>
+            <l n="3" met="++---+-+-+-" rhyme="C">Que aun hecho con el gusto, al más a <w type="rhyme">gusto</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">algún azar impide su <w type="rhyme">contento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">Llamaron al casar melón, que al <w type="rhyme">tiento</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">al olfato, a la vista, viene al <w type="rhyme">justo</w>;</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">pero puesto el cuchillo de un <w type="rhyme">disgusto</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">descubre la corteza el <w type="rhyme">pensamiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++-+-+++-" rhyme="E">Cuál está muy maduro, cuál muy <w type="rhyme">duro</w>,</l>
+            <l n="10" met="+++--+-+-+-" rhyme="F">cuál no tiene sabor, y cuál <w type="rhyme">amarga</w>;</l>
+            <l n="11" met="+-++-+++-+-" rhyme="E">cuál, probado una vez, no está <w type="rhyme">seguro</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+-+-+-" rhyme="F">cuál lleno de pepitas, de hijos <w type="rhyme">carga</w>.</l>
+            <l n="13" met="-+---+-+-+-" rhyme="E">¡Dichoso quien le halló sabroso y <w type="rhyme">puro</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="F">de corta lengua y de paciencia <w type="rhyme">larga</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A la barba de los letrados</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A la barba de los letrados </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A">¡Qué amigo son de barba los <w type="rhyme">Digestos</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">hircoso licenciado! Mas sin <w type="rhyme">duda</w>
+            </l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">de barba de cabrón, intosa y <w type="rhyme">ruda</w>,</l>
+            <l n="4" met="+--+-+--++-" rhyme="A">más se presumen brujas que no <w type="rhyme">textos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+---+-" rhyme="A">La caspa es benemérita de <w type="rhyme">puestos</w>;</l>
+            <l n="6" met="---+-+---+-" rhyme="B">la suficiencia medra por <w type="rhyme">lanuda</w>;</l>
+            <l n="7" met="-+---+---+-" rhyme="B">alegue Peñaranda la <w type="rhyme">barbuda</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">en ciencia que consiste en pelo y <w type="rhyme">gestos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Son por fuerza ignorantes los <w type="rhyme">rapados</w>:</l>
+            <l n="10" met="--+--+---+-" rhyme="D">cortará la navaja <w type="rhyme">decisiones</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="C">y deshará el barbero los <w type="rhyme">letrados</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+---+-" rhyme="D">Mas, pues nunca se hallan en <w type="rhyme">capones</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="C">ni se admiten lampiños <w type="rhyme">abogados</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">las leyes son de casta de <w type="rhyme">cojones</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

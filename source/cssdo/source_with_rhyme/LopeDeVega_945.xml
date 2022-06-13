@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 979 - Acto II, RAMIRO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 979 - Acto II, RAMIRO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+++-+-" rhyme="A">¡Ay, dulce libertad! ¡Cuán caro <w type="rhyme">muestras</w>,</l>
+            <l n="2" met="-+---++--+-" rhyme="B">ahora que de mí te has <w type="rhyme">desterrado</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">aquel contento del antiguo <w type="rhyme">estado</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">reliquias tristes de las glorias <w type="rhyme">nuestras</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+-+-+-" rhyme="A">¡Ah suertes, al glorioso bien <w type="rhyme">siniestras</w>!</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">¡Cuánto tenéis vuestro rigor <w type="rhyme">probado</w>!</l>
+            <l n="7" met="+--+--++-+-" rhyme="B">¡Triste de aquel a quien ha puesto el <w type="rhyme">hado</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">planetas fieros, en las manos <w type="rhyme">vuestras</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Viéndome, amor, sin armas, me <w type="rhyme">rendiste</w>;</l>
+            <l n="10" met="--++-+-+-+-" rhyme="D">lo que en otro es traición, en ti es <w type="rhyme">victoria</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">mayor, por ti me abraso y me <w type="rhyme">consumo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+++-+-" rhyme="C">¡Ay, bella soledad, que un tiempo <w type="rhyme">fuiste</w>
+            </l>
+            <l n="13" met="+--+-+---+-" rhyme="D">sol del sentido y luz de la <w type="rhyme">memoria</w>,</l>
+            <l n="14" met="-+-+-++--+-" rhyme="E">y ahora de este fuego eres el <w type="rhyme">humo</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

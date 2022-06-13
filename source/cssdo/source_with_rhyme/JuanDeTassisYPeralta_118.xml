@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXI - Cancionero blanco</title>
+            <author> Juan De Tassis Y Peralta</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Tassis y Peralta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXI - Cancionero blanco </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Sea para bien, enhorabuena <w type="rhyme">sea</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">divino Rojas, el recién <w type="rhyme">nacido</w>,</l>
+            <l n="3" met="-++--++--+-" rhyme="B">que tal hijo de ingenio ha <w type="rhyme">merecido</w>
+            </l>
+            <l n="4" met="--+-++---+-" rhyme="A">que esculpido en mil láminas se <w type="rhyme">vea</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Plega a los cielos que la excelsa <w type="rhyme">idea</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">del Repúblico llegue el <w type="rhyme">apellido</w>
+            </l>
+            <l n="7" met="-----+---+-" rhyme="B">a donde desterrándose el <w type="rhyme">olvido</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">de Dafne ingrata su laurel <w type="rhyme">posea</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Ensancha, Manzanares, tus <w type="rhyme">riberas</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">donde tu nieto con amor <w type="rhyme">recibas</w>,</l>
+            <l n="11" met="+-++--++-+-" rhyme="E">hijo de un hijo de ti margen <w type="rhyme">bella</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="C">Aquí viene a servirse muy de <w type="rhyme">veras</w>,</l>
+            <l n="13" met="-+---+-+++-" rhyme="D">ampárale piadoso, así tú <w type="rhyme">vivas</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">eternos años con feliz <w type="rhyme">estrella</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXLVI - A los dos Escipiones, valerosos capitanes romanos</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXLVI - A los dos Escipiones, valerosos capitanes romanos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+---+-" rhyme="A">No fuisteis de la edad <w type="rhyme">Escipiones</w>,</l>
+            <l n="2" met="-----+---+-" rhyme="B">sino de la República <w type="rhyme">Romana</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que crecida en grandeza <w type="rhyme">soberana</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">sobre los Astros vio los <w type="rhyme">torreones</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Con el Sol compitieron sus <w type="rhyme">blasones</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">por tanta gloria, que gozó <w type="rhyme">Africana</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y hasta el Reino feliz de la <w type="rhyme">mañana</w>,</l>
+            <l n="8" met="--+--+---+-" rhyme="A">arbolasteis sus ínclitos <w type="rhyme">pendones</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Lloró su ruina la imperial <w type="rhyme">Cartago</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">de vuestro brazo, y vuestro ardor <w type="rhyme">ceñida</w>,</l>
+            <l n="11" met="+-+--+-+-+-" rhyme="C">siendo de un Escipión sangriento <w type="rhyme">estrago</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">Otro a Numancia la miró <w type="rhyme">rendida</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">de cada cual victoria fue el <w type="rhyme">amago</w>,</l>
+            <l n="14" met="---+---+-+-" rhyme="D">pero la muerte les quitó la <w type="rhyme">vida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

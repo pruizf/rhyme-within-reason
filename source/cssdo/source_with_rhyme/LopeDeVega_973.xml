@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Libro III, ALCINO A las memorias de Leonisa</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Libro III, ALCINO A las memorias de Leonisa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">Cuando memorias sin azul me <w type="rhyme">dieran</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">pudieran ser de glorias y <w type="rhyme">consuelos</w>,</l>
+            <l n="3" met="--++-+-+-+-" rhyme="B">¿pero quién no dirá que son de <w type="rhyme">celos</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">si el oro cubren, y en lo azul <w type="rhyme">esperan</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Alegres de oro las memorias <w type="rhyme">fueran</w>,</l>
+            <l n="6" met="-++--+---+-" rhyme="B">faltando estos esmaltes de <w type="rhyme">recelos</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">que cuando azules vuelvo a ver los <w type="rhyme">cielos</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">con ser quien son mi pensamiento <w type="rhyme">alteran</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">O celosas memorias, que en <w type="rhyme">miraros</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">el corazón las fuerzas <w type="rhyme">desanima</w>;</l>
+            <l n="11" met="-++--+---+-" rhyme="C">mejor fuera perderos que <w type="rhyme">ganaros</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Hurtado habéis la condición que <w type="rhyme">estima</w>
+            </l>
+            <l n="13" met="---+-+-+-+-" rhyme="C">el resplandor de aquellos ojos <w type="rhyme">claros</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">si alegra el oro, y el azul <w type="rhyme">lastima</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

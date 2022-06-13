@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Los cigarrales de Toledo</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De Los cigarrales de Toledo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+-+-" rhyme="A"> ¡Cuán envidiosa, dulce prenda <w type="rhyme">mía</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">el alma, de sus mismos <w type="rhyme">pensamientos</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">juzga por siglos largos los <w type="rhyme">momentos</w>
+            </l>
+            <l n="4" met="-++--+---+-" rhyme="A">que no goza los rayos de tu <w type="rhyme">día</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Ellos que vuelan por la esfera <w type="rhyme">fría</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">usurpando las alas a los <w type="rhyme">vientos</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">en la fruición de su beldad <w type="rhyme">contentos</w>
+            </l>
+            <l n="8" met="++---+---+-" rhyme="A">dan flor a mi esperanza, aunque <w type="rhyme">tardía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C"> ¡Oh mar! ¡Oh, montes! ¡Oh, prolija <w type="rhyme">tierra</w>!</l>
+            <l n="10" met="---+-+---+-" rhyme="D">Impedimentos sois de mi <w type="rhyme">ventura</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">mientras ausente peno y amo <w type="rhyme">loco</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+++---+-" rhyme="C">Mas si la paz es premio de la <w type="rhyme">guerra</w>,</l>
+            <l n="13" met="-+---++--+-" rhyme="D">¡sufrid por merecer tanta <w type="rhyme">hermosura</w>,</l>
+            <l n="14" met="+--+-+--++-" rhyme="E">alma, que nunca mucho costó <w type="rhyme">poco</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De La mujer que manda en casa</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De La mujer que manda en casa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+---+-" rhyme="A"> Tres años ha, mi Dios, que las <w type="rhyme">impías</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">persecuciones ocasionan <w type="rhyme">llantos</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y en sus profetas y ministros <w type="rhyme">santos</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">la crueldad ejecuta <w type="rhyme">tiranías</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+---+-+-" rhyme="A">Tres años ha que de mi pecho <w type="rhyme">fías</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">(a pesar de amenazas y de <w type="rhyme">espantos</w>)</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">tus fieles siervos, puesto que a otros <w type="rhyme">tantos</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">que el cielo cierra la oración de <w type="rhyme">Elías</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C">En dos cuevas amparo y doy <w type="rhyme">sustento</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">a cien profetas tuyos <w type="rhyme">escondidos</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">del poder de la envidia y los <w type="rhyme">engaños</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="C">¡Ampara Tú, Señor, mi justo <w type="rhyme">intento</w>;</l>
+            <l n="13" met="-++--+---+-" rhyme="D">clemente abre a mis ruegos tus <w type="rhyme">oídos</w>;</l>
+            <l n="14" met="+--+-+--++-" rhyme="E">baste, mi Dios, castigo de tres <w type="rhyme">años</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

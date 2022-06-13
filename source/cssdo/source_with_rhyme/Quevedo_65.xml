@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Ardor disimulado de amante</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Ardor disimulado de amante  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+-+-+-" rhyme="A">Salamandra frondosa y bien <w type="rhyme">poblada</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">te vio la antigüedad, columna <w type="rhyme">ardiente</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">¡oh Vesubio, gigante el más <w type="rhyme">valiente</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">que al cielo amenazó con diestra <w type="rhyme">osada</w>!</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Después, de varias flores <w type="rhyme">esmaltada</w>,</l>
+            <l n="6" met="-+---++--+-" rhyme="B">jardín piramidal fuiste, y <w type="rhyme">luciente</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">mariposa, en tus llamas <w type="rhyme">inclemente</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">y en quien toda Pomona fue <w type="rhyme">abrasada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---+---+-" rhyme="C">Ya, fénix cultivada, te <w type="rhyme">renuevas</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">en eternos incendios <w type="rhyme">repetidos</w>,</l>
+            <l n="11" met="-+-+-+-+-+-" rhyme="C">y noche al sol y al cielo luces <w type="rhyme">llevas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">¡Oh monte, emulación de mis <w type="rhyme">gemidos</w>:</l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">pues yo en el corazón, y tú en las <w type="rhyme">cuevas</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">callamos los volcanes <w type="rhyme">florecidos</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

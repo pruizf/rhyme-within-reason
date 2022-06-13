@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 732 - Acto II, BLANCA De Con su pan se lo coma</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 732 - Acto II, BLANCA De Con su pan se lo coma </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+-+-" rhyme="A">Aquel verde botón, que lazo <w type="rhyme">airoso</w>
+            </l>
+            <l n="2" met="--+--+--++-" rhyme="B">de esmeralda en prisión el clavel <w type="rhyme">tiene</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">cuando en rubís a desflorarse <w type="rhyme">viene</w>
+            </l>
+            <l n="4" met="+-+--+---+-" rhyme="A">llega a fuer de esperanza <w type="rhyme">perezoso</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----++--+-" rhyme="A">Y cuando a la prisión más <w type="rhyme">espacioso</w>
+            </l>
+            <l n="6" met="--+--+---+-" rhyme="B">el ardiente pimpollo se <w type="rhyme">detiene</w>
+            </l>
+            <l n="7" met="--+--++--+-" rhyme="B">con mayor detención galas <w type="rhyme">previene</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">y así naciendo tarde vive <w type="rhyme">hermoso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--++--+-" rhyme="C">No os canséis de sufrir pecho <w type="rhyme">abrasado</w>,</l>
+            <l n="10" met="--+--++-++-" rhyme="D">que en el gusto mayor crédito ha <w type="rhyme">sido</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">saber hacerte siempre <w type="rhyme">deseado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--++--+-" rhyme="D">Y es ingenio en el bien ser <w type="rhyme">detenido</w>,</l>
+            <l n="13" met="--++-+---+-" rhyme="C">porque fea deuda en penas de <w type="rhyme">esperado</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="D">para pagar en gozos de <w type="rhyme">cumplido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

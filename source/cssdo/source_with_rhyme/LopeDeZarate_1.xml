@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- I - A la rosa</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- I - A la rosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Esta a quien ya se le atrevió el <w type="rhyme">arado</w>,</l>
+            <l n="2" met="-+---+--++-" rhyme="B">con púrpura fragante adornó el <w type="rhyme">viento</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y negando en la pompa su <w type="rhyme">elemento</w>,</l>
+            <l n="4" met="+--+-+++-+-" rhyme="A">bien que caduca luz fue sol de <w type="rhyme">prado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Tuviéronla los ojos por <w type="rhyme">cuidado</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">siendo su triunfo breve <w type="rhyme">pensamiento</w>,</l>
+            <l n="7" met="+--+-+-+-+-" rhyme="B">¿quién sino el hierro fuera tan <w type="rhyme">violento</w>,</l>
+            <l n="8" met="----+-+--+-" rhyme="A">de la ignorancia rústica <w type="rhyme">guiado</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+-+-+-+-" rhyme="C">Aun no gozó de vida aquel <w type="rhyme">instante</w>
+            </l>
+            <l n="10" met="---+---+-+-" rhyme="D">que se permite a las plebeyas <w type="rhyme">flores</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="E">porque llegó al ocaso en el <w type="rhyme">Oriente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++-++-+-+-" rhyme="C">¡Oh tú, cuánto más rosa y más <w type="rhyme">triunfante</w>
+            </l>
+            <l n="13" met="+----+-+-+-" rhyme="D">teme: que las bellezas son <w type="rhyme">colores</w>,</l>
+            <l n="14" met="-+---++--+-" rhyme="E">y fácil de morir todo <w type="rhyme">accidente</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXI -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-++---+-+-" rhyme="A">Otras dos veces del furioso <w type="rhyme">Noto</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">probé las iras en el mar <w type="rhyme">turbado</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">y no volver jamás a tal <w type="rhyme">estado</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">arrepentido, prometí y <w type="rhyme">devoto</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+-+-" rhyme="A">De la deshecha jarcia y leño <w type="rhyme">roto</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">di los despojos al altar <w type="rhyme">sagrado</w>,</l>
+            <l n="7" met="--+--++--+-" rhyme="B">y apenas pisé el puerto <w type="rhyme">deseado</w>
+            </l>
+            <l n="8" met="---+-+--++-" rhyme="A">cuando olvidé el peligro y rompí el <w type="rhyme">voto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Y ahora, que continua y fiera <w type="rhyme">lucha</w>
+            </l>
+            <l n="10" met="+-+--+---+-" rhyme="D">mar y vientos se esfuerzan en mi <w type="rhyme">daño</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="E">y sus enojos aplacar <w type="rhyme">porfío</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">mis sordas voces sin piedad <w type="rhyme">escucha</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">el justo cielo. ¡Oh inútil <w type="rhyme">desengaño</w>!</l>
+            <l n="14" met="++-+---+-+-" rhyme="E">¡Cuán tarde llegas al remedio <w type="rhyme">mío</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

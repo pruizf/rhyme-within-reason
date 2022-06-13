@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- IX - Dijo Fénix que no le hacía ni bien ni mal</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- IX - Dijo Fénix que no le hacía ni bien ni mal </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Decís que bien ni mal, señora <w type="rhyme">mía</w>,</l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">me hacéis; estoy de vos tan <w type="rhyme">olvidado</w>
+            </l>
+            <l n="3" met="+--+-+---+-" rhyme="B">que aun aliviar con penas mi <w type="rhyme">cuidado</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">estorbáis a mi loca <w type="rhyme">fantasía</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+---+-+-" rhyme="A">Más mal me hacéis que sustentar <w type="rhyme">podría</w>
+            </l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">en el que yo he sentido y vos <w type="rhyme">negado</w>,</l>
+            <l n="7" met="---+-+-+-+-" rhyme="B">mas, si podéis, hacerme mal <w type="rhyme">doblado</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">hacedme males mil, por <w type="rhyme">cortesía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Que aunque es bastante para darme <w type="rhyme">muerte</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">el que a todos hacéis mirando <w type="rhyme">acaso</w>,</l>
+            <l n="11" met="+--+-+-+++-" rhyme="C">quiero por vos morir de mal más <w type="rhyme">fuerte</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="D">dame veneno, dadme, que me <w type="rhyme">abraso</w>;</l>
+            <l n="13" met="++-+-+-+-+-" rhyme="C">no bebe alguno de él, que está mi <w type="rhyme">suerte</w>
+            </l>
+            <l n="14" met="---+---+-+-" rhyme="D">en apurarle la ponzoña al <w type="rhyme">vaso</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

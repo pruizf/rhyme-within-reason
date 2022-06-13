@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXIV -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Montes de nieve son, los que de <w type="rhyme">flores</w>
+            </l>
+            <l n="2" met="-++--+---+-" rhyme="B">pació el toro, de Abril en las <w type="rhyme">montañas</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">y el cierzo airado impide en sus <w type="rhyme">cabañas</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">la entrada, y la salida a los <w type="rhyme">pastores</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Mirábanse los días tan <w type="rhyme">menores</w>,</l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que en breves horas, al trabajo <w type="rhyme">extrañas</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">la luz apenas vieron las <w type="rhyme">campañas</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">y el monte poco o más que <w type="rhyme">resplandores</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Todo se altera, todo se <w type="rhyme">embravece</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">y envueltos con la nieve, y con el <w type="rhyme">viento</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">el soto gime, y Manzanares <w type="rhyme">crece</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Su imperio desconoce el <w type="rhyme">firmamento</w>,</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">y orbe de plata a veces le <w type="rhyme">parece</w>,</l>
+            <l n="14" met="+----+---+-" rhyme="D">y otras que se trastorna de su <w type="rhyme">asiento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

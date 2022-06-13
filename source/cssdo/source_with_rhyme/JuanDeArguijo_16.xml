@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XX -</title>
+            <author> Juan De Arguijo</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Arguijo,  Juan de</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Vuelta en ceniza Troya, y su <w type="rhyme">tesoro</w>
+            </l>
+            <l n="2" met="--+---+--+-" rhyme="B">en despojo del dolope <w type="rhyme">extranjero</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">el codicioso Polimnester <w type="rhyme">fiero</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">la muerte ordena el tierno <w type="rhyme">Polidoro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--++--+-" rhyme="A">¿A qué no obligarás, hambre del <w type="rhyme">oro</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">sacrílega codicia del <w type="rhyme">dinero</w>,</l>
+            <l n="7" met="--+----+-+-" rhyme="B">si quebrantas el inviolable <w type="rhyme">fuero</w>
+            </l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">del sagrado hospedaje y real <w type="rhyme">decoro</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Con justa indignación reprueba el <w type="rhyme">suelo</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">la culpa avara del cruel <w type="rhyme">tirano</w>,</l>
+            <l n="11" met="-+---++--+-" rhyme="E">que poco gozará tales <w type="rhyme">despojos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Nueva venganza le previene el <w type="rhyme">cielo</w>;</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">porque de una mujer la débil <w type="rhyme">mano</w>
+            </l>
+            <l n="14" met="-+---+-+-+-" rhyme="E">hará que su castigo vea sin <w type="rhyme">ojos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

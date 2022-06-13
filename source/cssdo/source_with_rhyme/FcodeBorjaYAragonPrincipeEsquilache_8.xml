@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CV -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">¿Faltóme acaso alguna <w type="rhyme">desventura</w>,</l>
+            <l n="2" met="-+-+-+-+-+-" rhyme="B">que no probase en mí su filo <w type="rhyme">agudo</w>?</l>
+            <l n="3" met="-+-+++-+-+-" rhyme="B">Hiriendo siempre un pecho tan <w type="rhyme">desnudo</w>;</l>
+            <l n="4" met="---+-++--+-" rhyme="A">que su mayor defensa es mi <w type="rhyme">locura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">Ella sólo de muerte me <w type="rhyme">asegura</w>
+            </l>
+            <l n="6" met="+--+++-+-+-" rhyme="B">claro se ve, si ha sido firme <w type="rhyme">escudo</w>;</l>
+            <l n="7" met="-+-+---+-+-" rhyme="B">pues ni aun hacer, en desconciertos <w type="rhyme">pudo</w>,</l>
+            <l n="8" met="--+--++--+-" rhyme="A">que tuviese mi mal suerte <w type="rhyme">segura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+--++-+-+-" rhyme="C">Hacerme el mayor daño pudo, y <w type="rhyme">quiso</w>;</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">pues por tener en poco el mal <w type="rhyme">presente</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">la más buscó para atajarle <w type="rhyme">medio</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Cerró los ojos al común <w type="rhyme">aviso</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">y al ofensa del tiempo, <w type="rhyme">fieramente</w>
+            </l>
+            <l n="14" met="-+--++---+-" rhyme="E">hirió, como no vista sin <w type="rhyme">remedio</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 7 -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 7 - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Dulce Señor, mis vanos <w type="rhyme">pensamientos</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">fundados en el viento me <w type="rhyme">acometen</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">pero por más que mi quietud <w type="rhyme">inquieten</w>,</l>
+            <l n="4" met="+-+--+---+-" rhyme="A">no podrán derribar tus <w type="rhyme">fundamentos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+---+-" rhyme="A">No porque de mi parte mis <w type="rhyme">intentos</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">seguridad alguna me <w type="rhyme">prometen</w>
+            </l>
+            <l n="7" met="-----+-+-+-" rhyme="B">para que mi flaqueza no <w type="rhyme">sujeten</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">ligera más que los mudables <w type="rhyme">vientos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+-+-+-" rhyme="C">Mas porque si a mi voz, Señor, se <w type="rhyme">inclina</w>
+            </l>
+            <l n="10" met="--+--+++-+-" rhyme="D">tu defensa y piedad, ¿qué humana <w type="rhyme">guerra</w>
+            </l>
+            <l n="11" met="----++--++-" rhyme="E">contra lo que tú amparas, será <w type="rhyme">fuerte</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Ponme a la sombra de tu cruz <w type="rhyme">divina</w>,</l>
+            <l n="13" met="-+---+++-+-" rhyme="D">y vengan contra mí fuego, aire, <w type="rhyme">tierra</w>,</l>
+            <l n="14" met="++-+-+-+-+-" rhyme="E">mar, hierro, engaño, envidia, infierno y <w type="rhyme">muerte</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

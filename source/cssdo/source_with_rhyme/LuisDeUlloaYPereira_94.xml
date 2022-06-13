@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXVIII - A la muerte de la Reina Nuestra Señora en el túmulo de las honras que le hizo el señor Conde de Olivares en Toro</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXVIII - A la muerte de la Reina Nuestra Señora en el túmulo de las honras que le hizo el señor Conde de Olivares en Toro </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Estas lenguas de luces, que <w type="rhyme">predican</w>,</l>
+            <l n="2" met="+--+---+-+-" rhyme="B">(aún mas que alumbran) tu caduca <w type="rhyme">suerte</w>,</l>
+            <l n="3" met="++-+-+---+-" rhyme="B">no son obsequias fúnebres de <w type="rhyme">muerte</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">aunque a funesta pompa se <w type="rhyme">dedican</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">La fe, que misteriosa <w type="rhyme">significan</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">más eficaz, que la razón <w type="rhyme">advierte</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">en que infalible vida se <w type="rhyme">convierte</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">el fin que las virtudes <w type="rhyme">justifican</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">Con himnos, pues, devoto <w type="rhyme">pasajero</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">venera la gloriosa <w type="rhyme">sepultura</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="E">reverente al ejemplo que <w type="rhyme">recibes</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++---+---+-" rhyme="C">No llores lo que al Solio <w type="rhyme">verdadero</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="D">(coronada mejor) pasó <w type="rhyme">segura</w>,</l>
+            <l n="14" met="+--+---+-+-" rhyme="E">llórate a ti, que en le peligro <w type="rhyme">vives</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

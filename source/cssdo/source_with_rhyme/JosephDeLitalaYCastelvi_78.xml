@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXI - Al príncipe de Esquilache</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXI - Al príncipe de Esquilache </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Gloria del Helicón, que <w type="rhyme">venerado</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">por Monarca del Coro <w type="rhyme">reverente</w>
+            </l>
+            <l n="3" met="---+---+-+-" rhyme="B">a tu divina, y soberana <w type="rhyme">frente</w>
+            </l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">el laurel te dedica más <w type="rhyme">sagrado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-++--+-" rhyme="A">Tanto en sus Cimas hoy te has <w type="rhyme">elevado</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">que el mismo Apolo adora el <w type="rhyme">refulgente</w>
+            </l>
+            <l n="7" met="+--+---+-+-" rhyme="B">rayo de luz, y tu Castalia <w type="rhyme">fuente</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">al néctar de tus labios se ha <w type="rhyme">bañado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Sus venas de oro doctamente <w type="rhyme">abriste</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">y en sus cristales las arenas <w type="rhyme">vieron</w>
+            </l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">la gala de tu ingenio tan <w type="rhyme">profundo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">Asombro de su Solio sólo <w type="rhyme">fuiste</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">y las Deidades sacras te <w type="rhyme">eligieron</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="E">por Templo todo el ámbito del <w type="rhyme">Mundo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

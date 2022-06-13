@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 0 -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 0 - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+---+-+-" rhyme="A">Cuando con puntas de marfil <w type="rhyme">labrado</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">animas, Labradora, el <w type="rhyme">instrumento</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">cantando en sonoroso y limpio <w type="rhyme">acento</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">los dulce hurtos del amor al <w type="rhyme">prado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Ni suena arroyo en éxtasis <w type="rhyme">parado</w>,</l>
+            <l n="6" met="---+---+-+-" rhyme="B">ni entre las hojas se deleita el <w type="rhyme">viento</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">ni por estar a tu dulzura <w type="rhyme">atento</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">se escucha voz de pájaro <w type="rhyme">pintado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Duerme inocente el lobo, que ha <w type="rhyme">vencido</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">el son divino de tu dulce <w type="rhyme">lira</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="C">y entre el mismo ganado está <w type="rhyme">rendido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="----+-+--+-" rhyme="D">Pues donde tu suave acento <w type="rhyme">admira</w>
+            </l>
+            <l n="13" met="--+--++--+-" rhyme="C">a quien falta razón, vida y <w type="rhyme">sentido</w>,</l>
+            <l n="14" met="++-+---+-+-" rhyme="D">¿qué hará con alma quien por ti <w type="rhyme">suspira</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

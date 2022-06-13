@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIV - Refiere con ajuste la tragedia de Príamo y Tisbe</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIV - Refiere con ajuste la tragedia de Príamo y Tisbe </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">De un funesto moral la negra <w type="rhyme">sombra</w>,</l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">de horrores mil y confusiones <w type="rhyme">llena</w>,</l>
+            <l n="3" met="---+-+++-+-" rhyme="B">en cuyo hueco tronco aun hoy <w type="rhyme">resuena</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">el eco que doliente a Tisbe <w type="rhyme">nombra</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">Cubrió la verde matizada <w type="rhyme">alfombra</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">en que Píramo amante abrió la <w type="rhyme">vena</w>
+            </l>
+            <l n="7" met="---+-+---+-" rhyme="B">del corazón, y Tisbe de su <w type="rhyme">pena</w>
+            </l>
+            <l n="8" met="+--+-+++-+-" rhyme="A">dio la señal, que aun hoy el mundo <w type="rhyme">asombra</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---++--+-" rhyme="C">Mas viendo del amor tanto <w type="rhyme">despecho</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">la muerte, entonces de ellos <w type="rhyme">lastimada</w>,</l>
+            <l n="11" met="-++--+-+-+-" rhyme="C">sus dos pechos juntó con lazo <w type="rhyme">estrecho</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="D">Mas ¡ay de la infeliz y <w type="rhyme">desdichada</w>,</l>
+            <l n="13" met="--+--+++-+-" rhyme="C">que a su Píramo dar no puede el <w type="rhyme">pecho</w>
+            </l>
+            <l n="14" met="+--+-+---+-" rhyme="D">ni aun por los duros filos de su <w type="rhyme">espada</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

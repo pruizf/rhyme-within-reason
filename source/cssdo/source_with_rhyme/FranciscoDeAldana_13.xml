@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXII -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--++--+-" rhyme="A">Nuevo cielo mudar Niso <w type="rhyme">quería</w>
+            </l>
+            <l n="2" met="---+---+-+-" rhyme="B">hacia los rayos de su luz <w type="rhyme">primera</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">cuando lloroso y triste a la <w type="rhyme">ribera</w>
+            </l>
+            <l n="4" met="+--+-+---+-" rhyme="A">de Arno Damón, su amigo, le <w type="rhyme">decía</w>:</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">«Sabe el cielo, pastor, si <w type="rhyme">juzgaría</w>
+            </l>
+            <l n="6" met="--++-++--+-" rhyme="B">por menor mal perder hato y <w type="rhyme">ternera</w>
+            </l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">y nunca ver sabrosa <w type="rhyme">primavera</w>,</l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">antes que ausente verte el alma <w type="rhyme">mía</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Tus años goces, Niso, y, sin <w type="rhyme">cuidados</w>
+            </l>
+            <l n="10" met="--+--++--+-" rhyme="D">que descubran en ti vario <w type="rhyme">accidente</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="E">vivas alegre, venturoso y <w type="rhyme">sano</w>».</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">Esto dijo Damón, cuando <w type="rhyme">abrazados</w>
+            </l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">los pechos se bañaron <w type="rhyme">juntamente</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">diciendo: «Adiós, amigo», «Adiós, <w type="rhyme">hermano</w>».</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

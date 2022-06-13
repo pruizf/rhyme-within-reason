@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VII -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-++--+-" rhyme="A">Hoy deja todo el bien un <w type="rhyme">desdichado</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">a quien quejas ni llantos no han <w type="rhyme">valido</w>;</l>
+            <l n="3" met="++---+---+-" rhyme="B">hoy parte quien tomara por <w type="rhyme">partido</w>
+            </l>
+            <l n="4" met="-+---++--+-" rhyme="A">también de su vivir ser <w type="rhyme">apartado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+-+-+-" rhyme="A">Hoy es cuando mis ojos han <w type="rhyme">trocado</w>
+            </l>
+            <l n="6" met="-+--++---+-" rhyme="B">el veros por un llanto <w type="rhyme">dolorido</w>;</l>
+            <l n="7" met="+----+-+-+-" rhyme="B">hoy vuestro desear será <w type="rhyme">cumplido</w>,</l>
+            <l n="8" met="-++--+---+-" rhyme="A">pues voy do he de morir <w type="rhyme">desesperado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">Hoy parto y llego a la postrer <w type="rhyme">jornada</w>,</l>
+            <l n="10" met="---+-++--+-" rhyme="D">la cual deseo ya más que <w type="rhyme">ninguna</w>,</l>
+            <l n="11" met="-+--++---+-" rhyme="C">por verme en algún hora <w type="rhyme">descansada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="D">Y porque con mi muerte mi <w type="rhyme">fortuna</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">os quite a vos de ser <w type="rhyme">infortunada</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="D">y a mí quite el vivir, que me <w type="rhyme">importuna</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

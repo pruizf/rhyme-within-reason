@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 49 -</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 49 - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">¿Cómo puede, Señor, <w type="rhyme">justificarse</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">con vos el hombre, habiéndoos <w type="rhyme">ofendido</w>,</l>
+            <l n="3" met="--++---+-+-" rhyme="B">parecer limpio de mujer <w type="rhyme">nacido</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">ni el polvo al que es eterno <w type="rhyme">compararse</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+--+---+-" rhyme="A">¿Cómo puede la nada <w type="rhyme">levantarse</w>,</l>
+            <l n="6" met="--+--+---+-" rhyme="B">pues el más estimado y <w type="rhyme">preferido</w>
+            </l>
+            <l n="7" met="-+++-+---+-" rhyme="B">se ve en tan breve término <w type="rhyme">caído</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">que puede hasta la envidia <w type="rhyme">lastimarse</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">El bálsamo en los huesos no <w type="rhyme">compone</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">segunda vez del hombre la <w type="rhyme">armonía</w>,</l>
+            <l n="11" met="-++--+---+-" rhyme="C">por más oro que el túmulo <w type="rhyme">corone</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="D">Sino es limpio con vos el sol, el <w type="rhyme">día</w>,</l>
+            <l n="13" met="+-++-+-+-+-" rhyme="C">¿qué será el hombre vil, que a Dios se <w type="rhyme">opone</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">resuelto en polvo y en ceniza <w type="rhyme">fría</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

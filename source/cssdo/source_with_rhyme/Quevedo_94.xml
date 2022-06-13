@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Verifica la sentencia de arriba en dos afectos suyos</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Verifica la sentencia de arriba en dos afectos suyos  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+-+-+-+-" rhyme="A">Tal vez se ve la nave negra y <w type="rhyme">corva</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="B">entre aquilón y el euro <w type="rhyme">combatida</w>;</l>
+            <l n="3" met="-+-+-++--+-" rhyme="B">y cuanto más del uno es <w type="rhyme">impelida</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">el otro con adverso mar la <w type="rhyme">estorba</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">De éste la saña de su frente <w type="rhyme">torva</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">la embiste; aquél la calma; y, <w type="rhyme">suspendida</w>,</l>
+            <l n="7" met="+--+-+-+-+-" rhyme="B">teme la gavia vela mal <w type="rhyme">regida</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">la quilla Euripo que voraz la <w type="rhyme">sorba</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">No de otra suerte entre Rosalba y <w type="rhyme">Flora</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">en naufragio amoroso <w type="rhyme">distraído</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">ardiente el corazón suspira y <w type="rhyme">llora</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="D">En dos afectos peno <w type="rhyme">dividido</w>;</l>
+            <l n="13" met="+--+-+---+-" rhyme="C">y una hermosura espera <w type="rhyme">vencedora</w>
+            </l>
+            <l n="14" met="-++--+-+-+-" rhyme="D">que dos triunfos alcance de un <w type="rhyme">vencido</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A don Diego de Mendoza</title>
+            <author> Antonio Hurtado De Mendoza</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hurtado de  Mendoza,  Antonio</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>A don Diego de Mendoza </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Si en el ínclito Conde de <w type="rhyme">Tendilla</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">humilla Marte la triunfante <w type="rhyme">espada</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">(a Mendoza del Sol la <w type="rhyme">venerada</w>
+            </l>
+            <l n="4" met="+-++---+-+-" rhyme="A">planta) el Sol mismo por Don Diego <w type="rhyme">humilla</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Goza del uno la mejor <w type="rhyme">cuchilla</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">que honró a Castilla y asombró a <w type="rhyme">Granada</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">del otro aquella pluma <w type="rhyme">celebrada</w>,</l>
+            <l n="8" met="-+-+-++--+-" rhyme="-">que envidia a Italia dio, gloria a Castila.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="C">A los dos Roma tuvo para <w type="rhyme">afrenta</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">de Césares, y Tulios (dos <w type="rhyme">extremos</w>)</l>
+            <l n="11" met="---+-+-+-+-" rhyme="C">que en su mayor grandeza España <w type="rhyme">cuenta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="D">Libros del Conde a su valor <w type="rhyme">tenemos</w>,</l>
+            <l n="13" met="-+-+---+-+-" rhyme="C">en vos la gloria, que Don Diego <w type="rhyme">aumenta</w>
+            </l>
+            <l n="14" met="--++-+-+-+-" rhyme="D">pues famoso otra vez por vos le <w type="rhyme">vemos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVIII -</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Libro, pues que vas ante quien <w type="rhyme">puede</w>
+            </l>
+            <l n="2" met="-+--++---+-" rhyme="B">quitar y poner leyes a su <w type="rhyme">mando</w>
+            </l>
+            <l n="3" met="++---+-+-+-" rhyme="B">ten cuenta con Damón, allá <w type="rhyme">llegando</w>
+            </l>
+            <l n="4" met="---+-+-+-+-" rhyme="A">aunque Marfira más te mande y <w type="rhyme">vede</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++-++--+-" rhyme="A">Sepas muy bien contar cuanto <w type="rhyme">sucede</w>
+            </l>
+            <l n="6" met="-+--++---+-" rhyme="B">después que Damón vive <w type="rhyme">lamentando</w>;</l>
+            <l n="7" met="--++-+-+-+-" rhyme="B">y pues él va contigo allá <w type="rhyme">cantando</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="-">Marfira te oirá, que se lo debe.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">En tanto quedo yo con tal <w type="rhyme">recelo</w>
+            </l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">cual con fortuna brava suele <w type="rhyme">estar</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">echando el hierro al mar, el <w type="rhyme">marinero</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+---+-+-" rhyme="C">Lleno de afán y temeroso <w type="rhyme">celo</w>
+            </l>
+            <l n="13" met="-+-+-----+-" rhyme="D">si afierra el hierro de donde <w type="rhyme">esperar</w>
+            </l>
+            <l n="14" met="-+-+++---+-" rhyme="E">que todo afán es mero <w type="rhyme">pasajero</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

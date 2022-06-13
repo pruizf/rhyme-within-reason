@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Contra el mismo</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Contra el mismo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+---+-" rhyme="A">¿Qué captas, noturnal, en tus <w type="rhyme">canciones</w>,</l>
+            <l n="2" met="+--+-----+-" rhyme="B">Góngora bobo, con <w type="rhyme">crepusculallas</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">si cuando anhelas más <w type="rhyme">garcibolallas</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">las reptilizas más y <w type="rhyme">subterpones</w>?</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">Microcosmote Dios de <w type="rhyme">inquiridiones</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">y quieres te investiguen por <w type="rhyme">medallas</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">como priscos, estigmas o <w type="rhyme">antiguallas</w>,</l>
+            <l n="8" met="-----++--+-" rhyme="A">por desitinerar vates <w type="rhyme">tirones</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+++-+-" rhyme="C">Tu forasteridad es tan <w type="rhyme">eximia</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="C">que te ha de detractar el que te <w type="rhyme">rumia</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">pues ructas viscerable <w type="rhyme">cacoquimia</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----+---+-" rhyme="C">farmacofolorando como <w type="rhyme">numia</w>,</l>
+            <l n="13" met="-----+-+++-" rhyme="C">si estomacabundancia das tan <w type="rhyme">nimia</w>,</l>
+            <l n="14" met="-----+---+-" rhyme="C">metamorfoseando el <w type="rhyme">arcadumia</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

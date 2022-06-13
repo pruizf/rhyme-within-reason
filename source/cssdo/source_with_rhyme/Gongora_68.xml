@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVI - A la muerte de Miguel de Guzmán, hijo del Duque de Medina Sidionia a Júpiter</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVI - A la muerte de Miguel de Guzmán, hijo del Duque de Medina Sidionia a Júpiter </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Tonante monseñor, ¿de cuándo <w type="rhyme">acá</w>
+            </l>
+            <l n="2" met="-+---+-+++-" rhyme="-">fulminas jovenetes? Yo no sé</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">cuánta pluma ensillaste para el <w type="rhyme">que</w>
+            </l>
+            <l n="4" met="-+---+++-+-" rhyme="A">sirviéndote la copa aun hoy <w type="rhyme">está</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++---+-+-" rhyme="A">El garzón frigio, a quien de bello <w type="rhyme">da</w>
+            </l>
+            <l n="6" met="+----+-+-+-" rhyme="B">tanto la antigüedad, besara el <w type="rhyme">pie</w>
+            </l>
+            <l n="7" met="--+--+--++-" rhyme="B">al que mucho de España esplendor <w type="rhyme">fue</w>,</l>
+            <l n="8" met="-+---+-+++-" rhyme="A">y poca, mas fatal, ceniza es <w type="rhyme">ya</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Ministro, no grifaño, duro <w type="rhyme">sí</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="-">que en Líparis Estérope forjó</l>
+            <l n="11" met="+-+--++--+-" rhyme="D">(piedra digo behazar de otro <w type="rhyme">Pirú</w>)</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---++--+-" rhyme="C">las hojas inflamó de un <w type="rhyme">alhelí</w>.</l>
+            <l n="13" met="-----+-+-+-" rhyme="-">y los Acroceraunios monte no.</l>
+            <l n="14" met="-+---+++-+-" rhyme="D">¡Oh Júpiter, oh, tú, mil veces <w type="rhyme">tú</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

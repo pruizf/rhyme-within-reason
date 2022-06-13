@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto</title>
+            <author> Luis Martin De La Plaza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Martín de la  Plaza,  Luis</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+---+-" rhyme="A">Lidia, de tu avarienta <w type="rhyme">hermosura</w>
+            </l>
+            <l n="2" met="+-+--+-+-+-" rhyme="B">pide el tiempo enemigo estrecha <w type="rhyme">cuenta</w>;</l>
+            <l n="3" met="+-+--+-+-+-" rhyme="B">ya ni el crespo cabello al oro <w type="rhyme">afrenta</w>
+            </l>
+            <l n="4" met="---+---+-+-" rhyme="A">ni las mejillas a la nieve <w type="rhyme">pura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Tu mentida belleza mal <w type="rhyme">segura</w>
+            </l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">en vano reparar el daño <w type="rhyme">intenta</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">de la edad, que en sus ojos <w type="rhyme">representa</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">con tragedia mortal, la lumbre <w type="rhyme">oscura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+++--+-+-+-" rhyme="C">Ya, ya no me verás de noche al <w type="rhyme">viento</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">bañar de infame llanto tus <w type="rhyme">umbrales</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">comparando a la suya su <w type="rhyme">dureza</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">que el tiempo, con efectos <w type="rhyme">desiguales</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="E">me da venganza, roba tu <w type="rhyme">belleza</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="C">te da dolor y cura mi <w type="rhyme">tormento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 34 - Los varios efectos de la lengua</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 34 - Los varios efectos de la lengua </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+++---+-" rhyme="A">Por convidado un sátiro <w type="rhyme">tenía</w>
+            </l>
+            <l n="2" met="++---+-+-+-" rhyme="B">un hombre, a cuyo rostro estaba <w type="rhyme">atento</w>,</l>
+            <l n="3" met="---+--++-+-" rhyme="B">consideró que con un mismo <w type="rhyme">aliento</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">calienta el frío y la comida <w type="rhyme">enfría</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">A las fieras después, «Guardeos, <w type="rhyme">decía</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">de un animal que con diverso <w type="rhyme">intento</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">trocando solamente el <w type="rhyme">movimiento</w>,</l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">varios efectos de una causa <w type="rhyme">cría</w>.»</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+---+-+-" rhyme="C">Tal es la lengua, si aborrece o <w type="rhyme">ama</w>,</l>
+            <l n="10" met="--+--+---+-" rhyme="D">que lo que ama alaba y <w type="rhyme">engrandece</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">y vitupera aquello que <w type="rhyme">desama</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++-+---+-" rhyme="D">Julio, ¿a qué fiera Antandro se <w type="rhyme">parece</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="C">que porque no se envidia no se <w type="rhyme">infama</w>,</l>
+            <l n="14" met="---+-++--+-" rhyme="D">y porque no se ve no se <w type="rhyme">aborrece</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

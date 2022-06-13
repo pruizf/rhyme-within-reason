@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 821 - Acto I, LUPERCIO</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 821 - Acto I, LUPERCIO </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--+---+-" rhyme="A">Templará los discordes <w type="rhyme">elementos</w>
+            </l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">con paz eterna en mínima <w type="rhyme">distancia</w>,</l>
+            <l n="3" met="-+-+-+---+-" rhyme="B">y en rostro igual la pérdida y <w type="rhyme">ganancia</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">el fénix entre mil <w type="rhyme">entendimientos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--++-+---+-" rhyme="A">Templará dos discordes <w type="rhyme">instrumentos</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">sin cuerdas y sin trastes de <w type="rhyme">importancia</w>,</l>
+            <l n="7" met="---+-+---+-" rhyme="B">y con la clara y dulce <w type="rhyme">consonancia</w>
+            </l>
+            <l n="8" met="-+---+---+-" rhyme="A">del cielo, del infierno los <w type="rhyme">tormentos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Hará que el mar en una fuente <w type="rhyme">quepa</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">los peces con los pájaros <w type="rhyme">pintados</w>,</l>
+            <l n="11" met="+-+--+-+-+-" rhyme="E">leones y hombres hará por juntos <w type="rhyme">verse</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--+-+-+-" rhyme="C">pero no templará, por más que <w type="rhyme">sepa</w>,</l>
+            <l n="13" met="+--+++---+-" rhyme="D">una mujer y un hombre, aunque <w type="rhyme">casados</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">si no tienen estrella de <w type="rhyme">quererse</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVI - A la lanza de Cristo</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVI - A la lanza de Cristo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+++-" rhyme="A">Salve rayo de luz, que Dios no <w type="rhyme">sabes</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">el Alma casi, pues con honda <w type="rhyme">herida</w>
+            </l>
+            <l n="3" met="--+--+---+-" rhyme="B">penetraste al tesoro de la <w type="rhyme">vida</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">rompiendo puertas y supliendo <w type="rhyme">llaves</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Ya se permite que tu hierro <w type="rhyme">alabes</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">pues quedaste manchada, no <w type="rhyme">teñida</w>
+            </l>
+            <l n="7" met="-+-+-+--++-" rhyme="B">en luz, que fuente fue pareció <w type="rhyme">herida</w>,</l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">para que viva yo, tu culpa <w type="rhyme">laves</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Como el sol, cuyos rayos <w type="rhyme">transparentes</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">según la división de las <w type="rhyme">Regiones</w>,</l>
+            <l n="11" met="++-+-+---+-" rhyme="E">a un tiempo da el Verano, y el <w type="rhyme">Invierno</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+-+---+-" rhyme="C">Tú causas dos efectos <w type="rhyme">diferentes</w>,</l>
+            <l n="13" met="--+--+---+-" rhyme="D">pues hiriendo de amor los <w type="rhyme">corazones</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="E">estas dando lanzadas al <w type="rhyme">infierno</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

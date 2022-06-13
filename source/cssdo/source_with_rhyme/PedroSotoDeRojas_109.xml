@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXIV - Cohecho a la noche</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXIV - Cohecho a la noche </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+-+-+-" rhyme="A">Noche sombra del mundo, tú que <w type="rhyme">crías</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">con la leche, silencio al mudo <w type="rhyme">sueño</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">que al gran señor, y al labrador <w type="rhyme">pequeño</w>
+            </l>
+            <l n="4" met="---+-+---+-" rhyme="A">como la muerte igualas, si <w type="rhyme">porfías</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Tú, que en las tierras de las Zonas <w type="rhyme">frías</w>
+            </l>
+            <l n="6" met="+----+---+-" rhyme="B">siembras adormideras, y <w type="rhyme">beleño</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">aumenta, iguala, siembra el pobre <w type="rhyme">ceño</w>,</l>
+            <l n="8" met="---+---+-+-" rhyme="A">para que coja las riquezas <w type="rhyme">mías</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++---+-+-" rhyme="C">Sólo no toques, las estrellas <w type="rhyme">claras</w>,</l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">que en ti me esperan dilatando <w type="rhyme">giros</w>,</l>
+            <l n="11" met="---+---+-+-" rhyme="E">para absolver de mi tiniebla <w type="rhyme">errores</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="C">Harete sacrifico en negras <w type="rhyme">aras</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">de mis tristezas, llantos, y <w type="rhyme">suspiros</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="E">y holocausto también de mis <w type="rhyme">temores</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

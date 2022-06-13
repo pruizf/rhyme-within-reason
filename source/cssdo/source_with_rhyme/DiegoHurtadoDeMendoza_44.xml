@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLIX - Sonetos satíricos y burlescos</title>
+            <author> Diego Hurtado De Mendoza</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Diego Hurtado de Mendoza</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLIX - Sonetos satíricos y burlescos </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-++--+-" rhyme="A">Cuando las gentes van todas <w type="rhyme">buscando</w>
+            </l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">cómo tener placer y alegres <w type="rhyme">días</w>,</l>
+            <l n="3" met="-++--+---+-" rhyme="B">haciendo unos con otros <w type="rhyme">alegrías</w>,</l>
+            <l n="4" met="--++-+-+-+-" rhyme="A">sin jamás otra cosa estar <w type="rhyme">pensando</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">entonces ando yo <w type="rhyme">imaginando</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">todas las penas y congojas <w type="rhyme">mías</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">revuelto el corazón en <w type="rhyme">fantasías</w>,</l>
+            <l n="8" met="+----+---+-" rhyme="A">lágrimas dolorosas <w type="rhyme">derramando</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">visitando las tristes <w type="rhyme">sepulturas</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">interrogando almas <w type="rhyme">infernales</w>,</l>
+            <l n="11" met="+--+--+--+-" rhyme="C">y ellas responden por claras <w type="rhyme">figuras</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-+-+-" rhyme="D">que no tienen consuelo allá en sus <w type="rhyme">males</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="C">sino sólo en sentir mis <w type="rhyme">desventuras</w>
+            </l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">a quien ningunas pueden ser <w type="rhyme">iguales</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

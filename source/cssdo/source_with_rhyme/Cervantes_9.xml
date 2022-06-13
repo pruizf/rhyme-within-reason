@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>En Don Quijote de La Mancha, Segunda parte, capítulo XII, el Caballero del Bosque a don Quijote y Sancho</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>En Don Quijote de La Mancha, Segunda parte, capítulo XII, el Caballero del Bosque a don Quijote y Sancho 	                </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+++---+-" rhyme="A">«Dadme, señora, un término que <w type="rhyme">siga</w>,</l>
+            <l n="2" met="-+-----+-+-" rhyme="B">conforme a vuestra voluntad <w type="rhyme">cortado</w>;</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">que será de la mía así <w type="rhyme">estimado</w>,</l>
+            <l n="4" met="---+++-+-+-" rhyme="A">que por jamás un punto de él <w type="rhyme">desdiga</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">Si gustáis que callando mi <w type="rhyme">fatiga</w>
+            </l>
+            <l n="6" met="+--+-+---+-" rhyme="B">muera, contadme ya por <w type="rhyme">acabado</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">si queréis que os la cuente en <w type="rhyme">desusado</w>
+            </l>
+            <l n="8" met="+--+-+-+-+-" rhyme="A">modo, haré que el mismo Amor la <w type="rhyme">diga</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+--++-" rhyme="C"> A prueba de contrarios estoy <w type="rhyme">hecho</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">de blanda cera y de diamante <w type="rhyme">duro</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="E">y a leyes del Amor el alma <w type="rhyme">ajusto</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Blando cual es, o fuerte, ofrezco el <w type="rhyme">pecho</w>;</l>
+            <l n="13" met="--+--+--++-" rhyme="E">entallad o imprimid lo que os dé <w type="rhyme">gusto</w>;</l>
+            <l n="14" met="---+-+-+-+-" rhyme="D">que de guardarlo eternamente <w type="rhyme">juro</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

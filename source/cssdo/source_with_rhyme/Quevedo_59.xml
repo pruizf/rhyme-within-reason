@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Compara el discurso de su amor con el de un arroyo</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Compara el discurso de su amor con el de un arroyo  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---++--+-" rhyme="A">Torcido, desigual, blando y <w type="rhyme">sonoro</w>,</l>
+            <l n="2" met="--+--+---+-" rhyme="B">te resbalas secreto entre la <w type="rhyme">flores</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">hurtando la corriente a los <w type="rhyme">calores</w>,</l>
+            <l n="4" met="+--+-+---+-" rhyme="A">cano en la espuma y rubio con el <w type="rhyme">oro</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">En cristales dispensas tu <w type="rhyme">tesoro</w>,</l>
+            <l n="6" met="+--+-+---+-" rhyme="B">líquido plectro a rústicos <w type="rhyme">amores</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y templando por cuerdas <w type="rhyme">ruiseñores</w>,</l>
+            <l n="8" met="-+---+---+-" rhyme="A">te ríes de crecer con lo que <w type="rhyme">lloro</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+---+-" rhyme="C">De vidrio, en las lisonjas, <w type="rhyme">divertido</w>,</l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">gozoso vas al monte; y, <w type="rhyme">despeñado</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">espumoso encaneces con <w type="rhyme">gemido</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="D">No de otro modo el corazón <w type="rhyme">cuitado</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="C">a la prisión, al llanto se ha <w type="rhyme">venido</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="D">alegre, inadvertido y <w type="rhyme">confiado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

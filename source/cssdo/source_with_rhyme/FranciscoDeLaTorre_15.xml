@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXII - A la rosa</title>
+            <author> Francisco De La Torre</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Francisco de La Torre</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXII - A la rosa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Rompe la concha de esmeraldas <w type="rhyme">finas</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">perla, que extiende nácares <w type="rhyme">tempranos</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">vergüenza ya sus esplendores <w type="rhyme">canos</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">de haberla hollado plantas aun <w type="rhyme">divinas</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Espinas la rodean, que <w type="rhyme">continas</w>
+            </l>
+            <l n="6" met="+--+---+-+-" rhyme="B">son como sombra a sus colores <w type="rhyme">vanos</w>;</l>
+            <l n="7" met="--+--+---+-" rhyme="B">mas que importan la guarden, si <w type="rhyme">tiranos</w>
+            </l>
+            <l n="8" met="+--+-+---+-" rhyme="A">son sus contrarios, más que sus <w type="rhyme">espinas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Soplos de viento son su cruda <w type="rhyme">espada</w>,</l>
+            <l n="10" met="+--+---+-+-" rhyme="D">rayos de Febo su mortal <w type="rhyme">herida</w>,</l>
+            <l n="11" met="-+---+-+-+-" rhyme="C">y mano descortés su parca <w type="rhyme">airada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+---+-" rhyme="D">La que es más Fénix, cae <w type="rhyme">fenecida</w>;</l>
+            <l n="13" met="-++--++--+-" rhyme="C">la que es más encendida, es <w type="rhyme">abrasada</w>;</l>
+            <l n="14" met="+-+--++--+-" rhyme="D">y es cogida, la que es más <w type="rhyme">escogida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

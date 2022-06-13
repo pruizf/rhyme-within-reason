@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCVI -</title>
+            <author> Argensola Bartolome</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Argensola</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+-++-+-+-" rhyme="A">Ya Mercurio, no es bien que yo te <w type="rhyme">siga</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">con ansia en la mitad del curso <w type="rhyme">humano</w>,</l>
+            <l n="3" met="--++---+-+-" rhyme="B">cuando tan fiel tu premiadora <w type="rhyme">mano</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">de afán y de ambición me <w type="rhyme">desobliga</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+----+-+-+-" rhyme="A">Próvida para sí la breve <w type="rhyme">hormiga</w>,</l>
+            <l n="6" met="-+-+-+-+-+-" rhyme="B">allá en sus trojes muerde el rubio <w type="rhyme">grano</w>,</l>
+            <l n="7" met="--++-+-+-+-" rhyme="B">porque no arraigue y suba a honrarse <w type="rhyme">ufano</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">del fértil colmo en la segunda <w type="rhyme">espiga</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++---++--+-" rhyme="C"> No crezca tu favor; basta que <w type="rhyme">dure</w>;</l>
+            <l n="10" met="---+---+-+-" rhyme="D">que por ninguno de los trances <w type="rhyme">varios</w>
+            </l>
+            <l n="11" met="+--+---+-+-" rhyme="E">de ambas fortunas irritarme <w type="rhyme">pienso</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="D"> No anhelo minas, ni codicio <w type="rhyme">erarios</w>,</l>
+            <l n="13" met="-+-+-+++-+-" rhyme="E">sino una alegre mies y un firme <w type="rhyme">censo</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="C">que estos últimos ocios me <w type="rhyme">asegure</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

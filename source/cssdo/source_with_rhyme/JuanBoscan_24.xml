@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- III -</title>
+            <author> Juan Boscan</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan Boscan</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- III - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+-+-" rhyme="A">Todo es amor en quien de veras <w type="rhyme">ama</w>,</l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">hasta el mudar, que hace más <w type="rhyme">firmeza</w>;</l>
+            <l n="3" met="--+--++--+-" rhyme="B">si mudare pensad que es de <w type="rhyme">tristeza</w>
+            </l>
+            <l n="4" met="-+-+-+--++-" rhyme="A">que el mal le fuerza haber de mudar <w type="rhyme">cama</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+-+-+-" rhyme="A">Así me hizo a mí mi vieja <w type="rhyme">llama</w>,</l>
+            <l n="6" met="---+++---+-" rhyme="B">que sosegar no puede en su <w type="rhyme">crudeza</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="B">y el alma agora a nuevo amor se <w type="rhyme">aveza</w>,</l>
+            <l n="8" met="-+-+-+-+-+-" rhyme="A">mas no podrá, que el otro amor le <w type="rhyme">llama</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+-+-+-" rhyme="C">Yo pagaré por uno más de <w type="rhyme">ciento</w>
+            </l>
+            <l n="10" met="+--+-+---+-" rhyme="D">este querer así <w type="rhyme">descabullirme</w>,</l>
+            <l n="11" met="-+-+-+---+-" rhyme="C">que en fin flaqueza fue del <w type="rhyme">pensamiento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++++---+-" rhyme="D">Si pagar puede un gran <w type="rhyme">arrepentirme</w>
+            </l>
+            <l n="13" met="++-+-+-+-+-" rhyme="C">yo pago bien: mas nada no es <w type="rhyme">descuento</w>
+            </l>
+            <l n="14" met="-+-+-+--++-" rhyme="D">del tiempo que he perdido en querer <w type="rhyme">irme</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De Los cigarrales de Toledo</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> De Los cigarrales de Toledo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+-+-+-" rhyme="A">Tal vez el cazador el arco <w type="rhyme">afloja</w>,</l>
+            <l n="2" met="---+++--++-" rhyme="B">porque descanse un poco, y con más <w type="rhyme">brío</w>
+            </l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">volviendo a amenazar el aire <w type="rhyme">frío</w>,</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">con más valor la flecha alada <w type="rhyme">arroja</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">El sol esconde la madera <w type="rhyme">roja</w>,</l>
+            <l n="6" met="---+----++-" rhyme="B">porque en su ausencia, como el amor <w type="rhyme">mío</w>,</l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">el prado se marchite y llore el <w type="rhyme">río</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">por ver que su cristal de luz <w type="rhyme">despoja</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+-+-+-" rhyme="C">Si aflojaron de amor el arco, <w type="rhyme">celos</w>,</l>
+            <l n="10" met="+--+-+-+-+-" rhyme="D">fue para hacer mejor después el <w type="rhyme">tiro</w>,</l>
+            <l n="11" met="-+-+-----+-" rhyme="E">pues no le quiebra aunque le <w type="rhyme">desadorna</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-++--+-" rhyme="C">¡Vuelva tu luz a dar luz a mis <w type="rhyme">cielos</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="D">que el tiempo que sin verte estoy, <w type="rhyme">suspiro</w>,</l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">pues no huye, en fin, aquel que a casa <w type="rhyme">torna</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

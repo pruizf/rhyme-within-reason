@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXVIII - Hallándose un galán obligado...</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXVIII - Hallándose un galán obligado... </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Voz de Oráculo fue, que se <w type="rhyme">entregara</w>
+            </l>
+            <l n="2" met="-++--+---+-" rhyme="B">de dos Ninfas al mar la que <w type="rhyme">eligiera</w>
+            </l>
+            <l n="3" met="-+---+---+-" rhyme="B">amante, que forzado en la <w type="rhyme">ribera</w>
+            </l>
+            <l n="4" met="--+--+---+-" rhyme="A">el destino cruel <w type="rhyme">ejecutara</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">El caso fue, que en una <w type="rhyme">idolatrara</w>,</l>
+            <l n="6" met="+--+---+-+-" rhyme="B">y otra en el hielo de su amor <w type="rhyme">ardiera</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">fue de razón librarse la <w type="rhyme">postrera</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">y fue de amor que la razón <w type="rhyme">faltara</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-++-+---+-" rhyme="C">Premio fue, no castigo, que <w type="rhyme">ofreciese</w>
+            </l>
+            <l n="10" met="-++--+---+-" rhyme="D">sepulcro un elemento a la <w type="rhyme">fineza</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="E">de la que ya murió cuando <w type="rhyme">vivía</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--++-+---+-" rhyme="C">Y el desdén fue lisonja que se <w type="rhyme">viese</w>
+            </l>
+            <l n="13" met="-+---+---+-" rhyme="D">suceso que animase la <w type="rhyme">dureza</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="E">ejemplo que templase la <w type="rhyme">porfía</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

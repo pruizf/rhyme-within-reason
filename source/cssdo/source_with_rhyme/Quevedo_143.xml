@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Rendimiento de amante desterrado que se deja en poder de su tristeza</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Rendimiento de amante desterrado que se deja en poder de su tristeza  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--++--+-" rhyme="A">Estas son y serán ya las <w type="rhyme">postreras</w>
+            </l>
+            <l n="2" met="+----+--++-" rhyme="B">lágrimas que, con fuerza de voz <w type="rhyme">viva</w>,</l>
+            <l n="3" met="--++-+---+-" rhyme="B">perderé en esta fuente <w type="rhyme">fugitiva</w>,</l>
+            <l n="4" met="--+--+-+-+-" rhyme="A">que las lleva a la sed de tantas <w type="rhyme">fieras</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">¡Dichoso yo que, en playas <w type="rhyme">extranjeras</w>,</l>
+            <l n="6" met="+--+-+-+-+-" rhyme="B">siendo alimento a pena tan <w type="rhyme">esquiva</w>,</l>
+            <l n="7" met="+-+--+---+-" rhyme="B">halle muerta piadosa, que <w type="rhyme">derriba</w>
+            </l>
+            <l n="8" met="+-+--+---+-" rhyme="A">tanto vano edificio de <w type="rhyme">quimeras</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Espíritu desnudo, puro <w type="rhyme">amante</w>,</l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">sobre el sol arderé, y el cuerpo <w type="rhyme">frío</w>
+            </l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">se acordará de Amor en polvo y <w type="rhyme">tierra</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">Yo me seré epitafio al <w type="rhyme">caminante</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">pues le dirá, sin vida, el rostro <w type="rhyme">mío</w>:</l>
+            <l n="14" met="+++--+-+-+-" rhyme="E">«Ya fue gloria de Amor hacerme <w type="rhyme">guerra</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

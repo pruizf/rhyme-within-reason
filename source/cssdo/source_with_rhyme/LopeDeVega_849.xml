@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- - Jornada II, JUAN</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-  - Jornada II, JUAN </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">Feroz león, la planta fiera en <w type="rhyme">vano</w>,</l>
+            <l n="2" met="---+---+-+-" rhyme="B">atravesada de la dura <w type="rhyme">espina</w>,</l>
+            <l n="3" met="+--+---+-+-" rhyme="B">muestra al esclavo y a curarle <w type="rhyme">inclina</w>,</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">humilde, el inhumano al sabio <w type="rhyme">humano</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Véele después salir en el <w type="rhyme">romano</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">anfiteatro, que a morir <w type="rhyme">camina</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y paga la piadosa <w type="rhyme">medicina</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">rendido al pie que le curó la <w type="rhyme">mano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-++--+-" rhyme="C">Pues si humilla un león tanta <w type="rhyme">fiereza</w>,</l>
+            <l n="10" met="++---+--++-" rhyme="D">¿quién hay que corresponda con mal <w type="rhyme">trato</w>
+            </l>
+            <l n="11" met="--+--++--+-" rhyme="C">a quien debe piedad, honra y <w type="rhyme">nobleza</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="D">Siendo un león de la amistad <w type="rhyme">retrato</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">corrida puede estar <w type="rhyme">Naturaleza</w>
+            </l>
+            <l n="14" met="-+-+-+++-+-" rhyme="D">el día que ha formado un hombre <w type="rhyme">ingrato</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXLVI - Al doctor Martín Martínez</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXLVI - Al doctor Martín Martínez </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Tú, que alegras el Tebro <w type="rhyme">esclarecido</w>,</l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">y del Betis ondoso el curso <w type="rhyme">ufano</w>
+            </l>
+            <l n="3" met="+--+-+---+-" rhyme="B">dejas, y el precio antiguo <w type="rhyme">italiano</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="A">miras en el sepulcro del <w type="rhyme">olvido</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">¿Por ventura, del yugo <w type="rhyme">sacudido</w>,</l>
+            <l n="6" met="--++-+---+-" rhyme="B">la cerviz alzas libre, y del <w type="rhyme">tirano</w>
+            </l>
+            <l n="7" met="-+-+-+--++-" rhyme="B">amor en ti desmaya el furor <w type="rhyme">vano</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">o en fiero ardor espiras <w type="rhyme">encendido</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Que yo en la patria sin mi Luz me <w type="rhyme">veo</w>
+            </l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">triste, preso, herido, solo, <w type="rhyme">ausente</w>,</l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">y perseguido siempre de un <w type="rhyme">cuidado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Sin esperanza aviva mi <w type="rhyme">deseo</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">y apena de este río a la <w type="rhyme">corriente</w>
+            </l>
+            <l n="14" met="-+-+-+-+-+-" rhyme="E">descubro el mal que sufro no <w type="rhyme">cansado</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

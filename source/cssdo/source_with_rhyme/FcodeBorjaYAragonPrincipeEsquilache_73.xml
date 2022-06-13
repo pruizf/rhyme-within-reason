@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVI -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+-+-+-" rhyme="A">Confieso, que naciste Julia <w type="rhyme">hermosa</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">y gozas de tu edad la <w type="rhyme">primavera</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y su ambición florida, y <w type="rhyme">lisonjera</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">envidian el clavel, jazmín, y <w type="rhyme">rosa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+-++-+-+-" rhyme="A">Que es perdida (no advierten) más <w type="rhyme">costosa</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">del lustre propio, que jamás la <w type="rhyme">espera</w>;</l>
+            <l n="7" met="--++-+---+-" rhyme="B">pues la flor miento al prado, a la <w type="rhyme">ribera</w>,</l>
+            <l n="8" met="+--+-+---+-" rhyme="A">y es la beldad del dueño <w type="rhyme">mentirosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Corriendo empiezan con igual <w type="rhyme">porfía</w>
+            </l>
+            <l n="10" met="-+-+---+-+-" rhyme="D">del rostro hermoso, y de la flor <w type="rhyme">temprana</w>
+            </l>
+            <l n="11" met="--+--+---+-" rhyme="C">entre términos breves la <w type="rhyme">alegría</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="D">¡Qué mal conocen la hermosura <w type="rhyme">humana</w>!</l>
+            <l n="13" met="++-+-+-+-+-" rhyme="C">No habiendo flor, que no se oponga al <w type="rhyme">día</w>,</l>
+            <l n="14" met="--+--+---+-" rhyme="D">ni beldad, que resista la <w type="rhyme">mañana</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

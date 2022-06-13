@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXXIX -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Suspiro y pruebo con la voz <w type="rhyme">doliente</w>
+            </l>
+            <l n="2" met="---+-+-+-+-" rhyme="B">que en su dolor espire el alma <w type="rhyme">mía</w>,</l>
+            <l n="3" met="+--+-+---+-" rhyme="B">crece el suspiro en vano y mi <w type="rhyme">agonía</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">y el mal renueva siempre su <w type="rhyme">accidente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-+-++-+-+-" rhyme="A">Estas peñas, do solo muero <w type="rhyme">ausente</w>,</l>
+            <l n="6" met="+----+-+-+-" rhyme="B">rompe mi suspirar en noche y <w type="rhyme">día</w>
+            </l>
+            <l n="7" met="-+---+---+-" rhyme="B">y no hiere, ¡oh dolor de mi <w type="rhyme">porfía</w>!</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">a quien estos suspiros no <w type="rhyme">consiente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+-++-+-+-" rhyme="C">Suspirando no muero y no <w type="rhyme">deshago</w>
+            </l>
+            <l n="10" met="+----+-+-+-" rhyme="D">parte de mi pasión, mas vuelvo al <w type="rhyme">llanto</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="-">y, cesando las lágrimas, suspiro.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">Esfuerza Amor el suspirar que <w type="rhyme">hago</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="D">y como el cisne muere en dulce <w type="rhyme">canto</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="-">así acabo la vida en el suspiro.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

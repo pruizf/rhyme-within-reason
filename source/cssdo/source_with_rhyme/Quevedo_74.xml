@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Impugna la nobleza divina, de que presume el amor, con su orden y con sus efectos</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Impugna la nobleza divina, de que presume el amor, con su orden y con sus efectos  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+-+-+-" rhyme="A">Si tu país y patria son los <w type="rhyme">cielos</w>,</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">¡oh Amor!, y Venus, diosa de <w type="rhyme">hermosura</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">tu madre, y la ambrosía bebes <w type="rhyme">pura</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">y hacen aire al ardor del sol tus <w type="rhyme">vuelos</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">si tu deidad blasona por <w type="rhyme">abuelos</w>
+            </l>
+            <l n="6" met="-+---+---+-" rhyme="B">herida deshonesta, y la <w type="rhyme">blancura</w>
+            </l>
+            <l n="7" met="--+--+---+-" rhyme="B">de la espuma del mar, y a tu <w type="rhyme">segura</w>
+            </l>
+            <l n="8" met="+-+--+-+-+-" rhyme="A">vista, humildes, gimieron Delfo y <w type="rhyme">Delos</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+-+-+-" rhyme="C">¿por qué bebes mis venas, fiebre <w type="rhyme">ardiente</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">y habitas las medulas de mis <w type="rhyme">huesos</w>?</l>
+            <l n="11" met="++---+++-+-" rhyme="C">Ser dios y enfermedad ¿cómo es <w type="rhyme">decente</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="D">Deidad y cárcel de sentidos <w type="rhyme">presos</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">la dignidad de tu blasón <w type="rhyme">desmiente</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="D">y tu victoria infaman tus <w type="rhyme">progresos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

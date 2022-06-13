@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXIX -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">Hermosa Filis, si el amor <w type="rhyme">ordena</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">que admita los favores por <w type="rhyme">engaños</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">y los hierros adore de mis <w type="rhyme">daños</w>,</l>
+            <l n="4" met="-+---+---+-" rhyme="A">de tantos arrastrando la <w type="rhyme">cadena</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-----+---+-" rhyme="A">Si cuando lastimado de la <w type="rhyme">pena</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">prevengo en mi defensa <w type="rhyme">desengaños</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">la prisión agradable de mis <w type="rhyme">años</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">ni humilde calla, ni confusa <w type="rhyme">suena</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+---+-" rhyme="C">¿De qué sirven enojos, y <w type="rhyme">venganzas</w>?</l>
+            <l n="10" met="-+-+++---+-" rhyme="D">¿De qué forzara un alma que os <w type="rhyme">adora</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="E">que viva de su dueño <w type="rhyme">fugitiva</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">No se remedian celos con <w type="rhyme">mudanzas</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="D">pues hace el que mudándose <w type="rhyme">empeora</w>,</l>
+            <l n="14" met="-+-+---+-+-" rhyme="E">que en paz alegre su contrario <w type="rhyme">viva</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

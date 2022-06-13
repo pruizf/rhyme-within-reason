@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sonetos encontrados en diversos lugares Francisco de Quevedo Al principio de Conceptos de divina poesía de Lucas Rodríguez, Alcalá, 99 A Lucas Rodríguez</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Sonetos encontrados en diversos lugares Francisco de Quevedo Al principio de Conceptos de divina poesía de Lucas Rodríguez, Alcalá, 99 A Lucas Rodríguez </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+-+-+-" rhyme="A">Bien debe coronar tu ilustre <w type="rhyme">frente</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">Lucas, el rubio Febo, y, <w type="rhyme">murmurando</w>,</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">el generoso Henares ir <w type="rhyme">cantando</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">tu nombre al ronco son de su <w type="rhyme">corriente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">Y de las perlas que en su seno <w type="rhyme">siente</w>,</l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">y va con frío humor <w type="rhyme">alimentando</w>,</l>
+            <l n="7" met="-++--+---+-" rhyme="B">hacer lenguas que vayan <w type="rhyme">dilatando</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">tu nombre por el ancho mar de <w type="rhyme">Oriente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+---+-" rhyme="C">Bien te debe la Fama el <w type="rhyme">ocuparse</w>
+            </l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">en sólo celebrar tu nombre y <w type="rhyme">gloria</w>,</l>
+            <l n="11" met="---+++-+-+-" rhyme="E">si su clarín tan gran aliento <w type="rhyme">alcanza</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--++--+-" rhyme="C">Bien te debe (mas no puede <w type="rhyme">pagarse</w>
+            </l>
+            <l n="13" met="++---+---+-" rhyme="D">tal deuda) sus anales la <w type="rhyme">memoria</w>,</l>
+            <l n="14" met="-++--+---+-" rhyme="E">y, al fin, todos te deben <w type="rhyme">alabanza</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXI -</title>
+            <author> Juan De Almeida</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juan de Almeida</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Si lágrimas pudiesen <w type="rhyme">ablandarte</w>
+            </l>
+            <l n="2" met="---+-+---+-" rhyme="A">y mi pasión a lágrimas <w type="rhyme">moverte</w>,</l>
+            <l n="3" met="++---++--+-" rhyme="A">yo sé que a tu pesar has de <w type="rhyme">dolerte</w>
+            </l>
+            <l n="4" met="+--+-++--+-" rhyme="A">do quien al suyo ves que ha de <w type="rhyme">cansarte</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+-+++-" rhyme="A">Y si mis males juntos no son <w type="rhyme">parte</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="A">para poder, señora, <w type="rhyme">enternecerte</w>,</l>
+            <l n="7" met="-+-+-+-+-+-" rhyme="A">ni el verme así rendido a dura <w type="rhyme">muerte</w>
+            </l>
+            <l n="8" met="--+--+---+-" rhyme="A">a podido hasta ahora <w type="rhyme">lastimarte</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="B">llorad sin descansar los ojos <w type="rhyme">míos</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="C">hasta que en vivas lágrimas <w type="rhyme">deshecha</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="D">acabe aquesta miserable <w type="rhyme">vida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="D">Y a tu pesar entonces, fiera <w type="rhyme">Alcida</w>,</l>
+            <l n="13" met="-+---+---+-" rhyme="C">quizá que de seguirme <w type="rhyme">satisfecha</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="B">dará fortuna fin a mis <w type="rhyme">desvíos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

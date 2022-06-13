@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Defensa y caída de plaza sitiada</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Defensa y caída de plaza sitiada </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+++-+---+-" rhyme="A">¡Señor don Juan, quedito, que me <w type="rhyme">enfado</w>!</l>
+            <l n="2" met="-+-+-+---+-" rhyme="B">¿Besar la mano? ¡Qué <w type="rhyme">entretenimiento</w>!</l>
+            <l n="3" met="-+-++++--+-" rhyme="B">¡La boca no, don Juan! ¡Qué <w type="rhyme">atrevimiento</w>!</l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">¿Cosquillas? No las hay por ese <w type="rhyme">lado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+---+-" rhyme="A">¿Me remangas, Juanito? ¿Y el <w type="rhyme">pecado</w>?</l>
+            <l n="6" met="++-+-+-+-+-" rhyme="B">¡Qué malos sois los hombres!... Pasos <w type="rhyme">siento</w>...</l>
+            <l n="7" met="+++--+-+-+-" rhyme="B">No; no es nadie. Pues vaya en un <w type="rhyme">momento</w>,</l>
+            <l n="8" met="-+-+-+--++-" rhyme="A">Juanito mío, no entre algún <w type="rhyme">criado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-++--+-" rhyme="C">¡Jesús, qué loca soy! ¡Quién lo <w type="rhyme">diría</w>,</l>
+            <l n="10" met="+-+--+-+-+-" rhyme="D">siendo tan recogida y tan <w type="rhyme">cristiana</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">que a lance semejante me <w type="rhyme">expondría</w>!</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+-++-+-" rhyme="D">¡Traidor! ¡Déjame! ¡Vete!... ¿Aún tienes <w type="rhyme">gana</w>?</l>
+            <l n="13" met="---+-+-+-+-" rhyme="C">¡Pues cuando tú lo logres otro <w type="rhyme">día</w>!...</l>
+            <l n="14" met="-++--+---+-" rhyme="D">Y qué, ¿no has de volver por la <w type="rhyme">mañana</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

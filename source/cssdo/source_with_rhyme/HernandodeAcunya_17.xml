@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIV - Soneto de Silvano a su pastora Silvia</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title> - XXIV - Soneto de Silvano a su pastora Silvia </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">Cuando la alegre y dulce <w type="rhyme">primavera</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">a partir sus riquezas <w type="rhyme">comenzaba</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">y de los verdes campos <w type="rhyme">desterraba</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">aquella estéril sequedad <w type="rhyme">primera</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++-+---+-" rhyme="A"> un pastor triste y solo en la <w type="rhyme">ribera</w>
+            </l>
+            <l n="6" met="--++-+---+-" rhyme="B">de Tesín gravemente <w type="rhyme">suspiraba</w>,</l>
+            <l n="7" met="-+-+++--++-" rhyme="B">y vi que en un alto olmo que allí <w type="rhyme">estaba</w>
+            </l>
+            <l n="8" met="-++--++--+-" rhyme="A">con un hierro escribió de esta <w type="rhyme">manera</w>:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++---+-+-" rhyme="C">«Si, de amor libre, por aquí <w type="rhyme">pasare</w>
+            </l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="C">acaso algún pastor, cualquier que <w type="rhyme">fuere</w>,</l>
+            <l n="11" met="+-+--+-+-+-" rhyme="D">huya de esta ribera y de este <w type="rhyme">llano</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">que, cuanto más sin pena se <w type="rhyme">hallare</w>,</l>
+            <l n="13" met="-+---+-+-+-" rhyme="C">si a Silvia la cruel pastora <w type="rhyme">viere</w>,</l>
+            <l n="14" met="-+---+---+-" rhyme="D">por ella morirá como <w type="rhyme">Silvano</w>».</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

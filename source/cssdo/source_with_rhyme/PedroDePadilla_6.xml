@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XIV -</title>
+            <author> Pedro De Padilla</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro de Padilla</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+-+++-" rhyme="A">Mira que negro amor, o qué no <w type="rhyme">nada</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">que sin porqué se hace de los <w type="rhyme">Godos</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">sabiendo que en la tierra saben <w type="rhyme">todos</w>,</l>
+            <l n="4" met="++-+-+-+-+-" rhyme="A">que es hijo de una dama muy <w type="rhyme">taimada</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+++---+-" rhyme="A">Llamadle Dios, es cosa que me <w type="rhyme">enfada</w>,</l>
+            <l n="6" met="---+-+-+-+-" rhyme="B">porque se el trato ya que hace a <w type="rhyme">todos</w>
+            </l>
+            <l n="7" met="---+---+-+-" rhyme="B">aunque de amantes por diversos <w type="rhyme">modos</w>,</l>
+            <l n="8" met="+++--+---+-" rhyme="A">siempre ha sido su fama <w type="rhyme">celebrada</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-++--+++-+-" rhyme="C">Lo que él puede hacer es dar <w type="rhyme">enojos</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">en cambio de placer, y de <w type="rhyme">contento</w>,</l>
+            <l n="11" met="---+-+---+-" rhyme="C">porque sin vista parte sus <w type="rhyme">despojos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++------+-" rhyme="D">Y no vale con el <w type="rhyme">merecimiento</w>,</l>
+            <l n="13" met="---+-+-+-+-" rhyme="C">que como trae vendados ambos <w type="rhyme">ojos</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">los bienes, y los males da sin <w type="rhyme">tiento</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

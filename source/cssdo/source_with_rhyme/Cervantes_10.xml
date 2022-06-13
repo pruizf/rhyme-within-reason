@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>En El Quijote, Segunda parte, capítulo XVIII Don Lorenzo a Don Quijote, este soneto a la fábula de Píramo y Tisbe</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Noelia Sánchez López, María Ribes Lafoz, Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>En El Quijote, Segunda parte, capítulo XVIII Don Lorenzo a Don Quijote, este soneto a la fábula de Píramo y Tisbe 	                </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+---+-+-" rhyme="A">El muro rompe la doncella <w type="rhyme">hermosa</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">que de Píramo abrió el gallardo <w type="rhyme">pecho</w>;</l>
+            <l n="3" met="+--+-+-+-+-" rhyme="B">parte el amor de Chipre, y va <w type="rhyme">derecho</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">a ver la quiebra estrecha y <w type="rhyme">prodigiosa</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+--++-" rhyme="A">Habla el silencio allí, porque no <w type="rhyme">osa</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">la voz entrar por tan estrecho <w type="rhyme">estrecho</w>.</l>
+            <l n="7" met="-+-+-++--+-" rhyme="B">Las almas sí, que amor suele de <w type="rhyme">hecho</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">facilitar la más difícil <w type="rhyme">cosa</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Salió el deseo de compás, y el <w type="rhyme">paso</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">de la imprudente virgen <w type="rhyme">solicita</w>
+            </l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">por su gusto su muerte; ved que <w type="rhyme">historia</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+--++-+-+-" rhyme="C">Que a entrambos en un punto, ¡oh extraño <w type="rhyme">caso</w>!</l>
+            <l n="13" met="-+---+---+-" rhyme="D">los mata, los encubre y <w type="rhyme">resucita</w>
+            </l>
+            <l n="14" met="+-++-++--+-" rhyme="E">una espada, un sepulcro, una <w type="rhyme">memoria</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

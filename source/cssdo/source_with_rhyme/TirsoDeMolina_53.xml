@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>De El amor y la amistad</title>
+            <author> Tirso De Molina</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Tirso de Molina</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>De El amor y la amistad </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---++--+-" rhyme="A">El águila que al sol da en <w type="rhyme">sacrificio</w>
+            </l>
+            <l n="2" met="-+---+---+-" rhyme="B">los hijos que en sus rayos <w type="rhyme">legitima</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">aquellos por bastardos <w type="rhyme">desestima</w>
+            </l>
+            <l n="4" met="-+-+-+-+-+-" rhyme="A">que no osan ver su luz: hasta este <w type="rhyme">indicio</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-++--+-" rhyme="A">Examen hace un lúcido <w type="rhyme">juicio</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="B">de los polluelos cuya vista <w type="rhyme">anima</w>
+            </l>
+            <l n="7" met="---+---+-+-" rhyme="B">para mirarle, y al cobarde <w type="rhyme">intima</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">en vez de amor materno <w type="rhyme">precipicio</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-----+++-+-" rhyme="C">En la prosperidad que es sol <w type="rhyme">luciente</w>,</l>
+            <l n="10" met="++---+-+-+-" rhyme="D">no es mucho que sus rayos sean <w type="rhyme">testigos</w>
+            </l>
+            <l n="11" met="---+-+-+-+-" rhyme="E">de su nobleza, que es hermoso <w type="rhyme">Febo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-++--+---+-" rhyme="C"> Mas yo, al águila en esto <w type="rhyme">diferente</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">¿cómo me atrevo a examinar <w type="rhyme">amigos</w>,</l>
+            <l n="14" met="---+-+-+-+-" rhyme="E">si en la tiniebla, no en la luz, los <w type="rhyme">pruebo</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

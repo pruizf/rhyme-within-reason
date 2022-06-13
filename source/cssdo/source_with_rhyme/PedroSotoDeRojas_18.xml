@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXIV - Ausentándose un amigo</title>
+            <author> Pedro Soto De Rojas</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro Soto de Rojas</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXIV - Ausentándose un amigo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">Os vais, Marcelo amigo, y quien os <w type="rhyme">llama</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">deja sin luz el Soto <w type="rhyme">oscurecido</w>,</l>
+            <l n="3" met="-+-+---+-+-" rhyme="B">la humilde hiedra sin su muro <w type="rhyme">erguido</w>,</l>
+            <l n="4" met="---+---+-+-" rhyme="A">la Filomena sin su dulce <w type="rhyme">rama</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Os vais, y su esperanza se <w type="rhyme">derrama</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">en los sedientos campos del <w type="rhyme">olvido</w>,</l>
+            <l n="7" met="+++--+-+-+-" rhyme="B">do el más claro verdor, el más <w type="rhyme">florido</w>,</l>
+            <l n="8" met="+-+--+-+-+-" rhyme="A">son el negro Ciprés, la seca <w type="rhyme">grama</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Os vais, y (aunque mortal) en mí la <w type="rhyme">diestra</w>
+            </l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">(contra quien no se da defensa <w type="rhyme">alguna</w>)</l>
+            <l n="11" met="+--+---+-+-" rhyme="C">rojas señales de su imperio <w type="rhyme">muestra</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Os vais, si al disipar de mi <w type="rhyme">fortuna</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="C">crece cual puede, y merecerla <w type="rhyme">vuestra</w>;</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">la tierra a mí conculcaréis la <w type="rhyme">Luna</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

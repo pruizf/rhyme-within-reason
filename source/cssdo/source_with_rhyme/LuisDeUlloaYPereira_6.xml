@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CIII - En ocasión de haber quemado una dama el papel que escribía a su galán, por quemar el que él le había escrito a ella</title>
+            <author> Luis De Ulloa Y Pereira</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Luis de Ulloa y Pereira</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CIII - En ocasión de haber quemado una dama el papel que escribía a su galán, por quemar el que él le había escrito a ella </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="-">Dicha fue de mi fe contra tu incendio</l>
+            <l n="2" met="---+---+-+-" rhyme="A">la contingencia del papel <w type="rhyme">trocado</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="A">que cualquiera consuelo <w type="rhyme">imaginado</w>
+            </l>
+            <l n="4" met="+----+---+-" rhyme="B">puede desvanecer mi <w type="rhyme">pensamiento</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="B">No porque mire mi cobarde <w type="rhyme">aliento</w>
+            </l>
+            <l n="6" met="---+---+-+-" rhyme="A">a la esperanza con semblante <w type="rhyme">osado</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="A">ni que afloje las cuerdas al <w type="rhyme">cuidado</w>,</l>
+            <l n="8" met="+-+--+---+-" rhyme="B">es lisonja, que pido a mi <w type="rhyme">tormento</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Por poner al incendio mis <w type="rhyme">finezas</w>,</l>
+            <l n="10" met="-++--+-+-+-" rhyme="-">(que estando ellas ardiendo en fuego eterno</l>
+            <l n="11" met="+--+---+-+-" rhyme="D">no las pudiera ocasionar <w type="rhyme">recelo</w>).</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="C">La llama consumió tus <w type="rhyme">asperezas</w>
+            </l>
+            <l n="13" met="--+--+---+-" rhyme="-">con agüero feliz, porque el engaño</l>
+            <l n="14" met="-+-+---+-+-" rhyme="D">mostró, que puedes encender el <w type="rhyme">hielo</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Gustoso el autor con la soledad y sus estudios, escribió este soneto</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Gustoso el autor con la soledad y sus estudios, escribió este soneto  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="--+--++--+-" rhyme="A">Retirado en la paz de estos <w type="rhyme">desiertos</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">con pocos, pero doctos libros <w type="rhyme">juntos</w>,</l>
+            <l n="3" met="+----+---+-" rhyme="B">vivo en conversación con los <w type="rhyme">difuntos</w>
+            </l>
+            <l n="4" met="-+---+---+-" rhyme="A">y escucho con mis ojos a los <w type="rhyme">muertos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+-+-+-" rhyme="A">Si no siempre entendidos, siempre <w type="rhyme">abiertos</w>,</l>
+            <l n="6" met="-+---+---+-" rhyme="B">o enmiendan, o fecundan mis <w type="rhyme">asuntos</w>;</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y en músicos callados <w type="rhyme">contrapuntos</w>
+            </l>
+            <l n="8" met="-+---++--+-" rhyme="A">al sueño de la vida hablan <w type="rhyme">despiertos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+---+-+-" rhyme="C">Las grandes almas que la muerte <w type="rhyme">ausenta</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">de injurias de los años, <w type="rhyme">vengadora</w>,</l>
+            <l n="11" met="+-++-++--+-" rhyme="C">libra, ¡oh gran don Iosej! docta la <w type="rhyme">emprenta</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="D">En fuga irrevocable huye la <w type="rhyme">hora</w>;</l>
+            <l n="13" met="--+--++--+-" rhyme="C">pero aquella el mejor cálculo <w type="rhyme">cuenta</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="D">que en la lección y estudios nos <w type="rhyme">mejora</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

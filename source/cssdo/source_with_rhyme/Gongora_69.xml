@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LVII - Al obispo Antonio Venegas</title>
+            <author> Gongora</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Gongora</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LVII - Al obispo Antonio Venegas </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++-+---+++-" rhyme="A">Este a Pomona, cuando ya no <w type="rhyme">sea</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">edificio al silencio <w type="rhyme">dedicado</w>
+            </l>
+            <l n="3" met="---+-+---+-" rhyme="B">(que si el cristal le rompe <w type="rhyme">desatado</w>,</l>
+            <l n="4" met="+----+---+-" rhyme="A">suave el ruiseñor le <w type="rhyme">lisonjea</w>),</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-----+-" rhyme="A">dulce es refugio, donde se <w type="rhyme">pasea</w>
+            </l>
+            <l n="6" met="--+---+--+-" rhyme="B">la quietud, y donde otro <w type="rhyme">cuidado</w>
+            </l>
+            <l n="7" met="--+--++--+-" rhyme="-">despedido, si no digo burlando,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">de los términos huye de esta <w type="rhyme">aldea</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">Aquí la Primavera ofrece <w type="rhyme">flores</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">al gran pastor de pueblos, que <w type="rhyme">enriquece</w>
+            </l>
+            <l n="11" met="-+-+-+---+-" rhyme="E">de luz a España, y gloria a los <w type="rhyme">Venegas</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+-+-+-" rhyme="E">¡Oh, peregrino, tú cualquier que <w type="rhyme">llegas</w>,</l>
+            <l n="13" met="+----+---+-" rhyme="D">paga en admiración las que te <w type="rhyme">ofrece</w>
+            </l>
+            <l n="14" met="-+-+---+-+-" rhyme="C">el huerto fruta, y el jardín, <w type="rhyme">olores</w>!</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

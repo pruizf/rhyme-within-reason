@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXXVIII - A don Francisco Velázquez, caballero muy virtuoso, que escribió un libro de esfera en que era docto y en las matemáticas doctísimo</title>
+            <author> Lope De Zarate</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Zarate</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXXVIII - A don Francisco Velázquez, caballero muy virtuoso, que escribió un libro de esfera en que era docto y en las matemáticas doctísimo </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+-+--+---+-" rhyme="A">Tú, que docto en virtudes, y en <w type="rhyme">esferas</w>,</l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">aclaras, en la sombra más <w type="rhyme">oscura</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">la humana, la Divina <w type="rhyme">arquitectura</w>,</l>
+            <l n="4" met="+----+---+-" rhyme="A">tan sobre lo mundano <w type="rhyme">consideras</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Muestras los orbes, que gozar <w type="rhyme">esperas</w>;</l>
+            <l n="6" met="+-+--+---+-" rhyme="B">bien tu libro, y tu vida lo <w type="rhyme">asegura</w>,</l>
+            <l n="7" met="---+---+++-" rhyme="B">que como el Alma en penetrar es <w type="rhyme">pura</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="-">la ciencia, en dar noticias, verdadera.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+-+--+-+-+-" rhyme="C">Cuanto cabe en discurso, y vista <w type="rhyme">humana</w>,</l>
+            <l n="10" met="+----+---+-" rhyme="D">vemos en tu doctrina, o se <w type="rhyme">percibe</w>,</l>
+            <l n="11" met="-++--++--+-" rhyme="E">de aquello eres razón, de esto <w type="rhyme">medida</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--++--+-" rhyme="C">Lejos, lejos huid, turba <w type="rhyme">profana</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">que por aquí se va donde se <w type="rhyme">vive</w>,</l>
+            <l n="14" met="+-+--+-+-+-" rhyme="E">ya se mire a la pluma, ya a la <w type="rhyme">vida</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

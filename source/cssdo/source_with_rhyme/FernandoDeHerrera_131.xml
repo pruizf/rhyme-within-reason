@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXI -</title>
+            <author> Fernando De Herrera</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fernando de Herrera</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+-+-+-" rhyme="A">Si yo puedo vivir de vos <w type="rhyme">ausente</w>,</l>
+            <l n="2" met="+--+-+-+-+-" rhyme="B">fálteme siempre el bien y ofenda al <w type="rhyme">cielo</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">y al débil cuerpo mío en leve <w type="rhyme">vuelo</w>
+            </l>
+            <l n="4" met="+-+--+-+-+-" rhyme="A">la alma, suelte del peso, no <w type="rhyme">sustente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Si puedo respirar sin el <w type="rhyme">presente</w>
+            </l>
+            <l n="6" met="-+---+--++-" rhyme="B">vigor de vuestra luz, el impío <w type="rhyme">suelo</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">lleno de eterna sombra y <w type="rhyme">desconsuelo</w>,</l>
+            <l n="8" met="---+-+---+-" rhyme="A">entre el perdido número me <w type="rhyme">cuente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">Si padezco doliente y <w type="rhyme">apartado</w>,</l>
+            <l n="10" met="---+-+-+-+-" rhyme="D">si se enajena el bien que en vos <w type="rhyme">tenía</w>,</l>
+            <l n="11" met="-+++-++--+-" rhyme="E">¿Por qué no rompe el pecho esta <w type="rhyme">mudanza</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+---+-" rhyme="C">Si muero do se pierde mi <w type="rhyme">cuidado</w>,</l>
+            <l n="13" met="--+--+-+++-" rhyme="D">a mis ojos Amor ¿por qué no <w type="rhyme">envía</w>
+            </l>
+            <l n="14" met="++-+-+---+-" rhyme="E">un solo rayo dulce de <w type="rhyme">esperanza</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

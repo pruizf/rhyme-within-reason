@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XVI -</title>
+            <author> Francisco De Aldana</author>
+            <respStmt>
+               <name>María Ángeles Herrero Herrero</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Franciscode Aldana</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XVI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+--++-+-" rhyme="A">Juro, Escobar, por aquel lazo <w type="rhyme">eterno</w>,</l>
+            <l n="2" met="+--+---+++-" rhyme="B">nudo de amor, que entre los dos ha <w type="rhyme">dado</w>
+            </l>
+            <l n="3" met="--+--++--+-" rhyme="B">tras discreta elección fuerza de <w type="rhyme">hado</w>,</l>
+            <l n="4" met="---+--+--+-" rhyme="A">en cuya luz la vuestra amo y <w type="rhyme">discierno</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+---+-+-" rhyme="A">que ya que -ya del amoroso <w type="rhyme">infierno</w>
+            </l>
+            <l n="6" met="---+-+++-+-" rhyme="B">el fugitivo pie libre he <w type="rhyme">sacado</w>
+            </l>
+            <l n="7" met="-+---+-+-+-" rhyme="B">y en puerto de salud llevó el <w type="rhyme">cuidado</w>
+            </l>
+            <l n="8" met="+----+-+-+-" rhyme="A">áspero temporal de helado <w type="rhyme">invierno</w>-,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----++--+-" rhyme="C">hecha su redención, vuelve a su <w type="rhyme">gloria</w>
+            </l>
+            <l n="10" met="-+-----+-+-" rhyme="D">el alma, adonde por oficio <w type="rhyme">tiene</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="E">perpetuar la risa de su <w type="rhyme">llanto</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">muera Filis, malvada en mi <w type="rhyme">memoria</w>.</l>
+            <l n="13" met="-++--+-+-+-" rhyme="D">Mas, ay, triste de mí, ¿de dónde <w type="rhyme">viene</w>
+            </l>
+            <l n="14" met="+--+---+-+-" rhyme="E">nombre tan duro enternecerme <w type="rhyme">tanto</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

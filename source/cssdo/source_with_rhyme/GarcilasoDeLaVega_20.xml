@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>-XX-</title>
+            <author> Garcilaso De La Vega</author>
+            <respStmt>
+               <name>María Ribes Lafoz</name>
+               <name>Noelia Sánchez López</name>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Garcilaso de La Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been manually checked.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>-XX-</title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--++--+-" rhyme="A">Con tal fuerza y vigor son <w type="rhyme">concertados</w>
+            </l>
+            <l n="2" met="-----+-+-+-" rhyme="B">para mi perdición los duros <w type="rhyme">vientos</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que cortaron mis tiernos <w type="rhyme">pensamientos</w>
+            </l>
+            <l n="4" met="+----++--+-" rhyme="A">luego que sobre mí fueron <w type="rhyme">mostrados</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-++--+---+-" rhyme="A">El mal es que me quedan los <w type="rhyme">cuidados</w>
+            </l>
+            <l n="6" met="---+-----+-" rhyme="B">en salvo de estos <w type="rhyme">acontecimientos</w>,</l>
+            <l n="7" met="-++--+---+-" rhyme="B">que son duros, y tienen <w type="rhyme">fundamentos</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">en todos mis sentidos bien <w type="rhyme">echados</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+-+-+-" rhyme="C">Aunque por otra parte no me <w type="rhyme">duelo</w>,</l>
+            <l n="10" met="+-+--+---+-" rhyme="D">ya que el bien me dejó con su <w type="rhyme">partida</w>,</l>
+            <l n="11" met="-+-+-++--+-" rhyme="E">del grave mal que en mí está de <w type="rhyme">contino</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+---+-" rhyme="C">antes con él me abrazo y me <w type="rhyme">consuelo</w>;</l>
+            <l n="13" met="---+---+-+-" rhyme="D">porque en proceso de tan dura <w type="rhyme">vida</w>
+            </l>
+            <l n="14" met="---+-+---+-" rhyme="E">atajaré la guerra del <w type="rhyme">camino</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

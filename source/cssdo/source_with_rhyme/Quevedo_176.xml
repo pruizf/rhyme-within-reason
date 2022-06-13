@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Desnuda a la mujer de la mayor parte ajena que la compone</title>
+            <author> Quevedo</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Quevedo</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Desnuda a la mujer de la mayor parte ajena que la compone  </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+---+-" rhyme="A">Si no duerme su cara con <w type="rhyme">Filena</w>,</l>
+            <l n="2" met="---+-+---+-" rhyme="B">ni con sus dientes come, y su <w type="rhyme">vestido</w>
+            </l>
+            <l n="3" met="-++--+---+-" rhyme="B">las tres partes le hurta a su <w type="rhyme">marido</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">y la cuarta al aceite le <w type="rhyme">cercena</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+--++--++-" rhyme="A">si entera con él come y con él <w type="rhyme">cena</w>,</l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">mas debajo del lecho mal <w type="rhyme">cumplido</w>,</l>
+            <l n="7" met="+--+-+---+-" rhyme="B">todo su bulto esconde, <w type="rhyme">reducido</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">a chapinzanco y moño por <w type="rhyme">almena</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">¿por qué te espantas, Fabio, que, <w type="rhyme">abrazado</w>,</l>
+            <l n="10" met="---+-+---+-" rhyme="D">a su mujer, la busque y la <w type="rhyme">pregone</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="C">si, desnuda, se halla <w type="rhyme">descasado</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+---+-" rhyme="D">Si cuentas por mujer lo que <w type="rhyme">compone</w>
+            </l>
+            <l n="13" met="---+++---+-" rhyme="C">a la mujer, no acuestes a tu <w type="rhyme">lado</w>
+            </l>
+            <l n="14" met="--+--+---+-" rhyme="D">la mujer, sino el fardo que se <w type="rhyme">pone</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

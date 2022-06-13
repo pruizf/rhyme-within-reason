@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCIX -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+++-+-+-" rhyme="A">Fuerza de amor ha puesto <w type="rhyme">injustamente</w>
+            </l>
+            <l n="2" met="-+-+---+-+-" rhyme="B">en duro estrecho mi cansada <w type="rhyme">vida</w>.</l>
+            <l n="3" met="----+-+--+-" rhyme="B">Pero la volunta ciega, y <w type="rhyme">rendida</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">ni escucha el mal, ni la desdicha <w type="rhyme">siente</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++---+-+-+-" rhyme="A">Da voces la razón, y <w type="rhyme">ciegamente</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">la mano adora, que le da la <w type="rhyme">herida</w>;</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y a veces castigada, y <w type="rhyme">ofendida</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">la pena llora, y el rigor <w type="rhyme">consiente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Libre vivía, y muero entre <w type="rhyme">cadenas</w>;</l>
+            <l n="10" met="++---++-++-" rhyme="D">no sé quien me venció, sé que estoy <w type="rhyme">preso</w>;</l>
+            <l n="11" met="++--++-+-+-" rhyme="E">un tiempo viví cuerdo, ahora <w type="rhyme">loco</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+++--+---+-" rhyme="C">Aun no entiendo la causa de mis <w type="rhyme">penas</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="D">pero por ella sin mi antiguo <w type="rhyme">seso</w>,</l>
+            <l n="14" met="++-+---+-+-" rhyme="E">cuanto he perdido me parece <w type="rhyme">poco</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

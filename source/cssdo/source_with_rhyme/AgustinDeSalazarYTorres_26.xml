@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- V - Habiendo caído el autor a los pies de una dama</title>
+            <author> Agustin De Salazar Y Torres</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Agustin de Salazar y Torres</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- V - Habiendo caído el autor a los pies de una dama </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+---+---+-" rhyme="A">Dulcísimo veneno de <w type="rhyme">Cupido</w>,</l>
+            <l n="2" met="-+---+---+-" rhyme="B">bellísima ocasión de mi <w type="rhyme">cuidado</w>,</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">el verme a tu divino pie <w type="rhyme">postrado</w>,</l>
+            <l n="4" met="+--+---+++-" rhyme="A">no precipicio, adoración ha <w type="rhyme">sido</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="---+-+---+-" rhyme="A">De tus hermosas iras <w type="rhyme">compelido</w>,</l>
+            <l n="6" met="+-+-++---+-" rhyme="B">yo caí felizmente <w type="rhyme">fulminado</w>;</l>
+            <l n="7" met="+--+-++--+-" rhyme="B">nunca se vio mi amor más <w type="rhyme">levantado</w>
+            </l>
+            <l n="8" met="-----+-+-+-" rhyme="A">que cuando se miró a tus pies <w type="rhyme">caído</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--++-+---+-" rhyme="C">A Faetón ha invitado mi <w type="rhyme">osadía</w>
+            </l>
+            <l n="10" met="-++--+-+-+-" rhyme="D">si bien más venturoso fue mi <w type="rhyme">vuelo</w>,</l>
+            <l n="11" met="--+--+---+-" rhyme="E">y entre más soberanos <w type="rhyme">arreboles</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="--+--++--+-" rhyme="C">pues si a él, que rigió el carro del <w type="rhyme">día</w>
+            </l>
+            <l n="13" met="++---+-+-+-" rhyme="D">un sol le derribó de todo el <w type="rhyme">cielo</w>,</l>
+            <l n="14" met="-+++-+--++-" rhyme="E">a mí fue todo el cielo con dos <w type="rhyme">soles</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

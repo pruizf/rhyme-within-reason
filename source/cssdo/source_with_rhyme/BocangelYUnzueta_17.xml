@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXIV -</title>
+            <author> Bocangel Y Unzueta</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Bocangel y Unzueta</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXIV - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----+-+-+-" rhyme="A">Filis, en cuyo amante muerte <w type="rhyme">fiera</w>
+            </l>
+            <l n="2" met="-+++---+-+-" rhyme="B">robó más alma que dejó a su <w type="rhyme">vida</w>,</l>
+            <l n="3" met="---+---+-+-" rhyme="B">y de su esposo la mortal <w type="rhyme">herida</w>
+            </l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">en huérfanas reliquias hoy <w type="rhyme">venera</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+-++-+---+-" rhyme="A">vio un retrato, una imagen <w type="rhyme">lisonjera</w>,</l>
+            <l n="6" met="---+-++--+-" rhyme="B">de verdadero amor sombra <w type="rhyme">fingida</w>,</l>
+            <l n="7" met="-+---+---+-" rhyme="B">y, en viéndola, a consuelo <w type="rhyme">introducida</w>,</l>
+            <l n="8" met="--++++---+-" rhyme="A">conoció no ser alma <w type="rhyme">verdadera</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+-+---+-" rhyme="C">Escrupulosa en ver que se <w type="rhyme">divierte</w>,</l>
+            <l n="10" met="-+-+-+-+-+-" rhyme="D">«¡Ay! -dijo-, amante amado, no me <w type="rhyme">atrevo</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="E">a ver tu sombra, pues de ti me <w type="rhyme">privo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="++-+---+-+-" rhyme="C">Tan toda el alma concedí a tu <w type="rhyme">muerte</w>
+            </l>
+            <l n="13" met="-++--+-+-+-" rhyme="D">que ya no he de poder sentir de <w type="rhyme">nuevo</w>
+            </l>
+            <l n="14" met="+--+-+-+-+-" rhyme="E">ni aun el dolor de no mirarte <w type="rhyme">vivo</w>.»</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

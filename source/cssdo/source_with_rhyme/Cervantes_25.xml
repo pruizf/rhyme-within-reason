@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Soneto en loor del autor y su obra</title>
+            <author> Cervantes</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Cervantes</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>Soneto en loor del autor y su obra </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-++--+-+-" rhyme="A">El casto ardor de una amorosa <w type="rhyme">llama</w>,</l>
+            <l n="2" met="++-+---+-+-" rhyme="B">un sabio pecho a su rigor <w type="rhyme">sujeto</w>,</l>
+            <l n="3" met="+-+--+-+-+-" rhyme="B">un desdén sacudido y un <w type="rhyme">afecto</w>
+            </l>
+            <l n="4" met="+--+-+-+-+-" rhyme="A">blando, que al alma en dulce fuego <w type="rhyme">inflama</w>,</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">el bien y el mal a que convida y <w type="rhyme">llama</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">de amor la fuerza y poderoso <w type="rhyme">efecto</w>
+            </l>
+            <l n="7" met="-+-+-++--+-" rhyme="B">eternamente, en son claro y <w type="rhyme">perfecto</w>,</l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">con estas rimas cantará la <w type="rhyme">fama</w>,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">llevando el nombre único y <w type="rhyme">famoso</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">vuestro, felice López <w type="rhyme">Maldonado</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="-">del moreno etíope al cita blanco</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+---+-+-" rhyme="C">y hará que en balde de laurel <w type="rhyme">honroso</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">espere alguno verse <w type="rhyme">coronado</w>
+            </l>
+            <l n="14" met="-+-+-+---+-" rhyme="-">si no os imita y tiene por su blanco.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

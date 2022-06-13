@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- CXV - A Juan Bautista Labaña</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- CXV - A Juan Bautista Labaña </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+++-+-" rhyme="A">Maestro mío, ved si ha sido <w type="rhyme">engaño</w>
+            </l>
+            <l n="2" met="--+--+---+-" rhyme="B">regular por amor el <w type="rhyme">movimiento</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">que hace en paralelos de su <w type="rhyme">intento</w>
+            </l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">el sol de Fili, discurriendo el <w type="rhyme">año</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Tomé su altura en este <w type="rhyme">desengaño</w>,</l>
+            <l n="6" met="---+-++--+-" rhyme="B">y en mi sospecha, que es cierto <w type="rhyme">instrumento</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">por coronas conté su <w type="rhyme">pensamiento</w>
+            </l>
+            <l n="8" met="---+-+---+-" rhyme="A">y señalome el índice mi <w type="rhyme">daño</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++-+-+-+-" rhyme="C">O no son estos arcos bien <w type="rhyme">descritos</w>,</l>
+            <l n="10" met="++-+-+-+-+-" rhyme="D">(digo estos ojos) o este limbo <w type="rhyme">indicio</w>,</l>
+            <l n="11" met="-+-+---+-+-" rhyme="-">que a aquella antigua oscuridad me torno,</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+++-+---+-" rhyme="C">o yo no observo bien vuestros <w type="rhyme">escritos</w>,</l>
+            <l n="13" met="-+-+-+---+-" rhyme="D">que si hace Fili en Géminis <w type="rhyme">solsticio</w>,</l>
+            <l n="14" met="++---+---+-" rhyme="-">no escapa mi Cenit de Capricornio.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

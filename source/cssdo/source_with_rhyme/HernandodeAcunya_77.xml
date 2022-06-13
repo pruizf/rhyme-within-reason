@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LXXIX -</title>
+            <author> Hernandode Acunya</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Hernandode Acunya</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LXXIX - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="++---+-+-+-" rhyme="A">Mil veces de tu mano me he <w type="rhyme">escapado</w>
+            </l>
+            <l n="2" met="-+---+-+-+-" rhyme="B">y al punto de la muerte y fin <w type="rhyme">venido</w>,</l>
+            <l n="3" met="-+-+-+-+-+-" rhyme="B">y tantas he tornado y te he <w type="rhyme">seguido</w>,</l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">Amor, y nunca quedo <w type="rhyme">escarmentado</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="++-+-+-+-+-" rhyme="A">mil veces he propuesto y he <w type="rhyme">jurado</w>
+            </l>
+            <l n="6" met="-+-+-+---+-" rhyme="B">de no seguir tu bando y tu <w type="rhyme">partido</w>,</l>
+            <l n="7" met="+----++--+-" rhyme="B">viéndome en tu poder triste y <w type="rhyme">perdido</w>,</l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">y tantas mi palabra y fe he <w type="rhyme">quebrado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+-+-+-" rhyme="C">Ahora, en este trance y mal que <w type="rhyme">siento</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">causado de tus manos <w type="rhyme">crudamente</w>,</l>
+            <l n="11" met="+++--+---+-" rhyme="C">bien justo era cumplir el <w type="rhyme">juramento</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-+-+-+-" rhyme="D">mas, triste, ¿qué haré, que no <w type="rhyme">consiente</w>
+            </l>
+            <l n="13" met="-+-+-+---+-" rhyme="C">la dura suerte, el áspero <w type="rhyme">tormento</w>,</l>
+            <l n="14" met="-+---+-+-+-" rhyme="D">que el siervo del señor se halle <w type="rhyme">ausente</w>?</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

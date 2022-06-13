@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XXII - A don Juan de Castelvi y Lanza</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XXII - A don Juan de Castelvi y Lanza </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+---+-+-" rhyme="A">Tantos blasones cuantos veo <w type="rhyme">ceñidos</w>
+            </l>
+            <l n="2" met="---+-++--+-" rhyme="B">en tu gloriosa frente, Héroe <w type="rhyme">dichoso</w>
+            </l>
+            <l n="3" met="+--+-+---+-" rhyme="B">son de tus prendas timbre <w type="rhyme">generoso</w>,</l>
+            <l n="4" met="--+--+---+-" rhyme="A">como admiran los bronces <w type="rhyme">repetidos</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Bien la Trinacria a tu Castillo <w type="rhyme">unidos</w>
+            </l>
+            <l n="6" met="---+-+---+-" rhyme="B">sus pedernales da, y <w type="rhyme">Majestuoso</w>
+            </l>
+            <l n="7" met="-+---+---+-" rhyme="B">ostenta en su grandeza lo <w type="rhyme">famoso</w>,</l>
+            <l n="8" met="--+--+-+-+-" rhyme="A">con que exalta los hechos más <w type="rhyme">lucidos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+--++-+-" rhyme="C">Desde su cuna a la más alta <w type="rhyme">cumbre</w>
+            </l>
+            <l n="10" met="-+---+---+-" rhyme="D">subiste de las puntas del <w type="rhyme">Parnaso</w>,</l>
+            <l n="11" met="--+--+-+-+-" rhyme="E">ilustrando su más florida <w type="rhyme">rama</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="C">Y al fatigar su excelsa <w type="rhyme">pesadumbre</w>,</l>
+            <l n="13" met="+--+---+-+-" rhyme="D">quiso tu ingenio acelerar el <w type="rhyme">paso</w>,</l>
+            <l n="14" met="---+-+---+-" rhyme="E">y se pasó a los ecos de la <w type="rhyme">fama</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

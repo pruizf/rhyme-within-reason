@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 873 - Acto III, ALBANO De El juez en su causa</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 873 - Acto III, ALBANO De El juez en su causa </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+--++-" rhyme="A">Celos, que tantas veces me habéis <w type="rhyme">dado</w>
+            </l>
+            <l n="2" met="++---+---+-" rhyme="B">tan ásperos y extraños <w type="rhyme">desconsuelos</w>,</l>
+            <l n="3" met="--+--+---+-" rhyme="B">que con ser de carámbanos y <w type="rhyme">hielos</w>
+            </l>
+            <l n="4" met="++---+---+-" rhyme="A">me he visto entre vosotros <w type="rhyme">abrasado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="--+--+-+-+-" rhyme="A">Perdonadme si infierno os he <w type="rhyme">llamado</w>,</l>
+            <l n="6" met="+-+--+-+++-" rhyme="B">celos, hijos de amor, que ya sois <w type="rhyme">cielos</w>,</l>
+            <l n="7" met="-+--++--++-" rhyme="B">que algunos que no saben lo que es <w type="rhyme">celos</w>
+            </l>
+            <l n="8" met="-+--++-+-+-" rhyme="A">la letra que yo os doy os han <w type="rhyme">quitado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+-+-+---+-" rhyme="C">Hurtado habéis el sol de los <w type="rhyme">efectos</w>,</l>
+            <l n="10" met="---+---+-+-" rhyme="D">pues que la nieve enternecéis <w type="rhyme">buscados</w>
+            </l>
+            <l n="11" met="---+-+---+-" rhyme="E">y endurecéis la tierra <w type="rhyme">conocidos</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+-+--+---+-" rhyme="C">Bien os llaman heridas los <w type="rhyme">discretos</w>,</l>
+            <l n="13" met="--+-++---+-" rhyme="D">que, en efecto, sois buenos para <w type="rhyme">dados</w>
+            </l>
+            <l n="14" met="-+---+---+-" rhyme="E">y malos en extremo <w type="rhyme">recibidos</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

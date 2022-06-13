@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- 3 - Dedicatoria de la lira, con que piensa celebrar su belleza</title>
+            <author> Lope De Vega</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Lope de Vega</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- 3 - Dedicatoria de la lira, con que piensa celebrar su belleza </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+-+-+-" rhyme="A">A ti la lira, a ti de Delfo y <w type="rhyme">Delo</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">Juana, la voz, los versos y la <w type="rhyme">fama</w>,</l>
+            <l n="3" met="---+-+---+-" rhyme="B">que mientras más tu hielo me <w type="rhyme">desama</w>,</l>
+            <l n="4" met="++-+---+-+-" rhyme="A">más arde amor en su inmortal <w type="rhyme">desvelo</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+---+-+-" rhyme="A">Criome ardiente salamandra el <w type="rhyme">cielo</w>,</l>
+            <l n="6" met="---+-++--+-" rhyme="B">como Sirena a ti, menos la <w type="rhyme">escama</w>,</l>
+            <l n="7" met="--+--+-+-+-" rhyme="B">para ser mariposa no eres <w type="rhyme">llama</w>,</l>
+            <l n="8" met="+--+---+-+-" rhyme="A">fuerza será mariposar en <w type="rhyme">hielo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+++---+-+-" rhyme="C">Mi amor es fuego elemental <w type="rhyme">segundo</w>,</l>
+            <l n="10" met="-+---+-+-+-" rhyme="D">de Scitia tu desdén los hielos <w type="rhyme">bebe</w>,</l>
+            <l n="11" met="+--+---+-+-" rhyme="C">tal imposible a mi esperanza <w type="rhyme">fundo</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="---+-+---+-" rhyme="D">Pues a decir que fuéramos se <w type="rhyme">atreve</w>,</l>
+            <l n="13" met="--+--+-+-+-" rhyme="C">cuando no los hubiera en todo el <w type="rhyme">mundo</w>,</l>
+            <l n="14" met="+++--+-+-+-" rhyme="D">yo Amor, Juana desdén, su pecho <w type="rhyme">nieve</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

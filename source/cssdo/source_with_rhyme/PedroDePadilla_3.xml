@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XI -</title>
+            <author> Pedro De Padilla</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Pedro de Padilla</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XI - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+--+-+---+-" rhyme="A">Diosa mortal, divina <w type="rhyme">hermosura</w>,</l>
+            <l n="2" met="+--+-+---+-" rhyme="B">obra que el cielo hizo sin <w type="rhyme">enmienda</w>,</l>
+            <l n="3" met="+-+--+---+-" rhyme="B">no es posible que nadie oh <w type="rhyme">comprenda</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">al justo el bien que el veros <w type="rhyme">asegura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="+--+-+---+-" rhyme="A">Sola mi alma tiene por <w type="rhyme">ventura</w>
+            </l>
+            <l n="6" met="-----+++-+-" rhyme="B">aunque de vuestro ser tan poco <w type="rhyme">entienda</w>
+            </l>
+            <l n="7" met="+-++-+-+-+-" rhyme="B">no tener parte así, que no la <w type="rhyme">encienda</w>
+            </l>
+            <l n="8" met="---+-+-+-+-" rhyme="A">con vuestros ojos, dulce llama <w type="rhyme">pura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="---+++-+-+-" rhyme="C">Humanizar un poco bella <w type="rhyme">Diosa</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">al ver en mis entrañas el <w type="rhyme">estrago</w>
+            </l>
+            <l n="11" met="++---+-+-+-" rhyme="E">(bien digno de mirar, que el fuego ha <w type="rhyme">hecho</w>).</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-----++--+-" rhyme="D">En las cuales de nuevo otra <w type="rhyme">Cartago</w>
+            </l>
+            <l n="13" met="-+-+++-+-+-" rhyme="C">llegando a ver es fuerza ser <w type="rhyme">piadosa</w>
+            </l>
+            <l n="14" met="++---+---+-" rhyme="E">aún siendo de diamante vuestro <w type="rhyme">pecho</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

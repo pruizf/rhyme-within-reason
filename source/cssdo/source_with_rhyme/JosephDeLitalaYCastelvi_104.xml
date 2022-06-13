@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- LV - Fuerza del amor con los dioses</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- LV - Fuerza del amor con los dioses </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+-+-+---+-" rhyme="A">A Daphne sigue Apolo <w type="rhyme">enamorado</w>,</l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">y en Elis fue Pastor tan <w type="rhyme">divertido</w>,</l>
+            <l n="3" met="--+--+-+-+-" rhyme="B">que los Montes y Valles vio <w type="rhyme">perdido</w>,</l>
+            <l n="4" met="---+-+---+-" rhyme="A">apacentando Amante su <w type="rhyme">ganado</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">En Cisne a Jove mito <w type="rhyme">transformado</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">por Leda, y por Europa dio un <w type="rhyme">bramido</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y escalando el retiro <w type="rhyme">prevenido</w>,</l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">por Daphne en lluvia de oro <w type="rhyme">desatado</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+--+-+---+-" rhyme="C">Marte por Venus, Pan por la <w type="rhyme">hermosura</w>
+            </l>
+            <l n="10" met="--+--+-+-+-" rhyme="D">de Siringa, que gime en débil <w type="rhyme">caña</w>,</l>
+            <l n="11" met="-+---+---+-" rhyme="C">suspiran con dulcísima <w type="rhyme">ternura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+---+-+-+-" rhyme="D">Saturno por Philira el suelo <w type="rhyme">baña</w>,</l>
+            <l n="13" met="---+---+-+-" rhyme="C">que hasta del Cielo la mayor <w type="rhyme">altura</w>,</l>
+            <l n="14" met="+-+--+---+-" rhyme="D">no le libra de Amor, y de su <w type="rhyme">saña</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XCII - A Seyano, privado del emperador Tiberio, que murió arrastrado de la plebe</title>
+            <author> Joseph De Litala Y Castelvi</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Joseph de Litala y Castelvi</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XCII - A Seyano, privado del emperador Tiberio, que murió arrastrado de la plebe </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="---+-+---+-" rhyme="A">La Voluntad y gusto de <w type="rhyme">Tiberio</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">en tu mano tuviste (o Gran <w type="rhyme">Seyano</w>)</l>
+            <l n="3" met="---+-+-+-+-" rhyme="B">pero aunque en él tuviste tanta <w type="rhyme">mano</w>;</l>
+            <l n="4" met="+-++-+-+-+-" rhyme="A">suyo fue el Trono, y suyo fue el <w type="rhyme">Imperio</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+---+---+-" rhyme="A">Moriste con infame <w type="rhyme">vituperio</w>
+            </l>
+            <l n="6" met="--+--+-+-+-" rhyme="B">arrastrado del Vulgo, torpe, <w type="rhyme">insano</w>,</l>
+            <l n="7" met="---+---+-+-" rhyme="B">y la Cabeza, que adoró el <w type="rhyme">Romano</w>,</l>
+            <l n="8" met="+--+-----+-" rhyme="A">fue en las cocinas bajo <w type="rhyme">ministerio</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="-+---+-+-+-" rhyme="C">A Grandes y Privados fuiste <w type="rhyme">ejemplo</w>,</l>
+            <l n="10" met="-+---+---+-" rhyme="D">que aspiran a la cumbre, y a la <w type="rhyme">Alteza</w>,</l>
+            <l n="11" met="+--+-+---+-" rhyme="E">nubes pisando en máquina <w type="rhyme">luciente</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+--+-+-+-+-" rhyme="C">Bien mereció caer, quien quiso <w type="rhyme">Templo</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="D">que en lo sublime se anda la <w type="rhyme">Cabeza</w>,</l>
+            <l n="14" met="+-+--++--+-" rhyme="E">y es despeño el dosel más <w type="rhyme">eminente</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

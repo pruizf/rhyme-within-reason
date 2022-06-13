@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLVIII -</title>
+            <author> Fcode Borja Y Aragon Principe Esquilache</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Fcode Borja</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLVIII - </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="+----++--+-" rhyme="A">Pasa la senectud frágiles <w type="rhyme">horas</w>,</l>
+            <l n="2" met="-+-+-++--+-" rhyme="B">que en más gallarda edad fueron <w type="rhyme">robustas</w>.</l>
+            <l n="3" met="-+---+-+-+-" rhyme="B">Si fía de esperanzas, son <w type="rhyme">injustas</w>;</l>
+            <l n="4" met="-+---+-+-+-" rhyme="A">si vive de promesas, son <w type="rhyme">traidoras</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Las diestras otro tiempo <w type="rhyme">vencedoras</w>,</l>
+            <l n="6" met="-+---+-+-+-" rhyme="B">con triunfos, y coronas más <w type="rhyme">Augustas</w>,</l>
+            <l n="7" met="+--+---+-+-" rhyme="B">tiemblan del tiempo, que sus leyes <w type="rhyme">justas</w>
+            </l>
+            <l n="8" met="-+-+-+---+-" rhyme="A">de noches no refrenan las <w type="rhyme">Auroras</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="++-+++---+-" rhyme="C">Si esto es así, ¿qué engaño <w type="rhyme">lisonjero</w>
+            </l>
+            <l n="10" met="-+-+-+---+-" rhyme="D">en ti despierta, Lice, los <w type="rhyme">ardores</w>
+            </l>
+            <l n="11" met="-+-+---+-+-" rhyme="C">del siglo hermoso de tu edad <w type="rhyme">primero</w>?</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="-+-+-++--+-" rhyme="D">Querer en larga edad gustos de <w type="rhyme">amores</w>,</l>
+            <l n="13" met="+-+--+-+-+-" rhyme="C">es pedirle calor al sol de <w type="rhyme">Enero</w>,</l>
+            <l n="14" met="---+-----+-" rhyme="D">a Julio nieves, y a Diciembre <w type="rhyme">flores</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

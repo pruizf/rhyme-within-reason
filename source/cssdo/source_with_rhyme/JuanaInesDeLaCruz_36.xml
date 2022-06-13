@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- XLI - Aplaude la ciencia astronómica del padre Francisco Kino</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- XLI - Aplaude la ciencia astronómica del padre Francisco Kino </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-++--+--++-" rhyme="A">Aunque es clara del Cielo la luz <w type="rhyme">pura</w>
+            </l>
+            <l n="2" met="+--+-+---+-" rhyme="B">clara la Luna, y claras las <w type="rhyme">Estrellas</w>,</l>
+            <l n="3" met="-+---+---+-" rhyme="B">y clara las efímeras <w type="rhyme">centellas</w>,</l>
+            <l n="4" met="-+-+---+-+-" rhyme="A">que el aire eleva, y el incendio <w type="rhyme">apura</w>.</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+-+---+-" rhyme="A">Aunque es el rayo claro, cuya <w type="rhyme">dura</w>
+            </l>
+            <l n="6" met="--++-+---+-" rhyme="B">producción, cuesta al viento mi <w type="rhyme">querellas</w>,</l>
+            <l n="7" met="--+--+---+-" rhyme="B">y el relámpago, que hizo de su <w type="rhyme">huellas</w>
+            </l>
+            <l n="8" met="-+-+---+-+-" rhyme="A">medrosa luz en la tiniebla <w type="rhyme">oscura</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="+----+-+-+-" rhyme="C">Todo el conocimiento torpe <w type="rhyme">humano</w>,</l>
+            <l n="10" met="-+-+-----+-" rhyme="D">se estuvo oscuro, sin que los <w type="rhyme">mortales</w>,</l>
+            <l n="11" met="+--+-+-+-+-" rhyme="C">plumas pudiesen ser, con vuelo <w type="rhyme">ufano</w>.</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+---+-" rhyme="D">Ícaros de discursos <w type="rhyme">racionales</w>,</l>
+            <l n="13" met="---+-+---+-" rhyme="C">hasta que al tuyo, Eusebio <w type="rhyme">soberano</w>,</l>
+            <l n="14" met="-+-+-+---+-" rhyme="D">les dio a las luces, luces <w type="rhyme">celestiales</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

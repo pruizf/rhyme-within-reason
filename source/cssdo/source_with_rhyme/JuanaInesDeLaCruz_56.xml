@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>- VI - Escoge antes el morir que exponerse a los ultrajes de la vejez</title>
+            <author> Juana Ines De La Cruz</author>
+            <respStmt>
+               <name>Borja Navarro Colorado</name>
+               <resp>Metrical patterns annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="prf">Pablo Ruiz Fabo</name>
+               <resp>Rhyme annotation</resp>
+            </respStmt>
+            <respStmt>
+               <name xml:id="heb">Helena Bermúdez Sabel</name>
+               <resp>Encoding review</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonetos</title> de <author>Juana Ines de La Cruz</author>. <publisher>Biblioteca Virtual Miguel de Cervantes</publisher>, edición de <editor role="editor">Ramón García González</editor>.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <metDecl xml:id="bncolorado" type="met" pattern="((\+|\-)+)*">
+            <metSym value="+">stressed syllable</metSym>
+            <metSym value="-">unstressed syllable</metSym>
+         </metDecl>
+         <metDecl>
+            <p>All metrical patterns have been extracted automatically.</p>
+         </metDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#heb" when="2022-06-11">Retrieved files from <ptr target="https://github.com/bncolorado/CorpusSonetosSigloDeOro"/>
+         </change>
+         <change who="#prf" when="2022-06-11">Added rhyme annotation using <ref target="https://github.com/versotym/rhymeTagger">rhymetagger</ref>
+         </change>
+         <change who="#heb" when="2022-06-11">Added rhyme word and title/author metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <title>- VI - Escoge antes el morir que exponerse a los ultrajes de la vejez </title>
+         </head>
+         <lg type="cuarteto">
+            <l n="1" met="-+++-+---+-" rhyme="A">Miró Celia una rosa que en el <w type="rhyme">prado</w>
+            </l>
+            <l n="2" met="--+--+-+-+-" rhyme="B">ostentaba feliz la pompa <w type="rhyme">vana</w>
+            </l>
+            <l n="3" met="---+---+-+-" rhyme="B">y con afeites de carmín y <w type="rhyme">grana</w>
+            </l>
+            <l n="4" met="-+-+-+---+-" rhyme="A">bañaba alegre el rostro <w type="rhyme">delicado</w>;</l>
+         </lg>
+         <lg type="cuarteto">
+            <l n="5" met="-+-+---+-+-" rhyme="A">y dijo: -Goza, sin temor del <w type="rhyme">Hado</w>
+            </l>
+            <l n="6" met="-+-+---+-+-" rhyme="B">el curso breve de tu edad <w type="rhyme">lozana</w>,</l>
+            <l n="7" met="-+-+-+---+-" rhyme="B">pues no podrá la muerte de <w type="rhyme">mañana</w>
+            </l>
+            <l n="8" met="-+---+-+-+-" rhyme="A">quitarte lo que hubieres hoy <w type="rhyme">gozado</w>;</l>
+         </lg>
+         <lg type="terceto">
+            <l n="9" met="--+--+---+-" rhyme="C">y aunque llega la muerte <w type="rhyme">presurosa</w>
+            </l>
+            <l n="10" met="---+-+---+-" rhyme="D">y tu fragante vida se te <w type="rhyme">aleja</w>,</l>
+            <l n="11" met="++---+++-+-" rhyme="-">no sientas el morir tan bella y moza:</l>
+         </lg>
+         <lg type="terceto">
+            <l n="12" met="+----+---+-" rhyme="D">mira que la experiencia te <w type="rhyme">aconseja</w>
+            </l>
+            <l n="13" met="+-+--+-+-+-" rhyme="C">que es fortuna morirte siendo <w type="rhyme">hermosa</w>
+            </l>
+            <l n="14" met="-++--+--++-" rhyme="D">y no ver el ultraje de ser <w type="rhyme">vieja</w>.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>
