@@ -2,7 +2,7 @@
 
 #df_path = "../data/dataframe-disco.tsv"
 df_path = "../data/dataframe-cssdo.tsv"
-df_lem = df_path.replace(".tsv", "_lem.tsv")
+df_lem = df_path.replace(".tsv", "_lem3.tsv")
 spacy_model = "es_core_news_sm"
 #spacy_model = "es_dep_news_trf"
 
