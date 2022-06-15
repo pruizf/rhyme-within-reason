@@ -185,77 +185,75 @@ if __name__ == "__main__":
     for toko in poem_ana:
       wf_infos.append([toko.text.lower(), toko.lemma_.lower(), toko.idx])
     # get lemmas for call words ---------------------------
-    if True:
-      call_words = poem_infos['Call'].str.lower().tolist()
-      last_call_index = 0
-      for call_word in call_words:
-        clean_call_word = clean_token(call_word)
-        if clean_call_word in skip_call_words:
-          print(f"  - Skipping call word: [{clean_call_word}]")
-          call_word_lemmas.append("BADWF")
-          continue
-        if clean_call_word in custom_lemmas:
-          call_lemma = [custom_lemmas[clean_call_word]]
-          call_word_infos = [['', '', last_call_index]]
-        elif "(" in call_word or ")" in clean_call_word:
-          call_lemma = ["UNK"]
-          call_word_infos = [['', '', last_call_index]]
-          print(f"  - Call: [{call_word}] Lemma: [UNK]")
-        else:
-          call_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == clean_call_word]
-          if len(call_word_infos) == 0:
-            call_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == strip_affixes(clean_call_word)]
-          assert len(call_word_infos) > 0
-          # get the lemma for the first possible word-form after the last one covered
-          call_lemma = [cw[1] for cw in call_word_infos if cw[-1] >= last_call_index]
-          assert len(call_lemma) > 0
-        last_call_index = min([cw[-1] for cw in call_word_infos if cw[-1] >= last_call_index])
-        DBG and logfd.write("{}\t{}\n".format(call_word, call_lemma[0]))
-        #print("  - {} {}".format(call_word, call_lemma[0]))
-        call_word_lemmas.append(call_lemma[0])
-      logfd.flush()
+    call_words = poem_infos['Call'].str.lower().tolist()
+    last_call_index = 0
+    for call_word in call_words:
+      clean_call_word = clean_token(call_word)
+      if clean_call_word in skip_call_words:
+        print(f"  - Skipping call word: [{clean_call_word}]")
+        call_word_lemmas.append("BADWF")
+        continue
+      if clean_call_word in custom_lemmas:
+        call_lemma = [custom_lemmas[clean_call_word]]
+        call_word_infos = [['', '', last_call_index]]
+      elif "(" in call_word or ")" in clean_call_word:
+        call_lemma = ["UNK"]
+        call_word_infos = [['', '', last_call_index]]
+        print(f"  - Call: [{call_word}] Lemma: [UNK]")
+      else:
+        call_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == clean_call_word]
+        if len(call_word_infos) == 0:
+          call_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == strip_affixes(clean_call_word)]
+        assert len(call_word_infos) > 0
+        # get the lemma for the first possible word-form after the last one covered
+        call_lemma = [cw[1] for cw in call_word_infos if cw[-1] >= last_call_index]
+        assert len(call_lemma) > 0
+      last_call_index = min([cw[-1] for cw in call_word_infos if cw[-1] >= last_call_index])
+      DBG and logfd.write("{}\t{}\n".format(call_word, call_lemma[0]))
+      #print("  - {} {}".format(call_word, call_lemma[0]))
+      call_word_lemmas.append(call_lemma[0])
+    logfd.flush()
 
-      if pidx > 0 and not pidx % 100:
-        print(f"- Done calls {pidx} poems [{strftime('%R')}]")
-      if pidx > 10000:
-        break
+    if pidx > 0 and not pidx % 100:
+      print(f"- Done calls {pidx} poems [{strftime('%R')}]")
+    if pidx > 10000:
+      break
 
     # get lemmas for echo ---------------------------------
-    if True:
-      echo_words = poem_infos['Echo'].str.lower().tolist()
-      last_echo_index = 0
-      for echo_word in echo_words:
-        if echo_word == ' ':
-          echo_word_lemmas.append(" ")
-          echo_word_infos = [['', '', last_echo_index]]
-          continue
-        clean_echo_word = clean_token(echo_word)
-        if clean_echo_word in skip_echo_words:
-          print(f"  - Skipping echo word: [{clean_echo_word}]")
-          echo_word_lemmas.append("BADWF")
-          echo_word_infos = [['', '', last_echo_index]]
-          continue
-        if clean_echo_word in custom_lemmas:
-          echo_lemma = [custom_lemmas[clean_echo_word]]
-          echo_word_infos = [['', '', last_echo_index]]
-        elif "(" in echo_word or ")" in clean_echo_word:
-          echo_lemma = ["UNK"]
-          echo_word_infos = [['', '', last_echo_index]]
-          print(f"  - Call: [{echo_word}] Lemma: [UNK]")
-        else:
-          echo_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == clean_echo_word]
-          if len(echo_word_infos) == 0:
-            echo_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == strip_affixes(clean_echo_word)]
-          assert len(echo_word_infos) > 0
-          #echo_lemma = [cw[1] for cw in echo_word_infos if cw[-1] >= last_echo_index]
-          echo_lemma = [cw[1] for cw in echo_word_infos if cw[-1]]
-          assert len(echo_lemma) > 0
-        #last_echo_index = min([cw[-1] for cw in echo_word_infos if cw[-1] >= last_echo_index])
-        last_echo_index = last_echo_index
-        DBG and logfd.write("{}\t{}\n".format(echo_word, echo_lemma[0]))
-        #print("  - {} {}".format(echo_word, echo_lemma[0]))
-        echo_word_lemmas.append(echo_lemma[0])
-    #logfd.flush()
+    echo_words = poem_infos['Echo'].str.lower().tolist()
+    last_echo_index = 0
+    for echo_word in echo_words:
+      if echo_word == ' ':
+        echo_word_lemmas.append(" ")
+        echo_word_infos = [['', '', last_echo_index]]
+        continue
+      clean_echo_word = clean_token(echo_word)
+      if clean_echo_word in skip_echo_words:
+        print(f"  - Skipping echo word: [{clean_echo_word}]")
+        echo_word_lemmas.append("BADWF")
+        echo_word_infos = [['', '', last_echo_index]]
+        continue
+      if clean_echo_word in custom_lemmas:
+        echo_lemma = [custom_lemmas[clean_echo_word]]
+        echo_word_infos = [['', '', last_echo_index]]
+      elif "(" in echo_word or ")" in clean_echo_word:
+        echo_lemma = ["UNK"]
+        echo_word_infos = [['', '', last_echo_index]]
+        print(f"  - Call: [{echo_word}] Lemma: [UNK]")
+      else:
+        echo_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == clean_echo_word]
+        if len(echo_word_infos) == 0:
+          echo_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == strip_affixes(clean_echo_word)]
+        assert len(echo_word_infos) > 0
+        #echo_lemma = [cw[1] for cw in echo_word_infos if cw[-1] >= last_echo_index]
+        echo_lemma = [cw[1] for cw in echo_word_infos if cw[-1]]
+        assert len(echo_lemma) > 0
+      #last_echo_index = min([cw[-1] for cw in echo_word_infos if cw[-1] >= last_echo_index])
+      last_echo_index = last_echo_index
+      DBG and logfd.write("{}\t{}\n".format(echo_word, echo_lemma[0]))
+      #print("  - {} {}".format(echo_word, echo_lemma[0]))
+      echo_word_lemmas.append(echo_lemma[0])
+    # logfd.flush()
 
     if pidx > 0 and not pidx % 100:
       print(f"- Done echos {pidx} poems [{strftime('%R')}]")
