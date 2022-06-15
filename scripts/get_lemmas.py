@@ -155,6 +155,10 @@ if __name__ == "__main__":
   nlp = spacy_stanza.load_pipeline("es", processors="tokenize,pos,lemma",
                                    verbose=False, logging_level='ERROR')
   df = pd.read_csv(cf.df_path, sep="\t", index_col=None)
+
+  df.replace("", np.nan, inplace=True)
+  df = df.dropna(axis=0, how='all')
+
   poem_ids = df['SonnetID'].unique()
   # nan not equal to itself
   poem_ids = list(filter(lambda pid: pid==pid, poem_ids))
