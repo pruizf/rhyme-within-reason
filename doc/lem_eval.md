@@ -5,13 +5,14 @@
 - total number of rhyme words reviewed: 347
 
 ## Results
-- Accuracy: 94.23 (number of errors: 25/347)
+- Accuracy: 92.5 (number of errors: 26/347)
 
 ## List of errors
 - labrado: labrado (labrar)
 - yerra: ir (errar)
 - entenas: enteno (entena)
 - mora: mora (morar)
+- desdora: desdor (desdorar)
 - forzada: forzado (forzar)
 - llevada: llevado (llevar)
 - derecha: derecha (derecho)
