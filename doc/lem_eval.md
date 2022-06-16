@@ -5,7 +5,7 @@
 - total number of rhyme words reviewed: 347
 
 ## Results
-- Accuracy: 92.5 (number of errors: 26/347)
+- Accuracy: 92.21 (number of errors: 27/347)
 
 ## List of errors
 - labrado: labrado (labrar)
@@ -22,7 +22,7 @@
 - escondida: escondido (esconder)
 - embravecido: embravecido (embravecer)
 - embebecido: embebecido (embebecer)
-- adormecido: adormecido (adormecer)
+- adormecido: adormecido (adormecer) [x2]
 - cerrado: cerrado (cerrar)
 - cansado: cansado (cansar)
 - conmutado: conmutado (conmutar)
