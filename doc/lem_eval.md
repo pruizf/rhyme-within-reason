@@ -9,7 +9,7 @@
 
 ## List of errors
 - labrado: labrado (labrar)
-- yerra: ir (hierrar)
+- yerra: ir (errar)
 - entenas: enteno (entena)
 - mora: mora (morar)
 - forzada: forzado (forzar)
