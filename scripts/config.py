@@ -24,7 +24,7 @@ lexdir = "../lexica"
 nrc_ei = os.path.join(lexdir, "Spanish-es-NRC-Emotion-Intensity-Lexicon-v1.txt")
 nrc_vad = os.path.join(lexdir, "Spanish-es-NRC-VAD-Lexicon.txt")
 
-emonames = {"anger", "anticipation", "disgust", "fear", "joy", "sadness",
-            "surprise", "trust"}
+emonames = sorted({"anger", "anticipation", "disgust", "fear", "joy", "sadness",
+                   "surprise", "trust"})
 
-vadnames = {"valence", "arousal", "domination"}
+vadnames = sorted({"valence", "arousal", "dominance"})

@@ -32,6 +32,7 @@ brutality	brutalidad	fear	0.922
 # for each word-form
 #   add infos to df if found in lexica
 #   if not found, see if find infos for their lemma and add
+# per-poem info (poems with all rhymes covered vs not)
 
 
 def collect_emotions_per_term(lx):
@@ -61,19 +62,25 @@ def collect_vad_per_term(lx):
   return lem2scores, lem2aves
 
 
-def add_annots_to_df(df, idx, annots, target):
+def add_annots_to_df(df, idx, annots, target, lextype):
   """
   Given a dataframe at index `idx`, add its emotion and VAD
-  annotations to the relevant (emotion_call or emotion_echo) column
+  annotations to the relevant (emotion_call or emotion_echo) column;
+  `lextype` shows whether EI or VAD was the source lexicon.
   """
   assert target in ("call", "echo")
+  assert lextype in ("vad", "ei")
   for ename, escore in annots.items():
+    #bin_score = [0]
     df.loc[idx, f"{ename}_{target}"] = escore
+  df.loc[idx, f"{target}_in_{lextype}"] = 1
 
 
 if __name__ == "__main__":
   print(f"- Start [{strftime('%R')}]")
   cdf = pd.read_csv(cf.df_lem_sets, sep="\t")
+  # preprocessing
+  cdf['Echo'].replace(' ', np.nan, inplace=True)
   # emo and vad df just in case (but infos are hashed into a dict elsewhere)
   edf = pd.read_csv(cf.nrc_ei, sep="\t")
   vdf = pd.read_csv(cf.nrc_vad, sep="\t")
@@ -83,6 +90,10 @@ if __name__ == "__main__":
   # hash vad per lemma
   print(f"-   Hash VAD [{strftime('%R')}]")
   lem2vad_raw, lem2vad = collect_vad_per_term(cf.nrc_vad)
+  cdf["call_in_vad"] = np.nan
+  cdf["echo_in_vad"] = np.nan
+  cdf["call_in_ei"] = np.nan
+  cdf["echo_in_ei"] = np.nan
   for emoname in cf.emonames:
     cdf[f"{emoname}_call"] = np.nan
     cdf[f"{emoname}_echo"] = np.nan
@@ -105,15 +116,25 @@ if __name__ == "__main__":
     vinfos_echo_raw = lem2vad_raw.get(echo_lemma)
     # populate emo and vad columns
     if einfos_call is not None:
-      add_annots_to_df(cdf, idx, einfos_call, "call")
+      add_annots_to_df(cdf, idx, einfos_call, "call", "ei")
     if einfos_echo is not None:
-      add_annots_to_df(cdf, idx, einfos_echo, "echo")
+      add_annots_to_df(cdf, idx, einfos_echo, "echo", "ei")
     if vinfos_call is not None:
-      add_annots_to_df(cdf, idx, vinfos_call, "call")
+      add_annots_to_df(cdf, idx, vinfos_call, "call", "vad")
     if vinfos_echo is not None:
-      add_annots_to_df(cdf, idx, vinfos_echo, "echo")
+      add_annots_to_df(cdf, idx, vinfos_echo, "echo", "vad")
     if idx > 0 and not idx % 5000:
-      print(f"- Done echos {idx} poems [{strftime('%R')}]")
+      print(f"- Done {idx} rhymes [{strftime('%R')}]")
 
   cdf.to_csv(cf.df_emos, sep='\t', index=False)
-  print(f"- End [{strftime('%R')}]")
+  print(f"- End [{strftime('%R')}]\n")
+
+  # print
+  pd.options.display.float_format = "{:,.2f}".format
+  percent_missing = cdf.isnull().sum() * 100 / len(cdf)
+  percent_available = 100 - percent_missing
+  missing_value_df = pd.DataFrame({'column_name': cdf.columns,
+                                   'percent_available': percent_available,
+                                   'percent_missing': percent_missing})
+  print(missing_value_df)
+
