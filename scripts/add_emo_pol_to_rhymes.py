@@ -39,7 +39,7 @@ def collect_emotions_per_term(lx):
   lem2scores = {}
   df = pd.read_csv(lx, sep="\t")
   for idx, row in df.iterrows():
-    lem = row['Spanish-es']
+    lem = row['Spanish-es'].lower()
     lem2scores.setdefault(lem, {})
     lem2scores[lem][row["emotion"]] = row["emotion-intensity-score"]
   return lem2scores
@@ -51,7 +51,7 @@ def collect_vad_per_term(lx):
   lem2aves = {}
   df = pd.read_csv(lx, sep="\t")
   for idx, row in df.iterrows():
-    lem = row['Spanish-es']
+    lem = row['Spanish-es'].lower()
     lem2scores.setdefault(lem, {"valence": [], "arousal": [], "dominance": []})
     for attr in ("valence", "arousal", "dominance"):
       lem2scores[lem][attr].append(row[attr[0].upper()+attr[1:]])
@@ -62,7 +62,7 @@ def collect_vad_per_term(lx):
   return lem2scores, lem2aves
 
 
-def add_annots_to_df(df, idx, annots, target, lextype):
+def add_annots_to_df(df, idx, annots, target, lextype, mode="lemma"):
   """
   Given a dataframe at index `idx`, add its emotion and VAD
   annotations to the relevant (emotion_call or emotion_echo) column;
@@ -70,10 +70,12 @@ def add_annots_to_df(df, idx, annots, target, lextype):
   """
   assert target in ("call", "echo")
   assert lextype in ("vad", "ei")
+  assert mode in ("lemma", "wf")
   for ename, escore in annots.items():
     #bin_score = [0]
     df.loc[idx, f"{ename}_{target}"] = escore
-  df.loc[idx, f"{target}_in_{lextype}"] = 1
+  modesuf = "wf_" if mode == "wf" else ""
+  df.loc[idx, f"{target}_{modesuf}in_{lextype}"] = 1
 
 
 if __name__ == "__main__":
@@ -94,6 +96,10 @@ if __name__ == "__main__":
   cdf["echo_in_vad"] = np.nan
   cdf["call_in_ei"] = np.nan
   cdf["echo_in_ei"] = np.nan
+  cdf["call_wf_in_vad"] = np.nan
+  cdf["echo_wf_in_vad"] = np.nan
+  cdf["call_wf_in_ei"] = np.nan
+  cdf["echo_wf_in_ei"] = np.nan
   for emoname in cf.emonames:
     cdf[f"{emoname}_call"] = np.nan
     cdf[f"{emoname}_echo"] = np.nan
@@ -103,26 +109,55 @@ if __name__ == "__main__":
   print(f"-   Populate df [{strftime('%R')}]")
   #TODO: actually, should look at the word-form too if lemma not found in lexica
   for idx, row in cdf.iterrows():
-    call_lemma = row.CallLemma
-    echo_lemma = row.EchoLemma
+    # call_lemma = row.CallLemma
+    # echo_lemma = row.EchoLemma
     #if lemma == "gloria":
     #  breakpoint()
     # get emo and vad for row
-    einfos_call = lem2emo.get(call_lemma)
-    einfos_echo = lem2emo.get(echo_lemma)
-    vinfos_call = lem2vad.get(call_lemma)
-    vinfos_echo = lem2vad.get(echo_lemma)
-    vinfos_call_raw = lem2vad_raw.get(call_lemma)
-    vinfos_echo_raw = lem2vad_raw.get(echo_lemma)
+    einfos_call = lem2emo.get(row.CallLemma.lower())
+    einfos_echo = lem2emo.get(row.EchoLemma.lower())
+    vinfos_call = lem2vad.get(row.CallLemma.lower())
+    vinfos_echo = lem2vad.get(row.EchoLemma.lower())
+    vinfos_call_raw = lem2vad_raw.get(row.CallLemma.lower())
+    vinfos_echo_raw = lem2vad_raw.get(row.EchoLemma.lower())
+    # TODO function for below that takes row and works on call or echo
+    # based on "call" "echo" argument
     # populate emo and vad columns
+    #   call ei
     if einfos_call is not None:
       add_annots_to_df(cdf, idx, einfos_call, "call", "ei")
+    else:
+      einfos_call_wf = lem2emo.get(row.Call.lower())
+      if einfos_call_wf is not None:
+        add_annots_to_df(cdf, idx, einfos_call_wf, "call", "ei", mode="wf")
+        # cdf.loc[idx, f"call_wf_in_ei"] = 1
+    #   echo ei
     if einfos_echo is not None:
       add_annots_to_df(cdf, idx, einfos_echo, "echo", "ei")
+    else:
+      row_echo = row.Echo.lower() if pd.notna(row.Echo) else row.Echo
+      einfos_echo_wf = lem2emo.get(row_echo)
+      if einfos_echo_wf is not None:
+        add_annots_to_df(cdf, idx, einfos_echo_wf, "echo", "ei", mode="wf")
+        # cdf.loc[idx, f"echo_wf_in_ei"] = 1
+    #   call vad
     if vinfos_call is not None:
       add_annots_to_df(cdf, idx, vinfos_call, "call", "vad")
+    else:
+      vinfos_call_wf = lem2vad.get(row.Call.lower())
+      if vinfos_call_wf is not None:
+        add_annots_to_df(cdf, idx, vinfos_call_wf, "call", "vad", mode="wf")
+        # cdf.loc[idx, f"call_wf_in_vad"] = 1
+    #   echo vad
     if vinfos_echo is not None:
       add_annots_to_df(cdf, idx, vinfos_echo, "echo", "vad")
+    else:
+      row_echo = row.Echo.lower() if pd.notna(row.Echo) else row.Echo
+      vinfos_echo_wf = lem2vad.get(row_echo)
+      if vinfos_echo_wf is not None:
+        add_annots_to_df(cdf, idx, vinfos_echo_wf, "echo", "vad", mode="wf")
+        # cdf.loc[idx, f"echo_wf_in_vad"] = 1
+
     if idx > 0 and not idx % 5000:
       print(f"- Done {idx} rhymes [{strftime('%R')}]")
 

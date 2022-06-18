@@ -1,4 +1,5 @@
 # Project-specific
+.idea
 
 # nrc lexica cannot be redistributed, so git ignore them
 lexica/senticon.es.xml
