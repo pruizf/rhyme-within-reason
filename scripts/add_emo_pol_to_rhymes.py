@@ -130,7 +130,6 @@ if __name__ == "__main__":
       einfos_call_wf = lem2emo.get(row.Call.lower())
       if einfos_call_wf is not None:
         add_annots_to_df(cdf, idx, einfos_call_wf, "call", "ei", mode="wf")
-        # cdf.loc[idx, f"call_wf_in_ei"] = 1
     #   echo ei
     if einfos_echo is not None:
       add_annots_to_df(cdf, idx, einfos_echo, "echo", "ei")
@@ -139,7 +138,6 @@ if __name__ == "__main__":
       einfos_echo_wf = lem2emo.get(row_echo)
       if einfos_echo_wf is not None:
         add_annots_to_df(cdf, idx, einfos_echo_wf, "echo", "ei", mode="wf")
-        # cdf.loc[idx, f"echo_wf_in_ei"] = 1
     #   call vad
     if vinfos_call is not None:
       add_annots_to_df(cdf, idx, vinfos_call, "call", "vad")
@@ -147,7 +145,6 @@ if __name__ == "__main__":
       vinfos_call_wf = lem2vad.get(row.Call.lower())
       if vinfos_call_wf is not None:
         add_annots_to_df(cdf, idx, vinfos_call_wf, "call", "vad", mode="wf")
-        # cdf.loc[idx, f"call_wf_in_vad"] = 1
     #   echo vad
     if vinfos_echo is not None:
       add_annots_to_df(cdf, idx, vinfos_echo, "echo", "vad")
@@ -156,7 +153,6 @@ if __name__ == "__main__":
       vinfos_echo_wf = lem2vad.get(row_echo)
       if vinfos_echo_wf is not None:
         add_annots_to_df(cdf, idx, vinfos_echo_wf, "echo", "vad", mode="wf")
-        # cdf.loc[idx, f"echo_wf_in_vad"] = 1
 
     if idx > 0 and not idx % 5000:
       print(f"- Done {idx} rhymes [{strftime('%R')}]")
