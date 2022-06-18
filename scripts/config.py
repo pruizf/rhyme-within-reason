@@ -9,7 +9,7 @@ df_path = "../data/dataframe-all.tsv"
 #df_path = "../data/dataframe-cssdo.tsv"
 df_lem = df_path.replace(".tsv", "_lem.tsv")
 df_lem_sets = df_path.replace(".tsv", "_lem_sets.tsv")
-df_emos = df_lem_sets.replace(".tsv", "_emos8.tsv")
+df_emos = df_lem_sets.replace(".tsv", "_emos9.tsv")
 
 # nlp
 spacy_model = "es_core_news_sm"

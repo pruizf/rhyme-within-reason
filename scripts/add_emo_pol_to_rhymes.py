@@ -33,7 +33,14 @@ def collect_emotions_stadthagen_per_term(lx):
   df = pd.read_csv(lx, encoding="latin1")
   breakpoint()
   df = df.rename(columns=cf.stadthagen_emos_renamer)
-  breakpoint()
+  # scale data
+  for colname in cf.emonames:
+    try:
+      coldata = df[[colname]]
+    except KeyError:
+      continue
+    mm = MinMaxScaler()
+    df[colname] = mm.fit_transform(coldata)
   for idx, row in df.iterrows():
     lem = row['Word'].lower()
     lem2scores.setdefault(lem, {})
