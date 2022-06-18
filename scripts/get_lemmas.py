@@ -10,8 +10,10 @@ import stanza
 import spacy_stanza
 #from spacy_stanza import StanzaLanguage
 from time import strftime
-
 import warnings
+
+from custom_lemmas import custom_lemmas
+
 warnings.filterwarnings('ignore')
 
 
@@ -79,69 +81,6 @@ def add_lemmas_to_df(part_df, whole_df, column, word_forms):
         call_word_infos = [wf for wf in wf_infos if clean_token(wf[0]) == strip_affixes(clean_call_word)]
       assert len(call_word_infos) > 0
 
-
-# Word-forms with clitics not all caught by the `strip_affixes()` function above
-custom_lemmas = {"desvelo": "desvelar",
-                 "acometellas": "acometer",
-                 "alcanzallas": "alcanzar",
-                 "bastalle": "vencer",
-                 "cantimploras": "cantimplora",
-                 "cegalle": "cegar",
-                 "conocellas": "conocer",
-                 "contalle": "contar",
-                 "descomponellos": "descomponer",
-                 "egehe(n)la": "egeheno",
-                 "entendellas": "entender",
-                 "escribillos": "escribir",
-                 "esp(e)çial": "especial",
-                 "estandartes": "estandarte",
-                 "formalle": "formar",
-                 "frondoso": "frondoso",
-                 "ladralle": "ladrar",
-                 "levantose": "levantar",
-                 "longino": "vero-longino",
-                 "maldecillo": "maldecir",
-                 "matalle": "matar",
-                 "mayordomo": "mayordomo",
-                 "meterla": "meter",
-                 "mostralle": "mostrar",
-                 "padecelle": "padecer",
-                 "padecellos": "padecer",
-                 "parla": "parla",
-                 "perla": "perla",
-                 "pasarla": "pasar",
-                 "perdellas": "perder",
-                 "perseguirme": "perseguir",
-                 "preguntole": "preguntar",
-                 "premialle": "premiar",
-                 "rebelallos": "rebelar",
-                 "regalallos": "regalar",
-                 "sacerdote": "sacerdote",
-                 "satisfacelle": "satisfacer",
-                 "sentillos": "sentir",
-                 "tabardillo": "tabardillo",
-                 "temellas": "temer",
-                 "temellos": "temer",
-                 "tenellas": "tender",
-                 "tenellos": "tener",
-                 "tomalle": "tomar",
-                 "vencelle": "vencer",
-                 "vencello": "vencer",
-                 "vencellos": "vencer",
-                 "vendellos": "vender",
-                 "vero": "vero-longino",
-                 "vero-longino": "vero-longino",
-                 "çial": "especial",
-                 "probarla": "probar",
-                 "verterla": "verter",
-                 "merla": "merlar",
-                 "pagarla": "pagar",
-                 "verla": "ver",
-                 "borla": "borla",
-                 "turba": "turba",
-                 "orla": "orla",
-                 "burla": "burla"
-                 }
 
 skip_call_words = {"esp", "e"}
 skip_echo_words = {"esp", "e"}
