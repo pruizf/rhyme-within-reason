@@ -31,7 +31,6 @@ def collect_emotions_stadthagen_per_term(lx):
   """Collect emotions from Stadthagen et al. 2018 lexicon"""
   lem2scores = {}
   df = pd.read_csv(lx, encoding="latin1")
-  breakpoint()
   df = df.rename(columns=cf.stadthagen_emos_renamer)
   # scale data
   for colname in cf.emonames:
@@ -151,7 +150,7 @@ if __name__ == "__main__":
   cdf = pd.read_csv(cf.df_lem_sets, sep="\t")
   # preprocessing
   cdf['Echo'].replace(' ', np.nan, inplace=True)
-  # emo and vad df just in case (but infos are hashed into a dict elsewhere)
+  # nrc emo and vad df just in case (but infos are hashed into a dict elsewhere)
   edf = pd.read_csv(cf.nrc_ei, sep="\t")
   vdf = pd.read_csv(cf.nrc_vad, sep="\t")
   # Get lexicon data ----------------------------------------------------------
@@ -177,6 +176,7 @@ if __name__ == "__main__":
   cdf["call_wf_in_vad"] = np.nan
   cdf["echo_wf_in_vad"] = np.nan
   cdf["call_wf_in_ei"] = np.nan
+  cdf["echo_wf_in_ei"] = np.nan
   #    ml-senticon
   cdf["call_in_mls"] = np.nan
   cdf["echo_in_mls"] = np.nan
@@ -198,6 +198,7 @@ if __name__ == "__main__":
     vinfos_echo = lem2vad.get(row.EchoLemma.lower())
     #vinfos_call_raw = lem2vad_raw.get(row.CallLemma.lower())
     #vinfos_echo_raw = lem2vad_raw.get(row.EchoLemma.lower())
+
     # TODO function for below that takes row and works on call or echo
     # TODO based on "call" "echo" argument
 
