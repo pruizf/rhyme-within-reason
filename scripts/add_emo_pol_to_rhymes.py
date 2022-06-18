@@ -1,4 +1,6 @@
-"""Add emotion and polarity information from lexica to corpus rhymes"""
+"""
+Add emotion and polarity information from lexica to corpus rhymes
+"""
 
 from importlib import reload
 from lxml import etree
@@ -9,32 +11,13 @@ import warnings
 
 from sklearn.preprocessing import MinMaxScaler
 
+import config as cf
+
 DBG = False
 
 
-import config as cf
-
-# nrc emotion intensity structure
-"""" (tab sep)
-word	Spanish-es	emotion	emotion-intensity-score
-outraged	indignado	anger	0.964
-brutality	brutalidad	anger	0.959
-...
-brutality	brutalidad	fear	0.922
-"""
-
-# TODO
-# add vad columns
-# add columns for emotion intensity
-# iterate over corpus df
-# hash the lexica
-# for each word-form
-#   add infos to df if found in lexica
-#   if not found, see if find infos for their lemma and add
-# per-poem info (poems with all rhymes covered vs not)
-
-
 def collect_emotions_per_term(lx):
+  """Collect emotions from NRC emotion intensity Spanish lexicon"""
   lem2scores = {}
   df = pd.read_csv(lx, sep="\t")
   for idx, row in df.iterrows():
@@ -44,7 +27,29 @@ def collect_emotions_per_term(lx):
   return lem2scores
 
 
-def collect_stadthagen_vad(lx):
+def collect_emotions_stadthagen_per_term(lx):
+  """Collect emotions from Stadthagen et al. 2018 lexicon"""
+  lem2scores = {}
+  df = pd.read_csv(lx, encoding="latin1")
+  breakpoint()
+  df = df.rename(columns=cf.stadthagen_emos_renamer)
+  breakpoint()
+  for idx, row in df.iterrows():
+    lem = row['Word'].lower()
+    lem2scores.setdefault(lem, {})
+    for emoname in cf.emonames:
+      try:
+        lem2scores[lem][emoname] = row[emoname]
+      except KeyError:
+        continue
+  return lem2scores
+
+
+def collect_va_stadthagen(lx):
+  """
+  Collect Valence and Arousal scores from Stadthagen 2018
+  MinMax scale for compatibility with other datasets
+  """
   lem2scores = {}
   df = pd.read_csv(lx, encoding="latin1")
   mm = MinMaxScaler()
@@ -56,9 +61,11 @@ def collect_stadthagen_vad(lx):
   return lem2scores
 
 
-
 def collect_vad_per_term(lx):
-  """VAD varies according to term sense, collect a median"""
+  """
+  Get VAD from NRC Spanish file.
+  VAD varies according to term sense, collect a median.
+  """
   lem2scores = {}
   lem2aves = {}
   df = pd.read_csv(lx, sep="\t")
@@ -97,6 +104,18 @@ def hash_mlsenticon(fn):
         lem2aves[lem][attr] = ";".join(lem2scores[lem][attr])
       elif attr == "pol":
         lem2aves[lem]["valence"] = np.median(np.array(scores))
+  # scale medians
+  all_valence_scores = np.array([it["valence"] for it in lem2aves.values()])
+  mm = MinMaxScaler()
+  # reshape for single feature
+  all_valence_scaled = mm.fit_transform(all_valence_scores.reshape(-1,1))
+  all_valence_scaled.flatten()
+  score_zip = zip(all_valence_scores, all_valence_scaled)
+  score_dict = {raw : scaled for raw, scaled in score_zip}
+  for lem, scores in lem2scores.items():
+    for attr, scores in scores.items():
+      if attr == "pol":
+        lem2aves[lem]["valence"] = score_dict[lem2aves[lem]["valence"]]
   return lem2scores, lem2aves
 
 
@@ -111,7 +130,6 @@ def add_annots_to_df(df, idx, annots, target, lextype, mode="lemma"):
   assert mode in ("lemma", "wf", "mls_lemma")
   # keys (ename) are lowercase VAD and emotion names
   for ename, escore in annots.items():
-    #bin_score = [0]
     # we don't care about part of speech  now
     if ename == "pos":
       continue
@@ -131,17 +149,20 @@ if __name__ == "__main__":
   vdf = pd.read_csv(cf.nrc_vad, sep="\t")
   # Get lexicon data ----------------------------------------------------------
   # hash emos per lemma
-  print(f"-   Hash emotions [{strftime('%H:%M:%S')}]")
-  lem2emo = collect_emotions_per_term(cf.nrc_ei)
+  print(f"-   Hash Stadthagen Emos [{strftime('%H:%M:%S')}]")
+  lem2emo = collect_emotions_stadthagen_per_term(cf.stadthagen_emos)
+  print(f"-   Hash NRC EI [{strftime('%H:%M:%S')}]")
+  lem2nei = collect_emotions_per_term(cf.nrc_ei)
+  lem2nvad_raw, lem2nvad = collect_vad_per_term(cf.nrc_vad)
+  print(f"-   Hash NRC VAD [{strftime('%H:%M:%S')}]")
+  lem2vad = collect_va_stadthagen(cf.stadthagen)
   # hash vad per lemma
-  print(f"-   Hash VAD [{strftime('%H:%M:%S')}]")
-  #lem2vad_raw, lem2vad = collect_vad_per_term(cf.nrc_vad)
-  lem2vad = collect_stadthagen_vad(cf.stadthagen)
+  print(f"-   Hash Stadthagen VA [{strftime('%H:%M:%S')}]")
   # hash ml-senticon
   print(f"-   Hash ML-Senticon [{strftime('%H:%M:%S')}]")
   lem2mls_raw, lem2mls = hash_mlsenticon(cf.mlsenticon)
-  # prepare df columns to keep track of hits
-  #    vad, ei
+  # prepare df columns to keep track of hits ----------------------------------
+  #    vad, ei (Stadthagen)
   cdf["call_in_vad"] = np.nan
   cdf["echo_in_vad"] = np.nan
   cdf["call_in_ei"] = np.nan
@@ -161,6 +182,7 @@ if __name__ == "__main__":
     cdf[f"{vadname}_call"] = np.nan
     cdf[f"{vadname}_echo"] = np.nan
   print(f"-   Populate df [{strftime('%H:%M:%S')}]")
+  # Populate emo and vad columns --------------------------------------------
   for idx, row in cdf.iterrows():
     # get emo and vad for row
     einfos_call = lem2emo.get(row.CallLemma.lower())
@@ -171,7 +193,7 @@ if __name__ == "__main__":
     #vinfos_echo_raw = lem2vad_raw.get(row.EchoLemma.lower())
     # TODO function for below that takes row and works on call or echo
     # TODO based on "call" "echo" argument
-    # populate emo and vad columns --------------------------------------------
+
     #   call ei
     if einfos_call is not None:
       add_annots_to_df(cdf, idx, einfos_call, "call", "ei")
@@ -194,7 +216,7 @@ if __name__ == "__main__":
       vinfos_call_wf = lem2vad.get(row.Call.lower())
       if vinfos_call_wf is not None:
         add_annots_to_df(cdf, idx, vinfos_call_wf, "call", "vad", mode="wf")
-      # try mlsenticon if nrc no results
+      # try mlsenticon if Stadthagen no results
       else:
         minfos_call = lem2mls.get(row.CallLemma.lower())
         if minfos_call is not None:
@@ -212,7 +234,7 @@ if __name__ == "__main__":
       vinfos_echo_wf = lem2vad.get(row_echo)
       if vinfos_echo_wf is not None:
         add_annots_to_df(cdf, idx, vinfos_echo_wf, "echo", "vad", mode="wf")
-      # try mlsenticon if nrc no results
+      # try mlsenticon if Stadthagen no results
       else:
         minfos_echo = lem2mls.get(row.EchoLemma.lower())
         if minfos_echo is not None:
@@ -236,4 +258,3 @@ if __name__ == "__main__":
                                    'percent_available': percent_available,
                                    'percent_missing': percent_missing})
   print(missing_value_df)
-
