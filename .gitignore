@@ -7,6 +7,9 @@ data/old
 lexica/senticon.es.xml
 lexica/Spanish-es-NRC-Emotion-Intensity-Lexicon-v1.txt
 lexica/Spanish-es-NRC-VAD-Lexicon.txt
+lexica/13428_2015_700_MOESM1_ESM_stadthagen_vad.csv
+lexica/13428_2017_962_MOESM1_ESM_stadthagen_2018_emos.csv
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

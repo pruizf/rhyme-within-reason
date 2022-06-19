@@ -16,7 +16,7 @@ For rhyme-word lemmatization
 - `get_lemmas.py`: Applies Stanza for rhyme-word lemmatization
    - `custom_lemmas.py`: Lemmatization exceptions
 - `add_echo_set_lemmas.py`: Adds set of lemmas for the echos of a given call
-- `evaluation.py`: selects a sample of lines for manual evaluation
+- `evaluation.py`: selects a sample of lines for manual evaluation, results are at [[annotation/doc]](./annotation/doc)
 
 ### Sentiment and emotion
 
