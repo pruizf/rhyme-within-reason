@@ -9,7 +9,7 @@ df_path = "../data/dataframe-all.tsv"
 #df_path = "../data/dataframe-cssdo.tsv"
 df_lem = df_path.replace(".tsv", "_lem.tsv")
 df_lem_sets = df_path.replace(".tsv", "_lem_sets.tsv")
-df_emos = df_lem_sets.replace(".tsv", "_emos.tsv")
+df_emos = df_lem_sets.replace(".tsv", "_emos3.tsv")
 
 # nlp
 spacy_model = "es_core_news_sm"
@@ -37,3 +37,6 @@ stadthagen_renamer = {"ValenceMean": "valence", "ArousalMean": "arousal"}
 stadthagen_emos_renamer = {"Happiness_Mean": "joy", "Disgust_Mean": "disgust",
                            "Anger_Mean": "anger", "Fear_Mean": "fear",
                            "Sadness_Mean": "sadness", }
+
+# signatures
+df_sig_path = "../data/signatures.tsv"

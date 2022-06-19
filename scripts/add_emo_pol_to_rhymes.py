@@ -6,6 +6,7 @@ from importlib import reload
 from lxml import etree
 import numpy as np
 import pandas as pd
+from pandas.api.types import CategoricalDtype
 from time import strftime
 import warnings
 
@@ -151,7 +152,7 @@ def binarize_scores(sco):
   Null values recoded as -9.
   """
   if pd.isna(sco):
-    bsco = -9
+    bsco = 9
   else:
     bsco = 0 if sco < 0.5 else 1
   return bsco
@@ -271,6 +272,8 @@ if __name__ == "__main__":
   # add binary features
   for infix in ('call', 'echo'):
     cdf[f'valence_{infix}_b'] = cdf[f'valence_{infix}'].apply(binarize_scores)
+    cdf[f'valence_{infix}_b'] = cdf[f'valence_{infix}_b'].astype(
+      CategoricalDtype([0, 1, 9]))
 
   cdf.to_csv(cf.df_emos, sep='\t', index=False)
   print(f"- End [{strftime('%H:%M:%S')}]\n")
