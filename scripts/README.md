@@ -22,3 +22,4 @@ For rhyme-word lemmatization
 
 - `add_emo_pol_to_rhymes.py`: Adds emotion and VAD scores to rhyme words based on lexica in `../lexica` 
 - `get_signatures.py`: Gets valence "signature" counts, i.e. counts of valence combinations for each call-word and its echo, aggregated at poem level
+- `aggregate_emotions.py`: Get emotion-type counts per-poem for emotion occurrences with scores above a threshold

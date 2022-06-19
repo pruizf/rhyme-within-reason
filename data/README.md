@@ -6,6 +6,7 @@
 - `dataframe-all_lem_sets.tsv`: Call word and echo lemmas added to `dataframe-all.tsv`
 - `dataframe-all_lem_sets_emos.tsv`: VAD (valence, arousal, dominance) an affect scores added to preceding
 - `signatures.tsv`: call-echo signatures in valence terms
+- `highemos_XX_counts_per_poem.tsv`: emotion-type counts per poem for emotion words with score >= XX
 
 # Conventions
 
