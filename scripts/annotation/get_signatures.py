@@ -24,6 +24,7 @@ if __name__ == "__main__":
   sig_df_counts_tcd = sig_df_counts.unstack()
   # merge sonnet metadata with the signatures
   cdf_dedup = cdf.drop_duplicates(subset='SonnetID', keep='first')
+  # https://stackoverflow.com/a/42765878/16449778
   mdf = pd.merge(sig_df_counts_tcd,
                  cdf_dedup[['SonnetID', 'AuthorID', 'Author', 'Gender', 'Date']],
                  on='SonnetID', how='inner')
