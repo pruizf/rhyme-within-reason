@@ -3,7 +3,7 @@
 - `dataframe-cssdo.tsv`: Corpus de Sonetos del Siglo de Oro
 - `dataframe-disco.tsv`: DISCO (Golden Age subcorpus)
 - `dataframe-all.tsv`: Both corpora
-- `dataframe-all_lem_sets.tsv: Call word and echo lemmas added to `dataframe-all.tsv`
+- `dataframe-all_lem_sets.tsv`: Call word and echo lemmas added to `dataframe-all.tsv`
 - `dataframe-all_lem_sets_emos.tsv`: VAD (valence, arousal, dominance) an affect scores added to preceding
 - `signatures.tsv`: call-echo signatures in valence terms
 
