@@ -144,6 +144,16 @@ def add_annots_to_df(df, idx, annots, target, lextype, mode="lemma"):
   df.loc[idx, f"{target}_{modesuf}in_{lextype}"] = 1
 
 
+
+def binarize_scores(sco):
+  """
+  Used to render (valence) scores as binary.
+  0 will be negative valence, 1 will be positive.
+  """
+  bsco = 0 if sco < 0.5 else 1
+  return bsco
+
+
 if __name__ == "__main__":
   warnings.filterwarnings('ignore')
   print(f"- Start [{strftime('%H:%M:%S')}]")
@@ -254,6 +264,10 @@ if __name__ == "__main__":
 
     if idx > 0 and not idx % 5000:
       print(f"    - Done {idx} rhymes [{strftime('%H:%M:%S')}]")
+
+  # add binary features
+  for infix in ('call', 'echo'):
+    cdf[f'valence_{infix}_b'] = cdf[f'valence_{infix}'].apply(binarize_scores)
 
   cdf.to_csv(cf.df_emos, sep='\t', index=False)
   print(f"- End [{strftime('%H:%M:%S')}]\n")

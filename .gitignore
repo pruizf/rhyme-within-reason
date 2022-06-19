@@ -1,6 +1,8 @@
 # Project-specific
 .idea
 
+data/old
+
 # nrc lexica cannot be redistributed, so git ignore them
 lexica/senticon.es.xml
 lexica/Spanish-es-NRC-Emotion-Intensity-Lexicon-v1.txt
