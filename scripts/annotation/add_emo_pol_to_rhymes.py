@@ -61,10 +61,12 @@ def collect_va_stadthagen(lx):
   df = pd.read_csv(lx, encoding="latin1")
   mm = MinMaxScaler()
   df[['ValenceMeanScaled']] = mm.fit_transform(df[['ValenceMean']])
+  df[['ArousalMeanScaled']] = mm.fit_transform(df[['ArousalMean']])
   for idx, row in df.iterrows():
     lem = row['Word'].lower()
     lem2scores.setdefault(lem, {})
     lem2scores[lem]["valence"] = row["ValenceMeanScaled"]
+    lem2scores[lem]["arousal"] = row["ArousalMeanScaled"]
   return lem2scores
 
 

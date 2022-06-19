@@ -20,7 +20,7 @@ clitics = ("me", "te", "se", "nos", "os", "vos", "le",
 
 # lexica
 
-lexdir = "../lexica"
+lexdir = "../../lexica"
 nrc_ei = os.path.join(lexdir, "Spanish-es-NRC-Emotion-Intensity-Lexicon-v1.txt")
 nrc_vad = os.path.join(lexdir, "Spanish-es-NRC-VAD-Lexicon.txt")
 mlsenticon = "../../lexica/senticon.es.xml"
@@ -33,7 +33,7 @@ emonames = sorted({"anger", "anticipation", "disgust", "fear", "joy", "sadness",
 vadnames = sorted({"valence", "arousal", "dominance"})
 
 # to have common column names for all data
-stadthagen_renamer = {"ValenceMean": "valence", "Arousal_Mean": "arousal"}
+stadthagen_renamer = {"ValenceMean": "valence", "ArousalMean": "arousal"}
 stadthagen_emos_renamer = {"Happiness_Mean": "joy", "Disgust_Mean": "disgust",
                            "Anger_Mean": "anger", "Fear_Mean": "fear",
                            "Sadness_Mean": "sadness", }
