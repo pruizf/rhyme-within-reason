@@ -144,13 +144,16 @@ def add_annots_to_df(df, idx, annots, target, lextype, mode="lemma"):
   df.loc[idx, f"{target}_{modesuf}in_{lextype}"] = 1
 
 
-
 def binarize_scores(sco):
   """
   Used to render (valence) scores as binary.
   0 will be negative valence, 1 will be positive.
+  Null values recoded as -9.
   """
-  bsco = 0 if sco < 0.5 else 1
+  if pd.isna(sco):
+    bsco = -9
+  else:
+    bsco = 0 if sco < 0.5 else 1
   return bsco
 
 
@@ -272,7 +275,7 @@ if __name__ == "__main__":
   cdf.to_csv(cf.df_emos, sep='\t', index=False)
   print(f"- End [{strftime('%H:%M:%S')}]\n")
 
-  # print
+  # print summary
   pd.options.display.float_format = "{:,.2f}".format
   percent_missing = cdf.isnull().sum() * 100 / len(cdf)
   percent_available = 100 - percent_missing
