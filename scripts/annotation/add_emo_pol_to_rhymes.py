@@ -167,6 +167,7 @@ def binarize_scores(sco):
 if __name__ == "__main__":
   warnings.filterwarnings('ignore')
   print(f"- Start [{strftime('%H:%M:%S')}]")
+  print(f"- Output file is [{cf.df_emos}]")
   cdf = pd.read_csv(cf.df_lem_sets, sep="\t")
   # preprocessing
   cdf['Echo'].replace(' ', np.nan, inplace=True)
@@ -233,14 +234,23 @@ if __name__ == "__main__":
     # TODO function for below that takes row and works on call or echo
     # TODO based on "call" "echo" argument
 
-    #   call ei (Stadthagen)
+    #   call ei (Stadthagen) ------------------------------
     if einfos_call is not None:
       add_annots_to_df(cdf, idx, einfos_call, "call", "ei")
     else:
       einfos_call_wf = lem2emo.get(row.Call.lower())
       if einfos_call_wf is not None:
         add_annots_to_df(cdf, idx, einfos_call_wf, "call", "ei", mode="wf")
-    #   echo ei (Stadthagen)
+      # try NRC if Stadthagen no result
+      else:
+        ninfos_call = lem2nei.get(row.CallLemma.lower())
+        if ninfos_call is not None:
+          add_annots_to_df(cdf, idx, ninfos_call, "call", "nei")
+        else:
+          ninfos_call_wf = lem2nei.get(row.Call.lower())
+          if ninfos_call_wf is not None:
+            add_annots_to_df(cdf, idx, ninfos_call_wf, "call", "nei", mode="wf")
+    #   echo ei (Stadthagen) ------------------------------
     if einfos_echo is not None:
       add_annots_to_df(cdf, idx, einfos_echo, "echo", "ei")
     else:
@@ -248,24 +258,42 @@ if __name__ == "__main__":
       einfos_echo_wf = lem2emo.get(row_echo)
       if einfos_echo_wf is not None:
         add_annots_to_df(cdf, idx, einfos_echo_wf, "echo", "ei", mode="wf")
-    #   call vad (Stadthagen)
+      # try NRC if Stadthagen no result
+      else:
+        ninfos_echo = lem2nei.get(row.EchoLemma.lower())
+        if ninfos_echo is not None:
+          add_annots_to_df(cdf, idx, ninfos_echo, "echo", "nei")
+        else:
+          ninfos_echo_wf = lem2nei.get(row_echo)
+          if ninfos_echo_wf is not None:
+            add_annots_to_df(cdf, idx, ninfos_echo_wf, "echo", "nei", mode="wf")
+    #   call vad (Stadthagen) -----------------------------
     if vinfos_call is not None:
       add_annots_to_df(cdf, idx, vinfos_call, "call", "vad")
     else:
       vinfos_call_wf = lem2vad.get(row.Call.lower())
       if vinfos_call_wf is not None:
         add_annots_to_df(cdf, idx, vinfos_call_wf, "call", "vad", mode="wf")
-      # try mlsenticon if Stadthagen no results
+      # try NRC if Stadthagen no result
       else:
-        minfos_call = lem2mls.get(row.CallLemma.lower())
-        if minfos_call is not None:
-          add_annots_to_df(cdf, idx, minfos_call, "call", "mls")
+        nvinfos_call = lem2nvad.get(row.CallLemma.lower())
+        if nvinfos_call is not None:
+          add_annots_to_df(cdf, idx, nvinfos_call, "call", "nvad")
         else:
-          minfos_call_wf = lem2mls.get(row.Call.lower())
-          if minfos_call is not None:
-            add_annots_to_df(cdf, idx, minfos_call, "call", "mls", mode="wf")
+          nvinfos_call_wf = lem2nvad.get(row.Call.lower())
+          if nvinfos_call_wf is not None:
+            add_annots_to_df(cdf, idx, nvinfos_call_wf, "call", "nvad", mode="wf")
+          # try mlsenticon if Stadthagen and NRC no results
+          else:
+            minfos_call = lem2mls.get(row.CallLemma.lower())
+            if minfos_call is not None:
+              add_annots_to_df(cdf, idx, minfos_call, "call", "mls")
+            else:
+              minfos_call_wf = lem2mls.get(row.Call.lower())
+              if minfos_call_wf is not None:
+                add_annots_to_df(cdf, idx, minfos_call_wf, "call", "mls", mode="wf")
 
-    #   echo vad  (Stadthagen)
+    #   echo vad  (Stadthagen) ----------------------------
     if vinfos_echo is not None:
       add_annots_to_df(cdf, idx, vinfos_echo, "echo", "vad")
     else:
@@ -273,15 +301,24 @@ if __name__ == "__main__":
       vinfos_echo_wf = lem2vad.get(row_echo)
       if vinfos_echo_wf is not None:
         add_annots_to_df(cdf, idx, vinfos_echo_wf, "echo", "vad", mode="wf")
-      # try mlsenticon if Stadthagen no results
+      # try NRC if Stadthagen no result
       else:
-        minfos_echo = lem2mls.get(row.EchoLemma.lower())
-        if minfos_echo is not None:
-          add_annots_to_df(cdf, idx, minfos_echo, "echo", "mls")
+        nvinfos_echo = lem2nvad.get(row.EchoLemma.lower())
+        if nvinfos_echo is not None:
+          add_annots_to_df(cdf, idx, nvinfos_echo, "echo", "nvad")
         else:
-          minfos_call_wf = lem2mls.get(row.Echo.lower()) if pd.notna(row.Echo) else row.Echo
-          if minfos_echo is not None:
-            add_annots_to_df(cdf, idx, minfos_echo, "echo", "mls", mode="wf")
+          nvinfos_echo_wf = lem2nvad.get(row_echo)
+          if nvinfos_echo_wf is not None:
+            add_annots_to_df(cdf, idx, nvinfos_echo_wf, "echo", "nvad", mode="wf")
+          # try mlsenticon if Stadthagen and NRC no results
+          else:
+            minfos_echo = lem2mls.get(row.EchoLemma.lower())
+            if minfos_echo is not None:
+              add_annots_to_df(cdf, idx, minfos_echo, "echo", "mls")
+            else:
+              minfos_echo_wf = lem2mls.get(row_echo)
+              if minfos_echo_wf is not None:
+                add_annots_to_df(cdf, idx, minfos_echo_wf, "echo", "mls", mode="wf")
 
     if idx > 0 and not idx % 5000:
       print(f"    - Done {idx} rhymes [{strftime('%H:%M:%S')}]")
@@ -297,6 +334,7 @@ if __name__ == "__main__":
 
   # print summary
   pd.options.display.float_format = "{:,.2f}".format
+  pd.set_option('display.max_rows', 70)
   percent_missing = cdf.isnull().sum() * 100 / len(cdf)
   percent_available = 100 - percent_missing
   missing_value_df = pd.DataFrame({'column_name': cdf.columns,
