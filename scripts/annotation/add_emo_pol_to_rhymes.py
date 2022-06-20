@@ -17,8 +17,11 @@ import config as cf
 DBG = False
 
 
-def collect_emotions_per_term(lx):
-  """Collect emotions from NRC emotion intensity Spanish lexicon"""
+def collect_nrc_emotions_per_term(lx):
+  """
+  Collect emotions from NRC emotion intensity Spanish lexicon.
+  Note: NRC scores are already scaled.
+  """
   lem2scores = {}
   df = pd.read_csv(lx, sep="\t")
   for idx, row in df.iterrows():
@@ -70,10 +73,11 @@ def collect_va_stadthagen(lx):
   return lem2scores
 
 
-def collect_vad_per_term(lx):
+def collect_nrc_vad_per_term(lx):
   """
   Get VAD from NRC Spanish file.
   VAD varies according to term sense, collect a median.
+  Note: NRC scores are already scaled.
   """
   lem2scores = {}
   lem2aves = {}
@@ -135,7 +139,7 @@ def add_annots_to_df(df, idx, annots, target, lextype, mode="lemma"):
   `lextype` shows whether EI or VAD was the source lexicon.
   """
   assert target in ("call", "echo")
-  assert lextype in ("vad", "ei", "mls")
+  assert lextype in ("vad", "ei", "nvad", "nei", "mls")
   assert mode in ("lemma", "wf", "mls_lemma")
   # keys (ename) are lowercase VAD and emotion names
   for ename, escore in annots.items():
@@ -174,8 +178,8 @@ if __name__ == "__main__":
   print(f"-   Hash Stadthagen Emos [{strftime('%H:%M:%S')}]")
   lem2emo = collect_emotions_stadthagen_per_term(cf.stadthagen_emos)
   print(f"-   Hash NRC EI [{strftime('%H:%M:%S')}]")
-  lem2nei = collect_emotions_per_term(cf.nrc_ei)
-  lem2nvad_raw, lem2nvad = collect_vad_per_term(cf.nrc_vad)
+  lem2nei = collect_nrc_emotions_per_term(cf.nrc_ei)
+  lem2nvad_raw, lem2nvad = collect_nrc_vad_per_term(cf.nrc_vad)
   print(f"-   Hash NRC VAD [{strftime('%H:%M:%S')}]")
   lem2vad = collect_va_stadthagen(cf.stadthagen)
   # hash vad per lemma
@@ -184,6 +188,7 @@ if __name__ == "__main__":
   print(f"-   Hash ML-Senticon [{strftime('%H:%M:%S')}]")
   lem2mls_raw, lem2mls = hash_mlsenticon(cf.mlsenticon)
   # prepare df columns to keep track of hits ----------------------------------
+  # several flag columns to help filter by source, actual scores added elsewhere
   #    vad, ei (Stadthagen)
   cdf["call_in_vad"] = np.nan
   cdf["echo_in_vad"] = np.nan
@@ -193,11 +198,21 @@ if __name__ == "__main__":
   cdf["echo_wf_in_vad"] = np.nan
   cdf["call_wf_in_ei"] = np.nan
   cdf["echo_wf_in_ei"] = np.nan
+  #    vad, ei (NRC)
+  cdf["call_in_nvad"] = np.nan
+  cdf["echo_in_nvad"] = np.nan
+  cdf["call_in_nei"] = np.nan
+  cdf["echo_in_nei"] = np.nan
+  cdf["call_wf_in_nvad"] = np.nan
+  cdf["echo_wf_in_nvad"] = np.nan
+  cdf["call_wf_in_nei"] = np.nan
+  cdf["echo_wf_in_nei"] = np.nan
   #    ml-senticon
   cdf["call_in_mls"] = np.nan
   cdf["echo_in_mls"] = np.nan
   cdf["call_wf_in_mls"] = np.nan
   cdf["echo_wf_in_mls"] = np.nan
+  # colums for actual scores --------------------------------------------------
   for emoname in cf.emonames:
     cdf[f"{emoname}_call"] = np.nan
     cdf[f"{emoname}_echo"] = np.nan
@@ -218,14 +233,14 @@ if __name__ == "__main__":
     # TODO function for below that takes row and works on call or echo
     # TODO based on "call" "echo" argument
 
-    #   call ei
+    #   call ei (Stadthagen)
     if einfos_call is not None:
       add_annots_to_df(cdf, idx, einfos_call, "call", "ei")
     else:
       einfos_call_wf = lem2emo.get(row.Call.lower())
       if einfos_call_wf is not None:
         add_annots_to_df(cdf, idx, einfos_call_wf, "call", "ei", mode="wf")
-    #   echo ei
+    #   echo ei (Stadthagen)
     if einfos_echo is not None:
       add_annots_to_df(cdf, idx, einfos_echo, "echo", "ei")
     else:
@@ -233,7 +248,7 @@ if __name__ == "__main__":
       einfos_echo_wf = lem2emo.get(row_echo)
       if einfos_echo_wf is not None:
         add_annots_to_df(cdf, idx, einfos_echo_wf, "echo", "ei", mode="wf")
-    #   call vad
+    #   call vad (Stadthagen)
     if vinfos_call is not None:
       add_annots_to_df(cdf, idx, vinfos_call, "call", "vad")
     else:
@@ -250,7 +265,7 @@ if __name__ == "__main__":
           if minfos_call is not None:
             add_annots_to_df(cdf, idx, minfos_call, "call", "mls", mode="wf")
 
-    #   echo vad
+    #   echo vad  (Stadthagen)
     if vinfos_echo is not None:
       add_annots_to_df(cdf, idx, vinfos_echo, "echo", "vad")
     else:
