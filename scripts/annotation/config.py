@@ -5,6 +5,7 @@ import os
 
 # corpus paths
 
+#  to change file names when NRC lexica are used
 NRC = True
 infix = "_with_nrc" if NRC else ""
 
@@ -42,7 +43,10 @@ stadthagen_emos_renamer = {"Happiness_Mean": "joy", "Disgust_Mean": "disgust",
                            "Anger_Mean": "anger", "Fear_Mean": "fear",
                            "Sadness_Mean": "sadness", }
 
-# signatures
+# coverage files
+df_coverage_path = f"../../data/coverage{infix}.tsv"
+
+# signatures (e.g. valence signature)
 df_sig_path = f"../../data/signatures{infix}.tsv"
 highemo_counts = "../../data/highemos_{}_counts_per_poem.tsv"
 if NRC:

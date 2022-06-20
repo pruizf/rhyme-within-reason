@@ -168,6 +168,7 @@ if __name__ == "__main__":
   warnings.filterwarnings('ignore')
   print(f"- Start [{strftime('%H:%M:%S')}]")
   print(f"- Output file is [{cf.df_emos}]")
+  print(f"- Coverage written to [{cf.df_coverage_path}]")
   cdf = pd.read_csv(cf.df_lem_sets, sep="\t")
   # preprocessing
   cdf['Echo'].replace(' ', np.nan, inplace=True)
@@ -341,3 +342,4 @@ if __name__ == "__main__":
                                    'percent_available': percent_available,
                                    'percent_missing': percent_missing})
   print(missing_value_df)
+  missing_value_df.to_csv(cf.df_coverage_path, sep="\t", index=False)
