@@ -7,6 +7,7 @@
 - `dataframe-all_lem_sets_emos.tsv`: VAD (valence, arousal, dominance) an affect scores added to preceding
 - `signatures.tsv`: call-echo signatures in valence terms
 - `highemos_XX_counts_per_poem.tsv`: emotion-type counts per poem for emotion words with score >= XX
+- Files `filenames_cssdo.txt`, `filenames_disco_only_new_IDs.txt` and `ids_to_keep.txt` were used to keep sonnets duplicated across CSSDO and DISCO only as part of CSSDO
 
 # Conventions
 

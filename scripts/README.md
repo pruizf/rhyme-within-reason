@@ -9,6 +9,7 @@
 
 ## Annotation
 - `config.py`: Annotation configuration
+- `remove_duplicate_sonnets.py`: Keeps sonnets that are both in CSSDO and DISCO in CSSDO only, in results dataframes
 
 ### Lemmatization
 For rhyme-word lemmatization
