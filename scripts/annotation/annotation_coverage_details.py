@@ -8,19 +8,6 @@ import pandas as pd
 
 data = "../../data/dataframe-all_lem_sets_emos_with_nrc_filt.tsv"
 
-"""
-- find nbr of occurrences
-- find nbr of occurrences with annotations
-- find vocabulary (value_counts)
-- find vocabulary for those which have annotations (value_counts again)
-
-do this for
-- valence (before using NRC)
-- valence (once use NRC)
-
-- emotion (before using NRC)
-- emotion (once use NRC)
-"""
 
 df = pd.read_csv(data, sep="\t")
 
