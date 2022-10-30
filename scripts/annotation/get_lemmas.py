@@ -1,3 +1,7 @@
+"""
+Get lemmas (in context) for rhyme words using Stanza.
+"""
+
 #coding=utf8
 
 from importlib import reload
