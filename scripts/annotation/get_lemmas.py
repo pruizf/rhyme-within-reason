@@ -26,7 +26,7 @@ DBG = False
 puncts = ".,;:!?«»"
 
 def clean_token(tk):
-  #TODO remov these cases
+  #TODO remove these cases
   if tk == "descubrilla":
     return "descubrirla"
   elif tk == "decillo":

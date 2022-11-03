@@ -23,6 +23,7 @@ DBG = False
 if __name__ == "__main__":
   print(f"- Start [{strftime('%R')}]")
   #nlp = spacy.load(cf.spacy_model)
+  #TODO remove stanza call?
   nlp = spacy_stanza.load_pipeline("es", processors="tokenize,pos,lemma",
                                    verbose=False, logging_level='ERROR')
   df = pd.read_csv(cf.df_lem, sep="\t", index_col=None)
