@@ -22,11 +22,11 @@ For rhyme-word lemmatization
 
 ### Sentiment and emotion
 
-### Lexicon coverage
+#### Lexicon coverage
 - `annotation_coverage_details.py`: To determine the extent to which the lexicons cover the corpus
 - `print_annotation_coverage.py`: Less detailed than previous script
 
-### Analyses
+#### Analyses
 
 - `add_emo_pol_to_rhymes.py`: Adds emotion and VAD scores to rhyme words based on lexica in `../lexica` 
 - `aggregate_emotions.py`: Get emotion-type counts per-poem for emotion occurrences with scores above a threshold
