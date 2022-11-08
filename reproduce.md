@@ -70,6 +70,10 @@ Tables 1 and 2 regarding rhyme-word coverage by the different lexicons are obtai
 python annotation_coverage_details.py
 ```
 
-%TODO: Figures 1 and 2
+The data thanks to which the results in Box 2 were selected (filtering data as described in section 5.3) are in `data/octave_vs_sestet_merged_octvalmin6_sesvalmin_5_octaromin_6_sesaromin_4_only_86.tsv` 
+
+The data and code for Table 4 and for the boxplots in Figure 6 are in `scripts/annotation_redo_strict.ipynb` 
+
+%TODO: Share data for Table 3 and Figures 2 through 5.
 
 
